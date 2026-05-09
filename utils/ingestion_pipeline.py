@@ -1,8 +1,6 @@
 import xml.etree.ElementTree as ET
-import sqlite3
-import json
-import logging
-from typing import List
+import sqlite3,json,logging , os, csv
+from typing import List ,Dict
 from dataclasses import dataclass, asdict
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -19,18 +17,50 @@ class ClinicalChunk:
     domain: str
 
 class TFRDataPreprocessor:
-    def __init__(self, domain_data_path: str = "./data/domain.json"):
+    def __init__(self, domain_data_path: str = "./data/domain.json", sjr_csv_path: str = "./data/scimagojr_2023.csv"):
         # 1. MeSH to Domain Mapping 
-        with open(domain_data_path, "r") as f:
-            self.clinical_branches = json.load(f)
+        try:
+            with open(domain_data_path, "r") as f:
+                self.clinical_branches = json.load(f)
+        except FileNotFoundError:
+            logger.warning(f"Domain map not found at {domain_data_path}. Defaulting to empty map.")
+            self.clinical_branches = {}
 
-        # Journal Tier Database (Mock .. will link to SCImago/SJR csv)
-        self.tier_db = {
-            "New England Journal of Medicine": "Q1",
-            "The Lancet": "Q1",
-            "Journal of Clinical Oncology": "Q1",
-            "Medical Blog Daily": "Unranked"
-        }
+        # Journal Tier Database
+        self.tier_db = self._load_sjr_database(sjr_csv_path)
+
+    def _load_sjr_database(self, csv_path: str) -> Dict[str, str]:
+        """
+        Dynamically loads the SCImago Journal Rank CSV into a low-memory lookup dictionary.
+        """
+        tier_map = {}
+        if not os.path.exists(csv_path):
+            logger.warning(f"SJR CSV not found at {csv_path}. All journals will default to 'Unranked'.")
+            return tier_map
+
+        logger.info("Loading SCImago Journal Rank database...")
+        try:
+            with open(csv_path, mode='r', encoding='utf-8') as file:
+                # SCImago uses semicolons as delimiters
+                reader = csv.DictReader(file, delimiter=';')
+                
+                for row in reader:
+                    # Convert titles to lowercase for case-insensitive matching
+                    title = row.get("Title", "").strip().lower()
+                    quartile = row.get("SJR Best Quartile", "").strip()
+
+                    # Handle missing or dash values in the quartile column
+                    if not quartile or quartile == "-":
+                        quartile = "Unranked"
+
+                    if title:
+                        tier_map[title] = quartile
+                        
+            logger.info(f"Successfully loaded {len(tier_map)} journal rankings.")
+        except Exception as e:
+            logger.error(f"Failed to parse SJR database: {e}")
+
+        return tier_map
 
     def _classify_evidence_level(self, pub_types: List[str]) -> int:
         """
@@ -97,7 +127,8 @@ class TFRDataPreprocessor:
                 domain = self._resolve_domain(mesh_headings)
                 
                 # journal tier Lookup
-                tier = self.tier_db.get(journal_name, "UNRANKED")
+                safe_journal_name = journal_name.strip().lower() if journal_name else ""
+                tier = self.tier_db.get(safe_journal_name, "Unranked")
                 
                 # Create chunk
                 chunk = ClinicalChunk(
