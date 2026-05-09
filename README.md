@@ -31,7 +31,7 @@ The **Traceability-First Retrieval (TFR)** framework is a 5-stage pipeline desig
 
 ---
 
-## Evaluation & Ablation Study
+## Evaluation
 
 The framework includes a built-in benchmark harness to measure the **Cost-Quality Pareto Frontier** across 16 possible pipeline configurations.
 
@@ -44,24 +44,17 @@ The framework includes a built-in benchmark harness to measure the **Cost-Qualit
 ## Quick Start
 
 ### Prerequisites
-*   Python 3.11+
-*   Node.js (for the Vite frontend)
+*   Python 3.11
 
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/RAG-Ablation.git
-cd RAG-Ablation
+git clone https://github.com/your-username/Traceability-First-Retrieval.git
+cd Traceability First Retrieval
 
-# Setup Backend
-cd backend
-pip install flask flask-cors torch transformers faiss-cpu
+pip install -r "requirements.txt"
 python app.py
 
-# Setup Frontend
-cd ../frontend
-npm install
-npm run dev
 ```
 
 ---

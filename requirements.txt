@@ -1,0 +1,7 @@
+numpy
+sentence-transformers
+flask
+flask-cors
+faiss-cpu
+rank-bm25
+python-dotenv
