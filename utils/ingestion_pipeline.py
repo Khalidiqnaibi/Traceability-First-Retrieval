@@ -1,10 +1,9 @@
 import xml.etree.ElementTree as ET
+import sqlite3
 import json
-import re
 import logging
-from typing import List, Dict, Optional
+from typing import List
 from dataclasses import dataclass, asdict
-import json
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
@@ -20,9 +19,9 @@ class ClinicalChunk:
     domain: str
 
 class TFRDataPreprocessor:
-    def __init__(self,domain_data_path:str ="./data/domain.json"):
+    def __init__(self, domain_data_path: str = "./data/domain.json"):
         # 1. MeSH to Domain Mapping 
-        with open(domain_data_path,"r") as f:
+        with open(domain_data_path, "r") as f:
             self.clinical_branches = json.load(f)
 
         # Journal Tier Database (Mock .. will link to SCImago/SJR csv)
@@ -82,7 +81,8 @@ class TFRDataPreprocessor:
                 
                 title = article_data.findtext("ArticleTitle")
                 journal_name = article_data.find("Journal/Title").text
-                year = int(article_data.find(".//PubRefDate/Year").text) if article_data.find(".//PubRefDate/Year") is not None else -1
+                year_node = article_data.find(".//PubRefDate/Year")
+                year = int(year_node.text) if year_node is not None else -1
                 
                 # abstract chunks
                 abstract_nodes = article_data.findall(".//AbstractText")
@@ -118,12 +118,41 @@ class TFRDataPreprocessor:
         logger.info(f"Successfully processed {len(processed_chunks)} chunks.")
         return processed_chunks
 
-    def export_to_tfr_json(self, chunks: List[ClinicalChunk], output_path: str):
-        """Saves processed data for the TFR Pipeline."""
-        data = [asdict(c) for c in chunks]
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4)
-        logger.info(f"Dataset exported to {output_path}")
+    def export_to_sqlite(self, chunks: List[ClinicalChunk], db_path: str):
+        """Saves processed data directly into a SQLite database for the TFR Pipeline."""
+        logger.info(f"Exporting {len(chunks)} chunks to SQLite database at {db_path}...")
+        
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS clinical_chunks (
+                chunk_id TEXT PRIMARY KEY,
+                text TEXT,
+                source TEXT,
+                journal_tier TEXT,
+                evidence_level INTEGER,
+                publication_year INTEGER,
+                domain TEXT
+            )
+        ''')
+        
+        # Map the dataclass objects to a tuple format for SQLite insertion
+        data_to_insert = [
+            (c.chunk_id, c.text, c.source, c.journal_tier, c.evidence_level, c.publication_year, c.domain)
+            for c in chunks
+        ]
+        
+        # updating existing PMIDs instead of crashing
+        cursor.executemany('''
+            INSERT OR REPLACE INTO clinical_chunks 
+            (chunk_id, text, source, journal_tier, evidence_level, publication_year, domain)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        ''', data_to_insert)
+        
+        conn.commit()
+        conn.close()
+        logger.info(f"Dataset successfully exported to {db_path}")
 
 if __name__ == "__main__":
     processor = TFRDataPreprocessor()
@@ -131,6 +160,7 @@ if __name__ == "__main__":
     try:
         chunks = processor.parse_pubmed_xml("raw_pubmed_data.xml")
         
-        processor.export_to_tfr_json(chunks, "processed_clinical_dataset.json")
+        # Pointing to a .db file instead of a .json file
+        processor.export_to_sqlite(chunks, "processed_clinical_dataset.db")
     except FileNotFoundError:
         logger.error("No XML file found. Please provide a PubMed XML export.")
