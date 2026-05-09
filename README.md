@@ -45,6 +45,7 @@ The framework includes a built-in benchmark harness to measure the **Cost-Qualit
 
 ### Prerequisites
 *   Python 3.11
+*   download csv from https://www.scimagojr.com/journalrank.php
 
 ### Installation
 ```bash
