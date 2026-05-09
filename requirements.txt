@@ -6,3 +6,4 @@ faiss-cpu
 rank-bm25
 python-dotenv
 sqlite3
+Bio

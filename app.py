@@ -3,9 +3,9 @@ from dotenv import load_dotenv
 import os
 import logging
 
-from utils.ingestion_pipeline import TFRDataPreprocessor
-from utils.make_response import make_response
-from utils.init_pipline import initialize_pipeline
+from utils.data.ingestion_pipeline import TFRDataPreprocessor
+from utils.api.make_response import make_response
+from utils.pipeline.init_pipline import initialize_pipeline
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

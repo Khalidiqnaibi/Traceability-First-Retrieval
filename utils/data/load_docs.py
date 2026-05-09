@@ -1,4 +1,4 @@
-from src.retrieval import ClinicalDocument
+from pipeline.retrieval import ClinicalDocument
 import sqlite3
 
 def load_from_sqlite(db_path: str):

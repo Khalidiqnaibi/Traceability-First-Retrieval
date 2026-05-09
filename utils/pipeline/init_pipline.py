@@ -1,6 +1,6 @@
 import logging  
-from utils.load_docs import load_from_sqlite
-from src.retrieval import TFRPipeline
+from utils.data.load_docs import load_from_sqlite
+from pipeline.retrieval import TFRPipeline
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

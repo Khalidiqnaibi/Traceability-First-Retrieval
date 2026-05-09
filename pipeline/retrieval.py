@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer, CrossEncoder
 from datetime import datetime
-from utils.llm_client import LLMClient
+from utils.llm.llm_client import LLMClient
 import json
 
 @dataclass
