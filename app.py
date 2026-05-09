@@ -2,12 +2,15 @@ from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 import os
 
-from retrieval import TFRPipeline, ClinicalDocument
+from src.retrieval import TFRPipeline, ClinicalDocument
+from utils.ingestion_pipeline import TFRDataPreprocessor
 
 load_dotenv()
 
-# Initialize the retrieval pipeline
-pipeline = TFRPipeline()
+API_KEY = os.environ.get("OPENROUTER_API_KEY")
+
+processor = TFRDataPreprocessor()
+pipeline = TFRPipeline(api_key=API_KEY)
 
 app = Flask(__name__)
 

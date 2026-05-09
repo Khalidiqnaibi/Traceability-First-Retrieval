@@ -4,6 +4,7 @@ import re
 import logging
 from typing import List, Dict, Optional
 from dataclasses import dataclass, asdict
+import json
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
@@ -19,35 +20,10 @@ class ClinicalChunk:
     domain: str
 
 class TFRDataPreprocessor:
-    def __init__(self):
+    def __init__(self,domain_data_path:str ="./data/domain.json"):
         # 1. MeSH to Domain Mapping 
-        self.clinical_branches = {
-            "C01": "Infections", "C02": "Infections", "C03": "Infections",
-            "C04": "Neoplasms (Oncology)",
-            "C05": "Musculoskeletal Diseases",
-            "C06": "Digestive System Diseases (Gastroenterology)",
-            "C07": "Stomatognathic Diseases",
-            "C08": "Respiratory Tract Diseases",
-            "C09": "Otorhinolaryngologic Diseases",
-            "C10": "Nervous System Diseases (Neurology)",
-            "C11": "Eye Diseases (Ophthalmology)",
-            "C12": "Urogenital Diseases",
-            "C13": "Female Urogenital Diseases and Pregnancy (OBGYN)",
-            "C14": "Cardiovascular Diseases",
-            "C15": "Hemic and Lymphatic Diseases (Hematology)",
-            "C16": "Congenital, Hereditary, and Neonatal Diseases (Pediatrics)",
-            "C17": "Skin and Connective Tissue Diseases (Dermatology)",
-            "C18": "Nutritional and Metabolic Diseases",
-            "C19": "Endocrine System Diseases",
-            "C20": "Immune System Diseases",
-            "C21": "Disorders of Environmental Origin",
-            "C22": "Animal Diseases (Veterinary)",
-            "C23": "Pathological Conditions, Signs and Symptoms",
-            "C24": "Occupational Diseases",
-            "C25": "Chemically-Induced Disorders (Toxicology)",
-            "C26": "Wounds and Injuries",
-            "F03": "Mental Disorders (Psychiatry)"
-        }
+        with open(domain_data_path,"r") as f:
+            self.clinical_branches = json.load(f)
 
         # Journal Tier Database (Mock .. will link to SCImago/SJR csv)
         self.tier_db = {

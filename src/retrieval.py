@@ -6,7 +6,8 @@ from dataclasses import dataclass
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer, CrossEncoder
 from datetime import datetime
-from llm_client import LLMClient
+from utils.llm_client import LLMClient
+import json
 
 @dataclass
 class ClinicalDocument:
@@ -20,13 +21,25 @@ class ClinicalDocument:
 
 
 class TFRPipeline:
-    def __init__(self, corpus: List[ClinicalDocument]):
+    def __init__(
+            self, 
+            corpus: List[ClinicalDocument],
+            api_key:str,
+            model:str="google/gemini-2.0-flash-lite-pre",
+            domain_data_path:str="./data/domain.json"
+        ):
         self.corpus = corpus
         self.k_rrf = 60
         self.current_year = datetime.now().year
         
+        self.LLM = LLMClient(api_key=api_key,model=model)
+        
         self.embedder = SentenceTransformer('all-MiniLM-L6-v2') 
         self.cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
+
+        
+        with open(domain_data_path,"r") as f:
+            self.domains = json.load(f)
         
         self._build_bm25_index()
         self._build_faiss_index()
@@ -52,7 +65,17 @@ class TFRPipeline:
         """
         Todo
         """
-        return {}
+        system_prompt = (
+            "You are a query-to-structured-filter translator. "
+            f"Available domains: {list(self.domains.keys())}. "
+            "Output ONLY JSON. Example: {'domain': 'cardiology'}. Output {} if no domain matches."
+        )
+        try:
+            response = self.LLM.chat(system_prompt, f"User Query: {query}", json_mode=True)
+            filters = json.loads(response)
+            return filters if filters else None
+        except:
+            return None
 
     # Hybrid Retrieval
     def hybrid_retrieval(self, query: str, filters: Dict[str, Any], top_n: int = 10):
