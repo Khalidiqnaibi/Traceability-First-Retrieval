@@ -63,7 +63,7 @@ class TFRPipeline:
     # Self-Query
     def self_query(self, raw_query: str) -> Dict[str, Any]:
         """
-        Todo
+        Translates a raw query into a structured filter using an LLm pass
         """
         system_prompt = (
             "You are a query-to-structured-filter translator. "
@@ -71,7 +71,7 @@ class TFRPipeline:
             "Output ONLY JSON. Example: {'domain': 'cardiology'}. Output {} if no domain matches."
         )
         try:
-            response = self.LLM.chat(system_prompt, f"User Query: {query}", json_mode=True)
+            response = self.LLM.chat(system_prompt, f"User Query: {raw_query}", json_mode=True)
             filters = json.loads(response)
             return filters if filters else None
         except:

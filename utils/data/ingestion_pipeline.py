@@ -1,10 +1,7 @@
 import xml.etree.ElementTree as ET
-import sqlite3,json,logging , os, csv
+import sqlite3,json, os, csv
 from typing import List ,Dict
 from dataclasses import dataclass, asdict
-
-logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
-logger = logging.getLogger(__name__)
 
 @dataclass
 class ClinicalChunk:
@@ -23,7 +20,7 @@ class TFRDataPreprocessor:
             with open(domain_data_path, "r") as f:
                 self.clinical_branches = json.load(f)
         except FileNotFoundError:
-            logger.warning(f"Domain map not found at {domain_data_path}. Defaulting to empty map.")
+            print(f"Domain map not found at {domain_data_path}. Defaulting to empty map.")
             self.clinical_branches = {}
 
         # Journal Tier Database
@@ -35,10 +32,10 @@ class TFRDataPreprocessor:
         """
         tier_map = {}
         if not os.path.exists(csv_path):
-            logger.warning(f"SJR CSV not found at {csv_path}. All journals will default to 'Unranked'.")
+            print(f"SJR CSV not found at {csv_path}. All journals will default to 'Unranked'.")
             return tier_map
 
-        logger.info("Loading SCImago Journal Rank database...")
+        print("Loading SCImago Journal Rank database...")
         try:
             with open(csv_path, mode='r', encoding='utf-8') as file:
                 # SCImago uses semicolons as delimiters
@@ -56,9 +53,9 @@ class TFRDataPreprocessor:
                     if title:
                         tier_map[title] = quartile
                         
-            logger.info(f"Successfully loaded {len(tier_map)} journal rankings.")
+            print(f"Successfully loaded {len(tier_map)} journal rankings.")
         except Exception as e:
-            logger.error(f"Failed to parse SJR database: {e}")
+            print(f"Failed to parse SJR database: {e}")
 
         return tier_map
 
@@ -97,7 +94,7 @@ class TFRDataPreprocessor:
         """
         Parses PubMed XML and extracts structured TFR objects
         """
-        logger.info(f"Starting ingestion of {xml_file_path}...")
+        print(f"Starting ingestion of {xml_file_path}...")
         tree = ET.parse(xml_file_path)
         root = tree.getroot()
         
@@ -143,15 +140,15 @@ class TFRDataPreprocessor:
                 processed_chunks.append(chunk)
                 
             except Exception as e:
-                logger.warning(f"Skipping article due to parsing error: {e}")
+                print(f"Skipping article due to parsing error: {e}")
                 continue
 
-        logger.info(f"Successfully processed {len(processed_chunks)} chunks.")
+        print(f"Successfully processed {len(processed_chunks)} chunks.")
         return processed_chunks
 
     def export_to_sqlite(self, chunks: List[ClinicalChunk], db_path: str):
         """Saves processed data directly into a SQLite database for the TFR Pipeline."""
-        logger.info(f"Exporting {len(chunks)} chunks to SQLite database at {db_path}...")
+        print(f"Exporting {len(chunks)} chunks to SQLite database at {db_path}...")
         
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
@@ -183,7 +180,7 @@ class TFRDataPreprocessor:
         
         conn.commit()
         conn.close()
-        logger.info(f"Dataset successfully exported to {db_path}")
+        print(f"Dataset successfully exported to {db_path}")
 
 if __name__ == "__main__":
     processor = TFRDataPreprocessor()
@@ -194,4 +191,4 @@ if __name__ == "__main__":
         # Pointing to a .db file instead of a .json file
         processor.export_to_sqlite(chunks, "processed_clinical_dataset.db")
     except FileNotFoundError:
-        logger.error("No XML file found. Please provide a PubMed XML export.")
+        print("No XML file found. Please provide a PubMed XML export.")

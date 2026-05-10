@@ -1,9 +1,5 @@
 from pipeline.retrieval import ClinicalDocument
-import sqlite3,logging
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
+import sqlite3
 
 def load_from_sqlite(db_path: str):
     """Bridge function to convert SQLite rows back into Pipeline objects."""
@@ -28,7 +24,7 @@ def load_from_sqlite(db_path: str):
     conn.close()
 
     if not rows:
-        logger.error("Database is empty. No documents loaded.")
+        print("Database is empty. No documents loaded.")
         return []
 
     return [

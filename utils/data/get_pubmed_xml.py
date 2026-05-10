@@ -1,8 +1,4 @@
 from Bio import Entrez
-import os
-import logging
-
-logger = logging.getLogger(__name__)
 
 def fetch_pubmed_xml_to_file(
         query: str, 
@@ -22,7 +18,7 @@ def fetch_pubmed_xml_to_file(
         Entrez.api_key = api_key
 
     try:
-        logger.info(f"Searching for query: {query}")
+        print(f"Searching for query: {query}")
         search_handle = Entrez.esearch(db="pubmed", term=query, retmax=max_results, usehistory="y")
         search_results = Entrez.read(search_handle)
         search_handle.close()
@@ -32,11 +28,11 @@ def fetch_pubmed_xml_to_file(
         query_key = search_results["QueryKey"]
 
         if count == 0:
-            logger.warning("No results found for this query")
+            print("No results found for this query")
             return None
 
         # efficient for large batches
-        logger.info(f"Fetching {min(count, max_results)} articles...")
+        print(f"Fetching {min(count, max_results)} articles...")
         fetch_handle = Entrez.efetch(
             db="pubmed",
             retmax=max_results,
@@ -52,9 +48,9 @@ def fetch_pubmed_xml_to_file(
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(data)
             
-        logger.info(f"Successfully saved XML to {output_path}")
+        print(f"Successfully saved XML to {output_path}")
         return output_path
 
     except Exception as e:
-        logger.error(f"Failed to fetch PubMed data: {e}")
+        print(f"Failed to fetch PubMed data: {e}")
         return None
