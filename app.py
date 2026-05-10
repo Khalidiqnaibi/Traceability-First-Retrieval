@@ -6,6 +6,7 @@ import logging
 from utils.data.ingestion_pipeline import TFRDataPreprocessor
 from utils.api.make_response import make_response
 from utils.pipeline.init_pipline import initialize_pipeline
+from utils.data.get_pubmed_xml import fetch_pubmed_xml_to_file
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -26,6 +27,33 @@ initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
 
 app = Flask(__name__)
 
+
+@app.route("/seed", methods=["POST"])
+def seed_database():
+    """Builds a corpus for a specific clinical topic"""
+    data = request.get_json()
+    medical_query = data.get("query")
+    
+    # download XML from PubMed
+    xml_path = fetch_pubmed_xml_to_file(
+        query=medical_query,
+        max_results=100,
+        email=os.getenv("NCBI_EMAIL"),
+        api_key=os.getenv("NCBI_API_KEY")
+    )
+    
+    if xml_path:
+        # ingestion
+        chunks = processor.parse_pubmed_xml(xml_path)
+        processor.export_to_sqlite(chunks, DOC_DB_PATH)
+        
+        # Refresh Pipeline
+        initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+        
+        return make_response({"count": len(chunks)}, message="Database seeded successfully")
+    
+    return make_response([], message="Seeding failed", status="error"),500
+
 @app.route("/ingest", methods=["POST"])
 def ingest_data():
     """Endpoint to process new PubMed XMLs into the SQLite DB."""
@@ -39,7 +67,7 @@ def ingest_data():
         result_chunks = processor.parse_pubmed_xml(doc_path)
         processor.export_to_sqlite(result_chunks, DOC_DB_PATH)
         
-        # Re-initialize pipeline
+        # Refresh Pipeline
         initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
         
         return make_response(
