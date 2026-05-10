@@ -6,6 +6,7 @@ from utils.data.ingestion_pipeline import TFRDataPreprocessor
 from utils.api.make_response import make_response
 from utils.pipeline.init_pipline import initialize_pipeline
 from utils.data.get_pubmed_xml import fetch_pubmed_xml_to_file
+from utils.api.audit import AuditTrail
 
 load_dotenv()
 
@@ -14,6 +15,7 @@ DOMAIN_DATA_PATH = os.environ.get("DOMAIN_DATA_PATH", "./data/domain.json")
 DOC_DB_PATH = os.environ.get("DOC_DB_PATH", "document.db")
 SJR_CSV_PATH = os.environ.get("SJR_CSV_PATH", "./data/scimagojr_2023.csv")
 
+audit = AuditTrail("data/audit_log.csv")    
 
 processor = TFRDataPreprocessor(DOMAIN_DATA_PATH, SJR_CSV_PATH)
 
@@ -57,8 +59,10 @@ def seed_database():
         global pipeline
         pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
         
+        audit.log_event(action="seed", query=medical_query, results_count=len(chunks))
         return make_response({"count": len(chunks)}, message="Database seeded successfully")
     
+    audit.log_event(action="seed", query=medical_query, status="error")
     return make_response( message="Seeding failed", status="error"),500
 
 @app.route("/ingest", methods=["POST"])
@@ -86,12 +90,14 @@ def ingest_data():
         global pipeline
         pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
         
+        audit.log_event(action="ingest", query=doc_path, results_count=len(result_chunks))
         return make_response(
             {"count": len(result_chunks)}, 
             message=f"Successfully ingested and indexed: {doc_path}"
         )
     except Exception as e:
         print(f"Ingestion failed: {str(e)}")
+        audit.log_event(action="ingest", query=doc_path, status="error")
         return make_response( message=f"Ingestion failed: {str(e)}", status="error"),500
 
 @app.route("/query", methods=["POST"])
@@ -116,9 +122,11 @@ def run_query():
 
     try:
         results = pipeline.retrieve(query=query_text)
+        audit.log_event(action="query", query=query_text, results_count=len(results))
         return make_response(results, message="Retrieved with success")
     except Exception as e:
         print(f"Query failed: {e}")
+        audit.log_event(action="query", query=query_text, status="error")
         return make_response( message=f"Retrieval error: {str(e)}", status="error"),500
 
 @app.route("/health", methods=["GET"])

@@ -25,7 +25,7 @@ class TFRPipeline:
             self, 
             corpus: List[ClinicalDocument],
             api_key:str,
-            model:str="google/gemini-2.0-flash-lite-pre",
+            model:str="inclusionai/ring-2.6-1t:free",
             domain_data_path:str="./data/domain.json"
         ):
         self.corpus = corpus

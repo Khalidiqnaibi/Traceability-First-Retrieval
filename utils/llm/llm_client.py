@@ -12,7 +12,7 @@ class LLMClient:
     
     OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
-    def __init__(self, api_key: str, model: str = "google/gemini-2.0-flash-lite-preview-02-05:free", timeout: int = 30):
+    def __init__(self, api_key: str, model: str = "inclusionai/ring-2.6-1t:free", timeout: int = 30):
         """
         Args:
             api_key: OpenRouter API key.
@@ -25,7 +25,9 @@ class LLMClient:
         
         self.headers = {
             "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "HTTP-Referer": "http://127.0.0.1:8000",
+            "X-Title": "Traceability First Retrieval"
         }
         
         self.embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -36,6 +38,9 @@ class LLMClient:
         Includes an automatic fallback mechanism if the requested model 
         does not support native JSON mode formatting.
         """
+        if json_mode and "json" not in system_prompt.lower():
+            system_prompt += "\nReturn the response as a JSON object."
+
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
@@ -47,7 +52,6 @@ class LLMClient:
         }
 
         if json_mode:
-            # Attempt to use the native JSON object response format
             payload["response_format"] = {"type": "json_object"}
 
         try:
