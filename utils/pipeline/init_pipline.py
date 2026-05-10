@@ -2,7 +2,7 @@ from utils.data.load_docs import load_from_sqlite
 from pipeline.retrieval import TFRPipeline
 
 
-def initialize_pipeline(db_path:str,api_key:str,domain_data_path:str):
+def initialize_pipeline(db_path:str,api_key:str,domain_data_path:str) -> TFRPipeline:
     """Helper to (re)load the corpus and (re)build search indices."""
     global pipeline
     print("Initializing/Reloading TFR Pipeline...")
@@ -18,3 +18,5 @@ def initialize_pipeline(db_path:str,api_key:str,domain_data_path:str):
             domain_data_path=domain_data_path
         )
         print(f"Pipeline ready with {len(corpus)} documents.")
+
+    return pipeline

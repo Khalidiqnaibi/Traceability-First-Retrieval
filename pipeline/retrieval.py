@@ -67,15 +67,22 @@ class TFRPipeline:
         """
         system_prompt = (
             "You are a query-to-structured-filter translator. "
-            f"Available domains: {list(self.domains.keys())}. "
+            f"Available domains: {list(self.domains.values())}. "
             "Output ONLY JSON. Example: {'domain': 'cardiology'}. Output {} if no domain matches."
         )
+        response = self.LLM.chat(system_prompt, f"User Query: {raw_query}", json_mode=True)
         try:
-            response = self.LLM.chat(system_prompt, f"User Query: {raw_query}", json_mode=True)
             filters = json.loads(response)
-            return filters if filters else None
-        except:
-            return None
+            
+            if "domain" in filters and isinstance(filters["domain"], list):
+                if "general" not in filters["domain"]:
+                    filters["domain"].append("general")
+            else:
+                filters["domain"] = ["general"]
+                
+            return filters
+        except (json.JSONDecodeError, TypeError):
+            return {"domain": ["general"]}
 
     # Hybrid Retrieval
     def hybrid_retrieval(self, query: str, filters: Dict[str, Any], top_n: int = 10):
@@ -96,17 +103,32 @@ class TFRPipeline:
     # Trust-Weighted Ranking (TWR)
     def calculate_trust_score(self, doc: ClinicalDocument) -> float:
         """
-        Trust function based on OCEBM and recency.
+        Enhanced Trust function incorporating Journal Tier, Evidence Level, and Recency.
         """
-        # OCEBM Hierarchy (1 is best, 5 is worst)
+        # Evidence Level (OCEBM): 1 is best (RCT/Meta-analysis), 5 is lowest (Expert Opinion)
         ocebm_weights = {1: 1.0, 2: 0.8, 3: 0.6, 4: 0.4, 5: 0.2}
-        base_trust = ocebm_weights.get(doc.evidence_level, 0.1)
+        evidence_score = ocebm_weights.get(doc.evidence_level, 0.1)
         
-        # Recency Decay: Lose a small percentage of trust per year aged
-        age = max(0, self.current_year - doc.publication_year)
+        # Journal Authority
+        tier_weights = {
+            "Q1": 1.0,
+            "Q2": 0.85,
+            "Q3": 0.70,
+            "Q4": 0.55,
+            "Unranked": 0.40
+        }
+        journal_multiplier = tier_weights.get(doc.journal_tier, 0.40)
+        
+        # Recency Decay
+        if doc.publication_year <= 0:
+            age = 10 
+        else:
+            age = max(0, self.current_year - doc.publication_year)
+        
         recency_multiplier = np.exp(-0.05 * age) 
         
-        return base_trust * recency_multiplier
+        # Final TWR Calculation
+        return evidence_score * journal_multiplier * recency_multiplier
 
     def trust_weighted_rrf(self, bm25_ranking, faiss_ranking) -> List[tuple]:
         twr_scores = {}

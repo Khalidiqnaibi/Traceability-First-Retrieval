@@ -20,7 +20,7 @@ processor = TFRDataPreprocessor(DOMAIN_DATA_PATH, SJR_CSV_PATH)
 # for hot-reloading
 pipeline = None
 
-initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
 
 app = Flask(__name__)
 
@@ -54,7 +54,8 @@ def seed_database():
         processor.export_to_sqlite(chunks, DOC_DB_PATH)
         
         # Refresh Pipeline
-        initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+        global pipeline
+        pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
         
         return make_response({"count": len(chunks)}, message="Database seeded successfully")
     
@@ -82,7 +83,8 @@ def ingest_data():
         processor.export_to_sqlite(result_chunks, DOC_DB_PATH)
         
         # Refresh Pipeline
-        initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+        global pipeline
+        pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
         
         return make_response(
             {"count": len(result_chunks)}, 

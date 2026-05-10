@@ -45,7 +45,7 @@ def fetch_pubmed_xml_to_file(
         data = fetch_handle.read()
         fetch_handle.close()
 
-        with open(output_path, "w", encoding="utf-8") as f:
+        with open(output_path, "wb") as f:
             f.write(data)
             
         print(f"Successfully saved XML to {output_path}")

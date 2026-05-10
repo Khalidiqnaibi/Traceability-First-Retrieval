@@ -83,11 +83,17 @@ class TFRDataPreprocessor:
         
         return 5 # Default to Expert Opinion/General text
 
-    def _resolve_domain(self, mesh_terms: List[str]) -> str:
-        """Maps MeSH headings to TFR Domains."""
-        for term in mesh_terms:
-            if term in self.clinical_branches:
-                return self.clinical_branches[term]
+    def _resolve_domain(self, mesh_terms: List[str], title_text: str = "") -> str:
+        """
+        Maps MeSH headings and Titles to TFR Domains using substring matching.
+        """
+        searchable_text = " ".join(mesh_terms) + " " + title_text
+        searchable_text = searchable_text.lower()
+        
+        for keyword, domain_label in self.clinical_branches.items():
+            if keyword in searchable_text:
+                return domain_label
+                
         return "general"
 
     def parse_pubmed_xml(self, xml_file_path: str) -> List[ClinicalChunk]:
@@ -108,8 +114,16 @@ class TFRDataPreprocessor:
                 
                 title = article_data.findtext("ArticleTitle")
                 journal_name = article_data.find("Journal/Title").text
-                year_node = article_data.find(".//PubRefDate/Year")
-                year = int(year_node.text) if year_node is not None else -1
+
+                pub_date_node = article_data.find(".//JournalIssue/PubDate")
+                if pub_date_node is not None:
+                    year = pub_date_node.findtext("Year")
+                    if not year:
+                        medline_date = pub_date_node.findtext("MedlineDate")
+                        if medline_date:
+                            year = medline_date[:4]
+                else:
+                    year = -1
                 
                 # abstract chunks
                 abstract_nodes = article_data.findall(".//AbstractText")
@@ -120,8 +134,16 @@ class TFRDataPreprocessor:
                 evidence_level = self._classify_evidence_level(pub_types)
                 
                 # domain detection (MeSH)
-                mesh_headings = [mh.findtext("DescriptorName") for mh in medline.findall(".//MeshHeading")]
-                domain = self._resolve_domain(mesh_headings)
+                mesh_headings = []
+                mesh_results = medline.findall(".//MeshHeading/DescriptorName")
+                for mesh in mesh_results:
+                    if mesh.text:
+                        mesh_headings.append(mesh.text)
+
+                title_node = article_data.find("ArticleTitle")
+                title_text = title_node.text if title_node is not None else ""
+
+                domain = self._resolve_domain(mesh_headings, title_text)
                 
                 # journal tier Lookup
                 safe_journal_name = journal_name.strip().lower() if journal_name else ""
