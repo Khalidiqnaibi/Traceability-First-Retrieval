@@ -3,9 +3,11 @@ from dotenv import load_dotenv
 import os 
 import time
 
+from utils.pipeline.init_standard_pipeline import initialize_standard_pipeline
+from utils.pipeline.init_pipline import initialize_pipeline
+
 from utils.data.ingestion_pipeline import TFRDataPreprocessor
 from utils.api.make_response import make_response
-from utils.pipeline.init_pipline import initialize_pipeline
 from utils.data.get_pubmed_xml import fetch_pubmed_xml_to_file
 from utils.api.audit import AuditTrail
 
@@ -21,9 +23,12 @@ audit = AuditTrail("logs/audit_log.csv")
 processor = TFRDataPreprocessor(DOMAIN_DATA_PATH, SJR_CSV_PATH)
 
 # for hot-reloading
-pipeline = None
+tfr_pipeline = None
+standard_pipeline =None
 
-pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+
+tfr_pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
 
 app = Flask(__name__)
 
@@ -58,15 +63,16 @@ def seed_database():
         processor.export_to_sqlite(chunks, DOC_DB_PATH)
         
         # Refresh Pipeline
-        global pipeline
-        pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
-        
+        global tfr_pipeline, standard_pipeline
+        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+
         end_time = time.time()
         latency = end_time - start_time
-        audit.log_event(action="seed", query=medical_query, results_count=len(chunks), latency=latency)
+        audit.log_event(action="seed", query=medical_query, results_count=len(chunks), latency=latency, pipeline="N/A")
         return make_response({"count": len(chunks)}, message="Database seeded successfully")
     
-    audit.log_event(action="seed", query=medical_query, status="error")
+    audit.log_event(action="seed", query=medical_query, status="error", pipeline="N/A")
     return make_response( message="Seeding failed", status="error"),500
 
 @app.route("/ingest", methods=["POST"])
@@ -92,18 +98,19 @@ def ingest_data():
         processor.export_to_sqlite(result_chunks, DOC_DB_PATH)
         
         # Refresh Pipeline
-        global pipeline
-        pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+        global tfr_pipeline, standard_pipeline
+        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
         end_time = time.time()
         latency = end_time - start_time
-        audit.log_event(action="ingest", query=doc_path, results_count=len(result_chunks), latency=latency)
+        audit.log_event(action="ingest", query=doc_path, results_count=len(result_chunks), latency=latency, pipeline="N/A")
         return make_response(
             {"count": len(result_chunks)}, 
             message=f"Successfully ingested and indexed: {doc_path}"
         )
     except Exception as e:
         print(f"Ingestion failed: {str(e)}")
-        audit.log_event(action="ingest", query=doc_path, status="error")
+        audit.log_event(action="ingest", query=doc_path, status="error", pipeline="N/A")
         return make_response( message=f"Ingestion failed: {str(e)}", status="error"),500
 
 @app.route("/query", methods=["POST"])
@@ -117,7 +124,7 @@ def run_query():
     returns:
     - list of retrieved documents with metadata   
     """
-    if pipeline is None:
+    if tfr_pipeline is None:
         return make_response( message="Pipeline not initialized. Please ingest data first.", status="error"),400
 
     data = request.get_json()
@@ -128,14 +135,51 @@ def run_query():
 
     try:
         start_time = time.time()
-        results = pipeline.retrieve(query=query_text)
+        results = tfr_pipeline.retrieve(query=query_text)
         end_time = time.time()
         latency = end_time - start_time
-        audit.log_event(action="query", query=query_text, results_count=len(results), top_pmid=results[0]["provenance"].get("chunk_id","N/A") if results else "N/A", latency=latency)
+        audit.log_event(action="query", query=query_text, results_count=len(results), top_pmid=results[0]["provenance"].get("chunk_id","N/A") if results else "N/A", latency=latency, pipeline="TFR")
         return make_response(results, message="Retrieved with success")
     except Exception as e:
         print(f"Query failed: {e}")
-        audit.log_event(action="query", query=query_text, status="error")
+        audit.log_event(action="query", query=query_text, status="error", pipeline="TFR")
+        return make_response( message=f"Retrieval error: {str(e)}", status="error"),500
+
+@app.route("/reload", methods=["POST"])
+def reload_pipelines():
+    """Endpoint to manually trigger pipelines reload (e.g. after new data ingestion)"""
+    global tfr_pipeline, standard_pipeline
+    try:
+        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+        return make_response(message="Pipelines reloaded successfully")
+    except Exception as e:
+        print(f"Pipeline reload failed: {e}")
+        return make_response( message=f"Pipelines reload error: {str(e)}", status="error"),500
+    
+
+@app.route("/standard/query", methods=["POST"])
+def standard_query():
+    """Endpoint for standard query processing"""
+    if standard_pipeline is None:
+        return make_response( message="Standard Pipeline not initialized. Please ingest data first.", status="error"),400
+
+    data = request.get_json()
+    query_text = data.get("query")
+    
+    if not query_text:
+        return make_response(message="Query text is required", status="error"),400
+
+    try:
+        start_time = time.time()
+        results = standard_pipeline.retrieve(query=query_text)
+        end_time = time.time()
+        latency = end_time - start_time
+        audit.log_event(action="query", query=query_text, results_count=len(results), top_pmid=results[0]["provenance"].get("chunk_id","N/A") if results else "N/A", latency=latency, pipeline="Standard")
+        return make_response(results, message="Retrieved with success")
+    except Exception as e:
+        print(f"Standard query failed: {e}")
+        audit.log_event(action="query", query=query_text, status="error", pipeline="Standard")
         return make_response( message=f"Retrieval error: {str(e)}", status="error"),500
 
 @app.route("/health", methods=["GET"])

@@ -5,7 +5,7 @@ from datetime import datetime
 class AuditTrail:
     def __init__(self, log_path: str = "audit_log.csv"):
         self.log_path = log_path
-        self.headers = ["timestamp", "action", "query", "results_count", "top_result_pmid", "latency", "status"]
+        self.headers = ["timestamp", "action", "query", "results_count", "top_result_pmid", "latency" ,"pipeline", "status"]
         self._ensure_log_exists()
 
     def _ensure_log_exists(self):
@@ -14,7 +14,7 @@ class AuditTrail:
                 writer = csv.DictWriter(f, fieldnames=self.headers)
                 writer.writeheader()
 
-    def log_event(self, action: str, query: str = "", results_count: int = 0, top_pmid: str = "N/A", latency: float = 0.0, status: str = "success"):
+    def log_event(self, action: str, query: str = "", results_count: int = 0, top_pmid: str = "N/A", latency: float = 0.0, pipeline: str = "standard", status: str = "success"):
         with open(self.log_path, mode='a', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=self.headers)
             writer.writerow({
@@ -24,5 +24,6 @@ class AuditTrail:
                 "results_count": results_count,
                 "top_result_pmid": top_pmid,
                 "latency": latency,
+                "pipeline": pipeline,
                 "status": status,
             })

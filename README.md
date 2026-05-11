@@ -9,7 +9,7 @@
 The **Traceability-First Retrieval (TFR)** framework is a 5-stage pipeline designed for high-precision, resource-constrained clinical environments.
 
 ### Stage 1: Self-Querying (Medical Triage)
-*   An LLM extracts structured metadata filters (e.g., `{"domain": "cardiology", "min_evidence_level": 2}`) from raw natural language queries.
+*   An LLM extracts structured metadata filters (e.g., `{"domain": "cardiology"}`) from raw natural language queries.
 *   This step constrains the downstream search space, reducing noise and improving retrieval efficiency.
 
 ### Stage 2: Hybrid Retrieval
@@ -19,14 +19,10 @@ The **Traceability-First Retrieval (TFR)** framework is a 5-stage pipeline desig
 
 ### Stage 3: Trust-Weighted Ranking (TWR)
 *   This stage introduces a novel fusion mechanism: **Trust-Weighted Ranking (TWR)**.
-*   Unlike standard Reciprocal Rank Fusion (RRF), TWR uses a trust-scaled variant: $$\frac{trust(source)}{k + rank}$$.
+*   Unlike standard Reciprocal Rank Fusion (RRF), TWR uses a trust-scaled variant: $$\sum{\frac{trust(source)}{k + rank}}$$
 *   Fixed weights are mapped to the **OCEBM hierarchy**, accounting for journal tier, evidence level (e.g., RCT > Case Study), and recency decay.
 
-### Stage 4: Contextual Compression & Reranking
-*   A local **Cross-Encoder reranker** (`ms-marco-MiniLM`) scores the top-K fused chunks in milliseconds.
-*   **TurboQuant** compresses the KV cache, reducing inference memory by up to 6x and allowing the pipeline to run on consumer-grade hardware.
-
-### Stage 5: Provenance Enrichment
+### Stage 4: Provenance Enrichment
 *   Final chunks are delivered as structured objects containing first-class provenance metadata: `{source, journal_tier, evidence_level, publication_year, domain, chunk_id}`.
 
 ---

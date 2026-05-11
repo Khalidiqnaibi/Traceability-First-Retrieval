@@ -2,7 +2,6 @@ import re
 import numpy as np
 import faiss
 from typing import List, Dict, Any
-from dataclasses import dataclass
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer, CrossEncoder
 from datetime import datetime
@@ -12,7 +11,7 @@ import json
 from infra.clinical_document import ClinicalDocument
 
 
-class TFRPipeline:
+class Pipeline:
     def __init__(
             self, 
             corpus: List[ClinicalDocument],
@@ -120,54 +119,15 @@ class TFRPipeline:
 
         return bm25_ranking.tolist(), faiss_indices[0].tolist()
 
-    # Trust-Weighted Ranking (TWR)
-    def calculate_trust_score(self, doc: ClinicalDocument) -> float:
-        """
-        Enhanced Trust function incorporating Journal Tier, Evidence Level, and Recency.
-        """
-        # Evidence Level (OCEBM): 1 is best (RCT/Meta-analysis), 5 is lowest (Expert Opinion)
-        ocebm_weights = {1: 1.0, 2: 0.8, 3: 0.6, 4: 0.4, 5: 0.2}
-        evidence_score = ocebm_weights.get(doc.evidence_level, 0.1)
-        
-        # Journal Authority
-        tier_weights = {
-            "Q1": 1.0,
-            "Q2": 0.85,
-            "Q3": 0.70,
-            "Q4": 0.55,
-            "Unranked": 0.40
-        }
-        journal_multiplier = tier_weights.get(doc.journal_tier, 0.40)
-        
-        # Recency Decay
-        if doc.publication_year <= 0:
-            age = 10 
-        else:
-            age = max(0, self.current_year - doc.publication_year)
-        
-        recency_multiplier = np.exp(-0.05 * age) 
-        
-        # Final TWR Calculation
-        return evidence_score * journal_multiplier * recency_multiplier
-
-    def trust_weighted_rrf(self, bm25_ranking, faiss_ranking) -> List[tuple]:
-        twr_scores = {}
+    def rrf(self, bm25_ranking, faiss_ranking) -> List[int]:
+        scores = {}
         
         for rank_lists in [bm25_ranking, faiss_ranking]:
             for rank, doc_idx in enumerate(rank_lists):
-                doc = self.corpus[doc_idx]
+                scores[doc_idx] = scores.get(doc_idx, 0.0) + 1 / (self.k_rrf + rank + 1)
                 
-                # Calculate TWR Math: trust(source) / (k + rank)
-                trust_score = self.calculate_trust_score(doc)
-                score_contribution = trust_score / (self.k_rrf + rank + 1)
-                
-                if doc_idx in twr_scores:
-                    twr_scores[doc_idx] += score_contribution
-                else:
-                    twr_scores[doc_idx] = score_contribution
-                    
-        # Sort by the new TWR score
-        sorted_indices = sorted(twr_scores.keys(), key=lambda x: twr_scores[x], reverse=True)
+        sorted_indices = sorted(scores.keys(), key=lambda idx: scores[idx], reverse=True)
+        
         return sorted_indices
 
     def provenance_enrichment(self, final_indices: List[int]) -> List[Dict[str, Any]]:
@@ -175,7 +135,7 @@ class TFRPipeline:
         for rank, idx in enumerate(final_indices):
             doc = self.corpus[idx]
             results.append({
-                "tfr_rank": rank + 1,
+                "rank": rank + 1,
                 "text": doc.text,
                 "provenance": {
                     "chunk_id": doc.chunk_id,
@@ -195,8 +155,8 @@ class TFRPipeline:
         # 2. Hybrid Retrieval
         bm25_ranks, faiss_ranks = self.hybrid_retrieval(query, filters, top_n=10)
         
-        # 3. TWR Fusion
-        fused_indices = self.trust_weighted_rrf(bm25_ranks, faiss_ranks)
+        # 3. RRF Fusion
+        fused_indices = self.rrf(bm25_ranks, faiss_ranks)
         
         # 4. Enrichment
         return self.provenance_enrichment(fused_indices[:self.k_doc])
@@ -227,17 +187,17 @@ if __name__ == "__main__":
     ]
 
     # Initialize Architecture
-    tfr = TFRPipeline(dummy_corpus)
+    p = Pipeline(dummy_corpus)
     
     # Run a Query
     query = "What is the cardiovascular benefit of Aspirin?"
     print(f"Query: '{query}'")
     
-    results = tfr.retrieve(query)
+    results = p.retrieve(query)
     
     # Output the results
     print("Final Output")
     for res in results:
-        print(f"Rank {res['tfr_rank']}:")
+        print(f"Rank {res['rank']}:")
         print(f"  Text: {res['text']}")
         print(f"  Provenance: {res['provenance']}\n")
