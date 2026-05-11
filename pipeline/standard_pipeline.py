@@ -3,7 +3,7 @@ import numpy as np
 import faiss
 from typing import List, Dict, Any
 from rank_bm25 import BM25Okapi
-from sentence_transformers import SentenceTransformer, CrossEncoder
+from sentence_transformers import SentenceTransformer
 from datetime import datetime
 from utils.llm.llm_client import LLMClient
 import json
@@ -28,7 +28,6 @@ class Pipeline:
         self.LLM = LLMClient(api_key=api_key,model=model)
         
         self.embedder = SentenceTransformer('all-MiniLM-L6-v2') 
-        self.cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
 
         
         with open(domain_data_path,"r") as f:
@@ -84,7 +83,7 @@ class Pipeline:
     def hybrid_retrieval(self, query: str, filters: Dict[str, Any], top_n: int = 10):
         valid_domains = filters.get("domain", ["general"])
         
-        if ["general"] in valid_domains:
+        if ["general"] == valid_domains:
             allowed_ids = list(range(len(self.corpus)))
         else:
             allowed_ids = [i for i, doc in enumerate(self.corpus) if doc.domain in valid_domains]

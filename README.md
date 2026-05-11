@@ -6,7 +6,7 @@
 
 ## The TFR Architecture
 
-The **Traceability-First Retrieval (TFR)** framework is a 5-stage pipeline designed for high-precision, resource-constrained clinical environments.
+The **Traceability-First Retrieval (TFR)** framework is a 4-stage pipeline designed for high-precision clinical environments.
 
 ### Stage 1: Self-Querying (Medical Triage)
 *   An LLM extracts structured metadata filters (e.g., `{"domain": "cardiology"}`) from raw natural language queries.
@@ -46,8 +46,8 @@ The framework includes a built-in benchmark harness to measure the **Cost-Qualit
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/Traceability-First-Retrieval.git
-cd Traceability First Retrieval
+git clone https://github.com/Khalidiqnaibi/Traceability-First-Retrieval.git
+cd Traceability-First-Retrieval
 
 pip install -r "requirements.txt"
 python app.py
@@ -57,6 +57,5 @@ python app.py
 ---
 
 ## Research & Documentation
-This project is part of a **100-day technical sprint** focused on radical authenticity and the scientific method.
 *   **Lead Engineer:** khalid Iqnaibi
 *   **Methodology:** Hypothesis-driven ablation.
