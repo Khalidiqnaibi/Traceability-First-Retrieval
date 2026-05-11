@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
-import os
+import os 
+import time
 
 from utils.data.ingestion_pipeline import TFRDataPreprocessor
 from utils.api.make_response import make_response
@@ -40,6 +41,7 @@ def seed_database():
     """
     data = request.get_json()
     medical_query = data.get("query")
+    start_time = time.time()
     
     # download XML from PubMed
     xml_path = fetch_pubmed_xml_to_file(
@@ -59,7 +61,9 @@ def seed_database():
         global pipeline
         pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
         
-        audit.log_event(action="seed", query=medical_query, results_count=len(chunks))
+        end_time = time.time()
+        latency = end_time - start_time
+        audit.log_event(action="seed", query=medical_query, results_count=len(chunks), latency=latency)
         return make_response({"count": len(chunks)}, message="Database seeded successfully")
     
     audit.log_event(action="seed", query=medical_query, status="error")
@@ -78,6 +82,7 @@ def ingest_data():
     """
     data = request.get_json()
     doc_path = data.get("path")
+    start_time = time.time()
     
     if not doc_path or not os.path.exists(doc_path):
         return make_response( message="Error: Valid XML path required", status="error"),400
@@ -89,8 +94,9 @@ def ingest_data():
         # Refresh Pipeline
         global pipeline
         pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
-        
-        audit.log_event(action="ingest", query=doc_path, results_count=len(result_chunks))
+        end_time = time.time()
+        latency = end_time - start_time
+        audit.log_event(action="ingest", query=doc_path, results_count=len(result_chunks), latency=latency)
         return make_response(
             {"count": len(result_chunks)}, 
             message=f"Successfully ingested and indexed: {doc_path}"
@@ -121,8 +127,11 @@ def run_query():
         return make_response(message="Query text is required", status="error"),400
 
     try:
+        start_time = time.time()
         results = pipeline.retrieve(query=query_text)
-        audit.log_event(action="query", query=query_text, results_count=len(results),top_pmid=results[0]["provenance"].get("chunk_id","N/A") if results else "N/A")
+        end_time = time.time()
+        latency = end_time - start_time
+        audit.log_event(action="query", query=query_text, results_count=len(results), top_pmid=results[0]["provenance"].get("chunk_id","N/A") if results else "N/A", latency=latency)
         return make_response(results, message="Retrieved with success")
     except Exception as e:
         print(f"Query failed: {e}")
