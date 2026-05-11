@@ -15,7 +15,7 @@ DOMAIN_DATA_PATH = os.environ.get("DOMAIN_DATA_PATH", "./data/domain.json")
 DOC_DB_PATH = os.environ.get("DOC_DB_PATH", "document.db")
 SJR_CSV_PATH = os.environ.get("SJR_CSV_PATH", "./data/scimagojr_2023.csv")
 
-audit = AuditTrail("data/audit_log.csv")    
+audit = AuditTrail("logs/audit_log.csv")    
 
 processor = TFRDataPreprocessor(DOMAIN_DATA_PATH, SJR_CSV_PATH)
 
@@ -122,7 +122,7 @@ def run_query():
 
     try:
         results = pipeline.retrieve(query=query_text)
-        audit.log_event(action="query", query=query_text, results_count=len(results))
+        audit.log_event(action="query", query=query_text, results_count=len(results),top_pmid=results[0]["provenance"].get("chunk_id","N/A") if results else "N/A")
         return make_response(results, message="Retrieved with success")
     except Exception as e:
         print(f"Query failed: {e}")
