@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "query": "What is the recommended antiplatelet therapy after percutaneous coronary intervention in acute coronary syndrome?",
+    "domain": "Cardiovascular Diseases",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "High-confidence clinical recommendation — TWR should elevate RCT/meta-analysis (OCEBM 1) sources over expert opinion (OCEBM 5).",
+    "tags": ["antiplatelet", "PCI", "ACS", "DAPT"]
+  },
+  {
+    "id": 2,
+    "query": "Aspirin discontinuation safety after drug-eluting stent implantation",
+    "domain": "Cardiovascular Diseases",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple sources exist across Q1–Unranked journals. TWR should surface Q1 publications (JAMA, Stroke) over unranked ones covering the same topic.",
+    "tags": ["aspirin", "DES", "DAPT", "antiplatelet"]
+  },
+  {
+    "id": 3,
+    "query": "P2Y12 inhibitor selection in patients with acute ischemic stroke",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "Treatment guidance query where guideline-level evidence (OCEBM 1–2) should dominate; RRF is blind to this distinction.",
+    "tags": ["P2Y12", "stroke", "antiplatelet", "neurology"]
+  },
+  {
+    "id": 4,
+    "query": "Thrombocytopenia management in cardiovascular disease patients on antiplatelet therapy",
+    "domain": "Hemic and Lymphatic Diseases (Hematology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "Requires balancing journal tier AND evidence level — TWR's multiplicative formula should produce cleaner separation than RRF's flat reciprocal rank.",
+    "tags": ["thrombocytopenia", "cardiovascular", "antiplatelet", "hematology"]
+  },
+  {
+    "id": 5,
+    "query": "Low-dose aspirin primary prevention in older adults",
+    "domain": "Cardiovascular Diseases",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "Guideline-altering RCT evidence (aspirin de-recommendation) should be ranked above commentary; TWR penalizes OCEBM 5 opinion pieces heavily.",
+    "tags": ["aspirin", "primary prevention", "elderly", "bleeding risk"]
+  },
+  {
+    "id": 6,
+    "query": "Venous thromboembolism prophylaxis in children with congenital heart disease",
+    "domain": "Congenital, Hereditary, and Neonatal Diseases (Pediatrics)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "Pediatric VTE evidence is sparse and mostly expert opinion (OCEBM 5). TWR's down-weighting of OCEBM 5 may penalize all relevant results — RRF may actually surface them better by relying on raw relevance.",
+    "tags": ["VTE", "pediatrics", "anticoagulation", "congenital heart"]
+  },
+  {
+    "id": 7,
+    "query": "Dual antiplatelet therapy duration optimization post-coronary stenting",
+    "domain": "Cardiovascular Diseases",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Dense literature exists across tier levels. TWR's journal multiplier should consistently lift Q1 results while RRF treats all equally.",
+    "tags": ["DAPT", "stent", "duration", "coronary"]
+  },
+  {
+    "id": 8,
+    "query": "Tirofiban efficacy in acute ischemic stroke without large vessel occlusion",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "JAMA publication exists at OCEBM 5 but from a Q1 journal. Tests journal_tier vs evidence_level interaction within the TWR formula.",
+    "tags": ["tirofiban", "stroke", "thrombosis", "neurology"]
+  },
+  {
+    "id": 9,
+    "query": "Tranexamic acid use in pulmonary artery pseudoaneurysm",
+    "domain": "Digestive System Diseases (Gastroenterology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "Rare condition with only case-level evidence (OCEBM 4–5, unranked). TWR heavily penalizes both axes; RRF pure relevance matching may outperform.",
+    "tags": ["tranexamic acid", "pseudoaneurysm", "case report", "rare"]
+  },
+  {
+    "id": 10,
+    "query": "Meta-analysis of antiplatelet therapy guidelines for acute coronary syndrome",
+    "domain": "general",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "Query explicitly targets systematic review/meta-analysis level evidence (OCEBM 1). TWR should rank OCEBM 1 sources first; RRF cannot distinguish.",
+    "tags": ["meta-analysis", "ACS", "guidelines", "systematic review"]
+  },
+  {
+    "id": 11,
+    "query": "Potassium-competitive acid blockers versus proton pump inhibitors for ulcer prevention in aspirin users",
+    "domain": "Digestive System Diseases (Gastroenterology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "RCT evidence exists alongside real-world observational data. TWR should rank the RCT-based evidence higher given its OCEBM weight.",
+    "tags": ["P-CAB", "PPI", "aspirin", "ulcer", "gastroenterology"]
+  },
+  {
+    "id": 12,
+    "query": "Periprosthetic joint infection risk after total knee arthroplasty on antithrombotic therapy",
+    "domain": "Infections",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "Intersection of infection and orthopedic surgery with varying evidence quality. Multi-factor TWR scoring tests combined journal+evidence weighting.",
+    "tags": ["PJI", "arthroplasty", "antithrombotic", "infection"]
+  },
+  {
+    "id": 13,
+    "query": "Hypertensive disorders in pregnancy and postpartum anticoagulation management",
+    "domain": "general",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Covered in both Q1 (Pregnancy Hypertension) and unranked sources. TWR journal multiplier should cleanly separate tier quality.",
+    "tags": ["pregnancy", "hypertension", "anticoagulation", "postpartum"]
+  },
+  {
+    "id": 14,
+    "query": "Elevated lipoprotein(a) and antiplatelet therapy for cardiovascular risk reduction",
+    "domain": "Cardiovascular Diseases",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "OCEBM 1 document in corpus; TWR should give it maximum weight. Tests whether the evidence_score=1.0 pushes it to top against OCEBM 5 majority.",
+    "tags": ["Lp(a)", "lipoprotein", "cardiovascular risk", "aspirin"]
+  },
+  {
+    "id": 15,
+    "query": "Aspirin effect on preterm birth risk with heat exposure during pregnancy",
+    "domain": "general",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "Secondary RCT analysis (OCEBM 1, Q1 journal) — highest possible TWR score. Validates that perfect evidence + perfect journal tier produces top ranking.",
+    "tags": ["aspirin", "preterm birth", "pregnancy", "RCT"]
+  },
+  {
+    "id": 16,
+    "query": "RSV infection fusion protein mechanism and antiviral targets",
+    "domain": "Infections",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "Virology/mechanism query — all relevant results are OCEBM 5 review articles. TWR uniformly penalizes all, making its ranking indistinguishable from RRF on this topic.",
+    "tags": ["RSV", "respiratory syncytial virus", "antiviral", "fusion protein"]
+  },
+  {
+    "id": 17,
+    "query": "Sarcopenia screening tools and association with cardiovascular outcomes",
+    "domain": "Hemic and Lymphatic Diseases (Hematology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q1 journal source covers sarcopenia screening; TWR journal multiplier should lift it over unranked alternatives.",
+    "tags": ["sarcopenia", "muscle mass", "cardiovascular", "screening"]
+  },
+  {
+    "id": 18,
+    "query": "Metabolic syndrome components and their association with chronic disease progression",
+    "domain": "Nutritional and Metabolic Diseases",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Content spread across Q2–Q3 and unranked journals. Journal multiplier differentials (0.85 vs 0.40) create meaningful reranking that RRF misses.",
+    "tags": ["metabolic syndrome", "obesity", "insulin resistance", "dyslipidemia"]
+  },
+  {
+    "id": 19,
+    "query": "Breast cancer associated hypercoagulability and thrombus risk quantification",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "Oncology-hematology intersection with Q2 and unranked sources at OCEBM 5. Tests whether TWR journal multiplier still meaningfully reranks at same evidence level.",
+    "tags": ["breast cancer", "hypercoagulability", "thrombus", "oncology"]
+  },
+  {
+    "id": 20,
+    "query": "Colorectal cancer risk prediction model validation in diverse populations",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "NCI CCRAT model assessment in unranked source — tests whether RRF over-ranks unranked sources that are highly lexically relevant.",
+    "tags": ["colorectal cancer", "risk model", "NCI", "population validation"]
+  },
+  {
+    "id": 21,
+    "query": "Tuberous sclerosis complex with protein C deficiency and hypercoagulable state",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "Q4 journal, OCEBM 4 case report — rare co-occurrence. TWR will heavily penalize both journal tier (0.55) and evidence level (0.4); RRF may surface this relevant rare document better.",
+    "tags": ["tuberous sclerosis", "hypercoagulability", "protein C", "rare"]
+  },
+  {
+    "id": 22,
+    "query": "Hormone receptor-positive metastatic breast cancer treatment after conventional therapy resistance",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "Case series and observational studies (OCEBM 4) vs review articles (OCEBM 5). TWR slightly favors OCEBM 4 over OCEBM 5 sources (0.4 vs 0.2).",
+    "tags": ["breast cancer", "HR+", "metastatic", "treatment resistance"]
+  },
+  {
+    "id": 23,
+    "query": "Systemic lupus erythematosus autoimmune activation and multi-organ damage",
+    "domain": "Immune System Diseases",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "Single OCEBM 5, Unranked document covers this. Minimum TWR score; RRF's pure rank-based approach retrieves it just as well without the trust penalty.",
+    "tags": ["SLE", "lupus", "autoimmune", "immune dysregulation"]
+  },
+  {
+    "id": 24,
+    "query": "Pulmonary hypertension pathogenesis and therapeutic targets in vascular remodeling",
+    "domain": "Respiratory Tract Diseases",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Content spans Q2 and unranked journals. Journal multiplier (0.85 vs 0.40) tests whether TWR meaningfully promotes Q2 over unranked at same evidence level.",
+    "tags": ["pulmonary hypertension", "vascular remodeling", "pathogenesis"]
+  },
+  {
+    "id": 25,
+    "query": "Biologic therapy outcomes in chronic rhinosinusitis with nasal polyps",
+    "domain": "Respiratory Tract Diseases",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q2 journal source vs Q3 source on related content. Tests fine-grained journal tier discrimination (0.85 vs 0.70 multiplier).",
+    "tags": ["CRSwNP", "biologics", "rhinosinusitis", "nasal polyps"]
+  },
+  {
+    "id": 26,
+    "query": "Preeclampsia neurological complications and long-term outcomes",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "OCEBM 4 (case series) vs OCEBM 5 (review) for neurological manifestations. Tests whether TWR meaningfully differentiates adjacent evidence levels.",
+    "tags": ["preeclampsia", "neurology", "hypertension", "pregnancy complications"]
+  },
+  {
+    "id": 27,
+    "query": "Blunt traumatic aortic injury neurological complications and long-term follow-up",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q2 journal source on aortic injury neurological outcomes. Tests journal-tier advantage when evidence level is equal (OCEBM 5).",
+    "tags": ["aortic injury", "trauma", "neurological complications", "retrospective"]
+  },
+  {
+    "id": 28,
+    "query": "Transthyretin amyloidosis cardiac and neurological phenotype",
+    "domain": "general",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q2 journal source on hereditary amyloidosis vs case-level unranked sources. Journal multiplier differentials produce reranking invisible to plain RRF.",
+    "tags": ["amyloidosis", "transthyretin", "cardiac", "neuropathy"]
+  },
+  {
+    "id": 29,
+    "query": "Vitamin B12 deficiency in type 2 diabetes patients treated with metformin",
+    "domain": "Endocrine System Diseases",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q3 journal source exists. Tests lower-tier journal weighting (0.70); validates TWR's graduated tier system is working rather than binary.",
+    "tags": ["B12 deficiency", "metformin", "diabetes", "homocysteine"]
+  },
+  {
+    "id": 30,
+    "query": "Endogenous thrombin potential progression in high-risk pregnancy",
+    "domain": "Endocrine System Diseases",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "Q1 journal prospective cohort (OCEBM 5 but Q1). Tests that high journal tier partially compensates for moderate evidence level in TWR's multiplicative formula.",
+    "tags": ["thrombin", "coagulation", "pregnancy", "prospective cohort"]
+  },
+  {
+    "id": 31,
+    "query": "AI-assisted fracture diagnosis accuracy improvement with machine learning",
+    "domain": "general",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "OCEBM 1 rapid assessment (systematic review) at unranked journal. Tests whether evidence_level advantage can overcome journal_tier penalty in TWR's formula.",
+    "tags": ["AI", "fracture detection", "machine learning", "diagnostic accuracy"]
+  },
+  {
+    "id": 32,
+    "query": "Atherosclerosis oral drug delivery platform for anti-inflammatory and antithrombotic therapy",
+    "domain": "Digestive System Diseases (Gastroenterology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q1 journal covering novel atherosclerosis drug platform. Journal multiplier gives TWR significant advantage over RRF on this specialized topic.",
+    "tags": ["atherosclerosis", "drug delivery", "anti-inflammatory", "oral therapy"]
+  },
+  {
+    "id": 33,
+    "query": "AMPK activation and its role in obesity-associated carcinogenesis",
+    "domain": "Nutritional and Metabolic Diseases",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q2 journal source on AMPK-cancer metabolic pathway. Tests whether TWR journal multiplier surface it consistently above unranked metabolic disease content.",
+    "tags": ["AMPK", "obesity", "carcinogenesis", "metabolic dysregulation"]
+  },
+  {
+    "id": 34,
+    "query": "Triglyceride-glucose-frailty index and hip fracture risk in elderly",
+    "domain": "Hemic and Lymphatic Diseases (Hematology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q2 journal source on novel frailty index. Journal multiplier should surface it above Unranked hematology sources on the same population.",
+    "tags": ["frailty", "hip fracture", "metabolic index", "elderly"]
+  },
+  {
+    "id": 35,
+    "query": "Nitric oxide signaling in vasodilation, antimicrobial, and anti-inflammatory processes",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q1 journal covers NO signaling — TWR journal multiplier strongly elevates this vs any unranked dermatology sources.",
+    "tags": ["nitric oxide", "vasodilation", "signaling", "antimicrobial"]
+  },
+  {
+    "id": 36,
+    "query": "T2-comorbidities in asthma including atopic dermatitis and allergic rhinitis management",
+    "domain": "general",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q2 journal (Archivos de Bronconeumologia) covers T2 asthma comorbidities. Tests TWR's consistent journal promotion across respiratory and allergy domains.",
+    "tags": ["asthma", "atopic dermatitis", "allergic rhinitis", "T2 inflammation"]
+  },
+  {
+    "id": 37,
+    "query": "Aspirin impact on surgical site infection and joint replacement outcomes",
+    "domain": "Infections",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q1 journal source (antiplatelet + prosthetic joint infection). Tests whether high journal tier compensates for evidence level 5.",
+    "tags": ["aspirin", "joint infection", "prosthetics", "surgical outcome"]
+  },
+  {
+    "id": 38,
+    "query": "Kabuki syndrome genetic variants and associated coagulation abnormalities",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "Q3 journal, OCEBM 4 case series — rare genetic syndrome. TWR penalizes both dimensions; RRF's rank-based approach may return this rare but relevant document without penalty.",
+    "tags": ["Kabuki syndrome", "KMT2D", "coagulation", "rare genetic"]
+  },
+  {
+    "id": 39,
+    "query": "Retained hemothorax after thoracic trauma management",
+    "domain": "Respiratory Tract Diseases",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "Q3, OCEBM 4 case report — only relevant source. TWR applies (0.70 × 0.4 × recency) penalty; RRF retrieves purely on lexical match, potentially performing better here.",
+    "tags": ["hemothorax", "thoracic trauma", "pleural drainage", "case report"]
+  },
+  {
+    "id": 40,
+    "query": "Postoperative antithrombotic therapy effects on complications after total hip arthroplasty",
+    "domain": "Infections",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "Unranked journal, OCEBM 5 but highly relevant temporal trend analysis. Tests TWR's behavior at minimum journal score — does it over-penalize a relevant but unranked source?",
+    "tags": ["antithrombotic", "hip arthroplasty", "postoperative", "complications"]
+  },
+  {
+    "id": 41,
+    "query": "Gastric intestinal metaplasia endoscopic grading and cancer transformation risk",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q1 journal (Frontiers in Oncology, EGGIM study). TWR journal multiplier separates it from unranked oncology literature on similar topics.",
+    "tags": ["gastric metaplasia", "EGGIM", "endoscopy", "cancer risk"]
+  },
+  {
+    "id": 42,
+    "query": "Robot-assisted partial nephrectomy feasibility in patients with mechanical circulatory support",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "Unranked, OCEBM 4 case report — highly specific niche. TWR nearly zeros this document's trust score; plain RRF retrieves on keyword match without trust penalty.",
+    "tags": ["nephrectomy", "mechanical circulatory support", "RAPN", "case report"]
+  },
+  {
+    "id": 43,
+    "query": "Vertebrobasilar insufficiency triggered by yoga and transcranial Doppler diagnosis",
+    "domain": "general",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "Q3 journal, OCEBM 4, single case — lowest realistic TWR score. Stress test: does TWR's trust penalty suppress this unique relevant result that RRF would surface?",
+    "tags": ["vertebrobasilar insufficiency", "yoga", "Doppler", "case report"]
+  },
+  {
+    "id": 44,
+    "query": "Type 2 diabetes subgroup clustering and metabolic heterogeneity",
+    "domain": "Nutritional and Metabolic Diseases",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Unranked source on T2D subgroup clustering. Tests whether TWR's journal penalty (0.40) for unranked justifiably demotes this in favor of higher-tier evidence on metabolic disease.",
+    "tags": ["type 2 diabetes", "clustering", "SIDD", "metabolic subgroups"]
+  },
+  {
+    "id": 45,
+    "query": "Persistent primitive trigeminal artery fistula and dissecting aneurysm management",
+    "domain": "general",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "Unranked journal, OCEBM 4 case — extremely rare vascular anatomy. TWR penalizes severely; RRF retrieves purely on keyword relevance, which may be more useful here.",
+    "tags": ["trigeminal artery", "fistula", "aneurysm", "rare neurovascular"]
+  },
+  {
+    "id": 46,
+    "query": "Pharmacotherapy adherence in cardiovascular and respiratory chronic disease management",
+    "domain": "Respiratory Tract Diseases",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q3 journal source on adherence. Tests lower-tier discrimination in TWR (0.70 multiplier) vs the 0.55 and 0.40 assigned to Q4 and Unranked.",
+    "tags": ["adherence", "pharmacotherapy", "cardiovascular", "respiratory", "primary care"]
+  },
+  {
+    "id": 47,
+    "query": "Anticoagulation challenges with vitamin K antagonists in pediatric cardiac patients",
+    "domain": "Congenital, Hereditary, and Neonatal Diseases (Pediatrics)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "Q2 journal on VKA+LMWH pediatric challenges. Multi-factor test: journal multiplier (0.85) partially compensates for OCEBM 5 evidence in TWR but not in RRF.",
+    "tags": ["VKA", "LMWH", "pediatric", "anticoagulation", "congenital heart"]
+  },
+  {
+    "id": 48,
+    "query": "Aspirin anti-inflammatory effect on leukocyte count and thrombocytosis in metabolic disease",
+    "domain": "Endocrine System Diseases",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "Unranked journal, OCEBM 5 experimental study. TWR gives minimum trust score; this tests if the adversarial penalty suppresses a uniquely relevant document RRF would rank.",
+    "tags": ["aspirin", "leukocytosis", "thrombocytosis", "diabetes", "inflammation"]
+  },
+  {
+    "id": 49,
+    "query": "Multimodal analgesia and regional anesthesia in pediatric hip and femur surgery",
+    "domain": "Congenital, Hereditary, and Neonatal Diseases (Pediatrics)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Q2 journal source on pediatric regional anesthesia. Journal multiplier (0.85) creates measurable rank shift that plain RRF cannot produce.",
+    "tags": ["regional anesthesia", "multimodal analgesia", "pediatric surgery", "femur"]
+  },
+  {
+    "id": 50,
+    "query": "Novel flow cytometry assay for platelet function testing in cardiovascular patients",
+    "domain": "Hemic and Lymphatic Diseases (Hematology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "Unranked journal, OCEBM 5 methodological study — useful but penalized on both TWR axes. Multi-factor test: validates TWR's combined penalty behavior vs RRF's neutrality on trust signals.",
+    "tags": ["flow cytometry", "platelet function", "cardiovascular", "hematology"]
+  }
+]

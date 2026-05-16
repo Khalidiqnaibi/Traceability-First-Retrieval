@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, json, request, jsonify
 from dotenv import load_dotenv
 import os 
 import time
@@ -68,10 +68,10 @@ def seed_database():
 
         end_time = time.time()
         latency = end_time - start_time
-        audit.log_event(action="seed", query=medical_query, results_count=len(chunks), latency=latency, pipeline="N/A")
+        audit.log_event(action="seed", query=medical_query, results_count=len(chunks), latency=latency)
         return make_response({"count": len(chunks)}, message="Database seeded successfully")
     
-    audit.log_event(action="seed", query=medical_query, status=f"Seeding error: {xml_path} not found", pipeline="N/A")
+    audit.log_event(action="seed", query=medical_query, status=f"Seeding error: {xml_path} not found")
     return make_response( message="Seeding failed", status="error"),500
 
 @app.route("/ingest", methods=["POST"])
@@ -102,17 +102,29 @@ def ingest_data():
         standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH)
         end_time = time.time()
         latency = end_time - start_time
-        audit.log_event(action="ingest", query=doc_path, results_count=len(result_chunks), latency=latency, pipeline="N/A")
+        audit.log_event(action="ingest", query=doc_path, results_count=len(result_chunks), latency=latency)
         return make_response(
             {"count": len(result_chunks)}, 
             message=f"Successfully ingested and indexed: {doc_path}"
         )
     except Exception as e:
         print(f"Ingestion failed: {str(e)}")
-        audit.log_event(action="ingest", query=doc_path, status=f"Ingestion error: {str(e)}", pipeline="N/A")
+        audit.log_event(action="ingest", query=doc_path, status=f"Ingestion error: {str(e)}")
         return make_response( message=f"Ingestion failed: {str(e)}", status="error"),500
 
-@app.route("/query", methods=["POST"])
+@app.route("/reload", methods=["POST"])
+def reload_pipelines():
+    """Endpoint to manually trigger pipelines reload (e.g. after new data ingestion)"""
+    global tfr_pipeline, standard_pipeline
+    try:
+        tfr_pipeline = initialize_pipeline(DOC_DB_PATH)
+        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH)
+        return make_response(message="Pipelines reloaded successfully")
+    except Exception as e:
+        print(f"Pipeline reload failed: {e}")
+        return make_response( message=f"Pipelines reload error: {str(e)}", status="error"),500
+ 
+@app.route("/tfr/query", methods=["POST"])
 def run_query():
     """
     Endpoint to perform Trust-Weighted Retrieval
@@ -137,10 +149,10 @@ def run_query():
         return make_response(results, message="Retrieved with success")
     except Exception as e:
         print(f"Query failed: {e}")
-        audit.log_event(action="query", query=query_text, status=f"Retrieval error: {str(e)}", pipeline="TFR")
+        audit.log_event(action="query", query=query_text, status=f"Retrieval error: {str(e)}")
         return make_response( message=f"Retrieval error: {str(e)}", status="error"),500
 
-@app.route("/run_ablation", methods=["POST"])
+@app.route("/ablation/query", methods=["POST"])
 def run_ablation():
     """Endpoint to run ablation study comparing Standard RRF vs TWR"""
     if tfr_pipeline is None or standard_pipeline is None:
@@ -153,30 +165,75 @@ def run_ablation():
         return make_response(message="Query text is required", status="error"),400
 
     try:
+        start_time = time.time()
         tfr_results = tfr_pipeline.retrieve(query=query_text)
         standard_results = standard_pipeline.retrieve(query=query_text)
+        latency = time.time() - start_time
+        audit.log_event(action="ablation_query", query=query_text, latency=latency)
         return make_response({
             "TFR_results": tfr_results,
             "Standard_RRF_results": standard_results
         }, message="Ablation results retrieved successfully")
     except Exception as e:
         print(f"Ablation query failed: {e}")
-        audit.log_event(action="ablation_query", query=query_text, status=f"Ablation Retrieval error: {str(e)}", pipeline="Ablation")
+        audit.log_event(action="ablation_query", query=query_text, status=f"Ablation Retrieval error: {str(e)}")
         return make_response( message=f"Ablation Retrieval error: {str(e)}", status="error"),500
 
-@app.route("/reload", methods=["POST"])
-def reload_pipelines():
-    """Endpoint to manually trigger pipelines reload (e.g. after new data ingestion)"""
-    global tfr_pipeline, standard_pipeline
-    try:
-        tfr_pipeline = initialize_pipeline(DOC_DB_PATH)
-        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH)
-        return make_response(message="Pipelines reloaded successfully")
-    except Exception as e:
-        print(f"Pipeline reload failed: {e}")
-        return make_response( message=f"Pipelines reload error: {str(e)}", status="error"),500
-    
+@app.route("/ablation/batch", methods=["POST"])
+def run_batch_ablation():
+    """
+    Executes a comprehensive batch ablation study across all queries in a dataset.
+    Extracts intermediate sparse/dense rankings and logs detailed metrics to PipelineAudit.
+    """
+    if tfr_pipeline is None or standard_pipeline is None:
+        return make_response( message="Pipelines not initialized. Please seed or ingest data first.", status="error"),400
 
+    data = request.get_json() or {}
+    queries_file_path = data.get("queries_path", "./data/queries.json")
+
+    if not os.path.exists(queries_file_path):
+        return make_response( message=f"Queries benchmark file not found at {queries_file_path}", status="error"),400
+
+    with open(queries_file_path, "r", encoding="utf-8") as f:
+        queries_list = json.load(f)
+
+    summary_metrics = []
+    start_time = time.time()
+
+    for item in queries_list:
+        query_id = item.get("id")
+        query_text = item.get("query")
+        dimension = item.get("ablation_dimension")
+        expected_advantage = item.get("expected_twr_advantage")
+
+        try:
+            tfr_results = tfr_pipeline.retrieve(query=query_text)
+            standard_results = standard_pipeline.retrieve(query=query_text)
+        except Exception as e:
+            print(f"Ablation query failed: {e}")
+            audit.log_event(action="batch_ablation", query=query_text, status=f"Ablation Retrieval error: {str(e)}")
+            return make_response( message=f"Ablation Retrieval error: {str(e)}", status="error"),500
+
+        summary_metrics.append({
+            "id": query_id,
+            "query": query_text,
+            "ablation_dimension": dimension,
+            "expected_twr_advantage": expected_advantage,
+            "tfr_results": tfr_results,
+            "standard_results": standard_results
+        })
+
+    audit.log_event(
+        action="batch_ablation",
+        query=f"Batch ablation over {len(queries_list)} queries",
+        latency=time.time() - start_time
+    )
+
+    return make_response(
+        message=f"Ablation evaluation completed over {len(queries_list)} benchmark queries.",
+        data=summary_metrics
+    ), 200
+   
 @app.route("/standard/query", methods=["POST"])
 def standard_query():
     """Endpoint for standard query processing"""

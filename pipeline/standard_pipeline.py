@@ -109,7 +109,7 @@ class Pipeline:
             dense_results=faiss_ranks,  
             rrf_twr_results=fused_indices,
             results_count=len(result), 
-            top_pmid=result[0]["provenance"].get("chunk_id","N/A") if result else "N/A", 
+            results=result, 
             latency=latency, 
             pipeline="Standard", 
             status="success"

@@ -12,7 +12,7 @@ class PipelineAudit:
             "dense_results",
             "RRF / TWR results",
             "results_count",
-            "top_result_pmid", 
+            "results", 
             "latency" ,
             "pipeline", 
             "status"
@@ -32,7 +32,7 @@ class PipelineAudit:
             dense_results: list = [],  
             rrf_twr_results: list = [],
             results_count: int = 0, 
-            top_pmid: str = "N/A", 
+            results: list = [],
             latency: float = 0.0, 
             pipeline: str = "standard", 
             status: str = "success"
@@ -46,7 +46,7 @@ class PipelineAudit:
                 "dense_results": dense_results,
                 "RRF / TWR results": rrf_twr_results,
                 "results_count": results_count,
-                "top_result_pmid": top_pmid,
+                "results": results,
                 "latency": latency,
                 "pipeline": pipeline,
                 "status": status,
