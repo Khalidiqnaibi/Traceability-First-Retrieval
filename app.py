@@ -17,6 +17,7 @@ API_KEY = os.environ.get("OPENROUTER_API_KEY")
 DOMAIN_DATA_PATH = os.environ.get("DOMAIN_DATA_PATH", "./data/domain.json")
 DOC_DB_PATH = os.environ.get("DOC_DB_PATH", "document.db")
 SJR_CSV_PATH = os.environ.get("SJR_CSV_PATH", "./data/scimagojr_2023.csv")
+MODEL = os.environ.get("MODEL", "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free")
 
 audit = AuditTrail("logs/audit_log.csv")    
 
@@ -27,8 +28,8 @@ tfr_pipeline = None
 standard_pipeline =None
 
 
-tfr_pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
-standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+tfr_pipeline = initialize_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
+standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
 
 app = Flask(__name__)
 
@@ -64,15 +65,15 @@ def seed_database():
         
         # Refresh Pipeline
         global tfr_pipeline, standard_pipeline
-        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
-        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
+        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
 
         end_time = time.time()
         latency = end_time - start_time
         audit.log_event(action="seed", query=medical_query, results_count=len(chunks), latency=latency, pipeline="N/A")
         return make_response({"count": len(chunks)}, message="Database seeded successfully")
     
-    audit.log_event(action="seed", query=medical_query, status="error", pipeline="N/A")
+    audit.log_event(action="seed", query=medical_query, status=f"Seeding error: {xml_path} not found", pipeline="N/A")
     return make_response( message="Seeding failed", status="error"),500
 
 @app.route("/ingest", methods=["POST"])
@@ -99,8 +100,8 @@ def ingest_data():
         
         # Refresh Pipeline
         global tfr_pipeline, standard_pipeline
-        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
-        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
+        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
         end_time = time.time()
         latency = end_time - start_time
         audit.log_event(action="ingest", query=doc_path, results_count=len(result_chunks), latency=latency, pipeline="N/A")
@@ -110,7 +111,7 @@ def ingest_data():
         )
     except Exception as e:
         print(f"Ingestion failed: {str(e)}")
-        audit.log_event(action="ingest", query=doc_path, status="error", pipeline="N/A")
+        audit.log_event(action="ingest", query=doc_path, status=f"Ingestion error: {str(e)}", pipeline="N/A")
         return make_response( message=f"Ingestion failed: {str(e)}", status="error"),500
 
 @app.route("/query", methods=["POST"])
@@ -134,24 +135,44 @@ def run_query():
         return make_response(message="Query text is required", status="error"),400
 
     try:
-        start_time = time.time()
         results = tfr_pipeline.retrieve(query=query_text)
-        end_time = time.time()
-        latency = end_time - start_time
-        audit.log_event(action="query", query=query_text, results_count=len(results), top_pmid=results[0]["provenance"].get("chunk_id","N/A") if results else "N/A", latency=latency, pipeline="TFR")
         return make_response(results, message="Retrieved with success")
     except Exception as e:
         print(f"Query failed: {e}")
-        audit.log_event(action="query", query=query_text, status="error", pipeline="TFR")
+        audit.log_event(action="query", query=query_text, status=f"Retrieval error: {str(e)}", pipeline="TFR")
         return make_response( message=f"Retrieval error: {str(e)}", status="error"),500
+
+@app.route("/run_ablation", methods=["POST"])
+def run_ablation():
+    """Endpoint to run ablation study comparing Standard RRF vs TWR"""
+    if tfr_pipeline is None or standard_pipeline is None:
+        return make_response( message="Pipelines not initialized. Please initialize and ingest data first.", status="error"),400
+
+    data = request.get_json()
+    query_text = data.get("query")
+    
+    if not query_text:
+        return make_response(message="Query text is required", status="error"),400
+
+    try:
+        tfr_results = tfr_pipeline.retrieve(query=query_text)
+        standard_results = standard_pipeline.retrieve(query=query_text)
+        return make_response({
+            "TFR_results": tfr_results,
+            "Standard_RRF_results": standard_results
+        }, message="Ablation results retrieved successfully")
+    except Exception as e:
+        print(f"Ablation query failed: {e}")
+        audit.log_event(action="ablation_query", query=query_text, status=f"Ablation Retrieval error: {str(e)}", pipeline="Ablation")
+        return make_response( message=f"Ablation Retrieval error: {str(e)}", status="error"),500
 
 @app.route("/reload", methods=["POST"])
 def reload_pipelines():
     """Endpoint to manually trigger pipelines reload (e.g. after new data ingestion)"""
     global tfr_pipeline, standard_pipeline
     try:
-        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
-        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,API_KEY,DOMAIN_DATA_PATH)
+        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
+        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
         return make_response(message="Pipelines reloaded successfully")
     except Exception as e:
         print(f"Pipeline reload failed: {e}")
@@ -171,15 +192,11 @@ def standard_query():
         return make_response(message="Query text is required", status="error"),400
 
     try:
-        start_time = time.time()
         results = standard_pipeline.retrieve(query=query_text)
-        end_time = time.time()
-        latency = end_time - start_time
-        audit.log_event(action="query", query=query_text, results_count=len(results), top_pmid=results[0]["provenance"].get("chunk_id","N/A") if results else "N/A", latency=latency, pipeline="Standard")
         return make_response(results, message="Retrieved with success")
     except Exception as e:
         print(f"Standard query failed: {e}")
-        audit.log_event(action="query", query=query_text, status="error", pipeline="Standard")
+        audit.log_event(action="query", query=query_text, status=f"Retrieval error: {str(e)}", pipeline="Standard")
         return make_response( message=f"Retrieval error: {str(e)}", status="error"),500
 
 @app.route("/health", methods=["GET"])

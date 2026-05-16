@@ -50,6 +50,7 @@ git clone https://github.com/Khalidiqnaibi/Traceability-First-Retrieval.git
 cd Traceability-First-Retrieval
 
 pip install -r "requirements.txt"
+
 python app.py
 
 ```

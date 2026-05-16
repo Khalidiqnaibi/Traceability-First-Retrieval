@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 class AuditTrail:
-    def __init__(self, log_path: str = "audit_log.csv"):
+    def __init__(self, log_path: str = "route_audit_log.csv"):
         self.log_path = log_path
         self.headers = ["timestamp", "action", "query", "results_count", "top_result_pmid", "latency" ,"pipeline", "status"]
         self._ensure_log_exists()

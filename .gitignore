@@ -3,4 +3,3 @@ data/scimagojr 2025.csv
 *.pyc
 *.db
 data/seed_pubmed_data.xml
-*/audit_log.csv

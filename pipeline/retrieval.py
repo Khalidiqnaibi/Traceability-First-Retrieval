@@ -1,4 +1,5 @@
 import re
+from unittest import result
 import numpy as np
 import faiss
 from typing import List, Dict, Any
@@ -9,6 +10,9 @@ from utils.llm.llm_client import LLMClient
 import json
 
 from infra.clinical_document import ClinicalDocument
+from utils.pipeline.audit import PipelineAudit
+
+audit = PipelineAudit("logs/pipeline_audit_log.csv")
 
 
 class TFRPipeline:
@@ -187,6 +191,8 @@ class TFRPipeline:
         return results
 
     def retrieve(self, query: str) -> List[Dict[str, Any]]:
+        start_time = datetime.now()
+
         # 1. Self-Query
         filters = self.self_query(query)
         
@@ -197,7 +203,23 @@ class TFRPipeline:
         fused_indices = self.trust_weighted_rrf(bm25_ranks, faiss_ranks)
         
         # 4. Enrichment
-        return self.provenance_enrichment(fused_indices[:self.k_doc])
+        result = self.provenance_enrichment(fused_indices[:self.k_doc])
+        
+        latency = (datetime.now() - start_time).total_seconds()
+
+        audit.log_event(
+            query=query, 
+            self_query_filters=filters, 
+            sparse_results=bm25_ranks, 
+            dense_results=faiss_ranks,  
+            rrf_twr_results=fused_indices,
+            results_count=len(result),
+            top_pmid=result[0]["provenance"].get("chunk_id","N/A") if result else "N/A",
+            latency=latency,
+            pipeline="TFR"
+        )
+        
+        return  result
 
 
 
