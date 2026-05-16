@@ -6,8 +6,6 @@ from typing import List, Dict, Any
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
 from datetime import datetime
-from utils.llm.llm_client import LLMClient
-import json
 
 from infra.clinical_document import ClinicalDocument
 from utils.pipeline.audit import PipelineAudit
