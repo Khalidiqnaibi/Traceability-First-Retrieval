@@ -8,7 +8,6 @@ class PipelineAudit:
         self.headers = [
             "timestamp",
             "query",  
-            "self_query_filters", 
             "sparse_results",
             "dense_results",
             "RRF / TWR results",
@@ -29,7 +28,6 @@ class PipelineAudit:
     def log_event(
             self,
             query: str = "", 
-            self_query_filters: dict = None, 
             sparse_results: list = [], 
             dense_results: list = [],  
             rrf_twr_results: list = [],
@@ -44,7 +42,6 @@ class PipelineAudit:
             writer.writerow({
                 "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                 "query": query,
-                "self_query_filters": self_query_filters,
                 "sparse_results": sparse_results,
                 "dense_results": dense_results,
                 "RRF / TWR results": rrf_twr_results,

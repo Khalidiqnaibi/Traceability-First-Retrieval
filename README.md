@@ -6,23 +6,19 @@
 
 ## The TFR Architecture
 
-The **Traceability-First Retrieval (TFR)** framework is a 4-stage pipeline designed for high-precision clinical environments.
+The **Traceability-First Retrieval (TFR)** framework is a 3-stage pipeline designed for high-precision clinical environments.
 
-### Stage 1: Self-Querying (Medical Triage)
-*   An LLM extracts structured metadata filters (e.g., `{"domain": "cardiology"}`) from raw natural language queries.
-*   This step constrains the downstream search space, reducing noise and improving retrieval efficiency.
-
-### Stage 2: Hybrid Retrieval
+### Stage 1: Hybrid Retrieval
 *   **Dense Search:** Utilizes a **TurboQuant-compressed FAISS** index for semantic retrieval with near-zero re-indexing time.
 *   **Sparse Search:** Employs **BM25Okapi** for lexical keyword matching.
 *   This parallel approach ensures the system captures both high-level concepts and specific medical terminology.
 
-### Stage 3: Trust-Weighted Ranking (TWR)
+### Stage 2: Trust-Weighted Ranking (TWR)
 *   This stage introduces a novel fusion mechanism: **Trust-Weighted Ranking (TWR)**.
 *   Unlike standard Reciprocal Rank Fusion (RRF), TWR uses a trust-scaled variant: $$\sum{\frac{trust(source)}{k + rank}}$$
 *   Fixed weights are mapped to the **OCEBM hierarchy**, accounting for journal tier, evidence level (e.g., RCT > Case Study), and recency decay.
 
-### Stage 4: Provenance Enrichment
+### Stage 3: Provenance Enrichment
 *   Final chunks are delivered as structured objects containing first-class provenance metadata: `{source, journal_tier, evidence_level, publication_year, domain, chunk_id}`.
 
 ---

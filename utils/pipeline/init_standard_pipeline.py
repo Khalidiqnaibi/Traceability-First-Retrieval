@@ -2,7 +2,7 @@ from utils.data.load_docs import load_from_sqlite
 from pipeline.standard_pipeline import Pipeline
 
 
-def initialize_standard_pipeline(db_path:str,domain_data_path:str,model:str,api_key:str) -> Pipeline:
+def initialize_standard_pipeline(db_path:str) -> Pipeline:
     """Helper to (re)load the corpus and (re)build search indices"""
     print("Initializing/Reloading Standard Pipeline...")
     corpus = load_from_sqlite(db_path)
@@ -12,10 +12,7 @@ def initialize_standard_pipeline(db_path:str,domain_data_path:str,model:str,api_
         pipeline = None
     else:
         pipeline = Pipeline(
-            corpus,
-            api_key=api_key,
-            domain_data_path=domain_data_path,
-            model=model
+            corpus
         )
         print(f"Pipeline ready with {len(corpus)} documents")
 

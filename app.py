@@ -13,11 +13,9 @@ from utils.api.audit import AuditTrail
 
 load_dotenv()
 
-API_KEY = os.environ.get("OPENROUTER_API_KEY")
 DOMAIN_DATA_PATH = os.environ.get("DOMAIN_DATA_PATH", "./data/domain.json")
 DOC_DB_PATH = os.environ.get("DOC_DB_PATH", "document.db")
 SJR_CSV_PATH = os.environ.get("SJR_CSV_PATH", "./data/scimagojr_2023.csv")
-MODEL = os.environ.get("MODEL", "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free")
 
 audit = AuditTrail("logs/audit_log.csv")    
 
@@ -28,8 +26,8 @@ tfr_pipeline = None
 standard_pipeline =None
 
 
-tfr_pipeline = initialize_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
-standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
+tfr_pipeline = initialize_pipeline(DOC_DB_PATH)
+standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH)
 
 app = Flask(__name__)
 
@@ -65,8 +63,8 @@ def seed_database():
         
         # Refresh Pipeline
         global tfr_pipeline, standard_pipeline
-        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
-        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
+        tfr_pipeline = initialize_pipeline(DOC_DB_PATH)
+        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH)
 
         end_time = time.time()
         latency = end_time - start_time
@@ -100,8 +98,8 @@ def ingest_data():
         
         # Refresh Pipeline
         global tfr_pipeline, standard_pipeline
-        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
-        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
+        tfr_pipeline = initialize_pipeline(DOC_DB_PATH)
+        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH)
         end_time = time.time()
         latency = end_time - start_time
         audit.log_event(action="ingest", query=doc_path, results_count=len(result_chunks), latency=latency, pipeline="N/A")
@@ -171,8 +169,8 @@ def reload_pipelines():
     """Endpoint to manually trigger pipelines reload (e.g. after new data ingestion)"""
     global tfr_pipeline, standard_pipeline
     try:
-        tfr_pipeline = initialize_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
-        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH,DOMAIN_DATA_PATH,MODEL,API_KEY)
+        tfr_pipeline = initialize_pipeline(DOC_DB_PATH)
+        standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH)
         return make_response(message="Pipelines reloaded successfully")
     except Exception as e:
         print(f"Pipeline reload failed: {e}")

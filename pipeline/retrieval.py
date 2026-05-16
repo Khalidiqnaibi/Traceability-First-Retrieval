@@ -19,24 +19,15 @@ class TFRPipeline:
     def __init__(
             self, 
             corpus: List[ClinicalDocument],
-            api_key:str,
-            k_doc:int=5,
-            model:str="inclusionai/ring-2.6-1t:free",
-            domain_data_path:str="./data/domain.json"
+            k_doc:int=5
         ):
         self.corpus = corpus
         self.k_doc = k_doc
         self.k_rrf = 60
         self.current_year = datetime.now().year
         
-        self.LLM = LLMClient(api_key=api_key,model=model)
-        
         self.embedder = SentenceTransformer('all-MiniLM-L6-v2') 
 
-        
-        with open(domain_data_path,"r") as f:
-            self.domains = json.load(f)
-        
         self._build_bm25_index()
         self._build_faiss_index()
 
@@ -56,71 +47,19 @@ class TFRPipeline:
         faiss.normalize_L2(embeddings) # Normalize for Cosine Similarity
         self.faiss_index.add(embeddings)
 
-    def self_query(self, raw_query: str) -> Dict[str, Any]:
-        """
-        Translates a raw query into a structured filter using an LLm pass
-        """
-        system_prompt = (
-            "You are a query-to-structured-filter translator. "
-            f"Available domains: {list(self.domains.values())}. "
-            "Output ONLY JSON. Example: {'domain': 'cardiology'}. Output {} if no domain matches."
-        )
-        response = self.LLM.chat(system_prompt, f"User Query: {raw_query}", json_mode=True)
-        try:
-            filters = json.loads(response)
-            
-            if "domain" in filters:
-                if isinstance(filters["domain"], str):
-                    filters["domain"] = [filters["domain"]]
-                elif not isinstance(filters["domain"], list):
-                    filters["domain"] = ["general"]
-            else:
-                filters["domain"] = ["general"]
-
-            if "general" not in filters["domain"]:
-                filters["domain"].append("general")
-
-            return filters
-        except (json.JSONDecodeError, TypeError):
-            return {"domain": ["general"]}
-
-    def hybrid_retrieval(self, query: str, filters: Dict[str, Any], top_n: int = 10):
-        valid_domains = filters.get("domain", ["general"])
+    def hybrid_retrieval(self, query: str, top_n: int = 10):
+        # 1. Sparse Retrieval (BM25)
+        tokenized_query = re.findall(r"\b\w+\b", query.lower())
+        bm25_scores = self.bm25.get_scores(tokenized_query)
+        bm25_ranking = np.argsort(bm25_scores)[::-1][:top_n]
         
-        if ["general"] == valid_domains:
-            allowed_ids = list(range(len(self.corpus)))
-        else:
-            allowed_ids = [i for i, doc in enumerate(self.corpus) if doc.domain in valid_domains]
-
-        if not allowed_ids:
-            return [], []
-
-        # 1. Dense Retrieval (FAISS) with ID Filtering
+        # 2. Dense Retrieval (FAISS)
         query_emb = self.embedder.encode([query], convert_to_numpy=True)
         faiss.normalize_L2(query_emb)
+        faiss_scores, faiss_indices = self.faiss_index.search(query_emb, top_n)
+        faiss_ranking = faiss_indices[0]
 
-        id_selector = faiss.IDSelectorBatch(allowed_ids)
-        
-        params = faiss.SearchParameters(sel=id_selector)
-        
-        faiss_scores, faiss_indices = self.faiss_index.search(
-            query_emb, 
-            top_n, 
-            params=params
-        )
-        
-        # 2. Sparse Retrieval (BM25) with ID Filtering
-        tokenized_query = re.findall(r"\b\w+\b", query.lower())
-        doc_scores = self.bm25.get_scores(tokenized_query)
-        
-        # we set scores of disallowed IDs to -inf to ensure they are ranked at the bottom
-        mask = np.full(len(doc_scores), -np.inf)
-        mask[allowed_ids] = 0
-        masked_bm25_scores = doc_scores + mask
-        
-        bm25_ranking = np.argsort(masked_bm25_scores)[::-1][:top_n]
-
-        return bm25_ranking.tolist(), faiss_indices[0].tolist()
+        return bm25_ranking, faiss_ranking
 
     # Trust-Weighted Ranking (TWR)
     def calculate_trust_score(self, doc: ClinicalDocument) -> float:
@@ -192,24 +131,20 @@ class TFRPipeline:
 
     def retrieve(self, query: str) -> List[Dict[str, Any]]:
         start_time = datetime.now()
-
-        # 1. Self-Query
-        filters = self.self_query(query)
         
-        # 2. Hybrid Retrieval
-        bm25_ranks, faiss_ranks = self.hybrid_retrieval(query, filters, top_n=10)
+        # 1. Hybrid Retrieval
+        bm25_ranks, faiss_ranks = self.hybrid_retrieval(query, top_n=10)
         
-        # 3. TWR Fusion
+        # 2. TWR Fusion
         fused_indices = self.trust_weighted_rrf(bm25_ranks, faiss_ranks)
         
-        # 4. Enrichment
+        # 3. Enrichment
         result = self.provenance_enrichment(fused_indices[:self.k_doc])
         
         latency = (datetime.now() - start_time).total_seconds()
 
         audit.log_event(
             query=query, 
-            self_query_filters=filters, 
             sparse_results=bm25_ranks, 
             dense_results=faiss_ranks,  
             rrf_twr_results=fused_indices,
