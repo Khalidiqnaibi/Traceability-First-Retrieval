@@ -1,6 +1,18 @@
 timestamp,action,query,results_count,top_result_pmid,latency,pipeline,status
 2026-05-16 14:38:08,batch_ablation,Batch ablation over 50 queries,2.329257011413574,success
-2026-05-17 14:42:44,seed,Meta Analysis skin,36.71443963050842,success
-2026-05-17 14:44:35,seed,cohort study cancer,27.889749765396118,success
-2026-05-17 14:48:17,seed,cohort study Neurology,46.172149658203125,success
-2026-05-17 14:51:54,seed,case report Dermatology,47.47306799888611,success
+2026-05-17 15:26:39,seed,systematic review[pt] AND cardiovascular diseases[mh],40.87751293182373,success
+2026-05-17 15:28:49,seed,randomized controlled trial[pt] AND (antiplatelet OR anticoagulant OR coronary),36.76841878890991,success
+2026-05-17 15:31:20,seed,cohort studies[mh] AND cardiovascular diseases[mh],34.63587260246277,success
+2026-05-17 15:33:59,seed,case-control studies[mh] AND cardiovascular diseases[mh],33.09630751609802,success
+2026-05-17 15:36:53,seed,case reports[pt] AND (thrombosis OR arrhythmia OR heart failure),43.75522327423096,success
+2026-05-17 15:38:27,seed,meta-analysis[pt] AND neoplasms[mh],48.003183126449585,success
+2026-05-17 15:40:20,seed,randomized controlled trial[pt] AND (chemotherapy OR immunotherapy OR targeted therapy),58.387635707855225,success
+2026-05-17 15:41:36,seed,cohort studies[mh] AND neoplasms[mh],63.365269899368286,success
+2026-05-17 15:42:54,seed,case-control studies[mh] AND neoplasms[mh],73.02727699279785,success
+2026-05-17 15:44:11,seed,case reports[pt] AND (lymphoma OR carcinoma OR melanoma),72.00789141654968,success
+2026-05-17 15:46:33,seed,systematic review[pt] AND nervous system diseases[mh],92.6661684513092,success
+2026-05-17 15:48:13,seed,randomized controlled trial[pt] AND (stroke OR epilepsy OR parkinson OR multiple sclerosis),86.46889877319336,success
+2026-05-17 15:49:53,seed,cohort studies[mh] AND nervous system diseases[mh],93.42563700675964,success
+2026-05-17 15:51:35,seed,case-control studies[mh] AND nervous system diseases[mh],94.40261387825012,success
+2026-05-17 15:53:11,seed,case reports[pt] AND (neuropathy OR dementia OR migraine OR encephalitis),90.36946058273315,success
+2026-05-17 16:16:13,seed,case reports[pt] AND (neuropathy OR dementia OR migraine OR encephalitis),103.45631217956543,success

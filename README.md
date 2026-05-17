@@ -120,21 +120,83 @@ pip install -r "requirements.txt"
 To build a reproducible baseline database, execute seed requests to ingest domain-stratified documents directly into the document database:
 ```bash
 # Seed db for repreduseable ablation studies
+
+# CARDIOVASCULAR
+# L1 – Systematic reviews & meta-analyses
 curl -X POST http://localhost:8000/ablation/seed \
      -H "Content-Type: application/json" \
-     -d '{"query": "Meta Analysis skin" ,"max_results": 50}'
+     -d '{"query": "systematic review[pt] AND cardiovascular diseases[mh]", "max_results": 50}'
 
 curl -X POST http://localhost:8000/ablation/seed \
      -H "Content-Type: application/json" \
-     -d '{"query": "cohort study cancer" ,"max_results": 50}'
+     -d '{"query": "randomized controlled trial[pt] AND (antiplatelet OR anticoagulant OR coronary)", "max_results": 50}'
+
+# L2 – Cohort / prospective
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "cohort studies[mh] AND cardiovascular diseases[mh]", "max_results": 50}'
+
+# L3 – Case-control / cross-sectional
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "case-control studies[mh] AND cardiovascular diseases[mh]", "max_results": 50}'
+
+# L4-L5 – Case series + expert review
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "case reports[pt] AND (thrombosis OR arrhythmia OR heart failure)", "max_results": 50}'
+
+
+# ONCOLOGY
+# L1
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "meta-analysis[pt] AND neoplasms[mh]", "max_results": 50}'
 
 curl -X POST http://localhost:8000/ablation/seed \
      -H "Content-Type: application/json" \
-     -d '{"query": "cohort study Neurology" ,"max_results": 50}'
+     -d '{"query": "randomized controlled trial[pt] AND (chemotherapy OR immunotherapy OR targeted therapy)", "max_results": 50}'
+
+# L2
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "cohort studies[mh] AND neoplasms[mh]", "max_results": 50}'
+
+# L3
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "case-control studies[mh] AND neoplasms[mh]", "max_results": 50}'
+
+# L4-L5
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "case reports[pt] AND (lymphoma OR carcinoma OR melanoma)", "max_results": 50}'
+
+
+# NEUROLOGY
+# L1
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "systematic review[pt] AND nervous system diseases[mh]", "max_results": 50}'
 
 curl -X POST http://localhost:8000/ablation/seed \
      -H "Content-Type: application/json" \
-     -d '{"query": "case report Dermatology" ,"max_results": 50}'
+     -d '{"query": "randomized controlled trial[pt] AND (stroke OR epilepsy OR parkinson OR multiple sclerosis)", "max_results": 50}'
+
+# L2
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "cohort studies[mh] AND nervous system diseases[mh]", "max_results": 50}'
+
+# L3
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "case-control studies[mh] AND nervous system diseases[mh]", "max_results": 50}'
+
+# L4-L5
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "case reports[pt] AND (neuropathy OR dementia OR migraine OR encephalitis)", "max_results": 50}'
 
 ```
 ### Step 4: Running the Ablation Study
