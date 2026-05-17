@@ -16,3 +16,6 @@ timestamp,action,query,results_count,top_result_pmid,latency,pipeline,status
 2026-05-17 15:51:35,seed,case-control studies[mh] AND nervous system diseases[mh],94.40261387825012,success
 2026-05-17 15:53:11,seed,case reports[pt] AND (neuropathy OR dementia OR migraine OR encephalitis),90.36946058273315,success
 2026-05-17 16:16:13,seed,case reports[pt] AND (neuropathy OR dementia OR migraine OR encephalitis),103.45631217956543,success
+2026-05-17 16:43:21,seed,systematic review[pt] AND skin diseases[mh],158.6267671585083,success
+2026-05-17 16:53:30,seed,case-control studies[mh] AND dermatology[mh],128.90612316131592,success
+2026-05-17 18:09:09,seed,randomized controlled trial[pt] AND (psoriasis OR atopic dermatitis OR vitiligo OR melanoma),204.0133650302887,success

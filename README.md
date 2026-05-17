@@ -198,6 +198,22 @@ curl -X POST http://localhost:8000/ablation/seed \
      -H "Content-Type: application/json" \
      -d '{"query": "case reports[pt] AND (neuropathy OR dementia OR migraine OR encephalitis)", "max_results": 50}'
 
+# DERMATOLOGY
+# L1
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "systematic review[pt] AND skin diseases[mh]", "max_results": 100}'
+
+
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "randomized controlled trial[pt] AND (psoriasis OR atopic dermatitis OR vitiligo OR melanoma)", "max_results": 100}'
+
+# L3-L4
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "case-control studies[mh] AND dermatology[mh]", "max_results": 100}'
+
 ```
 ### Step 4: Running the Ablation Study
 ```bash
@@ -221,11 +237,36 @@ Every evaluation query produces two records within the log matrix:
 Every batch run appends to the same log file to build a comprehensive dataset.
 
 ---
+## 5. queries distribution 
+The CTE-50 benchmark suite is meticulously balanced across four dimensions and three domains, resulting in a total of 200 queries:
+
+| | Oncology | Neurology | Dermatology | Total |
+|---|---|---|---|---|
+| evidence_level | 15 | 15 | 15 | **45** |
+| journal_tier | 15 | 15 | 15 | **45** |
+| multi_factor | 15 | 15 | 15 | **45** |
+| adversarial | 15 | 15 | 15 | **45** |
+
+**TWR advantage: 105 True / 75 False.** The 75 False queries are our adversarial and niche cases where TWR is expected to struggle, but they are crucial for stress-testing the bounds of the trust weight function.
+
+**Design logic per dimension:**
+
+- **evidence_level** — 10 queries per domain where L1 RCTs/meta-analyses exist in corpus → TWR wins. 5 per domain targeting rare diseases with only case reports → TWR loses. Tests the OCEBM weight signal in isolation.
+- **journal_tier** — 10 per domain with strong Q1 journal presence on topic → TWR wins. 5 per domain where the most detailed literature lives in Unranked speciality journals → TWR loses. Tests the tier multiplier in isolation.
+- **multi_factor** — 10 per domain where both L1 evidence AND Q1 tier align → TWR compounds both signals for largest delta. 5 per domain where evidence and tier signals conflict → ambiguous outcome. Tests the combined TWR formula.
+- **adversarial** — 10 per domain targeting genuinely rare/niche conditions where only case reports exist in any journal tier. These are honest stress-tests. 5 per domain where adversarial framing but high-trust evidence actually exists — TWR still wins, proving it's not fragile.
+
+---
+## 6. hypothesis & Expected Outcomes
+**Hypothesis:** TWR will outperform RRF in at least 80% of the `evidence_level` and `journal_tier` queries due to its ability to prioritize high-evidence and high-tier sources. In `multi_factor` queries, TWR should show a significant advantage in cases where evidence and journal tier signals align, while performance may be more variable in conflicting signal cases. In `adversarial` queries, TWR is expected to underperform in rare disease scenarios but should still outperform when high-trust evidence exists despite adversarial framing.
+
+---
+## 7. Why This Matters
+This ablation study is not just an academic exercise; it directly tests the mathematical validity of incorporating trust signals into retrieval fusion. If TWR consistently outperforms RRF in high-evidence and high-tier scenarios, it provides a strong argument for rethinking how we design retrieval systems in clinical RAG applications. The results could pave the way for more clinically relevant and trustworthy AI assistants that prioritize not just relevance but also the quality and reliability of information.
+
+---
 
 ## Research & Documentation
 *   **Lead Engineer:** khalid Iqnaibi
 *   **Methodology:** Hypothesis-driven ablation.
-
-
-
 

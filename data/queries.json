@@ -1,452 +1,2537 @@
 [
   {
     "id": 1,
-    "query": "What is the recommended antiplatelet therapy after percutaneous coronary intervention in acute coronary syndrome?",
-    "domain": "Cardiovascular Diseases",
+    "query": "What is the survival benefit of adjuvant chemotherapy in stage III colorectal cancer?",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "High-confidence clinical recommendation — TWR should elevate RCT/meta-analysis (OCEBM 1) sources over expert opinion (OCEBM 5).",
-    "tags": ["antiplatelet", "PCI", "ACS", "DAPT"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "colorectal cancer",
+      "adjuvant chemotherapy",
+      "survival",
+      "RCT"
+    ]
   },
   {
     "id": 2,
-    "query": "Aspirin discontinuation safety after drug-eluting stent implantation",
-    "domain": "Cardiovascular Diseases",
-    "ablation_dimension": "journal_tier",
+    "query": "Does robotic surgery improve oncological outcomes versus laparoscopic surgery in rectal cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Multiple sources exist across Q1–Unranked journals. TWR should surface Q1 publications (JAMA, Stroke) over unranked ones covering the same topic.",
-    "tags": ["aspirin", "DES", "DAPT", "antiplatelet"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "robotic surgery",
+      "rectal cancer",
+      "laparoscopic",
+      "meta-analysis"
+    ]
   },
   {
     "id": 3,
-    "query": "P2Y12 inhibitor selection in patients with acute ischemic stroke",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "What is the effect of deep inspiration breath hold on cardiac dose in breast cancer radiotherapy?",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Treatment guidance query where guideline-level evidence (OCEBM 1–2) should dominate; RRF is blind to this distinction.",
-    "tags": ["P2Y12", "stroke", "antiplatelet", "neurology"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "DIBH",
+      "breast cancer",
+      "radiotherapy",
+      "cardiac dose"
+    ]
   },
   {
     "id": 4,
-    "query": "Thrombocytopenia management in cardiovascular disease patients on antiplatelet therapy",
-    "domain": "Hemic and Lymphatic Diseases (Hematology)",
-    "ablation_dimension": "multi_factor",
+    "query": "How effective is immunotherapy compared to chemotherapy as first-line treatment in non-small cell lung cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Requires balancing journal tier AND evidence level — TWR's multiplicative formula should produce cleaner separation than RRF's flat reciprocal rank.",
-    "tags": ["thrombocytopenia", "cardiovascular", "antiplatelet", "hematology"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "immunotherapy",
+      "NSCLC",
+      "chemotherapy",
+      "first-line",
+      "RCT"
+    ]
   },
   {
     "id": 5,
-    "query": "Low-dose aspirin primary prevention in older adults",
-    "domain": "Cardiovascular Diseases",
+    "query": "What is the role of SGLT2 inhibitors in cancer patients with comorbid heart failure?",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Guideline-altering RCT evidence (aspirin de-recommendation) should be ranked above commentary; TWR penalizes OCEBM 5 opinion pieces heavily.",
-    "tags": ["aspirin", "primary prevention", "elderly", "bleeding risk"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "SGLT2 inhibitors",
+      "cancer",
+      "heart failure",
+      "systematic review"
+    ]
   },
   {
     "id": 6,
-    "query": "Venous thromboembolism prophylaxis in children with congenital heart disease",
-    "domain": "Congenital, Hereditary, and Neonatal Diseases (Pediatrics)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "Pediatric VTE evidence is sparse and mostly expert opinion (OCEBM 5). TWR's down-weighting of OCEBM 5 may penalize all relevant results — RRF may actually surface them better by relying on raw relevance.",
-    "tags": ["VTE", "pediatrics", "anticoagulation", "congenital heart"]
+    "query": "Does cognitive impairment from chemotherapy (chemobrain) respond to cognitive rehabilitation interventions?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "chemobrain",
+      "cognitive impairment",
+      "rehabilitation",
+      "breast cancer"
+    ]
   },
   {
     "id": 7,
-    "query": "Dual antiplatelet therapy duration optimization post-coronary stenting",
-    "domain": "Cardiovascular Diseases",
-    "ablation_dimension": "journal_tier",
+    "query": "What are the oncological outcomes of cytoreductive surgery with HIPEC for peritoneal metastases?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Dense literature exists across tier levels. TWR's journal multiplier should consistently lift Q1 results while RRF treats all equally.",
-    "tags": ["DAPT", "stent", "duration", "coronary"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "HIPEC",
+      "peritoneal metastases",
+      "cytoreductive surgery",
+      "meta-analysis"
+    ]
   },
   {
     "id": 8,
-    "query": "Tirofiban efficacy in acute ischemic stroke without large vessel occlusion",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Is neoadjuvant chemotherapy superior to adjuvant chemotherapy in locally advanced gastric cancer?",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "JAMA publication exists at OCEBM 5 but from a Q1 journal. Tests journal_tier vs evidence_level interaction within the TWR formula.",
-    "tags": ["tirofiban", "stroke", "thrombosis", "neurology"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "neoadjuvant",
+      "gastric cancer",
+      "chemotherapy",
+      "RCT"
+    ]
   },
   {
     "id": 9,
-    "query": "Tranexamic acid use in pulmonary artery pseudoaneurysm",
-    "domain": "Digestive System Diseases (Gastroenterology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "Rare condition with only case-level evidence (OCEBM 4–5, unranked). TWR heavily penalizes both axes; RRF pure relevance matching may outperform.",
-    "tags": ["tranexamic acid", "pseudoaneurysm", "case report", "rare"]
+    "query": "What is the comparative effectiveness of targeted therapies in ALK-positive non-small cell lung cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "ALK-positive",
+      "NSCLC",
+      "targeted therapy",
+      "systematic review"
+    ]
   },
   {
     "id": 10,
-    "query": "Meta-analysis of antiplatelet therapy guidelines for acute coronary syndrome",
-    "domain": "general",
+    "query": "How does pembrolizumab compare to standard chemotherapy in recurrent cervical cancer?",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Query explicitly targets systematic review/meta-analysis level evidence (OCEBM 1). TWR should rank OCEBM 1 sources first; RRF cannot distinguish.",
-    "tags": ["meta-analysis", "ACS", "guidelines", "systematic review"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "pembrolizumab",
+      "cervical cancer",
+      "immunotherapy",
+      "RCT"
+    ]
   },
   {
     "id": 11,
-    "query": "Potassium-competitive acid blockers versus proton pump inhibitors for ulcer prevention in aspirin users",
-    "domain": "Digestive System Diseases (Gastroenterology)",
+    "query": "What are the clinical features of ALK-positive histiocytosis cutaneous presentation?",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "RCT evidence exists alongside real-world observational data. TWR should rank the RCT-based evidence higher given its OCEBM weight.",
-    "tags": ["P-CAB", "PPI", "aspirin", "ulcer", "gastroenterology"]
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "ALK-positive histiocytosis",
+      "cutaneous",
+      "rare",
+      "case report"
+    ]
   },
   {
     "id": 12,
-    "query": "Periprosthetic joint infection risk after total knee arthroplasty on antithrombotic therapy",
-    "domain": "Infections",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "Intersection of infection and orthopedic surgery with varying evidence quality. Multi-factor TWR scoring tests combined journal+evidence weighting.",
-    "tags": ["PJI", "arthroplasty", "antithrombotic", "infection"]
+    "query": "How is primary thyroid diffuse large B-cell lymphoma diagnosed and managed?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "thyroid DLBCL",
+      "lymphoma",
+      "diagnosis",
+      "case series"
+    ]
   },
   {
     "id": 13,
-    "query": "Hypertensive disorders in pregnancy and postpartum anticoagulation management",
-    "domain": "general",
-    "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Covered in both Q1 (Pregnancy Hypertension) and unranked sources. TWR journal multiplier should cleanly separate tier quality.",
-    "tags": ["pregnancy", "hypertension", "anticoagulation", "postpartum"]
+    "query": "What is the treatment approach for B-cell acute lymphoblastic leukemia relapse after CAR-T therapy?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "ALL",
+      "CAR-T",
+      "relapse",
+      "case report"
+    ]
   },
   {
     "id": 14,
-    "query": "Elevated lipoprotein(a) and antiplatelet therapy for cardiovascular risk reduction",
-    "domain": "Cardiovascular Diseases",
+    "query": "What are the presenting symptoms of extramammary Paget disease in unusual anatomical sites?",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "OCEBM 1 document in corpus; TWR should give it maximum weight. Tests whether the evidence_score=1.0 pushes it to top against OCEBM 5 majority.",
-    "tags": ["Lp(a)", "lipoprotein", "cardiovascular risk", "aspirin"]
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "Paget disease",
+      "extramammary",
+      "rare",
+      "case report"
+    ]
   },
   {
     "id": 15,
-    "query": "Aspirin effect on preterm birth risk with heat exposure during pregnancy",
-    "domain": "general",
+    "query": "How is dermatopathic lymphadenitis distinguished from malignant lymphoma on histopathology?",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "Secondary RCT analysis (OCEBM 1, Q1 journal) — highest possible TWR score. Validates that perfect evidence + perfect journal tier produces top ranking.",
-    "tags": ["aspirin", "preterm birth", "pregnancy", "RCT"]
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "dermatopathic lymphadenitis",
+      "lymphoma",
+      "histopathology",
+      "case series"
+    ]
   },
   {
     "id": 16,
-    "query": "RSV infection fusion protein mechanism and antiviral targets",
-    "domain": "Infections",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "Virology/mechanism query — all relevant results are OCEBM 5 review articles. TWR uniformly penalizes all, making its ranking indistinguishable from RRF on this topic.",
-    "tags": ["RSV", "respiratory syncytial virus", "antiviral", "fusion protein"]
+    "query": "What is the efficacy of eptinezumab for episodic migraine prevention?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "eptinezumab",
+      "migraine",
+      "prevention",
+      "RCT"
+    ]
   },
   {
     "id": 17,
-    "query": "Sarcopenia screening tools and association with cardiovascular outcomes",
-    "domain": "Hemic and Lymphatic Diseases (Hematology)",
-    "ablation_dimension": "journal_tier",
+    "query": "Does post-stroke dysphagia respond to transcranial magnetic stimulation rehabilitation?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Q1 journal source covers sarcopenia screening; TWR journal multiplier should lift it over unranked alternatives.",
-    "tags": ["sarcopenia", "muscle mass", "cardiovascular", "screening"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "post-stroke dysphagia",
+      "TMS",
+      "rehabilitation",
+      "RCT"
+    ]
   },
   {
     "id": 18,
-    "query": "Metabolic syndrome components and their association with chronic disease progression",
-    "domain": "Nutritional and Metabolic Diseases",
-    "ablation_dimension": "journal_tier",
+    "query": "What is the comparative effectiveness of SGLT2 inhibitors in patients with neurological comorbidities and heart failure?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Content spread across Q2–Q3 and unranked journals. Journal multiplier differentials (0.85 vs 0.40) create meaningful reranking that RRF misses.",
-    "tags": ["metabolic syndrome", "obesity", "insulin resistance", "dyslipidemia"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "SGLT2 inhibitors",
+      "heart failure",
+      "neurology",
+      "meta-analysis"
+    ]
   },
   {
     "id": 19,
-    "query": "Breast cancer associated hypercoagulability and thrombus risk quantification",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
+    "query": "How effective is high-intensity transcranial direct current stimulation for motor recovery after stroke?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Oncology-hematology intersection with Q2 and unranked sources at OCEBM 5. Tests whether TWR journal multiplier still meaningfully reranks at same evidence level.",
-    "tags": ["breast cancer", "hypercoagulability", "thrombus", "oncology"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "tDCS",
+      "stroke",
+      "motor recovery",
+      "RCT"
+    ]
   },
   {
     "id": 20,
-    "query": "Colorectal cancer risk prediction model validation in diverse populations",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "journal_tier",
+    "query": "What antiplatelet regimen is optimal for secondary stroke prevention in elderly diabetic patients?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "NCI CCRAT model assessment in unranked source — tests whether RRF over-ranks unranked sources that are highly lexically relevant.",
-    "tags": ["colorectal cancer", "risk model", "NCI", "population validation"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "antiplatelet",
+      "stroke prevention",
+      "diabetes",
+      "systematic review"
+    ]
   },
   {
     "id": 21,
-    "query": "Tuberous sclerosis complex with protein C deficiency and hypercoagulable state",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "Q4 journal, OCEBM 4 case report — rare co-occurrence. TWR will heavily penalize both journal tier (0.55) and evidence level (0.4); RRF may surface this relevant rare document better.",
-    "tags": ["tuberous sclerosis", "hypercoagulability", "protein C", "rare"]
+    "query": "Does levetiracetam reduce seizure frequency more effectively than valproate in focal epilepsy?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "levetiracetam",
+      "valproate",
+      "epilepsy",
+      "RCT"
+    ]
   },
   {
     "id": 22,
-    "query": "Hormone receptor-positive metastatic breast cancer treatment after conventional therapy resistance",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What is the long-term safety and efficacy of natalizumab in relapsing-remitting multiple sclerosis?",
+    "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Case series and observational studies (OCEBM 4) vs review articles (OCEBM 5). TWR slightly favors OCEBM 4 over OCEBM 5 sources (0.4 vs 0.2).",
-    "tags": ["breast cancer", "HR+", "metastatic", "treatment resistance"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "natalizumab",
+      "multiple sclerosis",
+      "long-term",
+      "systematic review"
+    ]
   },
   {
     "id": 23,
-    "query": "Systemic lupus erythematosus autoimmune activation and multi-organ damage",
-    "domain": "Immune System Diseases",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "Single OCEBM 5, Unranked document covers this. Minimum TWR score; RRF's pure rank-based approach retrieves it just as well without the trust penalty.",
-    "tags": ["SLE", "lupus", "autoimmune", "immune dysregulation"]
+    "query": "How effective is deep brain stimulation for treatment-resistant Parkinson tremor?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "deep brain stimulation",
+      "Parkinson",
+      "tremor",
+      "meta-analysis"
+    ]
   },
   {
     "id": 24,
-    "query": "Pulmonary hypertension pathogenesis and therapeutic targets in vascular remodeling",
-    "domain": "Respiratory Tract Diseases",
-    "ablation_dimension": "journal_tier",
+    "query": "What is the optimal blood pressure target for reducing recurrent stroke risk?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Content spans Q2 and unranked journals. Journal multiplier (0.85 vs 0.40) tests whether TWR meaningfully promotes Q2 over unranked at same evidence level.",
-    "tags": ["pulmonary hypertension", "vascular remodeling", "pathogenesis"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "blood pressure",
+      "stroke prevention",
+      "hypertension",
+      "RCT"
+    ]
   },
   {
     "id": 25,
-    "query": "Biologic therapy outcomes in chronic rhinosinusitis with nasal polyps",
-    "domain": "Respiratory Tract Diseases",
-    "ablation_dimension": "journal_tier",
+    "query": "Does intensive glucose control reduce cognitive decline in patients with type 2 diabetes?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Q2 journal source vs Q3 source on related content. Tests fine-grained journal tier discrimination (0.85 vs 0.70 multiplier).",
-    "tags": ["CRSwNP", "biologics", "rhinosinusitis", "nasal polyps"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "glucose control",
+      "cognitive decline",
+      "diabetes",
+      "systematic review"
+    ]
   },
   {
     "id": 26,
-    "query": "Preeclampsia neurological complications and long-term outcomes",
+    "query": "What are the neurological manifestations of toxic optic neuropathy?",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "OCEBM 4 (case series) vs OCEBM 5 (review) for neurological manifestations. Tests whether TWR meaningfully differentiates adjacent evidence levels.",
-    "tags": ["preeclampsia", "neurology", "hypertension", "pregnancy complications"]
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "toxic optic neuropathy",
+      "rare",
+      "case report"
+    ]
   },
   {
     "id": 27,
-    "query": "Blunt traumatic aortic injury neurological complications and long-term follow-up",
+    "query": "How is febrile infection-related epilepsy syndrome (FIRES) managed in paediatric patients?",
     "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Q2 journal source on aortic injury neurological outcomes. Tests journal-tier advantage when evidence level is equal (OCEBM 5).",
-    "tags": ["aortic injury", "trauma", "neurological complications", "retrospective"]
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "FIRES",
+      "epilepsy",
+      "paediatric",
+      "case report"
+    ]
   },
   {
     "id": 28,
-    "query": "Transthyretin amyloidosis cardiac and neurological phenotype",
-    "domain": "general",
-    "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Q2 journal source on hereditary amyloidosis vs case-level unranked sources. Journal multiplier differentials produce reranking invisible to plain RRF.",
-    "tags": ["amyloidosis", "transthyretin", "cardiac", "neuropathy"]
+    "query": "What are the diagnostic criteria for distinguishing autoimmune encephalitis from viral encephalitis?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "autoimmune encephalitis",
+      "viral encephalitis",
+      "diagnosis",
+      "case series"
+    ]
   },
   {
     "id": 29,
-    "query": "Vitamin B12 deficiency in type 2 diabetes patients treated with metformin",
-    "domain": "Endocrine System Diseases",
-    "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Q3 journal source exists. Tests lower-tier journal weighting (0.70); validates TWR's graduated tier system is working rather than binary.",
-    "tags": ["B12 deficiency", "metformin", "diabetes", "homocysteine"]
+    "query": "What are the clinical features of Charcot-Marie-Tooth disease presenting with cavus foot deformity?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "Charcot-Marie-Tooth",
+      "cavus foot",
+      "neuropathy",
+      "case series"
+    ]
   },
   {
     "id": 30,
-    "query": "Endogenous thrombin potential progression in high-risk pregnancy",
-    "domain": "Endocrine System Diseases",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "Q1 journal prospective cohort (OCEBM 5 but Q1). Tests that high journal tier partially compensates for moderate evidence level in TWR's multiplicative formula.",
-    "tags": ["thrombin", "coagulation", "pregnancy", "prospective cohort"]
+    "query": "How does paraneoplastic limbic encephalitis present in patients with occult malignancy?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "paraneoplastic encephalitis",
+      "limbic",
+      "malignancy",
+      "case report"
+    ]
   },
   {
     "id": 31,
-    "query": "AI-assisted fracture diagnosis accuracy improvement with machine learning",
-    "domain": "general",
+    "query": "What is the efficacy of secukinumab for moderate-to-severe psoriasis in paediatric patients?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "OCEBM 1 rapid assessment (systematic review) at unranked journal. Tests whether evidence_level advantage can overcome journal_tier penalty in TWR's formula.",
-    "tags": ["AI", "fracture detection", "machine learning", "diagnostic accuracy"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "secukinumab",
+      "psoriasis",
+      "paediatric",
+      "RCT"
+    ]
   },
   {
     "id": 32,
-    "query": "Atherosclerosis oral drug delivery platform for anti-inflammatory and antithrombotic therapy",
-    "domain": "Digestive System Diseases (Gastroenterology)",
-    "ablation_dimension": "journal_tier",
+    "query": "How effective is dupilumab compared to cyclosporine in adults with severe atopic dermatitis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Q1 journal covering novel atherosclerosis drug platform. Journal multiplier gives TWR significant advantage over RRF on this specialized topic.",
-    "tags": ["atherosclerosis", "drug delivery", "anti-inflammatory", "oral therapy"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "dupilumab",
+      "atopic dermatitis",
+      "cyclosporine",
+      "RCT"
+    ]
   },
   {
     "id": 33,
-    "query": "AMPK activation and its role in obesity-associated carcinogenesis",
-    "domain": "Nutritional and Metabolic Diseases",
-    "ablation_dimension": "journal_tier",
+    "query": "Does melatonin supplementation improve disease severity and sleep quality in atopic dermatitis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Q2 journal source on AMPK-cancer metabolic pathway. Tests whether TWR journal multiplier surface it consistently above unranked metabolic disease content.",
-    "tags": ["AMPK", "obesity", "carcinogenesis", "metabolic dysregulation"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "melatonin",
+      "atopic dermatitis",
+      "sleep",
+      "RCT"
+    ]
   },
   {
     "id": 34,
-    "query": "Triglyceride-glucose-frailty index and hip fracture risk in elderly",
-    "domain": "Hemic and Lymphatic Diseases (Hematology)",
-    "ablation_dimension": "journal_tier",
+    "query": "What treatments are most effective for androgenetic alopecia based on systematic review evidence?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Q2 journal source on novel frailty index. Journal multiplier should surface it above Unranked hematology sources on the same population.",
-    "tags": ["frailty", "hip fracture", "metabolic index", "elderly"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "androgenetic alopecia",
+      "hair loss",
+      "treatment",
+      "systematic review"
+    ]
   },
   {
     "id": 35,
-    "query": "Nitric oxide signaling in vasodilation, antimicrobial, and anti-inflammatory processes",
+    "query": "What is the comparative efficacy of biologic therapies in moderate-to-severe plaque psoriasis?",
     "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "journal_tier",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Q1 journal covers NO signaling — TWR journal multiplier strongly elevates this vs any unranked dermatology sources.",
-    "tags": ["nitric oxide", "vasodilation", "signaling", "antimicrobial"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "biologics",
+      "psoriasis",
+      "network meta-analysis"
+    ]
   },
   {
     "id": 36,
-    "query": "T2-comorbidities in asthma including atopic dermatitis and allergic rhinitis management",
-    "domain": "general",
-    "ablation_dimension": "journal_tier",
+    "query": "How effective is JAK inhibitor therapy for vitiligo repigmentation?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Q2 journal (Archivos de Bronconeumologia) covers T2 asthma comorbidities. Tests TWR's consistent journal promotion across respiratory and allergy domains.",
-    "tags": ["asthma", "atopic dermatitis", "allergic rhinitis", "T2 inflammation"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "JAK inhibitor",
+      "vitiligo",
+      "repigmentation",
+      "RCT"
+    ]
   },
   {
     "id": 37,
-    "query": "Aspirin impact on surgical site infection and joint replacement outcomes",
-    "domain": "Infections",
-    "ablation_dimension": "journal_tier",
+    "query": "What is the risk of cardiovascular events in patients on long-term systemic psoriasis therapy?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Q1 journal source (antiplatelet + prosthetic joint infection). Tests whether high journal tier compensates for evidence level 5.",
-    "tags": ["aspirin", "joint infection", "prosthetics", "surgical outcome"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "psoriasis",
+      "cardiovascular risk",
+      "systemic therapy",
+      "meta-analysis"
+    ]
   },
   {
     "id": 38,
-    "query": "Kabuki syndrome genetic variants and associated coagulation abnormalities",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "Q3 journal, OCEBM 4 case series — rare genetic syndrome. TWR penalizes both dimensions; RRF's rank-based approach may return this rare but relevant document without penalty.",
-    "tags": ["Kabuki syndrome", "KMT2D", "coagulation", "rare genetic"]
+    "query": "Does phototherapy improve outcomes in atopic dermatitis when compared to topical corticosteroids?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "phototherapy",
+      "atopic dermatitis",
+      "corticosteroids",
+      "systematic review"
+    ]
   },
   {
     "id": 39,
-    "query": "Retained hemothorax after thoracic trauma management",
-    "domain": "Respiratory Tract Diseases",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "Q3, OCEBM 4 case report — only relevant source. TWR applies (0.70 × 0.4 × recency) penalty; RRF retrieves purely on lexical match, potentially performing better here.",
-    "tags": ["hemothorax", "thoracic trauma", "pleural drainage", "case report"]
+    "query": "What is the efficacy of oral minoxidil for female pattern hair loss?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "minoxidil",
+      "female pattern hair loss",
+      "alopecia",
+      "RCT"
+    ]
   },
   {
     "id": 40,
-    "query": "Postoperative antithrombotic therapy effects on complications after total hip arthroplasty",
-    "domain": "Infections",
-    "ablation_dimension": "multi_factor",
+    "query": "How effective are IL-17 inhibitors versus IL-23 inhibitors for psoriatic arthritis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "Unranked journal, OCEBM 5 but highly relevant temporal trend analysis. Tests TWR's behavior at minimum journal score — does it over-penalize a relevant but unranked source?",
-    "tags": ["antithrombotic", "hip arthroplasty", "postoperative", "complications"]
+    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "tags": [
+      "IL-17",
+      "IL-23",
+      "psoriatic arthritis",
+      "meta-analysis"
+    ]
   },
   {
     "id": 41,
-    "query": "Gastric intestinal metaplasia endoscopic grading and cancer transformation risk",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Q1 journal (Frontiers in Oncology, EGGIM study). TWR journal multiplier separates it from unranked oncology literature on similar topics.",
-    "tags": ["gastric metaplasia", "EGGIM", "endoscopy", "cancer risk"]
+    "query": "What are the histopathological features of dermatopathic lymphadenitis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "dermatopathic lymphadenitis",
+      "histopathology",
+      "case series"
+    ]
   },
   {
     "id": 42,
-    "query": "Robot-assisted partial nephrectomy feasibility in patients with mechanical circulatory support",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
+    "query": "How is prediction modelling used to guide treatment response in psoriasis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": false,
-    "rationale": "Unranked, OCEBM 4 case report — highly specific niche. TWR nearly zeros this document's trust score; plain RRF retrieves on keyword match without trust penalty.",
-    "tags": ["nephrectomy", "mechanical circulatory support", "RAPN", "case report"]
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "prediction model",
+      "psoriasis",
+      "treatment response",
+      "case series"
+    ]
   },
   {
     "id": 43,
-    "query": "Vertebrobasilar insufficiency triggered by yoga and transcranial Doppler diagnosis",
-    "domain": "general",
-    "ablation_dimension": "adversarial",
+    "query": "What are the clinical and pathological characteristics of primary cutaneous DLBCL?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": false,
-    "rationale": "Q3 journal, OCEBM 4, single case — lowest realistic TWR score. Stress test: does TWR's trust penalty suppress this unique relevant result that RRF would surface?",
-    "tags": ["vertebrobasilar insufficiency", "yoga", "Doppler", "case report"]
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "DLBCL",
+      "cutaneous",
+      "lymphoma",
+      "case report"
+    ]
   },
   {
     "id": 44,
-    "query": "Type 2 diabetes subgroup clustering and metabolic heterogeneity",
-    "domain": "Nutritional and Metabolic Diseases",
-    "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Unranked source on T2D subgroup clustering. Tests whether TWR's journal penalty (0.40) for unranked justifiably demotes this in favor of higher-tier evidence on metabolic disease.",
-    "tags": ["type 2 diabetes", "clustering", "SIDD", "metabolic subgroups"]
+    "query": "How does immune checkpoint inhibitor therapy cause dermatological adverse events?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "immune checkpoint inhibitor",
+      "dermatology",
+      "adverse events",
+      "case series"
+    ]
   },
   {
     "id": 45,
-    "query": "Persistent primitive trigeminal artery fistula and dissecting aneurysm management",
-    "domain": "general",
-    "ablation_dimension": "adversarial",
+    "query": "What are the clinical features of demodicosis in immunocompromised patients?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "evidence_level",
     "expected_twr_advantage": false,
-    "rationale": "Unranked journal, OCEBM 4 case — extremely rare vascular anatomy. TWR penalizes severely; RRF retrieves purely on keyword relevance, which may be more useful here.",
-    "tags": ["trigeminal artery", "fistula", "aneurysm", "rare neurovascular"]
+    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "tags": [
+      "demodicosis",
+      "immunocompromised",
+      "Demodex",
+      "case report"
+    ]
   },
   {
     "id": 46,
-    "query": "Pharmacotherapy adherence in cardiovascular and respiratory chronic disease management",
-    "domain": "Respiratory Tract Diseases",
+    "query": "What is the impact of person-centred care in end-of-life oncology management?",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Q3 journal source on adherence. Tests lower-tier discrimination in TWR (0.70 multiplier) vs the 0.55 and 0.40 assigned to Q4 and Unranked.",
-    "tags": ["adherence", "pharmacotherapy", "cardiovascular", "respiratory", "primary care"]
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "person-centred care",
+      "end-of-life",
+      "oncology",
+      "Q1 journal"
+    ]
   },
   {
     "id": 47,
-    "query": "Anticoagulation challenges with vitamin K antagonists in pediatric cardiac patients",
-    "domain": "Congenital, Hereditary, and Neonatal Diseases (Pediatrics)",
-    "ablation_dimension": "multi_factor",
+    "query": "How does colorectal cancer incidence differ between colon and rectal subsites?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Q2 journal on VKA+LMWH pediatric challenges. Multi-factor test: journal multiplier (0.85) partially compensates for OCEBM 5 evidence in TWR but not in RRF.",
-    "tags": ["VKA", "LMWH", "pediatric", "anticoagulation", "congenital heart"]
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "colorectal cancer",
+      "incidence",
+      "subsite",
+      "Q1 journal"
+    ]
   },
   {
     "id": 48,
-    "query": "Aspirin anti-inflammatory effect on leukocyte count and thrombocytosis in metabolic disease",
-    "domain": "Endocrine System Diseases",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "Unranked journal, OCEBM 5 experimental study. TWR gives minimum trust score; this tests if the adversarial penalty suppresses a uniquely relevant document RRF would rank.",
-    "tags": ["aspirin", "leukocytosis", "thrombocytosis", "diabetes", "inflammation"]
+    "query": "What are the risk factors for oxaliplatin-induced peripheral neuropathy in colorectal cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "oxaliplatin",
+      "neuropathy",
+      "colorectal cancer",
+      "Q1 journal"
+    ]
   },
   {
     "id": 49,
-    "query": "Multimodal analgesia and regional anesthesia in pediatric hip and femur surgery",
-    "domain": "Congenital, Hereditary, and Neonatal Diseases (Pediatrics)",
+    "query": "Does primary tumour resection improve survival in metastatic colorectal cancer?",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Q2 journal source on pediatric regional anesthesia. Journal multiplier (0.85) creates measurable rank shift that plain RRF cannot produce.",
-    "tags": ["regional anesthesia", "multimodal analgesia", "pediatric surgery", "femur"]
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "primary tumour resection",
+      "metastatic colorectal cancer",
+      "survival",
+      "Q1 journal"
+    ]
   },
   {
     "id": 50,
-    "query": "Novel flow cytometry assay for platelet function testing in cardiovascular patients",
-    "domain": "Hemic and Lymphatic Diseases (Hematology)",
+    "query": "What is the prognostic value of microsatellite instability status in colorectal cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "microsatellite instability",
+      "MSI",
+      "colorectal cancer",
+      "prognosis"
+    ]
+  },
+  {
+    "id": 51,
+    "query": "How does physical activity affect cancer-related fatigue in oncology patients?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "physical activity",
+      "cancer fatigue",
+      "oncology",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 52,
+    "query": "What is the role of circulating tumour DNA in monitoring colorectal cancer recurrence?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "ctDNA",
+      "colorectal cancer",
+      "recurrence monitoring",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 53,
+    "query": "What are the oncological outcomes of minimally invasive oesophagectomy versus open surgery?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "oesophagectomy",
+      "minimally invasive",
+      "oncological outcomes",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 54,
+    "query": "How effective is stereotactic body radiotherapy for oligometastatic cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "SBRT",
+      "oligometastatic",
+      "radiotherapy",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 55,
+    "query": "What is the impact of tumour microenvironment on immunotherapy response in solid tumours?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "tumour microenvironment",
+      "immunotherapy",
+      "solid tumour",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 56,
+    "query": "What are experimental treatment strategies for relapsed refractory multiple myeloma reported in regional oncology centres?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "myeloma",
+      "relapsed refractory",
+      "regional centre",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 57,
+    "query": "How is ALK-positive histiocytosis managed in resource-limited settings?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "ALK-positive histiocytosis",
+      "resource-limited",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 58,
+    "query": "What supportive care interventions are used for nausea in outpatient chemotherapy in developing countries?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "nausea",
+      "chemotherapy",
+      "supportive care",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 59,
+    "query": "What are local clinical practice patterns for colorectal cancer screening in lower-income populations?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "colorectal screening",
+      "clinical practice",
+      "low-income",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 60,
+    "query": "How do community oncology practices manage febrile neutropenia outside tertiary centres?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "febrile neutropenia",
+      "community oncology",
+      "practice patterns",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 61,
+    "query": "What is the long-term cognitive outcome of childhood epilepsy treated with antiseizure medications?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "epilepsy",
+      "cognitive outcome",
+      "antiseizure",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 62,
+    "query": "How does white matter hyperintensity burden predict dementia risk in older adults?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "white matter hyperintensity",
+      "dementia",
+      "MRI",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 63,
+    "query": "What is the efficacy of ocrelizumab in primary progressive multiple sclerosis?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "ocrelizumab",
+      "multiple sclerosis",
+      "primary progressive",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 64,
+    "query": "How does sleep-disordered breathing contribute to stroke risk?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "sleep apnea",
+      "stroke risk",
+      "sleep-disordered breathing",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 65,
+    "query": "What are the neuroimaging biomarkers for early Alzheimer disease diagnosis?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "Alzheimer",
+      "neuroimaging",
+      "biomarkers",
+      "early diagnosis",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 66,
+    "query": "How effective is botulinum toxin for chronic migraine prophylaxis?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "botulinum toxin",
+      "chronic migraine",
+      "prophylaxis",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 67,
+    "query": "What is the impact of sleep quality on Parkinson disease motor symptom severity?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "Parkinson",
+      "sleep quality",
+      "motor symptoms",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 68,
+    "query": "How does remote ischaemic conditioning reduce neurological injury after acute stroke?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "remote ischaemic conditioning",
+      "stroke",
+      "neuroprotection",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 69,
+    "query": "What is the clinical utility of plasma phosphorylated tau for Alzheimer diagnosis?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "phosphorylated tau",
+      "Alzheimer",
+      "plasma biomarker",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 70,
+    "query": "How does diabetes management affect peripheral neuropathy progression?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "diabetes",
+      "peripheral neuropathy",
+      "glucose control",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 71,
+    "query": "How is Cortexin used in post-COVID neurological rehabilitation in Eastern European practice?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "Cortexin",
+      "post-COVID",
+      "neurological rehabilitation",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 72,
+    "query": "What are the neurological complications documented in regional case series of COVID-19 patients?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "COVID-19",
+      "neurological complications",
+      "case series",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 73,
+    "query": "What local treatment protocols are used for epilepsy in resource-limited neurology units?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "epilepsy",
+      "treatment protocol",
+      "resource-limited",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 74,
+    "query": "How is toxic optic neuropathy from methanol poisoning managed in low-resource settings?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "toxic optic neuropathy",
+      "methanol",
+      "resource-limited",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 75,
+    "query": "What are the clinical outcomes of stroke rehabilitation in community hospitals without specialised stroke units?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "stroke rehabilitation",
+      "community hospital",
+      "outcomes",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 76,
+    "query": "What is the impact of biologic therapy on quality of life in chronic plaque psoriasis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "biologic therapy",
+      "psoriasis",
+      "quality of life",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 77,
+    "query": "How does hair type classification guide personalised hair care recommendations?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "hair classification",
+      "personalised care",
+      "trichology",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 78,
+    "query": "What is the association between psoriasis severity and cardiovascular mortality?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "psoriasis",
+      "cardiovascular mortality",
+      "severity",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 79,
+    "query": "How effective are disease-modifying antirheumatic drugs in treating psoriatic arthritis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "DMARDs",
+      "psoriatic arthritis",
+      "treatment efficacy",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 80,
+    "query": "What is the role of the microbiome in atopic dermatitis pathogenesis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "microbiome",
+      "atopic dermatitis",
+      "pathogenesis",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 81,
+    "query": "How does dupilumab affect long-term eczema control and skin barrier function?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "dupilumab",
+      "eczema",
+      "skin barrier",
+      "long-term",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 82,
+    "query": "What are the dermatological manifestations of inflammatory bowel disease?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "inflammatory bowel disease",
+      "dermatology",
+      "extraintestinal",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 83,
+    "query": "How effective is tofacitinib for moderate-to-severe alopecia areata?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "tofacitinib",
+      "alopecia areata",
+      "JAK inhibitor",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 84,
+    "query": "What is the prevalence and impact of pruritus in chronic kidney disease patients?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "pruritus",
+      "chronic kidney disease",
+      "prevalence",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 85,
+    "query": "How does UV phototherapy compare to excimer laser for localised vitiligo?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": true,
+    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "tags": [
+      "phototherapy",
+      "excimer laser",
+      "vitiligo",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 86,
+    "query": "What topical treatments for psoriasis are used in low-resource dermatology clinics?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "psoriasis",
+      "topical treatment",
+      "low-resource",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 87,
+    "query": "How is alopecia areata managed in paediatric patients in regional dermatology units?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "alopecia areata",
+      "paediatric",
+      "regional practice",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 88,
+    "query": "What are local prescribing patterns for atopic dermatitis in primary care settings?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "atopic dermatitis",
+      "primary care",
+      "prescribing patterns",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 89,
+    "query": "How is contact dermatitis patch testing performed in non-specialist settings?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "contact dermatitis",
+      "patch testing",
+      "non-specialist",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 90,
+    "query": "What are the outcomes of wound healing interventions documented in regional plastic surgery case series?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "journal_tier",
+    "expected_twr_advantage": false,
+    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "tags": [
+      "wound healing",
+      "plastic surgery",
+      "case series",
+      "Unranked journal"
+    ]
+  },
+  {
+    "id": 91,
+    "query": "What does the highest-quality evidence from top-tier oncology journals say about KRAS mutation impact on colorectal cancer prognosis?",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "multi_factor",
     "expected_twr_advantage": true,
-    "rationale": "Unranked journal, OCEBM 5 methodological study — useful but penalized on both TWR axes. Multi-factor test: validates TWR's combined penalty behavior vs RRF's neutrality on trust signals.",
-    "tags": ["flow cytometry", "platelet function", "cardiovascular", "hematology"]
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "KRAS",
+      "colorectal cancer",
+      "prognosis",
+      "L1 evidence",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 92,
+    "query": "What is the best evidence from Q1 journals on the efficacy of checkpoint inhibitors in mismatch repair deficient tumours?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "checkpoint inhibitors",
+      "MMR-deficient",
+      "immunotherapy",
+      "Q1 journal",
+      "meta-analysis"
+    ]
+  },
+  {
+    "id": 93,
+    "query": "What do recent systematic reviews in high-impact journals recommend for HER2-positive breast cancer adjuvant therapy?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "HER2-positive",
+      "breast cancer",
+      "adjuvant",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 94,
+    "query": "What is the combined effect of tumour burden and performance status on immunotherapy outcomes in lung cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "tumour burden",
+      "performance status",
+      "immunotherapy",
+      "lung cancer",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 95,
+    "query": "What does high-quality evidence say about the optimal duration of adjuvant oxaliplatin therapy in stage III colon cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "oxaliplatin",
+      "colon cancer",
+      "adjuvant duration",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 96,
+    "query": "What is the best evidence for prophylactic cranial irradiation in limited-stage small cell lung cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "cranial irradiation",
+      "small cell lung cancer",
+      "prophylaxis",
+      "meta-analysis",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 97,
+    "query": "How do Q1-published RCTs compare maintenance PARP inhibitors in BRCA-mutated ovarian cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "PARP inhibitor",
+      "ovarian cancer",
+      "BRCA",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 98,
+    "query": "What does the highest-tier evidence show about laparoscopic versus open surgery for hepatocellular carcinoma?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "hepatocellular carcinoma",
+      "laparoscopic",
+      "open surgery",
+      "meta-analysis",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 99,
+    "query": "What is the systematic review evidence from high-impact journals on CAR-T therapy in relapsed lymphoma?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "CAR-T",
+      "lymphoma",
+      "relapsed",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 100,
+    "query": "What do large RCTs published in top oncology journals show about bevacizumab in metastatic colorectal cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "bevacizumab",
+      "metastatic colorectal cancer",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 101,
+    "query": "What is the evidence on novel targeted therapies for rare sarcoma subtypes reported in speciality journals?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "sarcoma",
+      "rare subtype",
+      "targeted therapy",
+      "mixed evidence",
+      "Q3 journal"
+    ]
+  },
+  {
+    "id": 102,
+    "query": "How do observational studies in mid-tier journals characterise long-term survivorship outcomes in testicular cancer?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "testicular cancer",
+      "survivorship",
+      "observational",
+      "Q2/Q3 journal"
+    ]
+  },
+  {
+    "id": 103,
+    "query": "What does mixed-level evidence from varied journal tiers suggest about neoadjuvant immunotherapy in resectable NSCLC?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "neoadjuvant immunotherapy",
+      "NSCLC",
+      "resectable",
+      "mixed evidence"
+    ]
+  },
+  {
+    "id": 104,
+    "query": "How do case series in speciality journals document outcomes of isolated limb perfusion for melanoma?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "isolated limb perfusion",
+      "melanoma",
+      "case series",
+      "Q3 journal"
+    ]
+  },
+  {
+    "id": 105,
+    "query": "What does scattered evidence across journal tiers show about cannabis use in cancer pain management?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "cannabis",
+      "cancer pain",
+      "mixed evidence",
+      "mixed journal tiers"
+    ]
+  },
+  {
+    "id": 106,
+    "query": "What is the highest-quality evidence from top neurology journals on stroke thrombolysis time windows?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "thrombolysis",
+      "stroke",
+      "time window",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 107,
+    "query": "What do Q1-published meta-analyses recommend for anticoagulation in atrial fibrillation with prior stroke?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "anticoagulation",
+      "atrial fibrillation",
+      "stroke prevention",
+      "meta-analysis",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 108,
+    "query": "What is the best evidence from high-impact journals on amyloid PET as an Alzheimer diagnostic biomarker?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "amyloid PET",
+      "Alzheimer",
+      "biomarker",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 109,
+    "query": "How do top-tier journal RCTs characterise the benefit of early aggressive MS treatment?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "multiple sclerosis",
+      "early treatment",
+      "aggressive",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 110,
+    "query": "What is the systematic review evidence on neuroprotective strategies after traumatic brain injury?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "traumatic brain injury",
+      "neuroprotection",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 111,
+    "query": "What do large Q1-published RCTs show about blood pressure lowering targets in acute haemorrhagic stroke?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "haemorrhagic stroke",
+      "blood pressure",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 112,
+    "query": "What is the highest-tier evidence on mechanical thrombectomy versus thrombolysis in large vessel occlusion stroke?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "mechanical thrombectomy",
+      "thrombolysis",
+      "large vessel occlusion",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 113,
+    "query": "What do high-impact journal systematic reviews conclude about prophylactic antiepileptics after craniotomy?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "antiepileptics",
+      "craniotomy",
+      "prophylaxis",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 114,
+    "query": "What is the meta-analytic evidence from Q1 journals on exercise therapy for Parkinson disease motor function?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "exercise therapy",
+      "Parkinson",
+      "motor function",
+      "meta-analysis",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 115,
+    "query": "What do RCTs in leading neurology journals show about cognitive training in mild cognitive impairment?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "cognitive training",
+      "mild cognitive impairment",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 116,
+    "query": "What does mixed evidence across journal tiers suggest about hyperbaric oxygen for post-concussion syndrome?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "hyperbaric oxygen",
+      "post-concussion",
+      "mixed evidence",
+      "mixed tier"
+    ]
+  },
+  {
+    "id": 117,
+    "query": "How do observational studies in speciality journals describe outcomes of vagus nerve stimulation for refractory epilepsy?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "vagus nerve stimulation",
+      "epilepsy",
+      "observational",
+      "Q2/Q3 journal"
+    ]
+  },
+  {
+    "id": 118,
+    "query": "What is the scattered evidence on acupuncture for migraine prevention across varied publication quality?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "acupuncture",
+      "migraine",
+      "mixed evidence",
+      "mixed tier"
+    ]
+  },
+  {
+    "id": 119,
+    "query": "How do mid-tier journals characterise stem cell therapy outcomes in amyotrophic lateral sclerosis?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "stem cell therapy",
+      "ALS",
+      "Q2/Q3 journal",
+      "observational"
+    ]
+  },
+  {
+    "id": 120,
+    "query": "What does heterogeneous evidence from varied sources show about music therapy for dementia?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "music therapy",
+      "dementia",
+      "heterogeneous evidence",
+      "mixed tier"
+    ]
+  },
+  {
+    "id": 121,
+    "query": "What does the best RCT evidence from Q1 dermatology journals show about tralokinumab for atopic dermatitis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "tralokinumab",
+      "atopic dermatitis",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 122,
+    "query": "What is the meta-analytic evidence from high-impact journals on biologic switching in psoriasis non-responders?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "biologic switching",
+      "psoriasis",
+      "meta-analysis",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 123,
+    "query": "What do top-tier systematic reviews conclude about long-term remission with dupilumab in atopic dermatitis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "dupilumab",
+      "atopic dermatitis",
+      "remission",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 124,
+    "query": "What is the highest-quality evidence on upadacitinib efficacy and safety in moderate-to-severe atopic dermatitis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "upadacitinib",
+      "atopic dermatitis",
+      "JAK inhibitor",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 125,
+    "query": "What do Q1-published RCTs show about the comparative efficacy of IL-17 versus IL-23 inhibitors for psoriasis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "IL-17",
+      "IL-23",
+      "psoriasis",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 126,
+    "query": "What is the systematic review evidence on risk of serious infection with JAK inhibitors in dermatological conditions?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "JAK inhibitor",
+      "infection risk",
+      "dermatology",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 127,
+    "query": "What does high-tier evidence show about risk stratification and screening in patients with chronic skin inflammation?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "skin inflammation",
+      "risk stratification",
+      "screening",
+      "meta-analysis",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 128,
+    "query": "What is the best evidence from Q1 journals on topical ruxolitinib for vitiligo repigmentation?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "ruxolitinib",
+      "vitiligo",
+      "topical",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 129,
+    "query": "What do large systematic reviews in leading journals conclude about phototherapy frequency and atopic dermatitis outcomes?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "phototherapy",
+      "atopic dermatitis",
+      "frequency",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 130,
+    "query": "What is the RCT evidence from high-impact journals on the role of barrier repair therapy in eczema prevention?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": true,
+    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "tags": [
+      "barrier repair",
+      "eczema prevention",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 131,
+    "query": "What does heterogeneous evidence from varied journal tiers show about herbal remedies for psoriasis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "herbal remedies",
+      "psoriasis",
+      "mixed evidence",
+      "mixed tier"
+    ]
+  },
+  {
+    "id": 132,
+    "query": "How do observational studies in speciality journals document outcomes of cryotherapy for keloid scars?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "cryotherapy",
+      "keloid",
+      "observational",
+      "Q2/Q3 journal"
+    ]
+  },
+  {
+    "id": 133,
+    "query": "What scattered evidence exists on platelet-rich plasma for androgenetic alopecia across varied publication quality?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "PRP",
+      "androgenetic alopecia",
+      "mixed evidence",
+      "mixed tier"
+    ]
+  },
+  {
+    "id": 134,
+    "query": "How do mid-tier journals characterise photobiomodulation outcomes for hair regrowth?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "photobiomodulation",
+      "hair regrowth",
+      "Q2/Q3 journal"
+    ]
+  },
+  {
+    "id": 135,
+    "query": "What does mixed-level evidence suggest about dietary interventions for rosacea management?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "multi_factor",
+    "expected_twr_advantage": false,
+    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "tags": [
+      "dietary intervention",
+      "rosacea",
+      "mixed evidence",
+      "mixed tier"
+    ]
+  },
+  {
+    "id": 136,
+    "query": "What are the histological characteristics of primary cutaneous follicle centre lymphoma?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "cutaneous follicle centre lymphoma",
+      "histology",
+      "case series"
+    ]
+  },
+  {
+    "id": 137,
+    "query": "How is primary effusion lymphoma managed in HIV-positive patients?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "primary effusion lymphoma",
+      "HIV",
+      "case report"
+    ]
+  },
+  {
+    "id": 138,
+    "query": "What are the clinical features of malignant perivascular epithelioid cell tumour (PEComa)?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "PEComa",
+      "rare tumour",
+      "case series"
+    ]
+  },
+  {
+    "id": 139,
+    "query": "How is adenocarcinoma of the rete testis diagnosed and treated?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "rete testis",
+      "adenocarcinoma",
+      "rare",
+      "case report"
+    ]
+  },
+  {
+    "id": 140,
+    "query": "What are the surgical management strategies for retroperitoneal paraganglioma?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "paraganglioma",
+      "retroperitoneal",
+      "case series"
+    ]
+  },
+  {
+    "id": 141,
+    "query": "What are the dermatological presentations of metastatic Merkel cell carcinoma?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "Merkel cell carcinoma",
+      "metastatic",
+      "dermatology",
+      "case report"
+    ]
+  },
+  {
+    "id": 142,
+    "query": "How is leptomeningeal carcinomatosis from breast cancer managed palliatively?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "leptomeningeal carcinomatosis",
+      "breast cancer",
+      "palliative",
+      "case series"
+    ]
+  },
+  {
+    "id": 143,
+    "query": "What are the ocular metastasis presentations in uveal melanoma?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "uveal melanoma",
+      "ocular metastasis",
+      "case report"
+    ]
+  },
+  {
+    "id": 144,
+    "query": "How is gastrointestinal stromal tumour with rare exon 9 mutation treated?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "GIST",
+      "exon 9",
+      "rare mutation",
+      "case series"
+    ]
+  },
+  {
+    "id": 145,
+    "query": "What are the clinical outcomes of childhood adrenocortical carcinoma?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "adrenocortical carcinoma",
+      "paediatric",
+      "case series"
+    ]
+  },
+  {
+    "id": 146,
+    "query": "What do expert guidelines from Q1 journals say about hereditary colorectal cancer surveillance?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "hereditary colorectal cancer",
+      "surveillance",
+      "guidelines",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 147,
+    "query": "What is the evidence on prophylactic mastectomy in BRCA1/2 carriers from high-impact journals?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "prophylactic mastectomy",
+      "BRCA",
+      "Q1 journal",
+      "systematic review"
+    ]
+  },
+  {
+    "id": 148,
+    "query": "What do top oncology journals conclude about Lynch syndrome screening protocols?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "Lynch syndrome",
+      "screening",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 149,
+    "query": "What is the evidence from leading journals on tumour treating fields for glioblastoma?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "tumour treating fields",
+      "glioblastoma",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 150,
+    "query": "What do systematic reviews in high-impact journals say about fertility preservation in young cancer patients?",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "fertility preservation",
+      "cancer",
+      "young patients",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 151,
+    "query": "What are the neurological features of superficial siderosis of the central nervous system?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "superficial siderosis",
+      "CNS",
+      "rare",
+      "case series"
+    ]
+  },
+  {
+    "id": 152,
+    "query": "How is anti-NMDA receptor encephalitis managed in pregnant patients?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "anti-NMDA receptor encephalitis",
+      "pregnancy",
+      "case report"
+    ]
+  },
+  {
+    "id": 153,
+    "query": "What are the clinical manifestations of Susac syndrome in young women?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "Susac syndrome",
+      "rare",
+      "case report"
+    ]
+  },
+  {
+    "id": 154,
+    "query": "How does primary angiitis of the central nervous system present and respond to treatment?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "primary CNS angiitis",
+      "rare",
+      "case series"
+    ]
+  },
+  {
+    "id": 155,
+    "query": "What are the neurological complications of cat scratch disease in paediatric patients?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "cat scratch disease",
+      "neurology",
+      "paediatric",
+      "case report"
+    ]
+  },
+  {
+    "id": 156,
+    "query": "How is Rasmussen encephalitis diagnosed and managed surgically?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "Rasmussen encephalitis",
+      "rare",
+      "case series"
+    ]
+  },
+  {
+    "id": 157,
+    "query": "What are the clinical features of neurosarcoidosis presenting as cranial neuropathy?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "neurosarcoidosis",
+      "cranial neuropathy",
+      "case series"
+    ]
+  },
+  {
+    "id": 158,
+    "query": "How is POEMS syndrome distinguished from chronic inflammatory demyelinating polyneuropathy?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "POEMS syndrome",
+      "CIDP",
+      "rare",
+      "case series"
+    ]
+  },
+  {
+    "id": 159,
+    "query": "What are the neurological manifestations of Fabry disease?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "Fabry disease",
+      "neurological manifestations",
+      "case series"
+    ]
+  },
+  {
+    "id": 160,
+    "query": "How is FIRES (febrile infection-related epilepsy syndrome) treated in adults?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "FIRES",
+      "adult",
+      "rare epilepsy",
+      "case series"
+    ]
+  },
+  {
+    "id": 161,
+    "query": "What do Q1 neurology journal RCTs show about the safety of anticoagulation in cerebral venous thrombosis?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "cerebral venous thrombosis",
+      "anticoagulation",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 162,
+    "query": "What is the systematic review evidence on genetic testing utility in hereditary spastic paraplegia?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "hereditary spastic paraplegia",
+      "genetic testing",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 163,
+    "query": "What do high-impact journal meta-analyses conclude about disease-modifying therapy in clinically isolated syndrome?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "clinically isolated syndrome",
+      "disease-modifying therapy",
+      "meta-analysis",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 164,
+    "query": "What is the Q1-journal evidence on intrathecal baclofen for spasticity management?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "intrathecal baclofen",
+      "spasticity",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 165,
+    "query": "What do systematic reviews in leading journals conclude about neonatal seizure management with phenobarbital?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "neonatal seizure",
+      "phenobarbital",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 166,
+    "query": "What are the clinical features of eosinophilic fasciitis and how is it differentiated from scleroderma?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "eosinophilic fasciitis",
+      "scleroderma",
+      "rare",
+      "case series"
+    ]
+  },
+  {
+    "id": 167,
+    "query": "How is acquired reactive perforating collagenosis managed in diabetic patients?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "perforating collagenosis",
+      "diabetes",
+      "rare",
+      "case report"
+    ]
+  },
+  {
+    "id": 168,
+    "query": "What are the dermatological features of adult-onset Still disease?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "Still disease",
+      "adult-onset",
+      "skin manifestations",
+      "case series"
+    ]
+  },
+  {
+    "id": 169,
+    "query": "How is sneddon-wilkinson disease (subcorneal pustular dermatosis) treated?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "Sneddon-Wilkinson",
+      "subcorneal pustular dermatosis",
+      "rare",
+      "case series"
+    ]
+  },
+  {
+    "id": 170,
+    "query": "What are the clinical features of erythema gyratum repens as a paraneoplastic syndrome?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "erythema gyratum repens",
+      "paraneoplastic",
+      "rare",
+      "case report"
+    ]
+  },
+  {
+    "id": 171,
+    "query": "How is cutaneous Rosai-Dorfman disease managed when systemic involvement is absent?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "Rosai-Dorfman",
+      "cutaneous",
+      "rare",
+      "case series"
+    ]
+  },
+  {
+    "id": 172,
+    "query": "What are the dermatological manifestations of Kindler syndrome?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "Kindler syndrome",
+      "genodermatosis",
+      "rare",
+      "case series"
+    ]
+  },
+  {
+    "id": 173,
+    "query": "How is porokeratosis of Mibelli distinguished from other porokeratosis variants?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "porokeratosis",
+      "Mibelli",
+      "rare",
+      "case series"
+    ]
+  },
+  {
+    "id": 174,
+    "query": "What are the histopathological features of granuloma annulare in atypical presentations?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "granuloma annulare",
+      "atypical",
+      "histopathology",
+      "case series"
+    ]
+  },
+  {
+    "id": 175,
+    "query": "How is NERDS versus STONEES criteria applied to distinguish infected from critically colonised wounds?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": false,
+    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "tags": [
+      "wound infection",
+      "NERDS",
+      "STONEES",
+      "clinical practice",
+      "case series"
+    ]
+  },
+  {
+    "id": 176,
+    "query": "What do Q1 dermatology journal RCTs show about dupilumab safety in paediatric atopic dermatitis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "dupilumab",
+      "paediatric",
+      "atopic dermatitis",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 177,
+    "query": "What is the systematic review evidence on UV phototherapy for mycosis fungoides?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "mycosis fungoides",
+      "phototherapy",
+      "systematic review",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 178,
+    "query": "What do high-impact journals conclude about long-term biologic therapy and malignancy risk in psoriasis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "biologic therapy",
+      "psoriasis",
+      "malignancy risk",
+      "meta-analysis",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 179,
+    "query": "What is the RCT evidence from leading journals on abrocitinib for moderate-to-severe atopic dermatitis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "abrocitinib",
+      "atopic dermatitis",
+      "RCT",
+      "Q1 journal"
+    ]
+  },
+  {
+    "id": 180,
+    "query": "What do systematic reviews in Q1 journals say about patch testing standardisation for allergic contact dermatitis?",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "ablation_dimension": "adversarial",
+    "expected_twr_advantage": true,
+    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "tags": [
+      "patch testing",
+      "allergic contact dermatitis",
+      "standardisation",
+      "systematic review",
+      "Q1 journal"
+    ]
   }
 ]
