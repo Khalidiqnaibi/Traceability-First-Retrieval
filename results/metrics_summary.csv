@@ -1,0 +1,101 @@
+ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mrr,query,pipeline
+1.0,1.0,1.0,0.75,0.9376847570173164,0.9504433059523778,1,Q2,1.0,What is the recommended antiplatelet therapy after percutaneous coronary intervention in acute coronary syndrome?,TFR
+0.2,0.7592076495650287,0.7875383649156078,0.0,0.4196834041049098,0.6441805083117185,5,Unranked,0.5,What is the recommended antiplatelet therapy after percutaneous coronary intervention in acute coronary syndrome?,Standard
+1.0,0.980637019530922,0.9827255527094864,0.0,0.27460425513113723,0.6240657363944289,1,Unranked,0.0,Aspirin discontinuation safety after drug-eluting stent implantation,TFR
+0.5,0.680606056760201,0.8447122853992027,0.0,0.6480409554829326,0.6480409554829326,5,Unranked,0.0,Aspirin discontinuation safety after drug-eluting stent implantation,Standard
+1.0,1.0,1.0,0.75,0.8826803184943108,0.9462367535061125,1,Q2,1.0,P2Y12 inhibitor selection in patients with acute ischemic stroke,TFR
+1.0,1.0,1.0,0.5,0.7653606369886217,0.8786746795305955,5,Q3,0.0,P2Y12 inhibitor selection in patients with acute ischemic stroke,Standard
+1.0,1.0,1.0,0.75,0.9376847570173164,0.9463274486336334,1,Q2,1.0,Thrombocytopenia management in cardiovascular disease patients on antiplatelet therapy,TFR
+0.2,0.7592076495650287,0.7875383649156078,0.0,0.3212043018970804,0.6135456967910718,5,Unranked,0.5,Thrombocytopenia management in cardiovascular disease patients on antiplatelet therapy,Standard
+1.0,0.9394869707213443,0.9447097587352041,1.0,0.7653606369886217,0.9558295932317544,1,Q1,1.0,Low-dose aspirin primary prevention in older adults,TFR
+1.0,1.0,1.0,1.0,0.7039180890341347,0.8854598815714874,5,Q1,0.0,Low-dose aspirin primary prevention in older adults,Standard
+1.0,0.8322824782867448,0.9467009784197933,1.0,1.0,1.0,4,Q1,0.0,Venous thromboembolism prophylaxis in children with congenital heart disease,TFR
+1.0,1.0,1.0,1.0,0.6131471927654584,0.8772153153380493,5,Q2,0.0,Venous thromboembolism prophylaxis in children with congenital heart disease,Standard
+1.0,0.980637019530922,0.9827255527094864,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,Dual antiplatelet therapy duration optimization post-coronary stenting,TFR
+1.0,1.0,1.0,0.75,0.8484946226286495,0.8484946226286495,1,Q2,1.0,Dual antiplatelet therapy duration optimization post-coronary stenting,Standard
+1.0,1.0,1.0,1.0,0.9413401592471554,0.9900808841271455,5,Q1,0.0,Tirofiban efficacy in acute ischemic stroke without large vessel occlusion,TFR
+1.0,1.0,1.0,1.0,0.7039180890341347,0.900536595186988,5,Q1,0.0,Tirofiban efficacy in acute ischemic stroke without large vessel occlusion,Standard
+1.0,1.0,1.0,0.5,0.7224242270408039,0.84598267059683,4,Q3,0.0,Tranexamic acid use in pulmonary artery pseudoaneurysm,TFR
+1.0,0.8519590445170673,0.9605753368118396,0.0,0.0,0.43067655807339306,4,Unranked,0.0,Tranexamic acid use in pulmonary artery pseudoaneurysm,Standard
+1.0,0.7243237749167603,0.9196752433324201,0.75,0.9376847570173164,0.9322146535258427,1,Q2,1.0,Meta-analysis of antiplatelet therapy guidelines for acute coronary syndrome,TFR
+1.0,1.0,1.0,0.75,0.6763347126057324,0.8560229477621614,1,Q2,1.0,Meta-analysis of antiplatelet therapy guidelines for acute coronary syndrome,Standard
+1.0,1.0,1.0,1.0,0.7039180890341347,0.9047172294870751,1,Q1,1.0,Potassium-competitive acid blockers versus proton pump inhibitors for ulcer prevention in aspirin users,TFR
+1.0,1.0,1.0,0.0,0.26582598262939583,0.5976315487360696,5,Unranked,0.0,Potassium-competitive acid blockers versus proton pump inhibitors for ulcer prevention in aspirin users,Standard
+1.0,1.0,1.0,0.5,0.8670870086853021,0.8670870086853021,4,Q3,0.0,Periprosthetic joint infection risk after total knee arthroplasty on antithrombotic therapy,TFR
+1.0,1.0,1.0,0.0,0.6309297535714575,0.6309297535714575,5,Unranked,0.0,Periprosthetic joint infection risk after total knee arthroplasty on antithrombotic therapy,Standard
+0.5,0.680606056760201,0.8447122853992027,1.0,1.0,1.0,5,Q1,0.0,Hypertensive disorders in pregnancy and postpartum anticoagulation management,TFR
+0.5,0.680606056760201,0.8558112355261802,1.0,0.7039180890341347,0.8854598815714874,5,Q1,0.0,Hypertensive disorders in pregnancy and postpartum anticoagulation management,Standard
+1.0,1.0,1.0,0.75,0.5865984075284455,0.8425355745828979,1,Q2,1.0,Elevated lipoprotein(a) and antiplatelet therapy for cardiovascular risk reduction,TFR
+1.0,1.0,1.0,0.0,0.3212043018970804,0.5837983232469253,1,Unranked,0.5,Elevated lipoprotein(a) and antiplatelet therapy for cardiovascular risk reduction,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Aspirin effect on preterm birth risk with heat exposure during pregnancy,TFR
+1.0,1.0,1.0,1.0,0.6131471927654584,0.8772153153380493,1,Q1,1.0,Aspirin effect on preterm birth risk with heat exposure during pregnancy,Standard
+1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,5,Q1,0.0,RSV infection fusion protein mechanism and antiviral targets,TFR
+1.0,1.0,1.0,0.75,0.6231524298268358,0.8160070432776656,5,Q2,0.0,RSV infection fusion protein mechanism and antiviral targets,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q1,0.0,Sarcopenia screening tools and association with cardiovascular outcomes,TFR
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q1,0.0,Sarcopenia screening tools and association with cardiovascular outcomes,Standard
+1.0,1.0,1.0,1.0,0.8519590445170673,0.9557034395662896,5,Q1,0.0,Metabolic syndrome components and their association with chronic disease progression,TFR
+1.0,1.0,1.0,0.5,0.8597186998521972,0.8597186998521972,5,Q3,0.0,Metabolic syndrome components and their association with chronic disease progression,Standard
+0.5,0.680606056760201,0.8558112355261802,1.0,0.9413401592471554,0.9896916885042134,5,Q1,0.0,Breast cancer associated hypercoagulability and thrombus risk quantification,TFR
+0.5,0.680606056760201,0.8447122853992027,0.75,0.688423785086582,0.9024485255442497,5,Q2,0.0,Breast cancer associated hypercoagulability and thrombus risk quantification,Standard
+1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,5,Q1,0.0,Colorectal cancer risk prediction model validation in diverse populations,TFR
+1.0,1.0,1.0,0.0,0.25454838678859487,0.5468897816825863,5,Unranked,0.0,Colorectal cancer risk prediction model validation in diverse populations,Standard
+1.0,1.0,0.9920466006454153,0.25,0.6795431111477921,0.8204441909681518,4,Q4,0.0,Tuberous sclerosis complex with protein C deficiency and hypercoagulable state,TFR
+1.0,1.0,1.0,0.25,0.5941991724365605,0.7871261886961834,4,Q4,0.0,Tuberous sclerosis complex with protein C deficiency and hypercoagulable state,Standard
+1.0,1.0,1.0,0.75,0.9323665287394267,0.9492147449622255,1,Q2,1.0,Hormone receptor-positive metastatic breast cancer treatment after conventional therapy resistance,TFR
+1.0,1.0,1.0,0.75,0.8647330574788535,0.9377223268794214,4,Q2,0.0,Hormone receptor-positive metastatic breast cancer treatment after conventional therapy resistance,Standard
+1.0,1.0,1.0,0.25,0.5307212739772434,0.7975743290326771,4,Q4,0.0,Systemic lupus erythematosus autoimmune activation and multi-organ damage,TFR
+0.5,0.8821211986607034,0.9065280314885752,0.0,0.21677175217132552,0.6161432594368168,5,Unranked,0.0,Systemic lupus erythematosus autoimmune activation and multi-organ damage,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q1,0.0,Pulmonary hypertension pathogenesis and therapeutic targets in vascular remodeling,TFR
+1.0,1.0,1.0,0.0,0.4796249331362629,0.626665273802673,5,Unranked,0.0,Pulmonary hypertension pathogenesis and therapeutic targets in vascular remodeling,Standard
+1.0,0.8322824782867448,0.9562707599036264,1.0,1.0,1.0,4,Q1,0.0,Biologic therapy outcomes in chronic rhinosinusitis with nasal polyps,TFR
+1.0,1.0,1.0,1.0,0.9217868789962073,0.9723199953886149,5,Q2,0.0,Biologic therapy outcomes in chronic rhinosinusitis with nasal polyps,Standard
+1.0,1.0,1.0,0.0,0.5307212739772434,0.7606395682357036,4,Unranked,0.0,Preeclampsia neurological complications and long-term outcomes,TFR
+1.0,1.0,1.0,0.0,0.0,0.4306765580733931,4,Unranked,0.0,Preeclampsia neurological complications and long-term outcomes,Standard
+0.5,0.680606056760201,0.8558112355261802,1.0,0.9213669182023797,0.9714651864679268,5,Q1,0.0,Blunt traumatic aortic injury neurological complications and long-term follow-up,TFR
+1.0,1.0,1.0,0.75,0.950076996190085,0.950076996190085,5,Q2,0.0,Blunt traumatic aortic injury neurological complications and long-term follow-up,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,4,Q2,0.0,Transthyretin amyloidosis cardiac and neurological phenotype,TFR
+1.0,1.0,1.0,1.0,0.7601875334318685,0.9072278740982787,4,Q2,0.0,Transthyretin amyloidosis cardiac and neurological phenotype,Standard
+1.0,1.0,1.0,1.0,0.9413401592471554,0.9851766730264646,5,Q1,0.0,Vitamin B12 deficiency in type 2 diabetes patients treated with metformin,TFR
+1.0,1.0,1.0,0.5,0.48516021732359466,0.8061731651465329,5,Q3,0.0,Vitamin B12 deficiency in type 2 diabetes patients treated with metformin,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q1,0.0,Endogenous thrombin potential progression in high-risk pregnancy,TFR
+1.0,1.0,1.0,1.0,0.7039180890341347,0.9060254355346823,5,Q1,0.0,Endogenous thrombin potential progression in high-risk pregnancy,Standard
+1.0,1.0,1.0,0.0,0.5014780561385311,0.7367266064092202,1,Unranked,0.0,AI-assisted fracture diagnosis accuracy improvement with machine learning,TFR
+0.2,0.7592076495650287,0.7875383649156078,0.0,0.0,0.48185006752033854,5,Unranked,0.0,AI-assisted fracture diagnosis accuracy improvement with machine learning,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q1,0.0,Atherosclerosis oral drug delivery platform for anti-inflammatory and antithrombotic therapy,TFR
+1.0,1.0,1.0,1.0,0.8130542710519492,0.9576952311400714,5,Q1,0.0,Atherosclerosis oral drug delivery platform for anti-inflammatory and antithrombotic therapy,Standard
+0.5,0.8821211986607034,0.9065280314885752,0.75,0.8086598407528445,0.9258948952415027,5,Q2,0.0,AMPK activation and its role in obesity-associated carcinogenesis,TFR
+1.0,1.0,1.0,0.75,0.6231524298268358,0.8378541447331506,5,Q2,0.0,AMPK activation and its role in obesity-associated carcinogenesis,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q1,0.0,Triglyceride-glucose-frailty index and hip fracture risk in elderly,TFR
+1.0,1.0,1.0,0.75,0.7346393630113782,0.9001386375213553,5,Q2,0.0,Triglyceride-glucose-frailty index and hip fracture risk in elderly,Standard
+1.0,1.0,1.0,1.0,0.9413401592471554,0.9900808841271455,5,Q1,0.0,"Nitric oxide signaling in vasodilation, antimicrobial, and anti-inflammatory processes",TFR
+1.0,1.0,1.0,1.0,0.9259795222585335,0.9817558680267063,5,Q1,0.0,"Nitric oxide signaling in vasodilation, antimicrobial, and anti-inflammatory processes",Standard
+0.5,0.8403030283801005,0.8733683229467235,0.75,0.734421189254329,0.9081667300127649,5,Q2,0.0,T2-comorbidities in asthma including atopic dermatitis and allergic rhinitis management,TFR
+0.5,0.680606056760201,0.8558112355261802,1.0,0.7653606369886218,0.9532072075978125,5,Q2,0.0,T2-comorbidities in asthma including atopic dermatitis and allergic rhinitis management,Standard
+0.5,0.8821211986607034,0.9065280314885752,1.0,0.8519590445170673,0.9557034395662896,5,Q1,0.0,Aspirin impact on surgical site infection and joint replacement outcomes,TFR
+1.0,1.0,1.0,1.0,0.6131471927654584,0.8503449055347546,5,Q1,0.0,Aspirin impact on surgical site infection and joint replacement outcomes,Standard
+0.4,0.79344133571786,0.8314022946019718,0.5,0.3816930496579242,0.7529487464012504,4,Q3,0.0,Kabuki syndrome genetic variants and associated coagulation abnormalities,TFR
+1.0,0.9651954696014428,0.9714089025373848,1.0,1.0,1.0,4,Q3,0.0,Kabuki syndrome genetic variants and associated coagulation abnormalities,Standard
+1.0,0.9311471119059533,0.9859955753397057,0.75,0.8470225900281954,0.9224340954598991,1,Q2,1.0,Retained hemothorax after thoracic trauma management,TFR
+1.0,1.0,1.0,0.5,0.2901582979475451,0.7021019677390781,4,Q3,0.0,Retained hemothorax after thoracic trauma management,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q1,0.0,Postoperative antithrombotic therapy effects on complications after total hip arthroplasty,TFR
+1.0,1.0,1.0,0.0,0.38685280723454163,0.6240505200038379,5,Unranked,0.0,Postoperative antithrombotic therapy effects on complications after total hip arthroplasty,Standard
+1.0,1.0,1.0,0.75,0.8826803184943108,0.9462480870845545,4,Q2,0.0,Gastric intestinal metaplasia endoscopic grading and cancer transformation risk,TFR
+1.0,1.0,1.0,1.0,0.6131471927654584,0.8503449055347546,5,Q1,0.0,Gastric intestinal metaplasia endoscopic grading and cancer transformation risk,Standard
+0.5,0.6993694869720469,0.8470858852562799,1.0,0.734421189254329,0.934325966512454,5,Q1,0.0,Robot-assisted partial nephrectomy feasibility in patients with mechanical circulatory support,TFR
+1.0,0.8322824782867448,0.9562707599036264,0.0,0.5265657011759873,0.7165736340029057,4,Unranked,0.0,Robot-assisted partial nephrectomy feasibility in patients with mechanical circulatory support,Standard
+1.0,0.8519590445170673,0.9605753368118396,0.5,0.7507390280692655,0.873038347302462,4,Q3,0.0,Vertebrobasilar insufficiency triggered by yoga and transcranial Doppler diagnosis,TFR
+1.0,1.0,1.0,0.5,0.6562973047890615,0.8441462942012528,4,Q3,0.0,Vertebrobasilar insufficiency triggered by yoga and transcranial Doppler diagnosis,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q1,0.0,Type 2 diabetes subgroup clustering and metabolic heterogeneity,TFR
+1.0,1.0,1.0,0.0,0.3354350434265105,0.6672406095331843,5,Unranked,0.0,Type 2 diabetes subgroup clustering and metabolic heterogeneity,Standard
+1.0,1.0,0.9920466006454153,1.0,0.46927872602275644,0.8529278650606567,4,Q3,0.0,Persistent primitive trigeminal artery fistula and dissecting aneurysm management,TFR
+1.0,0.8826803184943108,0.9863520113014781,0.0,0.6934264036172708,0.6934264036172708,4,Unranked,0.0,Persistent primitive trigeminal artery fistula and dissecting aneurysm management,Standard
+1.0,1.0,1.0,0.5,0.7653606369886217,0.8887223390544889,5,Q3,0.0,Pharmacotherapy adherence in cardiovascular and respiratory chronic disease management,TFR
+1.0,1.0,1.0,0.5,0.7653606369886217,0.8841966403135247,5,Q3,0.0,Pharmacotherapy adherence in cardiovascular and respiratory chronic disease management,Standard
+1.0,1.0,1.0,1.0,0.9259795222585335,0.9817558680267063,5,Q1,0.0,Anticoagulation challenges with vitamin K antagonists in pediatric cardiac patients,TFR
+1.0,1.0,1.0,0.75,0.688423785086582,0.9031254999928966,5,Q2,0.0,Anticoagulation challenges with vitamin K antagonists in pediatric cardiac patients,Standard
+1.0,0.980637019530922,0.9827255527094864,0.0,0.42284497434091106,0.7152304065659223,1,Unranked,0.0,Aspirin anti-inflammatory effect on leukocyte count and thrombocytosis in metabolic disease,TFR
+0.2,0.6737852038126946,0.7121664003799236,0.0,0.3868528072345416,0.6509209298071326,5,Unranked,0.0,Aspirin anti-inflammatory effect on leukocyte count and thrombocytosis in metabolic disease,Standard
+1.0,1.0,1.0,0.75,0.8826803184943108,0.9441390272147961,1,Q2,1.0,Multimodal analgesia and regional anesthesia in pediatric hip and femur surgery,TFR
+0.2,0.6737852038126946,0.7121664003799236,0.75,0.5608371868441523,0.8340840571213232,5,Q2,0.3333333333333333,Multimodal analgesia and regional anesthesia in pediatric hip and femur surgery,Standard
+1.0,1.0,1.0,0.75,0.8086598407528445,0.9258948952415027,1,Q2,1.0,Novel flow cytometry assay for platelet function testing in cardiovascular patients,TFR
+0.2,0.3475704076253891,0.6722591687243464,0.0,0.25603181613369436,0.6401143055734067,5,Unranked,0.25,Novel flow cytometry assay for platelet function testing in cardiovascular patients,Standard

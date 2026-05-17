@@ -1,0 +1,16 @@
+============================================================
+  Statistical Significance Report - nDCG@3 (Evidence Level)
+============================================================
+  Paired queries (n)       : 50
+  Mean Delta (TFR-Standard): +0.0217
+  Std  Delta               : 0.1601
+  95% CI Delta             : [-0.0227, +0.0660]
+
+  Shapiro-Wilk W           : 0.8342
+  Shapiro-Wilk p           : 0.0000
+  Distribution             : SKEWED (p = 0.0000 <= 0.05)
+  Selected test            : Wilcoxon Signed-Rank test
+  W-statistic              : 113.5000
+  p-value (two-tailed)     : 0.4559
+  Significance             : NO  [FAIL] (alpha = 0.05)
+============================================================

@@ -8,5 +8,4 @@ python-dotenv==1.0.1
 biopython==1.84
 matplotlib==3.8.0
 pandas==3.0.1
-seaborn==0.13.1
 scipy==1.17.0

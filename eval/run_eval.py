@@ -11,21 +11,38 @@ Usage:
         --out_dir results/
 
 Outputs:
-    results/metrics_summary.csv        per-query metric table
-    results/ablation_summary.csv       stratified ablation table
-    results/fig1_dumbbell.png          slope/dumbbell plot
-    results/fig2_grouped_bar.png       nDCG@3 ablation bar chart
-    results/stats_report.txt           significance test report
+    results/metrics_summary.csv      – per-query metric table
+    results/ablation_summary.csv     – stratified ablation table
+    results/fig1_dumbbell.png        – slope/dumbbell plot
+    results/fig2_grouped_bar.png     – nDCG@3 ablation bar chart
+    results/stats_report.txt         – significance test report
 """
+
 from __future__ import annotations
 
 import ast
+import io
 import json
 import os
+import sys
 import argparse
 import warnings
 from pathlib import Path
 from typing import Any
+
+def _force_utf8_stdout() -> None:
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")   # type: ignore[attr-defined]
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")   # type: ignore[attr-defined]
+    except AttributeError:
+        sys.stdout = io.TextIOWrapper(                                # type: ignore[assignment]
+            sys.stdout.buffer, encoding="utf-8", errors="replace"
+        )
+        sys.stderr = io.TextIOWrapper(                                # type: ignore[assignment]
+            sys.stderr.buffer, encoding="utf-8", errors="replace"
+        )
+
+_force_utf8_stdout()
 
 import numpy as np
 import pandas as pd
@@ -153,7 +170,7 @@ def ndcg_at_k(gains: list[float], k: int) -> float:
 
 def compute_mrr(docs: list[dict]) -> float:
     """
-    MRR for 'authoritative' documents (evidence_level ≤ 2 AND tier in Q1/Q2).
+    MRR for 'authoritative' documents (evidence_level <= 2 AND tier in Q1/Q2).
     Returns 1/rank of the first qualifying document, or 0.0 if none.
     """
     for rank, item in enumerate(docs, start=1):
@@ -224,13 +241,13 @@ def run_significance_tests(metrics: pd.DataFrame, report_path: Path) -> None:
 
     lines: list[str] = [
         "=" * 60,
-        "  Statistical Significance Report – nDCG@3 (Evidence Level)",
+        "  Statistical Significance Report - nDCG@3 (Evidence Level)",
         "=" * 60,
         f"  Paired queries (n)       : {len(deltas)}",
-        f"  Mean Δ (TFR − Standard)  : {deltas.mean():+.4f}",
-        f"  Std  Δ                   : {deltas.std():.4f}",
-        f"  95 % CI Δ                : [{deltas.mean() - 1.96*deltas.std()/np.sqrt(len(deltas)):+.4f}, "
-                                        f"{deltas.mean() + 1.96*deltas.std()/np.sqrt(len(deltas)):+.4f}]",
+        f"  Mean Delta (TFR-Standard): {deltas.mean():+.4f}",
+        f"  Std  Delta               : {deltas.std():.4f}",
+        f"  95% CI Delta             : [{deltas.mean() - 1.96*deltas.std()/np.sqrt(len(deltas)):+.4f}, "
+                                       f"{deltas.mean() + 1.96*deltas.std()/np.sqrt(len(deltas)):+.4f}]",
         "",
         f"  Shapiro-Wilk W           : {sw_stat:.4f}",
         f"  Shapiro-Wilk p           : {sw_p:.4f}",
@@ -244,7 +261,7 @@ def run_significance_tests(metrics: pd.DataFrame, report_path: Path) -> None:
             f"  Selected test            : {test_name}",
             f"  t-statistic              : {t_stat:.4f}",
             f"  p-value (two-tailed)     : {t_p:.4g}",
-            f"  Significance             : {'YES ✓' if t_p < 0.05 else 'NO  ✗'} (α = 0.05)",
+            f"  Significance             : {'YES [PASS]' if t_p < 0.05 else 'NO  [FAIL]'} (alpha = 0.05)",
         ]
     else:
         test_name = "Wilcoxon Signed-Rank test"
@@ -253,18 +270,18 @@ def run_significance_tests(metrics: pd.DataFrame, report_path: Path) -> None:
         except ValueError:
             w_stat, w_p = float("nan"), float("nan")
         lines += [
-            f"  Distribution             : SKEWED (p = {sw_p:.4f} ≤ 0.05)",
+            f"  Distribution             : SKEWED (p = {sw_p:.4f} <= 0.05)",
             f"  Selected test            : {test_name}",
             f"  W-statistic              : {w_stat:.4f}",
             f"  p-value (two-tailed)     : {w_p:.4g}",
-            f"  Significance             : {'YES ✓' if w_p < 0.05 else 'NO  ✗'} (α = 0.05)",
+            f"  Significance             : {'YES [PASS]' if w_p < 0.05 else 'NO  [FAIL]'} (alpha = 0.05)",
         ]
 
     lines.append("=" * 60)
     report = "\n".join(lines)
     print("\n" + report)
     report_path.write_text(report, encoding="utf-8")
-    print(f"\n  [✓] Stats report saved → {report_path}")
+    print(f"\n  [OK] Stats report saved -> {report_path}")
 
 
 # 4. Stratified Ablation Analysis
@@ -325,7 +342,7 @@ def fig1_dumbbell(metrics: pd.DataFrame, out_path: Path) -> None:
 
     fig, axes = plt.subplots(1, 2, figsize=(12, 5))
     fig.suptitle(
-        "Figure 1 – Top-1 Quality Shift: Standard → TFR",
+        "Figure 1 - Top-1 Quality Shift: Standard -> TFR",
         fontsize=14, fontweight="bold", y=1.01
     )
 
@@ -385,7 +402,7 @@ def fig1_dumbbell(metrics: pd.DataFrame, out_path: Path) -> None:
     plt.tight_layout()
     fig.savefig(out_path, bbox_inches="tight")
     plt.close(fig)
-    print(f"  [✓] Figure 1 saved → {out_path}")
+    print(f"  [OK] Figure 1 saved -> {out_path}")
 
 
 def fig2_grouped_bar(ablation: pd.DataFrame, out_path: Path) -> None:
@@ -418,12 +435,12 @@ def fig2_grouped_bar(ablation: pd.DataFrame, out_path: Path) -> None:
         ax.text(bar.get_x() + bar.get_width() / 2.0, h + 0.005,
                 f"{h:.3f}", ha="center", va="bottom", fontsize=8)
 
-    # Δ annotation arrows
+    # Delta annotation
     for xi, (sv, tv) in enumerate(zip(std_vals, tfr_vals)):
         delta = tv - sv
         color = "#2CA02C" if delta > 0 else "#D62728"
         ax.annotate(
-            f"Δ{delta:+.3f}",
+            f"D{delta:+.3f}",
             xy=(xi, max(sv, tv) + 0.03),
             ha="center", fontsize=8, color=color, fontweight="bold",
         )
@@ -432,7 +449,7 @@ def fig2_grouped_bar(ablation: pd.DataFrame, out_path: Path) -> None:
     ax.set_xticklabels([d.replace("_", "\n") for d in dimensions], fontsize=9)
     ax.set_ylabel("Mean nDCG@3 (Evidence Level)", fontsize=10)
     ax.set_title(
-        "Figure 2 – nDCG@3 by Ablation Dimension: Standard vs TFR",
+        "Figure 2 - nDCG@3 by Ablation Dimension: Standard vs TFR",
         fontsize=13, fontweight="bold"
     )
     ax.set_ylim(0, min(1.1, max(max(std_vals), max(tfr_vals)) + 0.15))
@@ -443,19 +460,20 @@ def fig2_grouped_bar(ablation: pd.DataFrame, out_path: Path) -> None:
     plt.tight_layout()
     fig.savefig(out_path, bbox_inches="tight")
     plt.close(fig)
-    print(f"  [✓] Figure 2 saved → {out_path}")
+    print(f"  [OK] Figure 2 saved -> {out_path}")
 
 
 # 6. CLI Entry Point
+
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
         description="Evaluate TFR vs Standard RAG pipeline from an audit log."
     )
-    p.add_argument("--log",     default="pipeline_audit_log.csv",
+    p.add_argument("--log",     default="./logs/pipeline_audit_log.csv",
                    help="Path to pipeline_audit_log.csv")
-    p.add_argument("--queries", default="queries.json",
+    p.add_argument("--queries", default="./data/queries.json",
                    help="Path to queries.json (ablation dimension mapping)")
-    p.add_argument("--out_dir", default="results",
+    p.add_argument("--out_dir", default="./results",
                    help="Directory for output files (created if absent)")
     return p.parse_args()
 
@@ -474,7 +492,7 @@ def main() -> None:
     print(f"      Pipelines detected   : {sorted(df['pipeline'].unique())}")
 
     # 2. Compute per-query metrics
-    print("\n[2/5] Computing IR metrics …")
+    print("\n[2/5] Computing IR metrics ...")
     metrics = build_metrics_table(df)
 
     metrics_path = out_dir / "metrics_summary.csv"
@@ -489,24 +507,24 @@ def main() -> None:
         print("\n" + metrics[present].to_string(index=False))
 
     # 3. Statistical significance
-    print("\n[3/5] Running significance tests …")
+    print("\n[3/5] Running significance tests ...")
     run_significance_tests(metrics, out_dir / "stats_report.txt")
 
     # 4. Ablation analysis
-    print("\n[4/5] Stratified ablation analysis …")
+    print("\n[4/5] Stratified ablation analysis ...")
     query_dim_map: dict[str, str] = {}
     if Path(args.queries).is_file():
         query_dim_map = load_queries_json(args.queries)
         print(f"      Dimensions found     : {sorted(set(query_dim_map.values()))}")
     else:
-        print(f"      [WARNING] {args.queries} not found – ablation dimension set to 'unknown'")
+        print(f"      [WARNING] {args.queries} not found - ablation dimension set to 'unknown'")
 
     ablation = ablation_analysis(metrics, query_dim_map)
 
     ablation_path = out_dir / "ablation_summary.csv"
     ablation.to_csv(ablation_path, index=False)
     print(f"      Ablation table saved : {ablation_path}")
-    print("\nAblation Summary")
+    print("\n--- Ablation Summary " + "-" * 46)
     with pd.option_context("display.float_format", "{:.3f}".format):
         print(
             ablation[[
@@ -515,16 +533,16 @@ def main() -> None:
                 "mean_ndcg3_ev", "mean_ndcg3_tier", "mean_mrr", "n_queries"
             ]].to_string(index=False)
         )
-    print("─" * 67)
+    print("-" * 67)
 
     # 5. Figures
-    print("\n[5/5] Generating figures …")
+    print("\n[5/5] Generating figures ...")
     fig1_dumbbell(metrics,  out_dir / "fig1_dumbbell.png")
     fig2_grouped_bar(ablation, out_dir / "fig2_grouped_bar.png")
 
     print(f"\n{'='*60}")
     print("  Evaluation complete.")
-    print(f"  All outputs written to → {out_dir.resolve()}")
+    print(f"  All outputs written to -> {out_dir.resolve()}")
     print(f"{'='*60}\n")
 
 
