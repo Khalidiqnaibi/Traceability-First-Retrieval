@@ -122,15 +122,19 @@ To build a reproducible baseline database, execute seed requests to ingest domai
 # Seed db for repreduseable ablation studies
 curl -X POST http://localhost:8000/ablation/seed \
      -H "Content-Type: application/json" \
-     -d '{"query": "fractures"}'
+     -d '{"query": "Meta Analysis skin" ,"max_results": 50}'
 
 curl -X POST http://localhost:8000/ablation/seed \
      -H "Content-Type: application/json" \
-     -d '{"query": "What is the cardiovascular benefit of Aspirin?"}'
+     -d '{"query": "cohort study cancer" ,"max_results": 50}'
 
 curl -X POST http://localhost:8000/ablation/seed \
      -H "Content-Type: application/json" \
-     -d '{"query": "cardiovascular"}'
+     -d '{"query": "cohort study Neurology" ,"max_results": 50}'
+
+curl -X POST http://localhost:8000/ablation/seed \
+     -H "Content-Type: application/json" \
+     -d '{"query": "case report Dermatology" ,"max_results": 50}'
 
 ```
 ### Step 4: Running the Ablation Study

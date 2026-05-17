@@ -1,4 +1,4 @@
-# Generate 50 queries  to  make an abalation for : 
+# Generate 150–200 queries (40–50 per dimension)  to  make an abalation for : 
 
 ```
 def calculate_trust_score(self, doc: ClinicalDocument) -> float:

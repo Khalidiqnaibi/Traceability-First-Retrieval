@@ -13,13 +13,12 @@ from utils.api.audit import AuditTrail
 
 load_dotenv()
 
-DOMAIN_DATA_PATH = os.environ.get("DOMAIN_DATA_PATH", "./data/domain.json")
 DOC_DB_PATH = os.environ.get("DOC_DB_PATH", "document.db")
 SJR_CSV_PATH = os.environ.get("SJR_CSV_PATH", "./data/scimagojr_2023.csv")
 
 audit = AuditTrail("logs/audit_log.csv")    
 
-processor = TFRDataPreprocessor(DOMAIN_DATA_PATH, SJR_CSV_PATH)
+processor = TFRDataPreprocessor(sjr_csv_path=SJR_CSV_PATH)
 
 # for hot-reloading
 tfr_pipeline = None
@@ -39,18 +38,20 @@ def seed_database():
     
     args:
     - query: str (e.g. "diabetes AND treatment")
+    - max_results: int (number of PubMed articles to fetch and ingest, default=100)
 
     returns:
     - count of ingested documents
     """
     data = request.get_json()
     medical_query = data.get("query")
+    max_results = data.get("max_results",100)
     start_time = time.time()
     
     # download XML from PubMed
     xml_path = fetch_pubmed_xml_to_file(
         query=medical_query,
-        max_results=100,
+        max_results=max_results,
         email=os.getenv("NCBI_EMAIL"),
         api_key=os.getenv("NCBI_API_KEY"),
         output_path="./data/seed_pubmed_data.xml"
@@ -68,7 +69,7 @@ def seed_database():
 
         end_time = time.time()
         latency = end_time - start_time
-        audit.log_event(action="seed", query=medical_query, results_count=len(chunks), latency=latency)
+        audit.log_event(action="seed", query=medical_query, latency=latency)
         return make_response({"count": len(chunks)}, message="Database seeded successfully")
     
     audit.log_event(action="seed", query=medical_query, status=f"Seeding error: {xml_path} not found")
@@ -102,7 +103,7 @@ def ingest_data():
         standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH)
         end_time = time.time()
         latency = end_time - start_time
-        audit.log_event(action="ingest", query=doc_path, results_count=len(result_chunks), latency=latency)
+        audit.log_event(action="ingest", query=doc_path, latency=latency)
         return make_response(
             {"count": len(result_chunks)}, 
             message=f"Successfully ingested and indexed: {doc_path}"

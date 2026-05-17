@@ -1,2 +1,6 @@
 timestamp,action,query,results_count,top_result_pmid,latency,pipeline,status
 2026-05-16 14:38:08,batch_ablation,Batch ablation over 50 queries,2.329257011413574,success
+2026-05-17 14:42:44,seed,Meta Analysis skin,36.71443963050842,success
+2026-05-17 14:44:35,seed,cohort study cancer,27.889749765396118,success
+2026-05-17 14:48:17,seed,cohort study Neurology,46.172149658203125,success
+2026-05-17 14:51:54,seed,case report Dermatology,47.47306799888611,success
