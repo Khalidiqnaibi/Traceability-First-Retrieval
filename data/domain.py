@@ -5,6 +5,35 @@ from typing import List, Tuple
 # Domain keyword map (ordered: specific → general)
 # Order matters: the first match wins, so put narrow terms before broad ones.
 DOMAIN_KEYWORDS: List[Tuple[str, str]] = [
+    # ── Orthopaedics ──────────────────────────────────────────
+    ("orthoped",            "Orthopaedics"),
+    ("orthopaed",           "Orthopaedics"),
+    ("arthroplasty",        "Orthopaedics"),
+    ("spinal fusion",       "Orthopaedics"),
+    ("osteosarcoma",        "Orthopaedics"),
+    ("osteoarthritis",      "Orthopaedics"),
+    ("fracture",            "Orthopaedics"),
+    ("bone",                "Orthopaedics"),
+
+    # ── Pain & Anesthesiology ─────────────────────────────────
+    ("anesthesiol",         "Pain & Anesthesiology"),
+    ("anaesthesiol",        "Pain & Anesthesiology"),
+    ("pain management",     "Pain & Anesthesiology"),
+    ("neuropathic pain",    "Pain & Anesthesiology"),
+    ("chronic pain",        "Pain & Anesthesiology"),
+    ("epidural",            "Pain & Anesthesiology"),
+    ("nerve block",         "Pain & Anesthesiology"),
+    ("analgesi",            "Pain & Anesthesiology"),
+    ("opioid",              "Pain & Anesthesiology"),
+
+    # ── Rehabilitation ────────────────────────────────────────
+    ("rehabilitat",         "Rehabilitation"),
+    ("physical therapy",    "Rehabilitation"),
+    ("physiotherapy",       "Rehabilitation"),
+    ("occupational therapy","Rehabilitation"),
+    ("stroke recovery",     "Rehabilitation"),
+    ("exercise therapy",    "Rehabilitation"),
+
     # ── Psychiatry / Mental Health ──────────────────────────────────────────
     ("bipolar",           "Mental Disorders (Psychiatry)"),
     ("mood disorder",     "Mental Disorders (Psychiatry)"),

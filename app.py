@@ -30,6 +30,50 @@ standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH)
 
 app = Flask(__name__)
 
+@app.route("/seed/batch", methods=["POST"])
+def batch_seed():
+    '''Endpoint to seed the database with a batch of PubMed queries from a JSON file'''
+    data = request.get_json() or {}
+
+    path = os.getenv("SEED_QUERIES_PATH", "./data/seed_queries.json")
+
+    queries_file_path = data.get("queries_path", path)
+
+    if not os.path.exists(queries_file_path):
+        return make_response( message=f"Queries seed file not found at {queries_file_path}", status="error"),400
+    
+    with open(queries_file_path, "r", encoding="utf-8") as f:
+        queries_list = json.load(f)
+
+    
+    print(f"Initializing seeding of {len(queries_list)} items...")
+    start_time = time.time()
+    total_ingested = 0
+    for item in queries_list:
+        query = item.get("query")
+        max_results = item.get("max_results", 100)
+        xml_path = fetch_pubmed_xml_to_file(
+            query=query,
+            max_results=max_results,
+            email=os.getenv("NCBI_EMAIL"),
+            api_key=os.getenv("NCBI_API_KEY"),
+            output_path=f"./data/seed_pubmed_{item.get('id')}.xml"
+        )
+        if xml_path:
+            chunks = processor.parse_pubmed_xml(xml_path)
+            processor.export_to_sqlite(chunks, DOC_DB_PATH)
+            total_ingested += len(chunks)
+            print(f"Seeded query '{query}' with {len(chunks)} documents.")
+    latency = time.time() - start_time
+    print(f"Completed seeding {total_ingested} documents.")
+
+    # Refresh Pipelines after batch seeding
+    global tfr_pipeline, standard_pipeline
+    tfr_pipeline = initialize_pipeline(DOC_DB_PATH)
+    standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH)
+    
+    audit.log_event(action="batch_seed", query=f"Batch seeding from {queries_file_path}", status=f"Seeded {total_ingested} documents", latency=latency)
+    return make_response({"count": total_ingested}, message=f"Batch seeding completed with {total_ingested} documents ingested")
 
 @app.route("/seed", methods=["POST"])
 def seed_database():

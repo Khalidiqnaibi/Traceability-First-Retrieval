@@ -112,7 +112,9 @@ class TFRDataPreprocessor:
                     if not quartile or quartile == "-":
                         quartile = "Unranked"
                     if title:
-                        tier_map[title] = quartile
+                        normalized = re.sub(r'\s*\([^)]+\)\s*$', '', title).strip()
+                        normalized = re.sub(r'^the\s+', '', normalized)
+                        tier_map[normalized] = quartile
             print(f"Loaded {len(tier_map):,} journal rankings.")
         except Exception as exc:
             print(f"[ERROR] Failed to parse SJR database: {exc}")
@@ -143,6 +145,8 @@ class TFRDataPreprocessor:
             # PubType alone doesn't tell us prospective vs retrospective;
             # fall through to MeSH for a tighter assignment.
             pass
+        if "clinical trial" in pt_blob:
+            return 2  # non-RCT controlled trial → Level 2
         if "case reports" in pt_blob:
             return 4
         if "letter" in pt_blob or "editorial" in pt_blob or "comment" in pt_blob:
@@ -199,6 +203,35 @@ class TFRDataPreprocessor:
 
         return "general"
 
+    def get_verified_year(self, article, article_data) -> int:
+        """
+        Extracts the most accurate publication year, avoiding future-dated
+        print artifacts by prioritizing PubMed entry dates.
+        """
+        # 1. Priority: Date the article actually entered PubMed (highly reliable)
+        pubmed_date_node = article.find(".//PubMedPubDate[@PubStatus='pubmed']/Year")
+        if pubmed_date_node is not None and pubmed_date_node.text:
+            return int(pubmed_date_node.text)
+
+        # 2. Fallback: Electronic publication date (epub)
+        article_date_node = article_data.find(".//ArticleDate/Year")
+        if article_date_node is not None and article_date_node.text:
+            return int(article_date_node.text)
+
+        # 3. Last Resort: Journal Issue PubDate (often future-dated for print)
+        pub_date_node = article_data.find(".//JournalIssue/PubDate")
+        if pub_date_node is not None:
+            year_str = pub_date_node.findtext("Year")
+            if not year_str:
+                medline_date = pub_date_node.findtext("MedlineDate")
+                year_str = medline_date[:4] if medline_date else None
+            try:
+                return int(year_str) if year_str else -1
+            except ValueError:
+                pass
+
+        return -1
+
     def parse_pubmed_xml(self, xml_file_path: str) -> List[ClinicalChunk]:
         """Parses a PubMed XML export and returns a list of ClinicalChunk objects."""
         print(f"Parsing {xml_file_path} ...")
@@ -220,17 +253,7 @@ class TFRDataPreprocessor:
                 journal_node = article_data.find("Journal/Title")
                 journal_name = (journal_node.text or "").strip() if journal_node is not None else ""
 
-                pub_date_node = article_data.find(".//JournalIssue/PubDate")
-                year: int = -1
-                if pub_date_node is not None:
-                    year_str = pub_date_node.findtext("Year")
-                    if not year_str:
-                        medline_date = pub_date_node.findtext("MedlineDate")
-                        year_str = medline_date[:4] if medline_date else None
-                    try:
-                        year = int(year_str) if year_str else -1
-                    except ValueError:
-                        year = -1
+                year = self.get_verified_year(article, article_data)
 
                 abstract_parts = [
                     node.text
@@ -262,7 +285,14 @@ class TFRDataPreprocessor:
                     mesh_terms, keywords, title_text, abstract_text
                 )
 
-                tier = self.tier_db.get(journal_name.strip().lower(), "Unranked")
+                jname = journal_name.strip().lower()
+                jname = re.sub(r'\s*\([^)]+\)\s*$', '', jname).strip()
+                jname = re.sub(r'^the\s+', '', jname)
+                tier = self.tier_db.get(jname, "Unranked")
+
+                if len(abstract_text.strip()) < 80:
+                    skipped += 1
+                    continue  # skip abstracts that are empty or stub-length
 
                 chunks.append(ClinicalChunk(
                     chunk_id=f"pmid_{pmid}",

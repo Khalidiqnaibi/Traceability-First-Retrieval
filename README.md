@@ -30,9 +30,9 @@ $$\Gamma(d) = W_{\text{evidence}}(d) \cdot W_{\text{journal}}(d) \cdot e^{-\lamb
 
 Where:
 
-* $W_{\text{evidence}}(d)$: Mapping function for the **Oxford Centre for Evidence-Based Medicine (OCEBM)** hierarchy (e.g., Meta-Analysis / Systematic Review = 1.0; Randomized Controlled Trial = 0.9; Cohort Study = 0.7; Case-Control = 0.5; Case Report / Expert Opinion = 0.1).
-* $W_{\text{journal}}(d)$: Normalized **SCImago Journal Rank (SJR)** metric grouping (Q1 = 1.0, Q2 = 0.85, Q3 = 0.7, Q4 = 0.5, Unranked = 0.2).
-* $e^{-\lambda \cdot \Delta Y}$: Exponential decay function penalizing outdated clinical data given decay parameter $\lambda$.
+* $W_{\text{evidence}}(d)$: Mapping function for the **Oxford Centre for Evidence-Based Medicine (OCEBM)** hierarchy (e.g., Meta-Analysis / Systematic Review = 1.0; Randomized Controlled Trial = 0.8; Cohort Study = 0.6; Case-Control = 0.4; Case Report / Expert Opinion = 0.2).
+* $W_{\text{journal}}(d)$: Normalized **SCImago Journal Rank (SJR)** metric grouping (Q1 = 1.0, Q2 = 0.85, Q3 = 0.70, Q4 = 0.55, Unranked = 0.40).
+* $e^{-\lambda \cdot \Delta Y}$: Exponential decay function penalizing outdated clinical data given decay parameter $\lambda$ (default: $0.05$) and the age of the publication $\Delta Y = Y_{\text{current}} - Y_{\text{pub}}(d)$.
 
 ---
 
@@ -88,6 +88,7 @@ C:.
     │   └── make_response.py
     ├───data
     │   │   get_pubmed_xml.py
+    |   |   seed_database.py
     │   │   ingestion_pipeline.py
     │   └── load_docs.py
     └───pipeline
@@ -104,30 +105,20 @@ C:.
 ### Prerequisites
 
 * Python 3.11
+* Access to the NCBI E-utilities API (optional but recommended for future data refreshes)
 
-Configure your environment variables by creating a `.env` file in the repository root based on your local deployment requirements:
-
-```env
-OPENROUTER_API_KEY=your_api_key_here
-DOMAIN_DATA_PATH=./data/domain.json
-DOC_DB_PATH=./data/documents.db
-SJR_CSV_PATH=./data/scimagojr_2025.csv
-
-```
-
+Configure your environment variables by creating a `.env` file based on the provided `.env.example` template. Ensure you have the necessary permissions to read/write to the specified paths.
 ### Step 1: Data Preparation
 
 ```bash
 # Fetch the official 2025 SCImago Journal Rank global collection
 curl -L "[https://www.scimagojr.com/journalrank.php?year=2025&out=xls](https://www.scimagojr.com/journalrank.php?year=2025&out=xls)" -o data/scimagojr_2025.csv
-
 ```
 
 ### Step 2: Requirements Installation
 
 ```bash
 pip install -r "requirements.txt"
-
 ```
 
 ### Step 3: Database Ingestion & Seeding
@@ -135,7 +126,7 @@ pip install -r "requirements.txt"
 To build the baseline database, execute seed requests to ingest domain-stratified documents directly into the document database. Run the following corpus pipeline initialization scripts:
 
 ``` bash
-python ./utils/data/seed_database.py
+curl -X POST "http://127.0.0.1:8000/seed/batch" -H "Content-Type: application/json" -d "{\"queries_path\": \"./data/seed_queries.json\"}"
 ```
 
 ### Step 4: Running the Ablation Study
@@ -144,7 +135,6 @@ Execute the complete matrix evaluation using the core testing runner:
 
 ```bash
 python ./eval/run_eval.py --queries_path ./data/queries.json --log_path ./pipeline_audit_log.csv --out_dir ./results/
-
 ```
 or to use the default paths defined in the `.env` file, simply run:
 ```bash
@@ -157,7 +147,7 @@ python ./eval/run_eval.py
 
 The CTE-180 benchmark suite is systematically split across four analytical validation tracks and three core clinical domains to yield exactly 180 evaluation query vectors:
 
-| Dimension | Oncology | Neurology | Dermatology | Total Queries |
+| Dimension | orthopaedics | pain medicine | rehabilitation | Total Queries |
 | --- | --- | --- | --- | --- |
 | `evidence_level` | 15 | 15 | 15 | **45** |
 | `journal_tier` | 15 | 15 | 15 | **45** |
@@ -165,8 +155,7 @@ The CTE-180 benchmark suite is systematically split across four analytical valid
 | `adversarial` | 15 | 15 | 15 | **45** |
 | **Total Pool** | **60** | **60** | **60** | **180** |
 
-* **Structural Composition:** 105 queries check conditions where high-trust data explicitly dominates. 75 queries represent boundary conditions or strict adversarial phrasing where authoritative primary documentation is intentionally missing or sparse, stress-testing mathematical fallback loops.
-
+* **Structural Composition:** Each query is meticulously crafted to target specific metadata dimensions, ensuring that the evaluation captures the nuanced behavior of the TWR mechanism under controlled conditions.
 ---
 
 ## 6. Empirical Results & Statistical Evaluation
@@ -194,6 +183,12 @@ Below is the verified performance matrix logged across all 180 validation tests:
 |  | **TFR** | **1.16** | **Q1** | **0.968** | **0.956** | **0.948** |
 | **Adversarial** | Standard | 2.56 | Q3 | 0.820 | 0.597 | 0.365 |
 |  | **TFR** | **1.29** | **Q1** | **0.956** | **0.942** | **0.907** |
+
+### chart1: Dumbbell plot comparing top-1 quality shift for each pipeline.
+<img src="./results/fig1_dumbbell.png" alt="Dumbbell Plot" width="700"/>
+
+### chart2: Grouped bar chart showing mean nDCG@3 scores for each pipeline across the four evaluation dimensions.
+<img src="./results/fig2_grouped_bar.png" alt="Grouped Bar Chart" width="700"/>
 
 ---
 
