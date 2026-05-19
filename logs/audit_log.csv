@@ -20,3 +20,18 @@ timestamp,action,query,results_count,top_result_pmid,latency,pipeline,status
 2026-05-17 16:53:30,seed,case-control studies[mh] AND dermatology[mh],128.90612316131592,success
 2026-05-17 18:09:09,seed,randomized controlled trial[pt] AND (psoriasis OR atopic dermatitis OR vitiligo OR melanoma),204.0133650302887,success
 2026-05-18 08:37:47,batch_ablation,Batch ablation over 180 queries,8.334928512573242,success
+2026-05-19 10:56:42,seed,systematic review[pt] AND orthopedics[mh],25.381906986236572,success
+2026-05-19 10:57:06,seed,randomized controlled trial[pt] AND (arthroplasty OR spinal fusion OR ligament reconstruction),24.6335129737854,success
+2026-05-19 10:57:41,seed,cohort studies[mh] AND (bone diseases[mh] OR joint diseases[mh]),32.141982555389404,success
+2026-05-19 10:58:14,seed,case-control studies[mh] AND orthopedics[mh],33.313987016677856,success
+2026-05-19 10:58:53,seed,case reports[pt] AND (implant failure OR atypical fracture OR rare osteosarcoma),38.81358575820923,success
+2026-05-19 10:59:40,seed,systematic review[pt] AND (pain management[mh] OR anesthesiology[mh]),47.30917978286743,success
+2026-05-19 11:00:33,seed,randomized controlled trial[pt] AND (epidural OR nerve block OR neurostimulation OR opioid),50.84267282485962,success
+2026-05-19 11:01:32,seed,cohort studies[mh] AND chronic pain[mh],59.12601923942566,success
+2026-05-19 11:02:35,seed,case-control studies[mh] AND pain medicine[mh],62.87368583679199,success
+2026-05-19 11:03:48,seed,case reports[pt] AND (anesthesia complication OR complex regional pain syndrome OR rare neuropathy),70.54474329948425,success
+2026-05-19 11:05:06,seed,systematic review[pt] AND rehabilitation[mh],78.6705093383789,success
+2026-05-19 11:06:41,seed,randomized controlled trial[pt] AND (physical therapy OR spinal cord injury OR traumatic brain injury),92.78692770004272,success
+2026-05-19 11:08:13,seed,cohort studies[mh] AND physical and rehabilitation medicine[mh],91.5915687084198,success
+2026-05-19 11:09:50,seed,case-control studies[mh] AND rehabilitation[mh],94.74164938926697,success
+2026-05-19 11:11:28,seed,case reports[pt] AND (atypical recovery OR physical therapy complications OR unique rehabilitation),98.24854731559753,success

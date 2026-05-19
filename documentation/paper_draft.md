@@ -234,3 +234,9 @@ The Traceability-First Retrieval architecture addresses the Semantic Trap in RAG
 * Liu, N. F., Lin, K., Chen, J., Chuang, S., Cho, K., & Liang, P. (2023). Lost in the Middle: How Language Models Use Long Contexts. *arXiv preprint arXiv:2307.03172*.
 * Oxford Centre for Evidence-Based Medicine (OCEBM). (2011). Levels of Evidence. *CEBM*.
 * SCImago Journal & Country Rank. (2025). Global Journal Classification Datasets. *SCImago*.
+
+---
+## Roles and Responsibilities
+**Khalid Iqnaibi**: First author,Conceptualization, Methodology, Software Development, Data Curation, Formal Analysis, Writing - Original Draft, Visualization ,lead engineer, designed the TFR architecture, wrote the code, ran the quantitative statistical ablation (nDCG, MRR, Wilcoxon tests).
+
+**[Additional Authors]**: Co-authors, clinical domain experts, designed the clinical evaluation rubric, performed the blinded qualitative validation of the Top-1 retrieval outputs, and reviewed the manuscript for clinical accuracy and relevance.

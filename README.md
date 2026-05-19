@@ -134,33 +134,8 @@ pip install -r "requirements.txt"
 
 To build the baseline database, execute seed requests to ingest domain-stratified documents directly into the document database. Run the following corpus pipeline initialization scripts:
 
-```bash
-# CARDIOVASCULAR
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "systematic review[pt] AND cardiovascular diseases[mh]", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "randomized controlled trial[pt] AND (antiplatelet OR anticoagulant OR coronary)", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "cohort studies[mh] AND cardiovascular diseases[mh]", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "case-control studies[mh] AND cardiovascular diseases[mh]", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "case reports[pt] AND (thrombosis OR arrhythmia OR heart failure)", "max_results": 50}'
-
-# ONCOLOGY
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "meta-analysis[pt] AND neoplasms[mh]", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "randomized controlled trial[pt] AND (chemotherapy OR immunotherapy OR targeted therapy)", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "cohort studies[mh] AND neoplasms[mh]", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "case-control studies[mh] AND neoplasms[mh]", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "case reports[pt] AND (lymphoma OR carcinoma OR melanoma)", "max_results": 50}'
-
-# NEUROLOGY
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "systematic review[pt] AND nervous system diseases[mh]", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "randomized controlled trial[pt] AND (stroke OR epilepsy OR parkinson OR multiple sclerosis)", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "cohort studies[mh] AND nervous system diseases[mh]", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "case-control studies[mh] AND nervous system diseases[mh]", "max_results": 50}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "case reports[pt] AND (neuropathy OR dementia OR migraine OR encephalitis)", "max_results": 50}'
-
-# DERMATOLOGY
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "systematic review[pt] AND skin diseases[mh]", "max_results": 100}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "randomized controlled trial[pt] AND (psoriasis OR atopic dermatitis OR vitiligo OR melanoma)", "max_results": 100}'
-curl -X POST http://localhost:8000/seed -H "Content-Type: application/json" -d '{"query": "case-control studies[mh] AND dermatology[mh]", "max_results": 100}'
-
+``` bash
+python ./utils/data/seed_database.py
 ```
 
 ### Step 4: Running the Ablation Study
@@ -170,6 +145,10 @@ Execute the complete matrix evaluation using the core testing runner:
 ```bash
 python ./eval/run_eval.py --queries_path ./data/queries.json --log_path ./pipeline_audit_log.csv --out_dir ./results/
 
+```
+or to use the default paths defined in the `.env` file, simply run:
+```bash
+python ./eval/run_eval.py
 ```
 
 ---

@@ -1,0 +1,17 @@
+[
+  {"query": "systematic review[pt] AND orthopedics[mh]", "max_results": 50},
+  {"query": "randomized controlled trial[pt] AND (arthroplasty OR spinal fusion OR ligament reconstruction)", "max_results": 50},
+  {"query": "cohort studies[mh] AND (bone diseases[mh] OR joint diseases[mh])", "max_results": 50},
+  {"query": "case-control studies[mh] AND orthopedics[mh]", "max_results": 50},
+  {"query": "case reports[pt] AND (implant failure OR atypical fracture OR rare osteosarcoma)", "max_results": 50},
+  {"query": "systematic review[pt] AND (pain management[mh] OR anesthesiology[mh])", "max_results": 50},
+  {"query": "randomized controlled trial[pt] AND (epidural OR nerve block OR neurostimulation OR opioid)", "max_results": 50},
+  {"query": "cohort studies[mh] AND chronic pain[mh]", "max_results": 50},
+  {"query": "case-control studies[mh] AND pain medicine[mh]", "max_results": 50},
+  {"query": "case reports[pt] AND (anesthesia complication OR complex regional pain syndrome OR rare neuropathy)", "max_results": 50},
+  {"query": "systematic review[pt] AND rehabilitation[mh]", "max_results": 50},
+  {"query": "randomized controlled trial[pt] AND (physical therapy OR spinal cord injury OR traumatic brain injury)", "max_results": 50},
+  {"query": "cohort studies[mh] AND physical and rehabilitation medicine[mh]", "max_results": 50},
+  {"query": "case-control studies[mh] AND rehabilitation[mh]", "max_results": 50},
+  {"query": "case reports[pt] AND (atypical recovery OR physical therapy complications OR unique rehabilitation)", "max_results": 50}
+]

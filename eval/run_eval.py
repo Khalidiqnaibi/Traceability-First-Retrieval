@@ -44,6 +44,13 @@ import argparse
 import warnings
 from pathlib import Path
 from typing import Any
+from dotenv import load_dotenv
+
+load_dotenv()
+
+QUERY_PATH = Path(os.getenv("QUERIES_PATH", "./data/seed_queries.json"))
+OUT_DIR = Path(os.getenv("OUTPUT_DIR", "./results"))
+EVAL_LOG_PATH = Path(os.getenv("EVAL_LOG_PATH", "./logs/pipeline_audit_log.csv"))
 
 def _force_utf8_stdout() -> None:
     try:
@@ -633,9 +640,9 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
         description="Evaluate TFR vs Standard RAG pipeline from an audit log."
     )
-    p.add_argument("--log",     default="./logs/pipeline_audit_log.csv")
-    p.add_argument("--queries", default="./data/queries.json")
-    p.add_argument("--out_dir", default="./results")
+    p.add_argument("--log",     default=EVAL_LOG_PATH)
+    p.add_argument("--queries", default=QUERY_PATH)
+    p.add_argument("--out_dir", default=OUT_DIR)
     return p.parse_args()
 
 
