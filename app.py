@@ -57,7 +57,7 @@ def batch_seed():
             max_results=max_results,
             email=os.getenv("NCBI_EMAIL"),
             api_key=os.getenv("NCBI_API_KEY"),
-            output_path=f"./data/seed_pubmed_{item.get('id')}.xml"
+            output_path=f"./data/seed_pubmed_data.xml"
         )
         if xml_path:
             chunks = processor.parse_pubmed_xml(xml_path)

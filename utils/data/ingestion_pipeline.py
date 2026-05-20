@@ -203,23 +203,26 @@ class TFRDataPreprocessor:
 
         return "general"
 
-    def get_verified_year(self, article, article_data) -> int:
+    def get_verified_year(self, article) -> int:
         """
-        Extracts the most accurate publication year, avoiding future-dated
-        print artifacts by prioritizing PubMed entry dates.
+        Extracts the most accurate publication year from a <PubmedArticle> node,
+        prioritizing stable repository entry/electronic dates over future-dated print runs.
         """
-        # 1. Priority: Date the article actually entered PubMed (highly reliable)
-        pubmed_date_node = article.find(".//PubMedPubDate[@PubStatus='pubmed']/Year")
+        # 1. Priority: Date the article entered PubMed (Bypasses future 2026 print spikes)
+        # Inside XML path: PubmedArticle -> PubmedData -> History -> PubMedPubDate
+        pubmed_date_node = article.find(".//PubmedData/History/PubMedPubDate[@PubStatus='pubmed']/Year")
         if pubmed_date_node is not None and pubmed_date_node.text:
             return int(pubmed_date_node.text)
 
         # 2. Fallback: Electronic publication date (epub)
-        article_date_node = article_data.find(".//ArticleDate/Year")
+        # Inside XML path: PubmedArticle -> MedlineCitation -> Article -> ArticleDate
+        article_date_node = article.find(".//MedlineCitation/Article/ArticleDate/Year")
         if article_date_node is not None and article_date_node.text:
             return int(article_date_node.text)
 
-        # 3. Last Resort: Journal Issue PubDate (often future-dated for print)
-        pub_date_node = article_data.find(".//JournalIssue/PubDate")
+        # 3. Last Resort: Journal Issue PubDate (often placeholders for physical issues)
+        # Inside XML path: PubmedArticle -> MedlineCitation -> Article -> Journal -> JournalIssue -> PubDate
+        pub_date_node = article.find(".//MedlineCitation/Article/Journal/JournalIssue/PubDate")
         if pub_date_node is not None:
             year_str = pub_date_node.findtext("Year")
             if not year_str:
@@ -253,7 +256,7 @@ class TFRDataPreprocessor:
                 journal_node = article_data.find("Journal/Title")
                 journal_name = (journal_node.text or "").strip() if journal_node is not None else ""
 
-                year = self.get_verified_year(article, article_data)
+                year = self.get_verified_year(article)
 
                 abstract_parts = [
                     node.text

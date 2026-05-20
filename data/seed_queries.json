@@ -1,386 +1,154 @@
 [
-  {
-    "query": "meta-analysis[pt] AND orthopedics[mh]",
-    "max_results": 50
-  },
-  {
-    "query": "systematic review[pt] AND orthopedics[mh]",
-    "max_results": 50
-  },
-  {
-    "query": "systematic review[pt] AND (arthroplasty[mh] OR fractures bone[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "systematic review[pt] AND (spinal fusion[mh] OR intervertebral disc degeneration[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "meta-analysis[pt] AND (osteoarthritis[mh] OR bone diseases[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "meta-analysis[pt] AND orthopedics[mh] AND (\"2010\"[PDAT]:\"2017\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "systematic review[pt] AND (arthroplasty[mh] OR fractures bone[mh]) AND (\"2012\"[PDAT]:\"2018\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "systematic review[pt] AND orthopedics[mh] AND (\"2018\"[PDAT]:\"2022\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (arthroplasty OR total knee replacement OR total hip replacement)",
-    "max_results": 50
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (spinal fusion OR ligament reconstruction OR rotator cuff repair)",
-    "max_results": 50
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (osteoporosis[mh] OR bone fractures[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (implant OR orthopedic fixation OR internal fixation)",
-    "max_results": 40
-  },
-  {
-    "query": "randomized controlled trial[pt] AND orthopedics[mh] AND (\"2010\"[PDAT]:\"2016\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (arthroplasty OR spinal fusion) AND (\"2016\"[PDAT]:\"2021\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "cohort studies[mh] AND (bone diseases[mh] OR joint diseases[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "prospective studies[mh] AND (arthroplasty[mh] OR spinal fusion[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "cohort studies[mh] AND (osteoporosis[mh] OR fractures bone[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "longitudinal studies[mh] AND (orthopedics[mh] OR musculoskeletal diseases[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "cohort studies[mh] AND orthopedics[mh] AND (\"2010\"[PDAT]:\"2018\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "prospective studies[mh] AND (arthroplasty[mh] OR fractures bone[mh]) AND (\"2012\"[PDAT]:\"2019\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "case-control studies[mh] AND orthopedics[mh]",
-    "max_results": 50
-  },
-  {
-    "query": "retrospective studies[mh] AND (arthroplasty[mh] OR spinal fusion[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "cross-sectional studies[mh] AND (musculoskeletal diseases[mh] OR orthopedics[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "comparative study[pt] AND (total knee replacement OR total hip arthroplasty OR bone fixation)",
-    "max_results": 40
-  },
-  {
-    "query": "retrospective studies[mh] AND orthopedics[mh] AND (\"2010\"[PDAT]:\"2018\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "case reports[pt] AND (implant failure OR periprosthetic fracture OR atypical fracture)",
-    "max_results": 50
-  },
-  {
-    "query": "case reports[pt] AND (rare osteosarcoma OR avascular necrosis OR osteonecrosis)",
-    "max_results": 50
-  },
-  {
-    "query": "case reports[pt] AND (orthopedic complication OR surgical site infection OR hardware failure)",
-    "max_results": 40
-  },
-  {
-    "query": "case reports[pt] AND (implant failure OR atypical fracture) AND (\"2010\"[PDAT]:\"2019\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "editorial[pt] AND orthopedics[mh]",
-    "max_results": 30
-  },
-  {
-    "query": "letter[pt] AND (arthroplasty[mh] OR orthopedics[mh])",
-    "max_results": 30
-  },
-  {
-    "query": "review[pt] AND orthopedics[mh] NOT (systematic review[pt] OR meta-analysis[pt])",
-    "max_results": 30
-  },
-  {
-    "query": "meta-analysis[pt] AND (pain management[mh] OR anesthesiology[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "systematic review[pt] AND (pain management[mh] OR anesthesiology[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "systematic review[pt] AND (chronic pain[mh] OR neuropathic pain[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "meta-analysis[pt] AND (opioid[mh] OR analgesics opioid[mh] OR postoperative pain[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "systematic review[pt] AND (regional anesthesia[mh] OR nerve block[mh] OR epidural analgesia[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "meta-analysis[pt] AND (pain management[mh] OR anesthesiology[mh]) AND (\"2010\"[PDAT]:\"2017\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "systematic review[pt] AND (chronic pain[mh] OR opioid[mh]) AND (\"2012\"[PDAT]:\"2019\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "systematic review[pt] AND (nerve block[mh] OR epidural analgesia[mh]) AND (\"2015\"[PDAT]:\"2021\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (epidural OR nerve block OR neurostimulation OR opioid)",
-    "max_results": 50
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (chronic pain[mh] OR neuropathic pain[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (ketamine OR lidocaine OR bupivacaine OR fentanyl) AND pain",
-    "max_results": 40
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (spinal cord stimulation[mh] OR transcranial magnetic stimulation[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (pain management[mh] OR anesthesiology[mh]) AND (\"2010\"[PDAT]:\"2016\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (opioid[mh] OR regional anesthesia[mh]) AND (\"2016\"[PDAT]:\"2021\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "cohort studies[mh] AND chronic pain[mh]",
-    "max_results": 50
-  },
-  {
-    "query": "prospective studies[mh] AND (pain management[mh] OR postoperative pain[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "cohort studies[mh] AND (opioid use disorder[mh] OR substance-related disorders[mh] AND pain)",
-    "max_results": 40
-  },
-  {
-    "query": "longitudinal studies[mh] AND (neuropathic pain[mh] OR fibromyalgia[mh])",
-    "max_results": 35
-  },
-  {
-    "query": "cohort studies[mh] AND chronic pain[mh] AND (\"2010\"[PDAT]:\"2018\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "prospective studies[mh] AND (pain management[mh] OR anesthesiology[mh]) AND (\"2012\"[PDAT]:\"2019\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "case-control studies[mh] AND pain medicine[mh]",
-    "max_results": 50
-  },
-  {
-    "query": "retrospective studies[mh] AND (chronic pain[mh] OR postoperative pain[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "cross-sectional studies[mh] AND (chronic pain[mh] OR pain measurement[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "observational study[pt] AND (opioid analgesics[mh] OR anesthesia[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "retrospective studies[mh] AND (pain management[mh] OR anesthesiology[mh]) AND (\"2010\"[PDAT]:\"2018\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "case reports[pt] AND (anesthesia complication OR malignant hyperthermia OR awareness under anesthesia)",
-    "max_results": 50
-  },
-  {
-    "query": "case reports[pt] AND (complex regional pain syndrome OR causalgia[mh] OR rare neuropathy)",
-    "max_results": 50
-  },
-  {
-    "query": "case reports[pt] AND (opioid overdose OR intrathecal drug delivery complication OR epidural hematoma)",
-    "max_results": 40
-  },
-  {
-    "query": "case reports[pt] AND (anesthesia complication OR complex regional pain syndrome) AND (\"2010\"[PDAT]:\"2019\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "editorial[pt] AND (pain medicine[mh] OR anesthesiology[mh])",
-    "max_results": 30
-  },
-  {
-    "query": "letter[pt] AND (chronic pain[mh] OR opioid analgesics[mh])",
-    "max_results": 30
-  },
-  {
-    "query": "review[pt] AND (pain management[mh] OR anesthesiology[mh]) NOT (systematic review[pt] OR meta-analysis[pt])",
-    "max_results": 30
-  },
-  {
-    "query": "meta-analysis[pt] AND rehabilitation[mh]",
-    "max_results": 50
-  },
-  {
-    "query": "systematic review[pt] AND rehabilitation[mh]",
-    "max_results": 50
-  },
-  {
-    "query": "systematic review[pt] AND (physical therapy modalities[mh] OR exercise therapy[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "meta-analysis[pt] AND (spinal cord injuries[mh] OR traumatic brain injuries[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "systematic review[pt] AND (stroke rehabilitation[mh] OR neurological rehabilitation[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "meta-analysis[pt] AND rehabilitation[mh] AND (\"2010\"[PDAT]:\"2017\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "systematic review[pt] AND (physical therapy modalities[mh] OR exercise therapy[mh]) AND (\"2012\"[PDAT]:\"2019\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "systematic review[pt] AND (stroke rehabilitation[mh] OR spinal cord injuries[mh]) AND (\"2015\"[PDAT]:\"2021\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (physical therapy OR physiotherapy OR occupational therapy)",
-    "max_results": 50
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (spinal cord injury[mh] OR traumatic brain injury[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (stroke rehabilitation[mh] OR post-stroke recovery)",
-    "max_results": 40
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (robot-assisted therapy OR virtual reality rehabilitation OR exoskeleton)",
-    "max_results": 40
-  },
-  {
-    "query": "randomized controlled trial[pt] AND rehabilitation[mh] AND (\"2010\"[PDAT]:\"2016\"[PDAT])",
-    "max_results": 40
-  },
-  {
-    "query": "randomized controlled trial[pt] AND (physical therapy modalities[mh] OR exercise therapy[mh]) AND (\"2016\"[PDAT]:\"2021\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "cohort studies[mh] AND physical and rehabilitation medicine[mh]",
-    "max_results": 50
-  },
-  {
-    "query": "prospective studies[mh] AND (rehabilitation[mh] OR physical therapy modalities[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "cohort studies[mh] AND (spinal cord injuries[mh] OR traumatic brain injuries[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "longitudinal studies[mh] AND (stroke rehabilitation[mh] OR disability[mh])",
-    "max_results": 35
-  },
-  {
-    "query": "cohort studies[mh] AND rehabilitation[mh] AND (\"2010\"[PDAT]:\"2018\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "prospective studies[mh] AND (physical therapy modalities[mh] OR exercise therapy[mh]) AND (\"2012\"[PDAT]:\"2019\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "case-control studies[mh] AND rehabilitation[mh]",
-    "max_results": 50
-  },
-  {
-    "query": "retrospective studies[mh] AND (rehabilitation[mh] OR physical therapy modalities[mh])",
-    "max_results": 50
-  },
-  {
-    "query": "cross-sectional studies[mh] AND (disability evaluation[mh] OR physical and rehabilitation medicine[mh])",
-    "max_results": 40
-  },
-  {
-    "query": "observational study[pt] AND (stroke rehabilitation[mh] OR functional recovery[mh])",
-    "max_results": 35
-  },
-  {
-    "query": "retrospective studies[mh] AND rehabilitation[mh] AND (\"2010\"[PDAT]:\"2018\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "case reports[pt] AND (atypical recovery OR unusual rehabilitation outcome OR rare functional restoration)",
-    "max_results": 50
-  },
-  {
-    "query": "case reports[pt] AND (physical therapy complications OR rehabilitation adverse event OR exercise injury)",
-    "max_results": 50
-  },
-  {
-    "query": "case reports[pt] AND (spinal cord injury rehabilitation OR traumatic brain injury recovery)",
-    "max_results": 40
-  },
-  {
-    "query": "case reports[pt] AND (rehabilitation[mh] OR physical therapy modalities[mh]) AND (\"2010\"[PDAT]:\"2019\"[PDAT])",
-    "max_results": 35
-  },
-  {
-    "query": "editorial[pt] AND (rehabilitation[mh] OR physical and rehabilitation medicine[mh])",
-    "max_results": 30
-  },
-  {
-    "query": "letter[pt] AND (physical therapy modalities[mh] OR rehabilitation[mh])",
-    "max_results": 30
-  },
-  {
-    "query": "review[pt] AND rehabilitation[mh] NOT (systematic review[pt] OR meta-analysis[pt])",
-    "max_results": 30
-  }
+
+  { "query": "meta-analysis[pt] AND orthopedics[mh]", "max_results": 50 },
+  { "query": "systematic review[pt] AND orthopedics[mh]", "max_results": 50 },
+  { "query": "systematic review[pt] AND (arthroplasty[mh] OR fractures, bone[mh])", "max_results": 50 },
+  { "query": "systematic review[pt] AND (spinal fusion[mh] OR intervertebral disc degeneration[mh])", "max_results": 40 },
+  { "query": "meta-analysis[pt] AND (osteoarthritis[mh] OR bone diseases[mh])", "max_results": 40 },
+
+  { "query": "meta-analysis[pt] AND orthopedics[mh] AND (\"2010\"[PDAT]:\"2017\"[PDAT])", "max_results": 40 },
+  { "query": "systematic review[pt] AND (arthroplasty[mh] OR fractures, bone[mh]) AND (\"2012\"[PDAT]:\"2018\"[PDAT])", "max_results": 40 },
+  { "query": "systematic review[pt] AND orthopedics[mh] AND (\"2018\"[PDAT]:\"2022\"[PDAT])", "max_results": 40 },
+
+  { "query": "(meta-analysis[pt] OR systematic review[pt]) AND orthopedics[mh] AND (\"2022\"[PDAT]:\"2025\"[PDAT])", "max_results": 50 },
+  { "query": "(meta-analysis[pt] OR systematic review[pt]) AND (arthroplasty[mh] OR musculoskeletal diseases[mh]) AND (\"2022\"[PDAT]:\"2025\"[PDAT])", "max_results": 40 },
+
+  { "query": "randomized controlled trial[pt] AND (arthroplasty OR total knee replacement OR total hip replacement)", "max_results": 50 },
+  { "query": "randomized controlled trial[pt] AND (spinal fusion OR ligament reconstruction OR rotator cuff repair)", "max_results": 50 },
+  { "query": "randomized controlled trial[pt] AND (osteoporosis[mh] OR fractures, bone[mh])", "max_results": 40 },
+
+  { "query": "randomized controlled trial[pt] AND (implant[mh] OR orthopedic fixation devices[mh] OR internal fixators[mh])", "max_results": 40 },
+  { "query": "randomized controlled trial[pt] AND orthopedics[mh] AND (\"2010\"[PDAT]:\"2016\"[PDAT])", "max_results": 40 },
+  { "query": "randomized controlled trial[pt] AND (arthroplasty OR spinal fusion) AND (\"2016\"[PDAT]:\"2021\"[PDAT])", "max_results": 40 },
+
+  { "query": "randomized controlled trial[pt] AND (arthroplasty[mh] OR musculoskeletal diseases[mh]) AND (\"2022\"[PDAT]:\"2025\"[PDAT])", "max_results": 40 },
+
+  { "query": "cohort studies[mh] AND (bone diseases[mh] OR joint diseases[mh])", "max_results": 50 },
+  { "query": "prospective studies[mh] AND (arthroplasty[mh] OR spinal fusion[mh])", "max_results": 50 },
+  { "query": "cohort studies[mh] AND (osteoporosis[mh] OR fractures, bone[mh])", "max_results": 40 },
+  { "query": "longitudinal studies[mh] AND (orthopedics[mh] OR musculoskeletal diseases[mh])", "max_results": 40 },
+  { "query": "cohort studies[mh] AND orthopedics[mh] AND (\"2010\"[PDAT]:\"2018\"[PDAT])", "max_results": 40 },
+  { "query": "prospective studies[mh] AND (arthroplasty[mh] OR fractures, bone[mh]) AND (\"2012\"[PDAT]:\"2019\"[PDAT])", "max_results": 35 },
+
+  { "query": "case-control studies[mh] AND orthopedics[mh]", "max_results": 50 },
+  { "query": "retrospective studies[mh] AND (arthroplasty[mh] OR spinal fusion[mh])", "max_results": 50 },
+  { "query": "cross-sectional studies[mh] AND (musculoskeletal diseases[mh] OR orthopedics[mh])", "max_results": 40 },
+  { "query": "comparative study[pt] AND (total knee replacement OR total hip arthroplasty OR bone fixation)", "max_results": 40 },
+  { "query": "retrospective studies[mh] AND orthopedics[mh] AND (\"2010\"[PDAT]:\"2018\"[PDAT])", "max_results": 35 },
+
+  { "query": "case reports[pt] AND (arthroplasty[mh] OR fractures, bone[mh])", "max_results": 80 },
+  { "query": "case reports[pt] AND (joint diseases[mh] OR bone diseases[mh])", "max_results": 80 },
+  { "query": "case reports[pt] AND (spinal fusion[mh] OR intervertebral disc degeneration[mh])", "max_results": 60 },
+  { "query": "case reports[pt] AND (musculoskeletal diseases[mh] OR orthopedics[mh]) AND (\"2010\"[PDAT]:\"2019\"[PDAT])", "max_results": 50 },
+  { "query": "case reports[pt] AND (musculoskeletal diseases[mh] OR orthopedics[mh]) AND (\"2020\"[PDAT]:\"2025\"[PDAT])", "max_results": 50 },
+
+  { "query": "editorial[pt] AND orthopedics[mh]", "max_results": 30 },
+  { "query": "letter[pt] AND (arthroplasty[mh] OR orthopedics[mh])", "max_results": 30 },
+
+  { "query": "systematic review[pt] AND orthopedics[mh] NOT meta-analysis[pt]", "max_results": 30 },
+
+  { "query": "meta-analysis[pt] AND (pain management[mh] OR anesthesiology[mh])", "max_results": 50 },
+  { "query": "systematic review[pt] AND (pain management[mh] OR anesthesiology[mh])", "max_results": 50 },
+  { "query": "systematic review[pt] AND (chronic pain[mh] OR neuropathic pain[mh])", "max_results": 50 },
+  { "query": "meta-analysis[pt] AND (analgesics, opioid[mh] OR postoperative pain[mh])", "max_results": 40 },
+  
+  { "query": "systematic review[pt] AND (nerve block[mh] OR anesthesia, epidural[mh])", "max_results": 40 },
+
+  { "query": "meta-analysis[pt] AND (pain management[mh] OR anesthesiology[mh]) AND (\"2010\"[PDAT]:\"2017\"[PDAT])", "max_results": 40 },
+  { "query": "systematic review[pt] AND (chronic pain[mh] OR analgesics, opioid[mh]) AND (\"2012\"[PDAT]:\"2019\"[PDAT])", "max_results": 40 },
+  { "query": "systematic review[pt] AND (nerve block[mh] OR analgesia, epidural[mh]) AND (\"2015\"[PDAT]:\"2021\"[PDAT])", "max_results": 35 },
+
+  { "query": "(meta-analysis[pt] OR systematic review[pt]) AND (pain management[mh] OR anesthesiology[mh]) AND (\"2022\"[PDAT]:\"2025\"[PDAT])", "max_results": 50 },
+  { "query": "(meta-analysis[pt] OR systematic review[pt]) AND (chronic pain[mh] OR neuropathic pain[mh]) AND (\"2022\"[PDAT]:\"2025\"[PDAT])", "max_results": 40 },
+
+  { "query": "randomized controlled trial[pt] AND (anesthesia, epidural[mh] OR nerve block[mh] OR electric stimulation therapy[mh] OR analgesics, opioid[mh])", "max_results": 50 },
+  { "query": "randomized controlled trial[pt] AND (chronic pain[mh] OR neuropathic pain[mh])", "max_results": 50 },
+  { "query": "randomized controlled trial[pt] AND (ketamine OR lidocaine OR bupivacaine OR fentanyl) AND pain", "max_results": 40 },
+  { "query": "randomized controlled trial[pt] AND (spinal cord stimulation[mh] OR transcranial magnetic stimulation[mh])", "max_results": 40 },
+  { "query": "randomized controlled trial[pt] AND (pain management[mh] OR anesthesiology[mh]) AND (\"2010\"[PDAT]:\"2016\"[PDAT])", "max_results": 40 },
+  { "query": "randomized controlled trial[pt] AND (analgesics, opioid[mh] OR anesthesia, conduction[mh]) AND (\"2016\"[PDAT]:\"2021\"[PDAT])", "max_results": 35 },
+  
+  { "query": "randomized controlled trial[pt] AND (pain management[mh] OR anesthesiology[mh]) AND (\"2022\"[PDAT]:\"2025\"[PDAT])", "max_results": 40 },
+
+  { "query": "cohort studies[mh] AND chronic pain[mh]", "max_results": 50 },
+  { "query": "prospective studies[mh] AND (pain management[mh] OR postoperative pain[mh])", "max_results": 50 },
+  { "query": "cohort studies[mh] AND (opioid-related disorders[mh] OR substance-related disorders[mh])", "max_results": 40 },
+
+  { "query": "longitudinal studies[mh] AND (neuropathic pain[mh] OR fibromyalgia[mh])", "max_results": 35 },
+  { "query": "cohort studies[mh] AND chronic pain[mh] AND (\"2010\"[PDAT]:\"2018\"[PDAT])", "max_results": 35 },
+  { "query": "prospective studies[mh] AND (pain management[mh] OR anesthesiology[mh]) AND (\"2012\"[PDAT]:\"2019\"[PDAT])", "max_results": 35 },
+
+  { "query": "case-control studies[mh] AND (pain management[mh] OR anesthesiology[mh])", "max_results": 50 },
+  { "query": "retrospective studies[mh] AND (chronic pain[mh] OR postoperative pain[mh])", "max_results": 50 },
+  { "query": "cross-sectional studies[mh] AND (chronic pain[mh] OR pain measurement[mh])", "max_results": 40 },
+  { "query": "observational study[pt] AND (analgesics, opioid[mh] OR anesthesia[mh])", "max_results": 40 },
+  { "query": "retrospective studies[mh] AND (pain management[mh] OR anesthesiology[mh]) AND (\"2010\"[PDAT]:\"2018\"[PDAT])", "max_results": 35 },
+
+  { "query": "case reports[pt] AND (anesthesia[mh] OR anesthetics[mh])", "max_results": 80 },
+  { "query": "case reports[pt] AND (chronic pain[mh] OR pain management[mh])", "max_results": 80 },
+  { "query": "case reports[pt] AND (analgesics, opioid[mh] OR neuropathic pain[mh])", "max_results": 60 },
+  { "query": "case reports[pt] AND (pain management[mh] OR anesthesiology[mh]) AND (\"2010\"[PDAT]:\"2019\"[PDAT])", "max_results": 50 },
+  { "query": "case reports[pt] AND (pain management[mh] OR anesthesiology[mh]) AND (\"2020\"[PDAT]:\"2025\"[PDAT])", "max_results": 50 },
+
+  { "query": "editorial[pt] AND (pain management[mh] OR anesthesiology[mh])", "max_results": 30 },
+  { "query": "letter[pt] AND (chronic pain[mh] OR analgesics, opioid[mh])", "max_results": 30 },
+  { "query": "systematic review[pt] AND (pain management[mh] OR anesthesiology[mh]) NOT meta-analysis[pt]", "max_results": 30 },
+
+  { "query": "meta-analysis[pt] AND rehabilitation[mh]", "max_results": 50 },
+  { "query": "systematic review[pt] AND rehabilitation[mh]", "max_results": 50 },
+  { "query": "systematic review[pt] AND (physical therapy modalities[mh] OR exercise therapy[mh])", "max_results": 50 },
+
+  { "query": "meta-analysis[pt] AND (spinal cord injuries[mh] OR brain injuries, traumatic[mh])", "max_results": 40 },
+  { "query": "systematic review[pt] AND (stroke rehabilitation[mh] OR neurological rehabilitation[mh])", "max_results": 40 },
+  { "query": "meta-analysis[pt] AND rehabilitation[mh] AND (\"2010\"[PDAT]:\"2017\"[PDAT])", "max_results": 40 },
+  { "query": "systematic review[pt] AND (physical therapy modalities[mh] OR exercise therapy[mh]) AND (\"2012\"[PDAT]:\"2019\"[PDAT])", "max_results": 40 },
+  { "query": "systematic review[pt] AND (stroke rehabilitation[mh] OR spinal cord injuries[mh]) AND (\"2015\"[PDAT]:\"2021\"[PDAT])", "max_results": 35 },
+
+  { "query": "(meta-analysis[pt] OR systematic review[pt]) AND rehabilitation[mh] AND (\"2022\"[PDAT]:\"2025\"[PDAT])", "max_results": 50 },
+  { "query": "(meta-analysis[pt] OR systematic review[pt]) AND (exercise therapy[mh] OR physical therapy modalities[mh]) AND (\"2022\"[PDAT]:\"2025\"[PDAT])", "max_results": 40 },
+
+  { "query": "randomized controlled trial[pt] AND (physical therapy modalities[mh] OR exercise therapy[mh] OR occupational therapy[mh])", "max_results": 50 },
+
+  { "query": "randomized controlled trial[pt] AND (spinal cord injuries[mh] OR brain injuries, traumatic[mh])", "max_results": 50 },
+  { "query": "randomized controlled trial[pt] AND stroke rehabilitation[mh]", "max_results": 40 },
+  { "query": "randomized controlled trial[pt] AND (robotics[mh] OR virtual reality[mh] OR exoskeleton device[mh])", "max_results": 40 },
+  { "query": "randomized controlled trial[pt] AND rehabilitation[mh] AND (\"2010\"[PDAT]:\"2016\"[PDAT])", "max_results": 40 },
+  { "query": "randomized controlled trial[pt] AND (physical therapy modalities[mh] OR exercise therapy[mh]) AND (\"2016\"[PDAT]:\"2021\"[PDAT])", "max_results": 35 },
+
+  { "query": "randomized controlled trial[pt] AND rehabilitation[mh] AND (\"2022\"[PDAT]:\"2025\"[PDAT])", "max_results": 40 },
+
+  { "query": "cohort studies[mh] AND rehabilitation[mh]", "max_results": 50 },
+  { "query": "prospective studies[mh] AND (rehabilitation[mh] OR physical therapy modalities[mh])", "max_results": 50 },
+  { "query": "cohort studies[mh] AND (spinal cord injuries[mh] OR brain injuries, traumatic[mh])", "max_results": 40 },
+  { "query": "longitudinal studies[mh] AND (stroke rehabilitation[mh] OR recovery of function[mh])", "max_results": 35 },
+  { "query": "cohort studies[mh] AND rehabilitation[mh] AND (\"2010\"[PDAT]:\"2018\"[PDAT])", "max_results": 35 },
+  { "query": "prospective studies[mh] AND (physical therapy modalities[mh] OR exercise therapy[mh]) AND (\"2012\"[PDAT]:\"2019\"[PDAT])", "max_results": 35 },
+
+  { "query": "case-control studies[mh] AND rehabilitation[mh]", "max_results": 50 },
+  { "query": "retrospective studies[mh] AND (rehabilitation[mh] OR physical therapy modalities[mh])", "max_results": 50 },
+  { "query": "cross-sectional studies[mh] AND (disability evaluation[mh] OR rehabilitation[mh])", "max_results": 40 },
+  { "query": "observational study[pt] AND (stroke rehabilitation[mh] OR recovery of function[mh])", "max_results": 35 },
+  { "query": "retrospective studies[mh] AND rehabilitation[mh] AND (\"2010\"[PDAT]:\"2018\"[PDAT])", "max_results": 35 },
+
+  { "query": "case reports[pt] AND (rehabilitation[mh] OR exercise therapy[mh])", "max_results": 80 },
+  { "query": "case reports[pt] AND (spinal cord injuries[mh] OR brain injuries, traumatic[mh])", "max_results": 80 },
+  { "query": "case reports[pt] AND stroke rehabilitation[mh]", "max_results": 60 },
+  { "query": "case reports[pt] AND (rehabilitation[mh] OR physical therapy modalities[mh]) AND (\"2010\"[PDAT]:\"2019\"[PDAT])", "max_results": 50 },
+  { "query": "case reports[pt] AND (rehabilitation[mh] OR physical therapy modalities[mh]) AND (\"2020\"[PDAT]:\"2025\"[PDAT])", "max_results": 50 },
+
+  { "query": "editorial[pt] AND rehabilitation[mh]", "max_results": 30 },
+  { "query": "letter[pt] AND (physical therapy modalities[mh] OR rehabilitation[mh])", "max_results": 30 },
+  { "query": "systematic review[pt] AND rehabilitation[mh] NOT meta-analysis[pt]", "max_results": 30 },
+
+  { "query": "randomized controlled trial[pt] AND (arthroplasty[mh] OR spinal fusion[mh]) AND (postoperative pain[mh] OR analgesia, epidural[mh])", "max_results": 50 },
+  { "query": "systematic review[pt] AND (arthroplasty[mh] OR fractures, bone[mh]) AND (pain management[mh] OR analgesics, opioid[mh])", "max_results": 50 },
+  { "query": "meta-analysis[pt] AND (arthroplasty[mh] OR musculoskeletal diseases[mh]) AND (postoperative pain[mh] OR nerve block[mh])", "max_results": 40 },
+
+  { "query": "randomized controlled trial[pt] AND (arthroplasty[mh] OR fractures, bone[mh]) AND (rehabilitation[mh] OR exercise therapy[mh])", "max_results": 50 },
+  { "query": "systematic review[pt] AND (arthroplasty[mh] OR spinal fusion[mh]) AND (rehabilitation[mh] OR recovery of function[mh])", "max_results": 50 },
+  { "query": "meta-analysis[pt] AND (orthopedics[mh] OR musculoskeletal diseases[mh]) AND (physical therapy modalities[mh] OR rehabilitation[mh])", "max_results": 40 },
+
+  { "query": "randomized controlled trial[pt] AND (chronic pain[mh] OR neuropathic pain[mh]) AND (rehabilitation[mh] OR physical therapy modalities[mh])", "max_results": 50 },
+  { "query": "systematic review[pt] AND (pain management[mh] OR fibromyalgia[mh]) AND (exercise therapy[mh] OR rehabilitation[mh])", "max_results": 50 },
+  { "query": "meta-analysis[pt] AND (chronic pain[mh] OR postoperative pain[mh]) AND (rehabilitation[mh] OR recovery of function[mh])", "max_results": 40 }
 ]
