@@ -1,2537 +1,2225 @@
 [
   {
     "id": 1,
-    "query": "What is the survival benefit of adjuvant chemotherapy in stage III colorectal cancer?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What is the most effective intervention for chronic low back pain based on RCT evidence?",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "TWR should outperform RRF because it up-weights documents with evidence_level=1 (RCTs/meta-analyses). For a treatment efficacy question, systematic reviews dominate; RRF treats a case report equally, TWR does not.",
     "tags": [
-      "colorectal cancer",
-      "adjuvant chemotherapy",
-      "survival",
-      "RCT"
+      "chronic low back pain",
+      "RCT",
+      "manual therapy"
     ]
   },
   {
     "id": 2,
-    "query": "Does robotic surgery improve oncological outcomes versus laparoscopic surgery in rectal cancer?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What does meta-analytic evidence show about exercise therapy for knee osteoarthritis?",
+    "domain": "Orthopaedics",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "Meta-analyses (evidence_level=1) are the gold standard for pooled treatment efficacy. TWR surfaces them over lower-level case series, which RRF cannot discriminate.",
     "tags": [
-      "robotic surgery",
-      "rectal cancer",
-      "laparoscopic",
+      "knee osteoarthritis",
+      "exercise therapy",
       "meta-analysis"
     ]
   },
   {
     "id": 3,
-    "query": "What is the effect of deep inspiration breath hold on cardiac dose in breast cancer radiotherapy?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What is the comparative efficacy of multimodal analgesia vs opioids post-surgery from systematic reviews?",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "Systematic reviews sit at evidence_level=1; TWR boosts them over cohort studies and case reports that RRF scores identically.",
     "tags": [
-      "DIBH",
-      "breast cancer",
-      "radiotherapy",
-      "cardiac dose"
+      "multimodal analgesia",
+      "opioids",
+      "postoperative pain"
     ]
   },
   {
     "id": 4,
-    "query": "How effective is immunotherapy compared to chemotherapy as first-line treatment in non-small cell lung cancer?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "According to randomized trials, does early mobilisation reduce length of stay after spinal surgery?",
+    "domain": "Orthopaedics",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "The query explicitly targets RCT evidence (level 1); TWR scores those documents higher, while RRF is rank-agnostic to evidence type.",
     "tags": [
-      "immunotherapy",
-      "NSCLC",
-      "chemotherapy",
-      "first-line",
-      "RCT"
+      "early mobilisation",
+      "spinal surgery",
+      "length of stay"
     ]
   },
   {
     "id": 5,
-    "query": "What is the role of SGLT2 inhibitors in cancer patients with comorbid heart failure?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What level-1 evidence exists for cognitive rehabilitation in traumatic brain injury?",
+    "domain": "Rehabilitation",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "Explicit level-1 query; TWR surfaces RCTs/meta-analyses with score 1.0 vs 0.2 for expert opinion, giving it a decisive advantage.",
     "tags": [
-      "SGLT2 inhibitors",
-      "cancer",
-      "heart failure",
-      "systematic review"
-    ]
-  },
-  {
-    "id": 6,
-    "query": "Does cognitive impairment from chemotherapy (chemobrain) respond to cognitive rehabilitation interventions?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
-    "tags": [
-      "chemobrain",
-      "cognitive impairment",
-      "rehabilitation",
-      "breast cancer"
-    ]
-  },
-  {
-    "id": 7,
-    "query": "What are the oncological outcomes of cytoreductive surgery with HIPEC for peritoneal metastases?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
-    "tags": [
-      "HIPEC",
-      "peritoneal metastases",
-      "cytoreductive surgery",
-      "meta-analysis"
-    ]
-  },
-  {
-    "id": 8,
-    "query": "Is neoadjuvant chemotherapy superior to adjuvant chemotherapy in locally advanced gastric cancer?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
-    "tags": [
-      "neoadjuvant",
-      "gastric cancer",
-      "chemotherapy",
+      "cognitive rehabilitation",
+      "traumatic brain injury",
       "RCT"
     ]
   },
   {
-    "id": 9,
-    "query": "What is the comparative effectiveness of targeted therapies in ALK-positive non-small cell lung cancer?",
-    "domain": "Neoplasms (Oncology)",
+    "id": 6,
+    "query": "What systematic reviews compare physiotherapy vs surgery for rotator cuff tears?",
+    "domain": "Orthopaedics",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "Systematic reviews (level 1) are the target; TWR's ocebm_weight of 1.0 vs 0.2 for level-5 expert opinion creates significant differentiation.",
     "tags": [
-      "ALK-positive",
-      "NSCLC",
-      "targeted therapy",
+      "rotator cuff",
+      "physiotherapy vs surgery",
       "systematic review"
     ]
   },
   {
-    "id": 10,
-    "query": "How does pembrolizumab compare to standard chemotherapy in recurrent cervical cancer?",
-    "domain": "Neoplasms (Oncology)",
+    "id": 7,
+    "query": "What is the evidence from RCTs for spinal cord stimulation in failed back surgery syndrome?",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "RCT evidence (level 1) is explicitly sought; TWR rewards those documents with maximum evidence_score.",
     "tags": [
-      "pembrolizumab",
-      "cervical cancer",
-      "immunotherapy",
+      "spinal cord stimulation",
+      "failed back surgery",
+      "RCT"
+    ]
+  },
+  {
+    "id": 8,
+    "query": "Meta-analytic findings on TENS for postoperative pain management",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "Meta-analyses score 1.0 in TWR's OCEBM weighting; RRF ignores this distinction, making TWR superior at surfacing pooled evidence.",
+    "tags": [
+      "TENS",
+      "postoperative pain",
+      "meta-analysis"
+    ]
+  },
+  {
+    "id": 9,
+    "query": "What do Cochrane reviews say about mirror therapy for phantom limb pain?",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "Cochrane reviews are systematic reviews (level 1); TWR amplifies them via evidence_score=1.0.",
+    "tags": [
+      "mirror therapy",
+      "phantom limb pain",
+      "Cochrane review"
+    ]
+  },
+  {
+    "id": 10,
+    "query": "Pooled RCT evidence on the efficacy of duloxetine for neuropathic pain",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "Pooled RCT data (level 1) is the ideal source; TWR's ocebm weight of 1.0 vs 0.2 for expert opinion gives it a strong advantage.",
+    "tags": [
+      "duloxetine",
+      "neuropathic pain",
       "RCT"
     ]
   },
   {
     "id": 11,
-    "query": "What are the clinical features of ALK-positive histiocytosis cutaneous presentation?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
-    "tags": [
-      "ALK-positive histiocytosis",
-      "cutaneous",
-      "rare",
-      "case report"
-    ]
-  },
-  {
-    "id": 12,
-    "query": "How is primary thyroid diffuse large B-cell lymphoma diagnosed and managed?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
-    "tags": [
-      "thyroid DLBCL",
-      "lymphoma",
-      "diagnosis",
-      "case series"
-    ]
-  },
-  {
-    "id": 13,
-    "query": "What is the treatment approach for B-cell acute lymphoblastic leukemia relapse after CAR-T therapy?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
-    "tags": [
-      "ALL",
-      "CAR-T",
-      "relapse",
-      "case report"
-    ]
-  },
-  {
-    "id": 14,
-    "query": "What are the presenting symptoms of extramammary Paget disease in unusual anatomical sites?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
-    "tags": [
-      "Paget disease",
-      "extramammary",
-      "rare",
-      "case report"
-    ]
-  },
-  {
-    "id": 15,
-    "query": "How is dermatopathic lymphadenitis distinguished from malignant lymphoma on histopathology?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
-    "tags": [
-      "dermatopathic lymphadenitis",
-      "lymphoma",
-      "histopathology",
-      "case series"
-    ]
-  },
-  {
-    "id": 16,
-    "query": "What is the efficacy of eptinezumab for episodic migraine prevention?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "What randomized evidence supports graded exercise therapy in fibromyalgia?",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "RCTs are the correct evidence type; TWR scores them 5x higher than expert opinion documents that RRF rates equally.",
     "tags": [
-      "eptinezumab",
-      "migraine",
-      "prevention",
+      "graded exercise therapy",
+      "fibromyalgia",
       "RCT"
     ]
   },
   {
-    "id": 17,
-    "query": "Does post-stroke dysphagia respond to transcranial magnetic stimulation rehabilitation?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "id": 12,
+    "query": "Systematic review evidence for psychological interventions in chronic pain",
+    "domain": "Mental Disorders (Psychiatry)",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "Systematic reviews (level 1) provide the highest-quality synthesis; TWR up-weights them, RRF does not distinguish.",
     "tags": [
-      "post-stroke dysphagia",
-      "TMS",
-      "rehabilitation",
+      "psychological interventions",
+      "chronic pain",
+      "systematic review"
+    ]
+  },
+  {
+    "id": 13,
+    "query": "What RCTs evaluate aquatic therapy outcomes in rheumatoid arthritis rehabilitation?",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "RCTs (level 1) are the target evidence type; TWR maximises their score vs lower-level observational studies.",
+    "tags": [
+      "aquatic therapy",
+      "rheumatoid arthritis",
+      "RCT"
+    ]
+  },
+  {
+    "id": 14,
+    "query": "Evidence from randomized trials on neurostimulation for treatment-resistant depression",
+    "domain": "Mental Disorders (Psychiatry)",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "RCTs (level 1) represent the strongest evidence; TWR ranks them decisively above case series which RRF treats identically.",
+    "tags": [
+      "neurostimulation",
+      "treatment-resistant depression",
+      "RCT"
+    ]
+  },
+  {
+    "id": 15,
+    "query": "What is the meta-analytic evidence on fall prevention programmes for elderly patients?",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "Meta-analyses (level 1) are the appropriate source; TWR assigns them maximum evidence_score while RRF ignores evidence hierarchy.",
+    "tags": [
+      "fall prevention",
+      "elderly",
+      "meta-analysis"
+    ]
+  },
+  {
+    "id": 16,
+    "query": "Do systematic reviews support hydrotherapy for reducing spasticity in multiple sclerosis?",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "Systematic reviews (level 1) are the appropriate evidence synthesis; TWR up-weights them with evidence_score=1.0.",
+    "tags": [
+      "hydrotherapy",
+      "spasticity",
+      "multiple sclerosis"
+    ]
+  },
+  {
+    "id": 17,
+    "query": "RCT-level evidence for transcranial magnetic stimulation in post-stroke rehabilitation",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "RCTs are the target; TWR assigns them maximum evidence_score, clearly outperforming RRF which ranks all documents by retrieval score alone.",
+    "tags": [
+      "transcranial magnetic stimulation",
+      "post-stroke",
       "RCT"
     ]
   },
   {
     "id": 18,
-    "query": "What is the comparative effectiveness of SGLT2 inhibitors in patients with neurological comorbidities and heart failure?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "What does high-quality evidence say about opioid tapering strategies in chronic pain patients?",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "High-quality evidence (level 1-2) is explicitly requested; TWR's evidence weighting directly serves this query.",
     "tags": [
-      "SGLT2 inhibitors",
-      "heart failure",
-      "neurology",
-      "meta-analysis"
+      "opioid tapering",
+      "chronic pain",
+      "evidence-based"
     ]
   },
   {
     "id": 19,
-    "query": "How effective is high-intensity transcranial direct current stimulation for motor recovery after stroke?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Systematic reviews on multidisciplinary pain programmes vs unimodal therapy",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "Systematic reviews aggregate multiple RCTs; TWR's level-1 weighting ensures they surface above individual observational reports.",
     "tags": [
-      "tDCS",
-      "stroke",
-      "motor recovery",
-      "RCT"
-    ]
-  },
-  {
-    "id": 20,
-    "query": "What antiplatelet regimen is optimal for secondary stroke prevention in elderly diabetic patients?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
-    "tags": [
-      "antiplatelet",
-      "stroke prevention",
-      "diabetes",
+      "multidisciplinary pain programme",
+      "unimodal therapy",
       "systematic review"
     ]
   },
   {
-    "id": 21,
-    "query": "Does levetiracetam reduce seizure frequency more effectively than valproate in focal epilepsy?",
+    "id": 20,
+    "query": "Meta-analytic evidence for botulinum toxin in chronic migraine prevention",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "Meta-analyses (level 1) are the gold standard; TWR up-weights them, giving it a clear advantage over RRF for this efficacy question.",
     "tags": [
-      "levetiracetam",
-      "valproate",
-      "epilepsy",
+      "botulinum toxin",
+      "chronic migraine",
+      "meta-analysis"
+    ]
+  },
+  {
+    "id": 21,
+    "query": "RCT evidence comparing minimally invasive vs open lumbar decompression outcomes",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "evidence_level",
+    "expected_twr_advantage": true,
+    "rationale": "RCTs (level 1) provide the most valid comparison; TWR rewards them with maximum evidence_score.",
+    "tags": [
+      "lumbar decompression",
+      "minimally invasive",
       "RCT"
     ]
   },
   {
     "id": 22,
-    "query": "What is the long-term safety and efficacy of natalizumab in relapsing-remitting multiple sclerosis?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Cochrane review findings on heat therapy vs cold therapy for musculoskeletal pain",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "Cochrane reviews are the apex of systematic review; TWR's evidence_score=1.0 for level-1 documents gives it a decisive edge.",
     "tags": [
-      "natalizumab",
-      "multiple sclerosis",
-      "long-term",
-      "systematic review"
+      "heat therapy",
+      "cold therapy",
+      "Cochrane review"
     ]
   },
   {
     "id": 23,
-    "query": "How effective is deep brain stimulation for treatment-resistant Parkinson tremor?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "What meta-analyses evaluate long-term cardiovascular risk of NSAIDs in arthritis patients?",
+    "domain": "Cardiovascular Diseases",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "Meta-analyses (level 1) provide pooled estimates of rare outcomes; TWR surfaces them above isolated case studies.",
     "tags": [
-      "deep brain stimulation",
-      "Parkinson",
-      "tremor",
+      "NSAIDs",
+      "cardiovascular risk",
       "meta-analysis"
     ]
   },
   {
     "id": 24,
-    "query": "What is the optimal blood pressure target for reducing recurrent stroke risk?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Pooled RCT data on the analgesic efficacy of gabapentinoids post-surgery",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "Pooled RCT evidence (level 1) is the target; TWR's ocebm_weight gives it a 5x advantage over expert opinion documents.",
     "tags": [
-      "blood pressure",
-      "stroke prevention",
-      "hypertension",
+      "gabapentinoids",
+      "postoperative analgesia",
       "RCT"
     ]
   },
   {
     "id": 25,
-    "query": "Does intensive glucose control reduce cognitive decline in patients with type 2 diabetes?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Systematic review on early vs delayed physiotherapy after ACL reconstruction",
+    "domain": "Orthopaedics",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "rationale": "Systematic reviews aggregate RCT data; TWR's level-1 weighting ensures they dominate the ranking.",
     "tags": [
-      "glucose control",
-      "cognitive decline",
-      "diabetes",
+      "ACL reconstruction",
+      "physiotherapy timing",
       "systematic review"
     ]
   },
   {
     "id": 26,
-    "query": "What are the neurological manifestations of toxic optic neuropathy?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Evidence from RCTs for virtual reality in chronic pain rehabilitation",
+    "domain": "Rehabilitation",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "expected_twr_advantage": true,
+    "rationale": "RCTs are the appropriate evidence type; TWR's OCEBM weight of 1.0 creates clear separation from lower-level evidence.",
     "tags": [
-      "toxic optic neuropathy",
-      "rare",
-      "case report"
+      "virtual reality",
+      "chronic pain rehabilitation",
+      "RCT"
     ]
   },
   {
     "id": 27,
-    "query": "How is febrile infection-related epilepsy syndrome (FIRES) managed in paediatric patients?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "What high-quality evidence supports mindfulness-based stress reduction for fibromyalgia?",
+    "domain": "Mental Disorders (Psychiatry)",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "expected_twr_advantage": true,
+    "rationale": "High-quality evidence (level 1-2) is explicitly sought; TWR's evidence weighting aligns directly with this need.",
     "tags": [
-      "FIRES",
-      "epilepsy",
-      "paediatric",
-      "case report"
+      "mindfulness",
+      "fibromyalgia",
+      "high-quality evidence"
     ]
   },
   {
     "id": 28,
-    "query": "What are the diagnostic criteria for distinguishing autoimmune encephalitis from viral encephalitis?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Meta-analysis of radiofrequency ablation outcomes in facet joint syndrome",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "expected_twr_advantage": true,
+    "rationale": "Meta-analyses (level 1) pool multiple trial results; TWR surfaces them above single-site retrospective studies.",
     "tags": [
-      "autoimmune encephalitis",
-      "viral encephalitis",
-      "diagnosis",
-      "case series"
+      "radiofrequency ablation",
+      "facet joint syndrome",
+      "meta-analysis"
     ]
   },
   {
     "id": 29,
-    "query": "What are the clinical features of Charcot-Marie-Tooth disease presenting with cavus foot deformity?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "RCT evidence for resistance training in cancer-related fatigue management",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "expected_twr_advantage": true,
+    "rationale": "RCTs (level 1) are the target evidence type; TWR maximises their score while RRF cannot distinguish them from expert commentary.",
     "tags": [
-      "Charcot-Marie-Tooth",
-      "cavus foot",
-      "neuropathy",
-      "case series"
+      "resistance training",
+      "cancer fatigue",
+      "RCT"
     ]
   },
   {
     "id": 30,
-    "query": "How does paraneoplastic limbic encephalitis present in patients with occult malignancy?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Systematic evidence on photobiomodulation therapy for musculoskeletal pain",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "expected_twr_advantage": true,
+    "rationale": "Systematic reviews consolidate trial evidence; TWR's level-1 weighting ensures they outrank observational literature.",
     "tags": [
-      "paraneoplastic encephalitis",
-      "limbic",
-      "malignancy",
-      "case report"
+      "photobiomodulation",
+      "musculoskeletal pain",
+      "systematic review"
     ]
   },
   {
     "id": 31,
-    "query": "What is the efficacy of secukinumab for moderate-to-severe psoriasis in paediatric patients?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What are expert consensus recommendations for managing complex regional pain syndrome type II?",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "expected_twr_advantage": false,
+    "rationale": "CRPS-II has limited RCT evidence; expert consensus (level 5) guidelines are the primary authoritative source. TWR penalises them with score 0.2, so RRF is more neutral and may surface relevant expert documents.",
     "tags": [
-      "secukinumab",
-      "psoriasis",
-      "paediatric",
-      "RCT"
+      "CRPS",
+      "complex regional pain syndrome",
+      "expert consensus"
     ]
   },
   {
     "id": 32,
-    "query": "How effective is dupilumab compared to cyclosporine in adults with severe atopic dermatitis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What do case reports reveal about rare adverse events following spinal cord stimulator implantation?",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "expected_twr_advantage": false,
+    "rationale": "Rare adverse events are by definition underrepresented in RCTs; case reports (level 4-5) are the most informative source. TWR penalises these, so RRF is superior here.",
     "tags": [
-      "dupilumab",
-      "atopic dermatitis",
-      "cyclosporine",
-      "RCT"
+      "spinal cord stimulator",
+      "adverse events",
+      "case report"
     ]
   },
   {
     "id": 33,
-    "query": "Does melatonin supplementation improve disease severity and sleep quality in atopic dermatitis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What are the clinical observations of naphtalanotherapy in psoriatic arthritis rehabilitation?",
+    "domain": "Rehabilitation",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "expected_twr_advantage": false,
+    "rationale": "Naphtalanotherapy is a niche intervention with primarily observational/cohort data (level 3-4). TWR's bias toward RCTs will miss highly relevant lower-evidence documents.",
     "tags": [
-      "melatonin",
-      "atopic dermatitis",
-      "sleep",
-      "RCT"
+      "naphtalanotherapy",
+      "psoriatic arthritis",
+      "rehabilitation"
     ]
   },
   {
     "id": 34,
-    "query": "What treatments are most effective for androgenetic alopecia based on systematic review evidence?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Describe the clinical presentation of occipital neuralgia based on case series",
+    "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "expected_twr_advantage": false,
+    "rationale": "Case series (level 4) are appropriate for describing rare clinical presentations. TWR penalises them; RRF will rank them without evidence-level bias.",
     "tags": [
-      "androgenetic alopecia",
-      "hair loss",
-      "treatment",
-      "systematic review"
+      "occipital neuralgia",
+      "case series",
+      "clinical presentation"
     ]
   },
   {
     "id": 35,
-    "query": "What is the comparative efficacy of biologic therapies in moderate-to-severe plaque psoriasis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What expert opinions exist on the management of juvenile recurrent parotitis in children?",
+    "domain": "Infections",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "expected_twr_advantage": false,
+    "rationale": "Paediatric parotitis is rare; expert opinion (level 5) and small case series dominate the literature. TWR's low weight (0.2) for these disadvantages it relative to RRF.",
     "tags": [
-      "biologics",
-      "psoriasis",
-      "network meta-analysis"
+      "juvenile recurrent parotitis",
+      "paediatrics",
+      "expert opinion"
     ]
   },
   {
     "id": 36,
-    "query": "How effective is JAK inhibitor therapy for vitiligo repigmentation?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What observational studies describe long-term outcomes of wireless peripheral nerve stimulation at C2-C3?",
+    "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "expected_twr_advantage": false,
+    "rationale": "Wireless PNS at the cervical level has sparse literature, primarily retrospective case series (level 4). TWR penalises these with evidence_score=0.4; RRF is agnostic.",
     "tags": [
-      "JAK inhibitor",
-      "vitiligo",
-      "repigmentation",
-      "RCT"
+      "wireless peripheral nerve stimulation",
+      "cervical level",
+      "observational study"
     ]
   },
   {
     "id": 37,
-    "query": "What is the risk of cardiovascular events in patients on long-term systemic psoriasis therapy?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Clinical experience reports on integrating naphtalanotherapy with physiotherapy",
+    "domain": "Rehabilitation",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "expected_twr_advantage": false,
+    "rationale": "Clinical experience constitutes level 5 evidence; for this niche procedure, such reports are the only available evidence. TWR's 0.2 weight creates a disadvantage.",
     "tags": [
-      "psoriasis",
-      "cardiovascular risk",
-      "systemic therapy",
-      "meta-analysis"
+      "naphtalanotherapy",
+      "physiotherapy integration",
+      "clinical experience"
     ]
   },
   {
     "id": 38,
-    "query": "Does phototherapy improve outcomes in atopic dermatitis when compared to topical corticosteroids?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What retrospective cohort studies examine walking recovery after spinal arthrodesis?",
+    "domain": "Orthopaedics",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "expected_twr_advantage": false,
+    "rationale": "Retrospective cohorts are level 3-4; for this specific post-surgical outcome, they are the dominant literature. TWR under-weights them relative to RCTs that may not exist on this niche topic.",
     "tags": [
-      "phototherapy",
-      "atopic dermatitis",
-      "corticosteroids",
-      "systematic review"
+      "walking recovery",
+      "spinal arthrodesis",
+      "retrospective cohort"
     ]
   },
   {
     "id": 39,
-    "query": "What is the efficacy of oral minoxidil for female pattern hair loss?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Expert panel recommendations for grading pain intensity in non-verbal patients",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "expected_twr_advantage": false,
+    "rationale": "RCTs cannot easily study subjective pain assessment tools in non-verbal populations; expert consensus (level 5) is the most appropriate guide. TWR systematically penalises such documents.",
     "tags": [
-      "minoxidil",
-      "female pattern hair loss",
-      "alopecia",
-      "RCT"
+      "pain intensity",
+      "non-verbal patients",
+      "expert panel"
     ]
   },
   {
     "id": 40,
-    "query": "How effective are IL-17 inhibitors versus IL-23 inhibitors for psoriatic arthritis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What animal model studies inform neuropathic pain pathophysiology?",
+    "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "evidence_level",
-    "expected_twr_advantage": true,
-    "rationale": "The corpus contains systematic reviews and RCTs on this topic (L1). TWR's OCEBM weight (1.0) elevates these over L4/L5 case reports that RRF ranks equally.",
+    "expected_twr_advantage": false,
+    "rationale": "Animal studies (level 5 in clinical OCEBM) are essential for mechanistic understanding but TWR assigns them score 0.2; RRF does not penalise them.",
     "tags": [
-      "IL-17",
-      "IL-23",
-      "psoriatic arthritis",
-      "meta-analysis"
+      "neuropathic pain",
+      "animal model",
+      "pathophysiology"
     ]
   },
   {
     "id": 41,
-    "query": "What are the histopathological features of dermatopathic lymphadenitis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What case reports describe novel presentations of desmoplakin cardiomyopathy?",
+    "domain": "Cardiovascular Diseases",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "rationale": "Novel presentations are documented in case reports (level 4-5); TWR's low evidence_score for these means RRF may surface more relevant documents.",
     "tags": [
-      "dermatopathic lymphadenitis",
-      "histopathology",
-      "case series"
+      "desmoplakin",
+      "cardiomyopathy",
+      "case report"
     ]
   },
   {
     "id": 42,
-    "query": "How is prediction modelling used to guide treatment response in psoriasis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Narrative review of the history and evolution of pain management approaches",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "rationale": "Narrative reviews are typically level 5; they provide essential historical and conceptual context that TWR systematically de-prioritises.",
     "tags": [
-      "prediction model",
-      "psoriasis",
-      "treatment response",
-      "case series"
+      "pain management",
+      "narrative review",
+      "history"
     ]
   },
   {
     "id": 43,
-    "query": "What are the clinical and pathological characteristics of primary cutaneous DLBCL?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What are the consensus guidelines for frailty assessment in older adults with heart failure?",
+    "domain": "Cardiovascular Diseases",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "rationale": "Consensus guidelines aggregate expert opinion (level 5); TWR penalises them, making RRF more balanced for guideline-retrieval queries.",
     "tags": [
-      "DLBCL",
-      "cutaneous",
-      "lymphoma",
-      "case report"
+      "frailty",
+      "heart failure",
+      "consensus guideline"
     ]
   },
   {
     "id": 44,
-    "query": "How does immune checkpoint inhibitor therapy cause dermatological adverse events?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Expert opinion on tailoring physiotherapy duration for psoriatic arthritis rehabilitation",
+    "domain": "Rehabilitation",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "rationale": "Expert opinion (level 5) is the primary evidence type for treatment duration decisions in this niche area; TWR's 0.2 weight disadvantages such documents.",
     "tags": [
-      "immune checkpoint inhibitor",
-      "dermatology",
-      "adverse events",
-      "case series"
+      "physiotherapy duration",
+      "psoriatic arthritis",
+      "expert opinion"
     ]
   },
   {
     "id": 45,
-    "query": "What are the clinical features of demodicosis in immunocompromised patients?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What observational data exists on Barthel Index use in predicting ADL outcomes?",
+    "domain": "Rehabilitation",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents on this niche topic are predominantly case reports (L4). TWR penalises these with an OCEBM weight of 0.4, potentially burying the most topically relevant results.",
+    "rationale": "Observational data (level 3-4) is the dominant evidence type for outcome tools like the Barthel Index; TWR's evidence weighting penalises these relative to non-existent RCTs.",
     "tags": [
-      "demodicosis",
-      "immunocompromised",
-      "Demodex",
-      "case report"
+      "Barthel Index",
+      "ADL",
+      "observational study"
     ]
   },
   {
     "id": 46,
-    "query": "What is the impact of person-centred care in end-of-life oncology management?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What do Q1 orthopaedic journals report on outcomes of total knee arthroplasty?",
+    "domain": "Orthopaedics",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Q1 journals receive multiplier 1.0 in TWR vs 0.4 for Unranked; for clinical outcome questions, peer review quality is critical and TWR correctly prioritises high-tier sources.",
     "tags": [
-      "person-centred care",
-      "end-of-life",
-      "oncology",
-      "Q1 journal"
+      "total knee arthroplasty",
+      "Q1 journal",
+      "outcomes"
     ]
   },
   {
     "id": 47,
-    "query": "How does colorectal cancer incidence differ between colon and rectal subsites?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What is the evidence from high-impact journals on perioperative pain protocols?",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "High-impact journals (Q1) receive the maximum journal_multiplier of 1.0; TWR surfaces these authoritatively over grey literature.",
     "tags": [
-      "colorectal cancer",
-      "incidence",
-      "subsite",
-      "Q1 journal"
+      "perioperative pain",
+      "high-impact journal",
+      "protocol"
     ]
   },
   {
     "id": 48,
-    "query": "What are the risk factors for oxaliplatin-induced peripheral neuropathy in colorectal cancer?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What do top-ranked rehabilitation journals publish on robot-assisted gait training?",
+    "domain": "Rehabilitation",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Top-ranked (Q1) journals reflect methodological rigour; TWR's multiplier of 1.0 surfaces them above Unranked sources with multiplier 0.4.",
     "tags": [
-      "oxaliplatin",
-      "neuropathy",
-      "colorectal cancer",
-      "Q1 journal"
+      "robot-assisted gait",
+      "rehabilitation",
+      "top journal"
     ]
   },
   {
     "id": 49,
-    "query": "Does primary tumour resection improve survival in metastatic colorectal cancer?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "Evidence from Q1 neurology journals on deep brain stimulation for Parkinson's disease",
+    "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Q1 neurology journals apply multiplier 1.0 in TWR; for a complex surgical intervention, journal prestige signals methodological quality.",
     "tags": [
-      "primary tumour resection",
-      "metastatic colorectal cancer",
-      "survival",
+      "deep brain stimulation",
+      "Parkinson's disease",
       "Q1 journal"
     ]
   },
   {
     "id": 50,
-    "query": "What is the prognostic value of microsatellite instability status in colorectal cancer?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What do leading psychiatry journals say about cognitive behavioural therapy for chronic pain?",
+    "domain": "Mental Disorders (Psychiatry)",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Leading (Q1) journals carry the highest journal_multiplier; TWR preferentially surfaces them for evidence synthesis queries.",
     "tags": [
-      "microsatellite instability",
-      "MSI",
-      "colorectal cancer",
-      "prognosis"
+      "CBT",
+      "chronic pain",
+      "psychiatry journal"
     ]
   },
   {
     "id": 51,
-    "query": "How does physical activity affect cancer-related fatigue in oncology patients?",
+    "query": "Findings from Q1 oncology journals on pain management in advanced cancer",
     "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Q1 oncology journals (multiplier 1.0) are the authoritative source; TWR up-weights them, RRF treats them equally to conference abstracts.",
     "tags": [
-      "physical activity",
-      "cancer fatigue",
-      "oncology",
+      "cancer pain",
+      "advanced oncology",
       "Q1 journal"
     ]
   },
   {
     "id": 52,
-    "query": "What is the role of circulating tumour DNA in monitoring colorectal cancer recurrence?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What do high-ranking cardiovascular journals report on exercise rehabilitation after MI?",
+    "domain": "Cardiovascular Diseases",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "High-ranking Q1 journals receive the full 1.0 multiplier; for a clinically consequential question, journal authority matters significantly.",
     "tags": [
-      "ctDNA",
-      "colorectal cancer",
-      "recurrence monitoring",
-      "Q1 journal"
+      "exercise rehabilitation",
+      "myocardial infarction",
+      "cardiovascular journal"
     ]
   },
   {
     "id": 53,
-    "query": "What are the oncological outcomes of minimally invasive oesophagectomy versus open surgery?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "Evidence from peer-reviewed Q1 journals on spinal fusion complication rates",
+    "domain": "Orthopaedics",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Q1 journals (multiplier 1.0) provide the most rigorously reviewed complication data; TWR's weighting gives it a 2.5x advantage over Unranked sources.",
     "tags": [
-      "oesophagectomy",
-      "minimally invasive",
-      "oncological outcomes",
+      "spinal fusion",
+      "complication rates",
       "Q1 journal"
     ]
   },
   {
     "id": 54,
-    "query": "How effective is stereotactic body radiotherapy for oligometastatic cancer?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What do Q2 pain journals report on ketamine infusion therapy for refractory pain?",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Q2 journals (multiplier 0.85) still markedly outperform Unranked (0.40) in TWR; for a specialised pain intervention, peer-reviewed sources are more reliable.",
     "tags": [
-      "SBRT",
-      "oligometastatic",
-      "radiotherapy",
-      "Q1 journal"
+      "ketamine infusion",
+      "refractory pain",
+      "Q2 journal"
     ]
   },
   {
     "id": 55,
-    "query": "What is the impact of tumour microenvironment on immunotherapy response in solid tumours?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "Recent publications in top rehabilitation journals on telerehabilitation efficacy",
+    "domain": "Rehabilitation",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Top journals (Q1) receive multiplier 1.0; TWR preferentially surfaces them over non-indexed sources that RRF would rank equally.",
     "tags": [
-      "tumour microenvironment",
-      "immunotherapy",
-      "solid tumour",
-      "Q1 journal"
+      "telerehabilitation",
+      "efficacy",
+      "top journal"
     ]
   },
   {
     "id": 56,
-    "query": "What are experimental treatment strategies for relapsed refractory multiple myeloma reported in regional oncology centres?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What does Q1 orthopaedic literature report on revision surgery rates after hip arthroplasty?",
+    "domain": "Orthopaedics",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "expected_twr_advantage": true,
+    "rationale": "Q1 journals reflect the highest peer-review standards; TWR's 1.0 multiplier vs 0.4 for Unranked creates meaningful ranking differentiation.",
     "tags": [
-      "myeloma",
-      "relapsed refractory",
-      "regional centre",
-      "Unranked journal"
+      "hip arthroplasty",
+      "revision surgery",
+      "Q1 journal"
     ]
   },
   {
     "id": 57,
-    "query": "How is ALK-positive histiocytosis managed in resource-limited settings?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "High-impact findings on prevalence of chronic post-surgical pain",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "expected_twr_advantage": true,
+    "rationale": "High-impact Q1 journals produce the most cited prevalence data; TWR's journal_multiplier ensures they dominate over lower-tier sources.",
     "tags": [
-      "ALK-positive histiocytosis",
-      "resource-limited",
-      "Unranked journal"
+      "chronic post-surgical pain",
+      "prevalence",
+      "high-impact"
     ]
   },
   {
     "id": 58,
-    "query": "What supportive care interventions are used for nausea in outpatient chemotherapy in developing countries?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "What do indexed Q1 gastroenterology journals report on gut-brain axis and pain?",
+    "domain": "Digestive System Diseases (Gastroenterology)",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "expected_twr_advantage": true,
+    "rationale": "Q1 indexed journals (multiplier 1.0) provide the most authoritative data on this emerging topic; TWR's weighting correctly prioritises them.",
     "tags": [
-      "nausea",
-      "chemotherapy",
-      "supportive care",
-      "Unranked journal"
+      "gut-brain axis",
+      "pain",
+      "gastroenterology"
     ]
   },
   {
     "id": 59,
-    "query": "What are local clinical practice patterns for colorectal cancer screening in lower-income populations?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "Findings from leading dermatology journals on biologics for psoriatic disease",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "expected_twr_advantage": true,
+    "rationale": "Leading (Q1/Q2) dermatology journals (multiplier 1.0/0.85) provide rigorous clinical data; TWR surfaces them ahead of unranked conference reports.",
     "tags": [
-      "colorectal screening",
-      "clinical practice",
-      "low-income",
-      "Unranked journal"
+      "biologics",
+      "psoriatic disease",
+      "dermatology journal"
     ]
   },
   {
     "id": 60,
-    "query": "How do community oncology practices manage febrile neutropenia outside tertiary centres?",
-    "domain": "Neoplasms (Oncology)",
+    "query": "Q1 journal evidence on cognitive decline outcomes after prolonged general anaesthesia",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "expected_twr_advantage": true,
+    "rationale": "Q1 journals (multiplier 1.0) are the authoritative source for this safety-critical topic; TWR's journal weighting provides meaningful advantage.",
     "tags": [
-      "febrile neutropenia",
-      "community oncology",
-      "practice patterns",
-      "Unranked journal"
+      "cognitive decline",
+      "anaesthesia",
+      "Q1 journal"
     ]
   },
   {
     "id": 61,
-    "query": "What is the long-term cognitive outcome of childhood epilepsy treated with antiseizure medications?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "What do Q1-Q2 pulmonology journals report on pulmonary rehabilitation programmes?",
+    "domain": "Respiratory Tract Diseases",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Q1-Q2 journals receive multipliers of 0.85-1.0; TWR surfaces them ahead of unranked sources, improving clinical reliability.",
     "tags": [
-      "epilepsy",
-      "cognitive outcome",
-      "antiseizure",
-      "Q1 journal"
+      "pulmonary rehabilitation",
+      "COPD",
+      "pulmonology journal"
     ]
   },
   {
     "id": 62,
-    "query": "How does white matter hyperintensity burden predict dementia risk in older adults?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Evidence from indexed rheumatology journals on biologic DMARDs in psoriatic arthritis",
+    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Indexed Q1 rheumatology journals carry full journal_multiplier; TWR uses this to prefer them over non-indexed disease registries.",
     "tags": [
-      "white matter hyperintensity",
-      "dementia",
-      "MRI",
-      "Q1 journal"
+      "biologic DMARDs",
+      "psoriatic arthritis",
+      "rheumatology journal"
     ]
   },
   {
     "id": 63,
-    "query": "What is the efficacy of ocrelizumab in primary progressive multiple sclerosis?",
+    "query": "What do high-ranking neurology journals report on gait analysis in Huntington's disease?",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "High-ranking Q1 neurology journals receive multiplier 1.0; TWR's weighting surfaces them over unranked specialty newsletters.",
     "tags": [
-      "ocrelizumab",
-      "multiple sclerosis",
-      "primary progressive",
-      "Q1 journal"
+      "gait analysis",
+      "Huntington's disease",
+      "neurology journal"
     ]
   },
   {
     "id": 64,
-    "query": "How does sleep-disordered breathing contribute to stroke risk?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Peer-reviewed Q1 evidence on sarcopenia management in older cancer patients",
+    "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Q1 journals (multiplier 1.0) provide the most validated evidence on this dual-challenge population; TWR correctly prioritises them.",
     "tags": [
-      "sleep apnea",
-      "stroke risk",
-      "sleep-disordered breathing",
+      "sarcopenia",
+      "cancer",
       "Q1 journal"
     ]
   },
   {
     "id": 65,
-    "query": "What are the neuroimaging biomarkers for early Alzheimer disease diagnosis?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Findings from top endocrinology journals on metabolic syndrome and chronic pain",
+    "domain": "Nutritional and Metabolic Diseases",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "rationale": "Top (Q1) endocrinology journals apply full journal_multiplier in TWR; for a mechanistic-clinical link, journal quality signals analytical rigour.",
     "tags": [
-      "Alzheimer",
-      "neuroimaging",
-      "biomarkers",
-      "early diagnosis",
-      "Q1 journal"
+      "metabolic syndrome",
+      "chronic pain",
+      "endocrinology journal"
     ]
   },
   {
     "id": 66,
-    "query": "How effective is botulinum toxin for chronic migraine prophylaxis?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "What do unranked specialty journals report on naphtalanotherapy protocols?",
+    "domain": "Rehabilitation",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Naphtalanotherapy is predominantly published in Unranked niche journals (multiplier 0.40); TWR penalises these, causing it to miss the most topic-specific sources.",
     "tags": [
-      "botulinum toxin",
-      "chronic migraine",
-      "prophylaxis",
-      "Q1 journal"
+      "naphtalanotherapy",
+      "unranked journal",
+      "protocol"
     ]
   },
   {
     "id": 67,
-    "query": "What is the impact of sleep quality on Parkinson disease motor symptom severity?",
+    "query": "What does grey literature report on wireless PNS clinical outcomes?",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Wireless PNS at cervical levels appears mainly in unranked/grey literature; TWR's low multiplier (0.40) for Unranked sources disadvantages it relative to RRF.",
     "tags": [
-      "Parkinson",
-      "sleep quality",
-      "motor symptoms",
-      "Q1 journal"
+      "wireless PNS",
+      "grey literature",
+      "outcomes"
     ]
   },
   {
     "id": 68,
-    "query": "How does remote ischaemic conditioning reduce neurological injury after acute stroke?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "What do conference proceedings report on novel spinal arthrodesis techniques?",
+    "domain": "Orthopaedics",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Conference proceedings are typically unranked; they may carry the latest surgical innovations before peer-reviewed publication, and TWR's 0.40 multiplier penalises them.",
     "tags": [
-      "remote ischaemic conditioning",
-      "stroke",
-      "neuroprotection",
-      "Q1 journal"
+      "spinal arthrodesis",
+      "conference proceedings",
+      "novel technique"
     ]
   },
   {
     "id": 69,
-    "query": "What is the clinical utility of plasma phosphorylated tau for Alzheimer diagnosis?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Regional rehabilitation journals describing local physiotherapy practice patterns",
+    "domain": "Rehabilitation",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Regional unranked journals (multiplier 0.40) document local practice patterns that are absent from Q1 journals; TWR's weighting systematically deprioritises them.",
     "tags": [
-      "phosphorylated tau",
-      "Alzheimer",
-      "plasma biomarker",
-      "Q1 journal"
+      "physiotherapy practice",
+      "regional journal",
+      "rehabilitation"
     ]
   },
   {
     "id": 70,
-    "query": "How does diabetes management affect peripheral neuropathy progression?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "What do Q4 pain journals report on low-resource analgesia in conflict zones?",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Q4 journals (multiplier 0.55) cover topics neglected by Q1 journals; for low-resource settings, these sources are the most contextually relevant and TWR under-weights them.",
     "tags": [
-      "diabetes",
-      "peripheral neuropathy",
-      "glucose control",
-      "Q1 journal"
+      "analgesia",
+      "conflict zone",
+      "Q4 journal"
     ]
   },
   {
     "id": 71,
-    "query": "How is Cortexin used in post-COVID neurological rehabilitation in Eastern European practice?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Unranked paediatric journals on juvenile recurrent parotitis management",
+    "domain": "Infections",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "rationale": "Juvenile parotitis is mostly documented in unranked paediatric subspecialty journals (multiplier 0.40); TWR penalises these relative to irrelevant Q1 papers.",
     "tags": [
-      "Cortexin",
-      "post-COVID",
-      "neurological rehabilitation",
-      "Unranked journal"
+      "juvenile parotitis",
+      "unranked journal",
+      "paediatrics"
     ]
   },
   {
     "id": 72,
-    "query": "What are the neurological complications documented in regional case series of COVID-19 patients?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "What does the Acta Dermatovenerologica Croatica report on combined rehabilitation in psoriasis?",
+    "domain": "Rehabilitation",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "rationale": "Acta Dermatovenerologica Croatica is an Unranked journal (multiplier 0.40); it contains directly relevant naphtalanotherapy data that TWR systematically de-prioritises.",
     "tags": [
-      "COVID-19",
-      "neurological complications",
-      "case series",
-      "Unranked journal"
+      "psoriasis",
+      "rehabilitation",
+      "Acta Dermatovenerologica"
     ]
   },
   {
     "id": 73,
-    "query": "What local treatment protocols are used for epilepsy in resource-limited neurology units?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "Q3-Q4 orthopaedic journals on outcomes of spinal surgery in low-income countries",
+    "domain": "Orthopaedics",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "rationale": "Q3-Q4 journals (multiplier 0.55-0.70) cover resource-limited settings underrepresented in Q1 journals; TWR's weighting introduces systematic geographic bias.",
     "tags": [
-      "epilepsy",
-      "treatment protocol",
-      "resource-limited",
-      "Unranked journal"
+      "spinal surgery",
+      "low-income country",
+      "Q3 journal"
     ]
   },
   {
     "id": 74,
-    "query": "How is toxic optic neuropathy from methanol poisoning managed in low-resource settings?",
+    "query": "Pain Medicine Case Reports journal findings on cervical nerve stimulation",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "rationale": "Pain Medicine Case Reports is an Unranked journal (multiplier 0.40) that contains exactly the rare-case evidence sought; TWR's weighting deprioritises it unjustifiably.",
     "tags": [
-      "toxic optic neuropathy",
-      "methanol",
-      "resource-limited",
-      "Unranked journal"
+      "cervical nerve stimulation",
+      "case reports journal",
+      "occipital neuralgia"
     ]
   },
   {
     "id": 75,
-    "query": "What are the clinical outcomes of stroke rehabilitation in community hospitals without specialised stroke units?",
-    "domain": "Nervous System Diseases (Neurology)",
+    "query": "What do local hospital bulletins report on early mobilisation protocols?",
+    "domain": "Rehabilitation",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "rationale": "Hospital bulletins are typically unranked grey literature (multiplier 0.40); they often document real-world protocol variations not captured in Q1 journals.",
     "tags": [
-      "stroke rehabilitation",
-      "community hospital",
-      "outcomes",
-      "Unranked journal"
+      "early mobilisation",
+      "hospital bulletin",
+      "protocol"
     ]
   },
   {
     "id": 76,
-    "query": "What is the impact of biologic therapy on quality of life in chronic plaque psoriasis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Evidence from unranked bodywork journals on postoperative physiotherapy",
+    "domain": "Orthopaedics",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "The Journal of Bodywork and Movement Therapies (Q2) contains relevant mobilisation research; TWR partially penalises Q2 journals (0.85) relative to Q1 (1.0), and even more so for Unranked variants.",
     "tags": [
-      "biologic therapy",
-      "psoriasis",
-      "quality of life",
-      "Q1 journal"
+      "bodywork therapy",
+      "postoperative physiotherapy",
+      "journal"
     ]
   },
   {
     "id": 77,
-    "query": "How does hair type classification guide personalised hair care recommendations?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What do Q4 geriatric journals report on rehabilitation outcomes in frail elderly?",
+    "domain": "Rehabilitation",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Q4 journals (multiplier 0.55) specifically cover geriatric subspecialty topics; TWR's weighting disadvantages them vs Q1 journals that may cover the topic less directly.",
     "tags": [
-      "hair classification",
-      "personalised care",
-      "trichology",
-      "Q1 journal"
+      "frail elderly",
+      "rehabilitation outcomes",
+      "Q4 journal"
     ]
   },
   {
     "id": 78,
-    "query": "What is the association between psoriasis severity and cardiovascular mortality?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Regional neurological society publications on peripheral nerve stimulation practice",
+    "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Regional society publications are often Unranked (multiplier 0.40); they capture subspecialty practice patterns that Q1 journals rarely document.",
     "tags": [
-      "psoriasis",
-      "cardiovascular mortality",
-      "severity",
-      "Q1 journal"
+      "peripheral nerve stimulation",
+      "regional society",
+      "practice pattern"
     ]
   },
   {
     "id": 79,
-    "query": "How effective are disease-modifying antirheumatic drugs in treating psoriatic arthritis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Unranked haematology journals on chemotherapy-induced peripheral neuropathy management",
+    "domain": "Hemic and Lymphatic Diseases (Hematology)",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Unranked haematology journals (multiplier 0.40) may contain the most disease-specific data; TWR's weighting causes it to prefer less relevant Q1 papers from other fields.",
     "tags": [
-      "DMARDs",
-      "psoriatic arthritis",
-      "treatment efficacy",
-      "Q1 journal"
+      "chemotherapy neuropathy",
+      "haematology",
+      "unranked journal"
     ]
   },
   {
     "id": 80,
-    "query": "What is the role of the microbiome in atopic dermatitis pathogenesis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Q4 infectious disease journals on conservative treatment of recurrent parotitis",
+    "domain": "Infections",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Q4 journals (multiplier 0.55) contain niche infectious disease data; TWR's weighting deprioritises them relative to Q1 papers that may cover entirely different topics.",
     "tags": [
-      "microbiome",
-      "atopic dermatitis",
-      "pathogenesis",
-      "Q1 journal"
+      "recurrent parotitis",
+      "conservative treatment",
+      "Q4 journal"
     ]
   },
   {
     "id": 81,
-    "query": "How does dupilumab affect long-term eczema control and skin barrier function?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What do non-indexed rehabilitation monographs say about intensive inpatient rehabilitation?",
+    "domain": "Rehabilitation",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Non-indexed monographs are Unranked (multiplier 0.40); they may contain comprehensive protocol descriptions absent from indexed journals, which TWR systematically deprioritises.",
     "tags": [
-      "dupilumab",
-      "eczema",
-      "skin barrier",
-      "long-term",
-      "Q1 journal"
+      "inpatient rehabilitation",
+      "monograph",
+      "non-indexed"
     ]
   },
   {
     "id": 82,
-    "query": "What are the dermatological manifestations of inflammatory bowel disease?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What do unranked sports medicine journals report on return-to-play after ligament injury?",
+    "domain": "Orthopaedics",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Unranked sports medicine journals (multiplier 0.40) may carry the most practically oriented return-to-play data; TWR's tier weighting disadvantages them.",
     "tags": [
-      "inflammatory bowel disease",
-      "dermatology",
-      "extraintestinal",
-      "Q1 journal"
+      "return-to-play",
+      "ligament injury",
+      "sports medicine"
     ]
   },
   {
     "id": 83,
-    "query": "How effective is tofacitinib for moderate-to-severe alopecia areata?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Q3 nursing journals reporting on pain assessment tools in intensive care",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Q3 nursing journals (multiplier 0.70) document bedside pain assessment with clinical specificity; TWR's lower multiplier disadvantages them relative to Q1 anaesthesia journals covering different subtopics.",
     "tags": [
-      "tofacitinib",
-      "alopecia areata",
-      "JAK inhibitor",
-      "Q1 journal"
+      "pain assessment",
+      "intensive care",
+      "nursing journal"
     ]
   },
   {
     "id": 84,
-    "query": "What is the prevalence and impact of pruritus in chronic kidney disease patients?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Conference abstracts on novel uses of peripheral nerve blocks in outpatient settings",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Conference abstracts are typically Unranked (multiplier 0.40) but may contain the newest procedural innovations before journal publication; TWR's weighting creates recency-versus-quality tension.",
     "tags": [
-      "pruritus",
-      "chronic kidney disease",
-      "prevalence",
-      "Q1 journal"
+      "peripheral nerve block",
+      "outpatient",
+      "conference abstract"
     ]
   },
   {
     "id": 85,
-    "query": "How does UV phototherapy compare to excimer laser for localised vitiligo?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Unranked complementary medicine journals on acupuncture for low back pain",
+    "domain": "Pain & Anesthesiology",
     "ablation_dimension": "journal_tier",
-    "expected_twr_advantage": true,
-    "rationale": "Multiple Q1-tier journals publish on this topic. TWR's journal multiplier (1.0 for Q1 vs 0.40 for Unranked) surfaces authoritative sources that RRF cannot distinguish from predatory outlets.",
+    "expected_twr_advantage": false,
+    "rationale": "Unranked complementary medicine journals (multiplier 0.40) contain the most acupuncture-specific evidence; TWR's tier weighting systematically penalises this literature.",
     "tags": [
-      "phototherapy",
-      "excimer laser",
-      "vitiligo",
-      "Q1 journal"
+      "acupuncture",
+      "low back pain",
+      "complementary medicine"
     ]
   },
   {
     "id": 86,
-    "query": "What topical treatments for psoriasis are used in low-resource dermatology clinics?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "What do Q3-Q4 endocrinology journals report on insulin resistance and musculoskeletal pain?",
+    "domain": "Nutritional and Metabolic Diseases",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "rationale": "Q3-Q4 journals (multiplier 0.55-0.70) may carry the most focused endocrine-pain research; TWR's weighting causes it to prefer Q1 journals from different subspecialties.",
     "tags": [
-      "psoriasis",
-      "topical treatment",
-      "low-resource",
-      "Unranked journal"
+      "insulin resistance",
+      "musculoskeletal pain",
+      "endocrinology"
     ]
   },
   {
     "id": 87,
-    "query": "How is alopecia areata managed in paediatric patients in regional dermatology units?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Unranked sports rehabilitation journals on functional recovery after ACL surgery",
+    "domain": "Orthopaedics",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "rationale": "Unranked sports rehabilitation journals (multiplier 0.40) document sport-specific recovery protocols absent from mainstream Q1 orthopaedic journals; TWR deprioritises them.",
     "tags": [
-      "alopecia areata",
-      "paediatric",
-      "regional practice",
-      "Unranked journal"
+      "ACL surgery",
+      "functional recovery",
+      "sports rehabilitation"
     ]
   },
   {
     "id": 88,
-    "query": "What are local prescribing patterns for atopic dermatitis in primary care settings?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Q4 haematology journals on pain management in sickle cell disease",
+    "domain": "Hemic and Lymphatic Diseases (Hematology)",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "rationale": "Q4 haematology journals (multiplier 0.55) contain disease-specific pain protocols; TWR may surface Q1 general pain journals with less relevant content.",
     "tags": [
-      "atopic dermatitis",
-      "primary care",
-      "prescribing patterns",
-      "Unranked journal"
+      "sickle cell",
+      "pain management",
+      "Q4 journal"
     ]
   },
   {
     "id": 89,
-    "query": "How is contact dermatitis patch testing performed in non-specialist settings?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Local hospital registry data on postoperative mobilisation practices",
+    "domain": "Orthopaedics",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "rationale": "Hospital registry data is typically unranked (multiplier 0.40); it captures real-world variation that Q1 RCT-focused journals do not document.",
     "tags": [
-      "contact dermatitis",
-      "patch testing",
-      "non-specialist",
-      "Unranked journal"
+      "postoperative mobilisation",
+      "hospital registry",
+      "local data"
     ]
   },
   {
     "id": 90,
-    "query": "What are the outcomes of wound healing interventions documented in regional plastic surgery case series?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
+    "query": "Unranked veterinary journals on pain assessment tools applicable to non-verbal patients",
+    "domain": "Animal Diseases (Veterinary)",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
-    "rationale": "The most clinically detailed literature on this condition appears in speciality journals ranked Q3/Unranked. TWR's tier penalty may demote these despite their content relevance.",
+    "rationale": "Veterinary journals are Unranked in this corpus (multiplier 0.40) but contain validated non-verbal pain assessment tools directly transferable to human non-verbal populations; TWR penalises them.",
     "tags": [
-      "wound healing",
-      "plastic surgery",
-      "case series",
-      "Unranked journal"
+      "veterinary pain assessment",
+      "non-verbal",
+      "pain scale"
     ]
   },
   {
     "id": 91,
-    "query": "What does the highest-quality evidence from top-tier oncology journals say about KRAS mutation impact on colorectal cancer prognosis?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What are the latest 2025 guidelines on multimodal analgesia in the ERAS protocol?",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "Guidelines evolve rapidly; TWR's recency decay exp(-0.05*age) gives 2025 publications age~0, multiplier~1.0, vs 2015 publications multiplier~0.61. For rapidly evolving clinical protocols, recency is decisive.",
     "tags": [
-      "KRAS",
-      "colorectal cancer",
-      "prognosis",
-      "L1 evidence",
-      "Q1 journal"
+      "ERAS protocol",
+      "multimodal analgesia",
+      "2025 guidelines"
     ]
   },
   {
     "id": 92,
-    "query": "What is the best evidence from Q1 journals on the efficacy of checkpoint inhibitors in mismatch repair deficient tumours?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What new evidence since 2023 exists for telerehabilitation post-COVID?",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "Post-COVID telerehabilitation is an emerging field; TWR's recency multiplier strongly favours 2023-2025 literature, while RRF ranks older, pre-COVID papers equally.",
     "tags": [
-      "checkpoint inhibitors",
-      "MMR-deficient",
-      "immunotherapy",
-      "Q1 journal",
-      "meta-analysis"
+      "telerehabilitation",
+      "post-COVID",
+      "recent evidence"
     ]
   },
   {
     "id": 93,
-    "query": "What do recent systematic reviews in high-impact journals recommend for HER2-positive breast cancer adjuvant therapy?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
+    "query": "Recent advances in peripheral nerve stimulation technology for chronic pain",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "Peripheral nerve stimulation hardware has evolved rapidly; recent 2024-2025 publications cover wireless devices absent from older literature. TWR's recency decay gives them a multiplier near 1.0.",
     "tags": [
-      "HER2-positive",
-      "breast cancer",
-      "adjuvant",
-      "systematic review",
-      "Q1 journal"
+      "peripheral nerve stimulation",
+      "recent advances",
+      "wireless"
     ]
   },
   {
     "id": 94,
-    "query": "What is the combined effect of tumour burden and performance status on immunotherapy outcomes in lung cancer?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What do 2024-2025 studies report on AI-assisted surgical planning in orthopaedics?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "AI-assisted surgical planning is a nascent field; all foundational evidence is from 2022 onwards. TWR's recency multiplier correctly surfaces these publications ahead of irrelevant older papers.",
     "tags": [
-      "tumour burden",
-      "performance status",
-      "immunotherapy",
-      "lung cancer",
-      "Q1 journal"
+      "AI surgical planning",
+      "orthopaedics",
+      "2024"
     ]
   },
   {
     "id": 95,
-    "query": "What does high-quality evidence say about the optimal duration of adjuvant oxaliplatin therapy in stage III colon cancer?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
+    "query": "Latest evidence on digital pain diaries and patient-reported outcomes in chronic pain management",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "Digital health tools emerged post-2019; TWR's exponential decay heavily favours recent publications (multiplier ~0.93-1.0) over older irrelevant papers.",
     "tags": [
-      "oxaliplatin",
-      "colon cancer",
-      "adjuvant duration",
-      "RCT",
-      "Q1 journal"
+      "digital pain diary",
+      "patient-reported outcomes",
+      "recent evidence"
     ]
   },
   {
     "id": 96,
-    "query": "What is the best evidence for prophylactic cranial irradiation in limited-stage small cell lung cancer?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What are the most recent findings on gut microbiome modulation for inflammatory pain?",
+    "domain": "Digestive System Diseases (Gastroenterology)",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "Gut microbiome research in pain is a 2020s field; TWR's recency multiplier ensures the latest mechanistic studies dominate.",
     "tags": [
-      "cranial irradiation",
-      "small cell lung cancer",
-      "prophylaxis",
-      "meta-analysis",
-      "Q1 journal"
+      "gut microbiome",
+      "inflammatory pain",
+      "recent findings"
     ]
   },
   {
     "id": 97,
-    "query": "How do Q1-published RCTs compare maintenance PARP inhibitors in BRCA-mutated ovarian cancer?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
+    "query": "Current evidence (2023-2025) on ketamine's antidepressant effects in chronic pain patients",
+    "domain": "Mental Disorders (Psychiatry)",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "Ketamine for comorbid depression-pain is a rapidly evolving area; TWR's recency decay strongly favours recent trials over older case series.",
     "tags": [
-      "PARP inhibitor",
-      "ovarian cancer",
-      "BRCA",
-      "RCT",
-      "Q1 journal"
+      "ketamine",
+      "antidepressant",
+      "chronic pain"
     ]
   },
   {
     "id": 98,
-    "query": "What does the highest-tier evidence show about laparoscopic versus open surgery for hepatocellular carcinoma?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
+    "query": "2025 updates to surgical indications for lumbar disc herniation",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "Clinical guidelines for lumbar disc surgery have been updated post-2023; TWR surfaces the most recent documents (age~0-1, multiplier~0.95-1.0).",
     "tags": [
-      "hepatocellular carcinoma",
-      "laparoscopic",
-      "open surgery",
-      "meta-analysis",
-      "Q1 journal"
+      "lumbar disc herniation",
+      "surgical indications",
+      "2025 update"
     ]
   },
   {
     "id": 99,
-    "query": "What is the systematic review evidence from high-impact journals on CAR-T therapy in relapsed lymphoma?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What recent evidence supports wearable sensor monitoring in post-surgical rehabilitation?",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "Wearable technology in rehabilitation is a post-2018 field; TWR ensures the latest evidence surfaces ahead of older motion analysis studies.",
     "tags": [
-      "CAR-T",
-      "lymphoma",
-      "relapsed",
-      "systematic review",
-      "Q1 journal"
+      "wearable sensors",
+      "rehabilitation monitoring",
+      "recent evidence"
     ]
   },
   {
     "id": 100,
-    "query": "What do large RCTs published in top oncology journals show about bevacizumab in metastatic colorectal cancer?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
+    "query": "New findings on exosome therapy for cartilage regeneration in osteoarthritis",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "Exosome-based regenerative therapies have only emerged in publications from 2020 onwards; TWR's recency decay gives age-0 papers near-full multiplier.",
     "tags": [
-      "bevacizumab",
-      "metastatic colorectal cancer",
-      "RCT",
-      "Q1 journal"
+      "exosome therapy",
+      "cartilage regeneration",
+      "osteoarthritis"
     ]
   },
   {
     "id": 101,
-    "query": "What is the evidence on novel targeted therapies for rare sarcoma subtypes reported in speciality journals?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "query": "Latest 2024 evidence on long COVID musculoskeletal sequelae rehabilitation",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": true,
+    "rationale": "Long COVID musculoskeletal problems were first documented in 2021; only recent 2023-2025 literature addresses rehabilitation specifically. TWR's recency multiplier is decisive.",
     "tags": [
-      "sarcoma",
-      "rare subtype",
-      "targeted therapy",
-      "mixed evidence",
-      "Q3 journal"
+      "long COVID",
+      "musculoskeletal",
+      "rehabilitation 2024"
     ]
   },
   {
     "id": 102,
-    "query": "How do observational studies in mid-tier journals characterise long-term survivorship outcomes in testicular cancer?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "query": "Recent systematic reviews on augmented reality for surgical training in orthopaedics",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": true,
+    "rationale": "AR surgical training is an emerging technology; all evidence is post-2018. TWR's recency decay favours 2023-2025 systematic reviews.",
     "tags": [
-      "testicular cancer",
-      "survivorship",
-      "observational",
-      "Q2/Q3 journal"
+      "augmented reality",
+      "surgical training",
+      "orthopaedics"
     ]
   },
   {
     "id": 103,
-    "query": "What does mixed-level evidence from varied journal tiers suggest about neoadjuvant immunotherapy in resectable NSCLC?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "query": "What do 2023-2025 trials show about closed-loop spinal cord stimulation systems?",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": true,
+    "rationale": "Closed-loop SCS technology was commercialised circa 2020; all RCT evidence is post-2021. TWR's recency multiplier ensures these papers dominate.",
     "tags": [
-      "neoadjuvant immunotherapy",
-      "NSCLC",
-      "resectable",
-      "mixed evidence"
+      "closed-loop spinal cord stimulation",
+      "adaptive SCS",
+      "2023-2025"
     ]
   },
   {
     "id": 104,
-    "query": "How do case series in speciality journals document outcomes of isolated limb perfusion for melanoma?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "query": "Current evidence on gene therapy approaches for hereditary neuropathic pain syndromes",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": true,
+    "rationale": "Gene therapy for hereditary pain is a post-2020 field; TWR's recency decay gives the most recent publications a near-1.0 multiplier.",
     "tags": [
-      "isolated limb perfusion",
-      "melanoma",
-      "case series",
-      "Q3 journal"
+      "gene therapy",
+      "hereditary neuropathy",
+      "current evidence"
     ]
   },
   {
     "id": 105,
-    "query": "What does scattered evidence across journal tiers show about cannabis use in cancer pain management?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "query": "Recent advances in machine learning for chronic pain phenotyping",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": true,
+    "rationale": "Machine learning in pain phenotyping is a 2019+ field; TWR ensures that 2023-2025 publications outrank irrelevant older statistics papers.",
     "tags": [
-      "cannabis",
-      "cancer pain",
-      "mixed evidence",
-      "mixed journal tiers"
+      "machine learning",
+      "pain phenotyping",
+      "recent advances"
     ]
   },
   {
     "id": 106,
-    "query": "What is the highest-quality evidence from top neurology journals on stroke thrombolysis time windows?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What does 2025 literature say about GLP-1 receptor agonists and musculoskeletal pain?",
+    "domain": "Nutritional and Metabolic Diseases",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "GLP-1 agonist effects on musculoskeletal pain became a research topic only from ~2023; TWR's recency multiplier ensures latest papers (age 0-1) dominate.",
     "tags": [
-      "thrombolysis",
-      "stroke",
-      "time window",
-      "RCT",
-      "Q1 journal"
+      "GLP-1 agonist",
+      "musculoskeletal pain",
+      "2025"
     ]
   },
   {
     "id": 107,
-    "query": "What do Q1-published meta-analyses recommend for anticoagulation in atrial fibrillation with prior stroke?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
+    "query": "Latest evidence on proton pump inhibitors' effect on bone density in orthopaedic patients",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "PPI-bone density evidence has evolved significantly post-2020; TWR's recency decay ensures updated systematic reviews surface ahead of older pharmacology papers.",
     "tags": [
-      "anticoagulation",
-      "atrial fibrillation",
-      "stroke prevention",
-      "meta-analysis",
-      "Q1 journal"
+      "PPI",
+      "bone density",
+      "orthopaedics 2024"
     ]
   },
   {
     "id": 108,
-    "query": "What is the best evidence from high-impact journals on amyloid PET as an Alzheimer diagnostic biomarker?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
+    "query": "Current guidelines on post-mastectomy pain syndrome treatment (2024-2025)",
+    "domain": "Neoplasms (Oncology)",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "Post-mastectomy pain management guidelines were updated in 2023-2024; TWR's recency multiplier correctly prioritises these over decade-old protocols.",
     "tags": [
-      "amyloid PET",
-      "Alzheimer",
-      "biomarker",
-      "systematic review",
-      "Q1 journal"
+      "post-mastectomy pain",
+      "current guidelines",
+      "2024"
     ]
   },
   {
     "id": 109,
-    "query": "How do top-tier journal RCTs characterise the benefit of early aggressive MS treatment?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
+    "query": "2024 advances in transcutaneous auricular vagus nerve stimulation for pain",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "taVNS is an emerging neuromodulation modality with first controlled trials from ~2021; TWR's recency multiplier is critical for surfacing valid evidence.",
     "tags": [
-      "multiple sclerosis",
-      "early treatment",
-      "aggressive",
-      "RCT",
-      "Q1 journal"
+      "vagus nerve stimulation",
+      "transcutaneous",
+      "2024"
     ]
   },
   {
     "id": 110,
-    "query": "What is the systematic review evidence on neuroprotective strategies after traumatic brain injury?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What recent literature describes outcomes of same-day discharge after outpatient spine procedures?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "rationale": "Same-day discharge pathways in spine surgery gained traction post-2020; TWR surfaces the newest protocol papers with near-1.0 recency multiplier.",
     "tags": [
-      "traumatic brain injury",
-      "neuroprotection",
-      "systematic review",
-      "Q1 journal"
+      "same-day discharge",
+      "outpatient spine",
+      "recent outcomes"
     ]
   },
   {
     "id": 111,
-    "query": "What do large Q1-published RCTs show about blood pressure lowering targets in acute haemorrhagic stroke?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What are the foundational biomechanical principles underlying lumbar disc herniation?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "Biomechanical principles of disc herniation were established in the 1970s-1990s; relevant foundational papers are 30+ years old (multiplier ~0.22). RRF surfaces them equally, but TWR's decay penalises them relative to recent but less relevant papers.",
     "tags": [
-      "haemorrhagic stroke",
-      "blood pressure",
-      "RCT",
-      "Q1 journal"
+      "lumbar disc",
+      "biomechanics",
+      "foundational principles"
     ]
   },
   {
     "id": 112,
-    "query": "What is the highest-tier evidence on mechanical thrombectomy versus thrombolysis in large vessel occlusion stroke?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What historical evidence established the gate control theory of pain?",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "Gate control theory was published by Melzack and Wall in 1965 (age ~60, multiplier ~0.05); TWR's recency decay almost entirely eliminates this landmark paper, while RRF ranks it by relevance alone.",
     "tags": [
-      "mechanical thrombectomy",
-      "thrombolysis",
-      "large vessel occlusion",
-      "RCT",
-      "Q1 journal"
+      "gate control theory",
+      "pain",
+      "historical evidence"
     ]
   },
   {
     "id": 113,
-    "query": "What do high-impact journal systematic reviews conclude about prophylactic antiepileptics after craniotomy?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What are the classical criteria for diagnosing rheumatoid arthritis?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "ACR criteria for RA have been largely stable since 1987/2010; older validation studies (age 15-35) have multiplier 0.47-0.21. TWR penalises foundational diagnostic criteria documents.",
     "tags": [
-      "antiepileptics",
-      "craniotomy",
-      "prophylaxis",
-      "systematic review",
-      "Q1 journal"
+      "rheumatoid arthritis",
+      "diagnostic criteria",
+      "classical"
     ]
   },
   {
     "id": 114,
-    "query": "What is the meta-analytic evidence from Q1 journals on exercise therapy for Parkinson disease motor function?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What decade-long cohort studies track functional decline in spinal deformity patients?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "Decade-long cohort studies by definition have data from 10+ years ago; TWR's recency decay penalises them (multiplier ~0.61 for 10-year-old papers), while RRF is agnostic to study age.",
     "tags": [
-      "exercise therapy",
-      "Parkinson",
-      "motor function",
-      "meta-analysis",
-      "Q1 journal"
+      "spinal deformity",
+      "functional decline",
+      "long-term cohort"
     ]
   },
   {
     "id": 115,
-    "query": "What do RCTs in leading neurology journals show about cognitive training in mild cognitive impairment?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What historical RCTs established the safety of regional anaesthesia over general anaesthesia?",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "Pivotal anaesthesia safety RCTs were published in the 1980s-2000s (age 20-40, multiplier 0.37-0.14); TWR's decay heavily penalises these landmark studies.",
     "tags": [
-      "cognitive training",
-      "mild cognitive impairment",
-      "RCT",
-      "Q1 journal"
+      "regional anaesthesia",
+      "safety",
+      "historical RCT"
     ]
   },
   {
     "id": 116,
-    "query": "What does mixed evidence across journal tiers suggest about hyperbaric oxygen for post-concussion syndrome?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What are the original Oswestry Disability Index validation studies?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "rationale": "The ODI was developed and validated in 1980-2000 (age 25-45, multiplier 0.29-0.11); TWR's recency decay makes it miss these methodologically essential validation papers.",
     "tags": [
-      "hyperbaric oxygen",
-      "post-concussion",
-      "mixed evidence",
-      "mixed tier"
+      "Oswestry Disability Index",
+      "validation",
+      "original studies"
     ]
   },
   {
     "id": 117,
-    "query": "How do observational studies in speciality journals describe outcomes of vagus nerve stimulation for refractory epilepsy?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What are the founding epidemiological studies on low back pain prevalence?",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "rationale": "Foundational LBP epidemiology was established in the 1980s-1990s (age 30-40, multiplier 0.22-0.14); TWR's decay strongly penalises these landmark studies that RRF would rank by relevance.",
     "tags": [
-      "vagus nerve stimulation",
-      "epilepsy",
-      "observational",
-      "Q2/Q3 journal"
+      "low back pain",
+      "epidemiology",
+      "prevalence studies"
     ]
   },
   {
     "id": 118,
-    "query": "What is the scattered evidence on acupuncture for migraine prevention across varied publication quality?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What long-running registry studies track outcomes of total hip arthroplasty over 20+ years?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "rationale": "National arthroplasty registries started in the 1970s-1990s; 20+ year follow-up data necessarily comes from older publications (multiplier 0.14-0.37). TWR's decay disadvantages these unique long-term data sources.",
     "tags": [
-      "acupuncture",
-      "migraine",
-      "mixed evidence",
-      "mixed tier"
+      "total hip arthroplasty",
+      "registry",
+      "20-year outcomes"
     ]
   },
   {
     "id": 119,
-    "query": "How do mid-tier journals characterise stem cell therapy outcomes in amyotrophic lateral sclerosis?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What classic physiotherapy literature defines the principles of progressive overload?",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "rationale": "Progressive overload principles were codified in the 1940s-1970s (age 50-80+, multiplier <0.08); TWR's recency decay almost entirely suppresses these foundational rehabilitation texts.",
     "tags": [
-      "stem cell therapy",
-      "ALS",
-      "Q2/Q3 journal",
-      "observational"
+      "progressive overload",
+      "physiotherapy",
+      "classical principles"
     ]
   },
   {
     "id": 120,
-    "query": "What does heterogeneous evidence from varied sources show about music therapy for dementia?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What are the landmark studies defining OCEBM evidence levels in clinical research?",
+    "domain": "general",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "rationale": "The OCEBM framework was published in 2001 (age ~24, multiplier ~0.30); TWR's recency decay penalises this methodologically essential document that RRF would surface by relevance.",
     "tags": [
-      "music therapy",
-      "dementia",
-      "heterogeneous evidence",
-      "mixed tier"
+      "OCEBM",
+      "evidence levels",
+      "landmark study"
     ]
   },
   {
     "id": 121,
-    "query": "What does the best RCT evidence from Q1 dermatology journals show about tralokinumab for atopic dermatitis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What historical studies established normal values for nerve conduction velocity?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "Normal NCV reference values were established in the 1960s-1980s (age 40-60, multiplier 0.14-0.05); TWR's recency decay almost eliminates these normative papers.",
     "tags": [
-      "tralokinumab",
-      "atopic dermatitis",
-      "RCT",
-      "Q1 journal"
+      "nerve conduction velocity",
+      "normal values",
+      "historical"
     ]
   },
   {
     "id": 122,
-    "query": "What is the meta-analytic evidence from high-impact journals on biologic switching in psoriasis non-responders?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What are the original publications describing the Barthel ADL Index?",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "The Barthel Index was originally published in 1965 (age ~60, multiplier ~0.05); TWR's strong recency decay would suppress this widely-used foundational outcome measure.",
     "tags": [
-      "biologic switching",
-      "psoriasis",
-      "meta-analysis",
-      "Q1 journal"
+      "Barthel Index",
+      "original publication",
+      "ADL"
     ]
   },
   {
     "id": 123,
-    "query": "What do top-tier systematic reviews conclude about long-term remission with dupilumab in atopic dermatitis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "Classic studies on the natural history of untreated lumbar spinal stenosis",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "Natural history studies for spinal stenosis span 1990-2010 (age 15-35, multiplier 0.47-0.17); TWR penalises these essential prognostic baseline studies.",
     "tags": [
-      "dupilumab",
-      "atopic dermatitis",
-      "remission",
-      "systematic review",
-      "Q1 journal"
+      "lumbar spinal stenosis",
+      "natural history",
+      "untreated"
     ]
   },
   {
     "id": 124,
-    "query": "What is the highest-quality evidence on upadacitinib efficacy and safety in moderate-to-severe atopic dermatitis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What historical evidence defines the morphine equivalence dose conversion table?",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "Opioid equianalgesic conversion tables were established in the 1970s-1990s (age 30-50, multiplier 0.22-0.08); TWR's decay severely penalises these clinically essential references.",
     "tags": [
-      "upadacitinib",
-      "atopic dermatitis",
-      "JAK inhibitor",
-      "RCT",
-      "Q1 journal"
+      "morphine equivalence",
+      "dose conversion",
+      "historical"
     ]
   },
   {
     "id": 125,
-    "query": "What do Q1-published RCTs show about the comparative efficacy of IL-17 versus IL-23 inhibitors for psoriasis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What are the defining studies on spinal cord anatomy relevant to surgical approaches?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "Spinal cord anatomy was characterised in the early 20th century; relevant surgical anatomy studies date to 1960s-1990s (age 30-60, multiplier 0.22-0.05). TWR's decay makes it ill-suited to retrieve this timeless content.",
     "tags": [
-      "IL-17",
-      "IL-23",
-      "psoriasis",
-      "RCT",
-      "Q1 journal"
+      "spinal cord anatomy",
+      "surgical approach",
+      "anatomical study"
     ]
   },
   {
     "id": 126,
-    "query": "What is the systematic review evidence on risk of serious infection with JAK inhibitors in dermatological conditions?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What decade-old longitudinal studies track outcomes of conservative vs surgical treatment for scoliosis?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "Long-term scoliosis follow-up studies (10-20 year follow-up) are by definition published years after study initiation; older landmark papers age 10-20 have multiplier 0.37-0.61. TWR may under-surface them.",
     "tags": [
-      "JAK inhibitor",
-      "infection risk",
-      "dermatology",
-      "systematic review",
-      "Q1 journal"
+      "scoliosis",
+      "long-term outcomes",
+      "longitudinal study"
     ]
   },
   {
     "id": 127,
-    "query": "What does high-tier evidence show about risk stratification and screening in patients with chronic skin inflammation?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "Historical pharmacokinetic studies on tramadol metabolism relevant to dose adjustment",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "Tramadol pharmacokinetics were characterised in the 1980s-1990s (age 30-40, multiplier 0.22-0.14); TWR's recency decay penalises these essential dosing studies.",
     "tags": [
-      "skin inflammation",
-      "risk stratification",
-      "screening",
-      "meta-analysis",
-      "Q1 journal"
+      "tramadol",
+      "pharmacokinetics",
+      "dose adjustment"
     ]
   },
   {
     "id": 128,
-    "query": "What is the best evidence from Q1 journals on topical ruxolitinib for vitiligo repigmentation?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What foundational studies establish the psychometric properties of the SF-36 in orthopaedic patients?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "SF-36 validation in orthopaedics was published in the early 1990s (age ~30-35, multiplier ~0.17-0.22); TWR's decay makes it poor at retrieving these foundational validity studies.",
     "tags": [
-      "ruxolitinib",
-      "vitiligo",
-      "topical",
-      "RCT",
-      "Q1 journal"
+      "SF-36",
+      "psychometric properties",
+      "orthopaedics"
     ]
   },
   {
     "id": 129,
-    "query": "What do large systematic reviews in leading journals conclude about phototherapy frequency and atopic dermatitis outcomes?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "Classic literature on the pathophysiology of central sensitisation in chronic pain",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "Central sensitisation mechanisms were described by Woolf in 1983 (age ~42, multiplier ~0.12); TWR's recency decay would suppress this landmark mechanistic paper.",
     "tags": [
-      "phototherapy",
-      "atopic dermatitis",
-      "frequency",
-      "systematic review",
-      "Q1 journal"
+      "central sensitisation",
+      "pathophysiology",
+      "classic literature"
     ]
   },
   {
     "id": 130,
-    "query": "What is the RCT evidence from high-impact journals on the role of barrier repair therapy in eczema prevention?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
-    "expected_twr_advantage": true,
-    "rationale": "This query intersects high evidence level (L1 RCTs) AND Q1 journal publication. TWR compounds both trust signals, producing a ranking that RRF — blind to both — cannot replicate.",
+    "query": "What long-term follow-up studies (15+ years) describe outcomes of lumbar fusion surgery?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "recency",
+    "expected_twr_advantage": false,
+    "rationale": "15+ year follow-up data necessarily comes from studies published decades ago (age 15-30, multiplier 0.47-0.22); TWR's recency decay disadvantages these unique long-term outcomes sources.",
     "tags": [
-      "barrier repair",
-      "eczema prevention",
-      "RCT",
-      "Q1 journal"
+      "lumbar fusion",
+      "15-year outcomes",
+      "long-term follow-up"
     ]
   },
   {
     "id": 131,
-    "query": "What does heterogeneous evidence from varied journal tiers show about herbal remedies for psoriasis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What are the original validation studies for the Numeric Rating Scale for pain intensity?",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "rationale": "The NRS for pain was validated in the 1980s-1990s (age 30-40, multiplier 0.22-0.14); TWR's recency decay penalises this foundational measurement tool literature.",
     "tags": [
-      "herbal remedies",
-      "psoriasis",
-      "mixed evidence",
-      "mixed tier"
+      "Numeric Rating Scale",
+      "pain intensity",
+      "validation"
     ]
   },
   {
     "id": 132,
-    "query": "How do observational studies in speciality journals document outcomes of cryotherapy for keloid scars?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
+    "query": "Classic studies establishing the role of sleep disturbance in chronic pain amplification",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "rationale": "Sleep-pain interaction was characterised in landmark studies from the 1990s-early 2000s (age 20-30, multiplier 0.37-0.22); TWR's decay penalises these mechanistically important papers.",
     "tags": [
-      "cryotherapy",
-      "keloid",
-      "observational",
-      "Q2/Q3 journal"
+      "sleep disturbance",
+      "chronic pain",
+      "classic studies"
     ]
   },
   {
     "id": 133,
-    "query": "What scattered evidence exists on platelet-rich plasma for androgenetic alopecia across varied publication quality?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What historical randomised trials established epidural steroid injection safety profiles?",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "rationale": "Pivotal epidural steroid injection RCTs were published in the 1980s-2000s (age 20-40, multiplier 0.37-0.14); TWR's decay substantially penalises these safety-defining studies.",
     "tags": [
-      "PRP",
-      "androgenetic alopecia",
-      "mixed evidence",
-      "mixed tier"
+      "epidural steroid injection",
+      "safety",
+      "historical RCT"
     ]
   },
   {
     "id": 134,
-    "query": "How do mid-tier journals characterise photobiomodulation outcomes for hair regrowth?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
+    "query": "What are the 2010-2013 studies that established baseline evidence for spinal cord stimulation therapy?",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "rationale": "2010-2013 SCS studies (age 12-15, multiplier 0.55-0.47) established the evidence base; they are less recent than 2025 publications but are the foundational evidence. TWR's decay penalises them relative to newer but potentially less relevant papers.",
     "tags": [
-      "photobiomodulation",
-      "hair regrowth",
-      "Q2/Q3 journal"
+      "spinal cord stimulation",
+      "baseline evidence",
+      "2010-2013"
     ]
   },
   {
     "id": 135,
-    "query": "What does mixed-level evidence suggest about dietary interventions for rosacea management?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "multi_factor",
+    "query": "Longitudinal cohort studies tracking 10-year changes in Huntington's disease functional status",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "recency",
     "expected_twr_advantage": false,
-    "rationale": "Relevant documents split across high-tier journals with moderate evidence (L3) and low-tier journals with high evidence (L1). TWR's combined scoring creates ambiguity that RRF's uniform weighting avoids.",
+    "rationale": "10-year longitudinal HD studies are by definition published a decade or more after study initiation; TWR's recency decay creates a structural bias against these unique long-duration data sources.",
     "tags": [
-      "dietary intervention",
-      "rosacea",
-      "mixed evidence",
-      "mixed tier"
+      "Huntington's disease",
+      "functional status",
+      "10-year cohort"
     ]
   },
   {
     "id": 136,
-    "query": "What are the histological characteristics of primary cutaneous follicle centre lymphoma?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "query": "What do recent Q1 RCTs (2022-2025) show about mesenchymal stem cell therapy for knee osteoarthritis?",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": true,
+    "rationale": "All three TWR dimensions favour high-quality retrieval: evidence_level=1 (RCT), journal_tier=Q1 (multiplier 1.0), and recency (2022-2025, multiplier ~0.90-1.0). The compound advantage over RRF is the product of all three, making TWR clearly superior.",
     "tags": [
-      "cutaneous follicle centre lymphoma",
-      "histology",
-      "case series"
+      "stem cell therapy",
+      "knee osteoarthritis",
+      "Q1 RCT 2024"
     ]
   },
   {
     "id": 137,
-    "query": "How is primary effusion lymphoma managed in HIV-positive patients?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "query": "Systematic reviews from Q1 journals in 2023-2025 on persistent post-COVID pain",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": true,
+    "rationale": "Evidence_level=1 (systematic review), journal_tier=Q1 (1.0), recency (age 0-2, multiplier ~0.90-1.0); all three TWR multipliers are maximised, giving it a compounded advantage over RRF.",
     "tags": [
-      "primary effusion lymphoma",
-      "HIV",
-      "case report"
+      "post-COVID pain",
+      "systematic review",
+      "Q1 2024"
     ]
   },
   {
     "id": 138,
-    "query": "What are the clinical features of malignant perivascular epithelioid cell tumour (PEComa)?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "query": "Recent high-impact RCTs on virtual reality for post-surgical rehabilitation pain",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": true,
+    "rationale": "Recent (2022-2025) high-impact (Q1) RCTs (level 1) maximise all three TWR score components simultaneously, providing the largest possible compounded advantage over RRF.",
     "tags": [
-      "PEComa",
-      "rare tumour",
-      "case series"
+      "virtual reality",
+      "post-surgical pain",
+      "Q1 RCT"
     ]
   },
   {
     "id": 139,
-    "query": "How is adenocarcinoma of the rete testis diagnosed and treated?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "query": "What do 2024 Q1 neurology journal RCTs show about neuromodulation for refractory chronic pain?",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": true,
+    "rationale": "Evidence_level=1 + journal_tier=Q1 (1.0) + recency=2024 (multiplier~0.95) creates a compounded TWR advantage. RRF cannot exploit any of these quality signals.",
     "tags": [
-      "rete testis",
-      "adenocarcinoma",
-      "rare",
-      "case report"
+      "neuromodulation",
+      "refractory pain",
+      "Q1 neurology 2024"
     ]
   },
   {
     "id": 140,
-    "query": "What are the surgical management strategies for retroperitoneal paraganglioma?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "query": "Cochrane reviews published in Q1 journals in 2023-2025 on exercise for chronic low back pain",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": true,
+    "rationale": "Cochrane reviews (level 1) from Q1 journals (1.0 multiplier) published in 2023-2025 (age 0-2, ~0.90-1.0) maximise all three TWR score components, creating the largest compound advantage.",
     "tags": [
-      "paraganglioma",
-      "retroperitoneal",
-      "case series"
+      "exercise",
+      "chronic low back pain",
+      "Cochrane 2024"
     ]
   },
   {
     "id": 141,
-    "query": "What are the dermatological presentations of metastatic Merkel cell carcinoma?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "query": "Most recent Q1 journal RCTs on pharmacological management of neuropathic pain after spinal cord injury",
+    "domain": "Nervous System Diseases (Neurology)",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": true,
+    "rationale": "Evidence_level=1 (RCT) + journal_tier=Q1 (1.0) + recency ~0.95 = compounded TWR advantage. RRF ignores all three quality dimensions.",
     "tags": [
-      "Merkel cell carcinoma",
-      "metastatic",
-      "dermatology",
-      "case report"
+      "neuropathic pain",
+      "spinal cord injury",
+      "pharmacological management"
     ]
   },
   {
     "id": 142,
-    "query": "How is leptomeningeal carcinomatosis from breast cancer managed palliatively?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "query": "2024 systematic reviews in Q1 orthopaedic journals on prehabilitation before joint replacement",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": true,
+    "rationale": "All three dimensions maximised: level-1 evidence (systematic review) + Q1 journal multiplier (1.0) + 2024 recency (~0.95). TWR's compound advantage is unambiguous.",
     "tags": [
-      "leptomeningeal carcinomatosis",
-      "breast cancer",
-      "palliative",
-      "case series"
+      "prehabilitation",
+      "joint replacement",
+      "systematic review 2024"
     ]
   },
   {
     "id": 143,
-    "query": "What are the ocular metastasis presentations in uveal melanoma?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "query": "High-impact journal RCTs since 2022 evaluating pain catastrophising interventions",
+    "domain": "Mental Disorders (Psychiatry)",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": true,
+    "rationale": "Recent (2022-2025) RCTs (level 1) in high-impact (Q1) journals maximise all three score multipliers in TWR, making it clearly superior to RRF for this multi-dimensional quality query.",
     "tags": [
-      "uveal melanoma",
-      "ocular metastasis",
-      "case report"
+      "pain catastrophising",
+      "psychological intervention",
+      "Q1 RCT"
     ]
   },
   {
     "id": 144,
-    "query": "How is gastrointestinal stromal tumour with rare exon 9 mutation treated?",
+    "query": "Recent Q1 oncology journal trials on opioid-sparing strategies in cancer pain management",
     "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": true,
+    "rationale": "RCTs (level 1) + Q1 journal (1.0) + recent 2023-2025 (age 0-2, multiplier ~0.90-1.0) maximise all three TWR components simultaneously.",
     "tags": [
-      "GIST",
-      "exon 9",
-      "rare mutation",
-      "case series"
+      "opioid-sparing",
+      "cancer pain",
+      "Q1 oncology 2024"
     ]
   },
   {
     "id": 145,
-    "query": "What are the clinical outcomes of childhood adrenocortical carcinoma?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "query": "Latest meta-analyses from Q1 cardiovascular journals on cardiac rehabilitation efficacy",
+    "domain": "Cardiovascular Diseases",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": true,
+    "rationale": "Meta-analyses (level 1) + Q1 cardiovascular journals (1.0) + recent 2024-2025 (age ~0-1, multiplier ~0.95-1.0) = maximised compounded TWR advantage over RRF.",
     "tags": [
-      "adrenocortical carcinoma",
-      "paediatric",
-      "case series"
+      "cardiac rehabilitation",
+      "efficacy",
+      "meta-analysis Q1"
     ]
   },
   {
     "id": 146,
-    "query": "What do expert guidelines from Q1 journals say about hereditary colorectal cancer surveillance?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
+    "query": "2025 Q1 journal systematic reviews on closed-loop spinal cord stimulation vs conventional SCS",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "rationale": "Systematic reviews (level 1) + Q1 journals (1.0) + 2025 recency (age~0, multiplier~1.0) = all three TWR components at maximum. Compound advantage is decisive over RRF.",
     "tags": [
-      "hereditary colorectal cancer",
-      "surveillance",
-      "guidelines",
-      "Q1 journal"
+      "closed-loop SCS",
+      "conventional SCS",
+      "systematic review 2025"
     ]
   },
   {
     "id": 147,
-    "query": "What is the evidence on prophylactic mastectomy in BRCA1/2 carriers from high-impact journals?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
+    "query": "Q1 journal RCTs from 2022-2025 evaluating multimodal rehabilitation after lumbar fusion",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "rationale": "RCTs (level 1) + Q1 journals (multiplier 1.0) + 2022-2025 recency (age 0-3, multiplier ~0.86-1.0) maximise all THREE TWR score components. Compound advantage is unambiguous.",
     "tags": [
-      "prophylactic mastectomy",
-      "BRCA",
-      "Q1 journal",
-      "systematic review"
+      "multimodal rehabilitation",
+      "lumbar fusion",
+      "Q1 RCT 2023"
     ]
   },
   {
     "id": 148,
-    "query": "What do top oncology journals conclude about Lynch syndrome screening protocols?",
+    "query": "Recent high-quality evidence from top journals on mindfulness for cancer-related pain",
     "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "rationale": "Recent RCTs/systematic reviews (level 1-2) from Q1 journals in 2022-2025 maximise all three TWR multipliers simultaneously, providing the clearest possible combined-dimension advantage.",
     "tags": [
-      "Lynch syndrome",
-      "screening",
-      "systematic review",
-      "Q1 journal"
+      "mindfulness",
+      "cancer pain",
+      "high-quality evidence"
     ]
   },
   {
     "id": 149,
-    "query": "What is the evidence from leading journals on tumour treating fields for glioblastoma?",
+    "query": "2024 Q1 paediatric journals RCTs on pain management in children with cancer",
     "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "rationale": "RCTs (level 1) + Q1 paediatric journals (1.0) + 2024 recency (age~1, multiplier~0.95) = compounded TWR advantage across all three dimensions.",
     "tags": [
-      "tumour treating fields",
-      "glioblastoma",
+      "paediatric cancer pain",
       "RCT",
-      "Q1 journal"
+      "Q1 2024"
     ]
   },
   {
     "id": 150,
-    "query": "What do systematic reviews in high-impact journals say about fertility preservation in young cancer patients?",
-    "domain": "Neoplasms (Oncology)",
-    "ablation_dimension": "adversarial",
+    "query": "What do recent systematic reviews in top rehabilitation journals say about telerehabilitation for stroke survivors?",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "rationale": "Systematic reviews (level 1) + top Q1 journals (1.0) + recent 2022-2025 (age 0-3, multiplier 0.86-1.0) = maximised combined TWR advantage. RRF is completely blind to all three quality signals.",
     "tags": [
-      "fertility preservation",
-      "cancer",
-      "young patients",
-      "systematic review",
-      "Q1 journal"
+      "telerehabilitation",
+      "stroke",
+      "systematic review Q1"
     ]
   },
   {
     "id": 151,
-    "query": "What are the neurological features of superficial siderosis of the central nervous system?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
+    "query": "What do older expert consensus guidelines from unranked specialty journals say about CRPS management?",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "All three TWR dimensions work against the relevant documents: evidence_level=5 (expert opinion, score 0.2) + Unranked journal (multiplier 0.40) + old guidelines (age 10-15, multiplier 0.61-0.47). The compounded penalty means RRF surfaces relevant documents more reliably.",
     "tags": [
-      "superficial siderosis",
-      "CNS",
-      "rare",
-      "case series"
+      "CRPS management",
+      "expert consensus",
+      "unranked journal"
     ]
   },
   {
     "id": 152,
-    "query": "How is anti-NMDA receptor encephalitis managed in pregnant patients?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
+    "query": "Retrospective case series in unranked journals describing rare complications of naphtalanotherapy",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Evidence_level=4 (score 0.4) + Unranked journal (0.40) + older reports (age 5-15, multiplier 0.78-0.47) = all three TWR dimensions penalise the most relevant documents. RRF is agnostic to all three.",
     "tags": [
-      "anti-NMDA receptor encephalitis",
-      "pregnancy",
-      "case report"
+      "naphtalanotherapy",
+      "complications",
+      "case series unranked"
     ]
   },
   {
     "id": 153,
-    "query": "What are the clinical manifestations of Susac syndrome in young women?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
+    "query": "Historical expert opinion articles in Q4 journals on physiotherapy duration for psoriasis rehabilitation",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Evidence_level=5 (0.2) + Q4 journal (0.55) + older articles (age 10-20, multiplier 0.61-0.37) = all three penalties compound. RRF surfaces them by relevance alone.",
     "tags": [
-      "Susac syndrome",
-      "rare",
-      "case report"
+      "psoriasis rehabilitation",
+      "expert opinion",
+      "Q4 journal"
     ]
   },
   {
     "id": 154,
-    "query": "How does primary angiitis of the central nervous system present and respond to treatment?",
+    "query": "What do 2010-2015 observational studies in unranked neurology journals describe about C2-C3 nerve stimulation?",
     "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Evidence_level=3-4 (0.4-0.6) + Unranked (0.40) + age 10-15 (multiplier 0.61-0.47) = compounded penalty across all dimensions. These may be the most directly relevant documents, but TWR systematically deprioritises them.",
     "tags": [
-      "primary CNS angiitis",
-      "rare",
-      "case series"
+      "C2-C3 nerve stimulation",
+      "observational study",
+      "unranked 2012"
     ]
   },
   {
     "id": 155,
-    "query": "What are the neurological complications of cat scratch disease in paediatric patients?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
+    "query": "Older expert recommendations in Q3-Q4 journals on conservative management of juvenile parotitis",
+    "domain": "Infections",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Evidence_level=5 (0.2) + Q3-Q4 journal (0.55-0.70) + older documents (age 5-15, multiplier 0.78-0.47) = compounded TWR penalties across all three dimensions.",
     "tags": [
-      "cat scratch disease",
-      "neurology",
-      "paediatric",
-      "case report"
+      "juvenile parotitis",
+      "conservative management",
+      "expert Q3 Q4"
     ]
   },
   {
     "id": 156,
-    "query": "How is Rasmussen encephalitis diagnosed and managed surgically?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
+    "query": "Foundational anatomy papers in unranked journals on spinal cord segmental organisation",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Evidence_level=5 (descriptive anatomy, 0.2) + Unranked journals (0.40) + foundational papers age 30-50 (multiplier 0.22-0.08) = extreme compounded penalty in TWR. RRF ranks by relevance, TWR suppresses these systematically.",
     "tags": [
-      "Rasmussen encephalitis",
-      "rare",
-      "case series"
+      "spinal cord anatomy",
+      "segmental organisation",
+      "foundational paper"
     ]
   },
   {
     "id": 157,
-    "query": "What are the clinical features of neurosarcoidosis presenting as cranial neuropathy?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
+    "query": "What do historical case reports in unranked pain journals describe about opioid-induced hyperalgesia?",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Case reports (level 4, score 0.4) + Unranked (0.40) + historical (age 15-25, multiplier 0.47-0.29) = compounded TWR penalty. These early case reports first described the phenomenon; TWR misses them.",
     "tags": [
-      "neurosarcoidosis",
-      "cranial neuropathy",
-      "case series"
+      "opioid-induced hyperalgesia",
+      "case report",
+      "historical unranked"
     ]
   },
   {
     "id": 158,
-    "query": "How is POEMS syndrome distinguished from chronic inflammatory demyelinating polyneuropathy?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
+    "query": "Expert opinion pieces from Q4 rehabilitation journals on the role of family support in stroke recovery",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Expert opinion (level 5, score 0.2) + Q4 journal (0.55) + older articles (age 8-15, multiplier 0.67-0.47) = multi-dimensional TWR penalty on documents that may contain the most relevant qualitative insights.",
     "tags": [
-      "POEMS syndrome",
-      "CIDP",
-      "rare",
-      "case series"
+      "family support",
+      "stroke recovery",
+      "expert opinion Q4"
     ]
   },
   {
     "id": 159,
-    "query": "What are the neurological manifestations of Fabry disease?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
+    "query": "Old cohort studies in unranked bodywork journals on physiotherapy after vertebral arthrodesis",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Cohort studies (level 3, score 0.6) + Unranked (0.40) + older (age 5-15, multiplier 0.78-0.47) = compounded penalty. The Journal of Bodywork is key for this topic yet TWR penalises it across multiple dimensions.",
     "tags": [
-      "Fabry disease",
-      "neurological manifestations",
-      "case series"
+      "vertebral arthrodesis",
+      "physiotherapy",
+      "cohort unranked"
     ]
   },
   {
     "id": 160,
-    "query": "How is FIRES (febrile infection-related epilepsy syndrome) treated in adults?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
+    "query": "Narrative reviews from Q4 geriatric journals in 2010-2015 on delirium risk after orthopaedic surgery",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Narrative reviews (level 5, 0.2) + Q4 journal (0.55) + age 10-15 (multiplier 0.61-0.47) = all three TWR multipliers below 0.6, compounding into a very low score for documents that may be most relevant to this specific population.",
     "tags": [
-      "FIRES",
-      "adult",
-      "rare epilepsy",
-      "case series"
+      "delirium",
+      "orthopaedic surgery",
+      "narrative review Q4"
     ]
   },
   {
     "id": 161,
-    "query": "What do Q1 neurology journal RCTs show about the safety of anticoagulation in cerebral venous thrombosis?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "query": "What do 2010-2014 retrospective case series in unranked infection journals report on parotitis antibiotic choices?",
+    "domain": "Infections",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": false,
+    "rationale": "Case series (level 4, 0.4) + Unranked (0.40) + age 11-15 (multiplier 0.57-0.47) = extreme compounded penalty. These may be the only disease-specific sources yet TWR suppresses them across all three dimensions.",
     "tags": [
-      "cerebral venous thrombosis",
-      "anticoagulation",
-      "RCT",
-      "Q1 journal"
+      "parotitis",
+      "antibiotic",
+      "retrospective unranked"
     ]
   },
   {
     "id": 162,
-    "query": "What is the systematic review evidence on genetic testing utility in hereditary spastic paraplegia?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "query": "Expert panel reports from unranked journals on pain management in elderly nursing home residents",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": false,
+    "rationale": "Expert panel (level 5, 0.2) + Unranked (0.40) + older reports (age 8-20, multiplier 0.67-0.37) = all three dimensions penalise the most contextually relevant documents. RRF is indifferent and will surface them by relevance.",
     "tags": [
-      "hereditary spastic paraplegia",
-      "genetic testing",
-      "systematic review",
-      "Q1 journal"
+      "elderly nursing home",
+      "pain management",
+      "expert panel unranked"
     ]
   },
   {
     "id": 163,
-    "query": "What do high-impact journal meta-analyses conclude about disease-modifying therapy in clinically isolated syndrome?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "query": "Older observational data from Q3 journals on long-term effects of physiotherapy in adult scoliosis",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": false,
+    "rationale": "Observational data (level 3, 0.6) + Q3 journal (0.70) + older (age 10-20, multiplier 0.61-0.37) = compounded multi-dimensional penalty in TWR, potentially suppressing the most longitudinally relevant data.",
     "tags": [
-      "clinically isolated syndrome",
-      "disease-modifying therapy",
-      "meta-analysis",
-      "Q1 journal"
+      "scoliosis",
+      "physiotherapy long-term",
+      "observational Q3"
     ]
   },
   {
     "id": 164,
-    "query": "What is the Q1-journal evidence on intrathecal baclofen for spasticity management?",
-    "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "query": "Historical expert opinion in unranked journals on rehabilitation after naphtalanotherapy",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": false,
+    "rationale": "Expert opinion (level 5, 0.2) + Unranked (0.40) + historical (age 10-20, multiplier 0.61-0.37) = all three TWR penalties compound. For this niche topic, these may be the only available documents.",
     "tags": [
-      "intrathecal baclofen",
-      "spasticity",
-      "RCT",
-      "Q1 journal"
+      "naphtalanotherapy",
+      "rehabilitation expert opinion",
+      "historical unranked"
     ]
   },
   {
     "id": 165,
-    "query": "What do systematic reviews in leading journals conclude about neonatal seizure management with phenobarbital?",
+    "query": "What do older case reports in Q4 neurology journals describe about cervical PNS device complications?",
     "domain": "Nervous System Diseases (Neurology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
+    "ablation_dimension": "combined",
+    "expected_twr_advantage": false,
+    "rationale": "Case reports (level 4, 0.4) + Q4 journal (0.55) + older reports (age 5-10, multiplier 0.78-0.61) = compounded penalty. RRF surfaces these unique complication descriptions without penalising any quality dimension.",
     "tags": [
-      "neonatal seizure",
-      "phenobarbital",
-      "systematic review",
-      "Q1 journal"
+      "cervical PNS",
+      "device complications",
+      "case report Q4"
     ]
   },
   {
     "id": 166,
-    "query": "What are the clinical features of eosinophilic fasciitis and how is it differentiated from scleroderma?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
+    "query": "What do 2012-2016 expert consensus statements in unranked rheumatology journals recommend for psoriatic arthritis rehabilitation?",
+    "domain": "Rehabilitation",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Expert consensus (level 5, 0.2) + Unranked (0.40) + age 9-13 (multiplier 0.64-0.52) = all three TWR dimensions at substantially suboptimal values. The product of all three creates extreme compound penalty for potentially unique guidance documents.",
     "tags": [
-      "eosinophilic fasciitis",
-      "scleroderma",
-      "rare",
-      "case series"
+      "psoriatic arthritis rehabilitation",
+      "expert consensus",
+      "unranked 2014"
     ]
   },
   {
     "id": 167,
-    "query": "How is acquired reactive perforating collagenosis managed in diabetic patients?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
+    "query": "Narrative reviews from 2005-2010 in unranked anaesthesia journals about postoperative cognitive dysfunction",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Narrative reviews (level 5, 0.2) + Unranked (0.40) + age 15-20 (multiplier 0.47-0.37) = compound penalty 0.2*0.40*0.47=0.04. TWR heavily suppresses these foundational POCD descriptions that RRF would surface neutrally.",
     "tags": [
-      "perforating collagenosis",
-      "diabetes",
-      "rare",
-      "case report"
+      "postoperative cognitive dysfunction",
+      "narrative review",
+      "historical unranked"
     ]
   },
   {
     "id": 168,
-    "query": "What are the dermatological features of adult-onset Still disease?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
+    "query": "What older expert opinion pieces from Q3-Q4 psychiatry journals address chronic pain and suicidality?",
+    "domain": "Mental Disorders (Psychiatry)",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Expert opinion (level 5, 0.2) + Q3-Q4 (0.55-0.70) + older (age 10-15, multiplier 0.47-0.61) = multi-dimensional TWR penalty on documents addressing a critical safety topic that RRF surfaces by relevance.",
     "tags": [
-      "Still disease",
-      "adult-onset",
-      "skin manifestations",
-      "case series"
+      "chronic pain",
+      "suicidality",
+      "expert opinion Q3"
     ]
   },
   {
     "id": 169,
-    "query": "How is sneddon-wilkinson disease (subcorneal pustular dermatosis) treated?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
+    "query": "Historical epidemiological studies in unranked journals on occupational low back pain in manual workers",
+    "domain": "Pain & Anesthesiology",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Epidemiological cohorts (level 2-3, 0.6-0.8) + Unranked (0.40) + historical (age 20-35, multiplier 0.37-0.17) = compounded penalty across all three dimensions for foundational occupational health evidence.",
     "tags": [
-      "Sneddon-Wilkinson",
-      "subcorneal pustular dermatosis",
-      "rare",
-      "case series"
+      "occupational low back pain",
+      "manual workers",
+      "epidemiology unranked"
     ]
   },
   {
     "id": 170,
-    "query": "What are the clinical features of erythema gyratum repens as a paraneoplastic syndrome?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
+    "query": "Older consensus guidelines from Q3 journals on exercise contraindications in orthopaedic patients",
+    "domain": "Orthopaedics",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Consensus guidelines (level 5, 0.2) + Q3 journal (0.70) + older (age 10-15, multiplier 0.61-0.47) = product 0.2*0.70*0.54=0.076. TWR dramatically suppresses safety-critical contraindication guidelines that RRF ranks by relevance.",
     "tags": [
-      "erythema gyratum repens",
-      "paraneoplastic",
-      "rare",
-      "case report"
+      "exercise contraindications",
+      "orthopaedic patients",
+      "consensus Q3"
     ]
   },
   {
     "id": 171,
-    "query": "How is cutaneous Rosai-Dorfman disease managed when systemic involvement is absent?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
+    "query": "What do retrospective studies in unranked infectious disease journals from 2010-2015 say about antibiotic duration in parotitis?",
+    "domain": "Infections",
+    "ablation_dimension": "combined",
     "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
+    "rationale": "Retrospective studies (level 3-4, 0.4-0.6) + Unranked (0.40) + age 10-15 (multiplier 0.61-0.47) = compounded multi-dimensional TWR penalty on the most disease-specific evidence.",
     "tags": [
-      "Rosai-Dorfman",
-      "cutaneous",
-      "rare",
-      "case series"
-    ]
-  },
-  {
-    "id": 172,
-    "query": "What are the dermatological manifestations of Kindler syndrome?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
-    "tags": [
-      "Kindler syndrome",
-      "genodermatosis",
-      "rare",
-      "case series"
-    ]
-  },
-  {
-    "id": 173,
-    "query": "How is porokeratosis of Mibelli distinguished from other porokeratosis variants?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
-    "tags": [
-      "porokeratosis",
-      "Mibelli",
-      "rare",
-      "case series"
-    ]
-  },
-  {
-    "id": 174,
-    "query": "What are the histopathological features of granuloma annulare in atypical presentations?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
-    "tags": [
-      "granuloma annulare",
-      "atypical",
-      "histopathology",
-      "case series"
-    ]
-  },
-  {
-    "id": 175,
-    "query": "How is NERDS versus STONEES criteria applied to distinguish infected from critically colonised wounds?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": false,
-    "rationale": "This is an adversarial query targeting rare or niche topics where relevant documents are predominantly case reports (L4/L5) or published in Unranked speciality journals. TWR penalises these with low OCEBM and tier weights, potentially ranking less topically relevant L1/Q1 documents higher. RRF's uniform treatment may produce better topical precision here.",
-    "tags": [
-      "wound infection",
-      "NERDS",
-      "STONEES",
-      "clinical practice",
-      "case series"
-    ]
-  },
-  {
-    "id": 176,
-    "query": "What do Q1 dermatology journal RCTs show about dupilumab safety in paediatric atopic dermatitis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
-    "tags": [
-      "dupilumab",
-      "paediatric",
-      "atopic dermatitis",
-      "RCT",
-      "Q1 journal"
-    ]
-  },
-  {
-    "id": 177,
-    "query": "What is the systematic review evidence on UV phototherapy for mycosis fungoides?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
-    "tags": [
-      "mycosis fungoides",
-      "phototherapy",
-      "systematic review",
-      "Q1 journal"
-    ]
-  },
-  {
-    "id": 178,
-    "query": "What do high-impact journals conclude about long-term biologic therapy and malignancy risk in psoriasis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
-    "tags": [
-      "biologic therapy",
-      "psoriasis",
-      "malignancy risk",
-      "meta-analysis",
-      "Q1 journal"
-    ]
-  },
-  {
-    "id": 179,
-    "query": "What is the RCT evidence from leading journals on abrocitinib for moderate-to-severe atopic dermatitis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
-    "tags": [
-      "abrocitinib",
-      "atopic dermatitis",
-      "RCT",
-      "Q1 journal"
-    ]
-  },
-  {
-    "id": 180,
-    "query": "What do systematic reviews in Q1 journals say about patch testing standardisation for allergic contact dermatitis?",
-    "domain": "Skin and Connective Tissue Diseases (Dermatology)",
-    "ablation_dimension": "adversarial",
-    "expected_twr_advantage": true,
-    "rationale": "Although framed adversarially, this query has both high-relevance AND high-trust documents available (L1/Q1). TWR correctly surfaces these while RRF's uniform weighting may rank low-trust topically similar documents equally.",
-    "tags": [
-      "patch testing",
-      "allergic contact dermatitis",
-      "standardisation",
-      "systematic review",
-      "Q1 journal"
+      "antibiotic duration",
+      "parotitis",
+      "retrospective unranked 2012"
     ]
   }
 ]

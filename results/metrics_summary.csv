@@ -1,721 +1,343 @@
 ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mrr,query,pipeline
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the survival benefit of adjuvant chemotherapy in stage III colorectal cancer?,TFR
-1.0,0.9061442547954487,0.9827351570828609,1.0,0.7653606369886217,0.9538915690056526,1,Q1,1.0,What is the survival benefit of adjuvant chemotherapy in stage III colorectal cancer?,Standard
-1.0,0.881567235613654,0.965053459699563,1.0,1.0,1.0,1,Q1,1.0,Does robotic surgery improve oncological outcomes versus laparoscopic surgery in rectal cancer?,TFR
-1.0,0.9061442547954487,0.9837997689204072,1.0,0.7039180890341347,0.8854598815714874,1,Q1,1.0,Does robotic surgery improve oncological outcomes versus laparoscopic surgery in rectal cancer?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the effect of deep inspiration breath hold on cardiac dose in breast cancer radiotherapy?,TFR
-1.0,0.9061442547954487,0.9787649386080641,1.0,0.46927872602275644,0.8529278650606567,1,Q1,1.0,What is the effect of deep inspiration breath hold on cardiac dose in breast cancer radiotherapy?,Standard
-1.0,0.9061442547954487,0.9837997689204072,1.0,1.0,1.0,1,Q1,1.0,How effective is immunotherapy compared to chemotherapy as first-line treatment in non-small cell lung cancer?,TFR
-1.0,0.9728773657707043,0.9776577707795634,1.0,1.0,1.0,1,Q1,1.0,How effective is immunotherapy compared to chemotherapy as first-line treatment in non-small cell lung cancer?,Standard
-1.0,1.0,0.9937253866135632,0.75,0.7967364322370126,0.922358100072226,1,Q2,1.0,What is the role of SGLT2 inhibitors in cancer patients with comorbid heart failure?,TFR
-1.0,0.881567235613654,0.9694438732466308,0.75,0.8753695140346327,0.9414729650137957,1,Q2,1.0,What is the role of SGLT2 inhibitors in cancer patients with comorbid heart failure?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Does cognitive impairment from chemotherapy (chemobrain) respond to cognitive rehabilitation interventions?,TFR
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Does cognitive impairment from chemotherapy (chemobrain) respond to cognitive rehabilitation interventions?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the oncological outcomes of cytoreductive surgery with HIPEC for peritoneal metastases?,TFR
-0.4,0.540783617806827,0.8014435115649634,0.0,0.23981246656813146,0.5338931479009518,4,Unranked,0.2,What are the oncological outcomes of cytoreductive surgery with HIPEC for peritoneal metastases?,Standard
-1.0,0.881567235613654,0.965053459699563,1.0,1.0,1.0,1,Q1,1.0,Is neoadjuvant chemotherapy superior to adjuvant chemotherapy in locally advanced gastric cancer?,TFR
-1.0,0.822350853420481,0.9424364204920446,1.0,0.734421189254329,0.9491229041606436,1,Q1,1.0,Is neoadjuvant chemotherapy superior to adjuvant chemotherapy in locally advanced gastric cancer?,Standard
-0.6,0.8122885095908974,0.9122105819346809,1.0,1.0,1.0,3,Q1,0.5,What is the comparative effectiveness of targeted therapies in ALK-positive non-small cell lung cancer?,TFR
-0.4,0.5829753504734028,0.8183939844202105,0.75,0.6480409554829326,0.8958905484015627,4,Q2,0.25,What is the comparative effectiveness of targeted therapies in ALK-positive non-small cell lung cancer?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9828920819566879,1,Q1,1.0,How does pembrolizumab compare to standard chemotherapy in recurrent cervical cancer?,TFR
-1.0,0.7521619565612206,0.9367648117228723,1.0,0.6993694869720469,0.9050405422041714,1,Q1,1.0,How does pembrolizumab compare to standard chemotherapy in recurrent cervical cancer?,Standard
-1.0,0.9015229356661434,0.9850683387815201,1.0,1.0,1.0,1,Q1,1.0,What are the clinical features of ALK-positive histiocytosis cutaneous presentation?,TFR
-0.5,0.6441221762464757,0.8468379361816895,1.0,1.0,1.0,4,Q1,0.0,What are the clinical features of ALK-positive histiocytosis cutaneous presentation?,Standard
-1.0,1.0,1.0,1.0,0.5803165958950902,0.8800117135832188,1,Q1,1.0,How is primary thyroid diffuse large B-cell lymphoma diagnosed and managed?,TFR
-0.4,0.6060917426645734,0.8359361577408738,0.6666666666666666,0.8212377705398237,0.8212377705398237,4,Q3,0.0,How is primary thyroid diffuse large B-cell lymphoma diagnosed and managed?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the treatment approach for B-cell acute lymphoblastic leukemia relapse after CAR-T therapy?,TFR
-0.4,0.4932193414426761,0.7838561215938867,0.0,0.2358992453928603,0.6434555737500047,4,Unranked,0.25,What is the treatment approach for B-cell acute lymphoblastic leukemia relapse after CAR-T therapy?,Standard
-1.0,0.8039504795849296,0.935141735150377,1.0,0.8427338364047597,0.9549236759008023,1,Q1,1.0,What are the presenting symptoms of extramammary Paget disease in unusual anatomical sites?,TFR
-0.4,0.8475306857428799,0.8755512066429257,0.5,0.6012610260559063,0.8302310645465178,4,Q3,0.5,What are the presenting symptoms of extramammary Paget disease in unusual anatomical sites?,Standard
-1.0,0.8175117966995774,0.9583842333394134,1.0,0.8427338364047597,0.9351945166118197,1,Q1,1.0,How is dermatopathic lymphadenitis distinguished from malignant lymphoma on histopathology?,TFR
-0.5,0.8549208510262275,0.8827371218369934,1.0,1.0,1.0,4,Q2,0.0,How is dermatopathic lymphadenitis distinguished from malignant lymphoma on histopathology?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the efficacy of eptinezumab for episodic migraine prevention?,TFR
-1.0,1.0,0.990319997298955,0.0,0.0,0.0,1,Unranked,0.0,What is the efficacy of eptinezumab for episodic migraine prevention?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Does post-stroke dysphagia respond to transcranial magnetic stimulation rehabilitation?,TFR
-1.0,0.9061442547954487,0.9837997689204072,0.0,0.38685280723454163,0.6509209298071326,1,Unranked,0.5,Does post-stroke dysphagia respond to transcranial magnetic stimulation rehabilitation?,Standard
-1.0,1.0,1.0,1.0,0.9213669182023797,0.9767020054138109,1,Q1,1.0,What is the comparative effectiveness of SGLT2 inhibitors in patients with neurological comorbidities and heart failure?,TFR
-1.0,0.881567235613654,0.965053459699563,0.75,0.8753695140346327,0.9414729650137957,1,Q2,1.0,What is the comparative effectiveness of SGLT2 inhibitors in patients with neurological comorbidities and heart failure?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How effective is high-intensity transcranial direct current stimulation for motor recovery after stroke?,TFR
-1.0,0.9061442547954487,0.9837997689204072,1.0,1.0,1.0,1,Q1,1.0,How effective is high-intensity transcranial direct current stimulation for motor recovery after stroke?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What antiplatelet regimen is optimal for secondary stroke prevention in elderly diabetic patients?,TFR
-1.0,1.0,1.0,0.0,0.0,0.0,1,Unranked,0.0,What antiplatelet regimen is optimal for secondary stroke prevention in elderly diabetic patients?,Standard
-0.8,0.9061442547954487,0.9572881727261123,1.0,1.0,1.0,2,Q1,1.0,Does levetiracetam reduce seizure frequency more effectively than valproate in focal epilepsy?,TFR
-0.6,0.8522844034992151,0.9151817758736149,0.0,0.0,0.48928691090637516,3,Unranked,0.25,Does levetiracetam reduce seizure frequency more effectively than valproate in focal epilepsy?,Standard
-1.0,0.8886293579004712,0.9786173100150812,1.0,1.0,1.0,1,Q1,1.0,What is the long-term safety and efficacy of natalizumab in relapsing-remitting multiple sclerosis?,TFR
-0.6,0.7901522935666144,0.8923456302307212,1.0,0.8130542710519492,0.9740805572316852,3,Q1,0.5,What is the long-term safety and efficacy of natalizumab in relapsing-remitting multiple sclerosis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How effective is deep brain stimulation for treatment-resistant Parkinson tremor?,TFR
-0.4,0.7184327643863461,0.8645650733107506,0.0,0.26582598262939583,0.585982057106826,4,Unranked,0.3333333333333333,How effective is deep brain stimulation for treatment-resistant Parkinson tremor?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the optimal blood pressure target for reducing recurrent stroke risk?,TFR
-1.0,1.0,1.0,0.0,0.2960819109658652,0.6797310500037655,1,Unranked,0.5,What is the optimal blood pressure target for reducing recurrent stroke risk?,Standard
-1.0,0.9061442547954487,0.9837997689204072,1.0,1.0,1.0,1,Q1,1.0,Does intensive glucose control reduce cognitive decline in patients with type 2 diabetes?,TFR
-1.0,0.881567235613654,0.962756918353804,1.0,1.0,1.0,1,Q1,1.0,Does intensive glucose control reduce cognitive decline in patients with type 2 diabetes?,Standard
-0.6,0.9064791332347981,0.922528099364227,1.0,1.0,1.0,3,Q2,0.0,What are the neurological manifestations of toxic optic neuropathy?,TFR
-1.0,1.0,1.0,0.0,0.0,0.0,4,Unranked,0.0,What are the neurological manifestations of toxic optic neuropathy?,Standard
-0.6,0.7657232736758686,0.884324854072546,1.0,0.9259795222585335,0.9777632910699183,3,Q1,0.3333333333333333,How is febrile infection-related epilepsy syndrome (FIRES) managed in paediatric patients?,TFR
-0.75,0.7970995862182803,0.9232127186711473,0.75,0.8130542710519492,0.9281213619340513,3,Q2,0.0,How is febrile infection-related epilepsy syndrome (FIRES) managed in paediatric patients?,Standard
-1.0,0.8322824782867448,0.9562707599036264,1.0,1.0,1.0,2,Q1,1.0,What are the diagnostic criteria for distinguishing autoimmune encephalitis from viral encephalitis?,TFR
-0.5,0.8821211986607034,0.9065280314885752,0.0,0.6309297535714575,0.6309297535714575,4,Unranked,0.5,What are the diagnostic criteria for distinguishing autoimmune encephalitis from viral encephalitis?,Standard
-1.0,1.0,0.9969472379578537,1.0,1.0,1.0,1,Q1,1.0,What are the clinical features of Charcot-Marie-Tooth disease presenting with cavus foot deformity?,TFR
-0.8,0.7643651380352696,0.8991659481969692,1.0,0.4985219438614687,0.8524028434920344,2,Q1,1.0,What are the clinical features of Charcot-Marie-Tooth disease presenting with cavus foot deformity?,Standard
-1.0,0.894999002123018,0.9811737169797187,1.0,1.0,1.0,1,Q1,1.0,How does paraneoplastic limbic encephalitis present in patients with occult malignancy?,TFR
-1.0,1.0,1.0,0.0,0.38685280723454163,0.6509209298071326,4,Unranked,0.0,How does paraneoplastic limbic encephalitis present in patients with occult malignancy?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,What is the efficacy of secukinumab for moderate-to-severe psoriasis in paediatric patients?,TFR
-1.0,1.0,1.0,0.0,0.24926097193073435,0.6031418715613001,1,Unranked,0.3333333333333333,What is the efficacy of secukinumab for moderate-to-severe psoriasis in paediatric patients?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,How effective is dupilumab compared to cyclosporine in adults with severe atopic dermatitis?,TFR
-1.0,1.0,1.0,1.0,0.9259795222585335,0.9795987853954985,1,Q1,1.0,How effective is dupilumab compared to cyclosporine in adults with severe atopic dermatitis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Does melatonin supplementation improve disease severity and sleep quality in atopic dermatitis?,TFR
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Does melatonin supplementation improve disease severity and sleep quality in atopic dermatitis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What treatments are most effective for androgenetic alopecia based on systematic review evidence?,TFR
-1.0,1.0,1.0,0.0,0.5307212739772434,0.7606395682357036,1,Unranked,0.5,What treatments are most effective for androgenetic alopecia based on systematic review evidence?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,What is the comparative efficacy of biologic therapies in moderate-to-severe plaque psoriasis?,TFR
-1.0,1.0,1.0,1.0,0.6913401592471553,0.9334903544011512,1,Q1,1.0,What is the comparative efficacy of biologic therapies in moderate-to-severe plaque psoriasis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How effective is JAK inhibitor therapy for vitiligo repigmentation?,TFR
-1.0,1.0,1.0,0.0,0.5307212739772434,0.7122630665145961,1,Unranked,0.5,How effective is JAK inhibitor therapy for vitiligo repigmentation?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the risk of cardiovascular events in patients on long-term systemic psoriasis therapy?,TFR
-1.0,0.9530721273977244,0.9921181676913065,0.0,0.5014780561385311,0.7161797710448459,1,Unranked,0.5,What is the risk of cardiovascular events in patients on long-term systemic psoriasis therapy?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Does phototherapy improve outcomes in atopic dermatitis when compared to topical corticosteroids?,TFR
-1.0,0.9061442547954487,0.9837997689204072,1.0,1.0,1.0,1,Q1,1.0,Does phototherapy improve outcomes in atopic dermatitis when compared to topical corticosteroids?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the efficacy of oral minoxidil for female pattern hair loss?,TFR
-1.0,1.0,1.0,1.0,0.7039180890341347,0.9047172294870751,1,Q1,1.0,What is the efficacy of oral minoxidil for female pattern hair loss?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How effective are IL-17 inhibitors versus IL-23 inhibitors for psoriatic arthritis?,TFR
-1.0,1.0,1.0,1.0,0.7039180890341347,0.9060254355346823,1,Q1,1.0,How effective are IL-17 inhibitors versus IL-23 inhibitors for psoriatic arthritis?,Standard
-1.0,0.9834114722632786,0.9862582029341153,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,What are the histopathological features of dermatopathic lymphadenitis?,TFR
-0.4,0.7797812109961533,0.8627744758340599,0.75,0.9376847570173164,0.9376847570173164,4,Q2,0.5,What are the histopathological features of dermatopathic lymphadenitis?,Standard
-1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,How is prediction modelling used to guide treatment response in psoriasis?,TFR
-1.0,0.8122885095908974,0.9656996788659544,0.0,0.3212043018970804,0.6135456967910718,1,Unranked,0.5,How is prediction modelling used to guide treatment response in psoriasis?,Standard
-1.0,0.9507614678330717,0.9913216793896025,1.0,1.0,0.9895471976490702,1,Q1,1.0,What are the clinical and pathological characteristics of primary cutaneous DLBCL?,TFR
-1.0,0.9323665287394267,0.9874668699701061,0.0,0.5248827916050821,0.688580266799452,2,Unranked,0.0,What are the clinical and pathological characteristics of primary cutaneous DLBCL?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How does immune checkpoint inhibitor therapy cause dermatological adverse events?,TFR
-1.0,0.822350853420481,0.9404191809201548,1.0,0.747782915792203,0.908809201971939,1,Q1,1.0,How does immune checkpoint inhibitor therapy cause dermatological adverse events?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the clinical features of demodicosis in immunocompromised patients?,TFR
-0.6,0.8192619084227396,0.8838625723151906,1.0,0.7653606369886217,0.9469024295259745,3,Q1,0.2,What are the clinical features of demodicosis in immunocompromised patients?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,What is the impact of person-centred care in end-of-life oncology management?,TFR
-0.4,0.7184327643863461,0.8634621282589674,0.0,0.5637932991212148,0.7084342592093371,4,Unranked,0.5,What is the impact of person-centred care in end-of-life oncology management?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How does colorectal cancer incidence differ between colon and rectal subsites?,TFR
-0.6,0.6346393630113784,0.8529228587323106,0.0,0.2358992453928603,0.6434555737500047,3,Unranked,0.25,How does colorectal cancer incidence differ between colon and rectal subsites?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the risk factors for oxaliplatin-induced peripheral neuropathy in colorectal cancer?,TFR
-0.4,0.7928459079051643,0.8609952080566441,0.75,0.9376847570173164,0.9484674290478176,4,Q2,0.5,What are the risk factors for oxaliplatin-induced peripheral neuropathy in colorectal cancer?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Does primary tumour resection improve survival in metastatic colorectal cancer?,TFR
-1.0,1.0,1.0,1.0,0.6787956981029196,0.8757412141153033,1,Q1,1.0,Does primary tumour resection improve survival in metastatic colorectal cancer?,Standard
-0.6,0.8122885095908974,0.9131283812380312,0.75,0.8826803184943108,0.9462480870845545,3,Q2,0.5,What is the prognostic value of microsatellite instability status in colorectal cancer?,TFR
-0.6,0.7021252503381448,0.8719282464778692,0.0,0.4196834041049098,0.6441805083117185,3,Unranked,0.2,What is the prognostic value of microsatellite instability status in colorectal cancer?,Standard
-1.0,1.0,1.0,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,How does physical activity affect cancer-related fatigue in oncology patients?,TFR
-1.0,1.0,1.0,0.0,0.3212043018970804,0.6135456967910718,1,Unranked,0.5,How does physical activity affect cancer-related fatigue in oncology patients?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the role of circulating tumour DNA in monitoring colorectal cancer recurrence?,TFR
-1.0,0.8039504795849296,0.9375250132181675,0.0,0.42827240252944054,0.6475284486999342,1,Unranked,0.0,What is the role of circulating tumour DNA in monitoring colorectal cancer recurrence?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the oncological outcomes of minimally invasive oesophagectomy versus open surgery?,TFR
-1.0,0.9061442547954487,0.9837997689204072,0.0,0.5637932991212148,0.7084342592093371,1,Unranked,0.5,What are the oncological outcomes of minimally invasive oesophagectomy versus open surgery?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How effective is stereotactic body radiotherapy for oligometastatic cancer?,TFR
-0.4,0.7184327643863461,0.8645650733107506,0.75,0.6231524298268358,0.8378541447331506,4,Q2,0.3333333333333333,How effective is stereotactic body radiotherapy for oligometastatic cancer?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the impact of tumour microenvironment on immunotherapy response in solid tumours?,TFR
-1.0,0.881567235613654,0.9694438732466308,1.0,0.8519590445170673,0.9386470997399791,1,Q1,1.0,What is the impact of tumour microenvironment on immunotherapy response in solid tumours?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are experimental treatment strategies for relapsed refractory multiple myeloma reported in regional oncology centres?,TFR
-0.6,0.8964229539525822,0.9109394584850815,0.0,0.23463936301137822,0.6182885020492784,3,Unranked,0.3333333333333333,What are experimental treatment strategies for relapsed refractory multiple myeloma reported in regional oncology centres?,Standard
-1.0,0.948211476976291,0.9899778455039017,1.0,1.0,0.9961581648476712,1,Q1,1.0,How is ALK-positive histiocytosis managed in resource-limited settings?,TFR
-1.0,1.0,1.0,1.0,0.9323665287394267,0.9880375430465429,4,Q1,0.0,How is ALK-positive histiocytosis managed in resource-limited settings?,Standard
-1.0,1.0,1.0,1.0,0.7653606369886217,0.9538915690056526,1,Q1,1.0,What supportive care interventions are used for nausea in outpatient chemotherapy in developing countries?,TFR
-1.0,0.9061442547954487,0.9837997689204072,0.0,0.3065735963827292,0.5437713091520254,1,Unranked,0.2,What supportive care interventions are used for nausea in outpatient chemotherapy in developing countries?,Standard
-0.6,0.8122885095908974,0.9122105819346809,1.0,1.0,1.0,3,Q1,0.5,What are local clinical practice patterns for colorectal cancer screening in lower-income populations?,TFR
-0.6,0.7657232736758686,0.8770855886097629,1.0,0.655788107456709,0.9117878044628555,3,Q1,0.2,What are local clinical practice patterns for colorectal cancer screening in lower-income populations?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How do community oncology practices manage febrile neutropenia outside tertiary centres?,TFR
-1.0,0.9836821611850634,0.9875022990263561,0.0,0.0,0.38685280723454163,2,Unranked,0.0,How do community oncology practices manage febrile neutropenia outside tertiary centres?,Standard
-1.0,1.0,1.0,1.0,0.7439681838663057,0.9156884162471874,1,Q1,1.0,What is the long-term cognitive outcome of childhood epilepsy treated with antiseizure medications?,TFR
-1.0,0.8175117966995774,0.9486961278283856,0.0,0.3393978490514598,0.5586538952219534,1,Unranked,0.0,What is the long-term cognitive outcome of childhood epilepsy treated with antiseizure medications?,Standard
-0.8,0.7901522935666144,0.9289343661788798,1.0,1.0,1.0,2,Q1,1.0,How does white matter hyperintensity burden predict dementia risk in older adults?,TFR
-0.6,0.8424985031845269,0.9070542210948719,0.0,0.2960819109658652,0.6797310500037655,3,Unranked,0.5,How does white matter hyperintensity burden predict dementia risk in older adults?,Standard
-1.0,0.8886293579004712,0.971665152089858,1.0,1.0,0.9961581648476712,1,Q1,1.0,What is the efficacy of ocrelizumab in primary progressive multiple sclerosis?,TFR
-0.6,0.7901522935666144,0.8923456302307212,0.75,0.8826803184943108,0.9462480870845545,3,Q2,0.5,What is the efficacy of ocrelizumab in primary progressive multiple sclerosis?,Standard
-1.0,0.9407836178068271,0.98561891868032,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,How does sleep-disordered breathing contribute to stroke risk?,TFR
-0.6,0.6530333282081644,0.8651086895633562,0.0,0.0,0.48928691090637516,3,Unranked,0.25,How does sleep-disordered breathing contribute to stroke risk?,Standard
-0.8,0.9015229356661434,0.9575915563659511,1.0,1.0,0.9961581648476712,2,Q1,1.0,What are the neuroimaging biomarkers for early Alzheimer disease diagnosis?,TFR
-0.8,0.894999002123018,0.9555001783072599,1.0,0.46927872602275644,0.8529278650606567,2,Q1,1.0,What are the neuroimaging biomarkers for early Alzheimer disease diagnosis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How effective is botulinum toxin for chronic migraine prophylaxis?,TFR
-1.0,1.0,1.0,0.0,0.0,0.38685280723454163,1,Unranked,0.0,How effective is botulinum toxin for chronic migraine prophylaxis?,Standard
-1.0,0.881567235613654,0.965053459699563,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,What is the impact of sleep quality on Parkinson disease motor symptom severity?,TFR
-1.0,0.7877114904091027,0.9521790303294917,0.0,0.25454838678859487,0.5171424081384397,1,Unranked,0.2,What is the impact of sleep quality on Parkinson disease motor symptom severity?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How does remote ischaemic conditioning reduce neurological injury after acute stroke?,TFR
-1.0,1.0,1.0,0.0,0.5307212739772434,0.7328286204777911,1,Unranked,0.5,How does remote ischaemic conditioning reduce neurological injury after acute stroke?,Standard
-1.0,0.9530721273977244,0.9950215722988736,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,What is the clinical utility of plasma phosphorylated tau for Alzheimer diagnosis?,TFR
-1.0,0.9530721273977244,0.9847316729557205,0.75,0.9376847570173164,0.9437258367000274,1,Q2,1.0,What is the clinical utility of plasma phosphorylated tau for Alzheimer diagnosis?,Standard
-1.0,0.881567235613654,0.965053459699563,1.0,1.0,1.0,1,Q1,1.0,How does diabetes management affect peripheral neuropathy progression?,TFR
-0.4,0.6621462276284508,0.8281921843135475,0.0,0.6934264036172708,0.6934264036172708,4,Unranked,0.3333333333333333,How does diabetes management affect peripheral neuropathy progression?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How is Cortexin used in post-COVID neurological rehabilitation in Eastern European practice?,TFR
-1.0,0.7877114904091027,0.9521790303294917,0.0,0.25454838678859487,0.5468897816825863,1,Unranked,0.25,How is Cortexin used in post-COVID neurological rehabilitation in Eastern European practice?,Standard
-1.0,1.0,1.0,1.0,0.7039180890341347,0.9050012317857397,1,Q1,1.0,What are the neurological complications documented in regional case series of COVID-19 patients?,TFR
-1.0,0.9404250500676289,0.9930869073816693,0.0,0.0,0.4306765580733931,1,Unranked,0.0,What are the neurological complications documented in regional case series of COVID-19 patients?,Standard
-0.8,0.9061442547954487,0.9572881727261123,1.0,1.0,1.0,2,Q1,1.0,What local treatment protocols are used for epilepsy in resource-limited neurology units?,TFR
-0.6,0.7901522935666144,0.8961099232601819,0.0,0.4796249331362629,0.626665273802673,3,Unranked,0.5,What local treatment protocols are used for epilepsy in resource-limited neurology units?,Standard
-1.0,1.0,1.0,0.0,0.0,0.38685280723454163,1,Unranked,0.0,How is toxic optic neuropathy from methanol poisoning managed in low-resource settings?,TFR
-1.0,1.0,1.0,0.0,0.0,0.38685280723454163,4,Unranked,0.0,How is toxic optic neuropathy from methanol poisoning managed in low-resource settings?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the clinical outcomes of stroke rehabilitation in community hospitals without specialised stroke units?,TFR
-1.0,1.0,0.9937253866135632,0.0,0.3065735963827292,0.5437713091520254,1,Unranked,0.3333333333333333,What are the clinical outcomes of stroke rehabilitation in community hospitals without specialised stroke units?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the impact of biologic therapy on quality of life in chronic plaque psoriasis?,TFR
-1.0,1.0,1.0,0.0,0.5,0.5,1,Unranked,0.3333333333333333,What is the impact of biologic therapy on quality of life in chronic plaque psoriasis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How does hair type classification guide personalised hair care recommendations?,TFR
-1.0,1.0,1.0,1.0,0.7653606369886217,0.9558295932317544,1,Q1,1.0,How does hair type classification guide personalised hair care recommendations?,Standard
-1.0,1.0,1.0,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,What is the association between psoriasis severity and cardiovascular mortality?,TFR
-1.0,1.0,1.0,0.75,0.5865984075284455,0.8425355745828979,1,Q2,1.0,What is the association between psoriasis severity and cardiovascular mortality?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How effective are disease-modifying antirheumatic drugs in treating psoriatic arthritis?,TFR
-1.0,0.9061442547954487,0.9837997689204072,0.0,0.0,0.0,1,Unranked,0.0,How effective are disease-modifying antirheumatic drugs in treating psoriatic arthritis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the role of the microbiome in atopic dermatitis pathogenesis?,TFR
-1.0,1.0,1.0,1.0,0.7653606369886217,0.9558295932317544,1,Q1,1.0,What is the role of the microbiome in atopic dermatitis pathogenesis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How does dupilumab affect long-term eczema control and skin barrier function?,TFR
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How does dupilumab affect long-term eczema control and skin barrier function?,Standard
-1.0,0.9061442547954487,0.9827351570828609,1.0,1.0,1.0,1,Q1,1.0,What are the dermatological manifestations of inflammatory bowel disease?,TFR
-0.6,0.8567135500246339,0.881302708166573,0.0,0.2901582979475451,0.5898534156356737,3,Unranked,0.3333333333333333,What are the dermatological manifestations of inflammatory bowel disease?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How effective is tofacitinib for moderate-to-severe alopecia areata?,TFR
-1.0,1.0,1.0,0.0,0.38685280723454163,0.6509209298071326,1,Unranked,0.5,How effective is tofacitinib for moderate-to-severe alopecia areata?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,What is the prevalence and impact of pruritus in chronic kidney disease patients?,TFR
-1.0,1.0,1.0,1.0,0.7653606369886217,0.9538915690056526,1,Q1,1.0,What is the prevalence and impact of pruritus in chronic kidney disease patients?,Standard
-1.0,0.881567235613654,0.965053459699563,1.0,1.0,1.0,1,Q1,1.0,How does UV phototherapy compare to excimer laser for localised vitiligo?,TFR
-1.0,0.881567235613654,0.965053459699563,0.0,0.5307212739772434,0.7606395682357036,1,Unranked,0.3333333333333333,How does UV phototherapy compare to excimer laser for localised vitiligo?,Standard
-1.0,1.0,0.9937253866135632,1.0,1.0,0.9958615666506498,1,Q1,1.0,What topical treatments for psoriasis are used in low-resource dermatology clinics?,TFR
-0.6,0.7928459079051643,0.9059532000022659,0.5,0.8739160282497203,0.8766184960749303,3,Q3,0.5,What topical treatments for psoriasis are used in low-resource dermatology clinics?,Standard
-0.6,0.8122885095908974,0.9122105819346809,0.75,0.8826803184943108,0.9462480870845545,3,Q2,0.5,How is alopecia areata managed in paediatric patients in regional dermatology units?,TFR
-1.0,0.8693003197232865,0.9596808175006349,0.0,0.27460425513113723,0.6240657363944289,1,Unranked,0.2,How is alopecia areata managed in paediatric patients in regional dermatology units?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are local prescribing patterns for atopic dermatitis in primary care settings?,TFR
-0.6,0.9120506341899668,0.9319396210399918,0.75,0.9373691761066303,0.9373691761066303,3,Q2,0.5,What are local prescribing patterns for atopic dermatitis in primary care settings?,Standard
-1.0,0.8693003197232865,0.9596808175006349,1.0,1.0,1.0,1,Q1,1.0,How is contact dermatitis patch testing performed in non-specialist settings?,TFR
-0.6,0.8808501001352579,0.9077948173570994,0.0,0.23981246656813146,0.5672074169568709,3,Unranked,0.0,How is contact dermatitis patch testing performed in non-specialist settings?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the outcomes of wound healing interventions documented in regional plastic surgery case series?,TFR
-1.0,1.0,1.0,0.0,0.5307212739772434,0.7328286204777911,1,Unranked,0.5,What are the outcomes of wound healing interventions documented in regional plastic surgery case series?,Standard
-1.0,0.881567235613654,0.965053459699563,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,What does the highest-quality evidence from top-tier oncology journals say about KRAS mutation impact on colorectal cancer prognosis?,TFR
-0.6,0.8122885095908974,0.9064414263452043,0.75,0.5090967735771897,0.7716907949270346,3,Q2,0.2,What does the highest-quality evidence from top-tier oncology journals say about KRAS mutation impact on colorectal cancer prognosis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the best evidence from Q1 journals on the efficacy of checkpoint inhibitors in mismatch repair deficient tumours?,TFR
-0.4,0.7184327643863461,0.8610243306448087,0.5,0.7507390280692655,0.8821127358009414,4,Q3,0.5,What is the best evidence from Q1 journals on the efficacy of checkpoint inhibitors in mismatch repair deficient tumours?,Standard
-1.0,0.9061442547954487,0.9837997689204072,1.0,1.0,1.0,1,Q1,1.0,What do recent systematic reviews in high-impact journals recommend for HER2-positive breast cancer adjuvant therapy?,TFR
-1.0,1.0,0.9969472379578537,0.0,0.38685280723454163,0.6240505200038379,1,Unranked,0.5,What do recent systematic reviews in high-impact journals recommend for HER2-positive breast cancer adjuvant therapy?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the combined effect of tumour burden and performance status on immunotherapy outcomes in lung cancer?,TFR
-0.6,0.7657232736758686,0.8770855886097629,0.0,0.2960819109658652,0.6797310500037655,3,Unranked,0.2,What is the combined effect of tumour burden and performance status on immunotherapy outcomes in lung cancer?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does high-quality evidence say about the optimal duration of adjuvant oxaliplatin therapy in stage III colon cancer?,TFR
-0.4,0.5674110093675563,0.8026198722634571,1.0,0.7653606369886218,0.9469024295259745,4,Q2,0.2,What does high-quality evidence say about the optimal duration of adjuvant oxaliplatin therapy in stage III colon cancer?,Standard
-0.6,0.8122885095908974,0.9122105819346809,1.0,1.0,1.0,3,Q1,0.5,What is the best evidence for prophylactic cranial irradiation in limited-stage small cell lung cancer?,TFR
-0.6,0.6666666666666667,0.8594750797273849,1.0,0.6993694869720469,0.9283395254626584,3,Q1,0.25,What is the best evidence for prophylactic cranial irradiation in limited-stage small cell lung cancer?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How do Q1-published RCTs compare maintenance PARP inhibitors in BRCA-mutated ovarian cancer?,TFR
-0.6,0.8122885095908974,0.9064414263452043,0.0,0.2960819109658652,0.6797310500037655,3,Unranked,0.5,How do Q1-published RCTs compare maintenance PARP inhibitors in BRCA-mutated ovarian cancer?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does the highest-tier evidence show about laparoscopic versus open surgery for hepatocellular carcinoma?,TFR
-1.0,0.822350853420481,0.9493267393132435,1.0,0.617319681505689,0.909100841186754,1,Q1,1.0,What does the highest-tier evidence show about laparoscopic versus open surgery for hepatocellular carcinoma?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the systematic review evidence from high-impact journals on CAR-T therapy in relapsed lymphoma?,TFR
-1.0,0.9061442547954487,0.9891004168398627,1.0,0.6787956981029196,0.8757412141153033,1,Q1,1.0,What is the systematic review evidence from high-impact journals on CAR-T therapy in relapsed lymphoma?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do large RCTs published in top oncology journals show about bevacizumab in metastatic colorectal cancer?,TFR
-1.0,0.881567235613654,0.965053459699563,1.0,0.6131471927654584,0.8503449055347546,1,Q1,1.0,What do large RCTs published in top oncology journals show about bevacizumab in metastatic colorectal cancer?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the evidence on novel targeted therapies for rare sarcoma subtypes reported in speciality journals?,TFR
-1.0,0.822350853420481,0.9493267393132435,1.0,0.7039180890341347,0.900536595186988,1,Q1,1.0,What is the evidence on novel targeted therapies for rare sarcoma subtypes reported in speciality journals?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How do observational studies in mid-tier journals characterise long-term survivorship outcomes in testicular cancer?,TFR
-1.0,0.8122885095908974,0.9679756843204582,1.0,0.7039180890341347,0.9047172294870751,1,Q1,1.0,How do observational studies in mid-tier journals characterise long-term survivorship outcomes in testicular cancer?,Standard
-1.0,0.9061442547954487,0.9837997689204072,1.0,1.0,1.0,1,Q1,1.0,What does mixed-level evidence from varied journal tiers suggest about neoadjuvant immunotherapy in resectable NSCLC?,TFR
-1.0,0.9061442547954487,0.9837997689204072,1.0,1.0,0.9828920819566879,1,Q1,1.0,What does mixed-level evidence from varied journal tiers suggest about neoadjuvant immunotherapy in resectable NSCLC?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How do case series in speciality journals document outcomes of isolated limb perfusion for melanoma?,TFR
-1.0,0.9061442547954487,0.9891004168398627,0.0,0.26582598262939583,0.5976315487360696,1,Unranked,0.25,How do case series in speciality journals document outcomes of isolated limb perfusion for melanoma?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does scattered evidence across journal tiers show about cannabis use in cancer pain management?,TFR
-1.0,1.0,1.0,0.0,0.0,0.0,1,Unranked,0.0,What does scattered evidence across journal tiers show about cannabis use in cancer pain management?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the highest-quality evidence from top neurology journals on stroke thrombolysis time windows?,TFR
-0.6,0.8122885095908974,0.9122105819346809,0.0,0.38685280723454163,0.6240505200038379,3,Unranked,0.5,What is the highest-quality evidence from top neurology journals on stroke thrombolysis time windows?,Standard
-1.0,0.881567235613654,0.962756918353804,1.0,1.0,0.9961581648476712,1,Q1,1.0,What do Q1-published meta-analyses recommend for anticoagulation in atrial fibrillation with prior stroke?,TFR
-1.0,0.7877114904091027,0.9521790303294917,1.0,1.0,1.0,1,Q1,1.0,What do Q1-published meta-analyses recommend for anticoagulation in atrial fibrillation with prior stroke?,Standard
-1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,What is the best evidence from high-impact journals on amyloid PET as an Alzheimer diagnostic biomarker?,TFR
-0.8,0.8886293579004712,0.9446486569917444,0.0,0.0,0.48470281228817413,2,Unranked,0.25,What is the best evidence from high-impact journals on amyloid PET as an Alzheimer diagnostic biomarker?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How do top-tier journal RCTs characterise the benefit of early aggressive MS treatment?,TFR
-1.0,1.0,1.0,1.0,0.7039180890341347,0.9047172294870751,1,Q1,1.0,How do top-tier journal RCTs characterise the benefit of early aggressive MS treatment?,Standard
-1.0,1.0,0.9969472379578537,1.0,1.0,1.0,1,Q1,1.0,What is the systematic review evidence on neuroprotective strategies after traumatic brain injury?,TFR
-1.0,0.9530721273977244,0.9921181676913065,1.0,1.0,1.0,1,Q1,1.0,What is the systematic review evidence on neuroprotective strategies after traumatic brain injury?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do large Q1-published RCTs show about blood pressure lowering targets in acute haemorrhagic stroke?,TFR
-1.0,0.777258715800942,0.9487085861109854,0.0,0.38685280723454163,0.6240505200038379,1,Unranked,0.2,What do large Q1-published RCTs show about blood pressure lowering targets in acute haemorrhagic stroke?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,What is the highest-tier evidence on mechanical thrombectomy versus thrombolysis in large vessel occlusion stroke?,TFR
-1.0,1.0,1.0,0.0,0.3145323271904804,0.6684132268210462,1,Unranked,0.5,What is the highest-tier evidence on mechanical thrombectomy versus thrombolysis in large vessel occlusion stroke?,Standard
-1.0,1.0,1.0,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,What do high-impact journal systematic reviews conclude about prophylactic antiepileptics after craniotomy?,TFR
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q2,1.0,What do high-impact journal systematic reviews conclude about prophylactic antiepileptics after craniotomy?,Standard
-1.0,0.9061442547954487,0.9837997689204072,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,What is the meta-analytic evidence from Q1 journals on exercise therapy for Parkinson disease motor function?,TFR
-1.0,1.0,0.9937253866135632,0.0,0.24926097193073435,0.6031418715613001,1,Unranked,0.3333333333333333,What is the meta-analytic evidence from Q1 journals on exercise therapy for Parkinson disease motor function?,Standard
-1.0,0.9378678900673995,0.981818905285066,1.0,1.0,0.9961581648476712,1,Q1,1.0,What do RCTs in leading neurology journals show about cognitive training in mild cognitive impairment?,TFR
-0.8,0.8886293579004712,0.9478387047082621,1.0,0.7653606369886217,0.9583562056044043,2,Q1,1.0,What do RCTs in leading neurology journals show about cognitive training in mild cognitive impairment?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does mixed evidence across journal tiers suggest about hyperbaric oxygen for post-concussion syndrome?,TFR
-1.0,0.9407836178068271,0.978733746611867,0.0,0.6309297535714575,0.6309297535714575,1,Unranked,0.5,What does mixed evidence across journal tiers suggest about hyperbaric oxygen for post-concussion syndrome?,Standard
-0.8,0.9061442547954487,0.9572881727261123,1.0,1.0,1.0,2,Q1,1.0,How do observational studies in speciality journals describe outcomes of vagus nerve stimulation for refractory epilepsy?,TFR
-1.0,0.8393908257335428,0.971254581218816,0.0,0.6934264036172708,0.6934264036172708,1,Unranked,0.5,How do observational studies in speciality journals describe outcomes of vagus nerve stimulation for refractory epilepsy?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the scattered evidence on acupuncture for migraine prevention across varied publication quality?,TFR
-1.0,1.0,1.0,0.0,0.0,0.0,1,Unranked,0.0,What is the scattered evidence on acupuncture for migraine prevention across varied publication quality?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9828920819566879,1,Q1,1.0,How do mid-tier journals characterise stem cell therapy outcomes in amyotrophic lateral sclerosis?,TFR
-1.0,0.9530721273977244,0.9947286805256194,0.0,0.38685280723454163,0.6509209298071326,1,Unranked,0.5,How do mid-tier journals characterise stem cell therapy outcomes in amyotrophic lateral sclerosis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does heterogeneous evidence from varied sources show about music therapy for dementia?,TFR
-1.0,1.0,1.0,1.0,0.7039180890341347,0.9060254355346823,1,Q1,1.0,What does heterogeneous evidence from varied sources show about music therapy for dementia?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9866060902037453,1,Q1,1.0,What does the best RCT evidence from Q1 dermatology journals show about tralokinumab for atopic dermatitis?,TFR
-1.0,1.0,0.9937253866135632,0.0,0.38685280723454163,0.6240505200038379,1,Unranked,0.5,What does the best RCT evidence from Q1 dermatology journals show about tralokinumab for atopic dermatitis?,Standard
-1.0,1.0,1.0,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,What is the meta-analytic evidence from high-impact journals on biologic switching in psoriasis non-responders?,TFR
-1.0,1.0,1.0,0.75,0.688423785086582,0.9031254999928966,1,Q2,1.0,What is the meta-analytic evidence from high-impact journals on biologic switching in psoriasis non-responders?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,What do top-tier systematic reviews conclude about long-term remission with dupilumab in atopic dermatitis?,TFR
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,What do top-tier systematic reviews conclude about long-term remission with dupilumab in atopic dermatitis?,Standard
-1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,What is the highest-quality evidence on upadacitinib efficacy and safety in moderate-to-severe atopic dermatitis?,TFR
-1.0,1.0,1.0,0.0,0.6309297535714575,0.6309297535714575,1,Unranked,0.5,What is the highest-quality evidence on upadacitinib efficacy and safety in moderate-to-severe atopic dermatitis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do Q1-published RCTs show about the comparative efficacy of IL-17 versus IL-23 inhibitors for psoriasis?,TFR
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9750789824551586,1,Q1,1.0,What do Q1-published RCTs show about the comparative efficacy of IL-17 versus IL-23 inhibitors for psoriasis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the systematic review evidence on risk of serious infection with JAK inhibitors in dermatological conditions?,TFR
-1.0,1.0,0.990319997298955,0.0,0.6309297535714575,0.6309297535714575,1,Unranked,0.5,What is the systematic review evidence on risk of serious infection with JAK inhibitors in dermatological conditions?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does high-tier evidence show about risk stratification and screening in patients with chronic skin inflammation?,TFR
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does high-tier evidence show about risk stratification and screening in patients with chronic skin inflammation?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the best evidence from Q1 journals on topical ruxolitinib for vitiligo repigmentation?,TFR
-1.0,0.9061442547954487,0.9837997689204072,0.0,0.5014780561385311,0.6943326695893609,1,Unranked,0.5,What is the best evidence from Q1 journals on topical ruxolitinib for vitiligo repigmentation?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do large systematic reviews in leading journals conclude about phototherapy frequency and atopic dermatitis outcomes?,TFR
-1.0,0.9061442547954487,0.9837997689204072,0.0,0.19004688335796713,0.4841275646907874,1,Unranked,0.2,What do large systematic reviews in leading journals conclude about phototherapy frequency and atopic dermatitis outcomes?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the RCT evidence from high-impact journals on the role of barrier repair therapy in eczema prevention?,TFR
-1.0,1.0,1.0,0.0,0.3065735963827292,0.5437713091520254,1,Unranked,0.3333333333333333,What is the RCT evidence from high-impact journals on the role of barrier repair therapy in eczema prevention?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does heterogeneous evidence from varied journal tiers show about herbal remedies for psoriasis?,TFR
-1.0,1.0,1.0,0.0,0.0,0.5012658353418871,1,Unranked,0.25,What does heterogeneous evidence from varied journal tiers show about herbal remedies for psoriasis?,Standard
-1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,How do observational studies in speciality journals document outcomes of cryotherapy for keloid scars?,TFR
-1.0,1.0,1.0,1.0,0.9259795222585335,0.9817558680267063,1,Q1,1.0,How do observational studies in speciality journals document outcomes of cryotherapy for keloid scars?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What scattered evidence exists on platelet-rich plasma for androgenetic alopecia across varied publication quality?,TFR
-1.0,1.0,1.0,1.0,0.7039180890341347,0.9047172294870751,1,Q1,1.0,What scattered evidence exists on platelet-rich plasma for androgenetic alopecia across varied publication quality?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How do mid-tier journals characterise photobiomodulation outcomes for hair regrowth?,TFR
-1.0,1.0,1.0,0.0,0.5307212739772434,0.7328286204777911,1,Unranked,0.5,How do mid-tier journals characterise photobiomodulation outcomes for hair regrowth?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does mixed-level evidence suggest about dietary interventions for rosacea management?,TFR
-1.0,1.0,1.0,0.0,0.5,0.5,1,Unranked,0.3333333333333333,What does mixed-level evidence suggest about dietary interventions for rosacea management?,Standard
-1.0,0.9854904886373149,0.9881933096080001,1.0,0.6993694869720469,0.925248016143815,1,Q1,1.0,What are the histological characteristics of primary cutaneous follicle centre lymphoma?,TFR
-1.0,0.9810048227765072,0.9846468002590378,0.0,0.3065735963827292,0.5437713091520254,2,Unranked,0.0,What are the histological characteristics of primary cutaneous follicle centre lymphoma?,Standard
-1.0,0.7643651380352696,0.9344084214351712,1.0,0.9836821611850634,0.9836821611850634,1,Q1,1.0,How is primary effusion lymphoma managed in HIV-positive patients?,TFR
-0.5,0.618306950342076,0.837857823967329,1.0,0.7039180890341347,0.8854598815714874,4,Q2,0.0,How is primary effusion lymphoma managed in HIV-positive patients?,Standard
-1.0,0.948211476976291,0.9903461190162741,1.0,0.867319681505689,0.9714475565309197,1,Q1,1.0,What are the clinical features of malignant perivascular epithelioid cell tumour (PEComa)?,TFR
-0.6666666666666666,0.8303010754742701,0.9243710230888972,1.0,1.0,0.9923015418195359,4,Q2,0.0,What are the clinical features of malignant perivascular epithelioid cell tumour (PEComa)?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How is adenocarcinoma of the rete testis diagnosed and treated?,TFR
-1.0,0.9777813616305049,0.9826072798331944,0.0,0.13249650743056282,0.5663050407546991,3,Unranked,0.0,How is adenocarcinoma of the rete testis diagnosed and treated?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the surgical management strategies for retroperitoneal paraganglioma?,TFR
-0.4,0.7184327643863461,0.8553941791286006,0.5,0.8130542710519492,0.8796494360170668,4,Q3,0.5,What are the surgical management strategies for retroperitoneal paraganglioma?,Standard
-1.0,0.948211476976291,0.9903461190162741,0.75,0.7970995862182803,0.9226271059191403,1,Q2,1.0,What are the dermatological presentations of metastatic Merkel cell carcinoma?,TFR
-0.4,0.7617002002705158,0.8391332622752026,0.5,0.5077770214082039,0.7733172226313926,4,Q3,0.3333333333333333,What are the dermatological presentations of metastatic Merkel cell carcinoma?,Standard
-1.0,0.9061442547954487,0.9827351570828609,1.0,1.0,1.0,1,Q1,1.0,How is leptomeningeal carcinomatosis from breast cancer managed palliatively?,TFR
-1.0,0.9570940108490578,0.9635959305875572,1.0,0.8403030283801005,0.9682314150231827,1,Q1,1.0,How is leptomeningeal carcinomatosis from breast cancer managed palliatively?,Standard
-1.0,0.881567235613654,0.965053459699563,1.0,0.7970995862182803,0.9718684898966369,1,Q1,1.0,What are the ocular metastasis presentations in uveal melanoma?,TFR
-1.0,0.9075275256323474,0.9590677878321051,0.0,0.0,0.5012658353418872,1,Unranked,0.0,What are the ocular metastasis presentations in uveal melanoma?,Standard
-1.0,0.9248247830402744,0.976662391986178,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,How is gastrointestinal stromal tumour with rare exon 9 mutation treated?,TFR
-0.4,0.539968744428022,0.7951219127453566,1.0,0.7858637987352798,0.9158724568523618,4,Q2,0.0,How is gastrointestinal stromal tumour with rare exon 9 mutation treated?,Standard
-1.0,1.0,1.0,1.0,0.9213669182023797,0.9808851350584301,1,Q1,1.0,What are the clinical outcomes of childhood adrenocortical carcinoma?,TFR
-1.0,0.8175117966995774,0.9486961278283856,0.0,0.5265657011759873,0.701334604854344,1,Unranked,0.0,What are the clinical outcomes of childhood adrenocortical carcinoma?,Standard
-0.6,0.7280201836340137,0.8799377214756621,1.0,0.9259795222585335,0.9786028494968771,3,Q1,0.3333333333333333,What do expert guidelines from Q1 journals say about hereditary colorectal cancer surveillance?,TFR
-0.6,0.7617002002705158,0.8950108561085449,1.0,0.9259795222585335,0.9617402390004923,3,Q1,0.0,What do expert guidelines from Q1 journals say about hereditary colorectal cancer surveillance?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the evidence on prophylactic mastectomy in BRCA1/2 carriers from high-impact journals?,TFR
-1.0,0.8693003197232865,0.9658282195307055,0.0,0.38009376671593426,0.5271341073823443,1,Unranked,0.0,What is the evidence on prophylactic mastectomy in BRCA1/2 carriers from high-impact journals?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do top oncology journals conclude about Lynch syndrome screening protocols?,TFR
-0.4,0.6425503004057738,0.8241203556383806,1.0,0.9413401592471554,0.9929375288501646,4,Q1,0.0,What do top oncology journals conclude about Lynch syndrome screening protocols?,Standard
-0.8,0.9061442547954487,0.9572881727261123,0.75,0.8826803184943108,0.9462480870845545,2,Q2,1.0,What is the evidence from leading journals on tumour treating fields for glioblastoma?,TFR
-0.8,0.9061442547954487,0.9567089333240778,0.75,0.5803165958950902,0.8302453500080558,2,Q2,1.0,What is the evidence from leading journals on tumour treating fields for glioblastoma?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do systematic reviews in high-impact journals say about fertility preservation in young cancer patients?,TFR
-1.0,1.0,1.0,1.0,0.747782915792203,0.8924238758803253,1,Q1,1.0,What do systematic reviews in high-impact journals say about fertility preservation in young cancer patients?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9900808841271455,3,Q1,0.0,What are the neurological features of superficial siderosis of the central nervous system?,TFR
-0.6666666666666666,0.9049765583210164,0.9275038527696858,0.0,0.5,0.5,4,Unranked,0.0,What are the neurological features of superficial siderosis of the central nervous system?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How is anti-NMDA receptor encephalitis managed in pregnant patients?,TFR
-0.8,0.7346393630113782,0.8915911822175664,1.0,0.9413401592471554,0.9750789824551586,2,Q1,1.0,How is anti-NMDA receptor encephalitis managed in pregnant patients?,Standard
-1.0,1.0,1.0,1.0,0.9213669182023797,0.9767020054138109,1,Q1,1.0,What are the clinical manifestations of Susac syndrome in young women?,TFR
-0.4,0.7928459079051643,0.8609952080566441,0.0,0.5442761686266455,0.7190450723050023,4,Unranked,0.5,What are the clinical manifestations of Susac syndrome in young women?,Standard
-1.0,0.8693003197232865,0.9658282195307055,1.0,0.9413401592471554,0.9750789824551586,1,Q1,1.0,How does primary angiitis of the central nervous system present and respond to treatment?,TFR
-0.4,0.7797812109961533,0.8581749323821987,0.0,0.6309297535714575,0.6309297535714575,4,Unranked,0.5,How does primary angiitis of the central nervous system present and respond to treatment?,Standard
-0.6,0.8522844034992151,0.9151817758736149,0.75,0.8826803184943108,0.9462480870845545,3,Q2,0.5,What are the neurological complications of cat scratch disease in paediatric patients?,TFR
-0.6,0.5967963874900939,0.8403740258136881,0.75,0.6231524298268358,0.8160070432776656,3,Q2,0.2,What are the neurological complications of cat scratch disease in paediatric patients?,Standard
-0.8,0.9300809618991231,0.9391535880869011,1.0,1.0,1.0,2,Q1,1.0,How is Rasmussen encephalitis diagnosed and managed surgically?,TFR
-0.5,0.6908465248289621,0.8511257894470712,0.0,0.5307212739772434,0.7606395682357036,4,Unranked,0.25,How is Rasmussen encephalitis diagnosed and managed surgically?,Standard
-0.8,0.9612472558382992,0.9681546484605577,1.0,0.7039180890341347,0.900536595186988,2,Q1,1.0,What are the clinical features of neurosarcoidosis presenting as cranial neuropathy?,TFR
-0.4,0.8475306857428799,0.8755512066429257,0.0,0.0,0.0,4,Unranked,0.0,What are the clinical features of neurosarcoidosis presenting as cranial neuropathy?,Standard
-1.0,0.8136036702021979,0.9378923659382071,1.0,1.0,1.0,1,Q1,1.0,How is POEMS syndrome distinguished from chronic inflammatory demyelinating polyneuropathy?,TFR
-0.5,0.8403030283801005,0.8733683229467235,1.0,1.0,1.0,4,Q1,0.0,How is POEMS syndrome distinguished from chronic inflammatory demyelinating polyneuropathy?,Standard
-0.6,0.7783618930472329,0.8973216487715057,0.75,0.8826803184943108,0.9241404330009038,3,Q2,0.5,What are the neurological manifestations of Fabry disease?,TFR
-0.6,0.8567135500246339,0.881302708166573,0.75,0.5090967735771897,0.7716907949270346,3,Q2,0.0,What are the neurological manifestations of Fabry disease?,Standard
-1.0,1.0,1.0,0.0,0.5014780561385311,0.7414308714451503,1,Unranked,0.5,How is FIRES (febrile infection-related epilepsy syndrome) treated in adults?,TFR
-1.0,0.9834114722632786,0.9862582029341153,0.0,0.6199062332840657,0.6199062332840657,1,Unranked,0.0,How is FIRES (febrile infection-related epilepsy syndrome) treated in adults?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do Q1 neurology journal RCTs show about the safety of anticoagulation in cerebral venous thrombosis?,TFR
-1.0,0.9871064222343278,0.9888945715075279,1.0,0.7974779478881874,0.9119629671334931,1,Q1,1.0,What do Q1 neurology journal RCTs show about the safety of anticoagulation in cerebral venous thrombosis?,Standard
-1.0,1.0,0.990319997298955,1.0,1.0,1.0,1,Q1,1.0,What is the systematic review evidence on genetic testing utility in hereditary spastic paraplegia?,TFR
-0.4,0.7928459079051643,0.8609952080566441,1.0,0.6131471927654584,0.8772153153380493,4,Q1,0.0,What is the systematic review evidence on genetic testing utility in hereditary spastic paraplegia?,Standard
-1.0,1.0,1.0,0.75,0.8826803184943108,0.9481316041715843,1,Q2,1.0,What do high-impact journal meta-analyses conclude about disease-modifying therapy in clinically isolated syndrome?,TFR
-1.0,0.881567235613654,0.962756918353804,0.75,0.8826803184943108,0.9419989793959098,1,Q2,1.0,What do high-impact journal meta-analyses conclude about disease-modifying therapy in clinically isolated syndrome?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the Q1-journal evidence on intrathecal baclofen for spasticity management?,TFR
-1.0,0.9061442547954487,0.9837997689204072,1.0,0.7039180890341347,0.9060254355346823,1,Q1,1.0,What is the Q1-journal evidence on intrathecal baclofen for spasticity management?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do systematic reviews in leading journals conclude about neonatal seizure management with phenobarbital?,TFR
-1.0,1.0,1.0,1.0,0.46927872602275644,0.8529278650606567,1,Q1,1.0,What do systematic reviews in leading journals conclude about neonatal seizure management with phenobarbital?,Standard
-1.0,0.9061442547954487,0.9827351570828609,1.0,1.0,1.0,1,Q1,1.0,What are the clinical features of eosinophilic fasciitis and how is it differentiated from scleroderma?,TFR
-0.4,0.8361488203385125,0.8609786224313992,0.0,0.4796249331362629,0.626665273802673,4,Unranked,0.5,What are the clinical features of eosinophilic fasciitis and how is it differentiated from scleroderma?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How is acquired reactive perforating collagenosis managed in diabetic patients?,TFR
-1.0,0.822350853420481,0.9493267393132435,1.0,0.9197207891481876,0.9197207891481876,1,Q1,1.0,How is acquired reactive perforating collagenosis managed in diabetic patients?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the dermatological features of adult-onset Still disease?,TFR
-0.6,0.7410573848814554,0.8813572824205123,0.0,0.5,0.5,3,Unranked,0.0,What are the dermatological features of adult-onset Still disease?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How is sneddon-wilkinson disease (subcorneal pustular dermatosis) treated?,TFR
-1.0,0.7877114904091027,0.9521790303294917,0.0,0.38685280723454163,0.6240505200038379,1,Unranked,0.2,How is sneddon-wilkinson disease (subcorneal pustular dermatosis) treated?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the clinical features of erythema gyratum repens as a paraneoplastic syndrome?,TFR
-0.4,0.4655404718645951,0.7738399150175407,0.0,0.38685280723454163,0.6509209298071326,4,Unranked,0.25,What are the clinical features of erythema gyratum repens as a paraneoplastic syndrome?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How is cutaneous Rosai-Dorfman disease managed when systemic involvement is absent?,TFR
-0.6,0.6269500333784194,0.8551985158358872,0.0,0.36121211352040195,0.6363230818084125,3,Unranked,0.25,How is cutaneous Rosai-Dorfman disease managed when systemic involvement is absent?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,3,Q1,0.0,What are the dermatological manifestations of Kindler syndrome?,TFR
-1.0,0.8230929086742522,0.9609608467173294,0.0,0.5,0.5,3,Unranked,0.0,What are the dermatological manifestations of Kindler syndrome?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How is porokeratosis of Mibelli distinguished from other porokeratosis variants?,TFR
-0.6,0.8524756842575958,0.9194778445503162,0.0,0.5307212739772434,0.7480103257048578,3,Unranked,0.5,How is porokeratosis of Mibelli distinguished from other porokeratosis variants?,Standard
-1.0,0.9248247830402744,0.9800302920755085,1.0,0.9213669182023797,0.9767020054138109,1,Q1,1.0,What are the histopathological features of granuloma annulare in atypical presentations?,TFR
-0.4,0.58688267143572,0.7932495804570024,0.75,0.688423785086582,0.8977442605083195,4,Q2,0.2,What are the histopathological features of granuloma annulare in atypical presentations?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How is NERDS versus STONEES criteria applied to distinguish infected from critically colonised wounds?,TFR
-1.0,1.0,1.0,0.0,0.5307212739772434,0.7606395682357036,1,Unranked,0.5,How is NERDS versus STONEES criteria applied to distinguish infected from critically colonised wounds?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,What do Q1 dermatology journal RCTs show about dupilumab safety in paediatric atopic dermatitis?,TFR
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9929375288501646,1,Q1,1.0,What do Q1 dermatology journal RCTs show about dupilumab safety in paediatric atopic dermatitis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the systematic review evidence on UV phototherapy for mycosis fungoides?,TFR
-0.8,0.8122885095908974,0.9412303947687283,0.0,0.66967181649423,0.66967181649423,2,Unranked,0.5,What is the systematic review evidence on UV phototherapy for mycosis fungoides?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do high-impact journals conclude about long-term biologic therapy and malignancy risk in psoriasis?,TFR
-1.0,1.0,1.0,1.0,0.747782915792203,0.8924238758803253,1,Q1,1.0,What do high-impact journals conclude about long-term biologic therapy and malignancy risk in psoriasis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the RCT evidence from leading journals on abrocitinib for moderate-to-severe atopic dermatitis?,TFR
-1.0,1.0,1.0,0.0,0.0,0.43067655807339306,1,Unranked,0.25,What is the RCT evidence from leading journals on abrocitinib for moderate-to-severe atopic dermatitis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do systematic reviews in Q1 journals say about patch testing standardisation for allergic contact dermatitis?,TFR
-0.6,0.6621462276284508,0.8656340175029008,0.0,0.6828207893180354,0.6828207893180354,3,Unranked,0.0,What do systematic reviews in Q1 journals say about patch testing standardisation for allergic contact dermatitis?,Standard
-1.0,0.8812512473462275,0.9738316339603253,0.0,0.43050113595600337,0.6757709465491791,1,Unranked,0.25,What is the survival benefit of adjuvant chemotherapy in stage III colorectal cancer?,TFR
-0.25,0.7858414863067842,0.810123474781334,1.0,0.8753695140346327,0.9836006154826127,5,Q1,0.5,What is the survival benefit of adjuvant chemotherapy in stage III colorectal cancer?,Standard
-0.75,0.9422677283143697,0.9488136009556424,0.75,0.8826803184943108,0.9441390272147961,3,Q2,0.5,Does robotic surgery improve oncological outcomes versus laparoscopic surgery in rectal cancer?,TFR
-1.0,1.0,1.0,1.0,0.8590516752196962,0.9630155959131647,5,Q1,0.0,Does robotic surgery improve oncological outcomes versus laparoscopic surgery in rectal cancer?,Standard
-1.0,0.9407836178068271,0.9829976023759306,1.0,0.7653606369886217,0.9558295932317544,1,Q1,1.0,What is the effect of deep inspiration breath hold on cardiac dose in breast cancer radiotherapy?,TFR
-1.0,0.8122885095908974,0.9619764516326514,1.0,0.7484237174301172,0.9122156773556708,1,Q1,1.0,What is the effect of deep inspiration breath hold on cardiac dose in breast cancer radiotherapy?,Standard
-1.0,0.881567235613654,0.965053459699563,1.0,1.0,1.0,1,Q1,1.0,How effective is immunotherapy compared to chemotherapy as first-line treatment in non-small cell lung cancer?,TFR
-1.0,0.881567235613654,0.9671788311840074,0.0,0.5307212739772434,0.7122630665145961,1,Unranked,0.3333333333333333,How effective is immunotherapy compared to chemotherapy as first-line treatment in non-small cell lung cancer?,Standard
-0.8,0.9507614678330717,0.9616503052427172,1.0,1.0,0.9961581648476712,2,Q1,1.0,What is the role of SGLT2 inhibitors in cancer patients with comorbid heart failure?,TFR
-0.4,0.589381114730088,0.8097370184921985,0.0,0.2960819109658652,0.6797310500037655,4,Unranked,0.5,What is the role of SGLT2 inhibitors in cancer patients with comorbid heart failure?,Standard
-1.0,1.0,1.0,1.0,0.8519590445170673,0.9557034395662896,1,Q1,1.0,Does cognitive impairment from chemotherapy (chemobrain) respond to cognitive rehabilitation interventions?,TFR
-0.4,0.3420043557066226,0.7238716039481654,0.0,0.6934264036172708,0.6934264036172708,4,Unranked,0.0,Does cognitive impairment from chemotherapy (chemobrain) respond to cognitive rehabilitation interventions?,Standard
-1.0,1.0,1.0,1.0,0.8826803184943108,0.9858117121511257,1,Q1,1.0,What are the oncological outcomes of cytoreductive surgery with HIPEC for peritoneal metastases?,TFR
-0.25,0.4688423785086582,0.7584160803337908,0.0,0.5681212831057169,0.5681212831057169,5,Unranked,0.0,What are the oncological outcomes of cytoreductive surgery with HIPEC for peritoneal metastases?,Standard
-1.0,1.0,1.0,1.0,0.8670870086853021,0.973012231497734,1,Q1,1.0,Is neoadjuvant chemotherapy superior to adjuvant chemotherapy in locally advanced gastric cancer?,TFR
-1.0,1.0,1.0,1.0,0.8826803184943108,0.9786302127516295,1,Q1,1.0,Is neoadjuvant chemotherapy superior to adjuvant chemotherapy in locally advanced gastric cancer?,Standard
-0.6,0.8122885095908974,0.9064414263452043,1.0,0.8670870086853021,0.9815720279306078,3,Q1,0.5,What is the comparative effectiveness of targeted therapies in ALK-positive non-small cell lung cancer?,TFR
-0.4,0.8431301721154757,0.8645507991283804,0.5,0.5316519652587917,0.7643064061220306,4,Q3,0.0,What is the comparative effectiveness of targeted therapies in ALK-positive non-small cell lung cancer?,Standard
-1.0,0.8886293579004712,0.9726011266109817,1.0,1.0,1.0,1,Q1,1.0,How does pembrolizumab compare to standard chemotherapy in recurrent cervical cancer?,TFR
-0.4,0.5131952520064108,0.7734549282489593,0.25,0.688423785086582,0.7906274764151102,4,Q4,0.3333333333333333,How does pembrolizumab compare to standard chemotherapy in recurrent cervical cancer?,Standard
-0.75,0.8824435249295117,0.9490176891041211,0.6666666666666666,0.8303010754742701,0.9185494721105402,3,Q3,0.5,What are the clinical features of ALK-positive histiocytosis cutaneous presentation?,TFR
-1.0,1.0,1.0,1.0,1.0,1.0,4,Q3,0.0,What are the clinical features of ALK-positive histiocytosis cutaneous presentation?,Standard
-0.75,0.9323665287394267,0.9425043781407599,1.0,0.7633860993158484,0.9508326649005727,3,Q1,0.0,How is primary thyroid diffuse large B-cell lymphoma diagnosed and managed?,TFR
-1.0,0.89293189936764,0.9733983476116026,0.0,0.3065735963827292,0.5437713091520254,3,Unranked,0.0,How is primary thyroid diffuse large B-cell lymphoma diagnosed and managed?,Standard
-1.0,1.0,0.9967628873465755,1.0,0.7658259826293958,0.9279123390078723,1,Q1,1.0,What is the treatment approach for B-cell acute lymphoblastic leukemia relapse after CAR-T therapy?,TFR
-0.6,0.545007864466385,0.828144248639483,0.0,0.08677754106641361,0.5200425041686692,3,Unranked,0.25,What is the treatment approach for B-cell acute lymphoblastic leukemia relapse after CAR-T therapy?,Standard
-1.0,0.8230929086742522,0.9609608467173294,1.0,0.9777813616305049,0.9777813616305049,3,Q2,0.0,What are the presenting symptoms of extramammary Paget disease in unusual anatomical sites?,TFR
-1.0,0.9777813616305049,0.9826072798331944,0.0,0.39748952229168844,0.6596152573136869,3,Unranked,0.0,What are the presenting symptoms of extramammary Paget disease in unusual anatomical sites?,Standard
-0.6,0.8891809465236166,0.9098242372727287,0.6666666666666666,0.4751172083949178,0.8020564536407151,3,Q3,0.0,How is dermatopathic lymphadenitis distinguished from malignant lymphoma on histopathology?,TFR
-0.6666666666666666,0.8099531166420328,0.9110983816788429,1.0,1.0,1.0,4,Q3,0.0,How is dermatopathic lymphadenitis distinguished from malignant lymphoma on histopathology?,Standard
-1.0,1.0,1.0,0.75,0.8647330574788535,0.9421735276055474,1,Q2,1.0,What is the efficacy of eptinezumab for episodic migraine prevention?,TFR
-0.4,0.7538073391653585,0.8562950306547124,0.0,0.45893222991541405,0.722646489435288,4,Unranked,0.5,What is the efficacy of eptinezumab for episodic migraine prevention?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Does post-stroke dysphagia respond to transcranial magnetic stimulation rehabilitation?,TFR
-0.2,0.3475704076253891,0.6722591687243464,0.75,0.6087012413451591,0.8417264462496347,5,Q2,0.25,Does post-stroke dysphagia respond to transcranial magnetic stimulation rehabilitation?,Standard
-0.8,0.8886293579004712,0.9462910073996749,0.75,0.8826803184943108,0.9462480870845545,2,Q2,1.0,What is the comparative effectiveness of SGLT2 inhibitors in patients with neurological comorbidities and heart failure?,TFR
-0.8,0.6962542409771737,0.8799048567167416,0.75,0.8086598407528445,0.9258948952415027,2,Q2,1.0,What is the comparative effectiveness of SGLT2 inhibitors in patients with neurological comorbidities and heart failure?,Standard
-1.0,1.0,1.0,1.0,0.9146560612887686,0.9741950295670265,1,Q1,1.0,How effective is high-intensity transcranial direct current stimulation for motor recovery after stroke?,TFR
-0.2,0.7592076495650287,0.7875383649156078,1.0,0.9810048227765072,0.9810048227765072,5,Q1,0.0,How effective is high-intensity transcranial direct current stimulation for motor recovery after stroke?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,2,Q1,1.0,What antiplatelet regimen is optimal for secondary stroke prevention in elderly diabetic patients?,TFR
-0.25,0.6795431111477921,0.8056878539520977,1.0,0.7039180890341347,0.8854598815714874,5,Q1,0.0,What antiplatelet regimen is optimal for secondary stroke prevention in elderly diabetic patients?,Standard
-1.0,0.9337517462847186,0.9796200160791765,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,Does levetiracetam reduce seizure frequency more effectively than valproate in focal epilepsy?,TFR
-0.6,0.6240143054827942,0.8203473990537836,1.0,0.9259795222585335,0.9786028494968771,3,Q1,0.3333333333333333,Does levetiracetam reduce seizure frequency more effectively than valproate in focal epilepsy?,Standard
-1.0,0.9061442547954487,0.9891004168398627,1.0,1.0,1.0,1,Q1,1.0,What is the long-term safety and efficacy of natalizumab in relapsing-remitting multiple sclerosis?,TFR
-0.2,0.40844674519271135,0.676413387367368,1.0,0.777938566775601,0.9133325545450376,5,Q1,0.2,What is the long-term safety and efficacy of natalizumab in relapsing-remitting multiple sclerosis?,Standard
-1.0,1.0,0.9969472379578537,1.0,1.0,1.0,1,Q1,1.0,How effective is deep brain stimulation for treatment-resistant Parkinson tremor?,TFR
-1.0,0.7514715602695972,0.9110196923984846,1.0,1.0,0.9828920819566879,1,Q1,1.0,How effective is deep brain stimulation for treatment-resistant Parkinson tremor?,Standard
-0.6,0.8030458713322868,0.9093052242002178,1.0,1.0,1.0,3,Q1,0.5,What is the optimal blood pressure target for reducing recurrent stroke risk?,TFR
-1.0,0.9836821611850634,0.9851910332172485,0.0,0.5307212739772434,0.7606395682357036,2,Unranked,0.3333333333333333,What is the optimal blood pressure target for reducing recurrent stroke risk?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9896916885042134,1,Q1,1.0,Does intensive glucose control reduce cognitive decline in patients with type 2 diabetes?,TFR
-1.0,0.822350853420481,0.9460870999268836,1.0,0.8264159975898232,0.9361940561490577,1,Q1,1.0,Does intensive glucose control reduce cognitive decline in patients with type 2 diabetes?,Standard
-1.0,0.9335435043426511,0.9864352207707584,1.0,1.0,1.0,2,Q1,1.0,What are the neurological manifestations of toxic optic neuropathy?,TFR
-0.5,0.617319681505689,0.8398625486866789,0.0,0.5024905201686705,0.7011978613852969,5,Unranked,0.0,What are the neurological manifestations of toxic optic neuropathy?,Standard
-1.0,1.0,1.0,0.75,0.9323665287394267,0.9471376325780615,1,Q2,1.0,How is febrile infection-related epilepsy syndrome (FIRES) managed in paediatric patients?,TFR
-0.6666666666666666,0.7149296749630493,0.8884351634738593,0.0,0.5442761686266455,0.7324359425982231,4,Unranked,0.0,How is febrile infection-related epilepsy syndrome (FIRES) managed in paediatric patients?,Standard
-1.0,1.0,1.0,0.75,0.7970995862182803,0.9232127186711473,1,Q2,1.0,What are the diagnostic criteria for distinguishing autoimmune encephalitis from viral encephalitis?,TFR
-1.0,0.9151505377371351,0.984155262698194,0.5,0.734421189254329,0.868557215938134,3,Q3,0.0,What are the diagnostic criteria for distinguishing autoimmune encephalitis from viral encephalitis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q2,1.0,What are the clinical features of Charcot-Marie-Tooth disease presenting with cavus foot deformity?,TFR
-0.6666666666666666,0.6900468833579672,0.8750549595938515,1.0,0.6131471927654584,0.8503449055347546,4,Q2,0.0,What are the clinical features of Charcot-Marie-Tooth disease presenting with cavus foot deformity?,Standard
-0.8,0.9087467568998082,0.9611333864792025,1.0,0.8826803184943108,0.9852268707233874,2,Q1,1.0,How does paraneoplastic limbic encephalitis present in patients with occult malignancy?,TFR
-0.75,0.7804185934220761,0.8976936918136024,0.5,0.5209090851403014,0.7680259722523537,3,Q3,0.2,How does paraneoplastic limbic encephalitis present in patients with occult malignancy?,Standard
-0.8,0.9087467568998082,0.9611333864792025,1.0,0.9413401592471554,0.9929375288501646,2,Q1,1.0,What is the efficacy of secukinumab for moderate-to-severe psoriasis in paediatric patients?,TFR
-0.4,0.8431301721154757,0.8578535934198654,0.25,0.5941991724365605,0.7592799185480387,4,Q4,0.5,What is the efficacy of secukinumab for moderate-to-severe psoriasis in paediatric patients?,Standard
-0.6,0.8030458713322868,0.9027309156811437,1.0,0.9146560612887686,0.975739066961162,3,Q1,0.3333333333333333,How effective is dupilumab compared to cyclosporine in adults with severe atopic dermatitis?,TFR
-1.0,1.0,0.9952058009050152,0.25,0.6795431111477921,0.80728271009237,1,Q4,0.0,How effective is dupilumab compared to cyclosporine in adults with severe atopic dermatitis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Does melatonin supplementation improve disease severity and sleep quality in atopic dermatitis?,TFR
-0.25,0.7224242270408039,0.8091236814407775,1.0,0.7653606369886217,0.9674679834891693,5,Q1,0.5,Does melatonin supplementation improve disease severity and sleep quality in atopic dermatitis?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9934535397251649,1,Q1,1.0,What treatments are most effective for androgenetic alopecia based on systematic review evidence?,TFR
-1.0,0.7932992037642228,0.9497037426015676,0.75,0.6087012413451591,0.8180148271065147,1,Q2,1.0,What treatments are most effective for androgenetic alopecia based on systematic review evidence?,Standard
-1.0,0.9474995010615089,0.9905524138848275,1.0,1.0,1.0,1,Q1,1.0,What is the comparative efficacy of biologic therapies in moderate-to-severe plaque psoriasis?,TFR
-0.4,0.45778572526821903,0.7624397394258258,0.25,0.3115762149134179,0.682499110888133,4,Q4,0.25,What is the comparative efficacy of biologic therapies in moderate-to-severe plaque psoriasis?,Standard
-1.0,0.89293189936764,0.9719572426061758,0.75,0.8824435249295117,0.930960127066719,3,Q2,0.0,How effective is JAK inhibitor therapy for vitiligo repigmentation?,TFR
-0.5,0.680606056760201,0.8558112355261802,0.75,0.688423785086582,0.8927877278790923,5,Q2,0.0,How effective is JAK inhibitor therapy for vitiligo repigmentation?,Standard
-1.0,0.9213669182023797,0.9767020054138109,0.0,0.3912987586548408,0.6997763851158643,2,Unranked,0.2,What is the risk of cardiovascular events in patients on long-term systemic psoriasis therapy?,TFR
-0.5,0.680606056760201,0.84838389300508,0.25,0.5209090851403014,0.7186021396398171,4,Q4,0.0,What is the risk of cardiovascular events in patients on long-term systemic psoriasis therapy?,Standard
-0.6,0.8122885095908974,0.9131283812380312,1.0,0.8753695140346327,0.9766769370430949,3,Q1,0.5,Does phototherapy improve outcomes in atopic dermatitis when compared to topical corticosteroids?,TFR
-1.0,0.948211476976291,0.9856027666102486,0.25,0.3912987586548408,0.7326970292510231,1,Q4,0.5,Does phototherapy improve outcomes in atopic dermatitis when compared to topical corticosteroids?,Standard
-0.6,0.8964229539525822,0.908280901807892,1.0,0.5316519652587917,0.8518080397362219,3,Q1,0.0,What is the efficacy of oral minoxidil for female pattern hair loss?,TFR
-0.2,0.3890837647236334,0.6591389400768545,0.0,0.13624256621143366,0.5082426448058001,5,Unranked,0.0,What is the efficacy of oral minoxidil for female pattern hair loss?,Standard
-0.6,0.7762502494692454,0.8903334411703697,0.75,0.6618326436971338,0.8948578486016093,3,Q2,0.25,How effective are IL-17 inhibitors versus IL-23 inhibitors for psoriatic arthritis?,TFR
-0.75,0.7616786513169639,0.8796448788793758,0.75,0.688423785086582,0.9024485255442497,3,Q2,0.0,How effective are IL-17 inhibitors versus IL-23 inhibitors for psoriatic arthritis?,Standard
-1.0,1.0,1.0,0.75,0.908465248289621,0.9260153611775345,1,Q2,1.0,What are the histopathological features of dermatopathic lymphadenitis?,TFR
-0.6666666666666666,0.9298593499260985,0.946487658153176,1.0,0.7653606369886217,0.9674679834891693,4,Q3,0.0,What are the histopathological features of dermatopathic lymphadenitis?,Standard
-1.0,1.0,0.9964678158680195,1.0,1.0,0.9961581648476712,1,Q1,1.0,How is prediction modelling used to guide treatment response in psoriasis?,TFR
-1.0,0.9445904732618082,0.9932511732370243,1.0,0.8240204777414663,0.9667298993851627,1,Q1,1.0,How is prediction modelling used to guide treatment response in psoriasis?,Standard
-1.0,1.0,1.0,0.75,0.9323665287394267,0.9288057468786756,1,Q2,1.0,What are the clinical and pathological characteristics of primary cutaneous DLBCL?,TFR
-0.6666666666666666,0.7850703250369506,0.8857036147673562,0.5,0.7224242270408039,0.8599797111848092,4,Q3,0.0,What are the clinical and pathological characteristics of primary cutaneous DLBCL?,Standard
-0.8,0.8287507484077364,0.935741741561669,1.0,1.0,0.990338329674091,2,Q1,1.0,How does immune checkpoint inhibitor therapy cause dermatological adverse events?,TFR
-0.4,0.70655866428214,0.7841325657335445,0.5,0.433887705332068,0.7443733861188421,4,Q3,0.0,How does immune checkpoint inhibitor therapy cause dermatological adverse events?,Standard
-0.75,0.7970995862182803,0.9292581261374218,0.5,0.5934728644740254,0.8315728118512988,3,Q3,0.25,What are the clinical features of demodicosis in immunocompromised patients?,TFR
-1.0,0.8519590445170673,0.9519475762801467,1.0,1.0,1.0,4,Q2,0.0,What are the clinical features of demodicosis in immunocompromised patients?,Standard
-1.0,1.0,1.0,0.5,0.5637932991212148,0.8336436170183774,1,Q3,0.5,What is the impact of person-centred care in end-of-life oncology management?,TFR
-0.2,0.2655788107456709,0.6546473725810741,1.0,1.0,1.0,5,Q1,0.0,What is the impact of person-centred care in end-of-life oncology management?,Standard
-0.8,0.8886293579004712,0.9462910073996749,0.0,0.6012610260559063,0.7040965536719686,2,Unranked,0.5,How does colorectal cancer incidence differ between colon and rectal subsites?,TFR
-0.2,0.5013142593562742,0.7544849452958339,1.0,0.7439681838663057,0.9187370875446623,5,Q1,0.0,How does colorectal cancer incidence differ between colon and rectal subsites?,Standard
-0.4,0.7220614332243988,0.8515847902038785,0.3333333333333333,0.27541155237618664,0.5950427489208391,4,Q4,0.0,What are the risk factors for oxaliplatin-induced peripheral neuropathy in colorectal cancer?,TFR
-0.5,0.5,0.7825102135883368,0.5,0.8597186998521972,0.8597186998521972,4,Q4,0.0,What are the risk factors for oxaliplatin-induced peripheral neuropathy in colorectal cancer?,Standard
-0.8,0.9087467568998082,0.9633949192918219,1.0,0.7809978695977224,0.9152784110635337,2,Q1,1.0,Does primary tumour resection improve survival in metastatic colorectal cancer?,TFR
-0.4,0.4600312555719781,0.7501615880834441,1.0,0.8262346571285599,0.944847956559586,4,Q2,0.0,Does primary tumour resection improve survival in metastatic colorectal cancer?,Standard
-0.8,0.9612472558382992,0.9667208397861513,1.0,0.854248296065995,0.9155657487142889,2,Q1,1.0,What is the prognostic value of microsatellite instability status in colorectal cancer?,TFR
-0.8,0.9612472558382992,0.969183301410673,1.0,0.854248296065995,0.9093263546340706,2,Q1,1.0,What is the prognostic value of microsatellite instability status in colorectal cancer?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,How does physical activity affect cancer-related fatigue in oncology patients?,TFR
-0.8,0.9061442547954487,0.9559671464010229,1.0,1.0,1.0,2,Q1,1.0,How does physical activity affect cancer-related fatigue in oncology patients?,Standard
-1.0,0.9213669182023797,0.9808851350584301,1.0,0.8240204777414663,0.9742329092553608,2,Q1,1.0,What is the role of circulating tumour DNA in monitoring colorectal cancer recurrence?,TFR
-1.0,0.8435737579924145,0.9686152031181796,1.0,0.8603443310417203,0.9208582618875045,3,Q1,0.0,What is the role of circulating tumour DNA in monitoring colorectal cancer recurrence?,Standard
-1.0,0.8757357801347987,0.9625588944427584,0.5,0.7653606369886217,0.8887223390544889,1,Q3,0.3333333333333333,What are the oncological outcomes of minimally invasive oesophagectomy versus open surgery?,TFR
-0.25,0.4922229785917961,0.7524401892055531,1.0,0.7439681838663057,0.9187370875446623,5,Q1,0.0,What are the oncological outcomes of minimally invasive oesophagectomy versus open surgery?,Standard
-1.0,1.0,1.0,1.0,0.9376847570173164,0.9830702961187038,1,Q1,1.0,How effective is stereotactic body radiotherapy for oligometastatic cancer?,TFR
-0.4,0.4600312555719781,0.7597499862734135,1.0,0.6645649565734895,0.8835659645903018,4,Q3,0.0,How effective is stereotactic body radiotherapy for oligometastatic cancer?,Standard
-1.0,0.9404250500676289,0.9891813427189486,1.0,1.0,1.0,1,Q1,1.0,What is the impact of tumour microenvironment on immunotherapy response in solid tumours?,TFR
-1.0,1.0,1.0,1.0,0.8322824782867448,0.9393545148535939,2,Q1,1.0,What is the impact of tumour microenvironment on immunotherapy response in solid tumours?,Standard
-1.0,0.9015229356661434,0.9850683387815201,1.0,0.8826803184943108,0.9858117121511257,1,Q1,1.0,What are experimental treatment strategies for relapsed refractory multiple myeloma reported in regional oncology centres?,TFR
-0.6,0.5831142901072877,0.8367591471616194,0.0,0.20151514190050246,0.5861875131565599,3,Unranked,0.2,What are experimental treatment strategies for relapsed refractory multiple myeloma reported in regional oncology centres?,Standard
-0.75,0.8148100536689385,0.9381610929601971,0.5,0.5316519652587917,0.7643064061220306,3,Q3,0.0,How is ALK-positive histiocytosis managed in resource-limited settings?,TFR
-1.0,0.8322824782867448,0.9562707599036264,0.6666666666666666,0.46927872602275644,0.7415914148287854,4,Q3,0.0,How is ALK-positive histiocytosis managed in resource-limited settings?,Standard
-0.6,0.8122885095908974,0.9122105819346809,0.0,0.6309297535714575,0.6309297535714575,3,Unranked,0.5,What supportive care interventions are used for nausea in outpatient chemotherapy in developing countries?,TFR
-0.6,0.6553302748315017,0.8713898513533799,0.0,0.35195904451706733,0.5540663910176149,3,Unranked,0.0,What supportive care interventions are used for nausea in outpatient chemotherapy in developing countries?,Standard
-0.6,0.8424985031845269,0.9107134250911932,1.0,0.7653606369886217,0.9517756747341085,3,Q1,0.5,What are local clinical practice patterns for colorectal cancer screening in lower-income populations?,TFR
-0.6,0.7899980042460358,0.8827110035371509,1.0,1.0,1.0,3,Q1,0.5,What are local clinical practice patterns for colorectal cancer screening in lower-income populations?,Standard
-0.6,0.7084428549463561,0.8795149156508698,1.0,1.0,0.9961581648476712,3,Q1,0.25,How do community oncology practices manage febrile neutropenia outside tertiary centres?,TFR
-0.6,0.7899980042460358,0.9049250429723421,1.0,0.7970995862182803,0.9540847755392969,3,Q1,0.5,How do community oncology practices manage febrile neutropenia outside tertiary centres?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,What is the long-term cognitive outcome of childhood epilepsy treated with antiseizure medications?,TFR
-0.6,0.8567135500246339,0.876279362280034,1.0,0.7039180890341347,0.9050012317857397,3,Q1,0.3333333333333333,What is the long-term cognitive outcome of childhood epilepsy treated with antiseizure medications?,Standard
-0.75,0.8753695140346327,0.9456560946584148,0.5,0.7653606369886217,0.8786746795305955,3,Q3,0.5,How does white matter hyperintensity burden predict dementia risk in older adults?,TFR
-0.75,0.950076996190085,0.9496545111985014,0.5,0.7224242270408039,0.8558939587340377,3,Q3,0.5,How does white matter hyperintensity burden predict dementia risk in older adults?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9936842654610013,1,Q1,1.0,What is the efficacy of ocrelizumab in primary progressive multiple sclerosis?,TFR
-0.2,0.5378206432991598,0.7410744670780091,0.75,0.8086598407528445,0.9258948952415027,5,Q2,0.5,What is the efficacy of ocrelizumab in primary progressive multiple sclerosis?,Standard
-1.0,1.0,0.9964678158680195,1.0,1.0,1.0,1,Q1,1.0,How does sleep-disordered breathing contribute to stroke risk?,TFR
-0.3333333333333333,0.6291344046077069,0.8025392158797567,1.0,0.46927872602275644,0.8529278650606567,5,Q1,0.0,How does sleep-disordered breathing contribute to stroke risk?,Standard
-1.0,1.0,1.0,0.0,0.5307212739772434,0.7386712923485247,1,Unranked,0.5,What are the neuroimaging biomarkers for early Alzheimer disease diagnosis?,TFR
-0.2,0.2882443524929512,0.6524988502863726,1.0,0.9335435043426511,0.9912848888019223,5,Q1,0.0,What are the neuroimaging biomarkers for early Alzheimer disease diagnosis?,Standard
-0.4,0.79344133571786,0.8314022946019718,1.0,0.7633860993158484,0.9508326649005727,4,Q1,0.0,How effective is botulinum toxin for chronic migraine prophylaxis?,TFR
-1.0,0.8826803184943108,0.9863520113014781,0.0,0.4030302838010049,0.6641442115010364,4,Unranked,0.0,How effective is botulinum toxin for chronic migraine prophylaxis?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the impact of sleep quality on Parkinson disease motor symptom severity?,TFR
-0.2,0.6245770191817948,0.7862142007739941,1.0,0.8240204777414663,0.9767744987253195,5,Q1,0.5,What is the impact of sleep quality on Parkinson disease motor symptom severity?,Standard
-1.0,0.9530721273977244,0.9948793111784349,1.0,0.9335435043426511,0.9916890807260696,1,Q1,1.0,How does remote ischaemic conditioning reduce neurological injury after acute stroke?,TFR
-0.2,0.7098249095547866,0.78706830934736,1.0,0.5608371868441523,0.8733048496259177,5,Q1,0.0,How does remote ischaemic conditioning reduce neurological injury after acute stroke?,Standard
-0.8,0.9061442547954487,0.946711925754179,1.0,1.0,1.0,2,Q1,1.0,What is the clinical utility of plasma phosphorylated tau for Alzheimer diagnosis?,TFR
-0.2,0.3240204777414663,0.6871490313469577,0.75,0.6461858173485043,0.85786844124691,5,Q2,0.25,What is the clinical utility of plasma phosphorylated tau for Alzheimer diagnosis?,Standard
-1.0,1.0,1.0,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,How does diabetes management affect peripheral neuropathy progression?,TFR
-0.2,0.3475704076253891,0.6470312728187465,0.0,0.3593137779505038,0.6409434648711003,5,Unranked,0.2,How does diabetes management affect peripheral neuropathy progression?,Standard
-0.8,0.956700796235777,0.9577469127217872,1.0,0.7658259826293958,0.9436739188738057,2,Q1,1.0,How is Cortexin used in post-COVID neurological rehabilitation in Eastern European practice?,TFR
-1.0,1.0,1.0,0.25,0.35195904451706733,0.7002278836760999,4,Q4,0.0,How is Cortexin used in post-COVID neurological rehabilitation in Eastern European practice?,Standard
-1.0,0.9300809618991231,0.9819420153573886,1.0,1.0,0.9906609666436669,1,Q1,1.0,What are the neurological complications documented in regional case series of COVID-19 patients?,TFR
-1.0,0.8169304965792419,0.9454206602771335,0.0,0.4683480347412084,0.7081968708457317,2,Unranked,0.0,What are the neurological complications documented in regional case series of COVID-19 patients?,Standard
-1.0,0.9507614678330717,0.9871549909660802,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,What local treatment protocols are used for epilepsy in resource-limited neurology units?,TFR
-0.5,0.8403030283801005,0.858744869364154,0.0,0.6012610260559063,0.7040965536719686,4,Unranked,0.3333333333333333,What local treatment protocols are used for epilepsy in resource-limited neurology units?,Standard
-0.8,0.9590999846244932,0.9640700016142872,1.0,0.8826803184943108,0.9777242507697853,2,Q1,1.0,How is toxic optic neuropathy from methanol poisoning managed in low-resource settings?,TFR
-0.3333333333333333,0.6575014968154731,0.7848773005544546,0.0,0.0,0.4744200353065766,5,Unranked,0.0,How is toxic optic neuropathy from methanol poisoning managed in low-resource settings?,Standard
-1.0,1.0,1.0,0.75,0.8826803184943108,0.9462367535061125,1,Q2,1.0,What are the clinical outcomes of stroke rehabilitation in community hospitals without specialised stroke units?,TFR
-1.0,0.8435737579924145,0.9719643720954755,1.0,1.0,1.0,3,Q1,0.0,What are the clinical outcomes of stroke rehabilitation in community hospitals without specialised stroke units?,Standard
-1.0,0.9530721273977244,0.9918743919356368,1.0,0.8519590445170673,0.9386470997399791,1,Q1,1.0,What is the impact of biologic therapy on quality of life in chronic plaque psoriasis?,TFR
-0.5,0.7288368792759478,0.8693027903048374,0.25,0.1564262420075855,0.6005893118912701,4,Q4,0.0,What is the impact of biologic therapy on quality of life in chronic plaque psoriasis?,Standard
-1.0,0.9300809618991231,0.97873210049252,1.0,0.9413401592471554,0.9851766730264646,1,Q1,1.0,How does hair type classification guide personalised hair care recommendations?,TFR
-1.0,0.9725044904464192,0.9765333163605167,0.0,0.5307212739772434,0.7501373711886336,3,Unranked,0.0,How does hair type classification guide personalised hair care recommendations?,Standard
-0.6,0.8037457590228262,0.9121982367816716,1.0,0.9213669182023797,0.9785038001567021,3,Q1,0.5,What is the association between psoriasis severity and cardiovascular mortality?,TFR
-0.6666666666666666,0.8303010754742701,0.9243710230888972,0.25,0.5209090851403014,0.7667405040842117,4,Q4,0.0,What is the association between psoriasis severity and cardiovascular mortality?,Standard
-1.0,0.9259795222585335,0.9817558680267063,1.0,0.734421189254329,0.9441905461569455,2,Q1,1.0,How effective are disease-modifying antirheumatic drugs in treating psoriatic arthritis?,TFR
-0.5,0.734421189254329,0.8488935254156906,0.3333333333333333,0.7967075809905066,0.7967075809905066,4,Q4,0.0,How effective are disease-modifying antirheumatic drugs in treating psoriatic arthritis?,Standard
-0.8,0.8482809311481097,0.9395031393380971,0.0,0.3278940537283545,0.6522281055308963,2,Unranked,0.0,What is the role of the microbiome in atopic dermatitis pathogenesis?,TFR
-0.5,0.680606056760201,0.8558112355261802,0.5,0.7653606369886217,0.8599966128179293,5,Q3,0.0,What is the role of the microbiome in atopic dermatitis pathogenesis?,Standard
-1.0,1.0,1.0,1.0,0.9376847570173164,0.9774008931502748,1,Q1,1.0,How does dupilumab affect long-term eczema control and skin barrier function?,TFR
-1.0,0.8519590445170673,0.9605753368118396,0.0,0.3912987586548408,0.6944670811521112,4,Unranked,0.0,How does dupilumab affect long-term eczema control and skin barrier function?,Standard
-1.0,0.8647330574788535,0.975054830910713,1.0,0.9050490793874433,0.9628318154136647,2,Q1,1.0,What are the dermatological manifestations of inflammatory bowel disease?,TFR
-0.6666666666666666,0.7010143364724148,0.8527411367856936,0.5,0.47343429882401267,0.7733407497175486,4,Q3,0.0,What are the dermatological manifestations of inflammatory bowel disease?,Standard
-1.0,0.8757357801347987,0.9682320245646586,0.75,0.8826803184943108,0.9481316041715843,1,Q2,1.0,How effective is tofacitinib for moderate-to-severe alopecia areata?,TFR
-0.4,0.6530333282081644,0.8209780454481292,0.75,0.688423785086582,0.8977442605083195,4,Q2,0.25,How effective is tofacitinib for moderate-to-severe alopecia areata?,Standard
-0.6666666666666666,0.7454516132114052,0.9044291982982916,1.0,0.9836821611850634,0.9864444801371925,4,Q1,0.0,What is the prevalence and impact of pruritus in chronic kidney disease patients?,TFR
-0.3333333333333333,0.8174935137996165,0.8442355845243696,0.0,0.16771752171325524,0.6023586154359912,5,Unranked,0.0,What is the prevalence and impact of pruritus in chronic kidney disease patients?,Standard
-1.0,1.0,1.0,0.5,0.7471765824083653,0.8835225313795226,1,Q3,0.5,How does UV phototherapy compare to excimer laser for localised vitiligo?,TFR
-0.8,0.9061442547954487,0.9572881727261123,1.0,0.9217868789962073,0.9913646294746149,2,Q2,1.0,How does UV phototherapy compare to excimer laser for localised vitiligo?,Standard
-1.0,0.9413401592471554,0.9900808841271455,1.0,0.6452582482812901,0.8934741240371527,2,Q1,1.0,What topical treatments for psoriasis are used in low-resource dermatology clinics?,TFR
-0.25,0.6119096398872188,0.807349959302138,1.0,0.649014791936513,0.8642203869628404,5,Q2,0.0,What topical treatments for psoriasis are used in low-resource dermatology clinics?,Standard
-0.8,0.6759795222585336,0.8891746475135397,0.0,0.5661122946679319,0.6587590010762988,2,Unranked,0.0,How is alopecia areata managed in paediatric patients in regional dermatology units?,TFR
-0.3333333333333333,0.5799960084920718,0.7959190675029894,1.0,0.9050490793874433,0.9628318154136647,5,Q1,0.0,How is alopecia areata managed in paediatric patients in regional dermatology units?,Standard
-0.8,0.9507614678330717,0.958289050307139,1.0,0.8240204777414663,0.9767744987253195,2,Q1,1.0,What are local prescribing patterns for atopic dermatitis in primary care settings?,TFR
-0.2,0.5937437632688621,0.7966690801669949,1.0,1.0,1.0,5,Q1,0.0,What are local prescribing patterns for atopic dermatitis in primary care settings?,Standard
-0.8,0.9612472558382992,0.9667208397861513,1.0,0.777938566775601,0.9325263180710038,2,Q1,1.0,How is contact dermatitis patch testing performed in non-specialist settings?,TFR
-0.4,0.7512452600843351,0.866124768210845,0.0,0.2882443524929512,0.6409172767812511,4,Unranked,0.3333333333333333,How is contact dermatitis patch testing performed in non-specialist settings?,Standard
-1.0,0.9248247830402744,0.976662391986178,1.0,0.8826803184943108,0.9852268707233874,1,Q1,1.0,What are the outcomes of wound healing interventions documented in regional plastic surgery case series?,TFR
-0.6666666666666666,0.7448797876704595,0.8986776544421418,0.5,0.8821211986607034,0.8821211986607034,4,Q3,0.0,What are the outcomes of wound healing interventions documented in regional plastic surgery case series?,Standard
-1.0,0.9407836178068271,0.9829976023759306,1.0,1.0,0.9866060902037453,1,Q1,1.0,What does the highest-quality evidence from top-tier oncology journals say about KRAS mutation impact on colorectal cancer prognosis?,TFR
-0.2,0.5856918158103287,0.7835988874861296,0.0,0.0,0.38685280723454163,5,Unranked,0.2,What does the highest-quality evidence from top-tier oncology journals say about KRAS mutation impact on colorectal cancer prognosis?,Standard
-1.0,0.9061442547954487,0.9891004168398627,1.0,0.9274604255131137,0.9785660304166897,1,Q1,1.0,What is the best evidence from Q1 journals on the efficacy of checkpoint inhibitors in mismatch repair deficient tumours?,TFR
-0.2,0.7648870498590234,0.7882980463939472,0.0,0.38685280723454163,0.6240505200038379,5,Unranked,0.5,What is the best evidence from Q1 journals on the efficacy of checkpoint inhibitors in mismatch repair deficient tumours?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do recent systematic reviews in high-impact journals recommend for HER2-positive breast cancer adjuvant therapy?,TFR
-0.8,0.8393908257335428,0.939410461651017,0.75,0.8753695140346327,0.9388859166382352,2,Q2,1.0,What do recent systematic reviews in high-impact journals recommend for HER2-positive breast cancer adjuvant therapy?,Standard
-1.0,0.9507614678330717,0.9910252187701403,1.0,1.0,1.0,1,Q1,1.0,What is the combined effect of tumour burden and performance status on immunotherapy outcomes in lung cancer?,TFR
-1.0,0.8007100924365255,0.9307614249304501,1.0,0.5771550256590888,0.8836078928165381,1,Q1,1.0,What is the combined effect of tumour burden and performance status on immunotherapy outcomes in lung cancer?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does high-quality evidence say about the optimal duration of adjuvant oxaliplatin therapy in stage III colon cancer?,TFR
-0.8,0.9474995010615089,0.9495147103246874,1.0,0.8130542710519492,0.9702173769297137,2,Q1,1.0,What does high-quality evidence say about the optimal duration of adjuvant oxaliplatin therapy in stage III colon cancer?,Standard
-0.8,0.8192619084227396,0.9253048797953685,1.0,0.8240204777414663,0.9777363455794474,2,Q1,1.0,What is the best evidence for prophylactic cranial irradiation in limited-stage small cell lung cancer?,TFR
-0.8,0.7493428703218629,0.9085930149430668,1.0,0.9050490793874433,0.9479290438170535,2,Q1,1.0,What is the best evidence for prophylactic cranial irradiation in limited-stage small cell lung cancer?,Standard
-1.0,1.0,1.0,0.0,0.21677175217132552,0.6161432594368168,1,Unranked,0.0,How do Q1-published RCTs compare maintenance PARP inhibitors in BRCA-mutated ovarian cancer?,TFR
-1.0,0.980637019530922,0.9827255527094864,0.0,0.5014780561385311,0.7161797710448459,1,Unranked,0.0,How do Q1-published RCTs compare maintenance PARP inhibitors in BRCA-mutated ovarian cancer?,Standard
-1.0,0.894999002123018,0.9811737169797187,0.75,0.8130542710519492,0.9338791200376965,1,Q2,1.0,What does the highest-tier evidence show about laparoscopic versus open surgery for hepatocellular carcinoma?,TFR
-0.5,0.655788107456709,0.8387500597140731,0.5,0.6993694869720469,0.8329762261778096,4,Q3,0.3333333333333333,What does the highest-tier evidence show about laparoscopic versus open surgery for hepatocellular carcinoma?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the systematic review evidence from high-impact journals on CAR-T therapy in relapsed lymphoma?,TFR
-0.4,0.5,0.7421192917526616,0.5,0.31939394323979897,0.7040663144958564,4,Q3,0.2,What is the systematic review evidence from high-impact journals on CAR-T therapy in relapsed lymphoma?,Standard
-1.0,0.8812512473462275,0.9738316339603253,0.0,0.2813636277104522,0.6231754019084348,1,Unranked,0.2,What do large RCTs published in top oncology journals show about bevacizumab in metastatic colorectal cancer?,TFR
-0.6,0.679423832220986,0.8381486183802932,0.0,0.0,0.43067655807339306,3,Unranked,0.0,What do large RCTs published in top oncology journals show about bevacizumab in metastatic colorectal cancer?,Standard
-1.0,0.867319681505689,0.9714475565309197,0.75,0.7633860993158484,0.9007528363522013,2,Q2,1.0,What is the evidence on novel targeted therapies for rare sarcoma subtypes reported in speciality journals?,TFR
-0.75,0.6441221762464757,0.879678815733162,0.25,0.680606056760201,0.7655113955854513,3,Q4,0.0,What is the evidence on novel targeted therapies for rare sarcoma subtypes reported in speciality journals?,Standard
-0.8,0.894999002123018,0.9520747983656986,1.0,1.0,1.0,2,Q1,1.0,How do observational studies in mid-tier journals characterise long-term survivorship outcomes in testicular cancer?,TFR
-1.0,0.7305146665371222,0.9066180787084464,1.0,1.0,1.0,2,Q1,1.0,How do observational studies in mid-tier journals characterise long-term survivorship outcomes in testicular cancer?,Standard
-1.0,0.9530721273977244,0.9947286805256194,1.0,1.0,0.9828920819566879,1,Q1,1.0,What does mixed-level evidence from varied journal tiers suggest about neoadjuvant immunotherapy in resectable NSCLC?,TFR
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does mixed-level evidence from varied journal tiers suggest about neoadjuvant immunotherapy in resectable NSCLC?,Standard
-0.75,0.8647330574788535,0.9421735276055474,1.0,0.9197207891481876,0.9197207891481876,3,Q1,0.0,How do case series in speciality journals document outcomes of isolated limb perfusion for melanoma?,TFR
-0.75,0.8824435249295117,0.9490176891041211,0.0,0.0,0.0,3,Unranked,0.0,How do case series in speciality journals document outcomes of isolated limb perfusion for melanoma?,Standard
-0.6,0.8562462579613171,0.920833502690511,1.0,0.9259795222585335,0.9786028494968771,3,Q1,0.5,What does scattered evidence across journal tiers show about cannabis use in cancer pain management?,TFR
-1.0,0.7443909220923556,0.9333810172217778,1.0,0.5771550256590888,0.8887914391107437,2,Q1,1.0,What does scattered evidence across journal tiers show about cannabis use in cancer pain management?,Standard
-0.6,0.6938557452045513,0.8758852995918351,1.0,1.0,1.0,3,Q1,0.3333333333333333,What is the highest-quality evidence from top neurology journals on stroke thrombolysis time windows?,TFR
-0.6,0.7617002002705158,0.8950108561085449,1.0,0.7974779478881874,0.9112201998814544,3,Q1,0.0,What is the highest-quality evidence from top neurology journals on stroke thrombolysis time windows?,Standard
-1.0,0.9061442547954487,0.9894221119756877,1.0,0.7039180890341347,0.9056511937624261,1,Q1,1.0,What do Q1-published meta-analyses recommend for anticoagulation in atrial fibrillation with prior stroke?,TFR
-1.0,0.8122885095908974,0.9645423532825935,0.0,0.38685280723454163,0.6240505200038379,1,Unranked,0.5,What do Q1-published meta-analyses recommend for anticoagulation in atrial fibrillation with prior stroke?,Standard
-0.8,0.9061442547954487,0.9579459977187077,1.0,0.9333440848915144,0.9333440848915144,2,Q1,1.0,What is the best evidence from high-impact journals on amyloid PET as an Alzheimer diagnostic biomarker?,TFR
-1.0,1.0,1.0,0.0,0.3947758812878204,0.6436867893253556,1,Unranked,0.5,What is the best evidence from high-impact journals on amyloid PET as an Alzheimer diagnostic biomarker?,Standard
-1.0,0.9530721273977244,0.9921181676913065,1.0,1.0,1.0,1,Q1,1.0,How do top-tier journal RCTs characterise the benefit of early aggressive MS treatment?,TFR
-0.2,0.33333333333333337,0.672446521814453,1.0,1.0,1.0,5,Q1,0.2,How do top-tier journal RCTs characterise the benefit of early aggressive MS treatment?,Standard
-1.0,1.0,1.0,0.75,0.8826803184943108,0.9441982084506297,1,Q2,1.0,What is the systematic review evidence on neuroprotective strategies after traumatic brain injury?,TFR
-0.25,0.41531064659152533,0.7128718056817412,1.0,0.46927872602275644,0.8529278650606567,5,Q1,0.25,What is the systematic review evidence on neuroprotective strategies after traumatic brain injury?,Standard
-1.0,0.7877114904091027,0.9521790303294917,1.0,1.0,1.0,1,Q1,1.0,What do large Q1-published RCTs show about blood pressure lowering targets in acute haemorrhagic stroke?,TFR
-0.25,0.5442761686266455,0.7888009473448709,1.0,0.6452582482812901,0.8934741240371527,5,Q1,0.0,What do large Q1-published RCTs show about blood pressure lowering targets in acute haemorrhagic stroke?,Standard
-0.6,0.8192619084227396,0.8915960566069069,1.0,1.0,0.987635868087791,3,Q1,0.3333333333333333,What is the highest-tier evidence on mechanical thrombectomy versus thrombolysis in large vessel occlusion stroke?,TFR
-0.75,0.8647330574788535,0.9421735276055474,0.25,0.35195904451706733,0.7002278836760999,3,Q4,0.25,What is the highest-tier evidence on mechanical thrombectomy versus thrombolysis in large vessel occlusion stroke?,Standard
-1.0,1.0,1.0,1.0,0.9213669182023797,0.9808851350584301,1,Q1,1.0,What do high-impact journal systematic reviews conclude about prophylactic antiepileptics after craniotomy?,TFR
-0.5,0.8821211986607034,0.9065280314885752,1.0,0.7974779478881874,0.9119629671334931,5,Q1,0.0,What do high-impact journal systematic reviews conclude about prophylactic antiepileptics after craniotomy?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9828920819566879,1,Q1,1.0,What is the meta-analytic evidence from Q1 journals on exercise therapy for Parkinson disease motor function?,TFR
-1.0,0.8122885095908974,0.9730218063754366,0.0,0.3065735963827292,0.5706417189553201,1,Unranked,0.25,What is the meta-analytic evidence from Q1 journals on exercise therapy for Parkinson disease motor function?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do RCTs in leading neurology journals show about cognitive training in mild cognitive impairment?,TFR
-0.2,0.6245770191817948,0.8141257851806453,1.0,0.7039180890341347,0.8854598815714874,5,Q1,0.3333333333333333,What do RCTs in leading neurology journals show about cognitive training in mild cognitive impairment?,Standard
-1.0,0.9530721273977244,0.9948793111784349,1.0,1.0,1.0,1,Q1,1.0,What does mixed evidence across journal tiers suggest about hyperbaric oxygen for post-concussion syndrome?,TFR
-0.2,0.5422142747317809,0.7374806096764791,0.0,0.3065735963827292,0.5437713091520254,5,Unranked,0.3333333333333333,What does mixed evidence across journal tiers suggest about hyperbaric oxygen for post-concussion syndrome?,Standard
-0.6,0.5831142901072877,0.8367591471616194,0.75,0.8753695140346327,0.9388859166382352,3,Q2,0.25,How do observational studies in speciality journals describe outcomes of vagus nerve stimulation for refractory epilepsy?,TFR
-1.0,1.0,1.0,0.0,0.6309297535714575,0.6309297535714575,3,Unranked,0.0,How do observational studies in speciality journals describe outcomes of vagus nerve stimulation for refractory epilepsy?,Standard
-1.0,1.0,1.0,0.75,0.950076996190085,0.9625133468165444,1,Q2,1.0,What is the scattered evidence on acupuncture for migraine prevention across varied publication quality?,TFR
-1.0,1.0,1.0,0.0,0.48516021732359466,0.6780148307744244,1,Unranked,0.5,What is the scattered evidence on acupuncture for migraine prevention across varied publication quality?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9750789824551586,1,Q1,1.0,How do mid-tier journals characterise stem cell therapy outcomes in amyotrophic lateral sclerosis?,TFR
-0.4,0.8362564708545005,0.8539182039715553,0.5,0.7653606369886217,0.8887223390544889,4,Q3,0.5,How do mid-tier journals characterise stem cell therapy outcomes in amyotrophic lateral sclerosis?,Standard
-1.0,0.8592163821931731,0.9741890340069591,1.0,0.7039180890341347,0.900536595186988,1,Q1,1.0,What does heterogeneous evidence from varied sources show about music therapy for dementia?,TFR
-0.2,0.44692787260227573,0.7434776415607663,0.75,0.688423785086582,0.9031254999928966,5,Q2,0.25,What does heterogeneous evidence from varied sources show about music therapy for dementia?,Standard
-1.0,1.0,0.9967628873465755,1.0,0.9259795222585335,0.9777632910699183,1,Q1,1.0,What does the best RCT evidence from Q1 dermatology journals show about tralokinumab for atopic dermatitis?,TFR
-0.6,0.6938557452045513,0.8758852995918351,0.0,0.5265657011759873,0.7009712022159933,3,Unranked,0.3333333333333333,What does the best RCT evidence from Q1 dermatology journals show about tralokinumab for atopic dermatitis?,Standard
-1.0,0.9530721273977244,0.9950215722988736,1.0,1.0,1.0,1,Q1,1.0,What is the meta-analytic evidence from high-impact journals on biologic switching in psoriasis non-responders?,TFR
-1.0,0.9155714505364381,0.959225709563806,1.0,0.777938566775601,0.9325263180710038,1,Q1,1.0,What is the meta-analytic evidence from high-impact journals on biologic switching in psoriasis non-responders?,Standard
-1.0,0.9507614678330717,0.9910252187701403,1.0,1.0,1.0,1,Q1,1.0,What do top-tier systematic reviews conclude about long-term remission with dupilumab in atopic dermatitis?,TFR
-0.75,0.7294661149577071,0.9137706637187095,1.0,0.9836821611850634,0.9836821611850634,3,Q1,0.0,What do top-tier systematic reviews conclude about long-term remission with dupilumab in atopic dermatitis?,Standard
-0.6,0.7538073391653585,0.9007082923765072,1.0,1.0,1.0,3,Q1,0.5,What is the highest-quality evidence on upadacitinib efficacy and safety in moderate-to-severe atopic dermatitis?,TFR
-0.2,0.5061442547954487,0.7686716720146863,0.0,0.6089343949810363,0.6763035104812187,5,Unranked,0.3333333333333333,What is the highest-quality evidence on upadacitinib efficacy and safety in moderate-to-severe atopic dermatitis?,Standard
-1.0,0.7877114904091027,0.9521790303294917,1.0,1.0,1.0,1,Q1,1.0,What do Q1-published RCTs show about the comparative efficacy of IL-17 versus IL-23 inhibitors for psoriasis?,TFR
-0.6,0.6240143054827942,0.8302976447699676,0.75,0.6480409554829326,0.8958905484015627,3,Q2,0.25,What do Q1-published RCTs show about the comparative efficacy of IL-17 versus IL-23 inhibitors for psoriasis?,Standard
-1.0,1.0,0.9966387450644217,1.0,1.0,1.0,1,Q1,1.0,What is the systematic review evidence on risk of serious infection with JAK inhibitors in dermatological conditions?,TFR
-0.2,0.6425503004057738,0.767798816665169,0.0,0.44412286644879784,0.6462302129493455,5,Unranked,0.0,What is the systematic review evidence on risk of serious infection with JAK inhibitors in dermatological conditions?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,What does high-tier evidence show about risk stratification and screening in patients with chronic skin inflammation?,TFR
-1.0,0.9836821611850634,0.9875022990263561,1.0,1.0,1.0,2,Q1,1.0,What does high-tier evidence show about risk stratification and screening in patients with chronic skin inflammation?,Standard
-1.0,1.0,0.9967628873465755,1.0,0.9213669182023797,0.9767020054138109,1,Q1,1.0,What is the best evidence from Q1 journals on topical ruxolitinib for vitiligo repigmentation?,TFR
-0.6,0.679423832220986,0.8239826115350771,0.0,0.25454838678859487,0.5171424081384397,3,Unranked,0.3333333333333333,What is the best evidence from Q1 journals on topical ruxolitinib for vitiligo repigmentation?,Standard
-0.6,0.8891809465236166,0.912863956114387,1.0,0.9413401592471554,0.9896916885042134,3,Q1,0.5,What do large systematic reviews in leading journals conclude about phototherapy frequency and atopic dermatitis outcomes?,TFR
-0.25,0.6294152442991986,0.7908945209660571,1.0,0.6131471927654584,0.8772153153380493,5,Q2,0.0,What do large systematic reviews in leading journals conclude about phototherapy frequency and atopic dermatitis outcomes?,Standard
-1.0,1.0,0.9967628873465755,1.0,0.8293121225775372,0.948807037664263,1,Q1,1.0,What is the RCT evidence from high-impact journals on the role of barrier repair therapy in eczema prevention?,TFR
-0.6,0.6892688618577465,0.8612906739562126,0.0,0.0986939703219551,0.5497122248600379,3,Unranked,0.2,What is the RCT evidence from high-impact journals on the role of barrier repair therapy in eczema prevention?,Standard
-1.0,0.9259795222585335,0.9786028494968771,1.0,0.9213669182023797,0.9785038001567021,2,Q1,1.0,What does heterogeneous evidence from varied journal tiers show about herbal remedies for psoriasis?,TFR
-0.25,0.6294152442991986,0.7908945209660571,0.25,0.5512021232954059,0.7533094697959536,5,Q4,0.5,What does heterogeneous evidence from varied journal tiers show about herbal remedies for psoriasis?,Standard
-1.0,0.9061442547954487,0.9865215097034452,1.0,0.8670870086853021,0.9699225363013644,1,Q1,1.0,How do observational studies in speciality journals document outcomes of cryotherapy for keloid scars?,TFR
-0.75,0.6461858173485043,0.8654941781043374,0.0,0.40189153908385944,0.6829536336171352,3,Unranked,0.0,How do observational studies in speciality journals document outcomes of cryotherapy for keloid scars?,Standard
-1.0,0.9200625111439562,0.9685044471222692,0.75,0.7970995862182803,0.9226271059191403,1,Q2,1.0,What scattered evidence exists on platelet-rich plasma for androgenetic alopecia across varied publication quality?,TFR
-1.0,0.9049765583210164,0.9885969719356578,0.0,0.38685280723454163,0.6509209298071326,3,Unranked,0.0,What scattered evidence exists on platelet-rich plasma for androgenetic alopecia across varied publication quality?,Standard
-0.8,0.9612472558382992,0.9643733012380571,1.0,0.9413401592471554,0.9934535397251649,2,Q1,1.0,How do mid-tier journals characterise photobiomodulation outcomes for hair regrowth?,TFR
-0.75,0.7616786513169639,0.8910725695595378,0.0,0.6012610260559063,0.7040965536719686,3,Unranked,0.3333333333333333,How do mid-tier journals characterise photobiomodulation outcomes for hair regrowth?,Standard
-0.6,0.9036904578863014,0.9184643617468957,1.0,0.9413401592471554,0.9936842654610013,3,Q1,0.5,What does mixed-level evidence suggest about dietary interventions for rosacea management?,TFR
-0.75,0.701785511624456,0.8606270533180782,1.0,0.4985219438614687,0.8578646188559056,3,Q1,0.2,What does mixed-level evidence suggest about dietary interventions for rosacea management?,Standard
-1.0,0.9323665287394267,0.9880375430465429,1.0,0.7181033504393926,0.9276714887281402,2,Q1,1.0,What are the histological characteristics of primary cutaneous follicle centre lymphoma?,TFR
-1.0,1.0,1.0,0.0,0.6934264036172708,0.6934264036172708,4,Unranked,0.0,What are the histological characteristics of primary cutaneous follicle centre lymphoma?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9866060902037453,1,Q1,1.0,How is primary effusion lymphoma managed in HIV-positive patients?,TFR
-0.5,0.6993694869720469,0.8470858852562799,0.25,0.39255721253510467,0.6915416341715489,4,Q4,0.25,How is primary effusion lymphoma managed in HIV-positive patients?,Standard
-0.75,0.8647330574788535,0.9421735276055474,0.5,0.8549208510262275,0.8597333594333643,3,Q3,0.0,What are the clinical features of malignant perivascular epithelioid cell tumour (PEComa)?,TFR
-0.5,0.7294661149577071,0.8738739415033686,0.0,0.6480409554829326,0.6480409554829326,4,Unranked,0.0,What are the clinical features of malignant perivascular epithelioid cell tumour (PEComa)?,Standard
-1.0,0.894999002123018,0.9804741121009619,0.75,0.7507390280692655,0.9094641529197299,1,Q2,1.0,How is adenocarcinoma of the rete testis diagnosed and treated?,TFR
-0.6666666666666666,0.8099531166420328,0.9125472012528206,0.5,0.8670870086853021,0.8670870086853021,4,Q4,0.0,How is adenocarcinoma of the rete testis diagnosed and treated?,Standard
-1.0,1.0,1.0,1.0,0.7653606369886218,0.9674679834891694,1,Q2,1.0,What are the surgical management strategies for retroperitoneal paraganglioma?,TFR
-0.4,0.79344133571786,0.8143423935051933,0.0,0.35195904451706733,0.53350083705442,4,Unranked,0.3333333333333333,What are the surgical management strategies for retroperitoneal paraganglioma?,Standard
-1.0,0.9836821611850634,0.9870231085210572,1.0,0.9651954696014428,0.9714089025373848,2,Q1,1.0,What are the dermatological presentations of metastatic Merkel cell carcinoma?,TFR
-0.4,0.7374975053075448,0.8531517589727163,0.0,0.5247818018709686,0.6742740126891907,4,Unranked,0.5,What are the dermatological presentations of metastatic Merkel cell carcinoma?,Standard
-1.0,0.9871064222343278,0.9865965128961985,1.0,0.8130542710519492,0.9617964183842987,1,Q1,1.0,How is leptomeningeal carcinomatosis from breast cancer managed palliatively?,TFR
-0.2,0.47661978330869953,0.7173701032981264,1.0,0.9323665287394267,0.991977377553201,5,Q1,0.0,How is leptomeningeal carcinomatosis from breast cancer managed palliatively?,Standard
-0.75,0.7804185934220761,0.9064042401622728,0.5,0.655788107456709,0.8387500597140731,3,Q3,0.3333333333333333,What are the ocular metastasis presentations in uveal melanoma?,TFR
-0.75,0.7117556475070489,0.8973678354001112,0.5,0.47909091485969846,0.7262078019717506,3,Q3,0.2,What are the ocular metastasis presentations in uveal melanoma?,Standard
-1.0,0.901306029678045,0.9695962172427146,0.6666666666666666,0.8435737579924145,0.9290814371994273,3,Q3,0.0,How is gastrointestinal stromal tumour with rare exon 9 mutation treated?,TFR
-1.0,0.8519590445170673,0.9557034395662896,0.0,0.5449702648457346,0.6379702844943262,4,Unranked,0.0,How is gastrointestinal stromal tumour with rare exon 9 mutation treated?,Standard
-0.8,0.9474995010615089,0.9568573302134125,0.75,0.43523744692131766,0.7974147531376876,2,Q2,1.0,What are the clinical outcomes of childhood adrenocortical carcinoma?,TFR
-0.25,0.6983368840037958,0.8012788178156953,0.75,0.43523744692131766,0.7846989281846092,5,Q2,0.0,What are the clinical outcomes of childhood adrenocortical carcinoma?,Standard
-1.0,0.8886293579004712,0.9759623815465601,1.0,1.0,0.9828920819566879,1,Q1,1.0,What do expert guidelines from Q1 journals say about hereditary colorectal cancer surveillance?,TFR
-1.0,1.0,1.0,0.0,0.6309297535714575,0.6309297535714575,5,Unranked,0.0,What do expert guidelines from Q1 journals say about hereditary colorectal cancer surveillance?,Standard
-1.0,1.0,1.0,0.75,0.8826803184943108,0.9481316041715843,1,Q2,1.0,What is the evidence on prophylactic mastectomy in BRCA1/2 carriers from high-impact journals?,TFR
-1.0,0.8808501001352579,0.9754303412596868,0.75,0.6087012413451591,0.8417264462496347,1,Q2,1.0,What is the evidence on prophylactic mastectomy in BRCA1/2 carriers from high-impact journals?,Standard
-0.6,0.7928714044099179,0.9012246588485788,1.0,0.867319681505689,0.9714475565309197,3,Q1,0.5,What do top oncology journals conclude about Lynch syndrome screening protocols?,TFR
-0.6666666666666666,0.8435737579924145,0.923622470999995,1.0,0.7039180890341347,0.9060254355346823,4,Q2,0.0,What do top oncology journals conclude about Lynch syndrome screening protocols?,Standard
-0.6,0.7901522935666144,0.8992977881559444,0.25,0.5474754603062782,0.7897785686972851,3,Q4,0.5,What is the evidence from leading journals on tumour treating fields for glioblastoma?,TFR
-1.0,1.0,1.0,0.25,0.68676033068531,0.7706976634413497,3,Q4,0.0,What is the evidence from leading journals on tumour treating fields for glioblastoma?,Standard
-1.0,1.0,0.995980525093665,1.0,0.9259795222585335,0.9810893753569714,1,Q1,1.0,What do systematic reviews in high-impact journals say about fertility preservation in young cancer patients?,TFR
-0.5,0.680606056760201,0.8447122853992027,1.0,1.0,0.9951058951456054,5,Q1,0.0,What do systematic reviews in high-impact journals say about fertility preservation in young cancer patients?,Standard
-1.0,0.8519590445170673,0.9557034395662896,0.25,0.688423785086582,0.81854138746777,4,Q4,0.0,What are the neurological features of superficial siderosis of the central nervous system?,TFR
-1.0,1.0,1.0,1.0,0.777938566775601,0.9325263180710038,4,Q1,0.0,What are the neurological features of superficial siderosis of the central nervous system?,Standard
-1.0,0.9407836178068271,0.9847728482617256,1.0,0.9259795222585335,0.9617402390004923,1,Q1,1.0,How is anti-NMDA receptor encephalitis managed in pregnant patients?,TFR
-0.2,0.6557355595297667,0.7438762418055407,1.0,0.5694988640439966,0.8511285509645932,5,Q1,0.0,How is anti-NMDA receptor encephalitis managed in pregnant patients?,Standard
-0.6,0.8524756842575958,0.9194778445503162,1.0,0.7974779478881874,0.9105537330925677,3,Q1,0.0,What are the clinical manifestations of Susac syndrome in young women?,TFR
-0.2,0.6557355595297667,0.7384521000132968,1.0,0.4985219438614687,0.8524028434920344,5,Q1,0.0,What are the clinical manifestations of Susac syndrome in young women?,Standard
-0.75,0.8739160282497203,0.9374581696836084,1.0,0.777938566775601,0.9329089739626153,3,Q1,0.0,How does primary angiitis of the central nervous system present and respond to treatment?,TFR
-0.3333333333333333,0.5158474921363962,0.7521866188906461,0.0,0.5307212739772434,0.7122630665145961,5,Unranked,0.0,How does primary angiitis of the central nervous system present and respond to treatment?,Standard
-1.0,0.9300809618991231,0.974038335042462,0.75,0.9464556027366066,0.9546652174479158,1,Q2,1.0,What are the neurological complications of cat scratch disease in paediatric patients?,TFR
-0.6,0.7021252503381448,0.8719282464778692,1.0,0.7039180890341348,0.8854598815714875,3,Q1,0.2,What are the neurological complications of cat scratch disease in paediatric patients?,Standard
-1.0,0.8519590445170673,0.9557034395662896,0.5,0.8130542710519492,0.8648525665503297,4,Q3,0.0,How is Rasmussen encephalitis diagnosed and managed surgically?,TFR
-1.0,0.8826803184943108,0.9777242507697853,0.0,0.5,0.5,4,Unranked,0.0,How is Rasmussen encephalitis diagnosed and managed surgically?,Standard
-1.0,1.0,1.0,0.6666666666666666,0.6199062332840657,0.8679333660769516,2,Q3,0.0,What are the clinical features of neurosarcoidosis presenting as cranial neuropathy?,TFR
-0.5,0.617319681505689,0.8398625486866789,0.0,0.0,0.48470281228817413,5,Unranked,0.0,What are the clinical features of neurosarcoidosis presenting as cranial neuropathy?,Standard
-0.5,0.8549208510262275,0.8717817997389222,0.5,0.6908465248289621,0.8440514201623748,4,Q3,0.3333333333333333,How is POEMS syndrome distinguished from chronic inflammatory demyelinating polyneuropathy?,TFR
-1.0,1.0,1.0,1.0,0.9651954696014428,0.9687707507974168,4,Q3,0.0,How is POEMS syndrome distinguished from chronic inflammatory demyelinating polyneuropathy?,Standard
-0.5,0.7653606369886217,0.8879149724065322,1.0,0.9413401592471554,0.9803192651867281,5,Q1,0.0,What are the neurological manifestations of Fabry disease?,TFR
-0.5,0.6993694869720469,0.8470858852562799,0.25,0.29234467670423736,0.625374683520688,5,Q4,0.0,What are the neurological manifestations of Fabry disease?,Standard
-1.0,0.9323665287394267,0.9874668699701061,1.0,0.9259795222585335,0.9777632910699183,2,Q1,1.0,How is FIRES (febrile infection-related epilepsy syndrome) treated in adults?,TFR
-0.5,0.7633860993158484,0.8418005823548675,0.0,0.5637932991212148,0.7488724034405486,4,Unranked,0.3333333333333333,How is FIRES (febrile infection-related epilepsy syndrome) treated in adults?,Standard
-1.0,0.9213669182023797,0.9808851350584301,1.0,0.9413401592471554,0.9929375288501646,2,Q1,1.0,What do Q1 neurology journal RCTs show about the safety of anticoagulation in cerebral venous thrombosis?,TFR
-1.0,0.9146560612887686,0.9741950295670265,1.0,0.4985219438614687,0.8578646188559056,2,Q1,1.0,What do Q1 neurology journal RCTs show about the safety of anticoagulation in cerebral venous thrombosis?,Standard
-1.0,1.0,1.0,1.0,0.9259795222585335,0.9803723397819989,1,Q1,1.0,What is the systematic review evidence on genetic testing utility in hereditary spastic paraplegia?,TFR
-1.0,1.0,0.9920466006454153,0.0,0.5,0.5,4,Unranked,0.0,What is the systematic review evidence on genetic testing utility in hereditary spastic paraplegia?,Standard
-1.0,0.9061442547954487,0.9837997689204072,1.0,1.0,1.0,1,Q1,1.0,What do high-impact journal meta-analyses conclude about disease-modifying therapy in clinically isolated syndrome?,TFR
-0.6,0.6350235933991549,0.83335641450809,1.0,0.7039180890341347,0.9047172294870751,3,Q1,0.3333333333333333,What do high-impact journal meta-analyses conclude about disease-modifying therapy in clinically isolated syndrome?,Standard
-1.0,1.0,1.0,1.0,0.9651954696014428,0.9686066766955969,1,Q1,1.0,What is the Q1-journal evidence on intrathecal baclofen for spasticity management?,TFR
-0.2,0.5630635209026998,0.7642388705931433,0.75,0.8739160282497203,0.9374581696836084,5,Q2,0.5,What is the Q1-journal evidence on intrathecal baclofen for spasticity management?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9750789824551586,1,Q1,1.0,What do systematic reviews in leading journals conclude about neonatal seizure management with phenobarbital?,TFR
-1.0,0.8039504795849296,0.9375250132181675,0.0,0.33333333333333337,0.6717287037439216,1,Unranked,0.2,What do systematic reviews in leading journals conclude about neonatal seizure management with phenobarbital?,Standard
-1.0,0.8652498331079034,0.9687469945162234,1.0,1.0,1.0,1,Q2,1.0,What are the clinical features of eosinophilic fasciitis and how is it differentiated from scleroderma?,TFR
-0.6666666666666666,0.8099531166420328,0.9110983816788429,1.0,0.6131471927654584,0.8503449055347546,4,Q2,0.0,What are the clinical features of eosinophilic fasciitis and how is it differentiated from scleroderma?,Standard
-0.5,0.7970995862182803,0.8815527861176312,1.0,0.9259795222585335,0.9786028494968771,4,Q1,0.3333333333333333,How is acquired reactive perforating collagenosis managed in diabetic patients?,TFR
-1.0,0.8519590445170673,0.9519475762801467,1.0,0.7039180890341347,0.9053112995489574,4,Q1,0.0,How is acquired reactive perforating collagenosis managed in diabetic patients?,Standard
-1.0,0.9213669182023797,0.9767020054138109,1.0,1.0,1.0,2,Q1,1.0,What are the dermatological features of adult-onset Still disease?,TFR
-0.6666666666666666,0.9298593499260985,0.946487658153176,0.6666666666666666,0.9298593499260985,0.9298593499260985,4,Q3,0.0,What are the dermatological features of adult-onset Still disease?,Standard
-1.0,0.9834114722632786,0.9808824421312069,1.0,0.9413401592471554,0.9936842654610013,1,Q1,1.0,How is sneddon-wilkinson disease (subcorneal pustular dermatosis) treated?,TFR
-1.0,0.8826803184943108,0.9863520113014781,0.75,0.47343429882401267,0.810311062896755,4,Q2,0.0,How is sneddon-wilkinson disease (subcorneal pustular dermatosis) treated?,Standard
-1.0,1.0,1.0,1.0,0.7970995862182803,0.9678155331088688,3,Q1,0.0,What are the clinical features of erythema gyratum repens as a paraneoplastic syndrome?,TFR
-1.0,1.0,1.0,1.0,0.5771550256590888,0.8836078928165381,3,Q1,0.0,What are the clinical features of erythema gyratum repens as a paraneoplastic syndrome?,Standard
-0.75,0.734421189254329,0.9081667300127649,1.0,0.908465248289621,0.9572197114919498,3,Q1,0.2,How is cutaneous Rosai-Dorfman disease managed when systemic involvement is absent?,TFR
-0.6666666666666666,0.808082437104775,0.9011567519437345,0.5,0.7633860993158484,0.828256384356758,4,Q3,0.0,How is cutaneous Rosai-Dorfman disease managed when systemic involvement is absent?,Standard
-1.0,1.0,1.0,1.0,0.808082437104775,0.9561125053043698,1,Q2,1.0,What are the dermatological manifestations of Kindler syndrome?,TFR
-1.0,1.0,1.0,1.0,0.6993694869720469,0.925248016143815,4,Q3,0.0,What are the dermatological manifestations of Kindler syndrome?,Standard
-0.5,0.8670870086853021,0.8908151253526532,1.0,1.0,1.0,4,Q1,0.5,How is porokeratosis of Mibelli distinguished from other porokeratosis variants?,TFR
-1.0,0.7658259826293958,0.9414434588289818,1.0,0.8344475896326595,0.9131210744214262,2,Q2,1.0,How is porokeratosis of Mibelli distinguished from other porokeratosis variants?,Standard
-1.0,0.9213669182023797,0.9808851350584301,1.0,0.9050490793874433,0.9657117124116109,2,Q1,1.0,What are the histopathological features of granuloma annulare in atypical presentations?,TFR
-0.75,0.6718513476054694,0.8647215652957516,0.5,0.6618326436971338,0.8564865260578434,3,Q3,0.2,What are the histopathological features of granuloma annulare in atypical presentations?,Standard
-1.0,0.8886293579004712,0.971665152089858,0.75,0.9376847570173164,0.9460997855276976,1,Q2,1.0,How is NERDS versus STONEES criteria applied to distinguish infected from critically colonised wounds?,TFR
-1.0,0.9213669182023797,0.9714651864679268,1.0,1.0,1.0,2,Q1,1.0,How is NERDS versus STONEES criteria applied to distinguish infected from critically colonised wounds?,Standard
-0.6,0.7530721273977244,0.8946257420492822,1.0,0.9288126419945004,0.9838907005625761,3,Q1,0.5,What do Q1 dermatology journal RCTs show about dupilumab safety in paediatric atopic dermatitis?,TFR
-0.2,0.5567237860944659,0.7685970641256762,1.0,0.8826803184943108,0.9723577352371421,5,Q1,0.5,What do Q1 dermatology journal RCTs show about dupilumab safety in paediatric atopic dermatitis?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9934535397251649,1,Q1,1.0,What is the systematic review evidence on UV phototherapy for mycosis fungoides?,TFR
-1.0,0.924974312301727,0.9720131766171847,0.75,0.9323665287394267,0.9424282758516982,1,Q2,1.0,What is the systematic review evidence on UV phototherapy for mycosis fungoides?,Standard
-1.0,0.9413401592471554,0.9896916885042134,1.0,0.6854676728095195,0.9001693877158341,2,Q1,1.0,What do high-impact journals conclude about long-term biologic therapy and malignancy risk in psoriasis?,TFR
-0.5,0.7653606369886217,0.8792872118748392,0.25,0.3987389739440937,0.679971758492864,4,Q4,0.3333333333333333,What do high-impact journals conclude about long-term biologic therapy and malignancy risk in psoriasis?,Standard
-1.0,1.0,0.9967628873465755,0.75,0.8590516752196962,0.928975264040152,1,Q2,1.0,What is the RCT evidence from leading journals on abrocitinib for moderate-to-severe atopic dermatitis?,TFR
-1.0,0.9728773657707043,0.9776577707795634,0.0,0.6934264036172708,0.6934264036172708,1,Unranked,0.3333333333333333,What is the RCT evidence from leading journals on abrocitinib for moderate-to-severe atopic dermatitis?,Standard
-1.0,1.0,1.0,1.0,0.9836821611850634,0.9865057063686541,1,Q1,1.0,What do systematic reviews in Q1 journals say about patch testing standardisation for allergic contact dermatitis?,TFR
-0.4,0.6176805807898623,0.8217747673604476,0.0,0.5307212739772434,0.7546020077873851,4,Unranked,0.5,What do systematic reviews in Q1 journals say about patch testing standardisation for allergic contact dermatitis?,Standard
+1.0,1.0,1.0,0.75,0.8647330574788535,0.9305419211873026,1,Q2,1.0,What is the most effective intervention for chronic low back pain based on RCT evidence?,TFR
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q2,0.0,What is the most effective intervention for chronic low back pain based on RCT evidence?,Standard
+0.8,0.9061442547954487,0.9572881727261123,1.0,0.8753695140346327,0.9755935917242388,2,Q1,1.0,What does meta-analytic evidence show about exercise therapy for knee osteoarthritis?,TFR
+0.8,0.7184327643863461,0.9199392372476763,1.0,0.6819672217727683,0.9144124779923626,2,Q1,1.0,What does meta-analytic evidence show about exercise therapy for knee osteoarthritis?,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the comparative efficacy of multimodal analgesia vs opioids post-surgery from systematic reviews?,TFR
+0.2,0.38125124734622756,0.7047408353926441,0.0,0.0,0.38685280723454163,5,Unranked,0.2,What is the comparative efficacy of multimodal analgesia vs opioids post-surgery from systematic reviews?,Standard
+0.8,0.8192619084227396,0.9329421363480213,1.0,0.9413401592471554,0.9896916885042134,2,Q1,1.0,"According to randomized trials, does early mobilisation reduce length of stay after spinal surgery?",TFR
+0.6,0.7638523816845478,0.8813768187173986,0.75,0.8826803184943108,0.9241404330009038,3,Q2,0.3333333333333333,"According to randomized trials, does early mobilisation reduce length of stay after spinal surgery?",Standard
+0.8,0.9474995010615089,0.9609186813543533,1.0,1.0,1.0,2,Q1,1.0,What level-1 evidence exists for cognitive rehabilitation in traumatic brain injury?,TFR
+0.25,0.7341740173706042,0.8118598834958759,1.0,1.0,1.0,5,Q1,0.5,What level-1 evidence exists for cognitive rehabilitation in traumatic brain injury?,Standard
+1.0,1.0,1.0,0.75,0.7653606369886217,0.9248669662577422,2,Q2,1.0,What systematic reviews compare physiotherapy vs surgery for rotator cuff tears?,TFR
+0.25,0.6012610260559063,0.7903035432510707,0.0,0.270533885042293,0.6022879780416663,5,Unranked,0.2,What systematic reviews compare physiotherapy vs surgery for rotator cuff tears?,Standard
+0.75,0.6721059462716454,0.8928437106016497,1.0,1.0,1.0,3,Q1,0.0,What is the evidence from RCTs for spinal cord stimulation in failed back surgery syndrome?,TFR
+0.5,0.7341740173706042,0.8756769827188949,1.0,0.9197207891481876,0.9197207891481876,5,Q2,0.0,What is the evidence from RCTs for spinal cord stimulation in failed back surgery syndrome?,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Meta-analytic findings on TENS for postoperative pain management,TFR
+1.0,0.9530721273977244,0.9921181676913065,1.0,0.4985219438614687,0.8578646188559056,1,Q1,1.0,Meta-analytic findings on TENS for postoperative pain management,Standard
+1.0,1.0,1.0,1.0,0.9413401592471554,0.9936842654610013,1,Q1,1.0,What do Cochrane reviews say about mirror therapy for phantom limb pain?,TFR
+0.5,0.7653606369886217,0.8792872118748392,0.75,0.5311576214913418,0.8477114037798948,5,Q2,0.0,What do Cochrane reviews say about mirror therapy for phantom limb pain?,Standard
+1.0,0.9407836178068271,0.9829976023759306,1.0,0.7653606369886218,0.9469024295259745,1,Q2,1.0,Pooled RCT evidence on the efficacy of duloxetine for neuropathic pain,TFR
+1.0,1.0,1.0,0.0,0.0,0.0,1,Unranked,0.0,Pooled RCT evidence on the efficacy of duloxetine for neuropathic pain,Standard
+1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,What randomized evidence supports graded exercise therapy in fibromyalgia?,TFR
+0.8,0.9507614678330717,0.9544301966362844,0.0,0.5637932991212148,0.7366997651844085,2,Unranked,0.5,What randomized evidence supports graded exercise therapy in fibromyalgia?,Standard
+1.0,1.0,1.0,1.0,0.8130542710519492,0.9576952311400714,1,Q1,1.0,Systematic review evidence for psychological interventions in chronic pain,TFR
+0.2,0.6883681571526784,0.7730215508133973,0.75,0.8753695140346327,0.943572424748608,5,Q2,0.5,Systematic review evidence for psychological interventions in chronic pain,Standard
+1.0,0.9407836178068271,0.9824717383170832,1.0,0.734421189254329,0.9420664090627167,1,Q1,1.0,What RCTs evaluate aquatic therapy outcomes in rheumatoid arthritis rehabilitation?,TFR
+0.8,0.9507614678330717,0.9590847556274513,0.75,0.8013764537628341,0.9263408308193167,2,Q2,1.0,What RCTs evaluate aquatic therapy outcomes in rheumatoid arthritis rehabilitation?,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Evidence from randomized trials on neurostimulation for treatment-resistant depression,TFR
+1.0,0.9407836178068271,0.9829976023759306,1.0,0.777938566775601,0.9311378076163341,1,Q1,1.0,Evidence from randomized trials on neurostimulation for treatment-resistant depression,Standard
+1.0,0.9407836178068271,0.9829976023759306,1.0,1.0,1.0,1,Q1,1.0,What is the meta-analytic evidence on fall prevention programmes for elderly patients?,TFR
+1.0,0.8469278726022758,0.9684923689687367,1.0,1.0,1.0,1,Q1,1.0,What is the meta-analytic evidence on fall prevention programmes for elderly patients?,Standard
+1.0,1.0,1.0,0.75,0.7346393630113782,0.9001386375213553,1,Q2,1.0,Do systematic reviews support hydrotherapy for reducing spasticity in multiple sclerosis?,TFR
+0.2,0.28738729581946004,0.6737321065060657,0.75,0.8148100536689385,0.9361716018386684,5,Q2,0.25,Do systematic reviews support hydrotherapy for reducing spasticity in multiple sclerosis?,Standard
+1.0,1.0,1.0,0.75,0.7804185934220761,0.8986495126008298,1,Q2,1.0,RCT-level evidence for transcranial magnetic stimulation in post-stroke rehabilitation,TFR
+0.2,0.7592076495650287,0.7875383649156078,0.0,0.40068822688141703,0.6251853310882258,5,Unranked,0.0,RCT-level evidence for transcranial magnetic stimulation in post-stroke rehabilitation,Standard
+0.8,0.9015229356661434,0.9543271605402797,1.0,1.0,1.0,2,Q1,1.0,What does high-quality evidence say about opioid tapering strategies in chronic pain patients?,TFR
+1.0,0.8753695140346327,0.9755935917242388,1.0,0.8826803184943108,0.9723577352371421,2,Q1,1.0,What does high-quality evidence say about opioid tapering strategies in chronic pain patients?,Standard
+1.0,0.7901522935666144,0.9468183511467511,1.0,1.0,1.0,1,Q1,1.0,Systematic reviews on multidisciplinary pain programmes vs unimodal therapy,TFR
+0.2,0.6109162352763666,0.7097057252867147,0.75,0.9323665287394267,0.9304881284797233,5,Q2,0.3333333333333333,Systematic reviews on multidisciplinary pain programmes vs unimodal therapy,Standard
+0.4,0.7184327643863461,0.8503266592370158,1.0,1.0,1.0,4,Q1,0.5,Meta-analytic evidence for botulinum toxin in chronic migraine prevention,TFR
+1.0,0.8519590445170673,0.9605753368118396,0.0,0.31939394323979897,0.5805078709398304,4,Unranked,0.0,Meta-analytic evidence for botulinum toxin in chronic migraine prevention,Standard
+1.0,0.9413401592471554,0.9900808841271455,1.0,1.0,1.0,2,Q1,1.0,RCT evidence comparing minimally invasive vs open lumbar decompression outcomes,TFR
+0.5,0.8130542710519492,0.8896722102763057,0.0,0.3065735963827292,0.5706417189553201,4,Unranked,0.3333333333333333,RCT evidence comparing minimally invasive vs open lumbar decompression outcomes,Standard
+0.8,0.9061442547954487,0.9572881727261123,1.0,0.9413401592471554,0.9900808841271455,2,Q1,1.0,Cochrane review findings on heat therapy vs cold therapy for musculoskeletal pain,TFR
+0.2,0.5014780561385311,0.7225970060152833,0.75,0.8753695140346327,0.9388859166382352,5,Q2,0.5,Cochrane review findings on heat therapy vs cold therapy for musculoskeletal pain,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What meta-analyses evaluate long-term cardiovascular risk of NSAIDs in arthritis patients?,TFR
+0.25,0.41531064659152533,0.6907700731340152,1.0,1.0,1.0,5,Q1,0.2,What meta-analyses evaluate long-term cardiovascular risk of NSAIDs in arthritis patients?,Standard
+1.0,1.0,0.9969472379578537,1.0,1.0,1.0,1,Q1,1.0,Pooled RCT data on the analgesic efficacy of gabapentinoids post-surgery,TFR
+1.0,0.7386006394465727,0.9138566997459924,0.0,0.10950106520113874,0.5275543589509835,1,Unranked,0.2,Pooled RCT data on the analgesic efficacy of gabapentinoids post-surgery,Standard
+1.0,1.0,1.0,0.5,0.7653606369886217,0.8841966403135247,1,Q3,0.5,Systematic review on early vs delayed physiotherapy after ACL reconstruction,TFR
+0.25,0.41531064659152533,0.7128718056817412,1.0,1.0,1.0,5,Q1,0.25,Systematic review on early vs delayed physiotherapy after ACL reconstruction,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Evidence from RCTs for virtual reality in chronic pain rehabilitation,TFR
+1.0,0.7243237749167603,0.9020968365877176,1.0,1.0,1.0,1,Q1,1.0,Evidence from RCTs for virtual reality in chronic pain rehabilitation,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What high-quality evidence supports mindfulness-based stress reduction for fibromyalgia?,TFR
+0.2,0.28738729581946004,0.6737321065060657,1.0,0.617319681505689,0.909100841186754,5,Q1,0.25,What high-quality evidence supports mindfulness-based stress reduction for fibromyalgia?,Standard
+1.0,0.9061442547954487,0.974545660860418,1.0,0.7039180890341347,0.9060254355346823,1,Q1,1.0,Meta-analysis of radiofrequency ablation outcomes in facet joint syndrome,TFR
+1.0,0.7243237749167603,0.9061500122490495,0.0,0.3354350434265105,0.6555911179039409,1,Unranked,0.2,Meta-analysis of radiofrequency ablation outcomes in facet joint syndrome,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,RCT evidence for resistance training in cancer-related fatigue management,TFR
+1.0,1.0,1.0,1.0,0.7653606369886217,0.9517756747341085,1,Q1,1.0,RCT evidence for resistance training in cancer-related fatigue management,Standard
+1.0,1.0,1.0,0.75,0.6940451800563907,0.8785999850148942,1,Q2,1.0,Systematic evidence on photobiomodulation therapy for musculoskeletal pain,TFR
+0.2,0.4583761461637885,0.7575176902387616,1.0,1.0,1.0,5,Q2,0.5,Systematic evidence on photobiomodulation therapy for musculoskeletal pain,Standard
+1.0,0.8047523970600546,0.9476978178978269,1.0,0.8240204777414663,0.9767744987253195,1,Q1,1.0,What are expert consensus recommendations for managing complex regional pain syndrome type II?,TFR
+0.4,0.5,0.7706190054526425,1.0,0.8240204777414663,0.9710252500226593,4,Q1,0.25,What are expert consensus recommendations for managing complex regional pain syndrome type II?,Standard
+1.0,1.0,1.0,1.0,0.8435737579924145,0.9796808707575757,3,Q2,0.0,What do case reports reveal about rare adverse events following spinal cord stimulator implantation?,TFR
+1.0,1.0,1.0,0.0,0.13770577618809332,0.4573369727327457,4,Unranked,0.0,What do case reports reveal about rare adverse events following spinal cord stimulator implantation?,Standard
+1.0,0.9413401592471554,0.9896916885042134,1.0,1.0,1.0,2,Q1,1.0,What are the clinical observations of naphtalanotherapy in psoriatic arthritis rehabilitation?,TFR
+1.0,0.9259795222585335,0.9777632910699183,0.0,0.48516021732359466,0.709229313312564,2,Unranked,0.3333333333333333,What are the clinical observations of naphtalanotherapy in psoriatic arthritis rehabilitation?,Standard
+1.0,1.0,1.0,0.0,0.44122176246475586,0.6923127009640677,1,Unranked,0.0,Describe the clinical presentation of occipital neuralgia based on case series,TFR
+0.2,0.3622942238119067,0.6879255654297408,1.0,1.0,1.0,5,Q1,0.0,Describe the clinical presentation of occipital neuralgia based on case series,Standard
+0.75,0.8826803184943108,0.9481316041715843,1.0,0.8086598407528445,0.9597195881086011,3,Q1,0.5,What expert opinions exist on the management of juvenile recurrent parotitis in children?,TFR
+1.0,0.808082437104775,0.9499755804487899,1.0,0.6787956981029196,0.8757412141153033,3,Q1,0.0,What expert opinions exist on the management of juvenile recurrent parotitis in children?,Standard
+0.8,0.894999002123018,0.9526358366220861,1.0,1.0,1.0,2,Q1,1.0,What observational studies describe long-term outcomes of wireless peripheral nerve stimulation at C2-C3?,TFR
+0.6666666666666666,0.7850703250369506,0.8857036147673562,0.0,0.23463936301137822,0.6182885020492784,4,Unranked,0.0,What observational studies describe long-term outcomes of wireless peripheral nerve stimulation at C2-C3?,Standard
+1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,Clinical experience reports on integrating naphtalanotherapy with physiotherapy,TFR
+0.8,0.679423832220986,0.8632919341243429,0.0,0.4683480347412084,0.6740190899733329,2,Unranked,0.2,Clinical experience reports on integrating naphtalanotherapy with physiotherapy,Standard
+0.6,0.8122885095908974,0.9131283812380312,0.75,0.8826803184943108,0.9441390272147961,3,Q2,0.5,What retrospective cohort studies examine walking recovery after spinal arthrodesis?,TFR
+1.0,1.0,0.989141344633751,0.75,0.8808251803598827,0.8808251803598827,3,Q2,0.0,What retrospective cohort studies examine walking recovery after spinal arthrodesis?,Standard
+1.0,1.0,0.9967628873465755,1.0,1.0,1.0,1,Q1,1.0,Expert panel recommendations for grading pain intensity in non-verbal patients,TFR
+0.3333333333333333,0.5799960084920718,0.7959190675029894,0.0,0.0,0.5012658353418871,5,Unranked,0.0,Expert panel recommendations for grading pain intensity in non-verbal patients,Standard
+1.0,1.0,1.0,1.0,0.8826803184943108,0.9858117121511257,1,Q1,1.0,What animal model studies inform neuropathic pain pathophysiology?,TFR
+0.5,0.680606056760201,0.8558112355261802,0.5,0.7288368792759478,0.8444468219028464,5,Q3,0.0,What animal model studies inform neuropathic pain pathophysiology?,Standard
+0.6,0.9036904578863014,0.9184643617468957,1.0,1.0,1.0,3,Q1,0.5,What case reports describe novel presentations of desmoplakin cardiomyopathy?,TFR
+1.0,1.0,1.0,1.0,1.0,1.0,3,Q1,0.0,What case reports describe novel presentations of desmoplakin cardiomyopathy?,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Narrative review of the history and evolution of pain management approaches,TFR
+0.5,0.8403030283801005,0.8733683229467235,1.0,0.9836821611850634,0.9852640753333892,5,Q1,0.0,Narrative review of the history and evolution of pain management approaches,Standard
+1.0,1.0,0.9964678158680195,1.0,1.0,1.0,1,Q1,1.0,What are the consensus guidelines for frailty assessment in older adults with heart failure?,TFR
+0.8,0.9474995010615089,0.9553675099315003,1.0,0.777938566775601,0.9311378076163341,2,Q1,1.0,What are the consensus guidelines for frailty assessment in older adults with heart failure?,Standard
+0.6,0.8562462579613171,0.920833502690511,0.75,0.6480409554829326,0.8958905484015627,3,Q2,0.5,Expert opinion on tailoring physiotherapy duration for psoriatic arthritis rehabilitation,TFR
+1.0,0.9213669182023797,0.9793608759891894,0.0,0.3212043018970804,0.6643205153564598,2,Unranked,0.0,Expert opinion on tailoring physiotherapy duration for psoriatic arthritis rehabilitation,Standard
+0.8,0.8812512473462275,0.9400275710655556,1.0,1.0,1.0,2,Q1,1.0,What observational data exists on Barthel Index use in predicting ADL outcomes?,TFR
+1.0,1.0,1.0,1.0,1.0,1.0,2,Q1,1.0,What observational data exists on Barthel Index use in predicting ADL outcomes?,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,2,Q1,1.0,What do Q1 orthopaedic journals report on outcomes of total knee arthroplasty?,TFR
+1.0,0.8647330574788535,0.9831130933927733,1.0,0.5865984075284455,0.8811991369160118,2,Q1,1.0,What do Q1 orthopaedic journals report on outcomes of total knee arthroplasty?,Standard
+1.0,0.9530721273977244,0.9884050858715858,1.0,1.0,1.0,1,Q1,1.0,What is the evidence from high-impact journals on perioperative pain protocols?,TFR
+0.6,0.49219986648632275,0.79880227413389,0.0,0.5,0.5,3,Unranked,0.0,What is the evidence from high-impact journals on perioperative pain protocols?,Standard
+1.0,1.0,0.995980525093665,1.0,0.9259795222585335,0.9795987853954985,1,Q1,1.0,What do top-ranked rehabilitation journals publish on robot-assisted gait training?,TFR
+0.4,0.4630279215745445,0.7251073193768497,0.0,0.48516021732359466,0.7273762035972507,4,Unranked,0.2,What do top-ranked rehabilitation journals publish on robot-assisted gait training?,Standard
+1.0,0.9530721273977244,0.9921181676913065,1.0,1.0,1.0,1,Q1,1.0,Evidence from Q1 neurology journals on deep brain stimulation for Parkinson's disease,TFR
+1.0,0.8757357801347987,0.9661549555616027,1.0,0.7039180890341347,0.9060254355346823,1,Q1,1.0,Evidence from Q1 neurology journals on deep brain stimulation for Parkinson's disease,Standard
+1.0,0.9507614678330717,0.9910252187701403,1.0,0.9259795222585335,0.9817558680267063,1,Q1,1.0,What do leading psychiatry journals say about cognitive behavioural therapy for chronic pain?,TFR
+0.2,0.64097202146074,0.7784880264793096,0.25,0.5512021232954059,0.7533094697959536,5,Q4,0.5,What do leading psychiatry journals say about cognitive behavioural therapy for chronic pain?,Standard
+1.0,0.9378678900673995,0.9841710350145154,1.0,0.9050490793874433,0.9479290438170535,1,Q1,1.0,Findings from Q1 oncology journals on pain management in advanced cancer,TFR
+0.5,0.7341740173706042,0.8661072012350618,0.0,0.0,0.4744200353065766,5,Unranked,0.0,Findings from Q1 oncology journals on pain management in advanced cancer,Standard
+1.0,0.9378678900673995,0.9850833011107374,1.0,0.9259795222585335,0.9817558680267063,1,Q1,1.0,What do high-ranking cardiovascular journals report on exercise rehabilitation after MI?,TFR
+0.25,0.5679726963447116,0.7242626857711238,1.0,0.7932992037642228,0.9473554237404077,5,Q1,0.3333333333333333,What do high-ranking cardiovascular journals report on exercise rehabilitation after MI?,Standard
+0.8,0.9507614678330717,0.9523081048067115,1.0,0.9413401592471554,0.9900808841271455,2,Q1,1.0,Evidence from peer-reviewed Q1 journals on spinal fusion complication rates,TFR
+0.25,0.5679726963447116,0.7364185288376675,0.0,0.5637932991212148,0.7084342592093371,5,Unranked,0.3333333333333333,Evidence from peer-reviewed Q1 journals on spinal fusion complication rates,Standard
+0.8,0.8122885095908974,0.9412303947687283,1.0,1.0,1.0,2,Q1,1.0,What do Q2 pain journals report on ketamine infusion therapy for refractory pain?,TFR
+0.8,0.7346393630113782,0.8828148145239931,1.0,0.5316519652587917,0.8518080397362219,2,Q1,1.0,What do Q2 pain journals report on ketamine infusion therapy for refractory pain?,Standard
+1.0,1.0,1.0,0.75,0.6231524298268358,0.8462298541526516,1,Q2,1.0,Recent publications in top rehabilitation journals on telerehabilitation efficacy,TFR
+0.2,0.7592076495650287,0.7875383649156078,0.0,0.24926097193073435,0.6031418715613001,5,Unranked,0.0,Recent publications in top rehabilitation journals on telerehabilitation efficacy,Standard
+0.8,0.894999002123018,0.9520747983656986,1.0,1.0,1.0,2,Q1,1.0,What does Q1 orthopaedic literature report on revision surgery rates after hip arthroplasty?,TFR
+0.25,0.30339051850412474,0.6887994045513212,0.0,0.38685280723454163,0.6240505200038379,5,Unranked,0.2,What does Q1 orthopaedic literature report on revision surgery rates after hip arthroplasty?,Standard
+1.0,0.9300809618991231,0.97873210049252,1.0,1.0,1.0,1,Q1,1.0,High-impact findings on prevalence of chronic post-surgical pain,TFR
+1.0,0.8026120593560899,0.9395225786842205,0.5,0.734421189254329,0.8488935254156906,3,Q3,0.0,High-impact findings on prevalence of chronic post-surgical pain,Standard
+1.0,1.0,0.9937253866135632,1.0,0.9413401592471554,0.9929375288501646,1,Q1,1.0,What do indexed Q1 gastroenterology journals report on gut-brain axis and pain?,TFR
+0.2,0.2655788107456709,0.6596041104711666,0.0,0.38685280723454163,0.6509209298071326,5,Unranked,0.25,What do indexed Q1 gastroenterology journals report on gut-brain axis and pain?,Standard
+1.0,1.0,1.0,1.0,0.8130542710519492,0.9635626089060146,2,Q1,1.0,Findings from leading dermatology journals on biologics for psoriatic disease,TFR
+0.5,0.7653606369886217,0.8700237522830396,0.25,0.4692787260227565,0.6713860725233042,4,Q4,0.3333333333333333,Findings from leading dermatology journals on biologics for psoriatic disease,Standard
+1.0,0.9871064222343278,0.9902471483423112,1.0,0.867319681505689,0.9714475565309197,1,Q1,1.0,Q1 journal evidence on cognitive decline outcomes after prolonged general anaesthesia,TFR
+1.0,0.8826803184943108,0.9858117121511257,0.75,0.4985219438614687,0.8182395544466733,2,Q2,1.0,Q1 journal evidence on cognitive decline outcomes after prolonged general anaesthesia,Standard
+1.0,0.9337517462847186,0.9803274548542471,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,What do Q1-Q2 pulmonology journals report on pulmonary rehabilitation programmes?,TFR
+0.75,0.8590516752196962,0.9331583936847712,0.0,0.5307212739772434,0.7606395682357036,3,Unranked,0.3333333333333333,What do Q1-Q2 pulmonology journals report on pulmonary rehabilitation programmes?,Standard
+1.0,0.9259795222585335,0.9786028494968771,1.0,0.9836821611850634,0.9859453321521002,2,Q1,1.0,Evidence from indexed rheumatology journals on biologic DMARDs in psoriatic arthritis,TFR
+0.5,0.7653606369886217,0.8841966403135247,0.25,0.4391628131558476,0.7526451610861303,4,Q4,0.5,Evidence from indexed rheumatology journals on biologic DMARDs in psoriatic arthritis,Standard
+0.8,0.9061442547954487,0.9572881727261123,0.75,0.8826803184943108,0.9462480870845545,2,Q2,1.0,What do high-ranking neurology journals report on gait analysis in Huntington's disease?,TFR
+0.8,0.7084428549463561,0.9069505649302249,0.75,0.6231524298268358,0.8378541447331506,2,Q2,1.0,What do high-ranking neurology journals report on gait analysis in Huntington's disease?,Standard
+0.8,0.9507614678330717,0.9616503052427172,1.0,0.8264159975898232,0.9332303000286095,2,Q1,1.0,Peer-reviewed Q1 evidence on sarcopenia management in older cancer patients,TFR
+0.25,0.45252453969372164,0.7318390321059051,0.0,0.4391628131558476,0.7161630005961868,5,Unranked,0.2,Peer-reviewed Q1 evidence on sarcopenia management in older cancer patients,Standard
+1.0,0.9530721273977244,0.9884050858715858,1.0,0.9259795222585335,0.9803723397819989,1,Q1,1.0,Findings from top endocrinology journals on metabolic syndrome and chronic pain,TFR
+1.0,1.0,1.0,0.5,0.4566112294667932,0.7442859423091663,4,Q3,0.0,Findings from top endocrinology journals on metabolic syndrome and chronic pain,Standard
+1.0,1.0,1.0,0.0,0.5307212739772434,0.7546020077873851,2,Unranked,0.5,What do unranked specialty journals report on naphtalanotherapy protocols?,TFR
+1.0,1.0,1.0,0.0,0.3065735963827292,0.5437713091520254,2,Unranked,0.0,What do unranked specialty journals report on naphtalanotherapy protocols?,Standard
+0.8,0.9061442547954487,0.9559671464010229,1.0,0.9259795222585335,0.9810893753569714,2,Q1,1.0,What does grey literature report on wireless PNS clinical outcomes?,TFR
+0.4,0.7045688069984302,0.8566498345295275,0.0,0.48516021732359466,0.6780148307744244,4,Unranked,0.5,What does grey literature report on wireless PNS clinical outcomes?,Standard
+0.6,0.9120506341899668,0.9263909371686468,0.75,0.8086598407528445,0.9258948952415027,3,Q2,0.5,What do conference proceedings report on novel spinal arthrodesis techniques?,TFR
+1.0,1.0,1.0,0.75,0.8826803184943108,0.9481316041715843,3,Q2,0.0,What do conference proceedings report on novel spinal arthrodesis techniques?,Standard
+1.0,0.9474995010615089,0.9864557088279804,1.0,0.8826803184943108,0.9852268707233874,1,Q1,1.0,Regional rehabilitation journals describing local physiotherapy practice patterns,TFR
+1.0,0.9772764758652748,0.9801000129176609,0.0,0.5647625530786824,0.6897269301351651,2,Unranked,0.0,Regional rehabilitation journals describing local physiotherapy practice patterns,Standard
+1.0,0.9061442547954487,0.9894221119756877,1.0,1.0,1.0,1,Q1,1.0,What do Q4 pain journals report on low-resource analgesia in conflict zones?,TFR
+0.75,0.6718513476054694,0.8571652951251066,1.0,0.7305146665371222,0.9194086789917885,3,Q1,0.0,What do Q4 pain journals report on low-resource analgesia in conflict zones?,Standard
+0.6,0.8522844034992151,0.9151817758736149,1.0,0.9413401592471554,0.9896916885042134,3,Q1,0.5,Unranked paediatric journals on juvenile recurrent parotitis management,TFR
+1.0,0.901306029678045,0.9623215706541713,1.0,0.4985219438614687,0.8578646188559056,3,Q1,0.0,Unranked paediatric journals on juvenile recurrent parotitis management,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does the Acta Dermatovenerologica Croatica report on combined rehabilitation in psoriasis?,TFR
+1.0,0.8427338364047597,0.9426248975170706,0.0,0.33333333333333337,0.5753890567164703,2,Unranked,0.2,What does the Acta Dermatovenerologica Croatica report on combined rehabilitation in psoriasis?,Standard
+1.0,0.9474995010615089,0.9905524138848275,1.0,1.0,1.0,1,Q1,1.0,Q3-Q4 orthopaedic journals on outcomes of spinal surgery in low-income countries,TFR
+1.0,0.9645790650986836,0.9681060481242518,0.0,0.3145323271904804,0.6738750021849174,1,Unranked,0.0,Q3-Q4 orthopaedic journals on outcomes of spinal surgery in low-income countries,Standard
+0.8,0.8150029936309461,0.9114460458605955,1.0,0.8130542710519492,0.9740805572316852,2,Q1,1.0,Pain Medicine Case Reports journal findings on cervical nerve stimulation,TFR
+0.5,0.617319681505689,0.8398625486866789,1.0,1.0,1.0,5,Q4,0.0,Pain Medicine Case Reports journal findings on cervical nerve stimulation,Standard
+1.0,1.0,1.0,1.0,0.9413401592471554,0.9936842654610013,1,Q1,1.0,What do local hospital bulletins report on early mobilisation protocols?,TFR
+0.6,0.7304996662158069,0.8384253625635395,1.0,0.7970995862182803,0.9588762147781782,3,Q1,0.0,What do local hospital bulletins report on early mobilisation protocols?,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Evidence from unranked bodywork journals on postoperative physiotherapy,TFR
+1.0,0.8293121225775372,0.9405438552498261,1.0,1.0,1.0,1,Q1,1.0,Evidence from unranked bodywork journals on postoperative physiotherapy,Standard
+0.75,0.8826803184943108,0.9481316041715843,1.0,1.0,1.0,3,Q1,0.5,What do Q4 geriatric journals report on rehabilitation outcomes in frail elderly?,TFR
+0.75,0.8240204777414663,0.9378232926757976,1.0,1.0,0.9828920819566879,3,Q1,0.5,What do Q4 geriatric journals report on rehabilitation outcomes in frail elderly?,Standard
+1.0,0.9692787260227564,0.9742233255103614,0.0,0.16771752171325524,0.6023586154359912,1,Unranked,0.0,Regional neurological society publications on peripheral nerve stimulation practice,TFR
+0.25,0.4793347536015183,0.7404059314792264,1.0,0.7439681838663057,0.9009533731873224,5,Q1,0.0,Regional neurological society publications on peripheral nerve stimulation practice,Standard
+1.0,1.0,1.0,0.0,0.0,0.4555368256020691,2,Unranked,0.0,Unranked haematology journals on chemotherapy-induced peripheral neuropathy management,TFR
+0.5,0.8670870086853021,0.8810040261110065,0.0,0.0,0.4744352910551497,4,Unranked,0.0,Unranked haematology journals on chemotherapy-induced peripheral neuropathy management,Standard
+1.0,0.9217868789962073,0.9866232943931771,1.0,1.0,0.994928390780785,3,Q1,0.0,Q4 infectious disease journals on conservative treatment of recurrent parotitis,TFR
+0.75,0.7793891187676222,0.9147552508456364,1.0,0.7439681838663057,0.9009533731873224,3,Q1,0.0,Q4 infectious disease journals on conservative treatment of recurrent parotitis,Standard
+0.8,0.9474995010615089,0.9597001162113085,1.0,0.8826803184943108,0.9786302127516295,2,Q1,1.0,What do non-indexed rehabilitation monographs say about intensive inpatient rehabilitation?,TFR
+0.5,0.6718513476054694,0.8183594662003433,0.25,0.6618326436971338,0.7737424592411596,4,Q4,0.3333333333333333,What do non-indexed rehabilitation monographs say about intensive inpatient rehabilitation?,Standard
+1.0,1.0,1.0,0.5,0.7653606369886217,0.8887223390544889,1,Q3,0.5,What do unranked sports medicine journals report on return-to-play after ligament injury?,TFR
+1.0,1.0,1.0,1.0,0.46927872602275644,0.8529278650606567,5,Q1,0.0,What do unranked sports medicine journals report on return-to-play after ligament injury?,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Q3 nursing journals reporting on pain assessment tools in intensive care,TFR
+1.0,0.9394869707213443,0.9447097587352041,0.0,0.3145323271904804,0.6738750021849174,1,Unranked,0.0,Q3 nursing journals reporting on pain assessment tools in intensive care,Standard
+1.0,1.0,1.0,1.0,1.0,0.9909665978020246,2,Q1,1.0,Conference abstracts on novel uses of peripheral nerve blocks in outpatient settings,TFR
+0.5,0.8403030283801005,0.8733683229467235,1.0,0.649014791936513,0.8642203869628404,5,Q2,0.0,Conference abstracts on novel uses of peripheral nerve blocks in outpatient settings,Standard
+1.0,1.0,1.0,1.0,0.9413401592471554,0.9929375288501646,1,Q1,1.0,Unranked complementary medicine journals on acupuncture for low back pain,TFR
+1.0,0.8592163821931731,0.967800553810227,0.0,0.4720614332243989,0.7430749000387983,1,Unranked,0.5,Unranked complementary medicine journals on acupuncture for low back pain,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do Q3-Q4 endocrinology journals report on insulin resistance and musculoskeletal pain?,TFR
+1.0,0.881567235613654,0.962756918353804,1.0,0.9413401592471554,0.9934535397251649,1,Q1,1.0,What do Q3-Q4 endocrinology journals report on insulin resistance and musculoskeletal pain?,Standard
+1.0,0.9692787260227564,0.9719673970221202,0.5,0.6913401592471553,0.8652860156704962,1,Q3,0.3333333333333333,Unranked sports rehabilitation journals on functional recovery after ACL surgery,TFR
+0.2,0.6737852038126946,0.7121664003799236,1.0,0.5865984075284455,0.8811991369160118,5,Q1,0.0,Unranked sports rehabilitation journals on functional recovery after ACL surgery,Standard
+1.0,1.0,1.0,1.0,1.0,0.9858872048922094,1,Q1,1.0,Q4 haematology journals on pain management in sickle cell disease,TFR
+0.2,0.7098249095547866,0.7978443354994148,0.0,0.0,0.4306765580733931,5,Unranked,0.0,Q4 haematology journals on pain management in sickle cell disease,Standard
+1.0,0.9507614678330717,0.9945012977327519,1.0,1.0,0.9866060902037453,1,Q1,1.0,Local hospital registry data on postoperative mobilisation practices,TFR
+0.8,0.8887312405725067,0.8990200000743113,0.0,0.6606021509485402,0.6606021509485402,2,Unranked,0.3333333333333333,Local hospital registry data on postoperative mobilisation practices,Standard
+0.8,0.9061442547954487,0.9591143267642597,1.0,0.9413401592471554,0.9851766730264646,2,Q1,1.0,Unranked veterinary journals on pain assessment tools applicable to non-verbal patients,TFR
+1.0,0.7484237174301172,0.9265174586064722,1.0,0.7653606369886217,0.9674679834891693,2,Q1,1.0,Unranked veterinary journals on pain assessment tools applicable to non-verbal patients,Standard
+1.0,0.8346393630113783,0.9588210297090177,1.0,1.0,1.0,1,Q1,1.0,What are the latest 2025 guidelines on multimodal analgesia in the ERAS protocol?,TFR
+0.25,0.5307212739772436,0.763121380015622,0.0,0.5442761686266455,0.7012613579476623,5,Unranked,0.0,What are the latest 2025 guidelines on multimodal analgesia in the ERAS protocol?,Standard
+0.6,0.7617002002705158,0.8869293022081582,1.0,1.0,1.0,3,Q1,0.0,What new evidence since 2023 exists for telerehabilitation post-COVID?,TFR
+1.0,1.0,1.0,1.0,0.9259795222585335,0.9777632910699183,3,Q1,0.0,What new evidence since 2023 exists for telerehabilitation post-COVID?,Standard
+0.5,0.680606056760201,0.8447122853992027,0.0,0.0,0.4306765580733931,4,Unranked,0.0,Recent advances in peripheral nerve stimulation technology for chronic pain,TFR
+1.0,1.0,0.9920466006454153,0.0,0.0,0.5012658353418872,4,Unranked,0.0,Recent advances in peripheral nerve stimulation technology for chronic pain,Standard
+1.0,1.0,0.9964678158680195,1.0,1.0,1.0,1,Q1,1.0,What do 2024-2025 studies report on AI-assisted surgical planning in orthopaedics?,TFR
+0.6,0.679423832220986,0.8239826115350771,0.0,0.42827240252944054,0.6475284486999342,3,Unranked,0.0,What do 2024-2025 studies report on AI-assisted surgical planning in orthopaedics?,Standard
+1.0,0.9407836178068271,0.9852079719187161,1.0,1.0,1.0,1,Q1,1.0,Latest evidence on digital pain diaries and patient-reported outcomes in chronic pain management,TFR
+1.0,0.7901522935666144,0.9627946688138465,1.0,1.0,1.0,1,Q1,1.0,Latest evidence on digital pain diaries and patient-reported outcomes in chronic pain management,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the most recent findings on gut microbiome modulation for inflammatory pain?,TFR
+1.0,1.0,1.0,1.0,0.617319681505689,0.909100841186754,5,Q1,0.0,What are the most recent findings on gut microbiome modulation for inflammatory pain?,Standard
+1.0,1.0,1.0,1.0,0.9413401592471554,0.9934535397251649,1,Q1,1.0,Current evidence (2023-2025) on ketamine's antidepressant effects in chronic pain patients,TFR
+1.0,0.7631344712273078,0.9148977836627877,1.0,0.8519590445170673,0.9573251664526453,1,Q1,1.0,Current evidence (2023-2025) on ketamine's antidepressant effects in chronic pain patients,Standard
+1.0,0.881567235613654,0.9685145991492288,1.0,1.0,0.9866060902037453,1,Q1,1.0,2025 updates to surgical indications for lumbar disc herniation,TFR
+0.6,0.8056748831755324,0.8803079986318336,0.0,0.48516021732359466,0.7273762035972507,3,Unranked,0.3333333333333333,2025 updates to surgical indications for lumbar disc herniation,Standard
+1.0,0.9871064222343278,0.9902471483423112,1.0,0.6452582482812901,0.8934741240371527,1,Q1,1.0,What recent evidence supports wearable sensor monitoring in post-surgical rehabilitation?,TFR
+0.25,0.784208556253389,0.8138659580307899,1.0,0.7039180890341347,0.9047172294870751,5,Q1,0.0,What recent evidence supports wearable sensor monitoring in post-surgical rehabilitation?,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,New findings on exosome therapy for cartilage regeneration in osteoarthritis,TFR
+1.0,1.0,1.0,1.0,0.5771550256590888,0.8836078928165381,1,Q1,1.0,New findings on exosome therapy for cartilage regeneration in osteoarthritis,Standard
+1.0,0.8693003197232865,0.9669200829634178,1.0,0.8753695140346327,0.9755935917242388,1,Q1,1.0,Latest 2024 evidence on long COVID musculoskeletal sequelae rehabilitation,TFR
+0.3333333333333333,0.5248827916050821,0.7868835413163482,0.25,0.7076553232957626,0.7224140537228598,5,Q4,0.0,Latest 2024 evidence on long COVID musculoskeletal sequelae rehabilitation,Standard
+1.0,1.0,0.9969472379578537,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,Recent systematic reviews on augmented reality for surgical training in orthopaedics,TFR
+1.0,1.0,1.0,1.0,0.7039180890341347,0.9047172294870751,5,Q1,0.0,Recent systematic reviews on augmented reality for surgical training in orthopaedics,Standard
+0.75,0.7804185934220761,0.9064042401622728,1.0,1.0,1.0,3,Q1,0.0,What do 2023-2025 trials show about closed-loop spinal cord stimulation systems?,TFR
+0.6666666666666666,0.7850703250369506,0.8848151993251644,0.0,0.5307212739772434,0.7122630665145961,4,Unranked,0.0,What do 2023-2025 trials show about closed-loop spinal cord stimulation systems?,Standard
+1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,5,Q1,0.0,Current evidence on gene therapy approaches for hereditary neuropathic pain syndromes,TFR
+1.0,1.0,1.0,0.75,0.6480409554829326,0.8958905484015627,5,Q2,0.0,Current evidence on gene therapy approaches for hereditary neuropathic pain syndromes,Standard
+1.0,1.0,0.9967628873465755,1.0,1.0,1.0,1,Q1,1.0,Recent advances in machine learning for chronic pain phenotyping,TFR
+0.2,0.45252453969372164,0.6979970572273997,0.0,0.0,0.5012658353418871,5,Unranked,0.25,Recent advances in machine learning for chronic pain phenotyping,Standard
+1.0,1.0,1.0,1.0,0.9376847570173164,0.9887855983715496,1,Q1,1.0,What does 2025 literature say about GLP-1 receptor agonists and musculoskeletal pain?,TFR
+0.2,0.6109162352763666,0.7039237616513431,0.75,0.9323665287394267,0.9272902224850686,5,Q2,0.3333333333333333,What does 2025 literature say about GLP-1 receptor agonists and musculoskeletal pain?,Standard
+0.8,0.894999002123018,0.9555001783072599,1.0,0.734421189254329,0.9420664090627167,2,Q1,1.0,Latest evidence on proton pump inhibitors' effect on bone density in orthopaedic patients,TFR
+1.0,0.9413401592471554,0.9900808841271455,0.0,0.23981246656813146,0.6323990200260963,2,Unranked,0.25,Latest evidence on proton pump inhibitors' effect on bone density in orthopaedic patients,Standard
+1.0,1.0,1.0,0.75,0.9376847570173164,0.9463274486336334,1,Q2,1.0,Current guidelines on post-mastectomy pain syndrome treatment (2024-2025),TFR
+1.0,0.8592163821931731,0.9733151470279955,0.75,0.4985219438614687,0.8182395544466733,1,Q2,1.0,Current guidelines on post-mastectomy pain syndrome treatment (2024-2025),Standard
+1.0,0.9510464835551904,0.9555730996517461,0.0,0.2960819109658652,0.6797310500037655,1,Unranked,0.0,2024 advances in transcutaneous auricular vagus nerve stimulation for pain,TFR
+1.0,1.0,1.0,0.0,0.5449702648457346,0.6285070118534373,5,Unranked,0.0,2024 advances in transcutaneous auricular vagus nerve stimulation for pain,Standard
+0.8,0.9087467568998082,0.9633949192918219,1.0,0.9259795222585335,0.9777632910699183,2,Q1,1.0,What recent literature describes outcomes of same-day discharge after outpatient spine procedures?,TFR
+0.2,0.45893222991541405,0.7226302813037453,1.0,1.0,0.9858872048922094,5,Q1,0.0,What recent literature describes outcomes of same-day discharge after outpatient spine procedures?,Standard
+0.8,0.8030458713322868,0.9384803232746248,1.0,0.6854676728095195,0.9001693877158341,2,Q1,1.0,What are the foundational biomechanical principles underlying lumbar disc herniation?,TFR
+0.4,0.6385238168454793,0.8069687365810241,0.75,0.6618326436971338,0.8711462294584894,4,Q2,0.2,What are the foundational biomechanical principles underlying lumbar disc herniation?,Standard
+0.8,0.9474995010615089,0.957019853072619,0.75,0.8826803184943108,0.9462480870845545,2,Q2,1.0,What historical evidence established the gate control theory of pain?,TFR
+1.0,1.0,1.0,0.75,0.8826803184943108,0.9441982084506297,5,Q2,0.0,What historical evidence established the gate control theory of pain?,Standard
+0.75,0.8240204777414663,0.9378232926757976,0.75,0.8753695140346327,0.9456560946584148,3,Q2,0.5,What are the classical criteria for diagnosing rheumatoid arthritis?,TFR
+0.75,0.8647330574788535,0.9377223268794214,0.75,0.7970995862182803,0.9195495553061589,3,Q2,0.2,What are the classical criteria for diagnosing rheumatoid arthritis?,Standard
+1.0,0.9474995010615089,0.9908803625610707,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,What decade-long cohort studies track functional decline in spinal deformity patients?,TFR
+1.0,0.8952582482812901,0.945838454035216,0.75,0.8484946226286495,0.8484946226286495,1,Q2,1.0,What decade-long cohort studies track functional decline in spinal deformity patients?,Standard
+1.0,1.0,1.0,1.0,0.5316519652587917,0.8518080397362219,1,Q1,1.0,What historical RCTs established the safety of regional anaesthesia over general anaesthesia?,TFR
+0.25,0.6983368840037958,0.8012788178156953,1.0,0.6131471927654584,0.8503449055347546,5,Q1,0.0,What historical RCTs established the safety of regional anaesthesia over general anaesthesia?,Standard
+1.0,0.9061442547954487,0.9865215097034452,1.0,0.9259795222585335,0.9777632910699183,1,Q1,1.0,What are the original Oswestry Disability Index validation studies?,TFR
+1.0,0.8007100924365255,0.9213318830494414,0.0,0.3393978490514598,0.5363433650638435,1,Unranked,0.3333333333333333,What are the original Oswestry Disability Index validation studies?,Standard
+0.6,0.7928459079051643,0.9059532000022659,1.0,0.8826803184943108,0.9786302127516295,3,Q1,0.5,What are the founding epidemiological studies on low back pain prevalence?,TFR
+1.0,0.8026120593560899,0.9444537180991301,1.0,0.9323665287394267,0.9874668699701061,3,Q1,0.0,What are the founding epidemiological studies on low back pain prevalence?,Standard
+0.8,0.9474995010615089,0.9609186813543533,1.0,1.0,1.0,2,Q1,1.0,What long-running registry studies track outcomes of total hip arthroplasty over 20+ years?,TFR
+1.0,0.8264159975898232,0.9361940561490577,1.0,0.7039180890341347,0.9053112995489574,2,Q1,1.0,What long-running registry studies track outcomes of total hip arthroplasty over 20+ years?,Standard
+1.0,0.9530721273977244,0.9950215722988736,1.0,0.9836821611850634,0.9875022990263561,1,Q1,1.0,What classic physiotherapy literature defines the principles of progressive overload?,TFR
+1.0,1.0,1.0,0.75,0.5679726963447116,0.8100284197278486,5,Q2,0.0,What classic physiotherapy literature defines the principles of progressive overload?,Standard
+1.0,0.9015229356661434,0.9850683387815201,1.0,0.9836821611850634,0.9836821611850634,1,Q1,1.0,What are the landmark studies defining OCEBM evidence levels in clinical research?,TFR
+0.25,0.5647625530786824,0.7784825234050089,0.75,0.8484946226286495,0.8484946226286495,5,Q2,0.0,What are the landmark studies defining OCEBM evidence levels in clinical research?,Standard
+1.0,0.9407836178068271,0.9824717383170832,1.0,0.9413401592471554,0.9936842654610013,1,Q1,1.0,What historical studies established normal values for nerve conduction velocity?,TFR
+1.0,0.9337517462847186,0.9803274548542471,1.0,0.7039180890341347,0.900536595186988,1,Q1,1.0,What historical studies established normal values for nerve conduction velocity?,Standard
+1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,2,Q1,1.0,What are the original publications describing the Barthel ADL Index?,TFR
+1.0,0.9836821611850634,0.9875022990263561,1.0,1.0,1.0,2,Q1,1.0,What are the original publications describing the Barthel ADL Index?,Standard
+0.8,0.9015229356661434,0.9496107296967414,0.75,0.8826803184943108,0.9379598868074123,2,Q2,1.0,Classic studies on the natural history of untreated lumbar spinal stenosis,TFR
+0.5,0.8739160282497203,0.8878645697947556,0.0,0.5497655832101642,0.6968059238765744,4,Unranked,0.5,Classic studies on the natural history of untreated lumbar spinal stenosis,Standard
+0.8,0.9612472558382992,0.9692956548730659,1.0,1.0,1.0,2,Q1,1.0,What historical evidence defines the morphine equivalence dose conversion table?,TFR
+1.0,1.0,1.0,0.0,0.43354350434265104,0.6587486436257707,3,Unranked,0.0,What historical evidence defines the morphine equivalence dose conversion table?,Standard
+0.75,0.8130542710519492,0.9338791200376965,1.0,1.0,0.9930696627301051,3,Q2,0.5,What are the defining studies on spinal cord anatomy relevant to surgical approaches?,TFR
+1.0,1.0,1.0,1.0,0.734421189254329,0.9491229041606436,5,Q1,0.0,What are the defining studies on spinal cord anatomy relevant to surgical approaches?,Standard
+0.8,0.9507614678330717,0.9535495465891137,0.75,0.8647330574788535,0.9377223268794214,2,Q2,1.0,What decade-old longitudinal studies track outcomes of conservative vs surgical treatment for scoliosis?,TFR
+1.0,0.9376847570173164,0.9928227521372257,0.0,0.6291344046077069,0.7229919015646842,2,Unranked,0.5,What decade-old longitudinal studies track outcomes of conservative vs surgical treatment for scoliosis?,Standard
+0.6,0.7237497505307544,0.8808858550551972,0.75,0.8590516752196962,0.9278283050370071,3,Q2,0.3333333333333333,Historical pharmacokinetic studies on tramadol metabolism relevant to dose adjustment,TFR
+0.6,0.6787816514670854,0.8709629402458023,0.75,0.9323665287394267,0.9352216969066396,3,Q2,0.3333333333333333,Historical pharmacokinetic studies on tramadol metabolism relevant to dose adjustment,Standard
+1.0,1.0,0.9966387450644217,1.0,1.0,1.0,1,Q1,1.0,What foundational studies establish the psychometric properties of the SF-36 in orthopaedic patients?,TFR
+1.0,0.9300809618991231,0.9825507287688463,1.0,0.7039180890341347,0.8854598815714874,1,Q1,1.0,What foundational studies establish the psychometric properties of the SF-36 in orthopaedic patients?,Standard
+1.0,1.0,1.0,1.0,1.0,0.987635868087791,5,Q1,0.0,Classic literature on the pathophysiology of central sensitisation in chronic pain,TFR
+1.0,1.0,1.0,0.0,0.3593137779505038,0.6409434648711003,5,Unranked,0.0,Classic literature on the pathophysiology of central sensitisation in chronic pain,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,2,Q1,1.0,What long-term follow-up studies (15+ years) describe outcomes of lumbar fusion surgery?,TFR
+0.5,0.5148397826764053,0.7982212177685425,0.5,0.5316519652587917,0.7606220037494031,4,Q3,0.25,What long-term follow-up studies (15+ years) describe outcomes of lumbar fusion surgery?,Standard
+0.8,0.7901522935666144,0.9289343661788798,1.0,1.0,1.0,2,Q1,1.0,What are the original validation studies for the Numeric Rating Scale for pain intensity?,TFR
+0.8,0.6437537420386826,0.8776286272982934,0.5,0.46927872602275644,0.7746469457232199,2,Q3,0.25,What are the original validation studies for the Numeric Rating Scale for pain intensity?,Standard
+0.8,0.8264972479678704,0.927570454621054,1.0,1.0,1.0,2,Q1,1.0,Classic studies establishing the role of sleep disturbance in chronic pain amplification,TFR
+0.25,0.5307212739772436,0.763121380015622,1.0,1.0,1.0,5,Q1,0.25,Classic studies establishing the role of sleep disturbance in chronic pain amplification,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What historical randomised trials established epidural steroid injection safety profiles?,TFR
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What historical randomised trials established epidural steroid injection safety profiles?,Standard
+1.0,0.9061442547954487,0.9832843970500206,0.5,0.8130542710519492,0.8796494360170668,1,Q3,0.5,What are the 2010-2013 studies that established baseline evidence for spinal cord stimulation therapy?,TFR
+1.0,0.9248247830402744,0.975660087134554,0.5,0.38009376671593426,0.6741744480487545,1,Q3,0.0,What are the 2010-2013 studies that established baseline evidence for spinal cord stimulation therapy?,Standard
+0.8,0.9474995010615089,0.9609186813543533,0.75,0.8086598407528445,0.9258948952415027,2,Q2,1.0,Longitudinal cohort studies tracking 10-year changes in Huntington's disease functional status,TFR
+0.8,0.894999002123018,0.9470482946403986,0.75,0.6097907032889618,0.8762480606650217,2,Q2,1.0,Longitudinal cohort studies tracking 10-year changes in Huntington's disease functional status,Standard
+1.0,0.9507614678330717,0.9913216793896025,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,What do recent Q1 RCTs (2022-2025) show about mesenchymal stem cell therapy for knee osteoarthritis?,TFR
+0.2,0.5148397826764053,0.7058379682560515,1.0,0.9213669182023797,0.9596867400129814,5,Q1,0.3333333333333333,What do recent Q1 RCTs (2022-2025) show about mesenchymal stem cell therapy for knee osteoarthritis?,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Systematic reviews from Q1 journals in 2023-2025 on persistent post-COVID pain,TFR
+1.0,0.7280201836340137,0.9374702315223511,1.0,0.9413401592471554,0.9932053170992173,1,Q1,1.0,Systematic reviews from Q1 journals in 2023-2025 on persistent post-COVID pain,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Recent high-impact RCTs on virtual reality for post-surgical rehabilitation pain,TFR
+0.2,0.6245770191817948,0.8014942113631465,1.0,0.8670870086853021,0.9815720279306078,5,Q1,0.5,Recent high-impact RCTs on virtual reality for post-surgical rehabilitation pain,Standard
+1.0,0.8175117966995774,0.9583842333394134,1.0,1.0,1.0,1,Q1,1.0,What do 2024 Q1 neurology journal RCTs show about neuromodulation for refractory chronic pain?,TFR
+1.0,0.7346393630113782,0.9382995875816248,0.0,0.6199062332840657,0.6199062332840657,4,Unranked,0.0,What do 2024 Q1 neurology journal RCTs show about neuromodulation for refractory chronic pain?,Standard
+1.0,1.0,1.0,1.0,0.9050490793874433,0.9628318154136647,1,Q1,1.0,Cochrane reviews published in Q1 journals in 2023-2025 on exercise for chronic low back pain,TFR
+1.0,0.7083972923709242,0.915435207115917,0.5,0.7294661149577071,0.8749836056865106,1,Q3,0.25,Cochrane reviews published in Q1 journals in 2023-2025 on exercise for chronic low back pain,Standard
+0.8,0.9612472558382992,0.9643108614278306,1.0,0.6913401592471553,0.9334903544011512,2,Q1,1.0,Most recent Q1 journal RCTs on pharmacological management of neuropathic pain after spinal cord injury,TFR
+1.0,0.8813367087448151,0.944599095769465,1.0,0.7653606369886217,0.9494562455495149,2,Q1,1.0,Most recent Q1 journal RCTs on pharmacological management of neuropathic pain after spinal cord injury,Standard
+0.8,0.9061442547954487,0.9591143267642597,1.0,0.8519590445170673,0.9557034395662896,2,Q1,1.0,2024 systematic reviews in Q1 orthopaedic journals on prehabilitation before joint replacement,TFR
+1.0,0.9474995010615089,0.9908803625610707,0.5,0.6012610260559063,0.8302310645465178,1,Q3,0.5,2024 systematic reviews in Q1 orthopaedic journals on prehabilitation before joint replacement,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,High-impact journal RCTs since 2022 evaluating pain catastrophising interventions,TFR
+0.2,0.6892688618577465,0.7874086596674403,0.75,0.9376847570173164,0.9463274486336334,5,Q2,0.5,High-impact journal RCTs since 2022 evaluating pain catastrophising interventions,Standard
+1.0,0.9530721273977244,0.9918743919356368,1.0,1.0,1.0,1,Q1,1.0,Recent Q1 oncology journal trials on opioid-sparing strategies in cancer pain management,TFR
+0.2,0.6109162352763666,0.7039237616513431,0.0,0.5265657011759873,0.701334604854344,5,Unranked,0.3333333333333333,Recent Q1 oncology journal trials on opioid-sparing strategies in cancer pain management,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Latest meta-analyses from Q1 cardiovascular journals on cardiac rehabilitation efficacy,TFR
+1.0,0.6962542409771737,0.9191530085937857,1.0,0.8519590445170673,0.9557034395662896,1,Q1,1.0,Latest meta-analyses from Q1 cardiovascular journals on cardiac rehabilitation efficacy,Standard
+0.8,0.9300809618991231,0.9450232773040584,1.0,0.9376847570173164,0.9921977626170118,2,Q1,1.0,2025 Q1 journal systematic reviews on closed-loop spinal cord stimulation vs conventional SCS,TFR
+0.6666666666666666,0.9151505377371351,0.9299817480463239,0.0,0.0,0.38685280723454163,4,Unranked,0.0,2025 Q1 journal systematic reviews on closed-loop spinal cord stimulation vs conventional SCS,Standard
+1.0,0.9259795222585335,0.9817558680267063,1.0,1.0,1.0,2,Q1,1.0,Q1 journal RCTs from 2022-2025 evaluating multimodal rehabilitation after lumbar fusion,TFR
+0.8,0.7625024946924551,0.912024474040693,1.0,0.7633860993158484,0.931758927470955,2,Q1,1.0,Q1 journal RCTs from 2022-2025 evaluating multimodal rehabilitation after lumbar fusion,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Recent high-quality evidence from top journals on mindfulness for cancer-related pain,TFR
+0.2,0.5856918158103287,0.782538671635629,0.75,0.6097907032889618,0.8762480606650217,5,Q2,0.5,Recent high-quality evidence from top journals on mindfulness for cancer-related pain,Standard
+1.0,0.9530721273977244,0.9884050858715858,1.0,1.0,1.0,1,Q1,1.0,2024 Q1 paediatric journals RCTs on pain management in children with cancer,TFR
+1.0,0.679423832220986,0.9115073932419221,1.0,1.0,1.0,1,Q1,1.0,2024 Q1 paediatric journals RCTs on pain management in children with cancer,Standard
+1.0,1.0,1.0,1.0,0.9413401592471554,0.9936842654610013,1,Q1,1.0,What do recent systematic reviews in top rehabilitation journals say about telerehabilitation for stroke survivors?,TFR
+1.0,1.0,1.0,1.0,0.7653606369886217,0.9611147080904419,1,Q1,1.0,What do recent systematic reviews in top rehabilitation journals say about telerehabilitation for stroke survivors?,Standard
+1.0,0.9507614678330717,0.9913216793896025,1.0,1.0,1.0,1,Q1,1.0,What do older expert consensus guidelines from unranked specialty journals say about CRPS management?,TFR
+0.2,0.5587782375352441,0.707623236035224,0.0,0.3745778765096243,0.594890110781927,5,Unranked,0.3333333333333333,What do older expert consensus guidelines from unranked specialty journals say about CRPS management?,Standard
+0.75,0.8647330574788535,0.9305419211873026,1.0,0.9413401592471554,0.9929375288501646,3,Q1,0.0,Retrospective case series in unranked journals describing rare complications of naphtalanotherapy,TFR
+0.5,0.8013764537628341,0.8899612552534758,0.3333333333333333,0.27541155237618664,0.5950427489208391,4,Q4,0.0,Retrospective case series in unranked journals describing rare complications of naphtalanotherapy,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Historical expert opinion articles in Q4 journals on physiotherapy duration for psoriasis rehabilitation,TFR
+0.8,0.679423832220986,0.8811042071809694,0.0,0.2960819109658652,0.6797310500037655,2,Unranked,0.25,Historical expert opinion articles in Q4 journals on physiotherapy duration for psoriasis rehabilitation,Standard
+1.0,0.948211476976291,0.9938595891934329,0.0,0.21000199575396408,0.5441645172206565,1,Unranked,0.0,What do 2010-2015 observational studies in unranked neurology journals describe about C2-C3 nerve stimulation?,TFR
+0.5,0.617319681505689,0.8398625486866789,0.0,0.6590018048024133,0.6590018048024133,5,Unranked,0.0,What do 2010-2015 observational studies in unranked neurology journals describe about C2-C3 nerve stimulation?,Standard
+0.6,0.8037457590228262,0.9121982367816716,1.0,0.9413401592471554,0.9896916885042134,3,Q1,0.5,Older expert recommendations in Q3-Q4 journals on conservative management of juvenile parotitis,TFR
+1.0,0.901306029678045,0.9623215706541713,1.0,0.9333440848915144,0.9333440848915144,3,Q1,0.0,Older expert recommendations in Q3-Q4 journals on conservative management of juvenile parotitis,Standard
+1.0,0.9507614678330717,0.9830317180719124,1.0,0.734421189254329,0.9491229041606436,1,Q1,1.0,Foundational anatomy papers in unranked journals on spinal cord segmental organisation,TFR
+0.2,0.40425050067628965,0.7281757282355193,1.0,0.7039180890341347,0.9060254355346823,5,Q1,0.25,Foundational anatomy papers in unranked journals on spinal cord segmental organisation,Standard
+1.0,1.0,1.0,1.0,1.0,0.9828920819566879,1,Q1,1.0,What do historical case reports in unranked pain journals describe about opioid-induced hyperalgesia?,TFR
+1.0,0.7858637987352798,0.9316406355011919,0.0,0.40068822688141703,0.6668208553478886,3,Unranked,0.0,What do historical case reports in unranked pain journals describe about opioid-induced hyperalgesia?,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Expert opinion pieces from Q4 rehabilitation journals on the role of family support in stroke recovery,TFR
+0.2,0.5587782375352441,0.6969479497680251,0.75,0.8590516752196962,0.9060141886466149,5,Q2,0.3333333333333333,Expert opinion pieces from Q4 rehabilitation journals on the role of family support in stroke recovery,Standard
+0.6,0.8562462579613171,0.920833502690511,0.75,0.8826803184943108,0.9462480870845545,3,Q2,0.5,Old cohort studies in unranked bodywork journals on physiotherapy after vertebral arthrodesis,TFR
+0.3333333333333333,0.7124925159226345,0.8239560888032269,1.0,0.9259795222585335,0.9810893753569714,5,Q1,0.0,Old cohort studies in unranked bodywork journals on physiotherapy after vertebral arthrodesis,Standard
+1.0,1.0,1.0,1.0,1.0,0.9828920819566879,1,Q1,1.0,Narrative reviews from Q4 geriatric journals in 2010-2015 on delirium risk after orthopaedic surgery,TFR
+0.8,0.8886293579004712,0.9429026964891792,0.0,0.0,0.5012658353418871,2,Unranked,0.25,Narrative reviews from Q4 geriatric journals in 2010-2015 on delirium risk after orthopaedic surgery,Standard
+1.0,0.9474995010615089,0.9942116178811488,0.75,0.8590516752196962,0.928975264040152,1,Q2,1.0,What do 2010-2014 retrospective case series in unranked infection journals report on parotitis antibiotic choices?,TFR
+0.5,0.5993117731185831,0.81407020277832,0.0,0.5442761686266455,0.7190450723050023,4,Unranked,0.25,What do 2010-2014 retrospective case series in unranked infection journals report on parotitis antibiotic choices?,Standard
+1.0,0.9378678900673995,0.981818905285066,1.0,1.0,1.0,1,Q1,1.0,Expert panel reports from unranked journals on pain management in elderly nursing home residents,TFR
+1.0,0.7641007546071396,0.9171801528955131,0.0,0.48516021732359466,0.6780148307744244,1,Unranked,0.2,Expert panel reports from unranked journals on pain management in elderly nursing home residents,Standard
+1.0,0.9871064222343278,0.9902471483423112,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,Older observational data from Q3 journals on long-term effects of physiotherapy in adult scoliosis,TFR
+0.2,0.6462442622073531,0.786436632826367,0.0,0.6606021509485402,0.6606021509485402,5,Unranked,0.5,Older observational data from Q3 journals on long-term effects of physiotherapy in adult scoliosis,Standard
+1.0,1.0,0.9921761475036822,1.0,0.747782915792203,0.908809201971939,1,Q1,1.0,Historical expert opinion in unranked journals on rehabilitation after naphtalanotherapy,TFR
+1.0,0.8026120593560899,0.9322978750325865,0.0,0.5265657011759873,0.701334604854344,2,Unranked,0.0,Historical expert opinion in unranked journals on rehabilitation after naphtalanotherapy,Standard
+0.5,0.8403030283801005,0.8733683229467235,1.0,0.5803165958950902,0.8736538011066795,4,Q1,0.0,What do older case reports in Q4 neurology journals describe about cervical PNS device complications?,TFR
+1.0,1.0,1.0,0.0,0.38685280723454163,0.6240505200038379,4,Unranked,0.0,What do older case reports in Q4 neurology journals describe about cervical PNS device complications?,Standard
+1.0,1.0,1.0,1.0,0.7653606369886217,0.9558295932317544,1,Q1,1.0,What do 2012-2016 expert consensus statements in unranked rheumatology journals recommend for psoriatic arthritis rehabilitation?,TFR
+1.0,0.6019590445170673,0.8993495166187351,0.0,0.3065735963827292,0.5706417189553201,2,Unranked,0.25,What do 2012-2016 expert consensus statements in unranked rheumatology journals recommend for psoriatic arthritis rehabilitation?,Standard
+1.0,0.9871064222343278,0.9902471483423112,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,Narrative reviews from 2005-2010 in unranked anaesthesia journals about postoperative cognitive dysfunction,TFR
+0.4,0.5568532104976451,0.8166042003041704,0.5,0.38009376671593426,0.7074887171046738,4,Q3,0.25,Narrative reviews from 2005-2010 in unranked anaesthesia journals about postoperative cognitive dysfunction,Standard
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What older expert opinion pieces from Q3-Q4 psychiatry journals address chronic pain and suicidality?,TFR
+0.2,0.6892688618577465,0.7957782176107038,1.0,1.0,1.0,5,Q1,0.5,What older expert opinion pieces from Q3-Q4 psychiatry journals address chronic pain and suicidality?,Standard
+1.0,1.0,1.0,0.75,0.8086598407528445,0.9258948952415027,1,Q2,1.0,Historical epidemiological studies in unranked journals on occupational low back pain in manual workers,TFR
+0.6,0.7657232736758686,0.8764280646350938,1.0,1.0,1.0,3,Q1,0.3333333333333333,Historical epidemiological studies in unranked journals on occupational low back pain in manual workers,Standard
+1.0,1.0,0.9969472379578537,1.0,0.9259795222585335,0.9803723397819989,1,Q1,1.0,Older consensus guidelines from Q3 journals on exercise contraindications in orthopaedic patients,TFR
+1.0,0.9871064222343278,0.9889356988363834,1.0,0.9146560612887686,0.9598111550699026,1,Q1,1.0,Older consensus guidelines from Q3 journals on exercise contraindications in orthopaedic patients,Standard
+0.75,0.9376847570173164,0.9522732586263408,1.0,0.9213669182023797,0.9808851350584301,3,Q1,0.5,What do retrospective studies in unranked infectious disease journals from 2010-2015 say about antibiotic duration in parotitis?,TFR
+0.5,0.6373021275655686,0.8462357428899866,0.0,0.5637932991212148,0.7336540433498662,4,Unranked,0.25,What do retrospective studies in unranked infectious disease journals from 2010-2015 say about antibiotic duration in parotitis?,Standard

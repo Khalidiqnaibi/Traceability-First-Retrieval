@@ -5,50 +5,50 @@
 
   Metric : nDCG@3 (Evidence Level)
   -------
-  Paired queries (n)       : 180
-  Mean Delta (TFR-Standard): +0.0921
-  Std  Delta               : 0.1247
-  95% CI Delta             : [+0.0739, +0.1104]
-  Shapiro-Wilk W           : 0.8936
-  Distribution             : SKEWED (SW p = 0.0000 <= 0.05)
+  Paired queries (n)       : 171
+  Mean Delta (TFR-Standard): +0.1779
+  Std  Delta               : 0.2012
+  95% CI Delta             : [+0.1477, +0.2080]
+  Shapiro-Wilk W           : 0.9771
+  Distribution             : SKEWED (SW p = 0.0063 <= 0.05)
   Selected test            : Wilcoxon Signed-Rank test
-  W-statistic              : 483.5000
-  p-value (two-tailed)     : 1.69e-17
-  p-value (Holm-Bonferroni): 1.69e-17
+  W-statistic              : 1049.0000
+  p-value (two-tailed)     : 6.642e-20
+  p-value (Holm-Bonferroni): 1.328e-19
   Significance (raw)       : YES [PASS] (alpha = 0.05)
   Significance (adjusted)  : YES [PASS] (alpha = 0.05)
-  Cliff's delta            : +0.4580  [medium]
+  Cliff's delta            : +0.6045  [large]
 
   Metric : nDCG@3 (Journal Tier)
   -------
-  Paired queries (n)       : 180
-  Mean Delta (TFR-Standard): +0.3953
-  Std  Delta               : 0.2929
-  95% CI Delta             : [+0.3525, +0.4380]
-  Shapiro-Wilk W           : 0.9725
-  Distribution             : SKEWED (SW p = 0.0012 <= 0.05)
+  Paired queries (n)       : 171
+  Mean Delta (TFR-Standard): +0.2675
+  Std  Delta               : 0.2988
+  95% CI Delta             : [+0.2227, +0.3123]
+  Shapiro-Wilk W           : 0.9796
+  Distribution             : SKEWED (SW p = 0.0130 <= 0.05)
   Selected test            : Wilcoxon Signed-Rank test
-  W-statistic              : 130.5000
-  p-value (two-tailed)     : 1.812e-27
-  p-value (Holm-Bonferroni): 5.437e-27
+  W-statistic              : 940.0000
+  p-value (two-tailed)     : 1.202e-19
+  p-value (Holm-Bonferroni): 1.202e-19
   Significance (raw)       : YES [PASS] (alpha = 0.05)
   Significance (adjusted)  : YES [PASS] (alpha = 0.05)
-  Cliff's delta            : +0.8253  [large]
+  Cliff's delta            : +0.6137  [large]
 
   Metric : MRR (Authoritative Docs)
   -------
-  Paired queries (n)       : 180
-  Mean Delta (TFR-Standard): +0.4546
-  Std  Delta               : 0.3732
-  95% CI Delta             : [+0.4001, +0.5092]
-  Shapiro-Wilk W           : 0.8522
+  Paired queries (n)       : 171
+  Mean Delta (TFR-Standard): +0.5101
+  Std  Delta               : 0.3843
+  95% CI Delta             : [+0.4525, +0.5677]
+  Shapiro-Wilk W           : 0.8414
   Distribution             : SKEWED (SW p = 0.0000 <= 0.05)
   Selected test            : Wilcoxon Signed-Rank test
   W-statistic              : 0.0000
-  p-value (two-tailed)     : 1.279e-21
-  p-value (Holm-Bonferroni): 2.558e-21
+  p-value (two-tailed)     : 2.243e-21
+  p-value (Holm-Bonferroni): 6.728e-21
   Significance (raw)       : YES [PASS] (alpha = 0.05)
   Significance (adjusted)  : YES [PASS] (alpha = 0.05)
-  Cliff's delta            : +0.6168  [large]
+  Cliff's delta            : +0.6274  [large]
 
 ================================================================
