@@ -84,7 +84,7 @@ class TFRPipeline:
         else:
             age = max(0, self.current_year - doc.publication_year)
         
-        recency_multiplier = np.exp(-0.15 * age) 
+        recency_multiplier = np.exp(-0.05 * age) 
         
         # Final TWR Calculation
         return evidence_score * journal_multiplier * recency_multiplier

@@ -130,7 +130,13 @@ curl -X POST "http://127.0.0.1:8000/seed/batch" -H "Content-Type: application/js
 ```
 
 ### Step 4: Running the Ablation Study
+run the ablation evaluation script to execute the full matrix of 180 queries across both pipelines (TWR and Standard RRF):
 
+```bash
+curl -X POST "http://127.0.0.1:8000/ablation/batch" -H "Content-Type: application/json" -d "{\"queries_path\": \"./data/queries.json\"}"
+```
+
+### Step 5: Evaluation Execution
 Execute the complete matrix evaluation using the core testing runner:
 
 ```bash
