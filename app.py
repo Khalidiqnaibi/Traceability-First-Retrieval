@@ -67,12 +67,12 @@ def batch_seed():
     latency = time.time() - start_time
     print(f"Completed seeding {total_ingested} documents.")
 
+    audit.log_event(action="batch_seed", query=f"Batch seeding from {queries_file_path}", status=f"Seeded {total_ingested} documents", latency=latency)
     # Refresh Pipelines after batch seeding
     global tfr_pipeline, standard_pipeline
     tfr_pipeline = initialize_pipeline(DOC_DB_PATH)
     standard_pipeline = initialize_standard_pipeline(DOC_DB_PATH)
     
-    audit.log_event(action="batch_seed", query=f"Batch seeding from {queries_file_path}", status=f"Seeded {total_ingested} documents", latency=latency)
     return make_response({"count": total_ingested}, message=f"Batch seeding completed with {total_ingested} documents ingested")
 
 @app.route("/seed", methods=["POST"])

@@ -21,6 +21,13 @@ timestamp,action,query,results_count,top_result_pmid,latency,pipeline,status
 2026-05-17 18:09:09,seed,randomized controlled trial[pt] AND (psoriasis OR atopic dermatitis OR vitiligo OR melanoma),204.0133650302887,success
 2026-05-18 08:37:47,batch_ablation,Batch ablation over 180 queries,8.334928512573242,success
 2026-05-19 14:27:07,batch_seed,Batch seeding from ./data/seed_queries.json,0.0,Seeded 3764 documents
-2026-05-19 16:10:23,batch_seed,Batch seeding from ./data/seed_queries.json,211.58079504966736,Seeded 3764 documents
-2026-05-20 10:04:50,batch_seed,Batch seeding from ./data/seed_queries.json,212.97958874702454,Seeded 3764 documents
-2026-05-20 13:10:55,batch_seed,Batch seeding from ./data/seed_queries.json,287.29046869277954,Seeded 4910 documents
+2026-05-23 17:07:39,batch_seed,Batch seeding from ./data/seed_queries.json,239.1417534351349,Seeded 4867 documents
+2026-05-23 20:39:18,batch_seed,Batch seeding from ./data/seed_queries.json,246.90397691726685,Seeded 4838 documents
+2026-05-24 09:50:09,batch_seed,Batch seeding from ./data/seed_queries.json,298.74041271209717,Seeded 4836 documents
+2026-05-24 09:57:52,batch_seed,Batch seeding from ./data/seed_queries.json,233.4738347530365,Seeded 4982 documents
+2026-05-24 10:07:18,batch_seed,Batch seeding from ./data/seed_queries.json,241.0732765197754,Seeded 4977 documents
+2026-05-24 10:18:38,batch_seed,Batch seeding from ./data/seed_queries.json,234.34205675125122,Seeded 5047 documents
+2026-05-24 10:37:13,batch_seed,Batch seeding from ./data/seed_queries.json,234.02751564979553,Seeded 5085 documents
+2026-05-24 10:52:46,batch_seed,Batch seeding from ./data/seed_queries.json,236.82342314720154,Seeded 4992 documents
+2026-05-24 11:02:57,batch_seed,Batch seeding from ./data/seed_queries.json,251.2599732875824,Seeded 4994 documents
+2026-05-24 11:18:38,batch_seed,Batch seeding from ./data/seed_queries.json,236.38813996315002,Seeded 4981 documents
