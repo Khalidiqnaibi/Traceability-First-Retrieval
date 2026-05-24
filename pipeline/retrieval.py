@@ -114,7 +114,7 @@ class TFRPipeline:
         for rank, idx in enumerate(final_indices):
             doc = self.corpus[idx]
             results.append({
-                "tfr_rank": rank + 1,
+                "twr_rank": rank + 1,
                 "text": doc.text,
                 "provenance": {
                     "chunk_id": doc.chunk_id,
@@ -149,7 +149,7 @@ class TFRPipeline:
             results_count=len(result),
             results=result,
             latency=latency,
-            pipeline="TFR"
+            pipeline="TWR"
         )
         
         return  result
@@ -191,6 +191,6 @@ if __name__ == "__main__":
     # Output the results
     print("Final Output")
     for res in results:
-        print(f"Rank {res['tfr_rank']}:")
+        print(f"Rank {res['twr_rank']}:")
         print(f"  Text: {res['text']}")
         print(f"  Provenance: {res['provenance']}\n")

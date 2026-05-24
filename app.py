@@ -3,9 +3,15 @@ from dotenv import load_dotenv
 import os 
 import time
 
+from eval.dr_blinded_review import generate_blinded_review_workbooks
+from eval.llm_eval import run_blinded_llm_pass
+from eval.run_eval import run_eval
+from eval.batch_ablation import run_batch_ablation
+
+from utils.data.save_dr_review import save_blinded_review_log
 from utils.pipeline.init_standard_pipeline import initialize_standard_pipeline
 from utils.pipeline.init_pipline import initialize_pipeline
-
+from utils.data.batch_seed_db import run_batch_seed
 from utils.data.ingestion_pipeline import TFRDataPreprocessor
 from utils.api.make_response import make_response
 from utils.data.get_pubmed_xml import fetch_pubmed_xml_to_file
@@ -42,32 +48,8 @@ def batch_seed():
     if not os.path.exists(queries_file_path):
         return make_response( message=f"Queries seed file not found at {queries_file_path}", status="error"),400
     
-    with open(queries_file_path, "r", encoding="utf-8") as f:
-        queries_list = json.load(f)
-
+    total_ingested = run_batch_seed(queries_file_path, DOC_DB_PATH, processor, audit)
     
-    print(f"Initializing seeding of {len(queries_list)} items...")
-    start_time = time.time()
-    total_ingested = 0
-    for item in queries_list:
-        query = item.get("query")
-        max_results = item.get("max_results", 100)
-        xml_path = fetch_pubmed_xml_to_file(
-            query=query,
-            max_results=max_results,
-            email=os.getenv("NCBI_EMAIL"),
-            api_key=os.getenv("NCBI_API_KEY"),
-            output_path=f"./data/seed_pubmed_data.xml"
-        )
-        if xml_path:
-            chunks = processor.parse_pubmed_xml(xml_path)
-            processor.export_to_sqlite(chunks, DOC_DB_PATH)
-            total_ingested += len(chunks)
-            print(f"Seeded query '{query}' with {len(chunks)} documents.")
-    latency = time.time() - start_time
-    print(f"Completed seeding {total_ingested} documents.")
-
-    audit.log_event(action="batch_seed", query=f"Batch seeding from {queries_file_path}", status=f"Seeded {total_ingested} documents", latency=latency)
     # Refresh Pipelines after batch seeding
     global tfr_pipeline, standard_pipeline
     tfr_pipeline = initialize_pipeline(DOC_DB_PATH)
@@ -239,44 +221,11 @@ def run_batch_ablation():
     if not os.path.exists(queries_file_path):
         return make_response( message=f"Queries benchmark file not found at {queries_file_path}", status="error"),400
 
-    with open(queries_file_path, "r", encoding="utf-8") as f:
-        queries_list = json.load(f)
-
-    summary_metrics = []
-    start_time = time.time()
-
-    for item in queries_list:
-        query_id = item.get("id")
-        query_text = item.get("query")
-        dimension = item.get("ablation_dimension")
-        expected_advantage = item.get("expected_twr_advantage")
-
-        try:
-            tfr_results = tfr_pipeline.retrieve(query=query_text)
-            standard_results = standard_pipeline.retrieve(query=query_text)
-        except Exception as e:
-            print(f"Ablation query failed: {e}")
-            audit.log_event(action="batch_ablation", query=query_text, status=f"Ablation Retrieval error: {str(e)}")
-            return make_response( message=f"Ablation Retrieval error: {str(e)}", status="error"),500
-
-        summary_metrics.append({
-            "id": query_id,
-            "query": query_text,
-            "ablation_dimension": dimension,
-            "expected_twr_advantage": expected_advantage,
-            "tfr_results": tfr_results,
-            "standard_results": standard_results
-        })
-
-    audit.log_event(
-        action="batch_ablation",
-        query=f"Batch ablation over {len(queries_list)} queries",
-        latency=time.time() - start_time
-    )
+    results = run_batch_ablation(queries_file_path, tfr_pipeline, standard_pipeline, audit)
 
     return make_response(
-        message=f"Ablation evaluation completed over {len(queries_list)} benchmark queries.",
-        data=summary_metrics
+        message=f"Ablation evaluation completed over {len(results)} benchmark queries.",
+        data=results
     ), 200
    
 @app.route("/standard/query", methods=["POST"])
@@ -298,6 +247,81 @@ def standard_query():
         print(f"Standard query failed: {e}")
         audit.log_event(action="query", query=query_text, status=f"Retrieval error: {str(e)}", pipeline="Standard")
         return make_response( message=f"Retrieval error: {str(e)}", status="error"),500
+
+@app.route("/eval", methods=["GET"])
+def run_evaluation():
+    """Endpoint to run evaluation"""
+    args = request.args
+
+    arg_evaluation_log_path = args.get("log")
+    arg_queries_path = args.get("queries")
+    arg_out_dir = args.get("out_dir")
+
+    run_eval(evaluation_log_path=arg_evaluation_log_path, queries_path=arg_queries_path, out_dir=arg_out_dir)
+    return make_response(message="Evaluation executed. Check logs for details.")
+
+@app.route("/ablation/llm", methods=["POST"])
+def run_llm_ablation():
+    """Endpoint to run LLM ablation study"""
+    data = request.get_json() or {}
+    log_csv_path = data.get("log_csv_path", "log/pipeline_audit_log.csv")
+    output_csv_path = data.get("output_csv_path", "data/blinded_clinical_review.csv")
+    queries_json_path = data.get("queries_json_path", "data/queries.json")
+
+    if not os.path.exists(log_csv_path):
+        return make_response( message=f"Audit log file not found at {log_csv_path}", status="error"),400
+    
+    if not os.path.exists(queries_json_path):
+        return make_response( message=f"Queries file not found at {queries_json_path}", status="error"),400
+
+    run_blinded_llm_pass(queries_json_path, log_csv_path, output_csv_path)
+    return make_response(message=f"LLM ablation completed. Blinded evaluation sheet saved to {output_csv_path}")
+
+@app.route("/ablation/dr/generate", methods=["POST"])
+def run_dr_ablation():
+    """Endpoint to run blinded review workbooks generation"""
+    data = request.get_json() or {}
+    log_csv_path = data.get("log_csv_path", "log/blinded_clinical_review.csv")
+    queries_json_path = data.get("queries_json_path", "data/queries.json")
+
+    if not os.path.exists(log_csv_path):
+        return make_response( message=f"Blinded log file not found at {log_csv_path}", status="error"),400
+
+    if not os.path.exists(queries_json_path):
+        return make_response( message=f"Queries file not found at {queries_json_path}", status="error"),400
+
+    generate_blinded_review_workbooks(log_csv_path, queries_json_path)
+    return make_response(message=f"Blinded review workbooks generated.")
+
+@app.route("/ablation/dr/review", methods=["POST"])
+def run_dr_review():
+    """
+    # Endpoint to run blinded dr review
+    
+    ## Expects:
+    - data : {
+        "log_csv_path": "path/to/{domain}_Workbook_Orthopedics.csv",
+        "Clinical Accuracy": int (1-5),
+        "Evidence Basis": int (1-5), # Does the answer cite appropriate evidence?
+        "Safety/Risk": int (1-5), # Does the advice pose any danger?
+        "out_log_path": "path/to/save/dr_review_results.csv"
+    }
+    """
+    data = request.get_json() or {}
+    log_csv_path = data.get("log_csv_path", "log/blinded_clinical_review.csv")
+    queries_json_path = data.get("queries_json_path", "data/queries.json")
+
+    if not os.path.exists(log_csv_path):
+        return make_response( message=f"Blinded log file not found at {log_csv_path}", status="error"),400
+
+    if not os.path.exists(queries_json_path):
+        return make_response( message=f"Queries file not found at {queries_json_path}", status="error"),400
+
+    if "Clinical Accuracy" not in data or "Evidence Basis" not in data or "Safety/Risk" not in data:
+        return make_response( message=f"Missing review scores. Please provide 'Clinical Accuracy', 'Evidence Basis', and 'Safety/Risk' scores.", status="error"),400
+    
+    save_blinded_review_log(log_csv_path, data)
+    return make_response(message=f"Blinded review saved successfully.")
 
 @app.route("/health", methods=["GET"])
 def health_check():

@@ -636,18 +636,18 @@ def fig2_grouped_bar(
     print(f"  [OK] Figure 2 saved -> {out_path}")
 
 # 8. CLI Entry Point
-def parse_args() -> argparse.Namespace:
+def parse_args(evaluation_log_path: str = EVAL_LOG_PATH, queries_path: str = QUERY_PATH, out_dir: str = OUT_DIR) -> argparse.Namespace:
     p = argparse.ArgumentParser(
         description="Evaluate TFR vs Standard RAG pipeline from an audit log."
     )
-    p.add_argument("--log",     default=EVAL_LOG_PATH)
-    p.add_argument("--queries", default=QUERY_PATH)
-    p.add_argument("--out_dir", default=OUT_DIR)
+    p.add_argument("--log",     default=evaluation_log_path)
+    p.add_argument("--queries", default=queries_path)
+    p.add_argument("--out_dir", default=out_dir)
     return p.parse_args()
 
 
-def main() -> None:
-    args = parse_args()
+def run_eval(evaluation_log_path: str = EVAL_LOG_PATH, queries_path: str = QUERY_PATH, out_dir: str = OUT_DIR) -> None:
+    args = parse_args(evaluation_log_path, queries_path, out_dir)
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -715,4 +715,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    run_eval()
