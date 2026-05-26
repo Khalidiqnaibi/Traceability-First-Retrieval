@@ -4,6 +4,7 @@ from openai import OpenAI
 import json
 from dotenv import load_dotenv
 import os
+import ast
 load_dotenv()
 
 
@@ -68,42 +69,54 @@ def run_blinded_llm_pass(queries_json_path: str, log_csv_path: str, output_csv_p
     
     results = []
     print(f"Generating LLM passes for {len(unique_queries)} queries...")
-    for query in unique_queries:
+    
+    for idx, query in enumerate(unique_queries, 1):
         query_data = filtered_df[filtered_df['query'] == query]
         
-        # 1. Isolate top contexts for RRF
-        rrf_data = query_data[query_data['pipeline'] == 'RRF'].sort_values('rank')
-        rrf_context = "\n\n".join([f"Doc {i+1}: {row['text']}" for i, row in rrf_data.head(5).iterrows()])
-        
-        # 2. Isolate top contexts for TWR
-        twr_data = query_data[query_data['pipeline'] == 'TWR'].sort_values('rank')
-        twr_context = "\n\n".join([f"Doc {i+1}: {row['text']}" for i, row in twr_data.head(5).iterrows()])
-        
-        # 3. Generate answers
-        print(f"Processing: {query[:50]}...")
+        rrf_rows = query_data[query_data['pipeline'] == 'Standard']
+        if not rrf_rows.empty and pd.notna(rrf_rows['results'].iloc[0]):
+            try:
+                rrf_docs = ast.literal_eval(rrf_rows['results'].iloc[0])
+                rrf_context = "\n\n".join([f"Doc {i+1}: {doc['text']}" for i, doc in enumerate(rrf_docs[:5]) if 'text' in doc])
+            except Exception as e:
+                print(f"   [error] Parsing error on Standard row for query {idx}: {e}")
+                rrf_context = "Error parsing retrieved context."
+        else:
+            rrf_context = "No context found."
+
+        twr_rows = query_data[query_data['pipeline'] == 'TFR']
+        if not twr_rows.empty and pd.notna(twr_rows['results'].iloc[0]):
+            try:
+                twr_docs = ast.literal_eval(twr_rows['results'].iloc[0])
+                twr_context = "\n\n".join([f"Doc {i+1}: {doc['text']}" for i, doc in enumerate(twr_docs[:5]) if 'text' in doc])
+            except Exception as e:
+                print(f"   [error] Parsing error on TFR row for query {idx}: {e}")
+                twr_context = "Error parsing retrieved context."
+        else:
+            twr_context = "No context found."
+            
+        print(f" [{idx}/{len(unique_queries)}] Generating responses for: {query[:60]}...")
         ans_rrf = generate_clinical_answer(query, rrf_context)
         ans_twr = generate_clinical_answer(query, twr_context)
         
-        # 4. The Blinding Logic (Randomize A and B)
+        # Symmetric Blinding Logic
         is_rrf_a = random.choice([True, False])
-        
         ans_A = ans_rrf if is_rrf_a else ans_twr
         ans_B = ans_twr if is_rrf_a else ans_rrf
-        
-        # Save the secret key for later de-blinding
         secret_key = "A=RRF, B=TWR" if is_rrf_a else "A=TWR, B=RRF"
         
         results.append({
+            "Query_ID": f"CLIN-EVAL-{idx:02d}",
             "Query": query,
             "Response A": ans_A,
             "Response B": ans_B,
-            "Secret_Key": secret_key
+            "Secret_Key_Mapping": secret_key
         })
         
-    # 5. Export
+    # Export evaluation
     output_df = pd.DataFrame(results)
     output_df.to_csv(output_csv_path, index=False)
-    print(f"Blinded evaluation sheet saved to {output_csv_path}")
+    print(f"\n Target generation complete! Review file saved to: {output_csv_path}")
 
 if __name__ == "__main__":
-    run_blinded_llm_pass("data/queries.json", "log/pipeline_audit_log.csv", "log/blinded_clinical_review.csv")
+    run_blinded_llm_pass("data/queries.json", "logs\pipeline_audit_log.csv", "blinded_clinical_review.csv")
