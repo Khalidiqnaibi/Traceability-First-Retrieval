@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+from pathlib import Path
 
 
 def generate_blinded_review_workbooks(path_to_blinded_log: str, path_to_queries_json: str):
@@ -13,7 +14,6 @@ def generate_blinded_review_workbooks(path_to_blinded_log: str, path_to_queries_
         - Note: The exported workbooks will not contain any identifying information about the queries or their domains to ensure a blinded review process.
         - Output files: "Evaluation_Workbook_Orthopedics.csv" and "Evaluation_Workbook_Anesthesiology.csv"
     '''
-
     # 1. Load the master blinded log and the queries metadata
     blinded_df = pd.read_csv(path_to_blinded_log)
     with open(path_to_queries_json, "r") as f:
@@ -27,12 +27,15 @@ def generate_blinded_review_workbooks(path_to_blinded_log: str, path_to_queries_
     ortho_df = blinded_df[blinded_df['Domain'].isin(['Orthopaedics', 'Rehabilitation'])]
     # Drop the secret key and domain before sending to the doctor
     ortho_export = ortho_df.drop(columns=['Secret_Key_Mapping', 'Domain'])
-    ortho_export.to_csv("Evaluation_Workbook_Orthopedics.csv", index=False)
+    ortho_export.to_csv("logs/Evaluation_Workbook_Orthopedics.csv", index=False)
 
     # 4. Create the Anesthesiologist's subset (Pain + Rehab)
     pain_df = blinded_df[blinded_df['Domain'].isin(['Pain & Anesthesiology', 'Rehabilitation'])]
     # Drop the secret key and domain before sending to the doctor
     pain_export = pain_df.drop(columns=['Secret_Key_Mapping', 'Domain'])
-    pain_export.to_csv("Evaluation_Workbook_Anesthesiology.csv", index=False)
+    pain_export.to_csv("logs/Evaluation_Workbook_Anesthesiology.csv", index=False)
 
     print("Workbooks generated successfully!")
+
+if __name__ == "__main__":
+    generate_blinded_review_workbooks("logs/blinded_clinical_review.csv","data/queries.json")

@@ -126,57 +126,5 @@ def run_blinded_llm_pass(queries_json_path: str, log_csv_path: str, output_csv_p
     output_df.to_csv(output_csv_path, index=False)
     print(f"\n Target generation complete! Review file saved to: {output_csv_path}")
 
-
-def save_RRF_TWR_results(queries_json_path: str, log_csv_path: str):
-    target_queries = get_sampled_queries(queries_json_path)
-    
-    print("Loading pipeline audit log...")
-    audit_df = pd.read_csv(log_csv_path)
-    
-    # Filter log down to only include the sampled queries
-    filtered_df = audit_df[audit_df['query'].isin(target_queries)]
-    unique_queries = filtered_df['query'].unique()
-    
-    results = []
-    print(f"Saving results for {len(unique_queries)} queries...")
-    
-    for idx, query in enumerate(unique_queries, 1):
-        query_data = filtered_df[filtered_df['query'] == query]
-        
-        rrf_rows = query_data[query_data['pipeline'] == 'Standard']
-        if not rrf_rows.empty and pd.notna(rrf_rows['results'].iloc[0]):
-            try:
-                rrf_docs = ast.literal_eval(rrf_rows['results'].iloc[0])
-                rrf_context = "\n\n".join([f"Doc {i+1}: {doc['text']}" for i, doc in enumerate(rrf_docs[:5]) if 'text' in doc])
-            except Exception as e:
-                print(f"   [error] Parsing error on Standard row for query {idx}: {e}")
-                rrf_context = "Error parsing retrieved context."
-        else:
-            rrf_context = "No context found."
-
-        twr_rows = query_data[query_data['pipeline'] == 'TWR']
-        if not twr_rows.empty and pd.notna(twr_rows['results'].iloc[0]):
-            try:
-                twr_docs = ast.literal_eval(twr_rows['results'].iloc[0])
-                twr_context = "\n\n".join([f"Doc {i+1}: {doc['text']}" for i, doc in enumerate(twr_docs[:5]) if 'text' in doc])
-            except Exception as e:
-                print(f"   [error] Parsing error on TWR row for query {idx}: {e}")
-                twr_context = "Error parsing retrieved context."
-        else:
-            twr_context = "No context found."
-            
-        print(f" [{idx}/{len(unique_queries)}] saving responses for: {query[:60]}...")
-        save_to_file(query+": "+rrf_context,"RRF_res.txt")
-        save_to_file(query+": "+twr_context,"TWR_res.txt")
-
-    
-def save_to_file(text,name):
-    with open(name,"a", encoding="utf-8") as f:
-        f.write(text)
-        f.write("\n\n")
-
-
-
 if __name__ == "__main__":
-    # run_blinded_llm_pass("data/queries.json", "logs\pipeline_audit_log.csv", "logs/blinded_clinical_review.csv")
-    save_RRF_TWR_results("data/queries.json", "logs\pipeline_audit_log.csv")
+    run_blinded_llm_pass("data/queries.json", "logs\pipeline_audit_log.csv", "logs/blinded_clinical_review.csv")
