@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "query": "What is the most effective intervention for chronic low back pain based on RCT evidence?",
+    "query": "What is the most effective intervention for chronic low back pain?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
@@ -14,7 +14,7 @@
   },
   {
     "id": 2,
-    "query": "What does meta-analytic evidence show about exercise therapy for knee osteoarthritis?",
+    "query": "What does the evidence show about exercise therapy for knee osteoarthritis?",
     "domain": "Orthopaedics",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
@@ -27,7 +27,7 @@
   },
   {
     "id": 3,
-    "query": "What is the comparative efficacy of multimodal analgesia vs opioids post-surgery from systematic reviews?",
+    "query": "What is the comparative efficacy of multimodal analgesia vs opioids post-surgery?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
@@ -53,7 +53,7 @@
   },
   {
     "id": 5,
-    "query": "What level-1 evidence exists for cognitive rehabilitation in traumatic brain injury?",
+    "query": "What evidence exists for cognitive rehabilitation in traumatic brain injury?",
     "domain": "Rehabilitation",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
@@ -105,7 +105,7 @@
   },
   {
     "id": 9,
-    "query": "What do Cochrane reviews say about mirror therapy for phantom limb pain?",
+    "query": "Does mirror therapy reduce phantom limb pain?",
     "domain": "Rehabilitation",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
@@ -183,7 +183,7 @@
   },
   {
     "id": 15,
-    "query": "What is the meta-analytic evidence on fall prevention programmes for elderly patients?",
+    "query": "What evidence addresses fall prevention programmes for elderly patients?",
     "domain": "Rehabilitation",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
@@ -222,7 +222,7 @@
   },
   {
     "id": 18,
-    "query": "What does high-quality evidence say about opioid tapering strategies in chronic pain patients?",
+    "query": "What does evidence say about opioid tapering strategies in chronic pain patients?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
@@ -248,7 +248,7 @@
   },
   {
     "id": 20,
-    "query": "Meta-analytic evidence for botulinum toxin in chronic migraine prevention",
+    "query": "What is the evidence for botulinum toxin in chronic migraine prevention?",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
@@ -274,7 +274,7 @@
   },
   {
     "id": 22,
-    "query": "Cochrane review findings on heat therapy vs cold therapy for musculoskeletal pain",
+    "query": "How do heat therapy and cold therapy compare for musculoskeletal pain?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
@@ -339,7 +339,7 @@
   },
   {
     "id": 27,
-    "query": "What high-quality evidence supports mindfulness-based stress reduction for fibromyalgia?",
+    "query": "Is mindfulness-based stress reduction effective for fibromyalgia?",
     "domain": "Mental Disorders (Psychiatry)",
     "ablation_dimension": "evidence_level",
     "expected_twr_advantage": true,
@@ -599,7 +599,7 @@
   },
   {
     "id": 47,
-    "query": "What is the evidence from high-impact journals on perioperative pain protocols?",
+    "query": "What is the evidence on perioperative pain protocols?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
@@ -677,7 +677,7 @@
   },
   {
     "id": 53,
-    "query": "Evidence from peer-reviewed Q1 journals on spinal fusion complication rates",
+    "query": "What are the complication rates following spinal fusion?",
     "domain": "Orthopaedics",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
@@ -768,7 +768,7 @@
   },
   {
     "id": 60,
-    "query": "Q1 journal evidence on cognitive decline outcomes after prolonged general anaesthesia",
+    "query": "What are the cognitive outcomes after prolonged general anaesthesia?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": true,
@@ -846,7 +846,7 @@
   },
   {
     "id": 66,
-    "query": "What do unranked specialty journals report on naphtalanotherapy protocols?",
+    "query": "What is the evidence on naphtalanotherapy protocols?",
     "domain": "Rehabilitation",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
@@ -963,7 +963,7 @@
   },
   {
     "id": 75,
-    "query": "What do local hospital bulletins report on early mobilisation protocols?",
+    "query": "What do publications on peripheral nerve stimulation describe about clinical practice patterns?",
     "domain": "Rehabilitation",
     "ablation_dimension": "journal_tier",
     "expected_twr_advantage": false,
@@ -1171,7 +1171,7 @@
   },
   {
     "id": 91,
-    "query": "What are the latest 2025 guidelines on multimodal analgesia in the ERAS protocol?",
+    "query": "What are the guidelines on multimodal analgesia in the ERAS protocol?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1184,7 +1184,7 @@
   },
   {
     "id": 92,
-    "query": "What new evidence since 2023 exists for telerehabilitation post-COVID?",
+    "query": "What evidence exists for telerehabilitation in post-COVID patients?",
     "domain": "Rehabilitation",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1197,7 +1197,7 @@
   },
   {
     "id": 93,
-    "query": "Recent advances in peripheral nerve stimulation technology for chronic pain",
+    "query": "What advances have been made in peripheral nerve stimulation technology for chronic pain?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1210,7 +1210,7 @@
   },
   {
     "id": 94,
-    "query": "What do 2024-2025 studies report on AI-assisted surgical planning in orthopaedics?",
+    "query": "What do studies report on AI-assisted surgical planning in orthopaedics?",
     "domain": "Orthopaedics",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1236,7 +1236,7 @@
   },
   {
     "id": 96,
-    "query": "What are the most recent findings on gut microbiome modulation for inflammatory pain?",
+    "query": "What is the evidence for gut microbiome modulation in inflammatory pain?",
     "domain": "Digestive System Diseases (Gastroenterology)",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1249,7 +1249,7 @@
   },
   {
     "id": 97,
-    "query": "Current evidence (2023-2025) on ketamine's antidepressant effects in chronic pain patients",
+    "query": "What is the evidence on ketamine's antidepressant effects in chronic pain patients?",
     "domain": "Mental Disorders (Psychiatry)",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1275,7 +1275,7 @@
   },
   {
     "id": 99,
-    "query": "What recent evidence supports wearable sensor monitoring in post-surgical rehabilitation?",
+    "query": "Does wearable sensor monitoring improve outcomes in post-surgical rehabilitation?",
     "domain": "Rehabilitation",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1314,7 +1314,7 @@
   },
   {
     "id": 102,
-    "query": "Recent systematic reviews on augmented reality for surgical training in orthopaedics",
+    "query": "What do systematic reviews show about augmented reality for surgical training in orthopaedics?",
     "domain": "Orthopaedics",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1327,7 +1327,7 @@
   },
   {
     "id": 103,
-    "query": "What do 2023-2025 trials show about closed-loop spinal cord stimulation systems?",
+    "query": "What do trials show about closed-loop spinal cord stimulation systems?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1340,7 +1340,7 @@
   },
   {
     "id": 104,
-    "query": "Current evidence on gene therapy approaches for hereditary neuropathic pain syndromes",
+    "query": "What is the evidence for gene therapy approaches in hereditary neuropathic pain syndromes?",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1353,7 +1353,7 @@
   },
   {
     "id": 105,
-    "query": "Recent advances in machine learning for chronic pain phenotyping",
+    "query": "What advances have been made in machine learning for chronic pain phenotyping?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1392,7 +1392,7 @@
   },
   {
     "id": 108,
-    "query": "Current guidelines on post-mastectomy pain syndrome treatment (2024-2025)",
+    "query": "What are the guidelines for post-mastectomy pain syndrome treatment?",
     "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "recency",
     "expected_twr_advantage": true,
@@ -1431,7 +1431,7 @@
   },
   {
     "id": 111,
-    "query": "What are the foundational biomechanical principles underlying lumbar disc herniation?",
+    "query": "What are the biomechanical principles underlying lumbar disc herniation?",
     "domain": "Orthopaedics",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1444,7 +1444,7 @@
   },
   {
     "id": 112,
-    "query": "What historical evidence established the gate control theory of pain?",
+    "query": "What evidence established the gate control theory of pain?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1470,7 +1470,7 @@
   },
   {
     "id": 114,
-    "query": "What decade-long cohort studies track functional decline in spinal deformity patients?",
+    "query": "What cohort studies track functional decline in spinal deformity patients?",
     "domain": "Orthopaedics",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1483,7 +1483,7 @@
   },
   {
     "id": 115,
-    "query": "What historical RCTs established the safety of regional anaesthesia over general anaesthesia?",
+    "query": "What RCTs compared the safety of regional anaesthesia and general anaesthesia?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1496,7 +1496,7 @@
   },
   {
     "id": 116,
-    "query": "What are the original Oswestry Disability Index validation studies?",
+    "query": "What are the validation studies for the Oswestry Disability Index?",
     "domain": "Orthopaedics",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1522,7 +1522,7 @@
   },
   {
     "id": 118,
-    "query": "What long-running registry studies track outcomes of total hip arthroplasty over 20+ years?",
+    "query": "What registry studies track outcomes of total hip arthroplasty?",
     "domain": "Orthopaedics",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1535,7 +1535,7 @@
   },
   {
     "id": 119,
-    "query": "What classic physiotherapy literature defines the principles of progressive overload?",
+    "query": "What physiotherapy literature defines the principles of progressive overload?",
     "domain": "Rehabilitation",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1548,7 +1548,7 @@
   },
   {
     "id": 120,
-    "query": "What are the landmark studies defining OCEBM evidence levels in clinical research?",
+    "query": "What are the studies that defined OCEBM evidence levels in clinical research?",
     "domain": "general",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1561,7 +1561,7 @@
   },
   {
     "id": 121,
-    "query": "What historical studies established normal values for nerve conduction velocity?",
+    "query": "What studies established normal values for nerve conduction velocity?",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1574,7 +1574,7 @@
   },
   {
     "id": 122,
-    "query": "What are the original publications describing the Barthel ADL Index?",
+    "query": "What are the publications describing the Barthel ADL Index?",
     "domain": "Rehabilitation",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1587,7 +1587,7 @@
   },
   {
     "id": 123,
-    "query": "Classic studies on the natural history of untreated lumbar spinal stenosis",
+    "query": "What is the natural history of untreated lumbar spinal stenosis?",
     "domain": "Orthopaedics",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1600,7 +1600,7 @@
   },
   {
     "id": 124,
-    "query": "What historical evidence defines the morphine equivalence dose conversion table?",
+    "query": "What evidence defines the morphine equivalence dose conversion?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1639,7 +1639,7 @@
   },
   {
     "id": 127,
-    "query": "Historical pharmacokinetic studies on tramadol metabolism relevant to dose adjustment",
+    "query": "What pharmacokinetic studies describe tramadol metabolism for dose adjustment?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1652,7 +1652,7 @@
   },
   {
     "id": 128,
-    "query": "What foundational studies establish the psychometric properties of the SF-36 in orthopaedic patients?",
+    "query": "What studies established the psychometric properties of the SF-36 in orthopaedic patients?",
     "domain": "Orthopaedics",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1665,7 +1665,7 @@
   },
   {
     "id": 129,
-    "query": "Classic literature on the pathophysiology of central sensitisation in chronic pain",
+    "query": "What is the pathophysiology of central sensitisation in chronic pain?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1691,7 +1691,7 @@
   },
   {
     "id": 131,
-    "query": "What are the original validation studies for the Numeric Rating Scale for pain intensity?",
+    "query": "What are the validation studies for the Numeric Rating Scale for pain intensity?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1704,7 +1704,7 @@
   },
   {
     "id": 132,
-    "query": "Classic studies establishing the role of sleep disturbance in chronic pain amplification",
+    "query": "What evidence established the role of sleep disturbance in chronic pain amplification?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1717,7 +1717,7 @@
   },
   {
     "id": 133,
-    "query": "What historical randomised trials established epidural steroid injection safety profiles?",
+    "query": "What RCTs established the safety profile of epidural steroid injections?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1730,7 +1730,7 @@
   },
   {
     "id": 134,
-    "query": "What are the 2010-2013 studies that established baseline evidence for spinal cord stimulation therapy?",
+    "query": "What studies established the evidence base for spinal cord stimulation therapy?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1743,7 +1743,7 @@
   },
   {
     "id": 135,
-    "query": "Longitudinal cohort studies tracking 10-year changes in Huntington's disease functional status",
+    "query": "What longitudinal cohort studies describe changes in Huntington's disease functional status?",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "recency",
     "expected_twr_advantage": false,
@@ -1756,7 +1756,7 @@
   },
   {
     "id": 136,
-    "query": "What do recent Q1 RCTs (2022-2025) show about mesenchymal stem cell therapy for knee osteoarthritis?",
+    "query": "What does the evidence show about mesenchymal stem cell therapy for knee osteoarthritis?",
     "domain": "Orthopaedics",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1769,7 +1769,7 @@
   },
   {
     "id": 137,
-    "query": "Systematic reviews from Q1 journals in 2023-2025 on persistent post-COVID pain",
+    "query": "What do systematic reviews show about persistent post-COVID pain?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1782,7 +1782,7 @@
   },
   {
     "id": 138,
-    "query": "Recent high-impact RCTs on virtual reality for post-surgical rehabilitation pain",
+    "query": "What do RCTs show about virtual reality for post-surgical rehabilitation pain?",
     "domain": "Rehabilitation",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1795,7 +1795,7 @@
   },
   {
     "id": 139,
-    "query": "What do 2024 Q1 neurology journal RCTs show about neuromodulation for refractory chronic pain?",
+    "query": "What do neurology journal RCTs show about neuromodulation for refractory chronic pain?",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1808,7 +1808,7 @@
   },
   {
     "id": 140,
-    "query": "Cochrane reviews published in Q1 journals in 2023-2025 on exercise for chronic low back pain",
+    "query": "What do systematic reviews show about exercise for chronic low back pain?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1821,7 +1821,7 @@
   },
   {
     "id": 141,
-    "query": "Most recent Q1 journal RCTs on pharmacological management of neuropathic pain after spinal cord injury",
+    "query": "What do recent RCTs show about pharmacological management of neuropathic pain after spinal cord injury?",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1834,7 +1834,7 @@
   },
   {
     "id": 142,
-    "query": "2024 systematic reviews in Q1 orthopaedic journals on prehabilitation before joint replacement",
+    "query": "What do systematic reviews show about prehabilitation before joint replacement?",
     "domain": "Orthopaedics",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1847,7 +1847,7 @@
   },
   {
     "id": 143,
-    "query": "High-impact journal RCTs since 2022 evaluating pain catastrophising interventions",
+    "query": "What do RCTs show about interventions for pain catastrophising?",
     "domain": "Mental Disorders (Psychiatry)",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1860,7 +1860,7 @@
   },
   {
     "id": 144,
-    "query": "Recent Q1 oncology journal trials on opioid-sparing strategies in cancer pain management",
+    "query": "What do oncology journal trials show about opioid-sparing strategies in cancer pain?",
     "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1873,7 +1873,7 @@
   },
   {
     "id": 145,
-    "query": "Latest meta-analyses from Q1 cardiovascular journals on cardiac rehabilitation efficacy",
+    "query": "What do meta-analyses show about cardiac rehabilitation efficacy?",
     "domain": "Cardiovascular Diseases",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1886,7 +1886,7 @@
   },
   {
     "id": 146,
-    "query": "2025 Q1 journal systematic reviews on closed-loop spinal cord stimulation vs conventional SCS",
+    "query": "What do systematic reviews show about closed-loop spinal cord stimulation versus conventional SCS?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1899,7 +1899,7 @@
   },
   {
     "id": 147,
-    "query": "Q1 journal RCTs from 2022-2025 evaluating multimodal rehabilitation after lumbar fusion",
+    "query": "What do RCTs show about multimodal rehabilitation after lumbar fusion?",
     "domain": "Orthopaedics",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1912,7 +1912,7 @@
   },
   {
     "id": 148,
-    "query": "Recent high-quality evidence from top journals on mindfulness for cancer-related pain",
+    "query": "What is the evidence for mindfulness in cancer-related pain?",
     "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1925,7 +1925,7 @@
   },
   {
     "id": 149,
-    "query": "2024 Q1 paediatric journals RCTs on pain management in children with cancer",
+    "query": "What do RCTs show about pain management in children with cancer?",
     "domain": "Neoplasms (Oncology)",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1938,7 +1938,7 @@
   },
   {
     "id": 150,
-    "query": "What do recent systematic reviews in top rehabilitation journals say about telerehabilitation for stroke survivors?",
+    "query": "What do systematic reviews show about telerehabilitation for stroke survivors?",
     "domain": "Rehabilitation",
     "ablation_dimension": "combined",
     "expected_twr_advantage": true,
@@ -1951,7 +1951,7 @@
   },
   {
     "id": 151,
-    "query": "What do older expert consensus guidelines from unranked specialty journals say about CRPS management?",
+    "query": "What do expert consensus guidelines say about CRPS management?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -1964,7 +1964,7 @@
   },
   {
     "id": 152,
-    "query": "Retrospective case series in unranked journals describing rare complications of naphtalanotherapy",
+    "query": "What case series describe complications of naphtalanotherapy?",
     "domain": "Rehabilitation",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -1977,7 +1977,7 @@
   },
   {
     "id": 153,
-    "query": "Historical expert opinion articles in Q4 journals on physiotherapy duration for psoriasis rehabilitation",
+    "query": "What do expert opinion articles say about physiotherapy duration for psoriasis rehabilitation?",
     "domain": "Rehabilitation",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -1990,7 +1990,7 @@
   },
   {
     "id": 154,
-    "query": "What do 2010-2015 observational studies in unranked neurology journals describe about C2-C3 nerve stimulation?",
+    "query": "What do observational studies describe about C2-C3 nerve stimulation?",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2003,7 +2003,7 @@
   },
   {
     "id": 155,
-    "query": "Older expert recommendations in Q3-Q4 journals on conservative management of juvenile parotitis",
+    "query": "What do expert recommendations say about conservative management of juvenile parotitis?",
     "domain": "Infections",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2016,7 +2016,7 @@
   },
   {
     "id": 156,
-    "query": "Foundational anatomy papers in unranked journals on spinal cord segmental organisation",
+    "query": "What studies describe the spinal cord's segmental organisation relevant to surgery?",
     "domain": "Orthopaedics",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2029,7 +2029,7 @@
   },
   {
     "id": 157,
-    "query": "What do historical case reports in unranked pain journals describe about opioid-induced hyperalgesia?",
+    "query": "What do case reports describe about opioid-induced hyperalgesia?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2042,7 +2042,7 @@
   },
   {
     "id": 158,
-    "query": "Expert opinion pieces from Q4 rehabilitation journals on the role of family support in stroke recovery",
+    "query": "What do rehabilitation journals report on the role of family support in stroke recovery?",
     "domain": "Rehabilitation",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2055,7 +2055,7 @@
   },
   {
     "id": 159,
-    "query": "Old cohort studies in unranked bodywork journals on physiotherapy after vertebral arthrodesis",
+    "query": "What cohort studies describe physiotherapy outcomes after vertebral arthrodesis?",
     "domain": "Orthopaedics",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2068,7 +2068,7 @@
   },
   {
     "id": 160,
-    "query": "Narrative reviews from Q4 geriatric journals in 2010-2015 on delirium risk after orthopaedic surgery",
+    "query": "What do geriatric journals report on delirium risk after orthopaedic surgery?",
     "domain": "Orthopaedics",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2081,7 +2081,7 @@
   },
   {
     "id": 161,
-    "query": "What do 2010-2014 retrospective case series in unranked infection journals report on parotitis antibiotic choices?",
+    "query": "What do case series describe about parotitis antibiotic choices?",
     "domain": "Infections",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2094,7 +2094,7 @@
   },
   {
     "id": 162,
-    "query": "Expert panel reports from unranked journals on pain management in elderly nursing home residents",
+    "query": "What evidence addresses pain management in elderly nursing home residents?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2107,7 +2107,7 @@
   },
   {
     "id": 163,
-    "query": "Older observational data from Q3 journals on long-term effects of physiotherapy in adult scoliosis",
+    "query": "What do observational studies describe about long-term physiotherapy effects in adult scoliosis?",
     "domain": "Orthopaedics",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2120,7 +2120,7 @@
   },
   {
     "id": 164,
-    "query": "Historical expert opinion in unranked journals on rehabilitation after naphtalanotherapy",
+    "query": "What evidence addresses rehabilitation after naphtalanotherapy?",
     "domain": "Rehabilitation",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2133,7 +2133,7 @@
   },
   {
     "id": 165,
-    "query": "What do older case reports in Q4 neurology journals describe about cervical PNS device complications?",
+    "query": "What case reports describe cervical PNS device complications?",
     "domain": "Nervous System Diseases (Neurology)",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2146,7 +2146,7 @@
   },
   {
     "id": 166,
-    "query": "What do 2012-2016 expert consensus statements in unranked rheumatology journals recommend for psoriatic arthritis rehabilitation?",
+    "query": "What do expert consensus statements recommend for psoriatic arthritis rehabilitation?",
     "domain": "Rehabilitation",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2159,7 +2159,7 @@
   },
   {
     "id": 167,
-    "query": "Narrative reviews from 2005-2010 in unranked anaesthesia journals about postoperative cognitive dysfunction",
+    "query": "What do narrative reviews describe about postoperative cognitive dysfunction?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2172,7 +2172,7 @@
   },
   {
     "id": 168,
-    "query": "What older expert opinion pieces from Q3-Q4 psychiatry journals address chronic pain and suicidality?",
+    "query": "What expert opinion addresses chronic pain and suicidality?",
     "domain": "Mental Disorders (Psychiatry)",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2185,7 +2185,7 @@
   },
   {
     "id": 169,
-    "query": "Historical epidemiological studies in unranked journals on occupational low back pain in manual workers",
+    "query": "What epidemiological studies address occupational low back pain in manual workers?",
     "domain": "Pain & Anesthesiology",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2198,7 +2198,7 @@
   },
   {
     "id": 170,
-    "query": "Older consensus guidelines from Q3 journals on exercise contraindications in orthopaedic patients",
+    "query": "What do consensus guidelines say about exercise contraindications in orthopaedic patients?",
     "domain": "Orthopaedics",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,
@@ -2211,7 +2211,7 @@
   },
   {
     "id": 171,
-    "query": "What do retrospective studies in unranked infectious disease journals from 2010-2015 say about antibiotic duration in parotitis?",
+    "query": "What do retrospective studies say about antibiotic duration in parotitis?",
     "domain": "Infections",
     "ablation_dimension": "combined",
     "expected_twr_advantage": false,

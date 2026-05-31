@@ -34,70 +34,25 @@ def get_sampled_queries(queries_json_path: str) -> list:
     return sampled_queries
 
 def generate_clinical_answer(query: str, context_text: str) -> str:
-    SYSTEM_PROMPT = """You are a clinical evidence synthesis assistant supporting a
-    medical information retrieval study. You will be given a clinical query and a
-    set of retrieved Context documents, each with provenance metadata (source
-    journal, evidence level, publication year, journal tier).
+    SYSTEM_PROMPT = """You are a clinical assistant.  
+You will be given a clinical query and a set of retrieved documents.  
+
+Your task is to produce a **direct, evidence‑based answer** to the query using **only the information in the retrieved documents**.  
+Do not add external knowledge. Answer the query as clearly and concisely as possible. 
+
+If the documents do not answer the query, state that clearly (e.g., "The retrieved documents do not address this query").  
+
+Keep the answer focused – typically 2‑5 sentences.  
+"""
     
-    Your task is to produce a structured synthesis of the retrieved evidence.
-    You MUST follow the four-section output format below — every section is
-    required in every response, regardless of how well the documents match the query.
-    
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    OUTPUT FORMAT (use these exact section headers)
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    
-    ## Evidence Summary
-    Synthesise what the retrieved documents collectively say about the query.
-    Write 2–5 sentences of direct clinical synthesis. If the documents address
-    the query only partially or tangentially, synthesise what they DO cover —
-    do not refuse to write this section. State findings directly (e.g.
-    "Two RCTs found that X reduced pain scores by Y").
-    
-    ## Sources Used
-    List each document you drew on, using this format per line:
-    • [Doc N] <journal name> | EL <evidence_level> | <journal_tier> | <year> — <one sentence describing what this doc contributes>
-    
-    Include ALL 5 provided documents. For documents not used in the summary,
-    note why (e.g. "not directly relevant to the query — addresses X instead").
-    
-    ## Evidence Quality Assessment
-    State the overall quality of the retrieved evidence for this specific query.
-    Use exactly one of these grades and justify it in one sentence:
-    STRONG   — ≥2 EL-1 documents (RCTs or systematic reviews) directly address the query
-    MODERATE — EL-1/2 documents address the query indirectly, or EL-3 directly
-    LIMITED  — Only EL-4/5 or tangentially related EL-1/2 documents available
-    ABSENT   — No retrieved document addresses the query in any meaningful way
-    
-    ## Gap Statement
-    In 1–3 sentences, state precisely what the retrieved evidence does NOT cover
-    that would be needed to fully answer the query. Be specific about the gap
-    (e.g. "No document reports long-term outcomes beyond 12 weeks" or "Evidence
-    is limited to low back pain; knee osteoarthritis is not addressed directly").
-    If the query is fully answered, write "No significant gaps identified."
-    
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    RULES
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    1. Use ONLY the provided Context documents. Do not use your training knowledge
-    to add clinical facts not present in the documents.
-    2. You MUST complete all four sections. An "Evidence Summary" that says only
-    "insufficient" is a protocol violation — always synthesise what IS present.
-    3. Cite document numbers inline in the Evidence Summary using [Doc N] notation.
-    4. Never fabricate findings. If a document is only tangentially related, say so
-    in Sources Used and assign a LIMITED or ABSENT quality grade.
-    5. Keep clinical language precise. Spell out abbreviations on first use.
-    6. Do not comment on the retrieval system, ranking method, or study design.
-    """
-    
-    USER_PROMPT = """## Clinical Query
+    USER_PROMPT = f"""## Clinical Query
     {query}
     
     ## Retrieved Context Documents
     
-    {formatted_docs}
+    {context_text}
     
-    Please produce your structured four-section synthesis now."""
+   """
     
     response = client.chat.completions.create(
         model="deepseek-chat", # Use V3
@@ -223,5 +178,5 @@ def save_to_file(text,name):
 
 
 if __name__ == "__main__":
-    run_blinded_llm_pass("data/queries.json", "logs\pipeline_audit_log.csv", "logs/blinded_clinical_review.csv")
-    # save_RRF_TWR_results("data/queries.json", "logs\pipeline_audit_log.csv")
+    # run_blinded_llm_pass("data/queries.json", "logs\pipeline_audit_log.csv", "logs/blinded_clinical_review.csv")
+    save_RRF_TWR_results("data/queries.json", "logs\pipeline_audit_log.csv")
