@@ -34,3 +34,4 @@ timestamp,action,query,results_count,top_result_pmid,latency,pipeline,status
 2026-05-24 11:45:13,batch_ablation,Batch ablation over 180 queries,11.280924081802368,success
 2026-05-24 12:42:25,batch_ablation,Batch ablation over 171 queries,11.513035774230957,success
 2026-05-24 12:43:25,batch_ablation,Batch ablation over 171 queries,10.31267237663269,success
+2026-05-31 15:12:48,batch_ablation,Batch ablation over 171 queries,13.831345081329346,success

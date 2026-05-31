@@ -207,7 +207,7 @@ def run_ablation():
         return make_response( message=f"Ablation Retrieval error: {str(e)}", status="error"),500
 
 @app.route("/ablation/batch", methods=["POST"])
-def run_batch_ablation():
+def run_batch_ablation_route():
     """
     Executes a comprehensive batch ablation study across all queries in a dataset.
     Extracts intermediate sparse/dense rankings and logs detailed metrics to PipelineAudit.

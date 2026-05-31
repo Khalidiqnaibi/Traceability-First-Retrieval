@@ -1,7 +1,7 @@
 """
 run_evaluation.py  (v2)
 ======================================================
-Evaluation script comparing Trust-weighted Retrieval (TFR) against Standard
+Evaluation script comparing Trust-weighted Retrieval (TWR) against Standard
 (RRF) baseline on biomedical RAG audit logs.
 
 Fixes vs v1
@@ -88,11 +88,11 @@ warnings.filterwarnings("ignore", category=RuntimeWarning)
 TIER_GAIN: dict[str, int] = {"Q1": 4, "Q2": 3, "Q3": 2, "Q4": 1, "Unranked": 0}
 TIER_ORDER: list[str] = ["Q1", "Q2", "Q3", "Q4", "Unranked"]
 PIPELINE_LABELS: dict[str, str] = {
-    "TFR": "TFR",
+    "TWR": "TWR",
     "Standard": "Standard",
     "Standard_RRF": "Standard",
 }
-PALETTE: dict[str, str] = {"Standard": "#5B8DB8", "TFR": "#E07B54"}
+PALETTE: dict[str, str] = {"Standard": "#5B8DB8", "TWR": "#E07B54"}
 RNG = np.random.default_rng(42)
 
 # 1. Data Parsing Utilities
@@ -234,7 +234,7 @@ def interpret_cliffs(d: float) -> str:
 
 
 def _paired_test(
-    pivot: pd.DataFrame, col_a: str = "TFR", col_b: str = "Standard"
+    pivot: pd.DataFrame, col_a: str = "TWR", col_b: str = "Standard"
 ) -> dict:
     """Run Shapiro → Wilcoxon or t-test; return result dict."""
     p2 = pivot.dropna(subset=[col_a, col_b])
@@ -250,7 +250,7 @@ def _paired_test(
     ci_lo  = mean_d - 1.96 * se
     ci_hi  = mean_d + 1.96 * se
 
-    # Effect size: Cliff's delta (TFR values vs Standard values)
+    # Effect size: Cliff's delta (TWR values vs Standard values)
     cd = cliffs_delta(p2[col_a].values, p2[col_b].values)
 
     if sw_p > 0.05:
@@ -311,7 +311,7 @@ def run_significance_tests(metrics: pd.DataFrame, report_path: Path) -> None:
     lines: list[str] = [
         sep,
         "  Statistical Significance Report",
-        "  TFR vs Standard  |  paired tests + effect sizes",
+        "  TWR vs Standard  |  paired tests + effect sizes",
         sep,
     ]
 
@@ -333,7 +333,7 @@ def run_significance_tests(metrics: pd.DataFrame, report_path: Path) -> None:
             f"  Metric : {res['label']}",
             f"  -------",
             f"  Paired queries (n)       : {res['n']}",
-            f"  Mean Delta (TFR-Standard): {res['mean_delta']:+.4f}",
+            f"  Mean Delta (TWR-Standard): {res['mean_delta']:+.4f}",
             f"  Std  Delta               : {res['std_delta']:.4f}",
             f"  95% CI Delta             : [{res['ci'][0]:+.4f}, {res['ci'][1]:+.4f}]",
             f"  Shapiro-Wilk W           : {res['sw_stat']:.4f}",
@@ -399,7 +399,7 @@ JITTER_SCALE = 0.06   # y-jitter amplitude for dumbbell dots
 def fig1_dumbbell(metrics: pd.DataFrame, out_path: Path) -> None:
     """
     Jittered dumbbell plot: Top-1 Evidence Level and Journal Tier ordinal,
-    Standard → TFR.  Individual query dots are jittered vertically to avoid
+    Standard → TWR.  Individual query dots are jittered vertically to avoid
     the severe overplotting that discrete (1-5 / 0-4) y-values produce when
     many queries share the same value.
     """
@@ -409,7 +409,7 @@ def fig1_dumbbell(metrics: pd.DataFrame, out_path: Path) -> None:
 
     def _wide(col: str) -> pd.DataFrame:
         p = m.pivot_table(index="query", columns="pipeline", values=col, aggfunc="first")
-        keep = [c for c in ["Standard", "TFR"] if c in p.columns]
+        keep = [c for c in ["Standard", "TWR"] if c in p.columns]
         return p.dropna(subset=keep)
 
     ev_wide   = _wide("top1_ev")
@@ -417,7 +417,7 @@ def fig1_dumbbell(metrics: pd.DataFrame, out_path: Path) -> None:
 
     fig, axes = plt.subplots(1, 2, figsize=(12, 5.5))
     fig.suptitle(
-        "Figure 1 – Top-1 Quality Shift: Standard → TFR",
+        "Figure 1 – Top-1 Quality Shift: Standard → TWR",
         fontsize=14, fontweight="bold", y=1.02,
     )
 
@@ -430,10 +430,10 @@ def fig1_dumbbell(metrics: pd.DataFrame, out_path: Path) -> None:
         yticklabels: list | None = None,
     ) -> None:
         std_col = "Standard" if "Standard" in wide.columns else wide.columns[0]
-        tfr_col = "TFR"      if "TFR"      in wide.columns else wide.columns[-1]
+        TWR_col = "TWR"      if "TWR"      in wide.columns else wide.columns[-1]
 
         std_vals = wide[std_col].values
-        tfr_vals = wide[tfr_col].values
+        TWR_vals = wide[TWR_col].values
         n        = len(std_vals)
 
         # Per-query y-jitter so overlapping discrete values spread out
@@ -441,7 +441,7 @@ def fig1_dumbbell(metrics: pd.DataFrame, out_path: Path) -> None:
 
         # Connecting lines coloured by direction of improvement
         # (improvement = lower value when invert_y=True)
-        for sv, tv, jit in zip(std_vals, tfr_vals, jitter):
+        for sv, tv, jit in zip(std_vals, TWR_vals, jitter):
             improved = tv < sv if invert_y else tv > sv
             unchanged = sv == tv
             color = "#2CA02C" if improved else ("#D62728" if not unchanged else "#AAAAAA")
@@ -451,22 +451,22 @@ def fig1_dumbbell(metrics: pd.DataFrame, out_path: Path) -> None:
         ax.scatter(np.zeros(n), std_vals + jitter,
                    color=PALETTE["Standard"], s=30, zorder=3,
                    label="Standard", alpha=0.75, linewidths=0)
-        ax.scatter(np.ones(n),  tfr_vals + jitter,
-                   color=PALETTE["TFR"],      s=30, zorder=3,
-                   label="TFR",      alpha=0.75, linewidths=0)
+        ax.scatter(np.ones(n),  TWR_vals + jitter,
+                   color=PALETTE["TWR"],      s=30, zorder=3,
+                   label="TWR",      alpha=0.75, linewidths=0)
 
         # Mean diamonds (no jitter)
         ax.scatter([0], [std_vals.mean()],
                    color=PALETTE["Standard"], s=200, marker="D",
                    edgecolors="black", lw=1.5, zorder=5,
                    label=f"Mean (Std) = {std_vals.mean():.2f}")
-        ax.scatter([1], [tfr_vals.mean()],
-                   color=PALETTE["TFR"],      s=200, marker="D",
+        ax.scatter([1], [TWR_vals.mean()],
+                   color=PALETTE["TWR"],      s=200, marker="D",
                    edgecolors="black", lw=1.5, zorder=5,
-                   label=f"Mean (TFR) = {tfr_vals.mean():.2f}")
+                   label=f"Mean (TWR) = {TWR_vals.mean():.2f}")
 
         ax.set_xticks([0, 1])
-        ax.set_xticklabels(["Standard", "TFR"], fontsize=10, fontweight="bold")
+        ax.set_xticklabels(["Standard", "TWR"], fontsize=10, fontweight="bold")
         ax.set_ylabel(ylabel, fontsize=10)
         ax.set_title(title, fontsize=11, pad=8)
         ax.set_xlim(-0.30, 1.30)
@@ -506,22 +506,22 @@ def fig2_grouped_bar(
 ) -> None:
     """
     Grouped bar chart: mean nDCG@3 (Evidence Level) per ablation dimension,
-    Standard vs TFR, with 95 % bootstrap CI error bars and delta annotations.
+    Standard vs TWR, with 95 % bootstrap CI error bars and delta annotations.
     """
     dimensions = ablation["ablation_dimension"].unique()
-    std_vals, tfr_vals = [], []
+    std_vals, TWR_vals = [], []
     std_ci_lo, std_ci_hi = [], []
-    tfr_ci_lo, tfr_ci_hi = [], []
+    TWR_ci_lo, TWR_ci_hi = [], []
 
     for dim in dimensions:
         sub = ablation[ablation["ablation_dimension"] == dim]
         s_row = sub[sub["pipeline"] == "Standard"]
-        t_row = sub[sub["pipeline"] == "TFR"]
+        t_row = sub[sub["pipeline"] == "TWR"]
 
         sv = s_row["mean_ndcg3_ev"].values[0] if len(s_row) else 0.0
         tv = t_row["mean_ndcg3_ev"].values[0] if len(t_row) else 0.0
         std_vals.append(sv)
-        tfr_vals.append(tv)
+        TWR_vals.append(tv)
 
         # Bootstrap CI from raw per-query metrics for this dimension
         raw = metrics.copy()
@@ -534,19 +534,19 @@ def fig2_grouped_bar(
         
         for pipeline, ci_lo_lst, ci_hi_lst, vals_lst in [
             ("Standard", std_ci_lo, std_ci_hi, std_vals),
-            ("TFR",      tfr_ci_lo, tfr_ci_hi, tfr_vals),
+            ("TWR",      TWR_ci_lo, TWR_ci_hi, TWR_vals),
         ]:
             pass  # filled below
 
     std_ci_lo, std_ci_hi = [], []
-    tfr_ci_lo, tfr_ci_hi = [], []
+    TWR_ci_lo, TWR_ci_hi = [], []
 
     has_dim = "ablation_dimension" in metrics.columns
 
     for dim in dimensions:
         for pipeline, ci_lo_lst, ci_hi_lst in [
             ("Standard", std_ci_lo, std_ci_hi),
-            ("TFR",      tfr_ci_lo, tfr_ci_hi),
+            ("TWR",      TWR_ci_lo, TWR_ci_hi),
         ]:
             if has_dim:
                 raw_vals = metrics.loc[
@@ -578,9 +578,9 @@ def fig2_grouped_bar(
         error_kw=dict(elinewidth=1.0, capsize=3, ecolor="#2d2d2d", alpha=0.7),
     )
     bars_t = ax.bar(
-        x + width / 2, tfr_vals, width, label="TFR",
-        color=PALETTE["TFR"], edgecolor="white", linewidth=0.8,
-        yerr=_err(tfr_vals, tfr_ci_lo, tfr_ci_hi),
+        x + width / 2, TWR_vals, width, label="TWR",
+        color=PALETTE["TWR"], edgecolor="white", linewidth=0.8,
+        yerr=_err(TWR_vals, TWR_ci_lo, TWR_ci_hi),
         error_kw=dict(elinewidth=1.0, capsize=3, ecolor="#2d2d2d", alpha=0.7),
     )
 
@@ -595,7 +595,7 @@ def fig2_grouped_bar(
     # Delta annotations – placed above the taller bar + its CI upper bound
     max_tops = []
     for xi, (sv, tv, shi, thi) in enumerate(
-        zip(std_vals, tfr_vals, std_ci_hi, tfr_ci_hi)
+        zip(std_vals, TWR_vals, std_ci_hi, TWR_ci_hi)
     ):
         delta = tv - sv
         color = "#2CA02C" if delta > 0 else ("#D62728" if delta < 0 else "#888888")
@@ -613,7 +613,7 @@ def fig2_grouped_bar(
     ax.set_xticklabels([d.replace("_", "\n") for d in dimensions], fontsize=9)
     ax.set_ylabel("Mean nDCG@3 (Evidence Level)", fontsize=10)
     ax.set_title(
-        "Figure 2 – nDCG@3 by Ablation Dimension: Standard vs TFR",
+        "Figure 2 – nDCG@3 by Ablation Dimension: Standard vs TWR",
         fontsize=13, fontweight="bold",
     )
 
@@ -638,7 +638,7 @@ def fig2_grouped_bar(
 # 8. CLI Entry Point
 def parse_args(evaluation_log_path: str = EVAL_LOG_PATH, queries_path: str = QUERY_PATH, out_dir: str = OUT_DIR) -> argparse.Namespace:
     p = argparse.ArgumentParser(
-        description="Evaluate TFR vs Standard RAG pipeline from an audit log."
+        description="Evaluate TWR vs Standard RAG pipeline from an audit log."
     )
     p.add_argument("--log",     default=evaluation_log_path)
     p.add_argument("--queries", default=queries_path)

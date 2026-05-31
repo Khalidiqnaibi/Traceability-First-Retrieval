@@ -3,7 +3,6 @@ import json
 import time
 
 
-from utils.api.audit import AuditTrail
 from utils.api.make_response import make_response
 
 
@@ -52,7 +51,7 @@ if __name__ == "__main__":
     # Example usage
     from pipeline.retrieval import TFRPipeline
     from pipeline.standard_pipeline import Pipeline as StandardPipeline
-    from utils.api.audit import AuditTrail
+    from ..utils.api.audit import AuditTrail
 
     tfr_pipeline = TFRPipeline()
     standard_pipeline = StandardPipeline()
