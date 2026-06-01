@@ -16,9 +16,9 @@ def get_sampled_queries(queries_json_path: str) -> list:
     sampled_queries = []
     for domain in top_domains:
         domain_pool = meta_df[meta_df['domain'] == domain]['query'].tolist()
-        sampled_subset = random.sample(domain_pool, min(10, len(domain_pool)))
-        sampled_queries.extend(sampled_subset)
-        print(f"   -> Sampled {len(sampled_subset)} queries from '{domain}'")
+        # sampled_subset = random.sample(domain_pool, min(10, len(domain_pool)))
+        sampled_queries.extend(domain_pool)
+        print(f"   -> Sampled {len(sampled_queries)} queries from '{domain}'")
         
     return sampled_queries
 
