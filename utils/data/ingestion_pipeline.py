@@ -24,7 +24,7 @@ import re
 from typing import List, Dict, Tuple
 from dataclasses import dataclass
 
-from data.domain import DOMAIN_KEYWORDS
+from data_in.domain import DOMAIN_KEYWORDS
 
 
 @dataclass
@@ -86,7 +86,7 @@ class TFRDataPreprocessor:
     def __init__(
         self,
         domain_keywords: List[Tuple[str, str]] = None,
-        sjr_csv_path: str = "./data/scimagojr_2023.csv",
+        sjr_csv_path: str = "./data_in/scimagojr_2023.csv",
     ):
         # Domain map: ordered list of (lowercase_substring, label) pairs.
         # Can be overridden at construction time; falls back to the module-level constant.

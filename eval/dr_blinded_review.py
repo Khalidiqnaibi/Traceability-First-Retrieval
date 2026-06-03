@@ -27,15 +27,15 @@ def generate_blinded_review_workbooks(path_to_blinded_log: str, path_to_queries_
     ortho_df = blinded_df[blinded_df['Domain'].isin(['Orthopaedics', 'Rehabilitation'])]
     # Drop the secret key and domain before sending to the doctor
     ortho_export = ortho_df.drop(columns=['Secret_Key_Mapping', 'Domain'])
-    ortho_export.to_csv("logs/Evaluation_Workbook_Orthopedics.csv", index=False)
+    ortho_export.to_csv("data_out/Evaluation_Workbook_Orthopedics.csv", index=False)
 
     # 4. Create the Anesthesiologist's subset (Pain + Rehab)
     pain_df = blinded_df[blinded_df['Domain'].isin(['Pain & Anesthesiology', 'Rehabilitation'])]
     # Drop the secret key and domain before sending to the doctor
     pain_export = pain_df.drop(columns=['Secret_Key_Mapping', 'Domain'])
-    pain_export.to_csv("logs/Evaluation_Workbook_Anesthesiology.csv", index=False)
+    pain_export.to_csv("data_out/Evaluation_Workbook_Anesthesiology.csv", index=False)
 
     print("Workbooks generated successfully!")
 
 if __name__ == "__main__":
-    generate_blinded_review_workbooks("logs/blinded_clinical_review.csv","data/queries.json")
+    generate_blinded_review_workbooks("data_out/blinded_clinical_review.csv","data_in/queries.json")

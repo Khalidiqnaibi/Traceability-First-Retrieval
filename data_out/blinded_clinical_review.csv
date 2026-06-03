@@ -1,0 +1,551 @@
+Query_ID,Query,Response A,Response B,Secret_Key_Mapping
+CLIN-EVAL-01,What does the evidence show about exercise therapy for knee osteoarthritis?,"**Exercise therapy is effective for knee OA, with specific nuances regarding positioning, prehabilitation, and adherence.**
+
+- **Non-weight-bearing (sitting) exercises** are more effective than standing exercises for pain reduction, knee function, and physical quality of life in obese women with OA (Doc 3).
+- **Voluntary rehabilitation exercise** (e.g., isometric quadriceps extension) is effective and safe for early knee OA, with a cure-remarkable-effective rate of 86.67% vs. 71.11% in controls (Doc 2).
+- **Prehabilitation** (6-week home-based exercise before TKA) improves Knee Score preoperatively and up to 6 months postoperatively, but no significant difference remains at 12 months (Doc 5).
+- **Barriers to adherence** include lack of motivation, time, supervision, and physical environment; facilitators include therapeutic alliance and retained knowledge about exercise benefits (Doc 1).
+
+**Gap:** No retrieved evidence on optimal dosing (frequency, intensity, duration) or long-term functional outcomes beyond 12 months.
+
+Used: Doc1, Doc2, Doc3, Doc5
+Not used: Doc4 — focuses on PROMs protocol for knee arthroplasty, not exercise therapy efficacy.","**Exercise therapy is effective for knee OA, with specific delivery factors influencing outcomes.**
+
+- **Efficacy:** Voluntary rehabilitation exercise (quadriceps isometric extension) combined with standard care shows high efficacy (86.67% cure-remarkable-effective rate) in early knee OA, improving VAS and Lysholm scores (Doc 1).
+- **Positioning:** Non-weight-bearing (sitting) therapeutic exercise is superior to standing exercise for pain reduction, knee function, and physical quality of life in obese women with OA. Standing exercise improves mental quality of life more (Doc 5).
+- **Adherence & Psychosocial Factors:**
+    - Barriers to long-term adherence persist despite individualization (lack of motivation, time, supervision). Strong therapeutic alliance and patient knowledge about exercise's role facilitate adherence (Doc 2).
+    - Exercise therapy improves fear of falling and instrumental ADL by 3 months. Psychosocial factors (fear of falling, depression) significantly impact HRQOL, indicating a need for combined psychological intervention (Doc 3).
+- **Adjuncts:** Adding low-level laser therapy to routine physiotherapy (including exercise) further improves pain and functional status (walking, stair climbing) compared to physiotherapy alone (Doc 4).
+
+**Gap:** No retrieved evidence on specific exercise dosage (frequency, intensity, duration) or comparative effectiveness of different exercise types (e.g., strengthening vs. aerobic vs. balance) for knee OA.
+
+Used: Doc1, Doc2, Doc3, Doc4, Doc5
+Not used: None","A=TWR, B=RRF"
+CLIN-EVAL-02,What is the comparative efficacy of multimodal analgesia vs opioids post-surgery?,"Based exclusively on the provided documents, the comparative efficacy of multimodal analgesia vs. opioids post-surgery is as follows:
+
+- **Total Knee Arthroplasty (TKA):** Opioid-sparing PCA (ketorolac + nefopam) is **non-inferior** to opioid-based PCA (fentanyl) for pain at rest on POD 1 (mean VAS difference 0.45; 95% CI, -0.36 to 1.25, within 1.5-point margin). The opioid-sparing group had significantly fewer rescue analgesics on POD 2 and less nausea/vomiting on POD 1 (12.2% vs. 34.7%, P=0.009). [Doc 2]
+
+- **Proximal Femoral Nail Anti-rotation (PFNA):** Adding a PENG block to a multimodal regimen significantly reduced cumulative sufentanil consumption at 48h (132.6±12.3 vs. 141.0±15.3 µg; P=0.002) and improved VAS trajectories compared to an opioid-based program. [Doc 3]
+
+- **Laparoscopic cholecystectomy, appendectomy, herniorrhaphy:** A standardized multimodal protocol significantly reduced the number of narcotics taken (median 5.0 vs. 10.0; P<0.001) and refill rates (9.6% vs. 18.1%; P=0.007) without a difference in pain control (91.1% vs. 90.5%; P=1.0). [Doc 4]
+
+- **Chronic nonmalignant pain:** Multimodal treatment in a pain clinic reduced opioid use by ~55.4% (from 53.8 to 24 MME/day) and improved pain scores (NRS-11 decreased 33.8%) and function. [Doc 5] *Note: This is a retrospective study in a chronic pain population, not acute postoperative pain.*
+
+**Summary:** Across multiple surgical contexts, multimodal analgesia provides non-inferior or superior pain control with significantly reduced opioid consumption and fewer opioid-related adverse effects compared to opioid-only regimens.
+
+Used: Doc2, Doc3, Doc4, Doc5
+Not used: Doc1 — addresses emergence agitation after VATS, not comparative efficacy of multimodal vs. opioids for postoperative pain control.","Multimodal analgesia (MMA) is superior to opioid-only regimens for postoperative pain management. MMA reduces opioid consumption and opioid-related adverse effects (sedation, PONV, ileus, respiratory depression) while improving pain control and recovery milestones (Doc 1).
+
+**Comparative efficacy findings from the documents:**
+
+- **Epidural vs. IV opioids:** Epidural analgesia provides better postoperative pain control compared to intravenous opioids in elderly patients (Doc 2).
+- **Opioid vs. non-opioid analgesia:** Postoperative opioid analgesia is independently associated with higher pain scores (HR 1.52, 95% CI 1.31–1.76) and more drug-related side effects, without improvement in patient satisfaction (Doc 3). Non-opioid analgesia is recommended for routine use (Doc 3).
+- **Regional block + opioid choice:** Serratus anterior plane block (SAPB) combined with oxycodone (vs. sufentanil) significantly reduces emergence agitation (7.5% vs. 28.6%, P=0.0136), shortens extubation time and PACU stay, and improves recovery quality after VATS (Doc 4).
+- **Non-pharmacologic adjunct:** Hypnosis added to standard MMA reduces pain scores in the first 48 hours post-arthroscopic ACL repair, though morphine consumption was not significantly different (Doc 5).
+
+**Summary:** MMA (combining non-opioid systemic agents, regional techniques, and non-pharmacologic modalities) consistently outperforms opioid-only analgesia in pain control, side-effect profile, and recovery endpoints.
+
+Used: Doc1, Doc2, Doc3, Doc4, Doc5
+Not used: None — all documents contributed to the answer.","A=TWR, B=RRF"
+CLIN-EVAL-03,What evidence addresses fall prevention programmes for elderly patients?,"**Fall prevention programmes for elderly patients — evidence summary**
+
+- **Treadmill training (Doc 1):** Systematic review (1980–2025, 16 studies) shows positive effects on balance and fall risk reduction, particularly in Parkinson’s disease, spinal cord injury, and age-related balance issues. Perturbation-based treadmill training significantly reduced fall rates. *Optimal protocols and durations remain undefined.*
+
+- **Traditional Chinese exercises (Doc 2):** Systematic review (45 RCTs) of Tai Chi, Ba Duan Jin, Yi Jin Jing, Wu Qin Xi. All four reduce fall risk. Ba Duan Jin and Yi Jin Jing may be preferred for fall prevention. Ba Duan Jin improved TUGT [SMD = -1.93 (-2.49, -1.38)].
+
+- **Physical-activity therapy (PAT) + cognitive behavioral therapy (CBT) (Doc 4):** Umbrella review (18 studies) — low- or moderate-intensity PAT combined with CBT is more effective than either alone for managing fear of falling (FOF) and fall risk.
+
+- **Mild hyponatremia as risk marker (Doc 3):** Retrospective analysis (n=16,952) — mild hyponatremia (130–134 mEq/L) is an independent risk factor for falls in hospitalized elderly (HR 1.42, 95% CI 1.16–1.74), especially in those with higher ADLs. May serve as a clinical marker for targeted prevention.
+
+- **Functional Reach Test (Doc 5):** Meta-analysis (40 studies) — normative values: 26.6 cm (95% CI 25.14–28.06) for community-dwelling; 15.4 cm (95% CI 13.47–17.42) for non-community-dwelling. Performance decreases with age. Useful for balance and fall risk assessment, but assessment methods vary.
+
+**Gap:** No retrieved evidence on specific medication review, vitamin D supplementation, home hazard assessment, or multifactorial fall prevention programmes.
+
+Used: Doc1, Doc2, Doc3, Doc4, Doc5
+Not used: None — all documents contributed to the answer.","**Fall prevention programmes for elderly patients — evidence summary**
+
+- **Treadmill training (Doc 1):** Improves balance and reduces fall risk, especially in Parkinson’s disease, spinal cord injury, and age-related balance issues. Perturbation-based treadmill training significantly reduces fall rates. Optimal protocols remain undefined.
+
+- **Traditional Chinese exercises (Doc 2):** Tai Chi, Ba Duan Jin, Yi Jin Jing, and Wu Qin Xi all prevent falls. Ba Duan Jin and Yi Jin Jing may be preferred based on TUGT improvement [SMD -1.93]. Exercise selection should be individualized.
+
+- **Physical-activity therapy (PAT) and cognitive behavioral therapy (CBT) (Doc 5):** Low- or moderate-intensity PAT combined with CBT is more effective than either alone for managing fear of falling (FOF). Optimal PAT intensity and CBT duration remain unclear.
+
+- **Bedside trolley + floor sensor mat (Doc 4):** In high-risk ortho-geriatric inpatients (STRATIFY ≥17), this novel set-up reduced falls by 71% (3.4 to 1 fall/month). Effect in lower-risk patients was smaller (44% reduction).
+
+- **Mild hyponatremia (Doc 3):** Independent risk factor for falls in elderly hospitalized patients (HR 1.42; 95% CI 1.16–1.74), especially those with independent ADLs. May serve as a clinical marker for targeted prevention.
+
+**Gap:** No retrieved evidence on multifactorial fall risk assessment tools, home safety modifications, medication review, or vitamin D supplementation for fall prevention.
+
+Used: Doc1, Doc2, Doc3, Doc4, Doc5
+Not used: None — all documents contributed to the query.","A=TWR, B=RRF"
+CLIN-EVAL-04,What are the clinical observations of naphtalanotherapy in psoriatic arthritis rehabilitation?,"- Naphtalanotherapy combined with individually tailored physiotherapy significantly improved pain, stiffness, swelling, disease activity, skin condition, and quality of life in psoriatic arthritis patients.
+- A three-week treatment program was more effective than a two-week program.
+- Findings support inclusion of naphtalanotherapy and physiotherapy in psoriatic disease management, with potential long-term benefits.
+
+Used: Doc5
+Not used: Doc1, Doc2, Doc3, Doc4 — not relevant to the query","Based exclusively on Doc 1:
+
+- **Pain, stiffness, and swelling**: Significant improvement.
+- **Disease activity**: Significant reduction.
+- **Skin condition**: Significant improvement.
+- **Quality of life**: Significant improvement.
+- **Dose-response**: Three-week program more effective than two-week program.
+- **Context**: Therapy combined naphtalanotherapy (NT) with individually tailored physiotherapy (ITP).
+
+Used: Doc1  
+Not used: Doc2, Doc3, Doc4, Doc5 — not relevant to the query (netakimab, synovitis score, craniocervical junction, claims algorithms).","A=TWR, B=RRF"
+CLIN-EVAL-05,Expert panel recommendations for grading pain intensity in non-verbal patients,"The retrieved documents do not address grading pain intensity in non-verbal patients. No document discusses behavioral pain scales (e.g., PAINAD, CPOT, FLACC), observational tools, or expert panel recommendations specific to this population.
+
+**Gap:** No retrieved evidence on expert panel recommendations for grading pain intensity in non-verbal patients.
+
+Used: None  
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none relevant to the query","**Gap: No retrieved evidence addresses expert panel recommendations for grading pain intensity in non-verbal patients.** The provided documents focus on low back pain treatment (SMT, regenerative therapies, exercise, PT access) and a neck-arm pain classification protocol. None discuss pain assessment tools for non-verbal populations (e.g., FLACC, PAINAD, CPOT, or behavioral pain scales).
+
+Used: None  
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none relevant to the query","A=RRF, B=TWR"
+CLIN-EVAL-06,What observational data exists on Barthel Index use in predicting ADL outcomes?,"**No direct observational data on Barthel Index predicting ADL outcomes is present in the provided documents.**
+
+- Doc 1 examines the Barthel Index as a predictor of **mortality**, not ADL outcomes. It proposes a modified classification for mortality risk stratification.
+- Doc 2 uses the Korean modified Barthel Index as an **outcome measure** (dependent variable) to compare prognostic value of neurophysiological tests, not to predict ADL outcomes itself.
+- Doc 3, Doc 4, and Doc 5 do not use the Barthel Index.
+
+**Gap:** No retrieved evidence on Barthel Index use in predicting ADL outcomes.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address the query","**Observational data on Barthel Index (BI) predicting ADL outcomes:**
+
+- **Mortality risk discrimination (Doc 1):** In a longitudinal study of 127 functionally dependent adults (mean age 86, BI ≤ 60), chair-to-bed transfer dependency was an independent mortality risk factor (HR 2.957; CI 1.678–5.211). As a screening test for 3-year mortality, it showed sensitivity 0.91, specificity 0.83, AUC 0.814. The study proposes reclassifying severe dependence based on this item, suggesting the BI alone may inadequately discriminate mortality risk.
+
+- **Post-stroke functional recovery (Doc 4):** In 98 first-ever acute stroke patients, crude mean BI increased from discharge (35.1) to 1 month (64.4) to 3 months (68.8). Adjusted means rose from 39.6 to 73.2. Significant prognostic factors: time after discharge, age (decrease with age), and stroke subtype (hemorrhagic lower than ischemic).
+
+- **Post-pneumonia ADL outcome (Doc 5):** In 80 elderly pneumonia patients, smaller erector spinae muscle CSA on CT independently predicted lower BI at end of antibiotic treatment (multivariate logistic regression), controlling for age, sex, severity, nutrition, and dehydration.
+
+- **Rehabilitation program response (Doc 3):** Retrospective cohort of 1074 older adults showed statistically significant improvements in Modified BI after an 8-week multidisciplinary program (p ≤ .0001).
+
+- **Neurophysiological prediction in stroke (Doc 2):** In 111 subacute stroke patients, normal somatosensory evoked potentials were associated with higher Korean modified BI at discharge vs. non-responsive; normal and abnormal motor evoked potentials both predicted higher Korean modified BI vs. non-responsive.
+
+**Gap:** No retrieved evidence on BI use for predicting ADL outcomes in community-dwelling general elderly, dementia, or surgical populations.
+
+Used: Doc1, Doc2, Doc3, Doc4, Doc5
+Not used: None — all documents contributed relevant observational data on BI in predicting ADL outcomes.","A=TWR, B=RRF"
+CLIN-EVAL-07,What do top-ranked rehabilitation journals publish on robot-assisted gait training?,"Based exclusively on the provided documents, top-ranked rehabilitation journals publish on robot-assisted gait training (RAGT) with the following key themes:
+
+- **Bibliometric trends**: A bibliometric survey covering 20 years (17,429 sources) identified leading journals and conferences in post-stroke robotic rehabilitation, showing continuous expansion of the field with increasing focus on lower limb rehabilitation and disease/design-specific applications in early-stage patients (Doc 2).
+- **Effectiveness in chronic stroke**: A scoping review (11 RCTs, 2008–2020) found exoskeleton-assisted BWSTT may improve walking function in chronic stroke, but no significant difference vs. therapist-assisted BWSTT; the benefit may be from ""assistance"" rather than the robot itself (Doc 3).
+- **Protocol variability**: A systematic review (61 articles) following CICERONE Consensus noted significant variability in RAGT dose and protocols; RAGT as an add-on treatment was prevalent, and no standardized protocol or evaluation scales exist (Doc 5).
+- **Application in other populations**: Case report of RAGT in Becker muscular dystrophy with stroke (Doc 1); narrative review in multiple sclerosis showing robot-assisted rehabilitation as one of several non-pharmacological approaches with positive effects on gait and balance (Doc 4).
+
+Used: Doc2, Doc3, Doc5
+Not used: Doc1, Doc4 — Doc1 is a single case report, not a journal publication trend; Doc4 is a narrative review on MS, not specifically on what top-ranked rehabilitation journals publish.","Based exclusively on the provided documents, top-ranked rehabilitation journals publish on robot-assisted gait training (RAGT) primarily in the context of post-stroke recovery.
+
+- **Post-Stroke RAGT:** Doc 2 summarizes evidence on RAGT for post-stroke gait disability, noting significant variability in protocols and doses, and that RAGT is often used as an add-on treatment. Doc 4 focuses on exoskeleton-assisted Body Weight Supported Treadmill Training (BWSTT) for chronic stroke, finding it may be effective in improving walking function, but that the benefit may be from the ""assist"" rather than the robot itself, and combination therapy may be more effective than robot-assisted BWSTT alone.
+- **RAGT in Neuromuscular Disease:** Doc 5 presents a case report of successful mobility regain using RAGT in a patient with Becker muscular dystrophy and stroke.
+
+**Gap:** No retrieved evidence on what *top-ranked* rehabilitation journals specifically publish on this topic; the documents do not rank the journals.
+
+Used: Doc2, Doc4, Doc5
+Not used: Doc1 — not relevant to robot-assisted gait training (focuses on implanted FES); Doc3 — not relevant to gait training (focuses on pelvic floor training for post-prostatectomy incontinence)","A=RRF, B=TWR"
+CLIN-EVAL-08,What are the complication rates following spinal fusion?,"**Complication rates following spinal fusion, based on the provided documents:**
+
+- **Cage subsidence (lumbar interbody fusion):**
+  - OLIF: 14.6% at 1 week, 31.7% at 1 year postoperatively (Doc 3).
+  - Subsidence associated with higher Oswestry Disability Index and lower SF-36 physical scores (Doc 3).
+
+- **Pseudarthrosis / nonunion (fusion failure):**
+  - PLIF with β-TCP alone: 81.8% nonunion at 6 months (18.2% fusion) (Doc 1).
+  - PLIF with β-TCP + SVF: 45.5% nonunion at 6 months (54.5% fusion) (Doc 1).
+  - OLIF: 31.7% intermediate fusion at 1 year (Doc 3).
+  - Multilevel lumbar interbody fusion (osteoporotic patients): fusion rate 46.8% (teriparatide) vs 32.7% (bisphosphonate) at 6 months; bone contact status on immediate postop CT strongly predicts fusion (47.4% vs 9.5%) (Doc 2).
+
+- **Cervical nerve palsy (posterior cervical decompression and fusion):**
+  - C5 nerve palsy: relatively common (Doc 4).
+  - Phrenic nerve palsy: rare, documented in only one prior case report (Doc 4).
+
+**Gap:** No retrieved evidence on overall complication rates (e.g., infection, dural tear, hardware failure, reoperation) for spinal fusion in general. Data limited to specific fusion types and specific complications.
+
+Used: Doc1, Doc2, Doc3, Doc4
+Not used: Doc5 — discusses spinal alignment principles, not complication rates","Based exclusively on the provided documents, specific numeric complication rates (e.g., infection, hardware failure, reoperation) are not reported. The documents describe complication types and associated factors.
+
+- **Adjacent segment degeneration/disease (ASD)** is the most common mechanical complication after long-segment fusions (Doc 1). It is a significant clinical complication following cervical and lumbar fusion (Doc 2).
+- **Proximal and distal junctional kyphosis (PJK/DJK)** are reported as surgery-associated complications during long-term follow-up (Doc 1).
+- **Pseudarthrosis** rates remain high despite advances in bone graft substitutes (Doc 3). In one trial, at 6 months, radiologic fusion was 54.5% in the SVF group vs. 18.2% in the control group (Doc 3).
+- **Cage subsidence** was assessed in the same trial (Doc 3).
+- **Slightly increased cesarean section rates** are noted in patients with spinal fusion (Doc 1).
+
+**Gap:** No retrieved evidence provides overall numeric complication rates (e.g., infection, dural tear, reoperation rate) for spinal fusion.
+
+Used: Doc1, Doc2, Doc3
+Not used: Doc4, Doc5 — not relevant to the query (Doc4 discusses alignment principles; Doc5 is a case report on osteopathic management of adjacent segment pathology, not complication rates).","A=TWR, B=RRF"
+CLIN-EVAL-09,What do conference proceedings report on novel spinal arthrodesis techniques?,"No retrieved documents report on novel spinal arthrodesis techniques.
+
+**Gap:** No retrieved evidence on novel spinal arthrodesis techniques.
+
+Used: (none)
+Not used: Doc1 — early ambulation after spinal arthrodesis, not novel techniques; Doc2 — diaphragm release for cervical hypoalgesia, not spinal arthrodesis; Doc3 — biopsychosocial outcomes in orthopaedic trauma, not spinal arthrodesis techniques; Doc4 — epidural stimulation for spinal cord injury, not arthrodesis; Doc5 — carpometacarpal arthrodesis with vascularized bone graft, not spinal.","The retrieved documents do not report on novel spinal arthrodesis techniques from conference proceedings.
+
+- Doc 2 describes anterolateral approaches to the lumbar spine but is a general technique review, not a conference proceeding.
+- Doc 4 reports the publication rate of podium presentations from the Cervical Spine Research Society (CSRS) annual meeting, but it does not describe any novel arthrodesis techniques presented at that meeting.
+
+**Gap:** No retrieved evidence on novel spinal arthrodesis techniques reported in conference proceedings.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address novel spinal arthrodesis techniques from conference proceedings.","A=TWR, B=RRF"
+CLIN-EVAL-10,Regional rehabilitation journals describing local physiotherapy practice patterns,"The retrieved documents do not describe regional rehabilitation journals or local physiotherapy practice patterns. Doc 2 discusses the volume and scope of rehabilitation research in India, but does not report on specific journals or practice patterns. The remaining documents cover postoperative feeding, complex regional pain syndrome, stroke rehabilitation guidelines, and concussion assessment — none address the query.
+
+Gap: No retrieved evidence on regional rehabilitation journals or local physiotherapy practice patterns.
+
+Used: None  
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none relevant to the query","The retrieved documents do not describe local physiotherapy practice patterns as reported in regional rehabilitation journals. Doc 2 is the closest, analyzing national variation in physiotherapy provision after hip/knee replacement in England using registry data, but it is a population-based cohort study, not a regional journal report. Doc 1 discusses developing standards from CPGs for inpatient physiotherapy in New Zealand, but is a systematic review, not a regional practice pattern survey. Doc 3 (Ghana, Parkinson's compliance), Doc 4 (pediatric CRPS case), and Doc 5 (post-colorectal surgery feeding) are off-topic.
+
+**Gap:** No retrieved evidence from regional rehabilitation journals describing local physiotherapy practice patterns.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none are regional rehabilitation journal articles describing local physiotherapy practice patterns.","A=RRF, B=TWR"
+CLIN-EVAL-11,What do Q4 pain journals report on low-resource analgesia in conflict zones?,"No retrieved evidence addresses Q4 pain journals or low-resource analgesia in conflict zones.
+
+Gap: No retrieved evidence on Q4 pain journals or low-resource analgesia in conflict zones.
+
+Used: (none)
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none relevant to the query","**Answer:** No retrieved evidence addresses Q4 pain journals or low-resource analgesia in conflict zones.
+
+**Gap:** The provided documents contain no information on pain journals, low-resource settings, conflict zones, or analgesia delivery under those conditions. Doc 1 discusses biopsychosocial outcomes in US Level I trauma centers; Doc 2 is a general review of chronic pain epistemology; Doc 3 covers pediatric peripheral nerve blocks; Doc 4 reviews regional anesthesia trends in emergency medicine; Doc 5 is about pelvic chondrosarcoma surgical margins. None are relevant to the query.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address the query topic.","A=TWR, B=RRF"
+CLIN-EVAL-12,Q3-Q4 orthopaedic journals on outcomes of spinal surgery in low-income countries,"**No relevant evidence found.** None of the provided documents address outcomes of spinal surgery in low-income countries. The documents cover stem cell transplantation for SCI (Doc1), opioid use after orthopaedic surgery in the Netherlands (Doc2), Medicare reimbursement for lumbar fusion in the US (Doc3), chiropractic manipulation vs. discectomy (Doc4), and trainee vs. faculty surgeon outcomes (Doc5).
+
+**Gap:** No retrieved evidence on outcomes of spinal surgery in low-income countries.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none relevant to the query","**No retrieved evidence addresses the query.** The provided documents cover:
+
+- Sex reporting in post-stroke rehabilitation RCTs (Doc 1)
+- Publication rates from CSRS (Doc 2) and POSNA (Doc 3) meetings
+- Robotic spine surgery bibliometric analysis (Doc 4)
+- Cardiac rehabilitation in low- and middle-income countries (Doc 5)
+
+None of these documents report outcomes of spinal surgery in low-income countries, nor do they focus on Q3–Q4 orthopaedic journals.
+
+**Gap:** No retrieved evidence on outcomes of spinal surgery in low-income countries, nor on Q3–Q4 orthopaedic journals.
+
+Used: None  
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none relevant to the query","A=TWR, B=RRF"
+CLIN-EVAL-13,What do publications on peripheral nerve stimulation describe about clinical practice patterns?,"The retrieved documents do not describe clinical practice patterns for peripheral nerve stimulation (PNS). Doc 2 reports a retrospective case series on PNS for peripheral neuropathy, providing outcome data (VRS scores) but no information on practice patterns such as patient selection criteria, device types, implantation techniques, programming parameters, or follow-up protocols. Doc 1 and Doc 3 mention PNS in the context of sensory restoration and neuropathic pain treatment options, respectively, but contain no data on clinical practice patterns. Doc 4 and Doc 5 are irrelevant to PNS practice patterns.
+
+**Gap:** No retrieved evidence describes clinical practice patterns for peripheral nerve stimulation.
+
+Used: Doc2 (partially — reports outcomes but not practice patterns)
+Not used: Doc1, Doc3, Doc4, Doc5 — not relevant to the query","Based exclusively on the provided documents, publications describe the following clinical practice patterns for peripheral nerve stimulation (PNS):
+
+- **Patient Population:** Used for adults with chronic neuropathic pain refractory to conventional medical management (Doc 1) and for greater trochanteric pain syndrome (GTPS) not responding to conservative treatments (Doc 5).
+- **Treatment Sequence:** PNS is considered a minimally invasive option earlier in the treatment continuum (Doc 1). In overactive bladder (OAB) management, prior exposure to nerve stimulation (sacroneuromodulation or PNS) is associated with lower discontinuation rates of subsequent onabotulinumtoxinA treatment (Doc 4).
+- **Barriers to Access:** Lack of awareness, cost, and geography are cited as current barriers (Doc 1).
+- **Patient Perspectives:** Patients with direct experience perceive permanent PNS as effective for reducing pain and improving quality of life and mental health (Doc 1).
+- **Safety and Effectiveness:** Implantation is reasonably safe with mostly localized, mild adverse events (Doc 1). Permanent PNS likely decreases pain and improves function and quality of life vs. placebo (GRADE: Moderate), but has little effect on pain medication use (Doc 1). Temporary PNS may improve these outcomes and reduce medication use (GRADE: Low) (Doc 1).
+
+Used: Doc1, Doc4, Doc5
+Not used: Doc2, Doc3 — not relevant to clinical practice patterns of peripheral nerve stimulation (Doc2 addresses neurodynamic testing; Doc3 addresses orthopaedic provider perspectives on biopsychosocial outcomes).","A=RRF, B=TWR"
+CLIN-EVAL-14,Evidence from unranked bodywork journals on postoperative physiotherapy,"The retrieved documents do not directly address postoperative physiotherapy from unranked bodywork journals. Doc 5 is the only document that touches on postoperative physiotherapy, but it is a retrospective study from an enhanced recovery programme, not from an unranked bodywork journal. The other documents cover guideline development, vertebral fragility fractures, ICU pneumonia management, and physiotherapist qualities—none of which match the query.
+
+**Gap:** No retrieved evidence from unranked bodywork journals on postoperative physiotherapy.
+
+Used: Doc5 (partially relevant as it mentions physiotherapy goals post-arthroplasty, but not from the specified journal type)
+Not used: Doc1, Doc2, Doc3, Doc4 — not relevant to the query","Based exclusively on the provided documents, the evidence from unranked bodywork journals on postoperative physiotherapy is limited and addresses specific contexts:
+
+- **Post-burn (Doc 2):** Physiotherapist-led exercise improves aerobic capacity (Hedge's g = 1.13) and muscle strength (Hedge's g = 2.27) post-burn. No effect on quality of life. Heterogeneity noted.
+- **Post-joint replacement (Doc 5):** Following THR/TKR, physiotherapy provision varies by geography, age, gender, and ethnicity, not explained by clinical presentation. 53% of THR and 79% of TKR patients received some physiotherapy in the first postoperative year.
+- **Post-stroke (Doc 4):** Implantable functional electrical stimulation may improve gait performance (walking endurance, speed, ankle mobility), but evidence is preliminary, heterogeneous, and lacks RCTs.
+
+**Gap:** No retrieved evidence on postoperative physiotherapy for general surgical populations, specific dosage (frequency, intensity, duration) standards, or outcomes beyond the above conditions.
+
+Used: Doc2, Doc4, Doc5
+Not used: Doc1 — addresses inpatient physiotherapy standards development, not postoperative outcomes; Doc3 — addresses ED physiotherapy for low back pain, not postoperative care.","A=RRF, B=TWR"
+CLIN-EVAL-15,What do Q4 geriatric journals report on rehabilitation outcomes in frail elderly?,"No retrieved documents are from Q4 geriatric journals. The provided documents are from general geriatric, surgical, stroke, trauma, and Australian GEM literature, not specifically Q4 journals.
+
+**Gap:** No evidence from Q4 geriatric journals on rehabilitation outcomes in frail elderly.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none are from Q4 geriatric journals.","No retrieved documents are from Q4 geriatric journals. The provided documents do not report on rehabilitation outcomes in frail elderly from Q4 geriatric journals.
+
+**Gap:** No retrieved evidence from Q4 geriatric journals on rehabilitation outcomes in frail elderly.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none are from Q4 geriatric journals; Doc5 addresses QoL after rehabilitation in stroke patients but not specifically frail elderly or from a Q4 journal.","A=TWR, B=RRF"
+CLIN-EVAL-16,Q3 nursing journals reporting on pain assessment tools in intensive care,"**Answer:**
+
+- **Doc 4** describes a protocol using the **Behavioural Pain Scale (BPS)** and **Numerical Rating Scale (NRS)** for systematic pain assessment in ICU, linked to improved outcomes (shorter ventilation, ICU stay, lower mortality).
+- **Doc 1** uses the **Critical Care Pain Observation Tool (CPOT)** to measure pain during endotracheal suctioning in a reflexology trial.
+- **Doc 5** reports a binational point-prevalence study: pain assessment was documented in only **46%** of ICU patients; routine sedation scales used in **63%** of ventilated patients; delirium assessment in only **3%**.
+- **Doc 3** uses the **Visual Analog Scale (VAS)** for pain after abdominal hysterectomy, but in a non-ICU context.
+
+**Summary of pain assessment tools in ICU from the provided nursing journals:**
+- **Behavioural Pain Scale (BPS)** — used in protocol-directed PAD management (Doc 4)
+- **Critical Care Pain Observation Tool (CPOT)** — used in suctioning pain research (Doc 1)
+- **Numerical Rating Scale (NRS)** — used in protocol-directed PAD management (Doc 4)
+- **Visual Analog Scale (VAS)** — used post-hysterectomy, not specifically ICU (Doc 3)
+
+**Gap:** No retrieved evidence on other ICU pain assessment tools (e.g., FLACC, PAINAD, or non-behavioral scales) or comparative validation data between tools in the ICU setting.
+
+Used: Doc1, Doc4, Doc5
+Not used: Doc2 — not relevant to pain assessment tools in ICU (focuses on eHealth for chronic pain); Doc3 — not ICU-specific (post-hysterectomy pain)","Based exclusively on the provided documents, no document reports on nursing journals specifically addressing pain assessment tools in the intensive care unit (ICU).
+
+**Gap:** No retrieved evidence on nursing journal publications reporting on pain assessment tools in intensive care.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address the specific query regarding nursing journals reporting on pain assessment tools in the ICU.","A=TWR, B=RRF"
+CLIN-EVAL-17,Unranked complementary medicine journals on acupuncture for low back pain,"**Answer:**  
+No retrieved documents are unranked complementary medicine journals specifically on acupuncture for low back pain.  
+
+- Doc 2 is the only document addressing acupuncture for low back pain (chronic low back pain, CLBP), but it is a prospective randomized trial published in a peer-reviewed journal, not an unranked complementary medicine journal.  
+- Doc 1, 3, 4, and 5 are not relevant: Doc 1 covers CIH therapies broadly (not specifically acupuncture for LBP); Doc 3 is on neck pain; Doc 4 on knee OA; Doc 5 on shoulder pain.  
+
+**Gap:** No retrieved evidence from unranked complementary medicine journals on acupuncture for low back pain.  
+
+Used: Doc2  
+Not used: Doc1, Doc3, Doc4, Doc5 — not relevant to the query (Doc2 is relevant but not from an unranked complementary medicine journal)","**Answer:**
+
+Based on the retrieved documents, the following unranked complementary medicine journals are relevant to acupuncture for low back pain:
+
+- **Doc 2** — Reports on a randomized trial of complementary and integrative health (CIH) therapies (including acupuncture) vs. standard rehabilitative care for chronic low back pain in service members. Published in a journal that accepts CIH research.
+- **Doc 5** — Reports on a randomized trial comparing massage + electroacupuncture vs. epidural analgesia for chronic low back pain. Published in a journal that covers combined complementary therapies.
+
+**Gap:** No document provides a list or ranking of specific unranked complementary medicine journals. The query asks for journal names, but the documents only contain study content, not journal metadata (e.g., journal title, ISSN, ranking status). The evidence is insufficient to identify or rank journals.
+
+**Used:** Doc2, Doc5  
+**Not used:** Doc1 — not relevant to low back pain (focuses on shoulder pain); Doc3 — not relevant to journal ranking (reports a complication case); Doc4 — not relevant to acupuncture or journals (focuses on education/advice for low back pain)","A=TWR, B=RRF"
+CLIN-EVAL-18,What do studies report on AI-assisted surgical planning in orthopaedics?,"The retrieved documents do not address AI-assisted surgical planning in orthopaedics. Doc 2 discusses patient perceptions of robotic-assisted total hip arthroplasty (RA-THA), which involves a robotic platform but focuses on patient attitudes and trial design, not AI-assisted planning. No document describes AI algorithms, machine learning models, or computer-assisted planning systems for orthopaedic surgery.
+
+Gap: No retrieved evidence on AI-assisted surgical planning in orthopaedics.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address AI-assisted surgical planning.","**No retrieved evidence directly addresses AI-assisted surgical planning in orthopaedics.**
+
+The documents discuss AI in arthroplasty generally (Doc 1), AI-assisted DAA-THA for analgesic comparison (Doc 2), AI detection in publications (Doc 3), orthopaedic research funding (Doc 4), and AI-driven stroke rehabilitation (Doc 5). None report on AI-assisted *surgical planning* (e.g., preoperative templating, implant sizing, osteotomy simulation, or deformity correction planning) in orthopaedics.
+
+**Gap:** No retrieved evidence on AI-assisted surgical planning in orthopaedics.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address AI-assisted surgical planning in orthopaedics.","A=TWR, B=RRF"
+CLIN-EVAL-19,New findings on exosome therapy for cartilage regeneration in osteoarthritis,"**Answer:**
+
+The retrieved documents do not contain any evidence on **exosome therapy** for cartilage regeneration in osteoarthritis. The provided literature covers:
+
+- Aragonite-based osteochondral implants (Doc 1)
+- ChonDux hydrogel scaffold + microfracture (Doc 2)
+- Cartilage thickness trajectories and prediction models in knee OA (Doc 3)
+- Asymptomatic hyperuricemia and cartilage thickness (Doc 4)
+- Age, sex, and BMI effects on tibial cartilage volume loss over 10.7 years (Doc 5)
+
+None of these address exosome-based therapies.
+
+**Gap:** No retrieved evidence on exosome therapy for cartilage regeneration in osteoarthritis.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none relevant to exosome therapy","**No retrieved evidence addresses exosome therapy for cartilage regeneration in osteoarthritis.**
+
+The documents discuss:
+- An aragonite-based osteochondral implant for knee lesions (Doc 1).
+- General OA epidemiology and management (Doc 2).
+- Hippo pathway in musculoskeletal disorders (Doc 3).
+- Cartilage endplate degeneration in intervertebral disc disease (Doc 4).
+- MSC-derived exosomes for spinal cord injury, with a mention of chondroprotective effects in passing (Doc 5).
+
+Doc 5 notes that MSC-derived exosomes exhibit ""outstanding chondroprotective and anti-inflammatory effects"" but only in the context of spinal cord injury research, not OA cartilage regeneration. No document provides new findings on exosome therapy specifically for cartilage regeneration in OA.
+
+**Gap:** No retrieved evidence on exosome therapy for cartilage regeneration in osteoarthritis.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address exosome therapy for cartilage regeneration in OA","A=TWR, B=RRF"
+CLIN-EVAL-20,What advances have been made in machine learning for chronic pain phenotyping?,"Based exclusively on the provided documents, the following advances in machine learning for chronic pain phenotyping are reported:
+
+- **Classification and Risk Prediction:** AI algorithms are increasingly used to classify individuals by type of chronic pain and predict risk groups. Common algorithms include Support Vector Machine, Random Forest, Neural Networks, Logistic Regression, and K-means.
+- **Phenotype Complexity:** Chronic pain phenotypes are understood to involve complex, integrated neural circuits (sensory, emotional, cognitive, interoceptive). These phenotypes are dynamic, varying in magnitude and hierarchical manifestation, and are temporally altered by treatments.
+- **Mechanistic Link to Psychology:** A model of ""pain neuroscience psychology"" links altered psychological processes to specific evidence-based treatments, providing a mechanistic framework for understanding psychological contributions to the pain phenotype.
+
+**Gap:** No retrieved evidence on the use of machine learning for unsupervised clustering of pain phenotypes, longitudinal trajectory modeling of phenotypes, or integration of multimodal data (e.g., imaging, genomics) for subtyping.
+
+Used: Doc1, Doc3
+Not used: Doc2, Doc4, Doc5 — not relevant to the query (aphasia rehabilitation, BCI motor imagery, smoking and SCS outcomes)","**No retrieved evidence directly addresses machine learning for chronic pain phenotyping.**
+
+The documents discuss:
+- ML for aphasia rehabilitation (Doc 1) — not chronic pain.
+- eHealth interventions for chronic pain self-management (Doc 2) — no ML phenotyping.
+- TRPA1 antagonist trial in chronic pain (Doc 3) — no ML.
+- AI-driven TENS/EMS for chronic musculoskeletal pain (Doc 4) — adaptive therapy, not phenotyping.
+- ML models for wrist function recovery prediction after fracture (Doc 5) — postoperative outcome prediction, not chronic pain phenotyping.
+
+**Gap:** No retrieved evidence on machine learning advances for chronic pain phenotyping.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address chronic pain phenotyping via machine learning.","A=RRF, B=TWR"
+CLIN-EVAL-21,Latest evidence on proton pump inhibitors' effect on bone density in orthopaedic patients,"**No retrieved evidence addresses the query.** The provided documents contain no information on proton pump inhibitors (PPIs) and their effect on bone density in orthopaedic patients.
+
+- Doc 1 discusses a hip fracture care pathway including osteoporosis treatment, but does not mention PPIs.
+- Doc 2 evaluates denosumab for aromatase inhibitor-associated bone loss.
+- Doc 3 examines bazedoxifene for postmenopausal osteoporosis.
+- Doc 4 covers intrathecal baclofen for dystonic cerebral palsy.
+- Doc 5 addresses platelet transfusion after traumatic brain injury in patients on P2Y12 inhibitors.
+
+**Gap:** No retrieved evidence on the effect of proton pump inhibitors on bone density in orthopaedic patients.
+
+Used: (none)
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none relevant to the query","**Answer:** The retrieved documents do not provide direct evidence on the effect of proton pump inhibitors (PPIs) on bone density in orthopaedic patients.
+
+- **Doc 2** discusses PPI use only as a baseline medication in patients with hiatal hernia/GERD undergoing neuromuscular training; it does not assess PPI effects on bone density or fracture.
+- **Doc 3** addresses bisphosphonate use and atypical femur fractures, not PPIs.
+- **Doc 1, 4, 5** cover estrogenic drugs, denosumab, and calcium metabolism, respectively, with no mention of PPIs.
+
+**Gap:** No retrieved evidence on the association between proton pump inhibitors and bone density or fracture risk in orthopaedic or any patient population.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address the query","A=TWR, B=RRF"
+CLIN-EVAL-22,What cohort studies track functional decline in spinal deformity patients?,"**No cohort studies tracking functional decline in spinal deformity patients are present in the provided documents.**
+
+The retrieved literature covers:
+- Exercise interventions for adolescent idiopathic scoliosis (Doc 1)
+- Postoperative functional outcomes (return to walking, driving, work) in adult spinal deformity (Doc 2)
+- ADL decline in heart failure patients (Doc 3)
+- Inpatient PT variables after lumbar fusion (Doc 4)
+- tSCS for spasticity after SCI (Doc 5)
+
+None of these documents describe a cohort study designed to prospectively or retrospectively track functional decline over time in a spinal deformity population.
+
+**Gap:** No retrieved evidence on cohort studies tracking functional decline in spinal deformity patients.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address cohort studies of functional decline in spinal deformity patients.","No retrieved documents describe cohort studies that track functional decline in spinal deformity patients.
+
+- Doc 1: Systematic review of exercise interventions for adolescent idiopathic scoliosis; not a cohort study tracking functional decline.
+- Doc 2: Case series of spinal deformity progression after intrathecal opioid pump placement; not a cohort study.
+- Doc 3: Prospective cohort study of a self-exercise program for adult spinal deformity (ASD); tracks functional improvement (ODI), not decline.
+- Doc 4: Cohort study of functional decline in hemodialysis patients; not spinal deformity.
+- Doc 5: Cross-sectional survey of return to activities after ASD surgery; not a cohort tracking decline.
+
+Gap: No retrieved evidence on cohort studies that track functional decline in spinal deformity patients.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address the query","A=TWR, B=RRF"
+CLIN-EVAL-23,What are the publications describing the Barthel ADL Index?,"- **Doc 1**: Examines Barthel Index (BI) discrimination of mortality risk in functionally dependent elderly (BI ≤ 60). Proposes reclassification based on chair-to-bed transfer dependency as severe dependence regardless of total score.
+
+- **Doc 2**: Describes BI score change from discharge to 3 months post-discharge in first-ever acute stroke patients. Models prognostic factors (age, stroke subtype, time) for BI change using random intercept model.
+
+- **Doc 3**: Uses pre-fracture BI as one predictor (alongside CCI, EQ-VAS, operative treatment) for recovery of pre-fracture ADL at 1 year after fragility hip fracture.
+
+- **Doc 4**: Uses BI to stratify older inpatients into low (<60) and high (≥60) ADL groups; examines longitudinal relationship between quadriceps muscle mass and intramuscular adipose tissue.
+
+- **Doc 5**: Bibliometric analysis of top-cited articles in *Orthopaedics & Traumatology: Surgery & Research*; does not describe the Barthel ADL Index.
+
+Used: Doc1, Doc2, Doc3, Doc4
+Not used: Doc5 — bibliometric study unrelated to Barthel Index description or clinical application.","The retrieved documents describe the Barthel ADL Index as a tool for assessing functional dependence in basic activities of daily living, used across several clinical contexts:
+
+- **Mortality risk discrimination (Doc 1):** The Barthel Index (cutoff ≤60) was used to classify functional dependence in a longitudinal study of 127 older adults. Chair-to-bed transfer dependency was identified as an independent mortality risk factor, and a modified classification was proposed (severe dependence if dependent on that item, even if total score ≥40). The index showed high sensitivity (0.91) and specificity (0.83) for mortality prediction.
+
+- **Muscle mass and ADL level (Doc 2):** The Barthel Index (cutoff <60 vs ≥60) stratified 198 older inpatients into low and high ADL groups to study longitudinal relationships between quadriceps muscle mass and intramuscular adipose tissue.
+
+- **Stroke recovery (Doc 3):** The Barthel Index was used to measure functional disability in 98 acute first-ever stroke patients from discharge to 3 months post-discharge. Crude mean scores increased from 35.1 (discharge) to 68.8 (3 months). Age and stroke subtype were significant prognostic factors.
+
+- **Caregiver burden (Doc 4):** The Barthel Index assessed care recipients' ADL abilities in 75 daycare dyads. Lower ADL was associated with higher caregiver burden and occupational dysfunction.
+
+- **Nutrition and ADL disability (Doc 5):** The Barthel Index was not used; instead, BADL was assessed via the Physical Self-Maintenance Scale. This document is not relevant to the query.
+
+Used: Doc1, Doc2, Doc3, Doc4
+Not used: Doc5 — uses PSMS, not Barthel Index","A=RRF, B=TWR"
+CLIN-EVAL-24,What are the validation studies for the Numeric Rating Scale for pain intensity?,"**No validation studies for the Numeric Rating Scale (NRS) for pain intensity are present in the provided documents.**
+
+The documents mention the NRS only as an outcome measure (Doc 3, Doc 5) but do not report any psychometric validation (e.g., test-retest reliability, construct validity, or criterion validity against a gold standard) for the NRS itself.
+
+**Gap:** No retrieved evidence on validation studies (reliability, validity, responsiveness) for the Numeric Rating Scale for pain intensity.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address validation of the NRS.","No retrieved document provides a validation study of the Numeric Rating Scale (NRS) for pain intensity. The documents use the NRS as an outcome measure (Doc 1, Doc 3) or reference other pain scales (VAS in Doc 2, PROMIS in Doc 5), but none report psychometric validation (e.g., test-retest reliability, construct validity, minimal clinically important difference) for the NRS itself.
+
+Gap: No retrieved evidence on validation studies for the Numeric Rating Scale for pain intensity.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address validation of the NRS.","A=TWR, B=RRF"
+CLIN-EVAL-25,What does the evidence show about mesenchymal stem cell therapy for knee osteoarthritis?,"No retrieved evidence addresses mesenchymal stem cell therapy for knee osteoarthritis.
+
+**Gap:** No retrieved evidence on mesenchymal stem cell therapy for knee osteoarthritis.
+
+Used: (none)
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address the query.","No retrieved evidence addresses mesenchymal stem cell therapy for knee osteoarthritis.
+
+**Gap:** No retrieved evidence on mesenchymal stem cell therapy for knee osteoarthritis.
+
+Used: (none)
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address mesenchymal stem cell therapy for knee osteoarthritis","A=RRF, B=TWR"
+CLIN-EVAL-26,What do systematic reviews show about persistent post-COVID pain?,"Based exclusively on the provided documents, there are no systematic reviews on persistent post-COVID pain.
+
+Doc 3 mentions that post-COVID-19 condition includes symptoms that persist for months, but it is a narrative review on yoga, not a systematic review on pain. Doc 2 is a narrative review on managing acute COVID-19 pain with OTC analgesics, not persistent post-COVID pain. Doc 4 is an observational study on patients with pre-existing painful polyneuropathy during the pandemic, not a systematic review of post-COVID pain.
+
+**Gap: No retrieved evidence from systematic reviews on persistent post-COVID pain.**
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none are systematic reviews addressing persistent post-COVID pain.","Based exclusively on the provided documents, no systematic review specifically addresses persistent post-COVID pain.
+
+Doc 1 is a systematic review of brain-gut axis interventions for fatigue in ME/CFS and Long COVID, but it does not evaluate pain as an outcome.
+
+Doc 2 is a meta-review of eHealth interventions for chronic pain (general), not specific to post-COVID.
+
+Doc 3 addresses foot-drop in multiple sclerosis.
+
+Doc 4 is an observational study of pain in polyneuropathy during the pandemic, not a systematic review of post-COVID pain.
+
+Doc 5 addresses sacroiliac joint pain recognition.
+
+**Gap:** No retrieved evidence from systematic reviews on persistent post-COVID pain.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address the query","A=RRF, B=TWR"
+CLIN-EVAL-27,What do systematic reviews show about exercise for chronic low back pain?,"Systematic reviews show exercise is effective for chronic low back pain (CLBP), but no single exercise type is clearly superior.
+
+- **Exercise vs. manual therapy adjunct:** Manual therapy added to exercise improves short-term pain and disability more than exercise alone (Doc 1).
+- **Pilates vs. other exercise:** Low-certainty evidence suggests Pilates reduces pain more than general exercise (ES 0.44); very low certainty for superiority over direction-specific exercise (ES 0.65). Pilates and spinal stabilization exercise appear equivalent. No strong evidence favors one exercise type (Doc 2).
+- **Core stability vs. conventional exercise:** Core stability exercise is more effective than conventional exercise for short-term pain relief and functional improvement (Doc 3). Only two trials included follow-up.
+
+**Summary:** Exercise is beneficial for CLBP. Adding manual therapy may enhance short-term outcomes. Among exercise types, no form is definitively superior; patient preference and goals should guide selection.
+
+Used: Doc1, Doc2, Doc3
+Not used: Doc4, Doc5 — not relevant to exercise for chronic low back pain","**Systematic reviews show exercise is effective for chronic low back pain, but no single exercise type is clearly superior.**
+
+- **General effectiveness:** Exercise is supported by moderate-to-high evidence for improving pain and function in NSCLBP (Doc1). Core stabilization, aerobic exercise, Qigong, and stretching each suggest benefit for pain reduction (Doc2).
+- **Core stability vs. conventional exercise:** Core stability exercise is more effective than conventional exercise for short-term pain relief and functional improvement (Doc4). However, only two trials included follow-up beyond intervention (Doc4).
+- **Pilates vs. other exercise:** Low-certainty evidence supports Pilates over general exercise for pain reduction (ES 0.44). Very low-certainty evidence suggests Pilates may be better than direction-specific exercise (ES 0.65) but equivalent to spinal stabilization exercise for pain and disability (Doc5). No strong evidence favors one exercise type over another (Doc5).
+- **Exercise + manual therapy:** Adding manual therapy (e.g., spinal manipulation, massage) to exercise provides greater short-term improvements in pain and disability than exercise alone (Doc3).
+- **Multimodal approach:** Integrated pain management programs combining physical, psychological, and educational components show moderate-to-large disability improvements (Doc2). Clinicians should prioritize multimodal strategies supported by moderate-certainty evidence and tailor treatment to individual patient goals and preferences (Doc2, Doc5).
+
+**Gap:** No retrieved evidence on long-term (>1 year) outcomes of exercise for chronic low back pain.
+
+Used: Doc1, Doc2, Doc3, Doc4, Doc5
+Not used: None — all documents contributed to the answer.","A=TWR, B=RRF"
+CLIN-EVAL-28,What case series describe complications of naphtalanotherapy?,"No retrieved documents describe complications of naphtalanotherapy.
+
+Used: (none)
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address complications of naphtalanotherapy.","No retrieved documents describe complications of naphtalanotherapy.
+
+Used: None  
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address complications of naphtalanotherapy.  
+Gap: No retrieved evidence on complications of naphtalanotherapy.","A=TWR, B=RRF"
+CLIN-EVAL-29,What do expert consensus statements recommend for psoriatic arthritis rehabilitation?,"No retrieved documents address expert consensus statements for psoriatic arthritis rehabilitation.
+
+**Gap:** No retrieved evidence on expert consensus recommendations for psoriatic arthritis rehabilitation.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none provide expert consensus statements for psoriatic arthritis rehabilitation.","No retrieved documents contain expert consensus statements on psoriatic arthritis rehabilitation.
+
+**Used:** None  
+**Not used:** Doc1 — resistance exercise in hemodialysis, not PsA rehabilitation; Doc2 — synovitis score in inflammatory arthritis, not rehabilitation; Doc3 — naphtalanotherapy + physiotherapy in PsA, but is a single-center study, not an expert consensus statement; Doc4 — claims-based algorithm for PsA identification; Doc5 — image-guided procedures around elbow/wrist, not PsA rehabilitation.
+
+**Gap:** No retrieved evidence on expert consensus statements for psoriatic arthritis rehabilitation.","A=RRF, B=TWR"
+CLIN-EVAL-30,What do narrative reviews describe about postoperative cognitive dysfunction?,"The retrieved documents do not contain a narrative review describing postoperative cognitive dysfunction (POCD). Doc 2 is a prospective observational study on subjective awareness of POCD after aortic valve replacement, and Doc 4 is a prospective observational trial on POCD incidence after shoulder surgery in beach chair vs. supine position. Neither is a narrative review.
+
+**Gap:** No narrative review on POCD was retrieved. The available documents are primary studies, not reviews.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none are narrative reviews describing POCD.","Based solely on the provided documents, no narrative reviews are included. The documents are primary research (RCTs, prospective cohorts, systematic reviews, qualitative studies), not narrative reviews.
+
+**Gap:** No retrieved evidence from narrative reviews on postoperative cognitive dysfunction.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none are narrative reviews; Doc1 and Doc2 are primary studies on POCD/POD, not narrative reviews.","A=RRF, B=TWR"

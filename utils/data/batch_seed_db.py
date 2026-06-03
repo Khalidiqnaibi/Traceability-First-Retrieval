@@ -25,7 +25,7 @@ def run_batch_seed(queries_file_path,doc_db_path, processor, audit):
             max_results=max_results,
             email=os.getenv("NCBI_EMAIL"),
             api_key=os.getenv("NCBI_API_KEY"),
-            output_path=f"./data/seed_pubmed_data.xml"
+            output_path=f"./data_in/seed_pubmed_data.xml"
         )
         if xml_path:
             chunks = processor.parse_pubmed_xml(xml_path)
@@ -45,5 +45,5 @@ if __name__ == "__main__":
     from utils.api.audit import AuditTrail
 
     processor = TFRDataPreprocessor()
-    audit = AuditTrail("logs/audit_log.csv")
-    run_batch_seed("./data/seed_queries.json", "./data/documents.db", processor, audit)
+    audit = AuditTrail("data_out/audit_log.csv")
+    run_batch_seed("./data_in/seed_queries.json", "./data_in/documents.db", processor, audit)

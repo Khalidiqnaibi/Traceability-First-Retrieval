@@ -48,9 +48,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-QUERY_PATH = Path(os.getenv("QUERIES_PATH", "./data/seed_queries.json"))
-OUT_DIR = Path(os.getenv("OUTPUT_DIR", "./results"))
-EVAL_LOG_PATH = Path(os.getenv("EVAL_LOG_PATH", "./logs/pipeline_audit_log.csv"))
+QUERY_PATH = Path(os.getenv("QUERIES_PATH", "./data_in/seed_queries.json"))
+OUT_DIR = Path(os.getenv("OUTPUT_DIR", "./eval_results"))
+EVAL_LOG_PATH = Path(os.getenv("EVAL_LOG_PATH", "./data_out/pipeline_audit_log.csv"))
 
 def _force_utf8_stdout() -> None:
     try:

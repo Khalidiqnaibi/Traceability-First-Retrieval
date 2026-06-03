@@ -10,7 +10,7 @@ from datetime import datetime
 from infra.clinical_document import ClinicalDocument
 from utils.pipeline.audit import PipelineAudit
 
-audit = PipelineAudit("logs/pipeline_audit_log.csv")
+audit = PipelineAudit("data_out/pipeline_audit_log.csv")
 
 class Pipeline:
     def __init__(

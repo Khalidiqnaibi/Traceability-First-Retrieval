@@ -103,8 +103,8 @@ def save_RRF_TWR_results(queries_json_path: str, log_csv_path: str):
         # save_to_file(query + ": " + rrf_context, "RRF_res.txt")
         # save_to_file(query + ": " + twr_context, "TWR_res.txt")
     
-    save_documents_to_csv(rrf_export_data,csv_path="logs/rrf_documents.csv")
-    save_documents_to_csv(twr_export_data,csv_path="logs/twr_documents.csv")
+    save_documents_to_csv(rrf_export_data,csv_path="data_out/rrf_documents.csv")
+    save_documents_to_csv(twr_export_data,csv_path="data_out/twr_documents.csv")
 
 def save_to_file(text, name):
     with open(name, "a", encoding="utf-8") as f:
@@ -112,4 +112,4 @@ def save_to_file(text, name):
         f.write("\n\n")
 
 if __name__ == "__main__":
-    save_RRF_TWR_results("data/queries.json", "logs/pipeline_audit_log.csv")
+    save_RRF_TWR_results("data_in/queries.json", "data_out/pipeline_audit_log.csv")

@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
     tfr_pipeline = TFRPipeline()
     standard_pipeline = StandardPipeline()
-    audit = AuditTrail("logs/audit_log.csv")   
+    audit = AuditTrail("data_out/audit_log.csv")   
 
-    results = run_batch_ablation("./data/queries.json", tfr_pipeline, standard_pipeline, audit)
+    results = run_batch_ablation("./data_in/queries.json", tfr_pipeline, standard_pipeline, audit)
     print(json.dumps(results, indent=2))

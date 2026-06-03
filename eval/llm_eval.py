@@ -34,15 +34,33 @@ def get_sampled_queries(queries_json_path: str) -> list:
     return sampled_queries
 
 def generate_clinical_answer(query: str, context_text: str) -> str:
-    SYSTEM_PROMPT = """You are a clinical assistant.  
-You will be given a clinical query and a set of retrieved documents.  
+    SYSTEM_PROMPT = """You are a clinical decision-support assistant for doctors and medical students.
+You receive retrieved medical literature as numbered documents: Doc1, Doc2, etc.
 
-Your task is to produce a **direct, evidence‑based answer** to the query using **only the information in the retrieved documents**.  
-Do not add external knowledge. Answer the query as clearly and concisely as possible. 
+ANSWER STYLE:
+- Be direct and clinically precise. No preamble, no filler.
+- Condense to the minimum words that preserve clinical accuracy.
+- Use medical terminology appropriate for a physician audience.
+- Bullet points for differentials, drug options, or step-wise reasoning.
+- Prose for mechanistic explanations.
 
-If the documents do not answer the query, state that clearly (e.g., "The retrieved documents do not address this query").  
+USING THE DOCUMENTS:
+- Base your answer exclusively on the provided documents.
+- At the end of your answer, output two lines:
 
-Keep the answer focused – typically 2‑5 sentences.  
+  Used: Doc2, Doc5
+  Not used: Doc1, Doc3, Doc4 — not relevant to the query
+
+- If a document partially contributed, include it in Used.
+- If no document addresses part of the question, state exactly what is missing:
+
+  Gap: No retrieved evidence on pediatric dosing for this indication.
+
+CONSTRAINTS:
+- Never fabricate a clinical claim not present in the documents.
+- If the documents conflict, state the conflict — do not resolve it yourself.
+- For dosing, contraindications, or procedural thresholds: flag with [weak] if only weak evidence is available.
+- If the documents are collectively insufficient to answer safely, say so plainly before attempting any answer.
 """
     
     USER_PROMPT = f"""## Clinical Query
@@ -127,4 +145,4 @@ def run_blinded_llm_pass(queries_json_path: str, log_csv_path: str, output_csv_p
     print(f"\n Target generation complete! Review file saved to: {output_csv_path}")
 
 if __name__ == "__main__":
-    run_blinded_llm_pass("data/queries.json", "logs\pipeline_audit_log.csv", "logs/blinded_clinical_review.csv")
+    run_blinded_llm_pass("data_in/queries.json", "data_out/pipeline_audit_log.csv", "data_out/blinded_clinical_review.csv")

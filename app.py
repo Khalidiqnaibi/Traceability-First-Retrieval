@@ -20,9 +20,9 @@ from utils.api.audit import AuditTrail
 load_dotenv()
 
 DOC_DB_PATH = os.environ.get("DOC_DB_PATH", "document.db")
-SJR_CSV_PATH = os.environ.get("SJR_CSV_PATH", "./data/scimagojr_2023.csv")
+SJR_CSV_PATH = os.environ.get("SJR_CSV_PATH", "./data_in/scimagojr_2023.csv")
 
-audit = AuditTrail("logs/audit_log.csv")    
+audit = AuditTrail("data_out/audit_log.csv")    
 
 processor = TFRDataPreprocessor(sjr_csv_path=SJR_CSV_PATH)
 
@@ -80,7 +80,7 @@ def seed_database():
         max_results=max_results,
         email=os.getenv("NCBI_EMAIL"),
         api_key=os.getenv("NCBI_API_KEY"),
-        output_path="./data/seed_pubmed_data.xml"
+        output_path="./data_in/seed_pubmed_data.xml"
     )
     
     if xml_path:
@@ -216,7 +216,7 @@ def run_batch_ablation_route():
         return make_response( message="Pipelines not initialized. Please seed or ingest data first.", status="error"),400
 
     data = request.get_json() or {}
-    queries_file_path = data.get("queries_path", "./data/queries.json")
+    queries_file_path = data.get("queries_path", "./data_in/queries.json")
 
     if not os.path.exists(queries_file_path):
         return make_response( message=f"Queries benchmark file not found at {queries_file_path}", status="error"),400
@@ -264,9 +264,9 @@ def run_evaluation():
 def run_llm_ablation():
     """Endpoint to run LLM ablation study"""
     data = request.get_json() or {}
-    log_csv_path = data.get("log_csv_path", "log/pipeline_audit_log.csv")
-    output_csv_path = data.get("output_csv_path", "data/blinded_clinical_review.csv")
-    queries_json_path = data.get("queries_json_path", "data/queries.json")
+    log_csv_path = data.get("log_csv_path", "data_out/pipeline_audit_log.csv")
+    output_csv_path = data.get("output_csv_path", "data_in/blinded_clinical_review.csv")
+    queries_json_path = data.get("queries_json_path", "data_in/queries.json")
 
     if not os.path.exists(log_csv_path):
         return make_response( message=f"Audit log file not found at {log_csv_path}", status="error"),400
@@ -281,8 +281,8 @@ def run_llm_ablation():
 def run_dr_ablation():
     """Endpoint to run blinded review workbooks generation"""
     data = request.get_json() or {}
-    log_csv_path = data.get("log_csv_path", "log/blinded_clinical_review.csv")
-    queries_json_path = data.get("queries_json_path", "data/queries.json")
+    log_csv_path = data.get("log_csv_path", "data_out/blinded_clinical_review.csv")
+    queries_json_path = data.get("queries_json_path", "data_in/queries.json")
 
     if not os.path.exists(log_csv_path):
         return make_response( message=f"Blinded log file not found at {log_csv_path}", status="error"),400
@@ -308,8 +308,8 @@ def run_dr_review():
     }
     """
     data = request.get_json() or {}
-    log_csv_path = data.get("log_csv_path", "log/blinded_clinical_review.csv")
-    queries_json_path = data.get("queries_json_path", "data/queries.json")
+    log_csv_path = data.get("log_csv_path", "data_out/blinded_clinical_review.csv")
+    queries_json_path = data.get("queries_json_path", "data_in/queries.json")
 
     if not os.path.exists(log_csv_path):
         return make_response( message=f"Blinded log file not found at {log_csv_path}", status="error"),400
