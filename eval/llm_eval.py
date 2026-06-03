@@ -1,10 +1,12 @@
 import pandas as pd
 import random
 from openai import OpenAI
-import json
 from dotenv import load_dotenv
 import os
 import ast
+
+from utils.data.sample import get_sampled_queries
+
 load_dotenv()
 
 
@@ -13,25 +15,6 @@ client = OpenAI(
     base_url="https://api.deepseek.com"
 )
 
-def get_sampled_queries(queries_json_path: str) -> list:
-    """Loads metadata, identifies top 3 domains, and samples 10 queries from each."""
-    with open(queries_json_path, 'r', encoding='utf-8') as f:
-        queries_data = json.load(f)
-    
-    meta_df = pd.DataFrame(queries_data)
-    
-    top_domains = meta_df['domain'].value_counts().nlargest(3).index.tolist()
-    print(f"Identified Top 3 Domains for Validation: {top_domains}")
-    
-    sampled_queries = []
-    for domain in top_domains:
-        domain_pool = meta_df[meta_df['domain'] == domain]['query'].tolist()
-        # Sample 10 queries
-        sampled_subset = random.sample(domain_pool, min(10, len(domain_pool)))
-        sampled_queries.extend(sampled_subset)
-        print(f"   -> Sampled {len(sampled_subset)} queries from '{domain}'")
-        
-    return sampled_queries
 
 def generate_clinical_answer(query: str, context_text: str) -> str:
     SYSTEM_PROMPT = """You are a clinical decision-support assistant for doctors and medical students.
@@ -125,7 +108,8 @@ def run_blinded_llm_pass(queries_json_path: str, log_csv_path: str, output_csv_p
         ans_rrf = generate_clinical_answer(query, rrf_context)
         ans_twr = generate_clinical_answer(query, twr_context)
         
-        # Symmetric Blinding Logic
+        # Symmetric blinding — intentionally unseeded so A/B assignment is
+        # unpredictable to anyone reading the code before unblinding.
         is_rrf_a = random.choice([True, False])
         ans_A = ans_rrf if is_rrf_a else ans_twr
         ans_B = ans_twr if is_rrf_a else ans_rrf
