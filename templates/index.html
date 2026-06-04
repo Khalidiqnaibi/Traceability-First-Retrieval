@@ -63,7 +63,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .badge-amber{background:var(--amber-dim);color:var(--amber);border:1px solid rgba(245,166,35,0.28);}
 
 /* STATS */
-.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:12px;overflow:hidden;min-width:300px;}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:12px;overflow:hidden;min-width:300px;}
 .stat-cell{background:var(--surface);padding:0.9rem 1rem;text-align:center;}
 .stat-lbl{font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);margin-bottom:0.25rem;}
 .stat-val{font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:700;line-height:1;}
@@ -81,7 +81,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .t-thumb{position:absolute;top:2px;left:2px;width:13px;height:13px;background:white;border-radius:50%;transition:left .2s;}
 .t-track.on .t-thumb{left:15px;}
 
-/* UPLOAD ROW — three slots */
+/* UPLOAD ROW */
 .upload-slots{display:flex;gap:0.65rem;align-items:center;flex-wrap:wrap;margin-bottom:1.2rem;padding:0.75rem 1.1rem;background:var(--surface);border:1px solid var(--rule);border-radius:10px;}
 .upload-slot{display:flex;align-items:center;gap:0.5rem;font-size:0.76rem;color:var(--text2);cursor:pointer;padding:0.28rem 0.8rem;border-radius:6px;border:1px dashed var(--rule2);transition:all .15s;position:relative;flex-shrink:0;}
 .upload-slot:hover{border-color:var(--twr);color:var(--twr);}
@@ -121,7 +121,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .tag-twr{background:var(--twr-dim);color:var(--twr);border:1px solid var(--twr-border);}
 .tag-rrf{background:var(--rrf-dim);color:var(--rrf);border:1px solid var(--rrf-border);}
 .resp-side{font-size:0.73rem;color:var(--text3);letter-spacing:0.04em;}
-body.blind-mode .mtag{display:none!important;}
+body.blind-mode .mtag {display:none!important;}
 .resp-body{font-size:0.82rem;color:var(--text2);line-height:1.7;background:var(--surface3);border:1px solid var(--rule);border-radius:8px;padding:0.8rem 0.95rem;min-height:60px;}
 
 /* RATINGS */
@@ -196,21 +196,14 @@ body.blind-mode .mtag{display:none!important;}
 .modal-note{font-size:0.75rem;color:var(--text3);background:var(--surface3);border:1px solid var(--rule);border-radius:6px;padding:0.55rem 0.8rem;margin-bottom:1rem;line-height:1.5;}
 .modal-note code{font-family:'IBM Plex Mono',monospace;font-size:0.7rem;color:var(--text2);}
 .modal-btns{display:flex;gap:0.65rem;justify-content:flex-end;}
-
-
-.sc-row{display:flex;align-items:center;gap:4px;margin-bottom:0.28rem;}
-.sc-lbl{font-size:0.68rem;color:var(--text3);width:52px;flex-shrink:0;}
-.bar-w{flex:1;height:2.5px;background:var(--rule);border-radius:99px;overflow:hidden;}
-.bar-f{height:100%;border-radius:99px;transition:width .4s;}
-.sc-num{font-family:'IBM Plex Mono',monospace;font-size:0.68rem;font-weight:600;min-width:24px;text-align:right;}
 </style>
 </head>
 <body class="blind-mode">
 
 <div class="topbar">
-  <div class="topbar-logo">TWR · Eval</div>
+  <div class="topbar-logo">Blind · Eval</div>
   <div class="tsep"></div>
-  <div class="topbar-stat" id="prog-stat">Rated <strong>0</strong> / <strong id="total-count">30</strong></div>
+  <div class="topbar-stat" id="prog-stat">Rated <strong>0</strong> / <strong id="total-count">...</strong></div>
   <div class="prog-wrap"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div>
   <div class="topbar-actions">
     <button class="btn" onclick="openModal()">⬆ Upload CSVs</button>
@@ -221,26 +214,24 @@ body.blind-mode .mtag{display:none!important;}
 
 <div class="wrap">
 
-  <!-- HERO -->
   <div class="hero">
     <div>
       <div class="hero-title">Clinical Blind Evaluator</div>
-      <div class="hero-sub">Compare TWR (Trust-Weighted Ranking) vs RRF (Reciprocal Rank Fusion) across three clinical criteria. Upload workbook and document CSVs, rate each response, and export.</div>
+      <div class="hero-sub">Compare pipeline variations side-by-side across three standard clinical criteria without bias. Paths default to the latest target validation arrays automatically.</div>
       <div class="hero-badges">
-        <span class="badge badge-twr">TWR</span>
-        <span class="badge badge-rrf">RRF</span>
-        <span class="badge badge-gray" id="hero-q-count">30 Queries</span>
+        <span class="badge badge-twr">Response A Variant</span>
+        <span class="badge badge-rrf">Response B Variant</span>
+        <span class="badge badge-gray" id="hero-q-count">... Queries</span>
         <span class="badge badge-gray">3 Criteria × 2 Responses</span>
         <span class="badge badge-amber" id="hero-docs-badge" style="display:none">Docs Loaded</span>
       </div>
     </div>
     <div class="stats-grid">
       <div class="stat-cell"><div class="stat-lbl">Rated</div><div class="stat-val c-txt" id="st-rated">0</div></div>
-      <div class="stat-cell"><div class="stat-lbl">Pending</div><div class="stat-val c-txt" id="st-pend">30</div></div>
+      <div class="stat-cell"><div class="stat-lbl">Pending</div><div class="stat-val c-txt" id="st-pend">...</div></div>
     </div>
   </div>
 
-  <!-- UPLOAD QUICK SLOTS -->
   <div class="upload-slots">
     <span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);flex-shrink:0">Upload:</span>
     <label class="upload-slot" id="qs-wb">
@@ -248,11 +239,11 @@ body.blind-mode .mtag{display:none!important;}
       <input type="file" accept=".csv" onchange="handleWB(event)">
     </label>
     <label class="upload-slot" id="qs-twr">
-      <span class="slot-icon">◈</span><span class="slot-label">TWR Documents CSV</span>
+      <span class="slot-icon">◈</span><span class="slot-label">A Documents CSV</span>
       <input type="file" accept=".csv" onchange="handleDocs(event,'twr')">
     </label>
     <label class="upload-slot" id="qs-rrf">
-      <span class="slot-icon">◉</span><span class="slot-label">RRF Documents CSV</span>
+      <span class="slot-icon">◉</span><span class="slot-label">B Documents CSV</span>
       <input type="file" accept=".csv" onchange="handleDocs(event,'rrf')">
     </label>
     <div class="ctrl-sep"></div>
@@ -260,23 +251,16 @@ body.blind-mode .mtag{display:none!important;}
     <button class="filter-chip" onclick="setFilter('pending',this)">Pending</button>
     <button class="filter-chip" onclick="setFilter('rated',this)">Rated</button>
     <button class="filter-chip" onclick="setFilter('docs',this)">Has Docs</button>
-    <div class="ctrl-sep" style="margin-left:auto"></div>
-    <div class="blind-toggle" onclick="toggleBlind()">
-      <div class="t-track" id="blind-track"><div class="t-thumb"></div></div>
-      <span>Blind</span>
-    </div>
   </div>
 
   <div id="cards"></div>
 </div>
 
-<!-- UPLOAD MODAL -->
 <div class="modal-ov" id="upload-modal">
   <div class="modal">
     <h2>Upload CSV Files</h2>
-    <p class="modal-sub">Load your evaluation workbook and/or document files. Documents are matched to queries by exact query text. You can upload any combination — existing data is preserved.</p>
+    <p class="modal-sub">Load evaluation workbook and document reference text. Defaults are preloaded below.</p>
     <div class="upload-grid">
-      <!-- WORKBOOK -->
       <div class="drop-card" id="dc-wb" ondragover="doDragOver(event,this)" ondragleave="doDragLeave(this)" ondrop="doDrop(event,'wb')">
         <input type="file" accept=".csv" onchange="handleWB(event)">
         <div class="drop-icon">📋</div>
@@ -284,25 +268,20 @@ body.blind-mode .mtag{display:none!important;}
         <div class="drop-sub">Query_ID, Query,<br>Response A, Response B</div>
         <div class="drop-status status-wb" id="ws-wb"></div>
       </div>
-      <!-- TWR DOCS -->
       <div class="drop-card" id="dc-twr" ondragover="doDragOver(event,this)" ondragleave="doDragLeave(this)" ondrop="doDrop(event,'twr')">
         <input type="file" accept=".csv" onchange="handleDocs(event,'twr')">
         <div class="drop-icon">◈</div>
-        <div class="drop-title">TWR Documents</div>
+        <div class="drop-title">A Context Documents</div>
         <div class="drop-sub">query, rank,<br>doc_text</div>
         <div class="drop-status status-twr" id="ws-twr"></div>
       </div>
-      <!-- RRF DOCS -->
       <div class="drop-card" id="dc-rrf" ondragover="doDragOver(event,this)" ondragleave="doDragLeave(this)" ondrop="doDrop(event,'rrf')">
         <input type="file" accept=".csv" onchange="handleDocs(event,'rrf')">
         <div class="drop-icon">◉</div>
-        <div class="drop-title">RRF Documents</div>
+        <div class="drop-title">B Context Documents</div>
         <div class="drop-sub">query, rank,<br>doc_text</div>
         <div class="drop-status status-rrf" id="ws-rrf"></div>
       </div>
-    </div>
-    <div class="modal-note">
-      <strong>Document CSV format:</strong> <code>query, rank, doc_text</code> — the <code>query</code> column is matched against loaded queries using fuzzy normalization (case-insensitive, whitespace-trimmed). Rows with unmatched queries are skipped. Multiple ranks per query are supported.
     </div>
     <div class="modal-btns">
       <button class="btn" onclick="closeModal()">Done</button>
@@ -310,34 +289,52 @@ body.blind-mode .mtag{display:none!important;}
   </div>
 </div>
 
-
-
 <script>
 const CRITERIA = ['Clinical Accuracy','Evidence Basis','Safety/Risk'];
 const CRIT_KEYS = ['clin','evid','safe'];
-const CRIT_SHORT = ['Clinical','Evidence','Safety'];
 
 let EVAL_DATA = [];
+let ratings = {};
 let blindMode = true;
 let activeFilter = 'all';
 
+/* ── DEFAULT SOURCE PATHS ──────────────── */
+const DEFAULT_PATHS = {
+  wb: 'data_out\\Evaluation_Workbook_Anesthesiology.csv',
+  rrf: 'data_out\\rrf_documents.csv',
+  twr: 'data_out\\twr_documents.csv'
+};
+
 /* ── INIT ─────────────────────────────── */
-function init() {
-  buildScoreBars();
+async function init() {
   renderCards();
   updateAll();
+  // Auto load assets on window load
+  await preloadDefaults();
 }
 
-function buildScoreBars() {
-  const c = document.getElementById('score-bars');
-  c.innerHTML = CRIT_SHORT.map((s,i) => `
-    <div class="sc-row">
-      <span class="sc-lbl">${s}</span>
-      <div class="bar-w"><div class="bar-f" id="bt-${CRIT_KEYS[i]}" style="background:var(--twr);width:0%"></div></div>
-      <div class="bar-w"><div class="bar-f" id="br-${CRIT_KEYS[i]}" style="background:var(--rrf);width:0%"></div></div>
-      <span class="sc-num c-twr" id="sct-${CRIT_KEYS[i]}">—</span>
-      <span class="sc-num c-rrf" id="scr-${CRIT_KEYS[i]}">—</span>
-    </div>`).join('');
+async function preloadDefaults() {
+  try {
+    const wbRes = await fetch(DEFAULT_PATHS.wb);
+    if(wbRes.ok) {
+      const txt = await wbRes.text();
+      processWBText(txt, 'Evaluation_Workbook_Anesthesiology.csv');
+    }
+    
+    const twrRes = await fetch(DEFAULT_PATHS.twr);
+    if(twrRes.ok) {
+      const txt = await twrRes.text();
+      processDocsText(txt, 'twr', 'twr_documents.csv');
+    }
+
+    const rrfRes = await fetch(DEFAULT_PATHS.rrf);
+    if(rrfRes.ok) {
+      const txt = await rrfRes.text();
+      processDocsText(txt, 'rrf', 'rrf_documents.csv');
+    }
+  } catch (err) {
+    console.warn("Auto-preload warning: Verify paths exist in relative local directories.", err);
+  }
 }
 
 /* ── RENDER CARDS ─────────────────────── */
@@ -345,15 +342,8 @@ function renderCards() {
   const c = document.getElementById('cards');
   c.innerHTML = '';
   EVAL_DATA.forEach(item => c.appendChild(buildCard(item)));
-  document.getElementById('total-count').textContent = EVAL_DATA.length;
-  document.getElementById('hero-q-count').textContent = EVAL_DATA.length + ' Queries';
-}
-
-function rebuildDocsForCard(item) {
-  const existing = document.getElementById('card-'+item.id);
-  if (!existing) return;
-  const docsSection = existing.querySelector('.docs-section');
-  if (docsSection) docsSection.outerHTML = buildDocsHTML(item);
+  document.getElementById('total-count').textContent = EVAL_DATA.length || '...';
+  document.getElementById('hero-q-count').textContent = (EVAL_DATA.length || 0) + ' Queries';
 }
 
 function buildCard(item) {
@@ -363,10 +353,6 @@ function buildCard(item) {
   el.dataset.id = item.id;
   el.dataset.hasDocs = hasDocs(item) ? '1' : '0';
 
-  const mA = item.method_a, mB = item.method_b;
-  const tagA = `<span class="mtag ${mA==='TWR'?'tag-twr':'tag-rrf'}">${mA}</span>`;
-  const tagB = `<span class="mtag ${mB==='TWR'?'tag-twr':'tag-rrf'}">${mB}</span>`;
-
   el.innerHTML = `
     <div class="card-hdr">
       <span class="qid">${item.id}</span>
@@ -375,37 +361,33 @@ function buildCard(item) {
     </div>
     <div class="resp-grid">
       <div class="resp-col">
-        <div class="resp-hdr">${tagA}<span class="resp-side">Response A</span></div>
+        <div class="resp-hdr"><span class="resp-side" style="font-weight:600; color:var(--text);">Response A</span></div>
         <div class="resp-body">${marked.parse(item.response_a)}</div>
       </div>
       <div class="resp-col">
-        <div class="resp-hdr">${tagB}<span class="resp-side">Response B</span></div>
+        <div class="resp-hdr"><span class="resp-side" style="font-weight:600; color:var(--text);">Response B</span></div>
         <div class="resp-body">${marked.parse(item.response_b)}</div>
       </div>
     </div>
     <div class="ratings-panel">
       <div class="ratings-row">
         <div>
-          <div class="crit-label">Response A — ${mA}</div>
+          <div class="crit-label" style="color:var(--twr);">Response A Evaluator Evaluation Matrix</div>
           <div class="crit-grid">${CRITERIA.map((_,ci)=>buildCrit(item.id,'a',ci)).join('')}</div>
         </div>
         <div>
-          <div class="crit-label">Response B — ${mB}</div>
+          <div class="crit-label" style="color:var(--amber);">Response B Evaluator Evaluation Matrix</div>
           <div class="crit-grid">${CRITERIA.map((_,ci)=>buildCrit(item.id,'b',ci)).join('')}</div>
         </div>
       </div>
       <div class="bottom-row">
         <div class="pref-grp">
-          <div class="crit-label">Overall Preference</div>
+          <div class="crit-label">Overall Blind Preference</div>
           <div class="pref-btns">
-            <button class="pref-btn" id="pb-A-${item.id}" onclick="setPref('${item.id}','A','${mA}',this)">Prefer A</button>
-            <button class="pref-btn" id="pb-B-${item.id}" onclick="setPref('${item.id}','B','${mB}',this)">Prefer B</button>
-            <button class="pref-btn" id="pb-tie-${item.id}" onclick="setPref('${item.id}','tie','tie',this)">Tie</button>
+            <button class="pref-btn" id="pb-A-${item.id}" onclick="setPref('${item.id}','A','A',this)">Prefer Response A</button>
+            <button class="pref-btn" id="pb-B-${item.id}" onclick="setPref('${item.id}','B','B',this)">Prefer Response B</button>
+            <button class="pref-btn" id="pb-tie-${item.id}" onclick="setPref('${item.id}','tie','tie',this)">Equivalence / Tie</button>
           </div>
-        </div>
-        <div class="notes-grp">
-          <div class="crit-label">Clinical Notes</div>
-          <textarea class="notes-inp" id="note-${item.id}" placeholder="Reasoning, caveats, flags…" oninput="saveNote('${item.id}',this.value)"></textarea>
         </div>
       </div>
     </div>
@@ -432,25 +414,25 @@ function hasDocs(item) {
 function buildDocsHTML(item) {
   if (!hasDocs(item)) {
     return `<div class="docs-toggle no-docs">
-      <span>Source Documents</span><span style="font-size:0.7rem;font-weight:400;font-style:italic">No documents loaded for this query</span>
+      <span>Context Reference Proof Documents</span><span style="font-size:0.7rem;font-weight:400;font-style:italic">No context files loaded for query footprint</span>
     </div>`;
   }
-  const twrH = (item.twr_docs||[]).length ? item.twr_docs.map(d=>buildDocCard(d,'twr',item.id)).join('') : '<div class="no-docs-msg">No docs retrieved</div>';
-  const rrfH = (item.rrf_docs||[]).length ? item.rrf_docs.map(d=>buildDocCard(d,'rrf',item.id)).join('') : '<div class="no-docs-msg">No docs retrieved</div>';
+  const twrH = (item.twr_docs||[]).length ? item.twr_docs.map(d=>buildDocCard(d,'twr',item.id)).join('') : '<div class="no-docs-msg">No structured metadata records returned</div>';
+  const rrfH = (item.rrf_docs||[]).length ? item.rrf_docs.map(d=>buildDocCard(d,'rrf',item.id)).join('') : '<div class="no-docs-msg">No structured metadata records returned</div>';
   const tN = (item.twr_docs||[]).length, rN = (item.rrf_docs||[]).length;
   return `
     <div class="docs-toggle" onclick="toggleDocs('${item.id}',this)">
-      <span>Source Documents</span>
+      <span>Context Reference Proof Documents</span>
       <span style="display:flex;align-items:center;gap:0.7rem">
-        <span style="font-size:0.68rem;color:var(--twr)">${tN} TWR</span>
-        <span style="font-size:0.68rem;color:var(--rrf)">${rN} RRF</span>
+        <span style="font-size:0.68rem;color:var(--twr)">Response A Content (${tN} Docs)</span>
+        <span style="font-size:0.68rem;color:var(--amber)">Response B Content (${rN} Docs)</span>
         <span id="dchev-${item.id}" style="font-size:0.58rem;color:var(--text3);transition:transform .15s">▼</span>
       </span>
     </div>
     <div class="dp" id="dp-${item.id}">
       <div class="docs-subgrid">
-        <div><div class="dcol-head twr">◈ TWR Retrieved</div>${twrH}</div>
-        <div><div class="dcol-head rrf">◉ RRF Retrieved</div>${rrfH}</div>
+        <div><div class="dcol-head twr">◈ Used to construct Response A</div>${twrH}</div>
+        <div><div class="dcol-head rrf" style="color:var(--amber);">◉ Used to construct Response B</div>${rrfH}</div>
       </div>
     </div>`;
 }
@@ -460,7 +442,7 @@ function buildDocCard(doc, method, qid) {
   const prev = doc.text.substring(0,88)+'…';
   return `<div class="doc-card">
     <div class="doc-row" onclick="toggleDoc('${uid}')">
-      <span class="doc-num ${method}">${doc.rank}</span>
+      <span class="doc-num ${method}" style="${method === 'rrf' ? 'background:var(--amber-dim); color:var(--amber); border-color:rgba(245,166,35,0.3);' : ''}">${doc.rank}</span>
       <span class="doc-prev">${esc(prev)}</span>
       <span class="doc-chev" id="dch-${uid}">▼</span>
     </div>
@@ -499,7 +481,7 @@ function setPref(id, choice, method, btn) {
     const el = document.getElementById('pb-'+c+'-'+id);
     if (el) el.className='pref-btn';
   });
-  btn.classList.add(choice==='tie'?'sel-tie':method==='TWR'?'sel-twr':'sel-rrf');
+  btn.classList.add(choice==='tie'?'sel-tie':choice==='A'?'sel-twr':'sel-rrf');
   refreshStatus(id); updateAll();
 }
 
@@ -536,39 +518,12 @@ function refreshStatus(id) {
 function updateAll() {
   const total = EVAL_DATA.length;
   const rated = EVAL_DATA.filter(d=>isFullyRated(d.id)).length;
-  let twrW=0,rrfW=0,ties=0;
-  const sc = {clin:{t:[],r:[]},evid:{t:[],r:[]},safe:{t:[],r:[]}};
-
-  EVAL_DATA.forEach(item => {
-    const r = ratings[item.id]||{};
-    if (r.preference) {
-      if (r.preference==='tie') ties++;
-      else if ((r.preference==='A'&&item.method_a==='TWR')||(r.preference==='B'&&item.method_b==='TWR')) twrW++;
-      else rrfW++;
-    }
-    CRIT_KEYS.forEach(key => {
-      const vA=(r.a||{})[key], vB=(r.b||{})[key];
-      if (vA){if(item.method_a==='TWR')sc[key].t.push(vA);else sc[key].r.push(vA);}
-      if (vB){if(item.method_b==='TWR')sc[key].t.push(vB);else sc[key].r.push(vB);}
-    });
-  });
 
   const pct = total ? Math.round(rated/total*100) : 0;
-  document.getElementById('prog-stat').innerHTML = `Rated <strong>${rated}</strong> / <strong id="total-count">${total}</strong>`;
+  document.getElementById('prog-stat').innerHTML = `Evaluated <strong>${rated}</strong> / <strong id="total-count">${total || '...'}</strong>`;
   document.getElementById('prog-fill').style.width = pct+'%';
   ['st-rated','st-pend'].forEach((id,i)=>{
     document.getElementById(id).textContent = [rated,total-rated][i];
-  });
-
-  CRIT_KEYS.forEach(k => {
-    const avgT = sc[k].t.length ? sc[k].t.reduce((a,b)=>a+b,0)/sc[k].t.length : null;
-    const avgR = sc[k].r.length ? sc[k].r.reduce((a,b)=>a+b,0)/sc[k].r.length : null;
-    const et = document.getElementById('sct-'+k), er = document.getElementById('scr-'+k);
-    const bt = document.getElementById('bt-'+k), br = document.getElementById('br-'+k);
-    if(et) et.textContent = avgT ? avgT.toFixed(1) : '—';
-    if(er) er.textContent = avgR ? avgR.toFixed(1) : '—';
-    if(bt) bt.style.width = avgT ? (avgT/5*100)+'%' : '0%';
-    if(br) br.style.width = avgR ? (avgR/5*100)+'%' : '0%';
   });
 
   applyFilter(activeFilter);
@@ -588,96 +543,94 @@ function applyFilter(type) {
   });
 }
 
-function toggleBlind() {
-  blindMode = !blindMode;
-  document.body.classList.toggle('blind-mode', blindMode);
-  document.getElementById('blind-track').classList.toggle('on', blindMode);
-}
-
-/* ── CSV UPLOAD ───────────────────────── */
+/* ── CSV STREAM PARSING HOOKS ─────────── */
 function normalize(s) { return String(s||'').trim().toLowerCase().replace(/\s+/g,' '); }
 
+function processWBText(text, filename) {
+  const rows = parseCSV(text);
+  if (!rows.length) return;
+  const hdr = rows[0].map(h=>h.trim());
+  const qIdx = hdr.findIndex(h=>/^query$/i.test(h));
+  const idIdx = hdr.findIndex(h=>/query.?id/i.test(h));
+  const aIdx = hdr.findIndex(h=>/response.?a/i.test(h));
+  const bIdx = hdr.findIndex(h=>/response.?b/i.test(h));
+  if (qIdx<0||aIdx<0||bIdx<0) return alert('Workbook schema error: Check Query, Response A, and Response B bounds.');
+  
+  const newData = [];
+  for (let i=1;i<rows.length;i++) {
+    const row=rows[i]; if (!row[qIdx]) continue;
+    const id = idIdx>=0?(row[idIdx]||'Q-'+i):'Q-'+i;
+    const existing = EVAL_DATA.find(d=>normalize(d.query)===normalize(row[qIdx]));
+    newData.push({
+      id,
+      query:row[qIdx],
+      response_a:row[aIdx]||'',
+      response_b:row[bIdx]||'',
+      method_a:'A',
+      method_b:'B',
+      rrf_docs: existing?existing.rrf_docs:[],
+      twr_docs: existing?existing.twr_docs:[]
+    });
+  }
+  EVAL_DATA = newData;
+  renderCards(); updateAll();
+  markSlot('wb', filename, newData.length+' queries');
+  markDropCard('dc-wb','loaded-wb');
+  document.getElementById('ws-wb').textContent = '✓ '+newData.length+' queries loaded';
+}
+
+function processDocsText(text, method, filename) {
+  const rows = parseCSV(text);
+  if (!rows.length) return;
+  const hdr = rows[0].map(h=>h.trim().toLowerCase());
+  const qIdx = hdr.findIndex(h=>h==='query');
+  const rankIdx = hdr.findIndex(h=>h==='rank');
+  const textIdx = hdr.findIndex(h=>h==='doc_text'||h==='text'||h==='document');
+  if (qIdx<0||textIdx<0) return;
+
+  const docMap = {};
+  for (let i=1;i<rows.length;i++) {
+    const row=rows[i]; if (!row[qIdx]) continue;
+    const nq = normalize(row[qIdx]);
+    if (!docMap[nq]) docMap[nq] = [];
+    docMap[nq].push({rank: rankIdx>=0?parseInt(row[rankIdx])||docMap[nq].length+1:docMap[nq].length+1, text: row[textIdx]||''});
+  }
+  Object.keys(docMap).forEach(k=>docMap[k].sort((a,b)=>a.rank-b.rank));
+
+  let matched = 0;
+  EVAL_DATA.forEach(item => {
+    const nq = normalize(item.query);
+    if (docMap[nq]) {
+      const targetProperty = method === 'twr' ? 'twr_docs' : 'rrf_docs';
+      item[targetProperty] = docMap[nq];
+      matched++;
+      
+      const card = document.getElementById('card-'+item.id);
+      if (card) {
+        const ds = card.querySelector('.docs-section');
+        if (ds) { ds.innerHTML = buildDocsHTML(item); }
+        card.dataset.hasDocs = hasDocs(item)?'1':'0';
+      }
+    }
+  });
+
+  markSlot(method, filename, matched+' mapped');
+  markDropCard('dc-'+method,'loaded-'+method);
+  document.getElementById('ws-'+method).textContent = `✓ Processed data matched to standard vectors.`;
+  if (matched > 0) document.getElementById('hero-docs-badge').style.display='';
+  updateAll();
+  applyFilter(activeFilter);
+}
+
+/* ── EVENT HANDLERS FOR MANUAL FALLBACKS ── */
 function handleWB(event) {
   const file = event.target.files[0]; if (!file) return;
-  readCSV(file, rows => {
-    if (!rows.length) return alert('Could not parse CSV');
-    const hdr = rows[0].map(h=>h.trim());
-    const qIdx = hdr.findIndex(h=>/^query$/i.test(h));
-    const idIdx = hdr.findIndex(h=>/query.?id/i.test(h));
-    const aIdx = hdr.findIndex(h=>/response.?a/i.test(h));
-    const bIdx = hdr.findIndex(h=>/response.?b/i.test(h));
-    const mapIdx = hdr.findIndex(h=>/secret|mapping/i.test(h));
-    if (qIdx<0||aIdx<0||bIdx<0) return alert('Required columns not found: Query, Response A, Response B');
-    const newData = [];
-    for (let i=1;i<rows.length;i++) {
-      const row=rows[i]; if (!row[qIdx]) continue;
-      const id = idIdx>=0?(row[idIdx]||'Q-'+i):'Q-'+i;
-      const mapping = mapIdx>=0?(row[mapIdx]||''):'';
-      let mA='A', mB='B';
-      if (mapping) {
-        mapping.split(',').forEach(p=>{const[k,v]=p.split('=');if(k&&v){if(k.trim()==='A')mA=v.trim();if(k.trim()==='B')mB=v.trim();}});
-      }
-      // Preserve existing docs if query already exists
-      const existing = EVAL_DATA.find(d=>normalize(d.query)===normalize(row[qIdx]));
-      newData.push({id,query:row[qIdx],response_a:row[aIdx]||'',response_b:row[bIdx]||'',
-        method_a:mA,method_b:mB,
-        rrf_docs: existing?existing.rrf_docs:[],
-        twr_docs: existing?existing.twr_docs:[]});
-    }
-    if (!newData.length) return alert('No data rows found');
-    EVAL_DATA = newData;
-    renderCards(); updateAll();
-    markSlot('wb', file.name, newData.length+' queries');
-    markDropCard('dc-wb','loaded-wb');
-    document.getElementById('ws-wb').textContent = '✓ '+newData.length+' queries loaded';
-  });
+  readCSV(file, text => processWBText(text, file.name));
 }
 
 function handleDocs(event, method) {
   const file = event.target.files[0]; if (!file) return;
-  readCSV(file, rows => {
-    if (!rows.length) return alert('Could not parse CSV');
-    const hdr = rows[0].map(h=>h.trim().toLowerCase());
-    const qIdx = hdr.findIndex(h=>h==='query');
-    const rankIdx = hdr.findIndex(h=>h==='rank');
-    const textIdx = hdr.findIndex(h=>h==='doc_text'||h==='text'||h==='document');
-    if (qIdx<0||textIdx<0) return alert('Required columns: query, doc_text');
-
-    // Build map: normalizedQuery -> [{rank, text}]
-    const docMap = {};
-    for (let i=1;i<rows.length;i++) {
-      const row=rows[i]; if (!row[qIdx]) continue;
-      const nq = normalize(row[qIdx]);
-      if (!docMap[nq]) docMap[nq] = [];
-      docMap[nq].push({rank: rankIdx>=0?parseInt(row[rankIdx])||docMap[nq].length+1:docMap[nq].length+1, text: row[textIdx]||''});
-    }
-    // Sort each query's docs by rank
-    Object.keys(docMap).forEach(k=>docMap[k].sort((a,b)=>a.rank-b.rank));
-
-    // Merge into EVAL_DATA
-    let matched = 0;
-    EVAL_DATA.forEach(item => {
-      const nq = normalize(item.query);
-      if (docMap[nq]) {
-        item[method+'_docs'] = docMap[nq];
-        matched++;
-        // Refresh the docs section in the card
-        const card = document.getElementById('card-'+item.id);
-        if (card) {
-          const ds = card.querySelector('.docs-section');
-          if (ds) { ds.innerHTML = buildDocsHTML(item); }
-          card.dataset.hasDocs = hasDocs(item)?'1':'0';
-        }
-      }
-    });
-
-    markSlot(method, file.name, matched+' matched');
-    markDropCard('dc-'+method,'loaded-'+method);
-    document.getElementById('ws-'+method).textContent = `✓ ${Object.keys(docMap).length} query-sets, ${matched} matched`;
-    if (matched > 0) document.getElementById('hero-docs-badge').style.display='';
-    updateAll();
-    applyFilter(activeFilter);
-  });
+  readCSV(file, text => processDocsText(text, method, file.name));
 }
 
 function markSlot(which, fname, info) {
@@ -697,11 +650,9 @@ function markDropCard(id, cls) {
   el.classList.add(cls);
 }
 
-/* ── CSV PARSER ───────────────────────── */
+/* ── CSV ENGINE ───────────────────────── */
 function readCSV(file, cb) {
-  const r = new FileReader();
-  r.onload = e => cb(parseCSV(e.target.result));
-  r.readAsText(file);
+  const r = new FileReader(); r.onload = e => cb(e.target.result); r.readAsText(file);
 }
 function parseCSV(text) {
   const rows=[]; let row=[], cell='', inQ=false;
@@ -724,8 +675,8 @@ function doDrop(e, type) {
   e.preventDefault();
   document.getElementById('dc-'+type).classList.remove('dragover');
   const file = e.dataTransfer.files[0]; if (!file) return;
-  if (type==='wb') handleWB({target:{files:[file]}});
-  else handleDocs({target:{files:[file]}}, type);
+  if (type==='wb') readCSV(file, text => processWBText(text, file.name));
+  else readCSV(file, text => processDocsText(text, type, file.name));
 }
 
 /* ── MODAL ────────────────────────────── */
@@ -741,24 +692,22 @@ function exportResults() {
     const r = ratings[item.id]||{};
     const ra=r.a||{}, rb=r.b||{};
     const makeCritObj = (side) => Object.fromEntries(CRIT_KEYS.map((k,i)=>[CRITERIA[i],(side==='a'?ra:rb)[k]||null]));
-    const scTWR = makeCritObj(item.method_a==='TWR'?'a':'b');
-    const scRRF = makeCritObj(item.method_a==='RRF'?'a':'b');
-    let pm = null;
-    if (r.preference==='A') pm=item.method_a;
-    else if (r.preference==='B') pm=item.method_b;
-    else if (r.preference==='tie') pm='tie';
-    return {query_id:item.id,query:item.query,method_a:item.method_a,method_b:item.method_b,
-      scores_a:makeCritObj('a'),scores_b:makeCritObj('b'),
-      scores_twr:scTWR,scores_rrf:scRRF,
-      preference:r.preference||null,preferred_method:pm,notes:r.notes||''};
+    return {
+      query_id:item.id,
+      query:item.query,
+      scores_response_a:makeCritObj('a'),
+      scores_response_b:makeCritObj('b'),
+      blind_preference:r.preference||null,
+      notes:r.notes||''
+    };
   });
   const blob=new Blob([JSON.stringify(out,null,2)],{type:'application/json'});
   const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
-  a.download='twr_eval_'+new Date().toISOString().slice(0,10)+'.json'; a.click();
+  a.download='blind_eval_output_'+new Date().toISOString().slice(0,10)+'.json'; a.click();
 }
 
 function clearAll() {
-  if (!confirm('Reset all ratings?')) return;
+  if (!confirm('Clear all assessment metrics?')) return;
   ratings = {};
   EVAL_DATA.forEach(d => {
     refreshStatus(d.id);
