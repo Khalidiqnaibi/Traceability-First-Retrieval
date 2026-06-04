@@ -1,343 +1,343 @@
 ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mrr,query,pipeline
-1.0,1.0,1.0,0.5,0.8148100536689385,0.8863123937641603,1,Q3,0.5,What is the most effective intervention for chronic low back pain?,TWR
+1.0,0.8122885095908974,0.9656996788659544,1.0,0.9146560612887686,0.9741950295670265,1,Q1,1.0,What is the most effective intervention for chronic low back pain?,TWR
 0.2,0.4278695013043193,0.7109190534168112,0.25,0.5647625530786824,0.7848181902820691,5,Q4,0.25,What is the most effective intervention for chronic low back pain?,Standard
-0.8,0.9061442547954487,0.9559671464010229,1.0,0.7484237174301172,0.9265174586064722,2,Q1,1.0,What does the evidence show about exercise therapy for knee osteoarthritis?,TWR
+0.8,0.9015229356661434,0.9575915563659511,1.0,0.6155107261154192,0.8850067908514238,2,Q1,1.0,What does the evidence show about exercise therapy for knee osteoarthritis?,TWR
 1.0,0.9378678900673995,0.977918192285801,0.25,0.5627272554209044,0.7708255427585751,1,Q4,0.5,What does the evidence show about exercise therapy for knee osteoarthritis?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9896916885042134,1,Q1,1.0,What is the comparative efficacy of multimodal analgesia vs opioids post-surgery?,TWR
+0.2,0.6245770191817948,0.8112875427467371,0.75,0.8826803184943108,0.9441390272147961,5,Q2,0.5,What is the comparative efficacy of multimodal analgesia vs opioids post-surgery?,TWR
 0.2,0.38125124734622756,0.7089785975302723,0.0,0.3212043018970804,0.6135456967910718,5,Unranked,0.25,What is the comparative efficacy of multimodal analgesia vs opioids post-surgery?,Standard
-0.8,0.8192619084227396,0.9329421363480213,1.0,0.9413401592471554,0.9896916885042134,2,Q1,1.0,"According to randomized trials, does early mobilisation reduce length of stay after spinal surgery?",TWR
+0.8,0.7762502494692454,0.9262941554464965,1.0,0.9413401592471554,0.9896916885042134,2,Q1,1.0,"According to randomized trials, does early mobilisation reduce length of stay after spinal surgery?",TWR
 0.6,0.7638523816845478,0.8813768187173986,0.75,0.8826803184943108,0.9241404330009038,3,Q2,0.3333333333333333,"According to randomized trials, does early mobilisation reduce length of stay after spinal surgery?",Standard
-0.8,0.9507614678330717,0.9627554035975248,1.0,0.9413401592471554,0.9900808841271455,2,Q1,1.0,What evidence exists for cognitive rehabilitation in traumatic brain injury?,TWR
+0.8,0.7022330281026689,0.8654498890347687,1.0,1.0,0.9866060902037453,2,Q1,1.0,What evidence exists for cognitive rehabilitation in traumatic brain injury?,TWR
 0.25,0.7076553232957626,0.7478338557897698,1.0,0.7039180890341347,0.8854598815714874,5,Q1,0.3333333333333333,What evidence exists for cognitive rehabilitation in traumatic brain injury?,Standard
-1.0,1.0,1.0,0.75,0.7653606369886217,0.9248669662577422,2,Q2,1.0,What systematic reviews compare physiotherapy vs surgery for rotator cuff tears?,TWR
+1.0,1.0,1.0,1.0,0.9259795222585335,0.9728125086582712,2,Q1,1.0,What systematic reviews compare physiotherapy vs surgery for rotator cuff tears?,TWR
 0.25,0.6012610260559063,0.7903035432510707,0.0,0.270533885042293,0.6022879780416663,5,Unranked,0.2,What systematic reviews compare physiotherapy vs surgery for rotator cuff tears?,Standard
-0.75,0.6721059462716454,0.8928437106016497,1.0,1.0,1.0,3,Q1,0.0,What is the evidence from RCTs for spinal cord stimulation in failed back surgery syndrome?,TWR
+0.3333333333333333,0.638383512579045,0.8108023317251566,0.75,0.6231524298268358,0.8415255891167215,5,Q2,0.0,What is the evidence from RCTs for spinal cord stimulation in failed back surgery syndrome?,TWR
 0.5,0.7341740173706042,0.8756769827188949,1.0,0.9197207891481876,0.9197207891481876,5,Q2,0.0,What is the evidence from RCTs for spinal cord stimulation in failed back surgery syndrome?,Standard
 1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Meta-analytic findings on TENS for postoperative pain management,TWR
 1.0,0.9530721273977244,0.9921181676913065,1.0,0.4985219438614687,0.8578646188559056,1,Q1,1.0,Meta-analytic findings on TENS for postoperative pain management,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Does mirror therapy reduce phantom limb pain?,TWR
+0.4,0.5,0.7706190054526425,0.75,0.7970995862182803,0.9226271059191403,4,Q2,0.25,Does mirror therapy reduce phantom limb pain?,TWR
 0.5,0.7653606369886217,0.8887223390544889,1.0,0.7232329748419101,0.9424890210124037,5,Q2,0.0,Does mirror therapy reduce phantom limb pain?,Standard
-1.0,0.9407836178068271,0.9829976023759306,1.0,0.7653606369886218,0.9469024295259745,1,Q2,1.0,Pooled RCT evidence on the efficacy of duloxetine for neuropathic pain,TWR
+1.0,0.8122885095908974,0.9605490111983676,0.0,0.0,0.38685280723454163,1,Unranked,0.2,Pooled RCT evidence on the efficacy of duloxetine for neuropathic pain,TWR
 1.0,1.0,1.0,0.0,0.0,0.0,1,Unranked,0.0,Pooled RCT evidence on the efficacy of duloxetine for neuropathic pain,Standard
-1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,What randomized evidence supports graded exercise therapy in fibromyalgia?,TWR
+1.0,0.9530721273977244,0.9808355952070543,1.0,0.7653606369886217,0.9517756747341085,1,Q1,1.0,What randomized evidence supports graded exercise therapy in fibromyalgia?,TWR
 0.8,0.9507614678330717,0.9544301966362844,0.0,0.5637932991212148,0.7366997651844085,2,Unranked,0.5,What randomized evidence supports graded exercise therapy in fibromyalgia?,Standard
-1.0,1.0,1.0,1.0,0.8130542710519492,0.9576952311400714,1,Q1,1.0,Systematic review evidence for psychological interventions in chronic pain,TWR
+1.0,0.7631344712273078,0.9260086137697868,1.0,0.9836821611850634,0.9836821611850634,1,Q1,1.0,Systematic review evidence for psychological interventions in chronic pain,TWR
 0.2,0.6883681571526784,0.7730215508133973,0.75,0.8753695140346327,0.943572424748608,5,Q2,0.5,Systematic review evidence for psychological interventions in chronic pain,Standard
-1.0,0.9407836178068271,0.9824717383170832,1.0,0.734421189254329,0.9420664090627167,1,Q1,1.0,What RCTs evaluate aquatic therapy outcomes in rheumatoid arthritis rehabilitation?,TWR
+1.0,0.9407836178068271,0.9824717383170832,1.0,0.6913401592471553,0.9334903544011512,1,Q1,1.0,What RCTs evaluate aquatic therapy outcomes in rheumatoid arthritis rehabilitation?,TWR
 0.8,0.9507614678330717,0.9590847556274513,0.75,0.8013764537628341,0.9263408308193167,2,Q2,1.0,What RCTs evaluate aquatic therapy outcomes in rheumatoid arthritis rehabilitation?,Standard
 1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Evidence from randomized trials on neurostimulation for treatment-resistant depression,TWR
 1.0,0.9407836178068271,0.9829976023759306,1.0,0.777938566775601,0.9311378076163341,1,Q1,1.0,Evidence from randomized trials on neurostimulation for treatment-resistant depression,Standard
 1.0,0.9530721273977244,0.9921181676913065,1.0,1.0,1.0,1,Q1,1.0,What evidence addresses fall prevention programmes for elderly patients?,TWR
 1.0,0.9530721273977244,0.9884050858715858,1.0,1.0,1.0,1,Q1,1.0,What evidence addresses fall prevention programmes for elderly patients?,Standard
-1.0,1.0,1.0,0.75,0.7346393630113782,0.9001386375213553,1,Q2,1.0,Do systematic reviews support hydrotherapy for reducing spasticity in multiple sclerosis?,TWR
+1.0,0.9453829401128375,0.9930483149216865,0.75,0.8470225900281954,0.9088182922927733,1,Q2,1.0,Do systematic reviews support hydrotherapy for reducing spasticity in multiple sclerosis?,TWR
 0.2,0.28738729581946004,0.6737321065060657,0.75,0.8148100536689385,0.9361716018386684,5,Q2,0.25,Do systematic reviews support hydrotherapy for reducing spasticity in multiple sclerosis?,Standard
-1.0,1.0,1.0,0.75,0.7804185934220761,0.8986495126008298,1,Q2,1.0,RCT-level evidence for transcranial magnetic stimulation in post-stroke rehabilitation,TWR
+1.0,0.8122885095908974,0.9605490111983676,0.75,0.7804185934220761,0.9020607197375924,1,Q2,1.0,RCT-level evidence for transcranial magnetic stimulation in post-stroke rehabilitation,TWR
 0.2,0.7592076495650287,0.7875383649156078,0.0,0.40068822688141703,0.6251853310882258,5,Unranked,0.0,RCT-level evidence for transcranial magnetic stimulation in post-stroke rehabilitation,Standard
-0.8,0.9612472558382992,0.9711524961933974,1.0,1.0,1.0,2,Q1,1.0,What does evidence say about opioid tapering strategies in chronic pain patients?,TWR
+0.8,0.9061442547954487,0.9591143267642597,1.0,1.0,0.9961581648476712,2,Q1,1.0,What does evidence say about opioid tapering strategies in chronic pain patients?,TWR
 1.0,0.7658259826293958,0.9436739188738057,1.0,0.6155107261154192,0.8960255415384364,2,Q1,1.0,What does evidence say about opioid tapering strategies in chronic pain patients?,Standard
-1.0,0.7901522935666144,0.9468183511467511,1.0,1.0,1.0,1,Q1,1.0,Systematic reviews on multidisciplinary pain programmes vs unimodal therapy,TWR
+0.2,0.5148397826764053,0.7058379682560515,0.75,0.8086598407528445,0.9258948952415027,5,Q2,0.3333333333333333,Systematic reviews on multidisciplinary pain programmes vs unimodal therapy,TWR
 0.2,0.6109162352763666,0.7097057252867147,0.75,0.9323665287394267,0.9304881284797233,5,Q2,0.3333333333333333,Systematic reviews on multidisciplinary pain programmes vs unimodal therapy,Standard
-0.4,0.5776491465795192,0.8334043422652198,1.0,1.0,1.0,4,Q1,0.5,What is the evidence for botulinum toxin in chronic migraine prevention?,TWR
+0.4,0.58688267143572,0.7787014277962828,1.0,0.7633860993158484,0.9393393480533129,4,Q1,0.2,What is the evidence for botulinum toxin in chronic migraine prevention?,TWR
 1.0,0.7346393630113782,0.9382995875816248,0.0,0.15969697161989949,0.544369342875957,4,Unranked,0.0,What is the evidence for botulinum toxin in chronic migraine prevention?,Standard
-1.0,0.9413401592471554,0.9900808841271455,1.0,1.0,1.0,2,Q1,1.0,RCT evidence comparing minimally invasive vs open lumbar decompression outcomes,TWR
+1.0,0.8519590445170673,0.9557034395662896,0.0,0.23463936301137822,0.6182885020492784,2,Unranked,0.3333333333333333,RCT evidence comparing minimally invasive vs open lumbar decompression outcomes,TWR
 0.5,0.8130542710519492,0.8896722102763057,0.0,0.3065735963827292,0.5706417189553201,4,Unranked,0.3333333333333333,RCT evidence comparing minimally invasive vs open lumbar decompression outcomes,Standard
-1.0,0.9407836178068271,0.9829976023759306,1.0,1.0,1.0,1,Q1,1.0,How do heat therapy and cold therapy compare for musculoskeletal pain?,TWR
+1.0,0.7530721273977244,0.9488537027591982,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,How do heat therapy and cold therapy compare for musculoskeletal pain?,TWR
 0.2,0.6060917426645734,0.7924483416084057,0.75,0.8826803184943108,0.9241404330009038,5,Q2,0.5,How do heat therapy and cold therapy compare for musculoskeletal pain?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What meta-analyses evaluate long-term cardiovascular risk of NSAIDs in arthritis patients?,TWR
+0.2,0.6462442622073531,0.8101556745649295,1.0,1.0,1.0,5,Q1,0.5,What meta-analyses evaluate long-term cardiovascular risk of NSAIDs in arthritis patients?,TWR
 0.25,0.41531064659152533,0.6907700731340152,1.0,1.0,1.0,5,Q1,0.2,What meta-analyses evaluate long-term cardiovascular risk of NSAIDs in arthritis patients?,Standard
-1.0,1.0,0.9969472379578537,1.0,1.0,1.0,1,Q1,1.0,Pooled RCT data on the analgesic efficacy of gabapentinoids post-surgery,TWR
+1.0,1.0,1.0,0.0,0.5307212739772434,0.7546020077873851,1,Unranked,0.5,Pooled RCT data on the analgesic efficacy of gabapentinoids post-surgery,TWR
 1.0,0.7386006394465727,0.9138566997459924,0.0,0.10950106520113874,0.5275543589509835,1,Unranked,0.2,Pooled RCT data on the analgesic efficacy of gabapentinoids post-surgery,Standard
-1.0,1.0,1.0,0.5,0.7653606369886217,0.8841966403135247,1,Q3,0.5,Systematic review on early vs delayed physiotherapy after ACL reconstruction,TWR
+0.2,0.4337517462847186,0.7156821829565156,1.0,0.8826803184943108,0.9794653631264242,5,Q1,0.25,Systematic review on early vs delayed physiotherapy after ACL reconstruction,TWR
 0.25,0.41531064659152533,0.7128718056817412,1.0,1.0,1.0,5,Q1,0.25,Systematic review on early vs delayed physiotherapy after ACL reconstruction,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Evidence from RCTs for virtual reality in chronic pain rehabilitation,TWR
+1.0,0.7243237749167603,0.9020968365877176,1.0,0.9413401592471554,0.9896916885042134,1,Q1,1.0,Evidence from RCTs for virtual reality in chronic pain rehabilitation,TWR
 1.0,0.7243237749167603,0.9020968365877176,1.0,1.0,1.0,1,Q1,1.0,Evidence from RCTs for virtual reality in chronic pain rehabilitation,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Is mindfulness-based stress reduction effective for fibromyalgia?,TWR
+1.0,0.7514715602695972,0.9110196923984846,1.0,0.7653606369886217,0.9517756747341085,1,Q1,1.0,Is mindfulness-based stress reduction effective for fibromyalgia?,TWR
 0.2,0.5801111379361512,0.7650738353870564,1.0,0.9376847570173164,0.9774008931502748,5,Q1,0.5,Is mindfulness-based stress reduction effective for fibromyalgia?,Standard
-1.0,0.9061442547954487,0.974545660860418,1.0,0.7039180890341347,0.9060254355346823,1,Q1,1.0,Meta-analysis of radiofrequency ablation outcomes in facet joint syndrome,TWR
+1.0,0.9453829401128375,0.9891234477339425,1.0,0.7974779478881874,0.9119629671334931,1,Q1,1.0,Meta-analysis of radiofrequency ablation outcomes in facet joint syndrome,TWR
 1.0,0.7243237749167603,0.9061500122490495,0.0,0.3354350434265105,0.6555911179039409,1,Unranked,0.2,Meta-analysis of radiofrequency ablation outcomes in facet joint syndrome,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,RCT evidence for resistance training in cancer-related fatigue management,TWR
+1.0,1.0,0.9969472379578537,1.0,0.7653606369886217,0.9517756747341085,1,Q1,1.0,RCT evidence for resistance training in cancer-related fatigue management,TWR
 1.0,1.0,1.0,1.0,0.7653606369886217,0.9517756747341085,1,Q1,1.0,RCT evidence for resistance training in cancer-related fatigue management,Standard
-1.0,1.0,1.0,0.75,0.6940451800563907,0.8785999850148942,1,Q2,1.0,Systematic evidence on photobiomodulation therapy for musculoskeletal pain,TWR
+1.0,1.0,0.9933353282867341,0.75,0.7294661149577071,0.9122964487615723,1,Q2,1.0,Systematic evidence on photobiomodulation therapy for musculoskeletal pain,TWR
 0.2,0.4583761461637885,0.7575176902387616,1.0,1.0,1.0,5,Q2,0.5,Systematic evidence on photobiomodulation therapy for musculoskeletal pain,Standard
-1.0,0.8047523970600546,0.9476978178978269,1.0,0.8240204777414663,0.9767744987253195,1,Q1,1.0,What are expert consensus recommendations for managing complex regional pain syndrome type II?,TWR
+0.4,0.47661978330869953,0.774073345047222,1.0,0.777938566775601,0.9311378076163341,4,Q1,0.25,What are expert consensus recommendations for managing complex regional pain syndrome type II?,TWR
 0.4,0.5,0.7706190054526425,1.0,0.8240204777414663,0.9710252500226593,4,Q1,0.25,What are expert consensus recommendations for managing complex regional pain syndrome type II?,Standard
-1.0,1.0,1.0,1.0,0.8435737579924145,0.9796808707575757,3,Q2,0.0,What do case reports reveal about rare adverse events following spinal cord stimulator implantation?,TWR
+0.6666666666666666,0.8099531166420328,0.9110983816788429,0.3333333333333333,0.27541155237618664,0.5950427489208391,4,Q4,0.0,What do case reports reveal about rare adverse events following spinal cord stimulator implantation?,TWR
 1.0,1.0,1.0,0.0,0.13770577618809332,0.4573369727327457,4,Unranked,0.0,What do case reports reveal about rare adverse events following spinal cord stimulator implantation?,Standard
 1.0,0.9413401592471554,0.9896916885042134,1.0,1.0,1.0,2,Q1,1.0,What are the clinical observations of naphtalanotherapy in psoriatic arthritis rehabilitation?,TWR
 1.0,0.9259795222585335,0.9777632910699183,0.0,0.48516021732359466,0.709229313312564,2,Unranked,0.3333333333333333,What are the clinical observations of naphtalanotherapy in psoriatic arthritis rehabilitation?,Standard
-1.0,1.0,1.0,0.0,0.44122176246475586,0.6923127009640677,1,Unranked,0.0,Describe the clinical presentation of occipital neuralgia based on case series,TWR
+0.2,0.5233802166913005,0.7063853293540941,1.0,0.734421189254329,0.9441905461569455,5,Q1,0.0,Describe the clinical presentation of occipital neuralgia based on case series,TWR
 0.2,0.3622942238119067,0.6879255654297408,1.0,1.0,1.0,5,Q1,0.0,Describe the clinical presentation of occipital neuralgia based on case series,Standard
-0.75,0.8826803184943108,0.9481316041715843,1.0,0.8086598407528445,0.9597195881086011,3,Q1,0.5,What expert opinions exist on the management of juvenile recurrent parotitis in children?,TWR
+0.75,0.7346393630113782,0.9001386375213553,1.0,0.747782915792203,0.9077850095401014,3,Q1,0.3333333333333333,What expert opinions exist on the management of juvenile recurrent parotitis in children?,TWR
 1.0,0.808082437104775,0.9499755804487899,1.0,0.6787956981029196,0.8757412141153033,3,Q1,0.0,What expert opinions exist on the management of juvenile recurrent parotitis in children?,Standard
-0.8,0.894999002123018,0.9526358366220861,1.0,1.0,1.0,2,Q1,1.0,What observational studies describe long-term outcomes of wireless peripheral nerve stimulation at C2-C3?,TWR
+0.4,0.6849970063690538,0.8469699207471086,0.0,0.5637932991212148,0.7248195853009508,4,Unranked,0.5,What observational studies describe long-term outcomes of wireless peripheral nerve stimulation at C2-C3?,TWR
 0.6666666666666666,0.7850703250369506,0.8857036147673562,0.0,0.23463936301137822,0.6182885020492784,4,Unranked,0.0,What observational studies describe long-term outcomes of wireless peripheral nerve stimulation at C2-C3?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,Clinical experience reports on integrating naphtalanotherapy with physiotherapy,TWR
+0.8,0.9061442547954487,0.9572881727261123,0.0,0.5307212739772434,0.7606395682357036,2,Unranked,0.5,Clinical experience reports on integrating naphtalanotherapy with physiotherapy,TWR
 0.8,0.679423832220986,0.8632919341243429,0.0,0.4683480347412084,0.6740190899733329,2,Unranked,0.2,Clinical experience reports on integrating naphtalanotherapy with physiotherapy,Standard
-0.6,0.8122885095908974,0.9131283812380312,0.75,0.8826803184943108,0.9441390272147961,3,Q2,0.5,What retrospective cohort studies examine walking recovery after spinal arthrodesis?,TWR
+0.6,0.8122885095908974,0.9126548827839908,0.75,0.9376847570173164,0.9522732586263408,3,Q2,0.5,What retrospective cohort studies examine walking recovery after spinal arthrodesis?,TWR
 1.0,1.0,0.989141344633751,0.75,0.8808251803598827,0.8808251803598827,3,Q2,0.0,What retrospective cohort studies examine walking recovery after spinal arthrodesis?,Standard
-1.0,1.0,0.9967628873465755,1.0,1.0,1.0,1,Q1,1.0,Expert panel recommendations for grading pain intensity in non-verbal patients,TWR
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Expert panel recommendations for grading pain intensity in non-verbal patients,TWR
 0.3333333333333333,0.5799960084920718,0.7959190675029894,0.0,0.0,0.5012658353418871,5,Unranked,0.0,Expert panel recommendations for grading pain intensity in non-verbal patients,Standard
-1.0,1.0,1.0,1.0,0.8826803184943108,0.9858117121511257,1,Q1,1.0,What animal model studies inform neuropathic pain pathophysiology?,TWR
+0.2,0.2655788107456709,0.6596041104711666,1.0,0.6606188852699119,0.9108796139533316,5,Q1,0.25,What animal model studies inform neuropathic pain pathophysiology?,TWR
 0.5,0.680606056760201,0.8558112355261802,0.5,0.7288368792759478,0.8444468219028464,5,Q3,0.0,What animal model studies inform neuropathic pain pathophysiology?,Standard
-0.6,0.9036904578863014,0.9184643617468957,1.0,1.0,1.0,3,Q1,0.5,What case reports describe novel presentations of desmoplakin cardiomyopathy?,TWR
+0.6,0.7493428703218629,0.8603823132173251,1.0,0.7039180890341347,0.8854598815714874,3,Q1,0.3333333333333333,What case reports describe novel presentations of desmoplakin cardiomyopathy?,TWR
 1.0,1.0,1.0,1.0,1.0,1.0,3,Q1,0.0,What case reports describe novel presentations of desmoplakin cardiomyopathy?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Narrative review of the history and evolution of pain management approaches,TWR
+1.0,0.9066928626800109,0.9677972788513235,1.0,1.0,1.0,1,Q1,1.0,Narrative review of the history and evolution of pain management approaches,TWR
 0.5,0.8403030283801005,0.8733683229467235,1.0,0.9836821611850634,0.9852640753333892,5,Q1,0.0,Narrative review of the history and evolution of pain management approaches,Standard
 1.0,1.0,0.9964678158680195,1.0,1.0,1.0,1,Q1,1.0,What are the consensus guidelines for frailty assessment in older adults with heart failure?,TWR
 0.8,0.9474995010615089,0.9553675099315003,1.0,0.777938566775601,0.9311378076163341,2,Q1,1.0,What are the consensus guidelines for frailty assessment in older adults with heart failure?,Standard
-0.6,0.8562462579613171,0.920833502690511,0.75,0.6480409554829326,0.8958905484015627,3,Q2,0.5,Expert opinion on tailoring physiotherapy duration for psoriatic arthritis rehabilitation,TWR
+0.6,0.8424985031845269,0.9102805949836876,0.75,0.5865984075284455,0.8425355745828979,3,Q2,0.3333333333333333,Expert opinion on tailoring physiotherapy duration for psoriatic arthritis rehabilitation,TWR
 1.0,0.9213669182023797,0.9793608759891894,0.0,0.3212043018970804,0.6643205153564598,2,Unranked,0.0,Expert opinion on tailoring physiotherapy duration for psoriatic arthritis rehabilitation,Standard
 0.8,0.8812512473462275,0.9400275710655556,1.0,1.0,1.0,2,Q1,1.0,What observational data exists on Barthel Index use in predicting ADL outcomes?,TWR
 1.0,1.0,1.0,1.0,1.0,1.0,2,Q1,1.0,What observational data exists on Barthel Index use in predicting ADL outcomes?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,2,Q1,1.0,What do Q1 orthopaedic journals report on outcomes of total knee arthroplasty?,TWR
+1.0,0.7967364322370126,0.9560378130322845,1.0,0.5865984075284455,0.8811991369160118,2,Q1,1.0,What do Q1 orthopaedic journals report on outcomes of total knee arthroplasty?,TWR
 1.0,0.8647330574788535,0.9831130933927733,1.0,0.5865984075284455,0.8811991369160118,2,Q1,1.0,What do Q1 orthopaedic journals report on outcomes of total knee arthroplasty?,Standard
-1.0,1.0,1.0,0.75,0.8647330574788535,0.9142620645449733,1,Q2,1.0,What is the evidence on perioperative pain protocols?,TWR
+0.2,0.6553302748315017,0.7987664528425886,0.75,0.8647330574788535,0.9377223268794214,5,Q2,0.5,What is the evidence on perioperative pain protocols?,TWR
 1.0,1.0,1.0,0.75,0.6087012413451591,0.8501345519476668,5,Q2,0.0,What is the evidence on perioperative pain protocols?,Standard
-1.0,1.0,0.995980525093665,1.0,0.9259795222585335,0.9795987853954985,1,Q1,1.0,What do top-ranked rehabilitation journals publish on robot-assisted gait training?,TWR
+0.2,0.28738729581946004,0.6737321065060657,1.0,0.734421189254329,0.9420664090627167,5,Q1,0.25,What do top-ranked rehabilitation journals publish on robot-assisted gait training?,TWR
 0.4,0.4630279215745445,0.7251073193768497,0.0,0.48516021732359466,0.7273762035972507,4,Unranked,0.2,What do top-ranked rehabilitation journals publish on robot-assisted gait training?,Standard
-1.0,0.9530721273977244,0.9921181676913065,1.0,1.0,1.0,1,Q1,1.0,Evidence from Q1 neurology journals on deep brain stimulation for Parkinson's disease,TWR
+1.0,0.9530721273977244,0.9884050858715858,1.0,1.0,0.9828920819566879,1,Q1,1.0,Evidence from Q1 neurology journals on deep brain stimulation for Parkinson's disease,TWR
 1.0,0.8757357801347987,0.9661549555616027,1.0,0.7039180890341347,0.9060254355346823,1,Q1,1.0,Evidence from Q1 neurology journals on deep brain stimulation for Parkinson's disease,Standard
-1.0,0.9507614678330717,0.9910252187701403,1.0,0.9259795222585335,0.9817558680267063,1,Q1,1.0,What do leading psychiatry journals say about cognitive behavioural therapy for chronic pain?,TWR
+1.0,0.8964229539525822,0.9800331970192738,1.0,0.7499999999999999,0.9471022391671619,1,Q1,1.0,What do leading psychiatry journals say about cognitive behavioural therapy for chronic pain?,TWR
 0.2,0.64097202146074,0.7784880264793096,0.25,0.5512021232954059,0.7533094697959536,5,Q4,0.5,What do leading psychiatry journals say about cognitive behavioural therapy for chronic pain?,Standard
-1.0,0.9378678900673995,0.9841710350145154,1.0,0.9050490793874433,0.9479290438170535,1,Q1,1.0,Findings from Q1 oncology journals on pain management in advanced cancer,TWR
+1.0,0.7514715602695972,0.9203937342973153,1.0,0.7974779478881874,0.9119629671334931,1,Q1,1.0,Findings from Q1 oncology journals on pain management in advanced cancer,TWR
 0.5,0.7341740173706042,0.8661072012350618,0.0,0.0,0.4744200353065766,5,Unranked,0.0,Findings from Q1 oncology journals on pain management in advanced cancer,Standard
-1.0,0.9378678900673995,0.9850833011107374,1.0,0.9259795222585335,0.9817558680267063,1,Q1,1.0,What do high-ranking cardiovascular journals report on exercise rehabilitation after MI?,TWR
+0.2,0.6553302748315017,0.8092464172950834,1.0,1.0,0.9961581648476712,5,Q1,0.5,What do high-ranking cardiovascular journals report on exercise rehabilitation after MI?,TWR
 0.25,0.5679726963447116,0.7242626857711238,1.0,0.7932992037642228,0.9473554237404077,5,Q1,0.3333333333333333,What do high-ranking cardiovascular journals report on exercise rehabilitation after MI?,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9900808841271455,2,Q1,1.0,What are the complication rates following spinal fusion?,TWR
+1.0,0.7305146665371222,0.9066180787084464,1.0,0.9413401592471554,0.9750789824551586,2,Q1,1.0,What are the complication rates following spinal fusion?,TWR
 0.25,0.6301663115996204,0.7349180934357449,0.0,0.48516021732359466,0.6998619322299093,5,Unranked,0.3333333333333333,What are the complication rates following spinal fusion?,Standard
-0.8,0.8122885095908974,0.9412303947687283,1.0,1.0,1.0,2,Q1,1.0,What do Q2 pain journals report on ketamine infusion therapy for refractory pain?,TWR
+0.8,0.7643651380352696,0.8991659481969692,1.0,0.7039180890341347,0.9060254355346823,2,Q1,1.0,What do Q2 pain journals report on ketamine infusion therapy for refractory pain?,TWR
 0.8,0.7346393630113782,0.8828148145239931,1.0,0.5316519652587917,0.8518080397362219,2,Q1,1.0,What do Q2 pain journals report on ketamine infusion therapy for refractory pain?,Standard
-1.0,1.0,1.0,0.75,0.6231524298268358,0.8462298541526516,1,Q2,1.0,Recent publications in top rehabilitation journals on telerehabilitation efficacy,TWR
+1.0,0.7083972923709242,0.8969289036141235,0.0,0.5637932991212148,0.7488724034405486,1,Unranked,0.2,Recent publications in top rehabilitation journals on telerehabilitation efficacy,TWR
 0.2,0.7592076495650287,0.7875383649156078,0.0,0.24926097193073435,0.6031418715613001,5,Unranked,0.0,Recent publications in top rehabilitation journals on telerehabilitation efficacy,Standard
-0.8,0.894999002123018,0.9520747983656986,1.0,1.0,1.0,2,Q1,1.0,What does Q1 orthopaedic literature report on revision surgery rates after hip arthroplasty?,TWR
+0.25,0.6480409554829326,0.8270108644778076,0.0,0.5307212739772434,0.7606395682357036,5,Unranked,0.5,What does Q1 orthopaedic literature report on revision surgery rates after hip arthroplasty?,TWR
 0.25,0.30339051850412474,0.6887994045513212,0.0,0.38685280723454163,0.6240505200038379,5,Unranked,0.2,What does Q1 orthopaedic literature report on revision surgery rates after hip arthroplasty?,Standard
-1.0,0.9300809618991231,0.97873210049252,1.0,1.0,1.0,1,Q1,1.0,High-impact findings on prevalence of chronic post-surgical pain,TWR
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,High-impact findings on prevalence of chronic post-surgical pain,TWR
 1.0,0.8026120593560899,0.9395225786842205,0.5,0.734421189254329,0.8488935254156906,3,Q3,0.0,High-impact findings on prevalence of chronic post-surgical pain,Standard
-1.0,1.0,0.9937253866135632,1.0,0.9413401592471554,0.9929375288501646,1,Q1,1.0,What do indexed Q1 gastroenterology journals report on gut-brain axis and pain?,TWR
+1.0,1.0,0.9928935598486774,1.0,0.9413401592471554,0.9750789824551586,1,Q1,1.0,What do indexed Q1 gastroenterology journals report on gut-brain axis and pain?,TWR
 0.2,0.2655788107456709,0.6596041104711666,0.0,0.38685280723454163,0.6509209298071326,5,Unranked,0.25,What do indexed Q1 gastroenterology journals report on gut-brain axis and pain?,Standard
-1.0,1.0,1.0,1.0,0.8130542710519492,0.9635626089060146,2,Q1,1.0,Findings from leading dermatology journals on biologics for psoriatic disease,TWR
+1.0,0.8826803184943108,0.9794653631264242,1.0,0.5608371868441523,0.8733048496259177,2,Q1,1.0,Findings from leading dermatology journals on biologics for psoriatic disease,TWR
 0.5,0.7653606369886217,0.8700237522830396,0.25,0.4692787260227565,0.6713860725233042,4,Q4,0.3333333333333333,Findings from leading dermatology journals on biologics for psoriatic disease,Standard
-1.0,1.0,0.9969472379578537,1.0,0.9413401592471554,0.9936842654610013,1,Q1,1.0,What are the cognitive outcomes after prolonged general anaesthesia?,TWR
+1.0,1.0,1.0,1.0,0.9413401592471554,0.9896916885042134,1,Q1,1.0,What are the cognitive outcomes after prolonged general anaesthesia?,TWR
 1.0,1.0,1.0,0.0,0.0,0.4744352910551497,2,Unranked,0.0,What are the cognitive outcomes after prolonged general anaesthesia?,Standard
-1.0,0.9337517462847186,0.9803274548542471,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,What do Q1-Q2 pulmonology journals report on pulmonary rehabilitation programmes?,TWR
+0.6,0.7280201836340137,0.8799377214756621,1.0,0.6452582482812901,0.8934741240371527,3,Q1,0.3333333333333333,What do Q1-Q2 pulmonology journals report on pulmonary rehabilitation programmes?,TWR
 0.75,0.8590516752196962,0.9331583936847712,0.0,0.5307212739772434,0.7606395682357036,3,Unranked,0.3333333333333333,What do Q1-Q2 pulmonology journals report on pulmonary rehabilitation programmes?,Standard
-1.0,0.9259795222585335,0.9786028494968771,1.0,0.9836821611850634,0.9859453321521002,2,Q1,1.0,Evidence from indexed rheumatology journals on biologic DMARDs in psoriatic arthritis,TWR
+1.0,0.9259795222585335,0.9728125086582712,1.0,0.734421189254329,0.930980456303577,2,Q1,1.0,Evidence from indexed rheumatology journals on biologic DMARDs in psoriatic arthritis,TWR
 0.5,0.7653606369886217,0.8841966403135247,0.25,0.4391628131558476,0.7526451610861303,4,Q4,0.5,Evidence from indexed rheumatology journals on biologic DMARDs in psoriatic arthritis,Standard
 0.8,0.9061442547954487,0.9572881727261123,0.75,0.8826803184943108,0.9462480870845545,2,Q2,1.0,What do high-ranking neurology journals report on gait analysis in Huntington's disease?,TWR
 0.8,0.7084428549463561,0.9069505649302249,0.75,0.6231524298268358,0.8378541447331506,2,Q2,1.0,What do high-ranking neurology journals report on gait analysis in Huntington's disease?,Standard
-0.8,0.9507614678330717,0.9616503052427172,1.0,0.8264159975898232,0.9332303000286095,2,Q1,1.0,Peer-reviewed Q1 evidence on sarcopenia management in older cancer patients,TWR
+0.8,0.9612472558382992,0.9670549517833985,1.0,0.701785511624456,0.9135503914962638,2,Q1,1.0,Peer-reviewed Q1 evidence on sarcopenia management in older cancer patients,TWR
 0.25,0.45252453969372164,0.7318390321059051,0.0,0.4391628131558476,0.7161630005961868,5,Unranked,0.2,Peer-reviewed Q1 evidence on sarcopenia management in older cancer patients,Standard
 1.0,0.9530721273977244,0.9884050858715858,1.0,0.9259795222585335,0.9803723397819989,1,Q1,1.0,Findings from top endocrinology journals on metabolic syndrome and chronic pain,TWR
 1.0,1.0,1.0,0.5,0.4566112294667932,0.7442859423091663,4,Q3,0.0,Findings from top endocrinology journals on metabolic syndrome and chronic pain,Standard
-0.8,0.9507614678330717,0.9627554035975248,1.0,1.0,1.0,2,Q1,1.0,What is the evidence on naphtalanotherapy protocols?,TWR
+0.8,0.8886293579004712,0.9429026964891792,0.0,0.5014780561385311,0.7367266064092202,2,Unranked,0.5,What is the evidence on naphtalanotherapy protocols?,TWR
 0.8,0.7487547399156647,0.893556411557979,0.0,0.4720614332243989,0.7430749000387983,2,Unranked,0.3333333333333333,What is the evidence on naphtalanotherapy protocols?,Standard
-0.8,0.9061442547954487,0.9559671464010229,1.0,0.9259795222585335,0.9810893753569714,2,Q1,1.0,What does grey literature report on wireless PNS clinical outcomes?,TWR
+0.8,0.8030458713322868,0.9371105829231359,1.0,0.6913401592471553,0.9334903544011512,2,Q1,1.0,What does grey literature report on wireless PNS clinical outcomes?,TWR
 0.4,0.7045688069984302,0.8566498345295275,0.0,0.48516021732359466,0.6780148307744244,4,Unranked,0.5,What does grey literature report on wireless PNS clinical outcomes?,Standard
-0.6,0.9120506341899668,0.9263909371686468,0.75,0.8086598407528445,0.9258948952415027,3,Q2,0.5,What do conference proceedings report on novel spinal arthrodesis techniques?,TWR
+0.6,0.9120506341899668,0.923437313393252,0.75,0.8086598407528445,0.9258948952415027,3,Q2,0.5,What do conference proceedings report on novel spinal arthrodesis techniques?,TWR
 1.0,1.0,1.0,0.75,0.8826803184943108,0.9481316041715843,3,Q2,0.0,What do conference proceedings report on novel spinal arthrodesis techniques?,Standard
-1.0,0.9474995010615089,0.9864557088279804,1.0,0.8826803184943108,0.9852268707233874,1,Q1,1.0,Regional rehabilitation journals describing local physiotherapy practice patterns,TWR
+1.0,1.0,1.0,1.0,0.8826803184943108,0.9794653631264242,1,Q1,1.0,Regional rehabilitation journals describing local physiotherapy practice patterns,TWR
 1.0,0.9772764758652748,0.9801000129176609,0.0,0.5647625530786824,0.6897269301351651,2,Unranked,0.0,Regional rehabilitation journals describing local physiotherapy practice patterns,Standard
-1.0,0.9061442547954487,0.9894221119756877,1.0,1.0,1.0,1,Q1,1.0,What do Q4 pain journals report on low-resource analgesia in conflict zones?,TWR
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do Q4 pain journals report on low-resource analgesia in conflict zones?,TWR
 0.75,0.6718513476054694,0.8571652951251066,1.0,0.7305146665371222,0.9194086789917885,3,Q1,0.0,What do Q4 pain journals report on low-resource analgesia in conflict zones?,Standard
-0.6,0.8522844034992151,0.9151817758736149,1.0,0.9413401592471554,0.9896916885042134,3,Q1,0.5,Unranked paediatric journals on juvenile recurrent parotitis management,TWR
+0.6,0.7045688069984302,0.8883061888179429,1.0,0.8130542710519492,0.9635626089060146,3,Q1,0.5,Unranked paediatric journals on juvenile recurrent parotitis management,TWR
 1.0,0.901306029678045,0.9623215706541713,1.0,0.4985219438614687,0.8578646188559056,3,Q1,0.0,Unranked paediatric journals on juvenile recurrent parotitis management,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What does the Acta Dermatovenerologica Croatica report on combined rehabilitation in psoriasis?,TWR
+0.8,0.7284951082159297,0.9010304705393553,0.0,0.3086598407528445,0.6590112271808471,2,Unranked,0.3333333333333333,What does the Acta Dermatovenerologica Croatica report on combined rehabilitation in psoriasis?,TWR
 1.0,0.8427338364047597,0.9426248975170706,0.0,0.33333333333333337,0.5753890567164703,2,Unranked,0.2,What does the Acta Dermatovenerologica Croatica report on combined rehabilitation in psoriasis?,Standard
 1.0,0.9474995010615089,0.9905524138848275,1.0,1.0,1.0,1,Q1,1.0,Q3-Q4 orthopaedic journals on outcomes of spinal surgery in low-income countries,TWR
 1.0,0.9645790650986836,0.9681060481242518,0.0,0.3145323271904804,0.6738750021849174,1,Unranked,0.0,Q3-Q4 orthopaedic journals on outcomes of spinal surgery in low-income countries,Standard
-0.8,0.8150029936309461,0.9114460458605955,1.0,0.8130542710519492,0.9740805572316852,2,Q1,1.0,Pain Medicine Case Reports journal findings on cervical nerve stimulation,TWR
+0.2,0.5307212739772434,0.7624707994227187,0.25,0.688423785086582,0.7906274764151102,5,Q4,0.5,Pain Medicine Case Reports journal findings on cervical nerve stimulation,TWR
 0.5,0.617319681505689,0.8398625486866789,1.0,1.0,1.0,5,Q4,0.0,Pain Medicine Case Reports journal findings on cervical nerve stimulation,Standard
 1.0,1.0,1.0,0.5,0.7970995862182803,0.8823128082026661,1,Q3,0.5,What do publications on peripheral nerve stimulation describe about clinical practice patterns?,TWR
 0.5,0.6007575709502512,0.8333178201709368,1.0,1.0,1.0,4,Q1,0.0,What do publications on peripheral nerve stimulation describe about clinical practice patterns?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Evidence from unranked bodywork journals on postoperative physiotherapy,TWR
+1.0,0.7631344712273078,0.9260086137697868,1.0,1.0,1.0,1,Q1,1.0,Evidence from unranked bodywork journals on postoperative physiotherapy,TWR
 1.0,0.8293121225775372,0.9405438552498261,1.0,1.0,1.0,1,Q1,1.0,Evidence from unranked bodywork journals on postoperative physiotherapy,Standard
-0.75,0.8826803184943108,0.9481316041715843,1.0,1.0,1.0,3,Q1,0.5,What do Q4 geriatric journals report on rehabilitation outcomes in frail elderly?,TWR
+0.6,0.8424985031845269,0.9102805949836876,1.0,1.0,1.0,3,Q1,0.5,What do Q4 geriatric journals report on rehabilitation outcomes in frail elderly?,TWR
 0.75,0.8240204777414663,0.9378232926757976,1.0,1.0,0.9828920819566879,3,Q1,0.5,What do Q4 geriatric journals report on rehabilitation outcomes in frail elderly?,Standard
-1.0,0.9692787260227564,0.9742233255103614,0.0,0.16771752171325524,0.6023586154359912,1,Unranked,0.0,Regional neurological society publications on peripheral nerve stimulation practice,TWR
+1.0,1.0,0.9948503626444913,0.0,0.5307212739772434,0.7480103257048578,1,Unranked,0.0,Regional neurological society publications on peripheral nerve stimulation practice,TWR
 0.25,0.4793347536015183,0.7404059314792264,1.0,0.7439681838663057,0.9009533731873224,5,Q1,0.0,Regional neurological society publications on peripheral nerve stimulation practice,Standard
-1.0,1.0,1.0,0.0,0.0,0.4555368256020691,2,Unranked,0.0,Unranked haematology journals on chemotherapy-induced peripheral neuropathy management,TWR
+1.0,1.0,0.9950040896211195,0.0,0.0,0.45777815652719006,2,Unranked,0.0,Unranked haematology journals on chemotherapy-induced peripheral neuropathy management,TWR
 0.5,0.8670870086853021,0.8810040261110065,0.0,0.0,0.4744352910551497,4,Unranked,0.0,Unranked haematology journals on chemotherapy-induced peripheral neuropathy management,Standard
-1.0,0.9217868789962073,0.9866232943931771,1.0,1.0,0.994928390780785,3,Q1,0.0,Q4 infectious disease journals on conservative treatment of recurrent parotitis,TWR
+1.0,0.901306029678045,0.9695962172427146,1.0,0.7439681838663057,0.9165985929559796,3,Q1,0.0,Q4 infectious disease journals on conservative treatment of recurrent parotitis,TWR
 0.75,0.7793891187676222,0.9147552508456364,1.0,0.7439681838663057,0.9009533731873224,3,Q1,0.0,Q4 infectious disease journals on conservative treatment of recurrent parotitis,Standard
-0.8,0.9474995010615089,0.9597001162113085,1.0,0.8826803184943108,0.9786302127516295,2,Q1,1.0,What do non-indexed rehabilitation monographs say about intensive inpatient rehabilitation?,TWR
+0.8,0.5912532431001917,0.8622321521717908,1.0,0.7967364322370126,0.9587222898413127,2,Q1,1.0,What do non-indexed rehabilitation monographs say about intensive inpatient rehabilitation?,TWR
 0.5,0.6718513476054694,0.8183594662003433,0.25,0.6618326436971338,0.7737424592411596,4,Q4,0.3333333333333333,What do non-indexed rehabilitation monographs say about intensive inpatient rehabilitation?,Standard
-1.0,1.0,1.0,0.5,0.7653606369886217,0.8887223390544889,1,Q3,0.5,What do unranked sports medicine journals report on return-to-play after ligament injury?,TWR
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q1,0.0,What do unranked sports medicine journals report on return-to-play after ligament injury?,TWR
 1.0,1.0,1.0,1.0,0.46927872602275644,0.8529278650606567,5,Q1,0.0,What do unranked sports medicine journals report on return-to-play after ligament injury?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Q3 nursing journals reporting on pain assessment tools in intensive care,TWR
+1.0,1.0,1.0,0.0,0.5307212739772434,0.7606395682357036,1,Unranked,0.5,Q3 nursing journals reporting on pain assessment tools in intensive care,TWR
 1.0,0.9394869707213443,0.9447097587352041,0.0,0.3145323271904804,0.6738750021849174,1,Unranked,0.0,Q3 nursing journals reporting on pain assessment tools in intensive care,Standard
-1.0,1.0,1.0,1.0,1.0,0.9909665978020246,2,Q1,1.0,Conference abstracts on novel uses of peripheral nerve blocks in outpatient settings,TWR
+0.25,0.618306950342076,0.7704924111109555,0.75,0.701785511624456,0.8698003213744795,5,Q2,0.3333333333333333,Conference abstracts on novel uses of peripheral nerve blocks in outpatient settings,TWR
 0.5,0.8403030283801005,0.8733683229467235,1.0,0.649014791936513,0.8642203869628404,5,Q2,0.0,Conference abstracts on novel uses of peripheral nerve blocks in outpatient settings,Standard
-1.0,1.0,1.0,1.0,0.9413401592471554,0.9929375288501646,1,Q1,1.0,Unranked complementary medicine journals on acupuncture for low back pain,TWR
+1.0,0.8592163821931731,0.9750074991158836,1.0,0.6854676728095195,0.8999024055190182,1,Q1,1.0,Unranked complementary medicine journals on acupuncture for low back pain,TWR
 1.0,0.8592163821931731,0.967800553810227,0.0,0.4720614332243989,0.7430749000387983,1,Unranked,0.5,Unranked complementary medicine journals on acupuncture for low back pain,Standard
 1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do Q3-Q4 endocrinology journals report on insulin resistance and musculoskeletal pain?,TWR
 1.0,0.881567235613654,0.962756918353804,1.0,0.9413401592471554,0.9934535397251649,1,Q1,1.0,What do Q3-Q4 endocrinology journals report on insulin resistance and musculoskeletal pain?,Standard
-1.0,0.9692787260227564,0.9719673970221202,0.5,0.6913401592471553,0.8652860156704962,1,Q3,0.3333333333333333,Unranked sports rehabilitation journals on functional recovery after ACL surgery,TWR
+1.0,1.0,1.0,0.5,0.6913401592471553,0.8652860156704962,1,Q3,0.0,Unranked sports rehabilitation journals on functional recovery after ACL surgery,TWR
 0.2,0.6737852038126946,0.7121664003799236,1.0,0.5865984075284455,0.8811991369160118,5,Q1,0.0,Unranked sports rehabilitation journals on functional recovery after ACL surgery,Standard
-1.0,1.0,1.0,1.0,1.0,0.9858872048922094,1,Q1,1.0,Q4 haematology journals on pain management in sickle cell disease,TWR
+1.0,1.0,1.0,1.0,0.9333440848915144,0.9333440848915144,1,Q1,1.0,Q4 haematology journals on pain management in sickle cell disease,TWR
 0.2,0.7098249095547866,0.7978443354994148,0.0,0.0,0.4306765580733931,5,Unranked,0.0,Q4 haematology journals on pain management in sickle cell disease,Standard
-1.0,0.9507614678330717,0.9945012977327519,1.0,1.0,0.9866060902037453,1,Q1,1.0,Local hospital registry data on postoperative mobilisation practices,TWR
+0.8,0.9507614678330717,0.9603402390704315,0.0,0.5307212739772434,0.7606395682357036,2,Unranked,0.5,Local hospital registry data on postoperative mobilisation practices,TWR
 0.8,0.8887312405725067,0.8990200000743113,0.0,0.6606021509485402,0.6606021509485402,2,Unranked,0.3333333333333333,Local hospital registry data on postoperative mobilisation practices,Standard
-0.8,0.9061442547954487,0.9591143267642597,1.0,0.9413401592471554,0.9851766730264646,2,Q1,1.0,Unranked veterinary journals on pain assessment tools applicable to non-verbal patients,TWR
+0.8,0.9061442547954487,0.9572881727261123,1.0,0.9413401592471554,0.9934535397251649,2,Q1,1.0,Unranked veterinary journals on pain assessment tools applicable to non-verbal patients,TWR
 1.0,0.7484237174301172,0.9265174586064722,1.0,0.7653606369886217,0.9674679834891693,2,Q1,1.0,Unranked veterinary journals on pain assessment tools applicable to non-verbal patients,Standard
-1.0,0.8346393630113783,0.9588210297090177,1.0,1.0,1.0,1,Q1,1.0,What are the guidelines on multimodal analgesia in the ERAS protocol?,TWR
+1.0,0.8886293579004712,0.9772192567252195,1.0,1.0,1.0,1,Q1,1.0,What are the guidelines on multimodal analgesia in the ERAS protocol?,TWR
 0.25,0.7653606369886218,0.7919648107385373,0.0,0.3413757548449258,0.6731298478442992,5,Unranked,0.0,What are the guidelines on multimodal analgesia in the ERAS protocol?,Standard
-1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,What evidence exists for telerehabilitation in post-COVID patients?,TWR
+0.2,0.44692787260227573,0.7434776415607663,0.75,0.701785511624456,0.872999953718423,5,Q2,0.3333333333333333,What evidence exists for telerehabilitation in post-COVID patients?,TWR
 0.4,0.4630279215745445,0.7251073193768497,0.25,0.6618326436971338,0.7905471920235067,4,Q4,0.0,What evidence exists for telerehabilitation in post-COVID patients?,Standard
-0.5,0.680606056760201,0.8447122853992027,0.0,0.35195904451706733,0.5540663910176149,4,Unranked,0.0,What advances have been made in peripheral nerve stimulation technology for chronic pain?,TWR
+1.0,0.8826803184943108,0.9794653631264242,0.0,0.0,0.48470281228817413,4,Unranked,0.0,What advances have been made in peripheral nerve stimulation technology for chronic pain?,TWR
 1.0,0.8826803184943108,0.9777242507697853,0.0,0.0,0.5012658353418872,4,Unranked,0.0,What advances have been made in peripheral nerve stimulation technology for chronic pain?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do studies report on AI-assisted surgical planning in orthopaedics?,TWR
+0.2,0.6462442622073531,0.8067691620817606,1.0,1.0,1.0,5,Q1,0.5,What do studies report on AI-assisted surgical planning in orthopaedics?,TWR
 0.2,0.6266428241953427,0.788945417075826,1.0,0.6787956981029196,0.8757412141153033,5,Q1,0.0,What do studies report on AI-assisted surgical planning in orthopaedics?,Standard
-1.0,0.9407836178068271,0.9852079719187161,1.0,1.0,1.0,1,Q1,1.0,Latest evidence on digital pain diaries and patient-reported outcomes in chronic pain management,TWR
+1.0,0.9407836178068271,0.9829976023759306,1.0,1.0,1.0,1,Q1,1.0,Latest evidence on digital pain diaries and patient-reported outcomes in chronic pain management,TWR
 1.0,0.7901522935666144,0.9627946688138465,1.0,1.0,1.0,1,Q1,1.0,Latest evidence on digital pain diaries and patient-reported outcomes in chronic pain management,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What is the evidence for gut microbiome modulation in inflammatory pain?,TWR
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q1,0.0,What is the evidence for gut microbiome modulation in inflammatory pain?,TWR
 1.0,1.0,1.0,1.0,0.8519590445170673,0.9573251664526453,5,Q1,0.0,What is the evidence for gut microbiome modulation in inflammatory pain?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9906609666436669,1,Q1,1.0,What is the evidence on ketamine's antidepressant effects in chronic pain patients?,TWR
+1.0,1.0,0.9867149268989209,1.0,0.7653606369886217,0.9558295932317544,1,Q1,1.0,What is the evidence on ketamine's antidepressant effects in chronic pain patients?,TWR
 1.0,0.8881749545782478,0.9361356968811845,1.0,0.8519590445170673,0.9573251664526453,1,Q1,1.0,What is the evidence on ketamine's antidepressant effects in chronic pain patients?,Standard
-1.0,0.881567235613654,0.9685145991492288,1.0,1.0,0.9866060902037453,1,Q1,1.0,2025 updates to surgical indications for lumbar disc herniation,TWR
+1.0,0.9728773657707043,0.9768054657591149,1.0,0.8130542710519492,0.9635626089060146,1,Q1,1.0,2025 updates to surgical indications for lumbar disc herniation,TWR
 0.6,0.8056748831755324,0.8803079986318336,0.0,0.48516021732359466,0.7273762035972507,3,Unranked,0.3333333333333333,2025 updates to surgical indications for lumbar disc herniation,Standard
-1.0,0.9871064222343278,0.9902471483423112,1.0,0.7039180890341347,0.9047172294870751,1,Q1,1.0,Does wearable sensor monitoring improve outcomes in post-surgical rehabilitation?,TWR
+0.8,0.6394702686417724,0.8478294043993339,0.0,0.5307212739772434,0.7606395682357036,2,Unranked,0.2,Does wearable sensor monitoring improve outcomes in post-surgical rehabilitation?,TWR
 0.25,0.5728758519670025,0.7654147032144297,1.0,0.7039180890341347,0.9047172294870751,5,Q1,0.2,Does wearable sensor monitoring improve outcomes in post-surgical rehabilitation?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,New findings on exosome therapy for cartilage regeneration in osteoarthritis,TWR
+1.0,0.8012552388541557,0.9370572219091172,1.0,0.777938566775601,0.9340372197448616,1,Q1,1.0,New findings on exosome therapy for cartilage regeneration in osteoarthritis,TWR
 1.0,1.0,1.0,1.0,0.5771550256590888,0.8836078928165381,1,Q1,1.0,New findings on exosome therapy for cartilage regeneration in osteoarthritis,Standard
-1.0,0.8693003197232865,0.9669200829634178,1.0,0.8753695140346327,0.9755935917242388,1,Q1,1.0,Latest 2024 evidence on long COVID musculoskeletal sequelae rehabilitation,TWR
+1.0,0.8800937667159342,0.9670603082481654,0.25,0.784208556253389,0.7930392002550681,3,Q4,0.0,Latest 2024 evidence on long COVID musculoskeletal sequelae rehabilitation,TWR
 0.3333333333333333,0.5248827916050821,0.7868835413163482,0.25,0.7076553232957626,0.7224140537228598,5,Q4,0.0,Latest 2024 evidence on long COVID musculoskeletal sequelae rehabilitation,Standard
-1.0,1.0,1.0,1.0,0.867319681505689,0.9714475565309197,1,Q1,1.0,What do systematic reviews show about augmented reality for surgical training in orthopaedics?,TWR
+1.0,1.0,0.9969472379578537,1.0,0.867319681505689,0.9714475565309197,1,Q1,1.0,What do systematic reviews show about augmented reality for surgical training in orthopaedics?,TWR
 0.2,0.4278695013043193,0.7109190534168112,0.0,0.5014780561385311,0.7367266064092202,5,Unranked,0.3333333333333333,What do systematic reviews show about augmented reality for surgical training in orthopaedics?,Standard
-0.6,0.8522844034992151,0.9053245022209828,1.0,1.0,1.0,3,Q1,0.0,What do trials show about closed-loop spinal cord stimulation systems?,TWR
+0.4,0.6621462276284508,0.8193289841324161,0.0,0.4683480347412084,0.6740190899733329,4,Unranked,0.0,What do trials show about closed-loop spinal cord stimulation systems?,TWR
 0.6666666666666666,0.834835908247115,0.9278885267001491,0.0,0.5307212739772434,0.7122630665145961,4,Unranked,0.0,What do trials show about closed-loop spinal cord stimulation systems?,Standard
-1.0,1.0,1.0,0.75,0.6087012413451591,0.8501345519476668,4,Q2,0.0,What is the evidence for gene therapy approaches in hereditary neuropathic pain syndromes?,TWR
+0.5,0.8403030283801005,0.8733683229467235,0.75,0.6618326436971338,0.8711462294584894,5,Q2,0.0,What is the evidence for gene therapy approaches in hereditary neuropathic pain syndromes?,TWR
 0.5,0.8403030283801005,0.8733683229467235,0.75,0.6618326436971338,0.8711462294584894,5,Q2,0.0,What is the evidence for gene therapy approaches in hereditary neuropathic pain syndromes?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What advances have been made in machine learning for chronic pain phenotyping?,TWR
+1.0,1.0,0.9928935598486774,1.0,1.0,0.9866060902037453,1,Q1,1.0,What advances have been made in machine learning for chronic pain phenotyping?,TWR
 0.2,0.5801111379361512,0.7502036217167789,0.0,0.6934264036172708,0.6934264036172708,5,Unranked,0.5,What advances have been made in machine learning for chronic pain phenotyping?,Standard
-1.0,1.0,1.0,1.0,0.9376847570173164,0.9887855983715496,1,Q1,1.0,What does 2025 literature say about GLP-1 receptor agonists and musculoskeletal pain?,TWR
+0.2,0.6462442622073531,0.8031118546295288,0.75,0.9376847570173164,0.9460997855276976,5,Q2,0.5,What does 2025 literature say about GLP-1 receptor agonists and musculoskeletal pain?,TWR
 0.2,0.6109162352763666,0.7039237616513431,0.75,0.9323665287394267,0.9272902224850686,5,Q2,0.3333333333333333,What does 2025 literature say about GLP-1 receptor agonists and musculoskeletal pain?,Standard
-0.8,0.894999002123018,0.9555001783072599,1.0,0.734421189254329,0.9420664090627167,2,Q1,1.0,Latest evidence on proton pump inhibitors' effect on bone density in orthopaedic patients,TWR
+0.8,0.9612472558382992,0.9702530239181318,0.0,0.5307212739772434,0.7501373711886336,2,Unranked,0.5,Latest evidence on proton pump inhibitors' effect on bone density in orthopaedic patients,TWR
 1.0,0.9413401592471554,0.9900808841271455,0.0,0.23981246656813146,0.6323990200260963,2,Unranked,0.25,Latest evidence on proton pump inhibitors' effect on bone density in orthopaedic patients,Standard
-1.0,1.0,1.0,0.75,0.950076996190085,0.9625133468165444,1,Q2,1.0,What are the guidelines for post-mastectomy pain syndrome treatment?,TWR
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the guidelines for post-mastectomy pain syndrome treatment?,TWR
 1.0,0.8592163821931731,0.967800553810227,0.75,0.9376847570173164,0.9522732586263408,1,Q2,1.0,What are the guidelines for post-mastectomy pain syndrome treatment?,Standard
-1.0,0.9510464835551904,0.9555730996517461,0.0,0.2960819109658652,0.6797310500037655,1,Unranked,0.0,2024 advances in transcutaneous auricular vagus nerve stimulation for pain,TWR
+1.0,1.0,1.0,1.0,1.0,1.0,5,Q1,0.0,2024 advances in transcutaneous auricular vagus nerve stimulation for pain,TWR
 1.0,1.0,1.0,0.0,0.5449702648457346,0.6285070118534373,5,Unranked,0.0,2024 advances in transcutaneous auricular vagus nerve stimulation for pain,Standard
-0.8,0.9087467568998082,0.9633949192918219,1.0,0.9259795222585335,0.9777632910699183,2,Q1,1.0,What recent literature describes outcomes of same-day discharge after outpatient spine procedures?,TWR
+0.8,0.9612472558382992,0.969183301410673,1.0,0.867319681505689,0.9714475565309197,2,Q1,1.0,What recent literature describes outcomes of same-day discharge after outpatient spine procedures?,TWR
 0.2,0.45893222991541405,0.7226302813037453,1.0,1.0,0.9858872048922094,5,Q1,0.0,What recent literature describes outcomes of same-day discharge after outpatient spine procedures?,Standard
-0.8,0.8030458713322868,0.9384803232746248,1.0,0.6854676728095195,0.9001693877158341,2,Q1,1.0,What are the biomechanical principles underlying lumbar disc herniation?,TWR
+0.8,0.956700796235777,0.9636698177973462,1.0,0.7439681838663057,0.9156884162471874,2,Q1,1.0,What are the biomechanical principles underlying lumbar disc herniation?,TWR
 0.4,0.5422142747317809,0.8062447201443883,0.75,0.6087012413451591,0.8180148271065147,4,Q2,0.2,What are the biomechanical principles underlying lumbar disc herniation?,Standard
-1.0,0.9871064222343278,0.9893242388234312,0.75,0.8086598407528445,0.9258948952415027,1,Q2,1.0,What evidence established the gate control theory of pain?,TWR
+0.2,0.6553302748315017,0.8092464172950834,1.0,0.9259795222585335,0.9777632910699183,5,Q1,0.5,What evidence established the gate control theory of pain?,TWR
 0.25,0.41531064659152533,0.7128718056817412,1.0,0.9836821611850634,0.9865057063686541,5,Q1,0.25,What evidence established the gate control theory of pain?,Standard
-0.75,0.8240204777414663,0.9378232926757976,0.75,0.8753695140346327,0.9456560946584148,3,Q2,0.5,What are the classical criteria for diagnosing rheumatoid arthritis?,TWR
+0.75,0.8086598407528445,0.9258948952415027,0.75,0.8590516752196962,0.9331583936847712,3,Q2,0.3333333333333333,What are the classical criteria for diagnosing rheumatoid arthritis?,TWR
 0.75,0.8647330574788535,0.9377223268794214,0.75,0.7970995862182803,0.9195495553061589,3,Q2,0.2,What are the classical criteria for diagnosing rheumatoid arthritis?,Standard
-1.0,0.8757357801347987,0.9612798666394353,0.75,0.8826803184943108,0.9462367535061125,1,Q2,1.0,What cohort studies track functional decline in spinal deformity patients?,TWR
+1.0,1.0,1.0,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,What cohort studies track functional decline in spinal deformity patients?,TWR
 1.0,0.7493428703218629,0.9389792292748784,0.75,0.5090967735771897,0.7716907949270346,1,Q2,1.0,What cohort studies track functional decline in spinal deformity patients?,Standard
-1.0,1.0,1.0,1.0,0.8403030283801005,0.9638614719361266,1,Q1,1.0,What RCTs compared the safety of regional anaesthesia and general anaesthesia?,TWR
+0.2,0.6462442622073531,0.786436632826367,1.0,0.8826803184943108,0.9852268707233874,5,Q1,0.5,What RCTs compared the safety of regional anaesthesia and general anaesthesia?,TWR
 0.2,0.5014780561385311,0.7424239575756534,1.0,0.46927872602275644,0.8529278650606567,5,Q1,0.25,What RCTs compared the safety of regional anaesthesia and general anaesthesia?,Standard
-1.0,0.9407836178068271,0.9852079719187161,1.0,0.867319681505689,0.9714475565309197,1,Q1,1.0,What are the validation studies for the Oswestry Disability Index?,TWR
+0.8,0.7877114904091027,0.9218877162492904,0.75,0.6231524298268358,0.8462298541526516,2,Q2,1.0,What are the validation studies for the Oswestry Disability Index?,TWR
 0.8,0.629543119300157,0.8856558424065826,0.75,0.5090967735771897,0.8014381684711812,2,Q2,1.0,What are the validation studies for the Oswestry Disability Index?,Standard
-0.6,0.7928459079051643,0.9059532000022659,1.0,0.8826803184943108,0.9786302127516295,3,Q1,0.5,What are the founding epidemiological studies on low back pain prevalence?,TWR
+0.6,0.5585691815810329,0.8364944586736413,1.0,0.8427338364047597,0.9559609342098946,3,Q1,0.25,What are the founding epidemiological studies on low back pain prevalence?,TWR
 1.0,0.8026120593560899,0.9444537180991301,1.0,0.9323665287394267,0.9874668699701061,3,Q1,0.0,What are the founding epidemiological studies on low back pain prevalence?,Standard
-1.0,0.924974312301727,0.971237215053156,1.0,1.0,1.0,1,Q1,1.0,What registry studies track outcomes of total hip arthroplasty?,TWR
+0.6,0.8522844034992151,0.9146222898750369,1.0,1.0,1.0,3,Q1,0.5,What registry studies track outcomes of total hip arthroplasty?,TWR
 0.75,0.7507390280692655,0.9199241673366095,1.0,0.7653606369886217,0.9469024295259745,3,Q1,0.5,What registry studies track outcomes of total hip arthroplasty?,Standard
-1.0,0.9530721273977244,0.9950215722988736,1.0,0.9836821611850634,0.9875022990263561,1,Q1,1.0,What physiotherapy literature defines the principles of progressive overload?,TWR
+0.2,0.6553302748315017,0.786784214592267,0.75,0.8753695140346327,0.9277724953713896,5,Q2,0.5,What physiotherapy literature defines the principles of progressive overload?,TWR
 1.0,1.0,1.0,0.75,0.5679726963447116,0.8100284197278486,5,Q2,0.0,What physiotherapy literature defines the principles of progressive overload?,Standard
-1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,What are the studies that defined OCEBM evidence levels in clinical research?,TWR
+1.0,1.0,1.0,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,What are the studies that defined OCEBM evidence levels in clinical research?,TWR
 0.25,0.5442761686266455,0.7888009473448709,0.0,0.25454838678859487,0.5171424081384397,5,Unranked,0.0,What are the studies that defined OCEBM evidence levels in clinical research?,Standard
-1.0,0.9530721273977244,0.9921181676913065,1.0,1.0,1.0,1,Q1,1.0,What studies established normal values for nerve conduction velocity?,TWR
+1.0,0.881567235613654,0.9671788311840074,1.0,0.7039180890341347,0.900536595186988,1,Q1,1.0,What studies established normal values for nerve conduction velocity?,TWR
 1.0,0.9337517462847186,0.9821244024814945,1.0,0.6854676728095195,0.9001693877158341,1,Q1,1.0,What studies established normal values for nerve conduction velocity?,Standard
-1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,2,Q1,1.0,What are the publications describing the Barthel ADL Index?,TWR
+1.0,0.9413401592471554,0.9896916885042134,1.0,0.9259795222585335,0.9617402390004923,2,Q1,1.0,What are the publications describing the Barthel ADL Index?,TWR
 1.0,0.9213669182023797,0.9808851350584301,1.0,0.8130542710519492,0.9740805572316852,2,Q1,1.0,What are the publications describing the Barthel ADL Index?,Standard
-1.0,1.0,1.0,1.0,0.9836821611850634,0.9852640753333892,2,Q1,1.0,What is the natural history of untreated lumbar spinal stenosis?,TWR
+0.5,0.655788107456709,0.8387500597140731,0.0,0.24926097193073435,0.6086036469251713,4,Unranked,0.3333333333333333,What is the natural history of untreated lumbar spinal stenosis?,TWR
 0.6666666666666666,0.7149296749630493,0.8949488349483146,0.0,0.0,0.43067655807339306,4,Unranked,0.0,What is the natural history of untreated lumbar spinal stenosis?,Standard
-0.6,0.7901522935666144,0.8853515664108221,1.0,0.9201515141900503,0.9896416782440803,3,Q1,0.0,What evidence defines the morphine equivalence dose conversion?,TWR
+1.0,0.9248247830402744,0.975660087134554,0.0,0.23981246656813146,0.5338931479009518,1,Unranked,0.0,What evidence defines the morphine equivalence dose conversion?,TWR
 0.6,0.6666666666666667,0.8594750797273849,0.0,0.23981246656813146,0.5338931479009518,3,Unranked,0.0,What evidence defines the morphine equivalence dose conversion?,Standard
-0.75,0.8130542710519492,0.9338791200376965,1.0,1.0,0.9930696627301051,3,Q2,0.5,What are the defining studies on spinal cord anatomy relevant to surgical approaches?,TWR
+1.0,1.0,1.0,0.75,0.8086598407528445,0.9258948952415027,2,Q2,1.0,What are the defining studies on spinal cord anatomy relevant to surgical approaches?,TWR
 1.0,1.0,1.0,1.0,0.734421189254329,0.9491229041606436,5,Q1,0.0,What are the defining studies on spinal cord anatomy relevant to surgical approaches?,Standard
-0.8,0.9507614678330717,0.9535495465891137,0.75,0.8647330574788535,0.9377223268794214,2,Q2,1.0,What decade-old longitudinal studies track outcomes of conservative vs surgical treatment for scoliosis?,TWR
+0.8,0.7151266058683413,0.8971189593832759,1.0,0.7653606369886218,0.9558295932317544,2,Q2,1.0,What decade-old longitudinal studies track outcomes of conservative vs surgical treatment for scoliosis?,TWR
 1.0,0.9376847570173164,0.9928227521372257,0.0,0.6291344046077069,0.7229919015646842,2,Unranked,0.5,What decade-old longitudinal studies track outcomes of conservative vs surgical treatment for scoliosis?,Standard
-1.0,0.8757357801347987,0.9625588944427584,0.75,0.8086598407528445,0.9258948952415027,1,Q2,1.0,What pharmacokinetic studies describe tramadol metabolism for dose adjustment?,TWR
+1.0,0.777258715800942,0.9487085861109854,0.75,0.734421189254329,0.9081667300127649,1,Q2,1.0,What pharmacokinetic studies describe tramadol metabolism for dose adjustment?,TWR
 0.6,0.7045688069984302,0.8883061888179429,0.75,0.7970995862182803,0.910876222013499,3,Q2,0.5,What pharmacokinetic studies describe tramadol metabolism for dose adjustment?,Standard
-1.0,1.0,0.9966387450644217,1.0,1.0,1.0,1,Q1,1.0,What studies established the psychometric properties of the SF-36 in orthopaedic patients?,TWR
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What studies established the psychometric properties of the SF-36 in orthopaedic patients?,TWR
 1.0,0.9300809618991231,0.9825507287688463,1.0,0.7039180890341347,0.8854598815714874,1,Q1,1.0,What studies established the psychometric properties of the SF-36 in orthopaedic patients?,Standard
-0.3333333333333333,0.8213137146137828,0.850834274847108,1.0,0.8519590445170673,0.9590145858107929,5,Q1,0.0,What is the pathophysiology of central sensitisation in chronic pain?,TWR
+0.3333333333333333,0.5158474921363962,0.7521866188906461,1.0,0.7039180890341347,0.9053112995489574,5,Q1,0.0,What is the pathophysiology of central sensitisation in chronic pain?,TWR
 1.0,1.0,1.0,1.0,0.8637574337885663,0.9472941807962689,5,Q1,0.0,What is the pathophysiology of central sensitisation in chronic pain?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,2,Q1,1.0,What long-term follow-up studies (15+ years) describe outcomes of lumbar fusion surgery?,TWR
+0.5,0.7653606369886217,0.8887223390544889,0.5,0.7653606369886217,0.8887223390544889,4,Q3,0.5,What long-term follow-up studies (15+ years) describe outcomes of lumbar fusion surgery?,TWR
 0.5,0.5148397826764053,0.7982212177685425,0.5,0.5316519652587917,0.7606220037494031,4,Q3,0.25,What long-term follow-up studies (15+ years) describe outcomes of lumbar fusion surgery?,Standard
-0.8,0.7901522935666144,0.9289343661788798,1.0,1.0,1.0,2,Q1,1.0,What are the validation studies for the Numeric Rating Scale for pain intensity?,TWR
+0.8,0.8469278726022758,0.9415860650813429,1.0,1.0,1.0,2,Q1,1.0,What are the validation studies for the Numeric Rating Scale for pain intensity?,TWR
 1.0,0.7641007546071396,0.9210270958907288,0.5,0.5316519652587917,0.7373230204909161,2,Q3,0.2,What are the validation studies for the Numeric Rating Scale for pain intensity?,Standard
-0.6,0.8122885095908974,0.9126548827839908,1.0,1.0,1.0,3,Q1,0.5,What evidence established the role of sleep disturbance in chronic pain amplification?,TWR
+0.6,0.5754229808182052,0.8285199407656381,1.0,1.0,1.0,3,Q1,0.3333333333333333,What evidence established the role of sleep disturbance in chronic pain amplification?,TWR
 0.25,0.6097907032889618,0.7771387877287111,1.0,1.0,1.0,5,Q1,0.3333333333333333,What evidence established the role of sleep disturbance in chronic pain amplification?,Standard
-1.0,0.9061442547954487,0.9837997689204072,1.0,1.0,1.0,1,Q1,1.0,What RCTs established the safety profile of epidural steroid injections?,TWR
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What RCTs established the safety profile of epidural steroid injections?,TWR
 1.0,0.6350235933991549,0.9019012898310325,1.0,1.0,1.0,1,Q1,1.0,What RCTs established the safety profile of epidural steroid injections?,Standard
-1.0,0.881567235613654,0.9639417185305827,0.5,0.8013764537628341,0.8789816277870557,1,Q3,0.25,What studies established the evidence base for spinal cord stimulation therapy?,TWR
+1.0,0.7022330281026689,0.9153416291951176,0.5,0.7970995862182803,0.8766985007019997,1,Q3,0.2,What studies established the evidence base for spinal cord stimulation therapy?,TWR
 1.0,0.91311732856428,0.9713190282343246,0.6666666666666666,0.9134015924715543,0.9134015924715543,1,Q3,0.0,What studies established the evidence base for spinal cord stimulation therapy?,Standard
-0.8,0.894999002123018,0.9541126629043598,0.75,0.8826803184943108,0.9462480870845545,2,Q2,1.0,What longitudinal cohort studies describe changes in Huntington's disease functional status?,TWR
+0.8,0.9612472558382992,0.9711524961933974,0.75,0.8826803184943108,0.9462480870845545,2,Q2,1.0,What longitudinal cohort studies describe changes in Huntington's disease functional status?,TWR
 1.0,0.9413401592471554,0.9936842654610013,0.75,0.6231524298268358,0.8462298541526516,2,Q2,1.0,What longitudinal cohort studies describe changes in Huntington's disease functional status?,Standard
 1.0,1.0,1.0,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,What does the evidence show about mesenchymal stem cell therapy for knee osteoarthritis?,TWR
 0.2,0.7507390280692655,0.7737876016902607,1.0,0.9413401592471554,0.9896916885042134,5,Q1,0.5,What does the evidence show about mesenchymal stem cell therapy for knee osteoarthritis?,Standard
-1.0,1.0,1.0,1.0,1.0,0.9952735002565847,1,Q1,1.0,What do systematic reviews show about persistent post-COVID pain?,TWR
+1.0,1.0,1.0,1.0,1.0,0.9909665978020246,1,Q1,1.0,What do systematic reviews show about persistent post-COVID pain?,TWR
 0.25,0.41531064659152533,0.7128718056817412,0.0,0.48516021732359466,0.6944171227237296,5,Unranked,0.0,What do systematic reviews show about persistent post-COVID pain?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do RCTs show about virtual reality for post-surgical rehabilitation pain?,TWR
+1.0,0.6223508534204809,0.9005046989274599,1.0,0.9413401592471554,0.9936842654610013,1,Q1,1.0,What do RCTs show about virtual reality for post-surgical rehabilitation pain?,TWR
 0.2,0.5630635209026998,0.771635269918348,1.0,1.0,0.9858872048922094,5,Q1,0.5,What do RCTs show about virtual reality for post-surgical rehabilitation pain?,Standard
-0.8,0.7638523816845478,0.921294908344201,1.0,1.0,1.0,2,Q1,1.0,What do neurology journal RCTs show about neuromodulation for refractory chronic pain?,TWR
+0.25,0.618306950342076,0.7772507725092145,0.5,0.46927872602275644,0.7746469457232199,5,Q3,0.3333333333333333,What do neurology journal RCTs show about neuromodulation for refractory chronic pain?,TWR
 1.0,0.8322824782867448,0.9562707599036264,0.0,0.5661122946679319,0.6332525654008375,4,Unranked,0.0,What do neurology journal RCTs show about neuromodulation for refractory chronic pain?,Standard
-1.0,1.0,1.0,0.75,0.7653606369886217,0.9248669662577422,1,Q2,1.0,What do systematic reviews show about exercise for chronic low back pain?,TWR
+1.0,1.0,1.0,1.0,0.9323665287394267,0.9880375430465429,1,Q1,1.0,What do systematic reviews show about exercise for chronic low back pain?,TWR
 0.2,0.38771149040910263,0.7163919950259342,0.75,0.8647330574788535,0.9305419211873026,5,Q2,0.3333333333333333,What do systematic reviews show about exercise for chronic low back pain?,Standard
-0.8,0.9015229356661434,0.954997967421903,1.0,1.0,1.0,2,Q1,1.0,What do recent RCTs show about pharmacological management of neuropathic pain after spinal cord injury?,TWR
+0.8,0.8037457590228262,0.9442001051491006,1.0,0.747782915792203,0.8924238758803253,2,Q1,1.0,What do recent RCTs show about pharmacological management of neuropathic pain after spinal cord injury?,TWR
 0.8,0.7487547399156647,0.8856071829184498,1.0,1.0,1.0,2,Q1,1.0,What do recent RCTs show about pharmacological management of neuropathic pain after spinal cord injury?,Standard
-1.0,1.0,1.0,0.5,0.7653606369886217,0.8841966403135247,1,Q3,0.5,What do systematic reviews show about prehabilitation before joint replacement?,TWR
+1.0,0.7631344712273078,0.9260086137697868,0.5,0.7653606369886217,0.8883350736628749,1,Q3,0.3333333333333333,What do systematic reviews show about prehabilitation before joint replacement?,TWR
 1.0,0.7641007546071396,0.9171801528955131,0.5,0.6012610260559063,0.8069320812880308,1,Q3,0.2,What do systematic reviews show about prehabilitation before joint replacement?,Standard
-1.0,0.9530721273977244,0.9921181676913065,1.0,1.0,1.0,1,Q1,1.0,What do RCTs show about interventions for pain catastrophising?,TWR
+0.2,0.6245770191817948,0.8141257851806453,0.75,0.9376847570173164,0.9522732586263408,5,Q2,0.5,What do RCTs show about interventions for pain catastrophising?,TWR
 0.2,0.2655788107456709,0.6546473725810741,0.75,0.6231524298268358,0.8462298541526516,5,Q2,0.25,What do RCTs show about interventions for pain catastrophising?,Standard
-1.0,0.9530721273977244,0.9918743919356368,1.0,1.0,1.0,1,Q1,1.0,What do oncology journal trials show about opioid-sparing strategies in cancer pain?,TWR
+0.8,0.9061442547954487,0.9553968839650828,0.0,0.5307212739772434,0.7328286204777911,2,Unranked,0.5,What do oncology journal trials show about opioid-sparing strategies in cancer pain?,TWR
 0.2,0.45252453969372164,0.6979970572273997,0.0,0.0,0.48928691090637516,5,Unranked,0.25,What do oncology journal trials show about opioid-sparing strategies in cancer pain?,Standard
 1.0,0.881567235613654,0.965053459699563,1.0,1.0,1.0,1,Q1,1.0,What do meta-analyses show about cardiac rehabilitation efficacy?,TWR
 1.0,0.7657232736758686,0.9485156508996107,1.0,0.9413401592471554,0.9934535397251649,1,Q1,1.0,What do meta-analyses show about cardiac rehabilitation efficacy?,Standard
-0.6,0.8482809311481097,0.914413458113177,1.0,0.9810048227765072,0.9810048227765072,3,Q1,0.0,What do systematic reviews show about closed-loop spinal cord stimulation versus conventional SCS?,TWR
+0.6,0.6113497663510647,0.8384775816594784,1.0,0.7970995862182803,0.9588762147781782,3,Q1,0.0,What do systematic reviews show about closed-loop spinal cord stimulation versus conventional SCS?,TWR
 0.3333333333333333,0.687147515984829,0.8452465148579977,0.75,0.9373691761066303,0.9373691761066303,5,Q2,0.0,What do systematic reviews show about closed-loop spinal cord stimulation versus conventional SCS?,Standard
-0.8,0.8424985031845269,0.9393557313746772,1.0,1.0,1.0,2,Q1,1.0,What do RCTs show about multimodal rehabilitation after lumbar fusion?,TWR
+0.8,0.7901522935666144,0.9289343661788798,1.0,1.0,1.0,2,Q1,1.0,What do RCTs show about multimodal rehabilitation after lumbar fusion?,TWR
 0.75,0.8826803184943108,0.9441982084506297,0.5,0.4985219438614687,0.7746999183519345,3,Q3,0.3333333333333333,What do RCTs show about multimodal rehabilitation after lumbar fusion?,Standard
-1.0,0.9530721273977244,0.9808355952070543,1.0,0.8590516752196962,0.9696596005674131,1,Q1,1.0,What is the evidence for mindfulness in cancer-related pain?,TWR
+0.2,0.6553302748315017,0.7987664528425886,1.0,1.0,1.0,5,Q1,0.5,What is the evidence for mindfulness in cancer-related pain?,TWR
 0.2,0.5148397826764053,0.690967754585774,0.0,0.5442761686266455,0.7377452465619763,5,Unranked,0.3333333333333333,What is the evidence for mindfulness in cancer-related pain?,Standard
-1.0,0.8757357801347987,0.9625588944427584,1.0,1.0,0.9958615666506498,1,Q1,1.0,What do RCTs show about pain management in children with cancer?,TWR
+1.0,0.8346393630113783,0.9588210297090177,1.0,1.0,1.0,1,Q1,1.0,What do RCTs show about pain management in children with cancer?,TWR
 0.2,0.716432249876831,0.7924916398139735,0.0,0.5307212739772434,0.7501373711886336,5,Unranked,0.5,What do RCTs show about pain management in children with cancer?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do systematic reviews show about telerehabilitation for stroke survivors?,TWR
+1.0,0.8122885095908974,0.9656996788659544,1.0,1.0,1.0,1,Q1,1.0,What do systematic reviews show about telerehabilitation for stroke survivors?,TWR
 1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,What do systematic reviews show about telerehabilitation for stroke survivors?,Standard
-1.0,0.9061442547954487,0.9832843970500206,1.0,1.0,1.0,1,Q1,1.0,What do expert consensus guidelines say about CRPS management?,TWR
+1.0,0.9061442547954487,0.9865215097034452,1.0,1.0,0.9906609666436669,1,Q1,1.0,What do expert consensus guidelines say about CRPS management?,TWR
 0.2,0.5931981648989011,0.7805154553589838,0.0,0.38268031849431083,0.69599645880117,5,Unranked,0.3333333333333333,What do expert consensus guidelines say about CRPS management?,Standard
-1.0,1.0,1.0,0.0,0.48516021732359466,0.7226719385613206,2,Unranked,0.0,What case series describe complications of naphtalanotherapy?,TWR
+1.0,0.9810048227765072,0.9846468002590378,0.0,0.4720614332243989,0.7430749000387983,2,Unranked,0.0,What case series describe complications of naphtalanotherapy?,TWR
 1.0,1.0,1.0,0.0,0.27460425513113723,0.6240657363944289,2,Unranked,0.0,What case series describe complications of naphtalanotherapy?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What do expert opinion articles say about physiotherapy duration for psoriasis rehabilitation?,TWR
+0.8,0.9061442547954487,0.9572881727261123,0.0,0.5307212739772434,0.7606395682357036,2,Unranked,0.5,What do expert opinion articles say about physiotherapy duration for psoriasis rehabilitation?,TWR
 1.0,0.6394702686417724,0.9014983308382094,0.0,0.5637932991212148,0.7416320550066542,2,Unranked,0.0,What do expert opinion articles say about physiotherapy duration for psoriasis rehabilitation?,Standard
-1.0,0.9530721273977244,0.9884050858715858,1.0,1.0,1.0,1,Q1,1.0,What do observational studies describe about C2-C3 nerve stimulation?,TWR
+1.0,0.9530721273977244,0.9921181676913065,1.0,1.0,1.0,1,Q1,1.0,What do observational studies describe about C2-C3 nerve stimulation?,TWR
 0.2,0.49320831104542096,0.746076059356889,0.0,0.6934264036172708,0.6934264036172708,5,Unranked,0.0,What do observational studies describe about C2-C3 nerve stimulation?,Standard
-0.75,0.9376847570173164,0.9504433059523778,1.0,0.8590516752196962,0.9689378256888371,3,Q1,0.5,What do expert recommendations say about conservative management of juvenile parotitis?,TWR
+0.75,0.7804185934220761,0.9064042401622728,1.0,0.6854676728095195,0.890118192512622,3,Q1,0.3333333333333333,What do expert recommendations say about conservative management of juvenile parotitis?,TWR
 1.0,0.9049765583210164,0.9885969719356578,1.0,0.6131471927654584,0.8503449055347546,3,Q1,0.0,What do expert recommendations say about conservative management of juvenile parotitis?,Standard
-1.0,0.9337517462847186,0.982721085025836,1.0,1.0,0.9870231486416438,1,Q2,1.0,What studies describe the spinal cord's segmental organisation relevant to surgery?,TWR
+1.0,0.9854904886373149,0.9866958186074293,0.75,0.734421189254329,0.9081667300127649,1,Q2,1.0,What studies describe the spinal cord's segmental organisation relevant to surgery?,TWR
 0.5,0.6993694869720469,0.8375161037724467,1.0,0.734421189254329,0.9491229041606436,5,Q1,0.0,What studies describe the spinal cord's segmental organisation relevant to surgery?,Standard
-0.5,0.7294661149577071,0.8641653706721059,0.5,0.6012610260559063,0.8302310645465178,4,Q3,0.0,What do case reports describe about opioid-induced hyperalgesia?,TWR
+0.5,0.7294661149577071,0.8641653706721059,0.5,0.5316519652587917,0.7606220037494031,4,Q3,0.0,What do case reports describe about opioid-induced hyperalgesia?,TWR
 1.0,1.0,0.9932683086972719,0.0,0.4298593499260986,0.6995953445581752,3,Unranked,0.0,What do case reports describe about opioid-induced hyperalgesia?,Standard
 1.0,1.0,1.0,1.0,0.8519590445170673,0.9557034395662896,1,Q1,1.0,What do rehabilitation journals report on the role of family support in stroke recovery?,TWR
 1.0,0.8964229539525822,0.9867604540249252,1.0,0.8427338364047597,0.9549236759008023,1,Q1,1.0,What do rehabilitation journals report on the role of family support in stroke recovery?,Standard
-0.75,0.9376847570173164,0.9484674290478176,0.75,0.8086598407528445,0.9258948952415027,3,Q2,0.5,What cohort studies describe physiotherapy outcomes after vertebral arthrodesis?,TWR
+0.75,0.701785511624456,0.8775166548174108,0.75,0.8826803184943108,0.9441390272147961,3,Q2,0.3333333333333333,What cohort studies describe physiotherapy outcomes after vertebral arthrodesis?,TWR
 1.0,0.7660098612910087,0.9213963208540731,0.75,0.950076996190085,0.950076996190085,3,Q2,0.0,What cohort studies describe physiotherapy outcomes after vertebral arthrodesis?,Standard
-0.8,0.9061442547954487,0.9572881727261123,0.75,0.8826803184943108,0.9419989793959098,2,Q2,1.0,What do geriatric journals report on delirium risk after orthopaedic surgery?,TWR
+0.8,0.8592163821931731,0.9509887186998964,0.75,0.3738914578961015,0.7814477862532458,2,Q2,1.0,What do geriatric journals report on delirium risk after orthopaedic surgery?,TWR
 0.8,0.9474995010615089,0.9582509036050222,0.0,0.3212043018970804,0.6135456967910718,2,Unranked,0.5,What do geriatric journals report on delirium risk after orthopaedic surgery?,Standard
-0.8,0.9300809618991231,0.9450232773040584,0.75,0.9376847570173164,0.9413472655899564,2,Q2,1.0,What do case series describe about parotitis antibiotic choices?,TWR
+0.6,0.8891809465236166,0.9058723971152652,1.0,0.9836821611850634,0.979329864220968,3,Q1,0.5,What do case series describe about parotitis antibiotic choices?,TWR
 0.5,0.8739160282497203,0.8932476648399984,0.0,0.48516021732359466,0.6780148307744244,4,Unranked,0.5,What do case series describe about parotitis antibiotic choices?,Standard
-0.8,0.9015229356661434,0.9543271605402797,1.0,1.0,1.0,2,Q1,1.0,What evidence addresses pain management in elderly nursing home residents?,TWR
+0.8,0.9507614678330717,0.9627554035975248,1.0,0.7039180890341347,0.9047172294870751,2,Q1,1.0,What evidence addresses pain management in elderly nursing home residents?,TWR
 1.0,0.8424985031845269,0.97988924372127,0.0,0.5014780561385311,0.6943326695893609,1,Unranked,0.5,What evidence addresses pain management in elderly nursing home residents?,Standard
-1.0,1.0,1.0,0.75,0.8753695140346327,0.9414729650137957,1,Q2,1.0,What do observational studies describe about long-term physiotherapy effects in adult scoliosis?,TWR
+1.0,0.9407836178068271,0.98561891868032,0.75,0.8590516752196962,0.928975264040152,1,Q2,1.0,What do observational studies describe about long-term physiotherapy effects in adult scoliosis?,TWR
 0.2,0.6462442622073531,0.786436632826367,0.0,0.6934264036172708,0.6934264036172708,5,Unranked,0.5,What do observational studies describe about long-term physiotherapy effects in adult scoliosis?,Standard
-1.0,0.8938557452045515,0.9774933106159569,1.0,0.9197207891481876,0.9197207891481876,1,Q2,1.0,What evidence addresses rehabilitation after naphtalanotherapy?,TWR
+0.8,0.8592163821931731,0.9509887186998964,0.0,0.6934264036172708,0.6934264036172708,2,Unranked,0.5,What evidence addresses rehabilitation after naphtalanotherapy?,TWR
 0.8,0.6394702686417724,0.8478294043993339,0.0,0.5014780561385311,0.7161797710448459,2,Unranked,0.0,What evidence addresses rehabilitation after naphtalanotherapy?,Standard
-1.0,1.0,1.0,0.75,0.8826803184943108,0.9419989793959098,1,Q2,1.0,What case reports describe cervical PNS device complications?,TWR
+0.4,0.79344133571786,0.8314022946019718,0.0,0.18694572894805075,0.5945020573051951,4,Unranked,0.3333333333333333,What case reports describe cervical PNS device complications?,TWR
 1.0,1.0,1.0,0.0,0.5,0.5,4,Unranked,0.0,What case reports describe cervical PNS device complications?,Standard
-1.0,1.0,1.0,1.0,0.7653606369886217,0.9558295932317544,1,Q1,1.0,What do expert consensus statements recommend for psoriatic arthritis rehabilitation?,TWR
+0.8,0.9612472558382992,0.9711524961933974,0.0,0.5307212739772434,0.7606395682357036,2,Unranked,0.5,What do expert consensus statements recommend for psoriatic arthritis rehabilitation?,TWR
 1.0,0.8026120593560899,0.9444537180991301,0.0,0.5637932991212148,0.7248195853009508,2,Unranked,0.0,What do expert consensus statements recommend for psoriatic arthritis rehabilitation?,Standard
-1.0,0.9871064222343278,0.9899577678317768,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,What do narrative reviews describe about postoperative cognitive dysfunction?,TWR
+1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,What do narrative reviews describe about postoperative cognitive dysfunction?,TWR
 0.4,0.7374975053075448,0.847877989000535,0.0,0.2358992453928603,0.6434555737500047,4,Unranked,0.5,What do narrative reviews describe about postoperative cognitive dysfunction?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What expert opinion addresses chronic pain and suicidality?,TWR
+1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,What expert opinion addresses chronic pain and suicidality?,TWR
 0.6,0.8808501001352579,0.8914261231772527,0.0,0.5307212739772434,0.7501373711886336,3,Unranked,0.3333333333333333,What expert opinion addresses chronic pain and suicidality?,Standard
-1.0,0.7877114904091027,0.9521790303294917,1.0,1.0,1.0,1,Q1,1.0,What epidemiological studies address occupational low back pain in manual workers?,TWR
+0.6,0.6938557452045513,0.8758852995918351,1.0,1.0,1.0,3,Q1,0.3333333333333333,What epidemiological studies address occupational low back pain in manual workers?,TWR
 0.6,0.6425503004057738,0.8422868056966266,1.0,0.8753695140346327,0.9766769370430949,3,Q1,0.2,What epidemiological studies address occupational low back pain in manual workers?,Standard
 1.0,1.0,1.0,1.0,0.9259795222585335,0.9786028494968771,1,Q1,1.0,What do consensus guidelines say about exercise contraindications in orthopaedic patients?,TWR
 1.0,0.8964229539525822,0.9800331970192738,0.75,0.688423785086582,0.8927877278790923,1,Q2,1.0,What do consensus guidelines say about exercise contraindications in orthopaedic patients?,Standard
-0.75,0.8826803184943108,0.9462480870845545,1.0,0.9836821611850634,0.9875022990263561,3,Q1,0.5,What do retrospective studies say about antibiotic duration in parotitis?,TWR
+0.75,0.7653606369886217,0.9248669662577422,1.0,0.734421189254329,0.9420664090627167,3,Q1,0.5,What do retrospective studies say about antibiotic duration in parotitis?,TWR
 0.5,0.8549208510262275,0.8703036737515617,0.0,0.5014780561385311,0.7338298176236662,4,Unranked,0.3333333333333333,What do retrospective studies say about antibiotic duration in parotitis?,Standard

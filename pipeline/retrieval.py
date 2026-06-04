@@ -59,16 +59,15 @@ class TFRPipeline:
 
         return bm25_ranking, faiss_ranking
 
-    # Trust-Weighted Ranking (TWR)
-    def calculate_trust_score(self, doc: ClinicalDocument) -> float:
+    def calculate_metadata_components(self, doc: ClinicalDocument):
         """
-        Enhanced Trust function incorporating Journal Tier, Evidence Level, and Recency.
+        Calculates independent metadata scores (0.0 to 1.0) for the additive formula.
         """
-        # Evidence Level (OCEBM): 1 is best (RCT/Meta-analysis), 5 is lowest (Expert Opinion)
+        # Evidence Level Component (w1)
         ocebm_weights = {1: 1.0, 2: 0.8, 3: 0.6, 4: 0.4, 5: 0.2}
-        evidence_score = ocebm_weights.get(doc.evidence_level, 0.1)
+        w1_evidence = ocebm_weights.get(doc.evidence_level, 0.1)
         
-        # Journal Authority
+        # Journal Authority Component (w2)
         tier_weights = {
             "Q1": 1.0,
             "Q2": 0.85,
@@ -76,36 +75,51 @@ class TFRPipeline:
             "Q4": 0.55,
             "Unranked": 0.40
         }
-        journal_multiplier = tier_weights.get(doc.journal_tier, 0.40)
+        w2_journal = tier_weights.get(doc.journal_tier, 0.40)
         
-        # Recency Decay
+        # Recency Component (w3)
         if doc.publication_year <= 0:
             age = 10 
         else:
             age = max(0, self.current_year - doc.publication_year)
+        w3_recency = float(np.exp(-0.05 * age))
         
-        recency_multiplier = np.exp(-0.05 * age) 
-        
-        # Final TWR Calculation
-        return evidence_score * journal_multiplier * recency_multiplier
+        return w1_evidence, w2_journal, w3_recency
 
-    def trust_weighted_rrf(self, bm25_ranking, faiss_ranking) -> List[tuple]:
+    def trust_weighted_rrf(self, bm25_ranking, faiss_ranking, 
+                           alpha: float = 1.0, 
+                           beta: float = 0.3, 
+                           gamma: float = 0.3, 
+                           delta: float = 0.2) -> List[int]:
+        """
+        Additive TWR: Score = alpha * Reciprocal_Rank + beta * w1 + gamma * w2 + delta * w3
+        """
         twr_scores = {}
         
         for rank_lists in [bm25_ranking, faiss_ranking]:
             for rank, doc_idx in enumerate(rank_lists):
                 doc = self.corpus[doc_idx]
                 
-                # Calculate TWR Math: trust(source) / (k + rank)
-                trust_score = self.calculate_trust_score(doc)
-                score_contribution = trust_score / (self.k_rrf + rank + 1)
+                # Pure Reciprocal Rank Relevance component
+                relevance_contribution = 1.0 / (self.k_rrf + rank + 1)
+                
+                # Fetch structural metadata values
+                w1, w2, w3 = self.calculate_metadata_components(doc)
+                
+                # Compute Linear Additive Combination
+                score_contribution = (
+                    (alpha * relevance_contribution) + 
+                    (beta * w1) + 
+                    (gamma * w2) + 
+                    (delta * w3)
+                )
                 
                 if doc_idx in twr_scores:
                     twr_scores[doc_idx] += score_contribution
                 else:
                     twr_scores[doc_idx] = score_contribution
                     
-        # Sort by the new TWR score
+        # Sort by total accumulated additive scores
         sorted_indices = sorted(twr_scores.keys(), key=lambda x: twr_scores[x], reverse=True)
         return sorted_indices
 

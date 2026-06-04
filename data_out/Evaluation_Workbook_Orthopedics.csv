@@ -1,65 +1,74 @@
 Query_ID,Query,Response A,Response B
-CLIN-EVAL-02,Do systematic reviews support hydrotherapy for reducing spasticity in multiple sclerosis?,"No. None of the retrieved documents address hydrotherapy for spasticity in multiple sclerosis.
+CLIN-EVAL-02,Do systematic reviews support hydrotherapy for reducing spasticity in multiple sclerosis?,"No. The retrieved documents do not contain any systematic review evaluating hydrotherapy for spasticity reduction in multiple sclerosis.
+
+Doc 3 discusses exercise as a non-pharmacological symptomatic treatment for MS but does not mention hydrotherapy specifically. Doc 5 lists ""physical modalities"" among spasticity management options but provides no evidence or systematic review data on hydrotherapy.
+
+**Gap:** No retrieved evidence on hydrotherapy for spasticity in multiple sclerosis.
 
 Used: None
-Not used: Doc1 — foot-drop devices; Doc2 — tSCS for SCI spasticity; Doc3 — tDCS for MS; Doc4 — steroids in THA; Doc5 — neurological rehabilitation for mobility/balance in MS — none relevant to hydrotherapy for MS spasticity.
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address hydrotherapy for spasticity in MS","No. None of the retrieved documents report a systematic review evaluating hydrotherapy for spasticity reduction in multiple sclerosis.
 
-Gap: No retrieved evidence on hydrotherapy for reducing spasticity in multiple sclerosis.","No. None of the retrieved documents report a systematic review evaluating hydrotherapy for spasticity reduction in multiple sclerosis.
-
-- Doc 1 lists therapeutic exercise and physical modalities as spasticity management options but does not mention hydrotherapy or provide systematic review evidence.
-- Doc 2 discusses exercise as a non-pharmacological symptomatic treatment for MS but does not address hydrotherapy or spasticity specifically.
+- Doc 1 lists therapeutic exercise and physical modalities as spasticity management options but does not mention hydrotherapy or cite a systematic review.
+- Doc 2 discusses exercise as a non-pharmacological treatment for MS symptoms but does not address hydrotherapy or spasticity specifically.
 - Doc 3, Doc 4, and Doc 5 cover intrathecal baclofen, ankle-foot orthosis/functional electrical stimulation, and transcutaneous spinal cord stimulation, respectively — none involve hydrotherapy.
 
-Gap: No retrieved evidence on hydrotherapy for spasticity in multiple sclerosis.
+Gap: No retrieved evidence on systematic reviews of hydrotherapy for spasticity in multiple sclerosis.
 
 Used: None
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address hydrotherapy for spasticity in MS"
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address hydrotherapy for spasticity in MS."
 CLIN-EVAL-03,RCT evidence comparing minimally invasive vs open lumbar decompression outcomes,"The retrieved documents do not provide direct RCT evidence comparing minimally invasive vs open lumbar decompression outcomes.
 
-- **Doc 1** is a single case report of full-endoscopic decompression under local anesthesia — no comparator, no RCT.
-- **Doc 2** compares a novel posterior lumbar total joint replacement (LTJR) to TLIF (fusion), not decompression alone, and is a retrospective matched cohort, not an RCT.
-- **Doc 3** is a case series of microendoscopic discectomy (MMED) for spondylolisthesis — no open comparator, no RCT.
-- **Doc 4** examines physical therapy timing after open lumbar decompression and fusion — no minimally invasive comparator.
+- **Doc 1** is a single case report of full-endoscopic lumbar decompression under local anesthesia. No comparator group.
+- **Doc 2** compares a novel posterior lumbar total joint replacement (LTJR) to TLIF (fusion), not decompression alone. Both are open procedures; neither is a minimally invasive decompression.
+- **Doc 3** is a case series of a minimally invasive fusion technique (MMED) for spondylolisthesis. No open comparator.
+- **Doc 4** examines physical therapy timing after open lumbar decompression and fusion. No minimally invasive comparator.
 - **Doc 5** addresses Achilles tendon repair, not lumbar spine.
-
-**Gap:** No retrieved evidence provides RCT-level comparison of minimally invasive vs open lumbar decompression outcomes.
-
-Used: None  
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address the query (no RCT evidence on minimally invasive vs open lumbar decompression)","**No RCT evidence comparing minimally invasive vs open lumbar decompression outcomes was retrieved.**
-
-The provided documents do not contain a randomized controlled trial (RCT) addressing this query.
-
-- **Doc 2** describes a case series of a minimally invasive technique (MMED) for lumbar spondylolisthesis, but it is not an RCT and does not include an open surgery comparator.
-- **Docs 1 and 3** are retrospective cohort studies on ambulation protocols after lumbar fusion, not comparisons of surgical approaches.
-- **Docs 4 and 5** address acetabular fractures and spinal tuberculosis, respectively, and are irrelevant to the query.
 
 **Gap:** No retrieved evidence on RCTs comparing minimally invasive vs open lumbar decompression outcomes.
 
-Used: None
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address the query"
+Used: None  
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address the query","**No direct RCT evidence comparing minimally invasive vs open lumbar decompression is present in the provided documents.**
+
+The retrieved literature includes:
+- **Doc 1**: Retrospective comparison of a novel posterior lumbar total joint replacement (LTJR) vs open TLIF — not a comparison of minimally invasive vs open decompression.
+- **Doc 2**: Case report of transforaminal full-endoscopic lumbar decompression — no comparator group.
+- **Doc 3**: Retrospective study on ambulation protocols after open lumbar fusion — not a comparison of surgical approaches.
+- **Doc 4**: Case series of minimally invasive MMED-assisted fusion for spondylolisthesis — no open comparator.
+- **Doc 5**: Study on acetabular fracture fixation — irrelevant to lumbar decompression.
+
+**Gap**: No retrieved evidence addresses RCT-level comparison of minimally invasive (endoscopic, tubular, or microendoscopic) vs open lumbar decompression outcomes.
+
+Used: None  
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none provide RCT evidence comparing minimally invasive vs open lumbar decompression outcomes."
 CLIN-EVAL-04,Systematic review on early vs delayed physiotherapy after ACL reconstruction,"**Answer:** The retrieved documents do not directly compare early vs delayed physiotherapy after ACL reconstruction. No study in the set randomizes or systematically reviews timing of rehabilitation initiation.
 
 **What the documents do provide:**
-- Standard postoperative ACL rehabilitation includes early non-weight-bearing and passive range of motion, followed by gradual strengthening over ~9 months (Doc 1).
-- A quality improvement project shifted from unstructured rehab to criteria-driven progression, increasing return-to-sport time from 6 to 9.9 months (Doc 5). This suggests that delaying return-to-sport milestones (not necessarily delaying therapy start) aligns with best evidence.
-- Preoperative functional scores and Y-balance test performance predict postoperative recovery (Doc 2), implying that prehabilitation timing may matter, but this does not address early vs delayed postoperative physiotherapy.
-- No document provides evidence on the effect of starting physiotherapy earlier (e.g., day 1 vs week 2) or later after surgery.
+- Standard postoperative ACL rehabilitation includes early non-weight-bearing and passive range of motion, followed by gradual strengthening and dynamic control (Doc 1).
+- A quality improvement project shifted from unstructured rehab to a criteria-driven progression protocol, increasing mean return-to-sport time from 6 to 9.9 months (Doc 5). This aligns with best-evidence recommendations but does not test early vs delayed start.
+- Preoperative functional tests and patient-reported outcomes predict postoperative recovery (Doc 2), but this does not address timing of postoperative physiotherapy.
+- Doc 3 and Doc 4 are not relevant to the timing question.
 
-**Gap:** No retrieved evidence directly addresses early versus delayed initiation of physiotherapy after ACL reconstruction. The documents discuss rehabilitation content and progression criteria, not timing of therapy onset.
+**Gap:** No retrieved evidence directly compares early versus delayed initiation of physiotherapy after ACL reconstruction. The documents describe standard early-phase rehabilitation content and criteria-driven progression, but do not provide comparative outcomes for different start times.
 
-**Used:** Doc1, Doc5  
-**Not used:** Doc2, Doc3, Doc4 — not relevant to the query (Doc2: preoperative predictors; Doc3: bracing; Doc4: landing biomechanics and graft rupture risk)","- **Early vs. delayed physiotherapy after ACL reconstruction is not directly addressed by the provided documents.** The retrieved literature compares rehabilitation *models* (functional vs. traditional) and evaluates specific biomechanical/prognostic factors, but does not compare timing of physiotherapy initiation.
+Used: Doc1, Doc5
+Not used: Doc2, Doc3, Doc4 — not relevant to the query (Doc2 addresses preoperative predictors; Doc3 addresses bracing; Doc4 addresses landing biomechanics and second injury risk)","- **Early vs delayed physiotherapy after ACL reconstruction:** The retrieved documents do not directly compare early vs delayed physiotherapy timing. Doc 2 describes the current standard of care for postoperative ACL physical therapy, which includes early non-weight-bearing exercises and passive range of motion, followed by gradual strengthening over ~9 months. Doc 3 compares a functional rehabilitation model (FRM) vs traditional rehabilitation model (TRM) over 24 weeks, but both are initiated postoperatively — no delay arm is studied.
 
-- **Relevant indirect evidence:**
-  - Doc 1: A functional rehabilitation model (FRM) starting post-operatively and progressing over 24 weeks outperformed a traditional time-oriented protocol in return-to-sport rates, strength, proprioception, and patient-reported outcomes at 48 weeks. This suggests that a structured, progressive early program (not delayed) yields superior results.
-  - Doc 5: Preoperative functional tests and patient-reported measures predict post-operative recovery, implying that early identification and targeted prehabilitation (not delayed therapy) may improve outcomes.
+- **Key findings from Doc 3 (FRM vs TRM):** In high sports demand individuals (HSDs), FRM (performance-based progressive protocol with multimodal sensory training, closed-chain exercises, unstable surface proprioceptive training, sport-specific skill integration) significantly improved 48-week return-to-sport rate (89.3% vs 62.1%, RR 1.44, NNT 3.7), quadriceps strength, limb symmetry, hop tests, proprioception, and patient-reported outcomes (IKDC, Lysholm, ACL-RSI) compared to TRM (standard time-oriented protocol). FRM showed sustained linear improvement; TRM plateaued after 24 weeks.
 
-**Gap:** No retrieved evidence directly compares early vs. delayed initiation of physiotherapy after ACL reconstruction. All protocols described begin rehabilitation in the early post-operative period.
+- **Doc 2 standard care:** Includes pain control, ROM, quadriceps strengthening, weight bearing, bracing, dynamic stabilization. Early phase: non-weight-bearing and passive ROM. Total rehab ~9 months with frequent PT visits and home exercise program. RTS requires meeting perceptual, subjective, objective, neuromuscular, functional, sport-specific, and load management criteria.
 
-Used: Doc1, Doc5  
-Not used: Doc2, Doc3, Doc4 — not relevant to timing of physiotherapy initiation"
+- **Doc 5:** At 10 months post-ACLR, forward lunge movement time normalized but knee joint biomechanics (flexion angle, extensor moment, power, angular velocity) remained unchanged vs pre-surgery and lower than controls, suggesting incomplete functional restoration despite perceived improvement.
+
+- **Doc 1:** Preoperative functional tests and patient-reported outcomes predict postoperative recovery. Those with prior surgery had better thresholds, supporting prehabilitation assessment.
+
+- **Doc 4:** Not relevant to timing of physiotherapy; addresses 2-D frontal plane movement and second ACL injury risk at RTS.
+
+**Gap:** No retrieved evidence directly comparing early vs delayed initiation of physiotherapy after ACL reconstruction. All protocols described begin rehabilitation postoperatively without a delayed comparator.
+
+Used: Doc2, Doc3, Doc5  
+Not used: Doc1 — addresses preoperative predictors, not timing of postoperative physiotherapy; Doc4 — addresses movement analysis and second injury risk, not rehabilitation timing"
 CLIN-EVAL-05,What are the clinical observations of naphtalanotherapy in psoriatic arthritis rehabilitation?,"- Naphtalanotherapy combined with individually tailored physiotherapy significantly improved pain, stiffness, swelling, disease activity, skin condition, and quality of life in psoriatic arthritis patients.
-- A three-week program was more effective than a two-week program.
+- A three-week treatment program was more effective than a two-week program.
 - Findings support inclusion of naphtalanotherapy and physiotherapy in psoriatic disease management, with potential for extended rehabilitation to yield long-term benefits.
 
 Used: Doc5
@@ -76,178 +85,193 @@ Used: Doc1
 Not used: Doc2, Doc3, Doc4, Doc5 — not relevant to the query (Doc2: netakimab; Doc3: synovitis score; Doc4: craniocervical junction; Doc5: claims algorithm)"
 CLIN-EVAL-06,What retrospective cohort studies examine walking recovery after spinal arthrodesis?,"Based exclusively on the provided documents, one retrospective cohort study examines walking recovery after spinal arthrodesis.
 
-- **Doc 1** is a retrospective cohort study of 376 patients undergoing spinal arthrodesis. It found mean ambulation recovery time was 3 days post-surgery. Independent predictors of delayed walking recovery included: increasing age, higher ASA grade, longer surgery duration, and greater number of stabilized levels (5–9 levels, and >10 levels).
+- **Doc 1** is a retrospective cohort study of 376 patients undergoing spinal arthrodesis. It found mean ambulation recovery time was 3 days post-surgery. Independent predictors of delayed walking recovery included: increasing age, longer surgery duration, higher anesthesia risk (ASA grade), and greater number of stabilized levels (5–9 levels and ≥10 levels).
 
 - **Doc 3** is a cross-sectional survey with retrospective review of prospectively collected data on adult spinal deformity patients after long-segment fusion to the pelvis. It reports that 64.2% of patients had improved walking capacity postoperatively, 17.9% unchanged, and 17.9% worse. Factors associated with decreased walking tolerance included greater lumbar lordosis correction and worse PROMIS-Physical Function scores.
 
-**Gap:** No other retrieved documents (Doc 2, Doc 4, Doc 5) examine walking recovery after spinal arthrodesis.
+**Gap:** No retrieved evidence on walking recovery after spinal arthrodesis from any other retrospective cohort study design.
 
 Used: Doc1, Doc3
-Not used: Doc2 — not relevant to spinal arthrodesis; Doc4 — not relevant to spinal arthrodesis; Doc5 — not relevant to spinal arthrodesis","**Retrospective cohort studies examining walking recovery after spinal arthrodesis:**
+Not used: Doc2, Doc4, Doc5 — not relevant to the query (Doc2: stroke rehabilitation; Doc4: concussion assessment; Doc5: ankle/subtalar arthrodesis)","Based exclusively on the provided documents, one retrospective cohort study examines walking recovery after spinal arthrodesis.
 
-- **Doc 1** — Retrospective cohort of 376 patients undergoing vertebral arthrodesis (≥1 fixed level). Primary outcome: time to ambulation (mean 3 days). Independent predictors of delayed walking recovery: older age, higher ASA risk, longer surgery duration, and greater number of stabilized levels (5–9 levels: B=0.840, p<0.043; ≥10 levels: B=0.629, p=0.057). Multiple linear regression used.
+- **Doc 1** is a retrospective cohort study of 376 patients undergoing spinal arthrodesis. It found that independent predictors of delayed ambulation recovery include:
+    - Increasing age
+    - Higher ASA (anesthesia risk) grade
+    - Longer duration of surgery
+    - Greater number of stabilized levels (5–9 levels and ≥10 levels)
+    - Mean time to ambulation was 3 days post-surgery.
 
-- **Doc 5** — Cross-sectional survey + retrospective review of prospectively collected data in 95 patients with adult spinal deformity after long-segment fusion to pelvis (≥3 levels, posterior-only). 64.2% reported improved walking capacity postoperatively; 17.9% unchanged; 17.9% worse. Factors associated with decreased walking tolerance: greater lumbar lordosis correction (37.2° vs 18.6°, p=0.02) and worse PROMIS-Physical Function at follow-up. Factors associated with postoperative assistive device use: revision fusion, higher BMI, longer operative time, worse PROMIS-Physical Function.
+No other document (Doc 2–5) is a retrospective cohort study on this topic.
 
-**Used:** Doc1, Doc5  
-**Not used:** Doc2, Doc3, Doc4 — not relevant to retrospective cohort studies of walking recovery after spinal arthrodesis (Doc2: exoskeleton vs KAFO in SCI; Doc3: dual-task interference post-stroke; Doc4: AFO vs FES in multiple sclerosis)."
-CLIN-EVAL-08,What observational data exists on Barthel Index use in predicting ADL outcomes?,"**Observational data on Barthel Index predicting ADL outcomes is limited in the provided documents.** No study directly validates the Barthel Index for predicting future ADL outcomes (e.g., decline or recovery).
+Used: Doc1
+Not used: Doc2 — RCT on exoskeletons in SCI, not retrospective cohort on spinal arthrodesis; Doc3 — systematic review on dual-task walking after stroke; Doc4 — systematic review on AFO/FES in MS; Doc5 — prospective cohort on recovery after cesarean delivery. None address the query."
+CLIN-EVAL-08,What observational data exists on Barthel Index use in predicting ADL outcomes?,"**Observational data on Barthel Index predicting ADL outcomes is limited in the provided documents.** No study directly validates the Barthel Index for predicting future ADL dependence or recovery.
 
-- **Doc 1** examines the Barthel Index as a predictor of **mortality**, not ADL outcomes. It proposes a modified classification (chair-to-bed transfer dependence) to improve mortality risk discrimination, but does not assess ADL trajectory prediction.
-- **Doc 2** uses the **Korean modified Barthel Index** as an outcome measure in stroke rehabilitation, not as a predictor of ADL outcomes. It evaluates how somatosensory/motor evoked potentials predict discharge functional status (including Barthel scores).
-- **Doc 4** uses the **Korean ADL (K-ADL)** scale, not the Barthel Index, to track functional change over 1 year in homebound older adults. This is a study protocol, not completed observational data.
-- **Doc 5** uses a generic ADL scale (not Barthel) to examine CKM syndrome as a risk factor for ADL disability.
+**Relevant observational findings:**
 
-**Gap:** No retrieved evidence on Barthel Index use specifically for predicting ADL outcomes (e.g., future dependence or improvement). Available data focus on mortality prediction (Doc 1) or use Barthel as an outcome measure (Doc 2).
+- **Doc 1** (longitudinal, n=127, mean age 86): Barthel Index ≤60 used to define functional dependence. The study examined the Barthel Index and its individual items as predictors of **3-year mortality**, not ADL outcomes. Key finding: dependence in chair-to-bed transfers was an independent mortality risk factor (HR 2.957; CI 1.678-5.211) and proposed as a screening test parallel to the Barthel Index. The authors suggest the Barthel Index may have limitations in discriminating mortality risk.
 
-Used: Doc1, Doc2  
-Not used: Doc3, Doc4, Doc5 — Doc3 (ECP in AD, not Barthel/ADL prediction), Doc4 (K-ADL protocol, not Barthel), Doc5 (CKM-ADL association, not Barthel)","**Observational data on Barthel Index (BI) predicting ADL outcomes:**
+- **Doc 2** (retrospective, n=111, subacute stroke): Used the Korean version of the modified Barthel Index as a **discharge outcome** measure, not as a predictor. Normal somatosensory evoked potentials were associated with higher modified Barthel Index scores at discharge than non-responsive somatosensory evoked potentials.
 
-- **Mortality risk discrimination (Doc 1):** In a longitudinal study of 127 functionally dependent adults (mean age 86, BI ≤60), the BI item ""chair-to-bed transfer"" independently predicted 3-year mortality. Severe/moderate dependence with greater independence in this transfer had reduced mortality risk (HR 0.492 and 0.574). The transfer item alone showed high sensitivity (0.91) and specificity (0.83) for mortality, with AUC 0.814. Authors propose reclassifying dependence in this item as ""severe dependence"" even if total BI ≥40.
+**Gap:** No retrieved observational evidence on Barthel Index use in predicting ADL outcomes (e.g., future dependence, recovery trajectory, or functional decline).
 
-- **Post-stroke functional recovery (Doc 4):** In 98 first-ever acute stroke patients, crude mean BI increased from discharge (35.1) to 1 month (64.4) to 3 months (68.8). Adjusted mean BI (linear mixed model) rose from 39.6 to 66.9 to 73.2. Significant prognostic factors: time after discharge, age (decrease with age), and stroke subtype (hemorrhagic lower than ischemic).
+Used: Doc1, Doc2
+Not used: Doc3, Doc4, Doc5 — not relevant to the query (Doc3: ECP in AD; Doc4: K-ADL in homebound older adults; Doc5: CKM syndrome and ADL disability)","**Observational data on Barthel Index (BI) predicting ADL outcomes:**
 
-- **Post-stroke rehabilitation (Doc 2):** In 111 subacute stroke patients, normal somatosensory evoked potentials (SSEP) were associated with higher modified BI at discharge vs non-responsive SSEP. Both abnormal and normal motor evoked potentials (MEP) predicted higher modified BI vs non-responsive MEP. SSEP and MEP provide complementary prognostic information.
+- **Mortality risk discrimination (Doc 1):** In a longitudinal study of 127 functionally dependent adults (mean age 86, BI ≤60), the BI item ""chair-to-bed transfer"" independently predicted 3-year mortality. Severe/moderate dependence with greater independence in this transfer had reduced mortality risk (HR 0.492 and 0.574). The transfer item alone showed high sensitivity (0.91) and specificity (0.83) for mortality, with AUC 0.814. The authors propose reclassifying dependence in this item as ""severe dependence"" even if total BI ≥40, suggesting the total BI may inadequately discriminate mortality risk.
 
-- **Pneumonia-related ADL decline (Doc 5):** In 80 elderly pneumonia patients, smaller erector spinae muscle CSA on CT independently predicted lower BI at end of antibiotic treatment (multivariate logistic regression), controlling for age, sex, severity, nutrition, and dehydration.
+- **Post-stroke functional recovery (Doc 4):** In 98 first-ever acute stroke patients, crude mean BI increased from discharge (35.1) to 1 month (64.4) to 3 months (68.8). Adjusted mean BI (linear mixed model) rose from 39.6 to 66.9 to 73.2. Significant prognostic factors for BI change: time after discharge, age (decrease with older age), and stroke subtype (hemorrhagic lower than ischemic).
 
-- **Restorative care program (Doc 3):** In 1074 older Australians, an 8-week multidisciplinary program was associated with statistically significant improvements in Modified Barthel Index (p ≤ .0001).
+- **Post-pneumonia ADL outcome (Doc 5):** In 80 elderly pneumonia patients, BI at end of antibiotic treatment was predicted by erector spinae muscle CSA on admission CT (smaller CSA → lower BI, independent of age, sex, severity, nutrition, dehydration).
 
-**Gap:** No retrieved evidence on BI predicting ADL outcomes in community-dwelling populations without acute illness or in younger adults.
+- **Rehabilitation program response (Doc 3):** In 1074 older Australians, the Short-Term Restorative Care program was associated with statistically significant improvements in Modified Barthel Index (p ≤ .0001).
 
-Used: Doc1, Doc2, Doc4, Doc5
-Not used: Doc3 — describes program outcomes, not BI as a predictor of ADL outcomes"
-CLIN-EVAL-10,What do top-ranked rehabilitation journals publish on robot-assisted gait training?,"Based exclusively on the provided documents, top-ranked rehabilitation journals publish on robot-assisted gait training (RAGT) with the following key themes:
+- **Stroke rehabilitation prognosis (Doc 2):** In 111 subacute stroke patients, normal somatosensory evoked potentials were associated with higher Korean modified BI at discharge vs non-responsive; both abnormal and normal motor evoked potentials predicted higher Korean modified BI vs non-responsive.
 
-- **Bibliometric trends**: A bibliometric survey covering 20 years (17,429 sources) identified leading journals and conferences in post-stroke robotic rehabilitation, showing continuous expansion of the field with increasing focus on lower limb rehabilitation and disease/design-specific applications in early-stage patients (Doc 2).
-- **Effectiveness in chronic stroke**: Scoping reviews (11 RCTs, 2008–2020) suggest exoskeleton-assisted body weight supported treadmill training (BWSTT) may improve walking function in chronic stroke, but no significant difference vs. therapist-assisted BWSTT; the benefit may be from ""assistance"" rather than the robot itself (Doc 3).
-- **Protocol variability**: Systematic reviews (61 articles) highlight significant variability in RAGT dose and protocols, with no standardized protocol or evaluation scales; RAGT as an add-on treatment is prevalent (Doc 5).
-- **Broader applications**: RAGT is also studied in multiple sclerosis (MS) as part of non-pharmacological rehabilitation, showing positive effects on gait and balance (Doc 4).
-- **Case reports**: Individual case reports (e.g., Becker muscular dystrophy with stroke) describe successful mobility regain using RAGT within a holistic rehabilitation program (Doc 1).
+**Gap:** No retrieved evidence on BI use for predicting ADL outcomes in community-dwelling populations without acute illness or in younger adults.
+
+Used: Doc1, Doc2, Doc3, Doc4, Doc5
+Not used: None — all documents contributed to the query."
+CLIN-EVAL-10,What do top-ranked rehabilitation journals publish on robot-assisted gait training?,"Based exclusively on the provided documents, top-ranked rehabilitation journals publish on robot-assisted gait training (RAGT) with the following focus:
+
+- **Bibliometric trends**: A survey covering 20 years (17,429 sources) identifies leading journals and conferences in post-stroke robotic rehabilitation, showing continuous expansion of the field with increasing attention to lower limb rehabilitation and disease/design-specific applications in early-stage patients (Doc 2).
+- **Effectiveness in chronic stroke**: Scoping review (11 RCTs, 2008–2020) on exoskeleton-assisted Body Weight Supported Treadmill Training (BWSTT) suggests it may improve walking function, but no significant difference vs. therapist-assisted BWSTT; the benefit may be from ""assist"" rather than the robot itself (Doc 3).
+- **Protocol variability**: Systematic review (61 articles) following CICERONE Consensus confirms no standardized RAGT protocol or evaluation scales; significant variability in dose and protocols; RAGT as add-on treatment is prevalent (Doc 5).
+- **Broader neurological populations**: Narrative review on multiple sclerosis includes robot-assisted rehabilitation among non-pharmacological approaches, highlighting positive effects on quality of life, disability, fatigue, and spasticity (Doc 4).
+- **Case reports**: Single case of RAGT in Becker muscular dystrophy with stroke, demonstrating feasibility in complex patients (Doc 1).
+
+**Gap**: No document provides a definitive list of ""top-ranked"" journals by impact factor or ranking; Doc 2 identifies leading journals via bibliometric analysis but does not name specific titles.
 
 Used: Doc2, Doc3, Doc4, Doc5
-Not used: Doc1 — single case report, not representative of top journal publication trends on the topic","Based exclusively on the provided documents, top-ranked rehabilitation journals publish on robot-assisted gait training (RAGT) primarily in the context of post-stroke recovery.
+Not used: Doc1 — single case report, not representative of top-ranked journal publication trends","**Top-ranked rehabilitation journals** publish on robot-assisted gait training (RAGT) primarily in the **post-stroke population**, with a focus on efficacy, protocol variability, and bibliometric trends.
 
-- **Post-Stroke RAGT:** The literature focuses on RAGT for gait disability in acute, subacute, and chronic phases of stroke. Key findings include:
-    - **Variability:** There is significant variability in RAGT protocols, doses, and outcome measures, with no standardized protocol or evaluation scales established. (Doc 2)
-    - **Devices:** Robotic devices can be identified as more suitable for specific disease phases and disability levels. (Doc 2)
-    - **Add-on Treatment:** RAGT is often used as an add-on treatment. (Doc 2)
-    - **Exoskeleton-Assisted BWSTT:** For chronic stroke (onset ≥6 months), exoskeleton-assisted Body Weight Supported Treadmill Training (BWSTT) may be effective in improving walking function. However, it is noted that the potential benefit may be from the ""assist"" rather than the robot itself, as no significant difference was found compared to therapist-assisted BWSTT. (Doc 4)
-    - **Combination Therapy:** Exoskeleton-assisted BWSTT with combination therapy was significantly more effective than exoskeleton-assisted BWSTT alone. (Doc 4)
+- **Efficacy evidence:** Exoskeleton-assisted body weight supported treadmill training (BWSTT) may improve walking function in chronic stroke, but the effect may be attributable to the assistive nature of training rather than the robot itself. No significant difference was found versus therapist-assisted BWSTT (Doc 1).
+- **Protocol heterogeneity:** No standardized RAGT protocol or evaluation scales exist. Significant variability in dose and protocols is reported; RAGT as an add-on treatment is prevalent (Doc 5).
+- **Bibliometric trends:** The field is expanding continuously, with increasing attention to lower-limb rehabilitation and disease/design-specific applications in early-stage patients (Doc 2).
+- **Case reports:** Individual cases (e.g., Becker muscular dystrophy with stroke) describe successful mobility regain using RAGT within a holistic rehabilitation program (Doc 3).
 
-- **Other Contexts:** One case report describes the successful use of RAGT in a patient with Becker muscular dystrophy who also had a stroke. (Doc 5)
-
-**Gap:** No retrieved evidence on publications regarding RAGT for indications other than stroke (e.g., spinal cord injury, multiple sclerosis) or on the specific impact factor or ranking of the journals publishing this work.
-
-Used: Doc2, Doc4, Doc5
-Not used: Doc1 — not relevant to robot-assisted gait training (focuses on implanted FES); Doc3 — not relevant to gait training (focuses on pelvic floor training for urinary incontinence after prostatectomy)"
-CLIN-EVAL-11,What are the complication rates following spinal fusion?,"**Complication rates following spinal fusion, based on the provided documents:**
-
-- **Cage subsidence (OLIF):** 14.6% at 1 week, 31.7% at 1 year postoperatively (Doc 3).
-- **Pseudarthrosis / non-fusion:**
-  - At 6 months: 45.5% (SVF group) vs. 81.8% (control) for PLIF (Doc 1).
-  - At 6 months: 53.2% (teriparatide) vs. 67.3% (bisphosphonate) for multilevel lumbar interbody fusion (Doc 2).
-  - At 1 year: 31.7% intermediate fusion after OLIF (Doc 3).
-- **C5 nerve palsy:** Relatively common after posterior cervical decompression and fusion (Doc 4).
-- **Phrenic nerve palsy:** Rare; only one prior case report (Doc 4).
-
-**Gap:** No retrieved evidence on overall major complication rates (e.g., infection, dural tear, hardware failure, reoperation) or long-term outcomes beyond 1 year.
-
-Used: Doc1, Doc2, Doc3, Doc4
-Not used: Doc5 — discusses spinal alignment principles, not complication rates.","Based exclusively on the provided documents, specific numeric complication rates following spinal fusion are not reported. The documents describe complication types and associated factors.
-
-- **Adjacent segment degeneration (ASD) / pathology (ASP):** Described as the most common mechanical complication after long-segment fusions (Doc 1). It is a significant clinical complication following cervical and lumbar fusion (Doc 2), characterized by accelerated degenerative changes at contiguous segments (Doc 5).
-- **Proximal and distal junctional kyphosis (PJK/DJK):** Reported as a surgery-associated complication during long-term follow-up (Doc 1).
-- **Pseudarthrosis:** Rates remain high despite advances in bone graft substitutes (Doc 3).
-- **Cage subsidence:** Assessed in the context of a specific PLIF trial (Doc 3).
-- **Increased cesarean section rates:** Slightly increased rates reported in AIS patients post-fusion (Doc 1).
-
-**Gap:** No retrieved evidence provides specific numeric complication rates (e.g., incidence percentages for pseudarthrosis, infection, reoperation) for spinal fusion.
+**Gap:** No retrieved evidence on RAGT in non-stroke populations (e.g., spinal cord injury, multiple sclerosis) or on specific dosing protocols.
 
 Used: Doc1, Doc2, Doc3, Doc5
-Not used: Doc4 — discusses alignment principles and outcomes, but does not report complication rates."
-CLIN-EVAL-12,Recent publications in top rehabilitation journals on telerehabilitation efficacy,"- **Stroke rehabilitation**: VR-based telerehabilitation shows comparable outcomes to in-person therapy for upper extremity function, balance, mobility, cognition, ADLs, and QoL (Doc 2). XR and TR usability is most commonly assessed with the System Usability Scale; combining 2–6 tools is typical (Doc 5).
-- **Post-arthroplasty**: Internet-based telerehabilitation (videoconferencing or mobile apps) yields comparable improvements in pain, ROM, physical function, and QoL versus face-to-face care, with high patient satisfaction (Doc 3). A narrative review supports integrating telerehabilitation with traditional care after hip/knee prosthesis surgery (Doc 1).
-- **Gap**: No retrieved evidence on telerehabilitation efficacy for other orthopedic conditions (e.g., spine, shoulder) or for cardiac/pulmonary rehabilitation.
+Not used: Doc4 — addresses implantable FES, not robot-assisted gait training"
+CLIN-EVAL-11,What are the complication rates following spinal fusion?,"Based exclusively on the provided documents, specific numeric complication rates following spinal fusion are not reported. The documents describe the following complications and associated frequencies:
+
+- **Adjacent segment disease (ASD):** Described as a significant clinical complication following cervical and lumbar fusion (Doc 3). In long-term follow-up of adolescent idiopathic scoliosis (AIS), adjacent degeneration appears to be the most common mechanical complication after long-segment fusions (Doc 4).
+- **Proximal and distal junctional kyphosis (PJK/DJK):** Reported as surgery-associated complications during long-term follow-up of AIS fusion (Doc 4).
+- **Pseudarthrosis:** Noted as having high rates despite advances, but no specific rate is given for the general fusion population (Doc 1).
+- **Cage subsidence:** Assessed in the context of a specific trial (Doc 1), but no overall rate is provided.
+- **Fusion rates (not complication rates):** Reported in specific study populations:
+    - At 6 months in a PLIF trial: 54.5% (SVF group) vs. 18.2% (control) (Doc 1).
+    - At 6 months in multilevel lumbar interbody fusion: 46.8% (teriparatide) vs. 32.7% (bisphosphonate) (Doc 5).
+- **Cesarean section rates:** Slightly increased in AIS patients post-fusion (Doc 4).
+
+**Gap:** No retrieved evidence provides overall or pooled complication rates (e.g., infection, dural tear, hardware failure, reoperation rate) for spinal fusion in a general adult population.
+
+Used: Doc1, Doc3, Doc4, Doc5
+Not used: Doc2 — not relevant to complication rates","Based exclusively on the provided documents, specific numeric complication rates (e.g., percentage of patients with infection, hardware failure, or reoperation) are not reported.
+
+The documents describe the following complications and their relative frequency:
+
+- **Adjacent segment degeneration (ASD) / Adjacent segment pathology (ASP):** Described as the ""most common mechanical complication after long-segment fusions"" (Doc 1). It is a significant clinical complication following cervical and lumbar fusion (Doc 2), characterized by accelerated degenerative changes at contiguous vertebral segments (Doc 5).
+- **Proximal and distal junctional kyphosis (PJK/DJK):** Listed as a surgery-associated complication during long-term follow-up (Doc 1).
+- **Pseudarthrosis:** Noted to have ""high rates"" despite advances in bone graft substitutes (Doc 3).
+- **Cage subsidence:** Assessed as a radiographic outcome in a trial of posterior lumbar interbody fusion (Doc 3).
+- **Increased cesarean section rates:** Slightly increased rates reported in patients with a history of spinal fusion (Doc 1).
+
+**Gap:** No retrieved evidence provides specific incidence or prevalence percentages for these complications (e.g., ""pseudarthrosis occurs in X% of cases"").
 
 Used: Doc1, Doc2, Doc3, Doc5
-Not used: Doc4 — bibliometric survey on robot-mediated neurorehabilitation, not directly addressing telerehabilitation efficacy","Based exclusively on the provided documents, recent publications in top rehabilitation journals on telerehabilitation efficacy report the following:
+Not used: Doc4 — discusses alignment principles and outcomes, not complication rates."
+CLIN-EVAL-12,Recent publications in top rehabilitation journals on telerehabilitation efficacy,"- **Stroke rehabilitation**: VR-based telerehabilitation shows comparable outcomes to in-person therapy for upper extremity function, balance, mobility, cognition, ADLs, and QoL (Doc 2). XR and TR usability is assessed with 28 tools, most commonly the System Usability Scale (Doc 5).
+- **Post-arthroplasty**: Internet-based telerehabilitation (videoconferencing or mobile apps) yields comparable improvements in pain, ROM, physical function, and QoL vs. face-to-face, with high patient satisfaction (Doc 3). A narrative review confirms utility in integrating telerehabilitation after hip/knee prosthesis surgery (Doc 1).
+- **Gap**: No retrieved evidence on telerehabilitation efficacy for other orthopedic or neurological conditions beyond stroke and joint arthroplasty.
 
-- **Lower limb amputees (Doc 1):** A 2024 RCT (n=60) showed telerehabilitation significantly improved 6MWT distance (+20%, P<0.01) and reduced anxiety/depression (P<0.05) vs. standard care. Adherence was 85% during supervised phase, dropping to 60% unsupervised.
-- **Stroke (Doc 2):** A meta-analysis of 9 RCTs (n=260) found VR-based telerehabilitation comparable to in-person rehabilitation for upper extremity function, balance, mobility, cognition, ADLs, and QoL.
-- **Total joint arthroplasty (Doc 4):** An integrative review of 22 studies (n=1,179) reported internet-based telerehabilitation (videoconferencing or mobile app) comparable to face-to-face for pain, ROM, physical function, and QoL, with high satisfaction. Psychological outcomes were rarely measured.
+Used: Doc1, Doc2, Doc3, Doc5
+Not used: Doc4 — bibliometric survey on robot-mediated neurorehabilitation, not directly addressing telerehabilitation efficacy","**Telerehabilitation efficacy — recent evidence from top rehabilitation journals:**
 
-**Gap:** No retrieved evidence on telerehabilitation efficacy for other conditions (e.g., cardiac, pulmonary, pediatric) or long-term functional outcomes beyond 8 weeks.
+- **Stroke (VR-based telerehab):** Meta-analysis of 9 RCTs (n=260) shows VR-based telerehab yields comparable outcomes to conventional in-person rehab for upper extremity function, balance, mobility, cognition, ADLs, and QoL. Considered an effective alternative. (Doc1)
 
-Used: Doc1, Doc2, Doc4
-Not used: Doc3, Doc5 — not relevant to the query (Doc3 addresses usability assessment tools, not efficacy; Doc5 is a bibliometric survey on robotic rehabilitation, not telerehabilitation efficacy)."
-CLIN-EVAL-13,What do conference proceedings report on novel spinal arthrodesis techniques?,"No retrieved documents report on novel spinal arthrodesis techniques.
+- **Lower limb amputees:** RCT (n=60) demonstrates telerehab significantly improves 6MWT distance (+20% after 4-week supervised phase, p<0.01) and reduces anxiety/depression (p<0.05) vs standard care. Adherence high during supervised phase (85%) but drops to 60% unsupervised. (Doc5)
 
-**Gap:** No retrieved evidence on novel spinal arthrodesis techniques.
+- **Total joint arthroplasty:** Integrative review (22 studies, n=1,179) finds internet-based telerehab (videoconferencing or mobile apps) comparable to face-to-face for pain, ROM, physical function, and QoL, with high patient satisfaction. Evidence on psychological outcomes and self-efficacy is sparse. (Doc3)
 
-Used: (none)
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address novel spinal arthrodesis techniques.","The retrieved documents do not report on novel spinal arthrodesis techniques from conference proceedings.
+- **Usability assessment (XR/TR in stroke):** Scoping review (111 studies) identifies 28 usability tools; most common is System Usability Scale (SUS). 55.9% of studies combine 2–6 tools. Quantitative methods dominate (67.6%); mixed methods used in 27.9%. (Doc2)
 
-- Doc 2 describes anterolateral approaches to the lumbar spine but is a general technique review, not a conference proceeding.
-- Doc 4 reports the publication rate of podium presentations from the Cervical Spine Research Society (CSRS) annual meeting, but it evaluates publication rates of abstracts, not the content of novel techniques presented.
-- Doc 1, Doc 3, and Doc 5 are unrelated (early ambulation after arthrodesis, brain stimulation, and post-prostatectomy incontinence, respectively).
+**Gap:** No retrieved evidence on telerehabilitation efficacy for other neurological conditions (e.g., TBI, MS) or pediatric populations.
 
-Gap: No retrieved evidence on novel spinal arthrodesis techniques reported in conference proceedings.
+Used: Doc1, Doc2, Doc3, Doc5
+Not used: Doc4 — bibliometric survey on robot-mediated neurorehabilitation, not directly addressing telerehabilitation efficacy"
+CLIN-EVAL-13,What do conference proceedings report on novel spinal arthrodesis techniques?,"The retrieved documents do not report on novel spinal arthrodesis techniques. Doc 1 discusses prognostic factors for early ambulation after spinal arthrodesis, not the techniques themselves. Doc 2 covers diaphragm release for cervical hypoalgesia. Doc 3 examines biopsychosocial factors in orthopaedic outcomes. Doc 4 describes epidural stimulation for spinal cord injury. Doc 5 addresses rTMS personalization in stroke rehabilitation.
+
+**Gap:** No retrieved evidence on novel spinal arthrodesis techniques from conference proceedings.
 
 Used: None
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address novel spinal arthrodesis techniques from conference proceedings."
-CLIN-EVAL-14,What do publications on peripheral nerve stimulation describe about clinical practice patterns?,"The retrieved documents do not describe clinical practice patterns for peripheral nerve stimulation (PNS). Doc 2 reports a retrospective case series on PNS for peripheral neuropathy, documenting pain score reductions (VRS 7.8→1.6 post-trial, 2.1 at 3 months), but does not describe practice patterns such as patient selection criteria, lead placement techniques, programming parameters, or follow-up protocols. Doc 1 and Doc 3 mention PNS only in passing (sensory restoration in amputees; listing as a neurostimulation technique), without practice pattern data. Doc 4 and Doc 5 are irrelevant (spinal cord stimulation and schizophrenia/aphasia, respectively).
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address novel spinal arthrodesis techniques.","The retrieved documents do not report on novel spinal arthrodesis techniques from conference proceedings.
 
-Gap: No retrieved evidence describes clinical practice patterns for peripheral nerve stimulation (e.g., typical indications, procedural workflow, device selection, trial-to-permanent conversion rates, or provider specialties).
+Doc 2 describes anterolateral approaches to the lumbar spine (a technique, not a conference report) but does not cite a conference proceeding. Doc 4 reports the publication rate of podium presentations from the Cervical Spine Research Society (CSRS) annual meeting, but it evaluates publication rates of existing presentations, not the content of novel techniques presented at those conferences.
 
-Used: Doc2 (partial — reports outcomes but not practice patterns)
+**Gap:** No retrieved evidence on conference proceedings reporting novel spinal arthrodesis techniques.
+
+Used: None
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address conference proceedings on novel spinal arthrodesis techniques."
+CLIN-EVAL-14,What do publications on peripheral nerve stimulation describe about clinical practice patterns?,"The retrieved documents do not describe clinical practice patterns for peripheral nerve stimulation (PNS). Doc 2 reports a retrospective case series on PNS for peripheral neuropathy, providing outcome data (VRS scores) but no information on practice patterns such as patient selection criteria, device types, implantation techniques, programming parameters, or follow-up protocols. Doc 1 and Doc 3 mention PNS in the context of sensory restoration and neuropathic pain treatment options, respectively, but contain no data on clinical practice patterns. Doc 4 and Doc 5 are irrelevant to PNS practice patterns.
+
+**Gap:** No retrieved evidence describes clinical practice patterns for peripheral nerve stimulation.
+
+Used: Doc2 (partially — reports outcomes but not practice patterns)
 Not used: Doc1, Doc3, Doc4, Doc5 — not relevant to the query","Based exclusively on the provided documents, publications describe the following clinical practice patterns for peripheral nerve stimulation (PNS):
 
 - **Patient Population:** Used for adults with chronic neuropathic pain refractory to conventional medical management (Doc 1) and for greater trochanteric pain syndrome (GTPS) not responding to conservative treatments (Doc 5).
-- **Treatment Sequence:** PNS is considered a minimally invasive option earlier in the treatment continuum (Doc 1). In overactive bladder (OAB) management, prior exposure to nerve stimulation (sacroneuromodulation or PNS) is associated with lower discontinuation rates of subsequent onabotulinumtoxinA treatment (Doc 4).
-- **Outcomes:** Permanent PNS likely decreases pain and improves function and quality of life but has little effect on pain medication use (GRADE: Moderate). Temporary PNS may improve these outcomes and may reduce medication use (GRADE: Low) (Doc 1).
-- **Safety:** Implantation is reasonably safe; most adverse events are localized and mild (GRADE: Moderate to Low) (Doc 1).
-- **Barriers to Access:** Lack of awareness, cost, and geography (Doc 1).
-- **Cost-Effectiveness:** ICER of $87,211/QALY gained; probability of cost-effectiveness is 1.02% at $50,000/QALY and 64.88% at $100,000/QALY (Doc 1).
+- **Treatment Sequence:** PNS is considered a minimally invasive option earlier in the treatment continuum (Doc 1). In overactive bladder (OAB) management, prior exposure to nerve stimulation (sacroneuromodulation or PNS) is associated with lower discontinuation rates of subsequent onabotulinumtoxinA (Doc 4).
+- **Barriers to Access:** Lack of awareness, cost, and geography are cited as current barriers (Doc 1).
+- **Outcomes:** Permanent PNS likely decreases pain and improves function and quality of life but has little effect on pain medication use (Doc 1). Temporary PNS may decrease pain and medication use (Doc 1). Implantation is reasonably safe with mostly mild, localized adverse events (Doc 1).
+- **Cost-Effectiveness:** The ICER is $87,211/QALY gained; probability of cost-effectiveness is 1.02% at $50,000/QALY and 64.88% at $100,000/QALY (Doc 1).
 
 Used: Doc1, Doc4, Doc5
-Not used: Doc2, Doc3 — not relevant to clinical practice patterns for peripheral nerve stimulation"
+Not used: Doc2, Doc3 — not relevant to clinical practice patterns for peripheral nerve stimulation."
 CLIN-EVAL-18,What evidence exists for telerehabilitation in post-COVID patients?,"Based exclusively on the provided documents, direct evidence for telerehabilitation in post-COVID patients is limited to indirect evidence.
 
-- **Doc 3** provides the most relevant evidence. It states that for post-COVID condition (PCC), no specific treatments exist, but rehabilitation interventions effective for similar symptoms in other conditions can be applied. In a systematic review mapping, telerehabilitation was found to be effective for anxiety and depression in specific diseases (very low- to moderate-quality evidence). This indirect evidence served as the basis for WHO guidelines on PCC symptom management.
+- **Doc 3** provides the only relevant evidence. It states that for post-COVID condition (PCC), no specific treatments exist, but rehabilitation interventions effective for similar symptoms in other conditions can be applied. In a systematic review mapping, telerehabilitation was found to be effective for anxiety and depression in specific diseases (very low- to moderate-quality evidence). This evidence is indirect, as it is not derived from post-COVID populations but from other health conditions with similar symptoms.
 
-- **Doc 1** discusses organizing post-COVID rehabilitation programs but does not specifically evaluate telerehabilitation as an intervention.
+- **Doc 1** discusses organizing rehabilitation for post-COVID patients but does not specifically evaluate or provide evidence for telerehabilitation.
+- **Doc 2** and **Doc 5** discuss telerehabilitation for cardiac and stroke populations, respectively, not for post-COVID patients.
 
-- **Doc 2, 4, and 5** discuss telerehabilitation for cardiac and stroke populations, not post-COVID patients.
-
-**Gap:** No retrieved evidence directly evaluates telerehabilitation outcomes in post-COVID patients. The only support is indirect (Doc 3), extrapolating from other disease populations.
+**Gap:** No retrieved evidence directly evaluates telerehabilitation in a post-COVID patient cohort. The only available evidence is indirect, extrapolated from other disease populations.
 
 Used: Doc3
-Not used: Doc1, Doc2, Doc4, Doc5 — not directly relevant to telerehabilitation in post-COVID patients","No retrieved documents directly address telerehabilitation in post-COVID patients.
+Not used: Doc1 — discusses post-COVID rehabilitation but not telerehabilitation evidence; Doc2 — cardiac telerehabilitation, not post-COVID; Doc4 — stroke telerehabilitation, not post-COVID; Doc5 — stroke telerehabilitation, not post-COVID","Based exclusively on the provided documents, direct evidence for telerehabilitation in post-COVID patients is limited.
 
-**Gap:** No evidence found on telerehabilitation for post-COVID patients in the provided documents.
+- **Doc 2** describes the *possibility* of organizing personalized, patient-centered, multidisciplinary rehabilitation programs for post-COVID patients, including in the home environment with monitoring. It does not provide outcome data or evidence of effectiveness for telerehabilitation in this population.
 
-Used: (none)
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address post-COVID telerehabilitation."
+- **Doc 1** discusses cardiac telerehabilitation as an alternative to center-based cardiac rehab, noting the COVID-19 pandemic added barriers to participation. It does not provide evidence for telerehabilitation in post-COVID patients specifically.
+
+**No document provides clinical trial or comparative effectiveness data for telerehabilitation in post-COVID patients.**
+
+Used: Doc1, Doc2
+Not used: Doc3, Doc4, Doc5 — not relevant to post-COVID rehabilitation (Doc3: neck pain; Doc4: lower limb amputees; Doc5: stroke)
+
+Gap: No retrieved evidence on the efficacy, safety, or outcomes of telerehabilitation specifically for post-COVID patients."
 CLIN-EVAL-19,What do studies report on AI-assisted surgical planning in orthopaedics?,"**No retrieved evidence directly addresses AI-assisted surgical planning in orthopaedics.**
 
-The documents discuss AI in arthroplasty broadly (Doc 1), AI-assisted DAA-THA for analgesic comparison (Doc 2), AI detection in publications (Doc 3), orthopaedic research funding (Doc 4), and AI-driven stroke rehabilitation (Doc 5). None report on AI-assisted *surgical planning* (e.g., preoperative templating, implant sizing, osteotomy simulation, or deformity correction planning).
+The documents discuss AI in arthroplasty (Doc 1), AI-assisted DAA-THA (Doc 2), AI detection in publications (Doc 3), orthopaedic research funding (Doc 4), and AI-driven stroke rehabilitation (Doc 5). None report on AI-assisted *surgical planning* (e.g., preoperative templating, implant sizing, osteotomy simulation, or deformity correction planning).
 
 **Gap:** No retrieved evidence on AI-assisted surgical planning in orthopaedics.
 
 Used: None
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address AI-assisted surgical planning in orthopaedics.","The retrieved documents do not address AI-assisted surgical planning in orthopaedics. They cover robotic-assisted arthroplasty patient perceptions (Doc 2), hand surgery resident clinic autonomy (Doc 3), biopsychosocial outcome definitions (Doc 4), and day-case orthopaedic procedures (Doc 5). None report on AI for surgical planning.
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address AI-assisted surgical planning in orthopaedics.","**No retrieved evidence directly addresses AI-assisted surgical planning in orthopaedics.**
 
-Gap: No retrieved evidence on AI-assisted surgical planning in orthopaedics.
+The closest document (Doc 1) discusses AI in arthroplasty broadly, mentioning potential for ""planning"" and ""decision support,"" but provides no specific study results, outcomes, or technical details on AI-assisted surgical planning.
 
-Used: None
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none relevant to the query"
-CLIN-EVAL-21,What are the validation studies for the Oswestry Disability Index?,"No retrieved document provides validation studies for the Oswestry Disability Index (ODI). The documents only mention ODI as an outcome measure in clinical studies (Doc 1, Doc 2) but do not report its psychometric properties, validation cohorts, or measurement properties.
+**Gap:** No retrieved evidence on specific studies, accuracy, outcomes, or clinical applications of AI-assisted surgical planning in orthopaedics.
+
+Used: Doc1 — partially relevant (mentions AI in arthroplasty planning in general terms, but no study data)
+Not used: Doc2, Doc3, Doc4, Doc5 — not relevant to the query"
+CLIN-EVAL-21,What are the validation studies for the Oswestry Disability Index?,"No retrieved documents contain validation studies of the Oswestry Disability Index (ODI). The documents use the ODI as an outcome measure but do not report its psychometric properties (e.g., construct validity, criterion validity, responsiveness, or minimal clinically important difference).
 
 Gap: No retrieved evidence on validation studies for the Oswestry Disability Index.
 
 Used: None
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address validation of the ODI","No retrieved document describes a dedicated validation study of the Oswestry Disability Index (ODI). The documents use the ODI as an outcome measure but do not report its psychometric properties (e.g., construct validity, criterion validity, responsiveness, minimal clinically important difference).
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address validation of the ODI.","No retrieved document describes a dedicated validation study of the Oswestry Disability Index (ODI). The documents use the ODI as an outcome measure but do not report its psychometric properties (e.g., construct validity, criterion validity, responsiveness, minimal clinically important difference).
 
 **Used:** None  
 **Not used:** Doc1, Doc2, Doc3, Doc4, Doc5 — none address validation studies of the ODI.
@@ -257,107 +281,109 @@ CLIN-EVAL-22,What are the publications describing the Barthel ADL Index?,"- **Do
 
 - **Doc 2**: Describes BI score change from discharge to 3 months post-discharge in first-ever acute stroke patients. Models prognostic factors (age, stroke subtype, time) for BI change using random intercept model.
 
-- **Doc 3**: Uses pre-fracture BI as a predictor of 1-year ADL recovery after fragility hip fracture, but BI is not the primary focus; main predictors are EQ-VAS, CCI, and operative treatment.
+- **Doc 3**: Uses pre-fracture BI as a predictor of 1-year ADL recovery after fragility hip fracture, alongside CCI and EQ-VAS.
 
-- **Doc 4**: Uses BI to stratify older inpatients into low (<60) and high (≥60) ADL groups to study longitudinal relationship between quadriceps muscle mass and intramuscular adipose tissue.
+- **Doc 4**: Assesses ADL level via BI (cutoff 60) to stratify older inpatients in a study of quadriceps muscle mass and intramuscular adipose tissue longitudinal relationship.
 
-- **Doc 5**: Bibliometric analysis of Orthopaedics & Traumatology: Surgery & Research; no mention of Barthel Index.
-
-Used: Doc1, Doc2, Doc3, Doc4
-Not used: Doc5 — not relevant to the query (bibliometric study, no Barthel Index content)","The retrieved documents describe the Barthel ADL Index as:
-
-- **Doc 1**: A tool to assess functional dependence and discriminate long-term mortality risk in a dependent population (Barthel ≤60). Proposes a new classification emphasizing chair-to-bed transfer dependency as a marker of severe dependence, even if total score ≥40.
-- **Doc 2**: Used to stratify older inpatients into low (<60) and high (≥60) ADL groups to study the longitudinal relationship between quadriceps muscle mass and intramuscular adipose tissue.
-- **Doc 3**: Applied to measure functional disability in acute first-ever stroke patients from discharge to 3 months post-discharge; models prognostic factors (age, stroke subtype, time) for score change.
-- **Doc 4**: Employed to assess care recipients' ADL abilities in a study of caregiver burden and occupational dysfunction among primary caregivers.
-- **Doc 5**: Not directly used; focuses on Geriatric Nutritional Risk Index (GNRI) and ADL disability using PSMS and Lawton scales, not the Barthel Index.
+- **Doc 5**: Bibliometric analysis of Orthopaedics & Traumatology: Surgery & Research; does not describe the Barthel ADL Index.
 
 Used: Doc1, Doc2, Doc3, Doc4
-Not used: Doc5 — does not describe the Barthel ADL Index"
-CLIN-EVAL-25,What do RCTs show about multimodal rehabilitation after lumbar fusion?,"Based exclusively on the provided documents, no RCTs on multimodal rehabilitation after lumbar fusion are present.
+Not used: Doc5 — bibliometric study unrelated to Barthel Index description or content.","**Publications describing the Barthel ADL Index:**
 
-The documents include:
-- **Doc 2**: A prospective observational study on multimodal *analgesia* (preventative multimodal analgesia with acetaminophen, gabapentin, celecoxib) — not rehabilitation.
-- **Doc 5**: An RCT on acupuncture as part of multimodal *analgesia* after PLIF — not rehabilitation.
-- **Docs 1 & 3**: Retrospective cohort studies on ambulation/physical therapy protocols — not RCTs.
-- **Doc 4**: Observational study on preoperative symptom duration — not relevant.
+- **Doc 1:** Examines the Barthel Index's ability to discriminate long-term mortality risk in a functionally dependent population (Barthel ≤60). Proposes a new classification emphasizing chair-to-bed transfer dependency as a marker of severe dependence, even with total score ≥40.
+- **Doc 2:** Uses the Barthel Index to stratify older inpatients into low (<60) and high (≥60) ADL groups to study the longitudinal relationship between quadriceps muscle mass and intramuscular adipose tissue.
+- **Doc 3:** Describes change in Barthel Index scores from discharge to 3 months post-discharge in acute first-ever stroke patients, modeling prognostic factors (age, stroke subtype, time) using linear mixed effects regression.
+- **Doc 4:** Uses pre-fracture Barthel Index as a baseline covariate in a study of prognostic factors for recovery of pre-fracture ADL at 1 year after fragility hip fracture.
+- **Doc 5:** Reports that a Hip Fracture Unit care pathway showed no statistically significant difference in Barthel ADL Index at 4- and 12-month follow-ups compared to historical controls.
 
-**Gap:** No retrieved evidence from RCTs on multimodal rehabilitation after lumbar fusion.
+Used: Doc1, Doc2, Doc3, Doc4, Doc5
+Not used: None — all documents describe or use the Barthel ADL Index."
+CLIN-EVAL-25,What do RCTs show about multimodal rehabilitation after lumbar fusion?,"No retrieved documents are RCTs on multimodal rehabilitation after lumbar fusion.
+
+**Gap:** No RCT evidence on multimodal rehabilitation after lumbar fusion was provided. The documents cover:
+- Liberal vs. restricted ambulation protocols (Doc 1, Doc 3 — retrospective cohorts)
+- Preemptive multimodal analgesia (Doc 2 — prospective observational)
+- Acupuncture as part of multimodal analgesia (Doc 4 — RCT, but only addresses analgesic component, not full rehabilitation)
+- Postoperative exercise after lumbar disc herniation surgery (Doc 5 — systematic review of RCTs, but for discectomy, not fusion)
+
+None of these constitute an RCT of a comprehensive multimodal rehabilitation program (e.g., combining physical therapy, psychological support, medical management) specifically after lumbar fusion.
 
 Used: None
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none are RCTs on multimodal rehabilitation after lumbar fusion.","No retrieved documents report RCTs on multimodal rehabilitation after lumbar fusion.
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none are RCTs on multimodal rehabilitation after lumbar fusion","No retrieved documents report RCTs on multimodal rehabilitation after lumbar fusion.
 
-Doc 3 is a prospective observational study (not an RCT) of preoperative multimodal analgesia (acetaminophen, gabapentin, celecoxib) in lumbar fusion, showing reduced postoperative opioid requirements and pain scores. Doc 4 is a retrospective cohort study comparing liberal vs. restricted ambulation protocols after lumbar fusion, finding shorter length of stay and fewer complications with liberal ambulation. Doc 5 is a literature review on adjacent segment disease that mentions postoperative rehabilitation as a preventive strategy but provides no RCT data.
+Doc 3 is a prospective observational study (not RCT) of preoperative multimodal analgesia (acetaminophen, gabapentin, celecoxib) in lumbar fusion, showing reduced postoperative opioid requirements and pain scores. This addresses perioperative pain management, not rehabilitation.
 
-Gap: No RCT evidence on multimodal rehabilitation after lumbar fusion was found in the provided documents.
+Doc 4 is a retrospective cohort comparing liberal vs. restricted ambulation protocols after lumbar fusion, finding liberal protocols associated with shorter stay, fewer complications, and better mobility. This addresses early mobilization, not multimodal rehabilitation.
+
+Doc 5 is a literature review mentioning postoperative rehabilitation as a preventive strategy for adjacent segment disease, but provides no specific RCT evidence.
+
+Gap: No RCT evidence on multimodal rehabilitation after lumbar fusion was provided.
 
 Used: None
-Not used: Doc1 — SIJ fusion, not lumbar fusion rehabilitation; Doc2 — lumbar total joint replacement vs. TLIF, not rehabilitation; Doc3 — observational study of preoperative multimodal analgesia, not RCT of rehabilitation; Doc4 — retrospective cohort on ambulation protocols, not RCT; Doc5 — literature review on adjacent segment disease, not RCT of rehabilitation"
-CLIN-EVAL-26,What do systematic reviews show about telerehabilitation for stroke survivors?,"Based on the retrieved systematic reviews, telerehabilitation for stroke survivors shows benefit for activities of daily living (ADLs) but not for balance.
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none report RCTs on multimodal rehabilitation after lumbar fusion"
+CLIN-EVAL-26,What do systematic reviews show about telerehabilitation for stroke survivors?,"Systematic reviews show telerehabilitation for stroke survivors improves activities of daily living (ADLs) but not balance.
 
-- **ADLs:** A meta-analysis of 14 studies (1,367 participants) found telehealth interventions significantly improved ADL performance (SMD 0.45; 95% CI 0.12 to 0.78).
-- **Balance:** The same meta-analysis found no significant effect on balance.
-- **Context:** A separate systematic review of stroke survivors in rural/remote settings (8 studies, 152 participants) found that recovery is driven by what matters to the individual, and technology use is desired, but tailored support is needed.
-
-**Gap:** No retrieved evidence on the comparative effectiveness of telerehabilitation versus in-person rehabilitation for stroke, or on optimal dosing or delivery components.
+- **ADLs**: Significant benefit (SMD 0.45; 95% CI 0.12–0.78) based on 14 studies (1,367 participants) (Doc 1).
+- **Balance**: No significant effect found (Doc 1).
+- **Context**: Evidence is from a single systematic review with meta-analysis (Doc 1). A separate review on rural/remote stroke survivors (Doc 2) highlights patient preference for technology-supported recovery but does not provide quantitative effectiveness data.
 
 Used: Doc1, Doc2
-Not used: Doc3, Doc4, Doc5 — not relevant to the query (Doc3: lower limb amputees; Doc4: multiple sclerosis; Doc5: robotic gait training)","**Systematic review evidence on telerehabilitation for stroke survivors:**
+Not used: Doc3, Doc4, Doc5 — not relevant to stroke telerehabilitation (Doc3: total knee arthroplasty; Doc4: lower limb amputees; Doc5: multiple sclerosis foot-drop)","**Systematic review evidence on telerehabilitation for stroke survivors:**
 
 - **ADLs:** Telehealth interventions significantly improve ADL performance (SMD 0.45; 95% CI 0.12–0.78) based on a meta-analysis of 14 RCTs (n=1,367) [Doc1].
 - **Balance:** No significant effect on balance was found [Doc1].
-- **Upper extremity:** A specific telerehabilitation system targeting upper extremity motor deficits shows high compliance, safety, and comparable efficacy to dose-matched in-clinic therapy [Doc4].
-- **Rural/remote settings:** Stroke survivors in rural/remote Australia want recovery support that matches their beliefs, preferences, and environment, including technology use; however, high-quality evidence is lacking [Doc2].
-- **Southeast Asia:** Technology (including telerehabilitation) is used as an adjunct to conventional therapy; most studies report positive outcomes, but home-based and lower-extremity interventions need further investigation [Doc5].
+- **Upper extremity:** A telerehabilitation system targeting upper extremity motor deficits shows high compliance, safety, feasibility (inpatient/home), and comparable efficacy to dose-matched in-clinic therapy [Doc4].
+- **Rural/remote settings:** Stroke survivors in rural/remote Australia want recovery support that matches their values and environment; technology use is part of this, but high-quality evidence is lacking [Doc2].
+- **Southeast Asia:** Technology (including telerehabilitation) is used adjunctively with conventional therapy; most studies show enhanced recovery, but home-based and lower-extremity interventions need further study [Doc5].
 
-**Gap:** No systematic review evidence on telerehabilitation for lower extremity function, caregiver burden, or long-term functional outcomes in stroke survivors.
+**Gap:** No systematic review evidence on telerehabilitation for lower extremity function, caregiver burden, or long-term (>6 months) outcomes in stroke survivors.
 
 Used: Doc1, Doc2, Doc4, Doc5  
-Not used: Doc3 — not relevant to the query (focuses on total knee arthroplasty, not stroke)"
-CLIN-EVAL-28,What do observational studies describe about long-term physiotherapy effects in adult scoliosis?,"**No observational studies on long-term physiotherapy effects in adult scoliosis were retrieved.**
+Not used: Doc3 — not relevant to stroke (focuses on total knee arthroplasty)"
+CLIN-EVAL-28,What do observational studies describe about long-term physiotherapy effects in adult scoliosis?,"No retrieved evidence describes long-term physiotherapy effects in adult scoliosis.
 
-The provided documents address:
-- Adolescent idiopathic scoliosis (AIS) exercise comparisons (Doc 1) — not adult scoliosis.
-- Physiotherapy in emergency departments for low back pain (Doc 2) — not adult scoliosis.
-- Pilates post-stroke (Doc 3) — not scoliosis.
-- Percutaneous vertebroplasty in adult degenerative scoliosis (Doc 4) — surgical, not physiotherapy.
-- Bone mineral density in AIS (Doc 5) — not physiotherapy.
-
-**Gap:** No retrieved evidence on long-term physiotherapy effects in adult scoliosis.
+**Gap:** No observational studies on long-term physiotherapy effects in adult scoliosis were provided. The documents address adolescent idiopathic scoliosis (Doc 1), vertebroplasty for adult degenerative scoliosis (Doc 2), physiotherapy in emergency departments for low back pain (Doc 3), Pilates post-stroke (Doc 4), and bone mineral density in adolescent scoliosis (Doc 5).
 
 Used: None
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address the query (adult scoliosis + long-term physiotherapy).","**Answer:**
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address long-term physiotherapy effects in adult scoliosis.","**Answer:**
 
 The retrieved documents do **not** describe long-term physiotherapy effects in **adult** scoliosis.
 
-- **Doc 2** evaluates scoliosis-specific exercises (Schroth, SEAS, etc.) in **adolescent** idiopathic scoliosis (AIS). It notes that Schroth exhibited long-term effects in improving spinal deformity and quality of life, but this is in adolescents, not adults.
+- **Doc 2** evaluates scoliosis-specific exercises (Schroth, SEAS, etc.) in **adolescent** idiopathic scoliosis (AIS). It notes that Schroth exhibited long-term effects on spinal deformity and quality of life, but this is in adolescents, not adults.
 - **Doc 1** assesses non-specific manual therapy in children and adolescents (age 10–18) with idiopathic scoliosis and explicitly excludes adult patients.
-- **Doc 3** reports on percutaneous vertebroplasty in adult degenerative scoliosis — not physiotherapy.
+- **Doc 3** evaluates percutaneous vertebroplasty (not physiotherapy) in adult degenerative scoliosis.
 - **Doc 4** reviews long-term outcomes of **surgical** management in AIS, not physiotherapy.
-- **Doc 5** is an epidemiological study on scoliosis incidence and surgical rates in children/adolescents.
+- **Doc 5** is an epidemiological study on scoliosis incidence and surgery rates in children/adolescents.
 
-**Gap:** No retrieved evidence describes long-term physiotherapy effects in adult scoliosis.
+**Gap:** No retrieved evidence on long-term physiotherapy effects in adult scoliosis.
 
-Used: Doc2 (partial — only for adolescent long-term exercise data, not adult)
+Used: Doc2 (adolescent long-term exercise effects, but not adult)
 Not used: Doc1, Doc3, Doc4, Doc5 — not relevant to adult physiotherapy outcomes"
-CLIN-EVAL-29,What do expert consensus statements recommend for psoriatic arthritis rehabilitation?,"No retrieved documents address expert consensus statements for psoriatic arthritis rehabilitation.
+CLIN-EVAL-29,What do expert consensus statements recommend for psoriatic arthritis rehabilitation?,"No retrieved documents provide expert consensus statements on psoriatic arthritis rehabilitation.
 
 **Gap:** No retrieved evidence on expert consensus recommendations for psoriatic arthritis rehabilitation.
 
 Used: None
-Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none contain expert consensus statements for psoriatic arthritis rehabilitation.","No retrieved documents contain expert consensus statements on psoriatic arthritis rehabilitation.
+Not used: Doc1 — describes a specific spa therapy study, not expert consensus; Doc2 — CAP physiotherapy guideline, not PsA; Doc3 — cryoneurolysis consensus, not PsA; Doc4 — netakimab efficacy, not rehabilitation; Doc5 — bariatric surgery exercise roles, not PsA.","No retrieved documents provide expert consensus statements specifically for psoriatic arthritis rehabilitation.
 
-**Gap:** No retrieved evidence on expert consensus recommendations for psoriatic arthritis rehabilitation.
+Doc 1 describes a single-center study of naphtalanotherapy plus physiotherapy in PsA, not an expert consensus.
+Doc 2 addresses resistance exercise in hemodialysis, not PsA.
+Doc 3 covers synovial histology in inflammatory arthritis.
+Doc 4 is about claims-based algorithms for PsA identification.
+Doc 5 is a Delphi consensus on image-guided procedures of the elbow/wrist, not rehabilitation for PsA.
+
+Gap: No retrieved evidence on expert consensus recommendations for psoriatic arthritis rehabilitation.
 
 Used: None
-Not used: Doc1 — not relevant to the query (resistance exercise in hemodialysis); Doc2 — not relevant to the query (synovitis score in inflammatory arthritis); Doc3 — not relevant to the query (naphtalanotherapy + physiotherapy, not expert consensus); Doc4 — not relevant to the query (claims-based algorithm for PsA identification); Doc5 — not relevant to the query (image-guided interventional procedures of elbow/wrist, not PsA rehabilitation consensus)"
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none address expert consensus on PsA rehabilitation"
 CLIN-EVAL-30,What do consensus guidelines say about exercise contraindications in orthopaedic patients?,"No retrieved document addresses exercise contraindications in orthopaedic patients.
 
-**Used:** None  
-**Not used:** Doc1, Doc2, Doc3, Doc4, Doc5 — none discuss contraindications to exercise in orthopaedic patients.  
-**Gap:** No retrieved evidence on consensus guidelines for exercise contraindications in orthopaedic patients.","No retrieved document provides consensus guidelines on exercise contraindications in orthopaedic patients.
+Used: (none)
+Not used: Doc1, Doc2, Doc3, Doc4, Doc5 — none discuss contraindications to exercise in orthopaedic patients.
 
-Doc 1 addresses exercise dosage in hip arthrosis but does not discuss contraindications. Doc 2 covers contraindications for resistance exercise in maintenance hemodialysis patients — a non-orthopaedic population. Doc 3 concerns exercise professionals in bariatric surgery settings. Doc 4 examines unsupervised exercise after endovascular treatment for claudication. Doc 5 explores orthopaedic providers' perceptions of biopsychosocial factors affecting outcomes, not contraindications.
+Gap: No retrieved evidence on exercise contraindications in orthopaedic patients.","No retrieved document provides consensus guidelines on exercise contraindications in orthopaedic patients.
+
+Doc 1 addresses exercise dosage in hip arthrosis but does not discuss contraindications. Doc 2 covers contraindications for resistance exercise in maintenance hemodialysis patients — a non-orthopaedic population. Doc 3 describes exercise professional roles in bariatric surgery. Doc 4 reports outcomes of unsupervised exercise after iliac EVT. Doc 5 explores orthopaedic providers' perceptions of biopsychosocial outcome barriers/facilitators but does not provide guidelines on exercise contraindications.
 
 Gap: No retrieved evidence on consensus guidelines for exercise contraindications in orthopaedic patients.
 

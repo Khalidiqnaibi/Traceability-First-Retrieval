@@ -22,7 +22,7 @@ load_dotenv()
 DOC_DB_PATH = os.environ.get("DOC_DB_PATH", "document.db")
 SJR_CSV_PATH = os.environ.get("SJR_CSV_PATH", "./data_in/scimagojr_2023.csv")
 
-audit = AuditTrail("data_out/audit_log.csv")    
+audit = AuditTrail("logs/audit_log.csv")    
 
 processor = TFRDataPreprocessor(sjr_csv_path=SJR_CSV_PATH)
 
