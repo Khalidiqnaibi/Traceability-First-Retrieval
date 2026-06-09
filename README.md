@@ -126,21 +126,21 @@ pip install -r "requirements.txt"
 To build the baseline database, execute seed requests to ingest domain-stratified documents directly into the document database. Run the following corpus pipeline initialization scripts:
 
 ``` bash
-curl -X POST "http://127.0.0.1:8000/seed/batch" -H "Content-Type: application/json" -d "{\"queries_path\": \"./data/seed_queries.json\"}"
+curl -X POST "http://127.0.0.1:8000/seed/batch" -H "Content-Type: application/json" -d "{\"queries_path\": \"./data_in/seed_queries.json\"}"
 ```
 
 ### Step 4: Running the Ablation Study
 run the ablation evaluation script to execute the full matrix of 180 queries across both pipelines (TWR and Standard RRF):
 
 ```bash
-curl -X POST "http://127.0.0.1:8000/ablation/batch" -H "Content-Type: application/json" -d "{\"queries_path\": \"./data/queries.json\"}"
+curl -X POST "http://127.0.0.1:8000/ablation/batch" -H "Content-Type: application/json" -d "{\"queries_path\": \"./data_in/queries.json\"}"
 ```
 
 ### Step 5: Evaluation Execution
 Execute the complete matrix evaluation using the core testing runner:
 
 ```bash
-python ./eval/run_eval.py --queries_path ./data/queries.json --log_path ./pipeline_audit_log.csv --out_dir ./results/
+python ./eval/run_eval.py --queries_path ./data/queries.json --log_path ./pipeline_audit_log.csv --out_dir ./eval_results/
 ```
 or to use the default paths defined in the `.env` file, simply run:
 ```bash
