@@ -88,9 +88,9 @@ class TFRPipeline:
 
     def trust_weighted_rrf(self, bm25_ranking, faiss_ranking, 
                            alpha: float = 1.0, 
-                           beta: float = 0.3, 
-                           gamma: float = 0.3, 
-                           delta: float = 0.2) -> List[int]:
+                           beta: float = 0.5, 
+                           gamma: float = 0.5, 
+                           delta: float = 0.3) -> List[int]:
         """
         Additive TWR: Score = alpha * Reciprocal_Rank + beta * w1 + gamma * w2 + delta * w3
         """

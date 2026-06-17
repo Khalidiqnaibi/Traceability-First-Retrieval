@@ -1,9 +1,9 @@
 ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mrr,query,pipeline
 1.0,0.8122885095908974,0.9656996788659544,1.0,0.9146560612887686,0.9741950295670265,1,Q1,1.0,What is the most effective intervention for chronic low back pain?,TWR
 0.2,0.4278695013043193,0.7109190534168112,0.25,0.5647625530786824,0.7848181902820691,5,Q4,0.25,What is the most effective intervention for chronic low back pain?,Standard
-0.8,0.9507614678330717,0.9592309582605976,1.0,1.0,0.9929231335308629,2,Q1,1.0,Is exercise therapy effective for knee osteoarthritis?,TWR
+0.8,0.9061442547954487,0.9559671464010229,1.0,0.9201515141900503,0.976545372027183,2,Q1,1.0,Is exercise therapy effective for knee osteoarthritis?,TWR
 1.0,0.7514715602695972,0.923967038951568,0.25,0.28305614733396595,0.6523489013406822,1,Q4,0.2,Is exercise therapy effective for knee osteoarthritis?,Standard
-0.2,0.6462442622073531,0.8067691620817606,0.75,0.8647330574788535,0.9421735276055474,5,Q2,0.5,Is multimodal analgesia more effective than opioids for postoperative pain?,TWR
+0.2,0.6462442622073531,0.8067691620817606,0.75,0.9323665287394267,0.9492147449622255,5,Q2,0.5,Is multimodal analgesia more effective than opioids for postoperative pain?,TWR
 0.25,0.5679726963447116,0.7242626857711238,0.0,0.2960819109658653,0.6797310500037657,5,Unranked,0.0,Is multimodal analgesia more effective than opioids for postoperative pain?,Standard
 0.8,0.7762502494692454,0.9262941554464965,1.0,0.9413401592471554,0.9896916885042134,2,Q1,1.0,Does early mobilisation reduce length of stay after spinal surgery?,TWR
 0.75,0.8590516752196962,0.9331583936847712,0.75,0.8826803184943108,0.9462480870845545,3,Q2,0.3333333333333333,Does early mobilisation reduce length of stay after spinal surgery?,Standard
@@ -15,31 +15,31 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 0.5,0.7653606369886217,0.8792872118748392,1.0,0.6131471927654584,0.8772153153380493,5,Q2,0.0,Does spinal cord stimulation reduce pain in failed back surgery syndrome?,Standard
 1.0,1.0,1.0,0.75,0.8826803184943108,0.9481316041715843,1,Q2,1.0,Does TENS reduce postoperative pain?,TWR
 1.0,1.0,0.9867149268989209,1.0,0.9259795222585335,0.9617402390004923,1,Q1,1.0,Does TENS reduce postoperative pain?,Standard
-0.4,0.5,0.7706190054526425,0.75,0.7970995862182803,0.9226271059191403,4,Q2,0.25,Does mirror therapy reduce phantom limb pain?,TWR
+0.4,0.3966214155937851,0.7419671627838647,0.75,0.734421189254329,0.9081667300127649,4,Q2,0.25,Does mirror therapy reduce phantom limb pain?,TWR
 0.5,0.7653606369886217,0.8887223390544889,1.0,0.7232329748419101,0.9424890210124037,5,Q2,0.0,Does mirror therapy reduce phantom limb pain?,Standard
-1.0,0.7083972923709242,0.8969289036141235,0.0,0.23463936301137822,0.5069520518174072,1,Unranked,0.2,Is duloxetine effective for neuropathic pain?,TWR
+1.0,0.7083972923709242,0.8969289036141235,0.0,0.2960819109658652,0.5683945997718942,1,Unranked,0.2,Is duloxetine effective for neuropathic pain?,TWR
 0.2,0.6737852038126946,0.7121664003799236,0.0,0.0,0.38685280723454163,5,Unranked,0.0,Is duloxetine effective for neuropathic pain?,Standard
 1.0,1.0,1.0,1.0,0.8670870086853021,0.9699225363013644,1,Q1,1.0,Does graded exercise therapy improve outcomes in fibromyalgia?,TWR
 0.8,0.9507614678330717,0.94851104429784,0.0,0.6012610260559063,0.715746045301212,2,Unranked,0.5,Does graded exercise therapy improve outcomes in fibromyalgia?,Standard
-1.0,1.0,0.9933353282867341,1.0,1.0,0.9828920819566879,1,Q1,1.0,Are psychological interventions effective for chronic pain?,TWR
+1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Are psychological interventions effective for chronic pain?,TWR
 0.5,0.7341740173706042,0.8701941829251413,0.0,0.511218155815289,0.6986647214000131,4,Unranked,0.5,Are psychological interventions effective for chronic pain?,Standard
-1.0,0.9407836178068271,0.9824717383170832,1.0,0.6913401592471553,0.9334903544011512,1,Q1,1.0,Does aquatic therapy improve outcomes in rheumatoid arthritis rehabilitation?,TWR
+1.0,0.9407836178068271,0.98561891868032,1.0,0.6913401592471553,0.9334903544011512,1,Q1,1.0,Does aquatic therapy improve outcomes in rheumatoid arthritis rehabilitation?,TWR
 1.0,0.9871064222343278,0.9856998353241859,1.0,0.8549208510262275,0.9671694031296318,1,Q1,1.0,Does aquatic therapy improve outcomes in rheumatoid arthritis rehabilitation?,Standard
 1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Is neurostimulation effective for treatment-resistant depression?,TWR
 1.0,0.9530721273977244,0.9950215722988736,1.0,0.8240204777414663,0.968077428561682,1,Q1,1.0,Is neurostimulation effective for treatment-resistant depression?,Standard
-1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Are fall prevention programmes effective in elderly patients?,TWR
+1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,Are fall prevention programmes effective in elderly patients?,TWR
 1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Are fall prevention programmes effective in elderly patients?,Standard
 0.4,0.41092341197743254,0.7545531074555448,0.75,0.6940451800563907,0.8826924952316509,4,Q2,0.25,Does hydrotherapy reduce spasticity in multiple sclerosis?,TWR
 0.5,0.8670870086853021,0.8908151253526532,0.75,0.6940451800563907,0.8826924952316509,5,Q2,0.0,Does hydrotherapy reduce spasticity in multiple sclerosis?,Standard
 1.0,0.7083972923709242,0.8969289036141235,0.5,0.7507390280692655,0.8784578086478553,1,Q3,0.2,Is transcranial magnetic stimulation effective for post-stroke rehabilitation?,TWR
 0.2,0.3475704076253891,0.6722591687243464,0.0,0.27460425513113723,0.6240657363944289,5,Unranked,0.0,Is transcranial magnetic stimulation effective for post-stroke rehabilitation?,Standard
-0.8,0.8037457590228262,0.9390961153470724,1.0,0.7653606369886217,0.9538915690056526,2,Q1,1.0,How should opioids be tapered in patients with chronic pain?,TWR
+0.8,0.8037457590228262,0.9390961153470724,1.0,0.7653606369886217,0.9583562056044043,2,Q1,1.0,How should opioids be tapered in patients with chronic pain?,TWR
 1.0,1.0,1.0,1.0,0.6645649565734895,0.8935349950641011,2,Q1,1.0,How should opioids be tapered in patients with chronic pain?,Standard
 1.0,1.0,1.0,1.0,1.0,0.9961581648476712,1,Q1,1.0,Are multidisciplinary pain programmes more effective than single-modality treatment?,TWR
 0.2,0.40320361250990616,0.7319584011026962,0.0,0.0,0.48928691090637516,5,Unranked,0.25,Are multidisciplinary pain programmes more effective than single-modality treatment?,Standard
 1.0,1.0,1.0,1.0,1.0,0.9876955095526512,4,Q1,0.0,Does botulinum toxin prevent chronic migraines?,TWR
 1.0,0.8519590445170673,0.9605753368118396,1.0,0.7984848580994974,0.9220433016555235,4,Q1,0.0,Does botulinum toxin prevent chronic migraines?,Standard
-0.4,0.7512452600843351,0.867275602037805,0.0,0.5307212739772434,0.7606395682357036,4,Unranked,0.5,Does minimally invasive lumbar decompression produce better outcomes than open surgery?,TWR
+1.0,0.8675034925694372,0.9593886374186069,1.0,0.7039180890341347,0.9047172294870751,1,Q1,1.0,Does minimally invasive lumbar decompression produce better outcomes than open surgery?,TWR
 0.5,0.6721059462716454,0.858610035965143,0.0,0.24926097193073435,0.6086036469251713,4,Unranked,0.25,Does minimally invasive lumbar decompression produce better outcomes than open surgery?,Standard
 1.0,0.7530721273977244,0.9488537027591982,1.0,0.9413401592471554,0.9900808841271455,1,Q1,1.0,How do heat therapy and cold therapy compare for musculoskeletal pain?,TWR
 0.2,0.6060917426645734,0.7924483416084057,0.75,0.8826803184943108,0.9241404330009038,5,Q2,0.5,How do heat therapy and cold therapy compare for musculoskeletal pain?,Standard
@@ -79,7 +79,7 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 0.6,0.7493428703218629,0.8603823132173251,0.0,0.25454838678859487,0.5171424081384397,3,Unranked,0.3333333333333333,How should pain intensity be assessed in non-verbal patients?,Standard
 0.5,0.8670870086853021,0.8801138685132043,0.0,0.41340159247155434,0.7238981630719122,4,Unranked,0.5,What is the pathophysiology of neuropathic pain?,TWR
 1.0,1.0,1.0,0.0,0.25454838678859487,0.605101443634011,4,Unranked,0.0,What is the pathophysiology of neuropathic pain?,Standard
-0.6,0.7003734335375118,0.8465654810591845,1.0,0.747782915792203,0.8924238758803253,3,Q1,0.3333333333333333,What are the clinical presentations of desmoplakin cardiomyopathy?,TWR
+0.6,0.7410573848814554,0.8813572824205123,1.0,0.8130542710519492,0.9576952311400714,3,Q1,0.5,What are the clinical presentations of desmoplakin cardiomyopathy?,TWR
 0.75,0.7633860993158484,0.9054689727702921,1.0,0.46927872602275644,0.8529278650606567,3,Q1,0.25,What are the clinical presentations of desmoplakin cardiomyopathy?,Standard
 0.2,0.7220614332243988,0.7877995147282224,0.75,0.8753695140346327,0.9456560946584148,5,Q2,0.5,How has pain management evolved over time?,TWR
 0.2,0.42597952225853364,0.6879751661383862,0.75,0.8753695140346327,0.9200688564945144,5,Q2,0.3333333333333333,How has pain management evolved over time?,Standard
@@ -91,7 +91,7 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 0.75,0.950076996190085,0.9625133468165444,0.25,0.6261085421038983,0.8104176927080957,3,Q4,0.5,Does the Barthel Index predict activities of daily living outcomes after rehabilitation?,Standard
 0.8,0.9507614678330717,0.9616503052427172,1.0,0.9413401592471554,0.9900808841271455,2,Q1,1.0,What are the outcomes of total knee arthroplasty?,TWR
 0.8,0.679423832220986,0.8824836624442143,1.0,1.0,0.9961581648476712,2,Q1,1.0,What are the outcomes of total knee arthroplasty?,Standard
-0.2,0.40680183510109896,0.7137802246578471,0.75,0.9323665287394267,0.9492147449622255,5,Q2,0.3333333333333333,What are the current perioperative pain management protocols?,TWR
+0.2,0.40680183510109896,0.7137802246578471,0.75,0.8590516752196962,0.928975264040152,5,Q2,0.3333333333333333,What are the current perioperative pain management protocols?,TWR
 1.0,1.0,1.0,1.0,0.7653606369886218,0.9558295932317544,5,Q2,0.0,What are the current perioperative pain management protocols?,Standard
 0.2,0.44917689524762666,0.7118014202023888,1.0,0.6593273085316226,0.8796395428039253,5,Q1,0.2,Does robot-assisted gait training improve walking ability in rehabilitation?,TWR
 1.0,0.8519590445170673,0.9605753368118396,0.0,0.3593137779505038,0.6409434648711003,4,Unranked,0.0,Does robot-assisted gait training improve walking ability in rehabilitation?,Standard
@@ -101,15 +101,15 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 0.2,0.7098249095547866,0.7978443354994148,0.25,0.6562973047890615,0.7941251905055898,5,Q4,0.5,Is cognitive behavioural therapy effective for managing chronic pain?,Standard
 1.0,0.819393943239799,0.9557305872145111,0.5,0.541067770084586,0.7817393741610694,2,Q3,0.0,How should pain be managed in advanced cancer?,TWR
 0.5,0.8403030283801005,0.8733683229467235,0.0,0.33333333333333337,0.6717287037439216,5,Unranked,0.0,How should pain be managed in advanced cancer?,Standard
-0.6,0.6437537420386826,0.8391842928964006,0.75,0.7793891187676222,0.9093702051916309,3,Q2,0.3333333333333333,Does cardiac rehabilitation exercise improve outcomes after myocardial infarction?,TWR
+0.6,0.6437537420386826,0.8391842928964006,0.75,0.7793891187676222,0.9140034596289327,3,Q2,0.3333333333333333,Does cardiac rehabilitation exercise improve outcomes after myocardial infarction?,TWR
 0.3333333333333333,0.8174935137996165,0.8442355845243696,0.5,0.48516021732359466,0.8061731651465329,5,Q3,0.0,Does cardiac rehabilitation exercise improve outcomes after myocardial infarction?,Standard
 1.0,0.7305146665371222,0.9066180787084464,1.0,0.9413401592471554,0.9750789824551586,2,Q1,1.0,What are the complication rates following spinal fusion?,TWR
 0.25,0.6301663115996204,0.7349180934357449,0.0,0.48516021732359466,0.6998619322299093,5,Unranked,0.3333333333333333,What are the complication rates following spinal fusion?,Standard
-0.8,0.6606188852699119,0.8747401866567553,1.0,0.7653606369886217,0.9611147080904419,2,Q1,1.0,Is ketamine infusion therapy effective for refractory chronic pain?,TWR
+0.8,0.8365984075284455,0.8970038410773077,1.0,1.0,0.9906609666436669,2,Q1,1.0,Is ketamine infusion therapy effective for refractory chronic pain?,TWR
 0.5,0.5433887705332068,0.7965008444845832,0.0,0.43354350434265104,0.6625135428332626,4,Unranked,0.25,Is ketamine infusion therapy effective for refractory chronic pain?,Standard
 1.0,1.0,1.0,1.0,0.6913401592471553,0.9334903544011512,1,Q1,1.0,Is telerehabilitation as effective as in-person rehabilitation?,TWR
 0.2,0.76891032164958,0.7888553221990895,0.0,0.21761872346065883,0.5797960296770288,5,Unranked,0.3333333333333333,Is telerehabilitation as effective as in-person rehabilitation?,Standard
-0.6,0.7899980042460358,0.9011609575447583,0.5,0.7653606369886217,0.8786746795305955,3,Q3,0.5,What are the revision surgery rates after hip arthroplasty?,TWR
+0.75,0.8826803184943108,0.9481316041715843,0.5,0.7653606369886217,0.8887223390544889,3,Q3,0.5,What are the revision surgery rates after hip arthroplasty?,TWR
 0.75,0.6606188852699119,0.8724291758841373,0.5,0.5316519652587917,0.7373230204909161,3,Q3,0.3333333333333333,What are the revision surgery rates after hip arthroplasty?,Standard
 0.8,0.8192619084227396,0.9306028397431415,1.0,1.0,0.9828920819566879,2,Q1,1.0,How common is chronic post-surgical pain?,TWR
 1.0,0.7010143364724148,0.9234531752680624,0.6666666666666666,0.8174935137996165,0.9079364505194771,3,Q3,0.0,How common is chronic post-surgical pain?,Standard
@@ -137,7 +137,7 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 1.0,0.8675034925694372,0.9562538206393739,0.75,0.9376847570173164,0.9504433059523778,3,Q2,0.0,What are emerging techniques in spinal arthrodesis surgery?,Standard
 1.0,0.7631344712273078,0.9235120737549597,1.0,0.9259795222585335,0.9795987853954985,1,Q1,1.0,What are common physiotherapy practice patterns in rehabilitation settings?,TWR
 1.0,1.0,1.0,1.0,0.9259795222585335,0.9728125086582712,1,Q1,1.0,What are common physiotherapy practice patterns in rehabilitation settings?,Standard
-1.0,0.9151505377371351,0.98966912813085,0.75,0.7346393630113782,0.9001386375213553,3,Q2,0.0,How is pain managed in conflict zones or resource-limited settings?,TWR
+1.0,1.0,1.0,0.75,0.7346393630113782,0.9001386375213553,3,Q2,0.0,How is pain managed in conflict zones or resource-limited settings?,TWR
 0.3333333333333333,0.8213137146137828,0.850834274847108,0.0,0.5265657011759873,0.683550890497004,5,Unranked,0.0,How is pain managed in conflict zones or resource-limited settings?,Standard
 0.75,0.7804185934220761,0.9064042401622728,1.0,0.7039180890341347,0.8959722661926243,3,Q1,0.3333333333333333,How is juvenile recurrent parotitis managed?,TWR
 0.6666666666666666,0.8303010754742701,0.9185494721105402,0.0,0.42827240252944054,0.6252179185418242,4,Unranked,0.0,How is juvenile recurrent parotitis managed?,Standard
@@ -159,11 +159,11 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 0.5,0.5798484858099497,0.7923025054338062,0.0,0.66967181649423,0.66967181649423,4,Unranked,0.0,How is chemotherapy-induced peripheral neuropathy managed?,Standard
 1.0,0.9777813616305049,0.9755281301968224,1.0,0.7439681838663057,0.9009533731873224,3,Q1,0.0,What is the conservative management approach for recurrent parotitis?,TWR
 1.0,0.9049765583210164,0.982619653523767,1.0,1.0,1.0,3,Q1,0.0,What is the conservative management approach for recurrent parotitis?,Standard
-1.0,0.7192787260227564,0.9214362845327249,1.0,0.9259795222585335,0.9786028494968771,2,Q1,1.0,What does intensive inpatient rehabilitation involve?,TWR
+1.0,0.777938566775601,0.9325263180710038,1.0,0.9259795222585335,0.9786028494968771,2,Q1,1.0,What does intensive inpatient rehabilitation involve?,TWR
 0.25,0.6562973047890615,0.7930870682081662,0.75,0.7507390280692655,0.8955259046521347,5,Q2,0.5,What does intensive inpatient rehabilitation involve?,Standard
 1.0,1.0,1.0,0.5,0.7653606369886217,0.8887223390544889,1,Q3,0.0,When is it safe to return to sport after ligament injury?,TWR
 1.0,1.0,1.0,0.0,0.5307212739772434,0.7606395682357036,5,Unranked,0.0,When is it safe to return to sport after ligament injury?,Standard
-1.0,0.881567235613654,0.965053459699563,1.0,0.7641007546071396,0.9304800953775598,1,Q1,1.0,How is pain assessed in non-communicative intensive care patients?,TWR
+1.0,0.881567235613654,0.965053459699563,1.0,0.7192787260227564,0.9214362845327249,1,Q1,1.0,How is pain assessed in non-communicative intensive care patients?,TWR
 0.6,0.8122885095908974,0.9104864382402661,0.25,0.6480409554829326,0.8171582366323826,3,Q4,0.5,How is pain assessed in non-communicative intensive care patients?,Standard
 0.5,0.7341740173706042,0.8661072012350618,1.0,0.6732934624429354,0.8884990574692628,5,Q2,0.0,Can peripheral nerve blocks be safely used in outpatient settings?,TWR
 0.5,0.8403030283801005,0.8733683229467235,0.0,0.374295031969658,0.6163507553527949,5,Unranked,0.0,Can peripheral nerve blocks be safely used in outpatient settings?,Standard
@@ -177,9 +177,9 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 0.2,0.6557355595297667,0.7516884905272364,0.0,0.0,0.4306765580733931,5,Unranked,0.0,How is pain managed in sickle cell disease?,Standard
 1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are current postoperative mobilisation practices after orthopaedic surgery?,TWR
 0.75,0.7616786513169639,0.8910725695595378,0.75,0.908465248289621,0.9186331997908382,3,Q2,0.3333333333333333,What are current postoperative mobilisation practices after orthopaedic surgery?,Standard
-1.0,1.0,1.0,0.5,0.7653606369886217,0.8887223390544889,1,Q3,0.5,What pain assessment tools are validated for non-verbal patients?,TWR
+1.0,1.0,1.0,1.0,0.8519590445170673,0.9557034395662896,1,Q1,1.0,What pain assessment tools are validated for non-verbal patients?,TWR
 0.6666666666666666,0.7149296749630493,0.8805316783036914,0.0,0.0,0.43067655807339306,4,Unranked,0.0,What pain assessment tools are validated for non-verbal patients?,Standard
-1.0,0.8886293579004712,0.9772192567252195,1.0,1.0,1.0,1,Q1,1.0,What are the guidelines on multimodal analgesia in the ERAS protocol?,TWR
+1.0,0.8469278726022758,0.9684923689687367,1.0,1.0,1.0,1,Q1,1.0,What are the guidelines on multimodal analgesia in the ERAS protocol?,TWR
 0.25,0.7653606369886218,0.7919648107385373,0.0,0.3413757548449258,0.6731298478442992,5,Unranked,0.0,What are the guidelines on multimodal analgesia in the ERAS protocol?,Standard
 1.0,0.6223508534204809,0.9005046989274599,0.0,0.3236652873942676,0.6743883129189777,1,Unranked,0.25,Is telerehabilitation effective for post-COVID rehabilitation?,TWR
 0.2,0.40844674519271135,0.6995412419088548,1.0,0.6732934624429354,0.8884990574692628,5,Q2,0.0,Is telerehabilitation effective for post-COVID rehabilitation?,Standard
@@ -211,7 +211,7 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 0.3333333333333333,0.8145672023038535,0.8389776660073724,0.0,0.10796967922357079,0.44211666725438137,5,Unranked,0.0,Can machine learning identify distinct chronic pain subtypes?,Standard
 1.0,1.0,1.0,1.0,0.8130542710519492,0.9576952311400714,1,Q1,1.0,Do GLP-1 receptor agonists affect musculoskeletal pain?,TWR
 0.2,0.64097202146074,0.7784880264793096,0.75,0.7471765824083653,0.9184195053422544,5,Q2,0.5,Do GLP-1 receptor agonists affect musculoskeletal pain?,Standard
-0.8,0.9612472558382992,0.9702530239181318,0.0,0.5307212739772434,0.7606395682357036,2,Unranked,0.5,Do proton pump inhibitors reduce bone density in orthopaedic patients?,TWR
+0.8,0.9612472558382992,0.9711524961933974,0.0,0.5307212739772434,0.7546020077873851,2,Unranked,0.5,Do proton pump inhibitors reduce bone density in orthopaedic patients?,TWR
 1.0,1.0,1.0,0.0,0.2960819109658652,0.5992429307166866,2,Unranked,0.25,Do proton pump inhibitors reduce bone density in orthopaedic patients?,Standard
 1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,What are the guidelines for post-mastectomy pain syndrome treatment?,TWR
 1.0,0.8592163821931731,0.967800553810227,0.75,0.9376847570173164,0.9522732586263408,1,Q2,1.0,What are the guidelines for post-mastectomy pain syndrome treatment?,Standard
@@ -225,9 +225,9 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 0.25,0.41531064659152533,0.7128718056817412,0.75,0.9376847570173164,0.9463274486336334,5,Q2,0.25,What is the gate control theory of pain?,Standard
 0.75,0.8086598407528445,0.9258948952415027,0.75,0.8590516752196962,0.9331583936847712,3,Q2,0.3333333333333333,What are the classical criteria for diagnosing rheumatoid arthritis?,TWR
 0.75,0.8647330574788535,0.9377223268794214,0.75,0.7970995862182803,0.9195495553061589,3,Q2,0.2,What are the classical criteria for diagnosing rheumatoid arthritis?,Standard
-0.2,0.5712332974571509,0.7825128659555763,0.0,0.2358992453928603,0.6434555737500047,5,Unranked,0.5,What is the long-term functional decline in patients with spinal deformity?,TWR
+1.0,0.7348333589591778,0.926232859498427,0.75,0.3738914578961015,0.7814477862532458,1,Q2,1.0,What is the long-term functional decline in patients with spinal deformity?,TWR
 0.4,0.70655866428214,0.7841325657335445,0.0,0.3065735963827292,0.5437713091520254,4,Unranked,0.3333333333333333,What is the long-term functional decline in patients with spinal deformity?,Standard
-1.0,1.0,1.0,1.0,0.7633860993158484,0.931758927470955,1,Q1,1.0,Is regional anaesthesia safer than general anaesthesia?,TWR
+1.0,1.0,0.9927082739205672,1.0,0.7633860993158484,0.9508326649005727,1,Q1,1.0,Is regional anaesthesia safer than general anaesthesia?,TWR
 0.5,0.8037213937324477,0.8281102127422693,0.0,0.0,0.4306765580733931,4,Unranked,0.0,Is regional anaesthesia safer than general anaesthesia?,Standard
 0.8,0.8037457590228262,0.9390961153470724,0.75,0.7471765824083653,0.9184195053422544,2,Q2,1.0,Is the Oswestry Disability Index a validated outcome measure for spinal conditions?,TWR
 0.8,0.6240143054827942,0.8708076645732873,0.75,0.40580082756343944,0.7958112217889316,2,Q2,1.0,Is the Oswestry Disability Index a validated outcome measure for spinal conditions?,Standard
@@ -243,19 +243,19 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 1.0,0.8675034925694372,0.9578794756066712,1.0,0.747782915792203,0.8924238758803253,1,Q1,1.0,What are the normal reference values for nerve conduction velocity?,Standard
 0.8,0.7280201836340137,0.9106227011753707,1.0,1.0,1.0,2,Q1,1.0,What is the Barthel Index and how is it scored?,TWR
 1.0,1.0,0.9953667455626984,1.0,1.0,0.9828920819566879,2,Q1,1.0,What is the Barthel Index and how is it scored?,Standard
-0.5,0.655788107456709,0.8387500597140731,0.0,0.24926097193073435,0.6086036469251713,4,Unranked,0.3333333333333333,What is the natural history of untreated lumbar spinal stenosis?,TWR
+0.5,0.655788107456709,0.8432872539633128,0.0,0.24926097193073435,0.6031418715613001,4,Unranked,0.3333333333333333,What is the natural history of untreated lumbar spinal stenosis?,TWR
 0.6666666666666666,0.7149296749630493,0.8949488349483146,0.0,0.0,0.43067655807339306,4,Unranked,0.0,What is the natural history of untreated lumbar spinal stenosis?,Standard
 0.4,0.7045688069984302,0.8494775966299543,1.0,0.7039180890341347,0.9056511937624261,4,Q1,0.3333333333333333,How are opioid doses converted to morphine equivalents?,TWR
 0.4,0.7929007343252248,0.8643849613221927,1.0,0.7974779478881874,0.9003134755042497,4,Q1,0.0,How are opioid doses converted to morphine equivalents?,Standard
 1.0,0.9725044904464192,0.9765333163605167,0.75,0.8826803184943108,0.9462480870845545,3,Q2,0.0,What is the anatomy of the spinal cord relevant to surgical planning?,TWR
 0.5,0.680606056760201,0.8447122853992027,0.25,0.6097907032889618,0.7920090013989888,5,Q4,0.0,What is the anatomy of the spinal cord relevant to surgical planning?,Standard
-1.0,0.8393908257335428,0.9549064601251331,0.75,0.8148100536689385,0.918298565162345,1,Q2,1.0,What are the long-term outcomes of conservative versus surgical treatment for scoliosis?,TWR
+1.0,0.8393908257335428,0.9702793652530124,0.75,0.8148100536689385,0.935103297944692,1,Q2,1.0,What are the long-term outcomes of conservative versus surgical treatment for scoliosis?,TWR
 0.2,0.5412432643303711,0.7821040601229395,0.0,0.374295031969658,0.6437714939703881,5,Unranked,0.5,What are the long-term outcomes of conservative versus surgical treatment for scoliosis?,Standard
 0.6,0.8522844034992151,0.9146222898750369,1.0,1.0,1.0,3,Q2,0.5,How is tramadol metabolised and what are the implications for dosing?,TWR
 0.6,0.7003734335375118,0.853179774304381,0.75,0.6087012413451591,0.8450885341587903,3,Q2,0.3333333333333333,How is tramadol metabolised and what are the implications for dosing?,Standard
 1.0,1.0,1.0,1.0,1.0,1.0,1,Q1,1.0,Is the SF-36 a valid quality of life measure in orthopaedic patients?,TWR
 0.8,0.8264972479678704,0.9242091996854757,1.0,0.8826803184943108,0.9863520113014781,2,Q1,1.0,Is the SF-36 a valid quality of life measure in orthopaedic patients?,Standard
-0.3333333333333333,0.5158474921363962,0.7521866188906461,1.0,0.7039180890341347,0.9053112995489574,5,Q1,0.0,What is the pathophysiology of central sensitisation in chronic pain?,TWR
+0.3333333333333333,0.5158474921363962,0.7698986984637216,1.0,0.7039180890341347,0.8959722661926243,5,Q1,0.0,What is the pathophysiology of central sensitisation in chronic pain?,TWR
 1.0,1.0,1.0,1.0,0.8637574337885663,0.9472941807962689,5,Q1,0.0,What is the pathophysiology of central sensitisation in chronic pain?,Standard
 0.75,0.7346393630113782,0.9001386375213553,1.0,0.8519590445170673,0.9557034395662896,3,Q1,0.3333333333333333,What are the 15-year outcomes of lumbar fusion surgery?,TWR
 0.5,0.6721059462716454,0.858610035965143,0.5,0.7341740173706042,0.8642054753803928,4,Q3,0.25,What are the 15-year outcomes of lumbar fusion surgery?,Standard
@@ -269,7 +269,7 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 0.6666666666666666,0.8099531166420328,0.9110983816788429,0.0,0.0,0.0,4,Unranked,0.0,What is the evidence base for spinal cord stimulation in chronic pain?,Standard
 0.8,0.9612472558382992,0.969183301410673,0.75,0.8826803184943108,0.9462480870845545,2,Q2,1.0,How does functional status change over time in Huntington's disease?,TWR
 1.0,0.9413401592471554,0.9934535397251649,0.75,0.6231524298268358,0.8462298541526516,2,Q2,1.0,How does functional status change over time in Huntington's disease?,Standard
-1.0,0.9530721273977244,0.9948793111784349,1.0,0.9259795222585335,0.9617402390004923,1,Q1,1.0,Is mesenchymal stem cell therapy effective for knee osteoarthritis?,TWR
+1.0,0.9530721273977244,0.9884050858715858,1.0,0.9259795222585335,0.9795987853954985,1,Q1,1.0,Is mesenchymal stem cell therapy effective for knee osteoarthritis?,TWR
 0.2,0.7507390280692655,0.7737876016902607,1.0,0.9413401592471554,0.9896916885042134,5,Q1,0.5,Is mesenchymal stem cell therapy effective for knee osteoarthritis?,Standard
 0.2,0.4278695013043193,0.7109190534168112,1.0,0.9259795222585335,0.9786028494968771,5,Q1,0.3333333333333333,Does persistent post-COVID pain respond to treatment?,TWR
 0.2,0.3622942238119067,0.6716531400530089,1.0,0.9259795222585335,0.9617402390004923,5,Q1,0.2,Does persistent post-COVID pain respond to treatment?,Standard
@@ -285,7 +285,7 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 1.0,0.7386006394465727,0.9215901677842989,0.5,0.734421189254329,0.8698244375935932,1,Q3,0.25,Does prehabilitation improve outcomes after joint replacement surgery?,Standard
 0.8,0.9061442547954487,0.9591143267642597,0.75,0.8826803184943108,0.9441390272147961,2,Q2,1.0,Are psychological interventions effective for pain catastrophising?,TWR
 0.8,0.5387527441617006,0.8540287834401212,0.75,0.6480409554829326,0.8958905484015627,2,Q2,1.0,Are psychological interventions effective for pain catastrophising?,Standard
-0.2,0.47730761402050415,0.7042905293150065,0.5,0.734421189254329,0.857111273967468,5,Q3,0.3333333333333333,What opioid-sparing strategies are effective for cancer pain management?,TWR
+0.2,0.38771149040910263,0.7163919950259342,0.5,0.6913401592471553,0.8652860156704962,5,Q3,0.3333333333333333,What opioid-sparing strategies are effective for cancer pain management?,TWR
 0.25,0.41531064659152533,0.7128718056817412,0.0,0.4196834041049098,0.6830575063802936,5,Unranked,0.25,What opioid-sparing strategies are effective for cancer pain management?,Standard
 1.0,0.8886293579004712,0.9726011266109817,1.0,0.8826803184943108,0.9665488040107213,1,Q1,1.0,Is cardiac rehabilitation effective after heart disease?,TWR
 0.8,0.8287507484077364,0.9313037567463879,0.0,0.38268031849431083,0.69599645880117,2,Unranked,0.3333333333333333,Is cardiac rehabilitation effective after heart disease?,Standard
@@ -295,7 +295,7 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 1.0,0.9259795222585335,0.9728125086582712,1.0,0.9413401592471554,0.9896916885042134,2,Q1,1.0,Is multimodal rehabilitation more effective than standard care after lumbar fusion?,Standard
 1.0,1.0,1.0,0.75,0.8826803184943108,0.9462480870845545,1,Q2,1.0,Is mindfulness effective for cancer-related pain?,TWR
 1.0,0.7083972923709242,0.8969289036141235,0.75,0.7294661149577071,0.8871005064003606,1,Q2,1.0,Is mindfulness effective for cancer-related pain?,Standard
-1.0,0.7386006394465727,0.9235103937493707,1.0,0.6854676728095195,0.8783222862603491,1,Q1,1.0,How should pain be managed in children with cancer?,TWR
+1.0,0.7657232736758686,0.9485156508996107,1.0,0.734421189254329,0.9272758027051587,1,Q1,1.0,How should pain be managed in children with cancer?,TWR
 0.2,0.6883681571526784,0.7788035144487689,0.0,0.5637932991212148,0.7248195853009508,5,Unranked,0.5,How should pain be managed in children with cancer?,Standard
 1.0,0.8122885095908974,0.9656996788659544,1.0,0.7039180890341347,0.9047172294870751,1,Q1,1.0,Is telerehabilitation effective for stroke survivors?,TWR
 1.0,1.0,1.0,1.0,0.747782915792203,0.9077850095401014,1,Q1,1.0,Is telerehabilitation effective for stroke survivors?,Standard
@@ -337,7 +337,7 @@ ndcg1_ev,ndcg3_ev,ndcg5_ev,ndcg1_tier,ndcg3_tier,ndcg5_tier,top1_ev,top1_tier,mr
 0.75,0.8739160282497203,0.9431419491698343,1.0,0.7653606369886217,0.9517756747341085,3,Q1,0.5,Is chronic pain associated with increased suicide risk?,Standard
 1.0,0.8693003197232865,0.9596808175006349,0.75,0.8826803184943108,0.9379598868074123,1,Q2,1.0,What is the prevalence of low back pain among manual workers?,TWR
 0.6,0.8808501001352579,0.9007116171376892,1.0,1.0,0.9956564795753196,3,Q1,0.3333333333333333,What is the prevalence of low back pain among manual workers?,Standard
-0.8,0.9061442547954487,0.9591143267642597,0.5,0.7507390280692655,0.8630146226475671,2,Q3,0.5,Are there contraindications to exercise in orthopaedic patients?,TWR
+0.8,0.9061442547954487,0.9559671464010229,0.5,0.7507390280692655,0.8771941218778135,2,Q3,0.5,Are there contraindications to exercise in orthopaedic patients?,TWR
 0.8,0.9507614678330717,0.9577471855639821,0.5,0.8739160282497203,0.8879218095063741,2,Q3,0.5,Are there contraindications to exercise in orthopaedic patients?,Standard
 0.6,0.7512452600843351,0.8995044940479134,1.0,0.7653606369886217,0.9558295932317544,3,Q1,0.5,How long should antibiotics be given for parotitis?,TWR
 0.6666666666666666,0.7454516132114052,0.8917645456186863,0.0,0.5307212739772434,0.740784567781415,4,Unranked,0.0,How long should antibiotics be given for parotitis?,Standard
