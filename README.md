@@ -211,10 +211,10 @@ Because clinical information retrieval profiles exhibit highly skewed non-normal
 ### Evaluation Results Summary
 
 ### chart1: Dumbbell plot comparing top-1 quality shift for each pipeline.
-<img src="./results/fig1_dumbbell.png" alt="Dumbbell Plot" width="700"/>
+<img src="./eval_results/fig1_dumbbell.png" alt="Dumbbell Plot" width="700"/>
 
 ### chart2: Grouped bar chart showing mean nDCG@3 scores for each pipeline across the four evaluation dimensions.
-<img src="./results/fig2_grouped_bar.png" alt="Grouped Bar Chart" width="700"/>
+<img src="./eval_results/fig2_grouped_bar.png" alt="Grouped Bar Chart" width="700"/>
 
 ---
 
