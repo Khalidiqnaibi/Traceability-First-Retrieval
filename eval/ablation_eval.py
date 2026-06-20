@@ -1,5 +1,5 @@
 """
-run_evaluation.py  (v2)
+ablation_eval.py  (v2)
 ======================================================
 Evaluation script comparing Trust-weighted Retrieval (TWR) against Standard
 (RRF) baseline on biomedical RAG audit logs.
@@ -20,17 +20,17 @@ Fixes vs v1
 * Figure aesthetics tightened: consistent font sizes, gridlines, axis padding.
 
 Usage:
-    python run_evaluation.py \\
+    python ablation_eval.py \\
         --log   pipeline_audit_log.csv \\
         --queries queries.json \\
-        --out_dir results/
+        --out_dir eval_results/
 
 Outputs:
-    results/metrics_summary.csv      – per-query metric table
-    results/ablation_summary.csv     – stratified ablation table
-    results/fig1_dumbbell.png        – jittered dumbbell plot
-    results/fig2_grouped_bar.png     – nDCG@3 ablation bar chart with CI
-    results/stats_report.txt         – significance + effect-size report
+    eval_results/metrics_summary.csv      – per-query metric table
+    eval_results/ablation_summary.csv     – stratified ablation table
+    eval_results/fig1_dumbbell.png        – jittered dumbbell plot
+    eval_results/fig2_grouped_bar.png     – nDCG@3 ablation bar chart with CI
+    eval_results/stats_report.txt         – significance + effect-size report
 """
 
 from __future__ import annotations

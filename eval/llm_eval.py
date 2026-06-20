@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 import ast
 
-from utils.data.sample import get_sampled_queries
+from utils.data.sample_queries import get_sampled_queries
 
 load_dotenv()
 

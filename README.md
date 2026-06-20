@@ -1,8 +1,8 @@
-# Traceability-First Retrieval (TFR): Mathematical Evaluation and Ablation of Trust-Weighted Fusion in Clinical RAG
+# Trust-Weighted Retrieval (TWR): Mathematical Evaluation and Ablation of Trust-Weighted Fusion in Clinical RAG
 
 Traditional Retrieval-Augmented Generation (RAG) architectures rely heavily on semantic "closeness" (vector distance), exposing them to the **Semantic Trap**: low-evidence sources (e.g., case reports, expert opinions) can rank higher than high-evidence sources (e.g., systematic reviews, RCTs) simply due to verbose text alignment or keyword density.
 
-TFR resolves this by introducing **Trust-Weighted Ranking (TWR)**, a modular mathematical transformation layer that maps objective clinical authority signals directly onto the retrieval fusion operator.
+To resolves this we introduce **Trust-Weighted Ranking (TWR)**, a modular mathematical transformation layer that maps objective clinical authority signals directly onto the retrieval fusion operator.
 
 ---
 
@@ -57,17 +57,28 @@ Evaluation runs utilize the **Clinical Trust Evaluation (CTE-180)** benchmark su
 C:.
 │   .env
 │   app.py
-├───data
+├───data_in
 │   │   documents.db
 │   │   domain.py
 │   │   queries.json
 │   │   scimagojr_2025.csv
+|   |   seed_queries.json
 │   └───seed_pubmed_data.xml
 ├───documentation
 │       generate_queries.md
 │       paper_draft.md
 ├───eval
-│       run_eval.py
+|   │   llm_eval.py
+|   |   ablation_eval.py
+|   │   dr_blinded_review.py
+│   └── run_eval.py
+├───data_out
+|   |   twr_documents.csv
+|   |   rrf_documents.csv
+|   |   pipeline_audit_log.csv
+|   |   Evaluation_Workbook_Anesthesiology.csv
+|   |   Evaluation_Workbook_Orthopaedics.csv
+|   └── blinded_clinical_review.csv
 ├───infra
 │   └── clinical_document.py
 ├───logs
@@ -76,7 +87,7 @@ C:.
 ├───pipeline
 │   │   retrieval.py
 │   └── standard_pipeline.py
-├───results
+├───eval_results
 │       ablation_summary.csv
 │       fig1_dumbbell.png
 │       fig2_grouped_bar.png
@@ -87,8 +98,11 @@ C:.
     │   │   audit.py
     │   └── make_response.py
     ├───data
+    |   |   batch_seed_db.py
+    |   |   save_dr_review.py
+    |   |   save_rrf_twr_res.py
+    |   |   sample_queries.py
     │   │   get_pubmed_xml.py
-    |   |   seed_database.py
     │   │   ingestion_pipeline.py
     │   └── load_docs.py
     └───pipeline
@@ -130,7 +144,14 @@ curl -X POST "http://127.0.0.1:8000/seed/batch" -H "Content-Type: application/js
 ```
 
 ### Step 4: Running the Ablation Study
+run the `app.py` Flask server to enable the evaluation API then
 run the ablation evaluation script to execute the full matrix of 180 queries across both pipelines (TWR and Standard RRF):
+
+```bash
+python app.py
+```
+
+Then, in a separate terminal, execute the following command to trigger the ablation evaluation:
 
 ```bash
 curl -X POST "http://127.0.0.1:8000/ablation/batch" -H "Content-Type: application/json" -d "{\"queries_path\": \"./data_in/queries.json\"}"
@@ -140,11 +161,23 @@ curl -X POST "http://127.0.0.1:8000/ablation/batch" -H "Content-Type: applicatio
 Execute the complete matrix evaluation using the core testing runner:
 
 ```bash
-python ./eval/run_eval.py --queries_path ./data/queries.json --log_path ./pipeline_audit_log.csv --out_dir ./eval_results/
+python ./eval/ablation_eval.py --queries_path ./data_in/queries.json --log_path ./pipeline_audit_log.csv --out_dir ./eval_results/
 ```
 or to use the default paths defined in the `.env` file, simply run:
 ```bash
-python ./eval/run_eval.py
+python ./eval/ablation_eval.py
+```
+
+### Step 6: LLM pass for clinical RAG effectiveness review (TWR vs RRF)
+
+```bash
+python ./eval/llm_eval.py
+```
+
+### Step 7: Generate the Blinded Clinical Review Workbooks
+
+```bash
+python ./eval/dr_blinded_review.py
 ```
 
 ---
@@ -175,20 +208,7 @@ Because clinical information retrieval profiles exhibit highly skewed non-normal
 * **Evidence Level Recovery (nDCG@3):** TWR achieved definitive statistical superiority over the baseline with an adjusted $p$-value of **$1.69 \times 10^{-17}$**, establishing a solid structural effect size ($\delta = +0.4580$, Medium).
 * **Journal Tier Prioritization (nDCG@3):** TWR systematically promoted top-tier literature over unranked or lower-impact text, passing with an astronomical significance score of **$1.81 \times 10^{-27}$** and a dominant effect size ($\delta = +0.8253$, Large).
 
-### Macro-Ablation Performance Profiles
-
-Below is the verified performance matrix logged across all 180 validation tests:
-
-| Ablation Dimension | Pipeline | Mean Top-1 Evidence Level | Mean Top-1 Journal Tier | Mean nDCG@3 (Ev) | Mean nDCG@3 (Tier) | Mean MRR |
-| --- | --- | --- | --- | --- | --- | --- |
-| **Evidence Level** | Standard | 2.02 | Q3 | 0.869 | 0.620 | 0.574 |
-|  | **TFR** | **1.18** | **Q1** | **0.961** | **0.957** | **0.941** |
-| **Journal Tier** | Standard | 1.84 | Q3 | 0.884 | 0.601 | 0.496 |
-|  | **TFR** | **1.11** | **Q1** | **0.976** | **0.969** | **0.963** |
-| **Multi-Factor** | Standard | 2.04 | Q3 | 0.871 | 0.603 | 0.548 |
-|  | **TFR** | **1.16** | **Q1** | **0.968** | **0.956** | **0.948** |
-| **Adversarial** | Standard | 2.56 | Q3 | 0.820 | 0.597 | 0.365 |
-|  | **TFR** | **1.29** | **Q1** | **0.956** | **0.942** | **0.907** |
+### Evaluation Results Summary
 
 ### chart1: Dumbbell plot comparing top-1 quality shift for each pipeline.
 <img src="./results/fig1_dumbbell.png" alt="Dumbbell Plot" width="700"/>
@@ -202,18 +222,17 @@ Below is the verified performance matrix logged across all 180 validation tests:
 
 The evaluation loop generates an immutable execution record in `pipeline_audit_log.csv`. Every user evaluation action creates two explicitly tracked lines within the evaluation log matrix:
 
-1. `pipeline: "TFR"`: Captures precise indices, scores, and latencies under trust factor modifications.
+1. `pipeline: "TWR"`: Captures precise indices, scores, and latencies under trust factor modifications.
 2. `pipeline: "Standard_RRF"`: Logs standard structural rankings derived purely from text matching behavior.
 
 ---
 
 ## 8. Why This Matters
 
-This ablation study provides conclusive mathematical verification that incorporating hard clinical metadata (such as Oxford Evidence Grades and SCImago Journal Rankings) directly into the information retrieval layer prevents the optimization loop from falling into the semantic trap. By forcing provenance verification into the fusion math rather than a post-hoc filter, TFR establishes an engineered foundation for safe, drop-in clinical decision support systems.
+This ablation study provides conclusive mathematical verification that incorporating hard clinical metadata (such as Oxford Evidence Grades and SCImago Journal Rankings) directly into the information retrieval layer prevents the optimization loop from falling into the semantic trap. By forcing provenance verification into the fusion math rather than a post-hoc filter, TWR establishes an engineered foundation for safe, drop-in clinical decision support systems.
 
 ---
 
 ## Research & Documentation
 
 * **Lead Engineer:** Khalid Iqnaibi
-* **Methodology:** Hypothesis-driven ablation testing over structured clinical data indices.

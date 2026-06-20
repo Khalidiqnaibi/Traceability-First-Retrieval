@@ -5,7 +5,7 @@ import time
 
 from eval.dr_blinded_review import generate_blinded_review_workbooks
 from eval.llm_eval import run_blinded_llm_pass
-from eval.run_eval import run_eval
+from eval.ablation_eval import run_eval
 from eval.batch_ablation import run_batch_ablation
 
 from utils.data.save_dr_review import save_blinded_review_log
