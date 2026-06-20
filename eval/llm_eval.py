@@ -28,7 +28,6 @@ ANSWER STYLE:
 - Prose for mechanistic explanations.
 
 USING THE DOCUMENTS:
-- Base your answer exclusively on the provided documents.
 - At the end of your answer, output two lines:
 
   Used: Doc2, Doc5
@@ -42,7 +41,7 @@ USING THE DOCUMENTS:
 CONSTRAINTS:
 - Never fabricate a clinical claim not present in the documents.
 - If the documents conflict, state the conflict — do not resolve it yourself.
-- For dosing, contraindications, or procedural thresholds: flag with [weak] if only weak evidence is available.
+- Flag with [weak] if only weak evidence is available.
 - If the documents are collectively insufficient to answer safely, say so plainly before attempting any answer.
 """
     
